@@ -1,0 +1,54 @@
+{
+  "checkpoint": "calendar-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "first-two-camps-are-tents-without-walls-or-towers",
+      "pass": true
+    },
+    {
+      "name": "late-camps-have-layered-walls-and-real-multilevel-tower-crews",
+      "pass": true
+    },
+    {
+      "name": "day-thirty-has-seventy-four-and-two-engines-even-at-scout-progress",
+      "pass": true
+    },
+    {
+      "name": "field-casualties-do-not-drain-core-garrisons-and-survive-reload",
+      "pass": true
+    },
+    {
+      "name": "adjacent-port-retains-expanded-world-and-connected-scenery",
+      "pass": true
+    },
+    {
+      "name": "retreat-continues-to-a-surviving-camp-after-the-original-camp-is-captured",
+      "pass": true
+    },
+    {
+      "name": "actual-free-restart-button-initializes-the-next-night",
+      "pass": true
+    },
+    {
+      "name": "real-input-payment-refund-and-worker-construction-still-work",
+      "pass": true
+    },
+    {
+      "name": "mobile-multitouch-run-and-pause-freeze",
+      "pass": true
+    }
+  ],
+  "errors": [
+    "Failed to load resource: net::ERR_NO_BUFFER_SPACE"
+  ],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:42828/assets/resources/import/f3/f30c0cc4-9740-4f67-876f-e76b10620650@f9941.fd4b9.json",
+      "error": "net::ERR_NO_BUFFER_SPACE"
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'Failed to load resource: net::ERR_NO_BUFFER_SPACE'\n+ ]\n- []\n",
+  "passed": 9
+}

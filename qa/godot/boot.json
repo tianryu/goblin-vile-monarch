@@ -1,0 +1,82 @@
+{
+  "state": {
+    "axis": 0,
+    "capacity": 20,
+    "captives": 0,
+    "day": 1,
+    "decoded_art_bytes": 1048576,
+    "enemies": 0,
+    "flags": {
+      "left": false,
+      "right": false
+    },
+    "gold": 18,
+    "hero_x": -510,
+    "kills": 0,
+    "modal": "welcome",
+    "paused": true,
+    "phase": "白天",
+    "population": 6,
+    "prison_capacity": 0,
+    "rects": {
+      "action": [
+        805,
+        356,
+        130,
+        88
+      ],
+      "joystick": [
+        28,
+        343,
+        130,
+        112
+      ],
+      "pause": [
+        857,
+        13,
+        80,
+        53
+      ],
+      "run": [
+        701,
+        372,
+        92,
+        72
+      ],
+      "start": [
+        215,
+        326,
+        530,
+        53
+      ]
+    },
+    "reserve": 0,
+    "run": false,
+    "scrap": 8,
+    "status": "playing",
+    "target": {
+      "action": "交互",
+      "cost": 0,
+      "disabled": false,
+      "id": "b2",
+      "kind": "tools",
+      "label": "工具摊",
+      "object_id": 2,
+      "scrap": 0,
+      "shop": "tools",
+      "x": -465
+    },
+    "time": 0,
+    "viewport": [
+      960,
+      480
+    ],
+    "visible_objects": 16
+  },
+  "log": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+    "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+    "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support."
+  ]
+}

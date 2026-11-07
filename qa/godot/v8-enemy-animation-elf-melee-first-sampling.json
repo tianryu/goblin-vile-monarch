@@ -1,0 +1,23 @@
+{
+  "scope": "Enemy walking and nearest-target facing in isolated desktop Edge software WebGL",
+  "passes": [
+    "elf: one solid subject in each observed frame",
+    "elf: actual AI approaches the nearby chief",
+    "elf: left-facing art agrees with target direction",
+    "elf: no extra transactions or dialogs",
+    "elf: a nearer target behind changes actual facing",
+    "elf: pause holds the current pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "elf: a complete generated gait plays"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "type": "elf",
+      "poses": 15,
+      "travel": 200.53333333333296
+    }
+  ]
+}

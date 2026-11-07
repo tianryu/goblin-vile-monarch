@@ -1,0 +1,40 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# 独立 Cocos 工程的可再生成缓存与官方扩展依赖。
+/cocos/library/
+/cocos/temp/
+/cocos/local/
+/cocos/build/
+/cocos/profiles/
+/cocos/extensions/**/node_modules/
+
+# 本地制作中间件与已导出历史包。
+/artifacts/
+/build/
+/release/
+**/node_modules/
+**/__pycache__/
+*.pyc
+*.log
+*.tmp
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# 测试代码保留，录制和图形输出可在本地重新生成。
+/qa/**/*.png
+/qa/**/*.jpg
+/qa/**/*.jpeg
+/qa/**/*.webp
+/qa/**/*.mp4
+/qa/**/*.webm
+/qa/**/*.pdf
+/qa/**/*.zip
+/qa/**/model/
+/qa/**/model-out/

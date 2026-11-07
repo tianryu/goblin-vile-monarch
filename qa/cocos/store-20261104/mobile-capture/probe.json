@@ -1,0 +1,40 @@
+{
+  "timing": {
+    "camp": 0.0010999999642372132
+  },
+  "evidence": {
+    "camp": {
+      "x": 143,
+      "wall": 2880,
+      "chest": 260,
+      "hall": 70,
+      "camps": [
+        6500,
+        12000,
+        18500,
+        26500,
+        28500
+      ],
+      "enemies": 30
+    },
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "cssWidth": 960,
+      "cssHeight": 540,
+      "touch": 1
+    },
+    "treasuryAfter": 17,
+    "cues": {
+      "hoof_soft": 1,
+      "coin": 7,
+      "chest_open": 1
+    },
+    "end": {
+      "status": "playing",
+      "hp": 100,
+      "expedition": "home"
+    },
+    "browserErrors": []
+  }
+}

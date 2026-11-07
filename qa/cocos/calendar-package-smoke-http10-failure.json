@@ -1,0 +1,14 @@
+{
+  "package": "cocos-calendar-20261103-r1",
+  "errors": [
+    "Failed to load resource: net::ERR_NO_BUFFER_SPACE"
+  ],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:42828/assets/resources/import/ac/ace0e8a8-2c01-44db-a494-1fc7b086c404.a2533.json",
+      "error": "net::ERR_NO_BUFFER_SPACE"
+    }
+  ],
+  "realPhone": false,
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'Failed to load resource: net::ERR_NO_BUFFER_SPACE'\n+ ]\n- []\n"
+}

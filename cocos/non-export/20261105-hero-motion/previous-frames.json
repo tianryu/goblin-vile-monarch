@@ -1,0 +1,422 @@
+{
+  "enemyPose:human:0": {
+    "rect": [
+      2,
+      2,
+      89,
+      116
+    ],
+    "width": 89,
+    "height": 116,
+    "contentHeight": 98,
+    "anchorX": 0.4977777777777778,
+    "anchorY": 0.05777777777777782,
+    "facing": -1,
+    "source": "game/art/animation/human-attack.png"
+  },
+  "enemyPose:human:1": {
+    "rect": [
+      152,
+      2,
+      89,
+      116
+    ],
+    "width": 89,
+    "height": 116,
+    "contentHeight": 98,
+    "anchorX": 0.4977777777777778,
+    "anchorY": 0.05777777777777782,
+    "facing": -1,
+    "source": "game/art/animation/human-attack.png"
+  },
+  "enemyPose:human:2": {
+    "rect": [
+      302,
+      2,
+      89,
+      116
+    ],
+    "width": 89,
+    "height": 116,
+    "contentHeight": 98,
+    "anchorX": 0.4977777777777778,
+    "anchorY": 0.05777777777777782,
+    "facing": -1,
+    "source": "game/art/animation/human-attack.png"
+  },
+  "enemyPose:human:3": {
+    "rect": [
+      452,
+      2,
+      89,
+      116
+    ],
+    "width": 89,
+    "height": 116,
+    "contentHeight": 98,
+    "anchorX": 0.4977777777777778,
+    "anchorY": 0.05777777777777782,
+    "facing": -1,
+    "source": "game/art/animation/human-attack.png"
+  },
+  "enemyPose:human:4": {
+    "rect": [
+      602,
+      2,
+      89,
+      116
+    ],
+    "width": 89,
+    "height": 116,
+    "contentHeight": 98,
+    "anchorX": 0.4977777777777778,
+    "anchorY": 0.05777777777777782,
+    "facing": -1,
+    "source": "game/art/animation/human-attack.png"
+  },
+  "enemyPose:human:5": {
+    "rect": [
+      752,
+      2,
+      89,
+      116
+    ],
+    "width": 89,
+    "height": 116,
+    "contentHeight": 98,
+    "anchorX": 0.4977777777777778,
+    "anchorY": 0.05777777777777782,
+    "facing": -1,
+    "source": "game/art/animation/human-attack.png"
+  },
+  "enemyPose:dwarf:0": {
+    "rect": [
+      2,
+      146,
+      140,
+      135
+    ],
+    "width": 140,
+    "height": 135,
+    "contentHeight": 98,
+    "anchorX": 0.5082695810564664,
+    "anchorY": 0.0505050505050505,
+    "facing": -1,
+    "source": "game/art/animation/dwarf-attack.png"
+  },
+  "enemyPose:dwarf:1": {
+    "rect": [
+      152,
+      146,
+      140,
+      135
+    ],
+    "width": 140,
+    "height": 135,
+    "contentHeight": 98,
+    "anchorX": 0.5082695810564664,
+    "anchorY": 0.0505050505050505,
+    "facing": -1,
+    "source": "game/art/animation/dwarf-attack.png"
+  },
+  "enemyPose:dwarf:2": {
+    "rect": [
+      302,
+      146,
+      140,
+      135
+    ],
+    "width": 140,
+    "height": 135,
+    "contentHeight": 98,
+    "anchorX": 0.5082695810564664,
+    "anchorY": 0.0505050505050505,
+    "facing": -1,
+    "source": "game/art/animation/dwarf-attack.png"
+  },
+  "enemyPose:dwarf:3": {
+    "rect": [
+      452,
+      146,
+      140,
+      135
+    ],
+    "width": 140,
+    "height": 135,
+    "contentHeight": 98,
+    "anchorX": 0.5082695810564664,
+    "anchorY": 0.0505050505050505,
+    "facing": -1,
+    "source": "game/art/animation/dwarf-attack.png"
+  },
+  "enemyPose:dwarf:4": {
+    "rect": [
+      602,
+      146,
+      140,
+      135
+    ],
+    "width": 140,
+    "height": 135,
+    "contentHeight": 98,
+    "anchorX": 0.5082695810564664,
+    "anchorY": 0.0505050505050505,
+    "facing": -1,
+    "source": "game/art/animation/dwarf-attack.png"
+  },
+  "enemyPose:dwarf:5": {
+    "rect": [
+      752,
+      146,
+      140,
+      135
+    ],
+    "width": 140,
+    "height": 135,
+    "contentHeight": 98,
+    "anchorX": 0.5082695810564664,
+    "anchorY": 0.0505050505050505,
+    "facing": -1,
+    "source": "game/art/animation/dwarf-attack.png"
+  },
+  "enemyPose:elf:0": {
+    "rect": [
+      2,
+      290,
+      120,
+      113
+    ],
+    "width": 120,
+    "height": 113,
+    "contentHeight": 98,
+    "anchorX": 0.5525831564048125,
+    "anchorY": 0.0644293272864701,
+    "facing": -1,
+    "source": "game/art/animation/elf-shoot.png"
+  },
+  "enemyPose:elf:1": {
+    "rect": [
+      152,
+      290,
+      120,
+      113
+    ],
+    "width": 120,
+    "height": 113,
+    "contentHeight": 98,
+    "anchorX": 0.5525831564048125,
+    "anchorY": 0.0644293272864701,
+    "facing": -1,
+    "source": "game/art/animation/elf-shoot.png"
+  },
+  "enemyPose:elf:2": {
+    "rect": [
+      302,
+      290,
+      120,
+      113
+    ],
+    "width": 120,
+    "height": 113,
+    "contentHeight": 98,
+    "anchorX": 0.5525831564048125,
+    "anchorY": 0.0644293272864701,
+    "facing": -1,
+    "source": "game/art/animation/elf-shoot.png"
+  },
+  "enemyPose:elf:3": {
+    "rect": [
+      452,
+      290,
+      120,
+      113
+    ],
+    "width": 120,
+    "height": 113,
+    "contentHeight": 98,
+    "anchorX": 0.5525831564048125,
+    "anchorY": 0.0644293272864701,
+    "facing": -1,
+    "source": "game/art/animation/elf-shoot.png"
+  },
+  "enemyPose:elf:4": {
+    "rect": [
+      602,
+      290,
+      120,
+      113
+    ],
+    "width": 120,
+    "height": 113,
+    "contentHeight": 98,
+    "anchorX": 0.5525831564048125,
+    "anchorY": 0.0644293272864701,
+    "facing": -1,
+    "source": "game/art/animation/elf-shoot.png"
+  },
+  "enemyPose:elf:5": {
+    "rect": [
+      752,
+      290,
+      120,
+      113
+    ],
+    "width": 120,
+    "height": 113,
+    "contentHeight": 98,
+    "anchorX": 0.5525831564048125,
+    "anchorY": 0.0644293272864701,
+    "facing": -1,
+    "source": "game/art/animation/elf-shoot.png"
+  },
+  "enemyPose:elf_melee:0": {
+    "rect": [
+      2,
+      434,
+      121,
+      112
+    ],
+    "width": 121,
+    "height": 112,
+    "contentHeight": 98,
+    "anchorX": 0.5922925457102672,
+    "anchorY": 0.06191780821917792,
+    "facing": -1,
+    "source": "game/art/animation/elf_melee-attack.png"
+  },
+  "enemyPose:elf_melee:1": {
+    "rect": [
+      152,
+      434,
+      121,
+      112
+    ],
+    "width": 121,
+    "height": 112,
+    "contentHeight": 98,
+    "anchorX": 0.5922925457102672,
+    "anchorY": 0.06191780821917792,
+    "facing": -1,
+    "source": "game/art/animation/elf_melee-attack.png"
+  },
+  "enemyPose:elf_melee:2": {
+    "rect": [
+      302,
+      434,
+      121,
+      112
+    ],
+    "width": 121,
+    "height": 112,
+    "contentHeight": 98,
+    "anchorX": 0.5922925457102672,
+    "anchorY": 0.06191780821917792,
+    "facing": -1,
+    "source": "game/art/animation/elf_melee-attack.png"
+  },
+  "enemyPose:elf_melee:3": {
+    "rect": [
+      452,
+      434,
+      121,
+      112
+    ],
+    "width": 121,
+    "height": 112,
+    "contentHeight": 98,
+    "anchorX": 0.5922925457102672,
+    "anchorY": 0.06191780821917792,
+    "facing": -1,
+    "source": "game/art/animation/elf_melee-attack.png"
+  },
+  "enemyPose:elf_melee:4": {
+    "rect": [
+      602,
+      434,
+      121,
+      112
+    ],
+    "width": 121,
+    "height": 112,
+    "contentHeight": 98,
+    "anchorX": 0.5922925457102672,
+    "anchorY": 0.06191780821917792,
+    "facing": -1,
+    "source": "game/art/animation/elf_melee-attack.png"
+  },
+  "enemyPose:elf_melee:5": {
+    "rect": [
+      752,
+      434,
+      121,
+      112
+    ],
+    "width": 121,
+    "height": 112,
+    "contentHeight": 98,
+    "anchorX": 0.5922925457102672,
+    "anchorY": 0.06191780821917792,
+    "facing": -1,
+    "source": "game/art/animation/elf_melee-attack.png"
+  },
+  "enemyPose:elite_heavy:0": {
+    "rect": [
+      4,
+      579,
+      218,
+      198
+    ],
+    "width": 218,
+    "height": 198,
+    "contentHeight": 137,
+    "anchorX": 0.5412844036697247,
+    "anchorY": 0.09090909090909091,
+    "facing": -1,
+    "source": "cocos/non-export/20261105-playtest/heavy-slam/source.png"
+  },
+  "enemyPose:elite_heavy:1": {
+    "rect": [
+      227,
+      579,
+      218,
+      198
+    ],
+    "width": 218,
+    "height": 198,
+    "contentHeight": 137,
+    "anchorX": 0.5412844036697247,
+    "anchorY": 0.09090909090909091,
+    "facing": -1,
+    "source": "cocos/non-export/20261105-playtest/heavy-slam/source.png"
+  },
+  "enemyPose:elite_heavy:2": {
+    "rect": [
+      450,
+      579,
+      218,
+      198
+    ],
+    "width": 218,
+    "height": 198,
+    "contentHeight": 137,
+    "anchorX": 0.5412844036697247,
+    "anchorY": 0.09090909090909091,
+    "facing": -1,
+    "source": "cocos/non-export/20261105-playtest/heavy-slam/source.png"
+  },
+  "enemyPose:elite_heavy:3": {
+    "rect": [
+      673,
+      579,
+      218,
+      198
+    ],
+    "width": 218,
+    "height": 198,
+    "contentHeight": 137,
+    "anchorX": 0.5412844036697247,
+    "anchorY": 0.09090909090909091,
+    "facing": -1,
+    "source": "cocos/non-export/20261105-playtest/heavy-slam/source.png"
+  }
+}

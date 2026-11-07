@@ -1,0 +1,52 @@
+{
+  "checkpoint": "patrol-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "real-whip-input-drops-hidden-courier-money-and-equipment-once",
+      "pass": true
+    },
+    {
+      "name": "worker-hammer-lifts-then-strikes-with-stable-feet-and-waist-pouch",
+      "pass": true
+    },
+    {
+      "name": "enemy-camps-show-no-floating-name-or-headcount",
+      "pass": true
+    },
+    {
+      "name": "prison-input-keeps-captives-and-merchant-input-pays-purse-without-duplicates",
+      "pass": true
+    },
+    {
+      "name": "run-meter-is-visible-depletes-restores-and-freezes-on-pause",
+      "pass": true
+    },
+    {
+      "name": "real-run-input-is-blocked-by-enemy-wall-both-directions-until-it-is-destroyed",
+      "pass": true
+    },
+    {
+      "name": "daytime-patrols-emerge-from-camps-and-allies-roam-before-evening-recall",
+      "pass": true
+    },
+    {
+      "name": "night-raids-do-not-flee-after-half-losses-and-keep-their-engine",
+      "pass": true
+    },
+    {
+      "name": "landscape-phone-stamina-meter-and-waist-pouch-remain-inside-touch-layout",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "workAngles": [
+    115,
+    115,
+    36,
+    1
+  ],
+  "passed": 9
+}

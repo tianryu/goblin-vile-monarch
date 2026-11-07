@@ -1,0 +1,25 @@
+{
+  "failures": [],
+  "passes": [
+    "New goblin has no false spawn flinch",
+    "Real lash starts one recoil and releases hidden coins once",
+    "Chief gesture starts on the same successful lash",
+    "Flinch plants feet rather than sliding the static pose",
+    "Pause freezes reaction clock and coins",
+    "Pause also freezes the seated chief gesture",
+    "Completed recoil resumes normal work without another coin drop",
+    "Chief turns toward the actual goblin being whipped",
+    "Horizontal movement interrupts the planted mount gesture",
+    "Over-whipping starts the original eight-second stun",
+    "Stunned living goblin stays alive and planted through the fall",
+    "Pause freezes the full fall and recovery window",
+    "Living goblin recovers once and remains the same unit",
+    "Actual enemy hit starts recoil and charges health once",
+    "Repeated animation ticks do not charge extra damage",
+    "Death transfers one stable actor identity to its fallen body",
+    "Death drops carried and hidden coins exactly once",
+    "Fallen corpse advances one time then stays a corpse",
+    "Pause freezes corpse age as well as live reactions",
+    "Death of an already fallen goblin does not restart a standing fall"
+  ]
+}

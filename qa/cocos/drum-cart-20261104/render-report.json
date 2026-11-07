@@ -1,0 +1,19 @@
+{
+  "poses": [
+    {
+      "arm": 74,
+      "drum": -53,
+      "bed": -90,
+      "wheel": -91
+    },
+    {
+      "arm": -147,
+      "drum": -53,
+      "bed": -90,
+      "wheel": -91
+    }
+  ],
+  "retreatCost": 3,
+  "floatingJoystick": "touch, multitouch, cancel, release and mouse passed",
+  "errors": []
+}

@@ -1,0 +1,24 @@
+{
+  "failures": [
+    "Empty archer then approaches for melee without inventing another arrow",
+    "Hunter remains planted through the generated release pose"
+  ],
+  "passes": [
+    "human: spawn cooldown is not a fake attack",
+    "human: actual strike starts one display clock",
+    "human: display clock advances without extra damage or money",
+    "human: model pause freezes attack clock",
+    "elf: spawn cooldown is not a fake attack",
+    "elf: actual strike starts one display clock",
+    "elf: display clock advances without extra damage or money",
+    "elf: model pause freezes attack clock",
+    "dwarf: spawn cooldown is not a fake attack",
+    "dwarf: actual strike starts one display clock",
+    "dwarf: display clock advances without extra damage or money",
+    "dwarf: model pause freezes attack clock",
+    "-1: enemy contacts front of mount instead of its centre",
+    "1: enemy contacts front of mount instead of its centre",
+    "Last arrow completes its release stance after ammo becomes zero",
+    "Hunter resumes retreat after release without another damage settlement"
+  ]
+}

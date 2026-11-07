@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "fresh UI and cave wall",
+    "new campaign warning and cancel",
+    "main and backup replaced",
+    "touch recall",
+    "touch corpse pickup",
+    "low-health tint",
+    "slam warning and impact",
+    "both revival buttons and truce",
+    "old reward style and mock cancellation"
+  ],
+  "viewport": [
+    844,
+    390
+  ],
+  "errors": []
+}

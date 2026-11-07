@@ -1,0 +1,18 @@
+{
+  "status": "proposal-not-implemented",
+  "date": "2026-11-03",
+  "selectionInputs": ["globalDay"],
+  "dailyTotal": {"firstDay": 6, "incrementThroughDay20": 2, "incrementFromDay21": 3, "cap": 80},
+  "attributeGrowth": {"everyDays": 5, "baseIncrease": 0.05, "maxIncrease": 1},
+  "eliteBudgetEveryDays": 5,
+  "bossBudgetCost": 2,
+  "phases": [
+    {"fromDay": 1, "weights": {"human": 70, "elf": 30}, "elites": [], "engines": {}},
+    {"fromDay": 5, "weights": {"human": 40, "elf": 30, "jumper": 20, "dwarf": 10}, "elites": ["heavy"], "engines": {}},
+    {"fromDay": 10, "weights": {"shield": 40, "elf": 25, "dwarf": 20, "jumper": 15}, "elites": ["heavy", "longbow", "bulwark", "charger"], "engines": {"ram": 1}},
+    {"fromDay": 15, "weights": {"shield": 40, "elf": 25, "dwarf": 20, "jumper": 15}, "elites": ["heavy", "longbow", "bulwark", "charger", "engineer"], "engines": {"catapult": 1}},
+    {"fromDay": 20, "weights": {"shield": 35, "mage": 25, "elf": 20, "dwarf": 10, "jumper": 10}, "elites": ["heavy", "longbow", "bulwark", "charger", "engineer", "pyromancer"], "bosses": ["siege_boss"], "engines": {"firecatapult": 1}},
+    {"fromDay": 25, "weights": {"shield": 35, "mage": 25, "elf": 20, "dwarf": 10, "jumper": 10}, "elites": ["heavy", "longbow", "bulwark", "charger", "engineer", "pyromancer"], "bosses": ["siege_boss", "fire_boss"], "engines": {"firecatapult": 1}},
+    {"fromDay": 30, "weights": {"shield": 30, "mage": 30, "dwarf": 15, "jumper": 15, "elf": 10}, "elites": ["heavy", "longbow", "bulwark", "charger", "engineer", "pyromancer"], "bosses": ["siege_boss", "fire_boss"], "engines": {"firecatapult": 1, "catapult": 1}}
+  ]
+}

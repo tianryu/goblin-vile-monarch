@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-11-05T10:06:21.681Z",
+  "results": [
+    {
+      "name": "遗体收益与重复结算",
+      "pass": true,
+      "details": {
+        "manual": 5,
+        "auto": 1
+      }
+    },
+    {
+      "name": "苦工一级主屋有爪牙仍先救活口，多人预约不同目标",
+      "pass": true,
+      "details": [
+        390,
+        391
+      ]
+    },
+    {
+      "name": "施工人员不抢俘虏，其他苦工不再被全局施工任务挡住",
+      "pass": true
+    },
+    {
+      "name": "爪牙不拖活口，苦工避开有敌人和敌墙阻挡的伤兵",
+      "pass": true
+    },
+    {
+      "name": "二级主屋连续搬两名活口，俘虏成交价4至6，装备拆卖一币",
+      "pass": true,
+      "details": {
+        "prices": [
+          5,
+          5
+        ],
+        "gearRule": "manual path checked separately"
+      }
+    },
+    {
+      "name": "苦工白天积攒、每晚仅一次送款，读档不会再次送款",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(n.carry>=4)\n\n    at C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:47:71\n    at check (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:11:44)\n    at Object.<anonymous> (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:45:1)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)"
+    },
+    {
+      "name": "箭塔范围和攻速提高，箭矢命中移动猎物且不重复伤害",
+      "pass": true
+    },
+    {
+      "name": "旧档夜晚比例迁移，月升月落、白天时长和同日出兵不重复",
+      "pass": true,
+      "details": {
+        "night": 80,
+        "migration": 160
+      }
+    },
+    {
+      "name": "夜袭结束后出征不因敌多人少自动逃跑，重伤仍会退却",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:62:12\n    at check (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:11:44)\n    at Object.<anonymous> (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:60:1)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)"
+    },
+    {
+      "name": "鼓车追上行走和奔跑首领、转向不等换把手，不限制队伍",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(Math.max(...gaps)<215)\n\n    at C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:68:12\n    at check (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:11:44)\n    at Object.<anonymous> (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:65:1)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)"
+    },
+    {
+      "name": "鼓车攻城时停留，胜利返回，玩家行走比之前快且不穿敌墙",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'return' !== 'hold'\n\n    at C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:72:211\n    at check (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:11:44)\n    at Object.<anonymous> (C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\qa\\cocos\\battle-economy-20261105\\verify-model.cjs:71:1)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)"
+    }
+  ]
+}

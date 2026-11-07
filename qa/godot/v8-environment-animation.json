@@ -1,0 +1,31 @@
+{
+  "scope": "Pine foliage and tribal cloth in isolated desktop Edge software WebGL",
+  "passes": [
+    "tree_pine/wind: complete wind cycle advances",
+    "tree_pine/wind: one fixed placement per object",
+    "tree_pine/wind: source base stays fixed within one source pixel",
+    "tree_pine/wind: no coin or dialog side effects",
+    "tree_pine/wind: pause freezes the current wind pose",
+    "tribal_banner/wind: complete wind cycle advances",
+    "tribal_banner/wind: one fixed placement per object",
+    "tribal_banner/wind: source base stays fixed within one source pixel",
+    "tribal_banner/wind: no coin or dialog side effects",
+    "Flag proximity glow remains available",
+    "tribal_banner/wind: pause freezes the current wind pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "id": "tree_pine/wind",
+      "position": -430.467056274414,
+      "source_frames": 19
+    },
+    {
+      "id": "tribal_banner/wind",
+      "position": -1240,
+      "source_frames": 19
+    }
+  ]
+}

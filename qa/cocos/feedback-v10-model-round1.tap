@@ -1,0 +1,23 @@
+✔ V10 treasury repeated clicks keep target and conserve exact coins (2.6158ms)
+✔ V10 one-body interaction range and stationary focus survive a whip (0.4745ms)
+✔ V10 lure has spaced arrivals and a fresh quota every five minutes (118.2045ms)
+✔ V10 bait bought after scheduled time never spawns instantly (15.1212ms)
+✔ V10 a hauling craftsman is never stolen by construction (0.5216ms)
+✔ V10 whip drops carried gear once and preserves total gear (0.9968ms)
+✔ V10 full flag gives feedback without spending or adding a unit (0.4956ms)
+✔ V10 flag relocates only when a new wall finishes (10.5926ms)
+✔ V10 tower occupies a real hunter and releases him on draft (3.6491ms)
+✔ V10 trader arrives with a journey, can trade directly, then departs (40.9758ms)
+✔ V10 garrison budgets and heroes are finite and block a premature capture (0.3912ms)
+✔ V10 rear camp cannot be captured with surviving gates or towers (0.774ms)
+✔ V10 David actually rallies his nearby garrison (26.5319ms)
+✔ V10 long-map migration preserves player resources and progress (0.488ms)
+✔ V10 running is faster and exhaustion does not strobe every simulation step (2.4539ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 343.7791

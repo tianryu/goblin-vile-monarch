@@ -1,0 +1,22 @@
+{
+  "checkpoint": "starter-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "errors": [],
+  "failedRequests": [],
+  "checks": [
+    {
+      "name": "new-game-starts-with-built-lure-no-payment-and-no-free-bait",
+      "pass": true
+    },
+    {
+      "name": "actual-tool-payment-keeps-worker-id-and-displays-new-laborer-name",
+      "pass": true
+    },
+    {
+      "name": "old-unbuilt-lure-is-granted-once-through-real-load-without-extra-gold",
+      "pass": true
+    }
+  ],
+  "passed": true
+}

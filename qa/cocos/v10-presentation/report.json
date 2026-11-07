@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "name": "human-merchant-baked-green-outline-and-gold-selection-mask",
+      "pass": true,
+      "greenOutlinePixels": 2723
+    },
+    {
+      "name": "separate-forge-stock-and-small-tool-stalls-render",
+      "pass": true
+    },
+    {
+      "name": "eight-prisoners-use-two-real-sized-rows",
+      "pass": true
+    },
+    {
+      "name": "armored-hunter-keeps-gold-highlight-during-hit",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "realPhone": false,
+  "passed": 4
+}

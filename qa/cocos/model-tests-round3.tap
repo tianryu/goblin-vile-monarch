@@ -1,0 +1,28 @@
+✔ new campaign starts with exactly four idle goblins, no thief systems or auto camps (1.139ms)
+✔ part-paid construction refunds carried coins on departure and load, exactly once (2.7204ms)
+✔ tool purchase leaves real inventory and an idle goblin walks there to pick it up (3.7822ms)
+✔ construction waits for labor and completes without duplicate cost (13.0107ms)
+✔ all professions react to whipping, reveal hidden coins and overstun (0.7382ms)
+✔ hall base growth and equipment percentage compose without stacking upgrades (12.2373ms)
+✔ manufacturing consumes one pair of stripped equipment and one expensive payment (0.2964ms)
+✔ recruitment bait pauses at population cap and never silently consumes it (36.5168ms)
+✔ manual treasury withdrawal respects purse cap and surplus gains go to treasury (0.222ms)
+✔ nearby daytime guard attacks player instead of waiting for night (3.7859ms)
+✔ raid retreats at casualty threshold, never at dawn, and abandons machines once (2.8532ms)
+✔ shield reduces frontal arrows but melee remains effective (0.1297ms)
+✔ machine reserves exactly two existing workers and two flag slots atomically (0.3228ms)
+✔ autonomous dispatch advances without following monarch, no brute prerequisite (5.4657ms)
+✔ cleared region rebuilds unless its own wall is completed, no repeat first reward (48.8012ms)
+✔ looting and prisoner hauling use one carrier, strip each enemy only once (3.856ms)
+✔ hunter sees real animals and creates income by actual hits (8.3137ms)
+✔ civilian flees at run speed while idle residents spread inside safe area (11.5221ms)
+✔ reward completion receipts are idempotent and repeated mount ads remain useful (0.1506ms)
+✔ death and fifth camp victory settle once; restart is free and retains unlocked mounts (0.1888ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 259.3772

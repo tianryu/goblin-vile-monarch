@@ -1,0 +1,35 @@
+{
+  "version": "0.10.3",
+  "packageBytes": 19887058,
+  "sha256": "c1e4cf4fca991a9730136590a80154146dd6c64b2d14ff45dea14f9528845f12",
+  "sourceHashes": {
+    "cocos\\assets\\scripts\\view\\ArtBank.ts": "934ceea8cacde316052fb451520b4e285f29167cf3e9e695a15da18182307fdc",
+    "cocos\\assets\\scripts\\view\\ChapterView.ts": "c918040617280e071f62ef63f0e57fc4857bf14b9675155271349e9e687db299",
+    "cocos\\assets\\scripts\\view\\Controls.ts": "bca5afaa65e3cba49da8ee3e0a6d71a3421f805bffd5740f62bbe7cfd9869ecb",
+    "cocos\\assets\\scripts\\view\\CutoutMotion.ts": "547174144b323d0ea85ff7c18b34a0d52b3a8c891fb88b51c40b180d1aac0a83",
+    "cocos\\assets\\scripts\\view\\GameView.ts": "562f66a736cce2826bda11ebc845c3bacf1bc78025826c235b8cd093d6170665",
+    "cocos\\assets\\scripts\\view\\HangingMenu.ts": "ea79ca62e9cb78d4f0e3776579c64a732a2d017afe5fd505a7d0fd8a99e09427",
+    "cocos\\assets\\scripts\\view\\Painter.ts": "8377781e65cb45c1f70bff224eb69c11487c665faf411eb42866b5c282bc3a32",
+    "cocos\\assets\\scripts\\view\\Soundscape.ts": "09caa8a813db763f2dfe374ba02ad8e32e0a6074a12efe38e3e6baab4551deb0",
+    "cocos\\assets\\scripts\\view\\Transitions.ts": "3627c294c0f2a0533756fbd4f762871bee1919356eef166eddbf8697e61c8f23",
+    "cocos\\assets\\scripts\\MonarchGame.ts": "cbdd3a1ebc938710809bc4941a4c97680bffa1c6010514b39113210e25e17b7a"
+  },
+  "gameConfig": {
+    "deviceOrientation": "landscape",
+    "networkTimeout": {
+      "request": 5000,
+      "connectSocket": 5000,
+      "uploadFile": 5000,
+      "downloadFile": 500000
+    },
+    "subPackages": [
+      {
+        "name": "resources",
+        "root": "subpackages/resources/"
+      }
+    ],
+    "productVersion": "0.10.3",
+    "convertScriptVersion": "2.0.4-ts"
+  },
+  "realPhone": false
+}

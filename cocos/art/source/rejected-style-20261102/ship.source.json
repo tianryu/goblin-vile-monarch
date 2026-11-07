@@ -1,0 +1,13 @@
+{
+  "assetName": "ship",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-3918bb1f-1017-4852-b515-e3a6d30f243c.png",
+  "prompt": "One independent large medieval TROOP TRANSPORT SHIP game asset, not a scene screenshot. Match exactly the supplied game's simple flat hand-painted 2D cartoon buildings: broad muted matte brown/cream/blue color patches, thin irregular dark contours, low detail, no 3D model render, no pixel blocks. Strict broadside side elevation, wooden ship faces RIGHT, two tall masts and furled blue-cream sails, a few cargo crates and a small blue military tent on deck, no castle walls and no people. IMPORTANT for a side-scrolling walk plane: deck and straight wooden boarding gangplank extending to the LEFT must lie on one horizontal line LOW in the image; hull BELOW the deck is shallow, only about 15 percent of total sprite height, while masts/sails take the upper 85 percent. Complete keel, bow, stern, sails and gangplank inside canvas. No sea, no waterline painted, no shore, no sky, no ground, no reflections, no text or effects. GENUINELY transparent background, generous margins. Single connected ship-and-gangplank prop, wide 2.6:1 composition.",
+  "edge": "building",
+  "reviewed": false,
+  "review": "与当前实机基准画风不一致，不得作为合格成品素材采用。",
+  "generator": "builtin-imagegen",
+  "facing": 1,
+  "priorStructureReview": "双桅木船与左侧跳板完整，低甲板、浅船体，无高墙与烘焙海面。",
+  "styleRejected": true,
+  "styleApproved": false
+}

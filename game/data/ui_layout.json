@@ -1,0 +1,20 @@
+{
+  "version": 5,
+  "margin": 24,
+  "title_y": 18,
+  "subtitle_y": 57,
+  "sheet_y": 90,
+  "sheet_bottom": 128,
+  "body_y": 104,
+  "body_bottom": 144,
+  "footer_bottom": 22,
+  "feedback_bottom": 120,
+  "button_height": 64,
+  "back_width": 140,
+  "primary_width": 220,
+  "secondary_width": 184,
+  "card_gap": 14,
+  "card_max_height": 232,
+  "font_body": 20,
+  "font_title": 34
+}

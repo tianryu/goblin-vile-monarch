@@ -1,0 +1,12 @@
+{
+  "name": "goblinmonarch-v10",
+  "platform": "web-mobile",
+  "debug": true,
+  "buildPath": "project://build",
+  "outputName": "functional-preview-v10",
+  "startScene": "ed9c19c0-f798-4d1c-9717-015ca7d55722",
+  "scenes": [{ "url": "db://assets/scenes/Main.scene", "uuid": "ed9c19c0-f798-4d1c-9717-015ca7d55722" }],
+  "md5Cache": true,
+  "sourceMaps": true,
+  "packages": { "web-mobile": { "orientation": "landscape" }, "taptap-minigame-tools": { "enableTapConvert": false } }
+}

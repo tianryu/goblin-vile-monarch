@@ -1,0 +1,21 @@
+{
+  "scope": "Rank idle loops, isolated desktop Edge software WebGL",
+  "passes": [
+    "hunter_3: breathing loop advances",
+    "hunter_3: one opaque body, no transition clone",
+    "hunter_3: feet remain planted",
+    "hunter_3: proximity target retains its outline",
+    "hunter_3: visual loop has no coin or dialog side effects",
+    "hunter_3: pause freezes current pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "name": "hunter_3",
+      "source_frames": 19,
+      "decoded_bytes": 11223136
+    }
+  ]
+}

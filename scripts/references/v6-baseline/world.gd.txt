@@ -1,0 +1,381 @@
+extends Node2D
+
+var model
+var art
+var camera_x=-300.0
+var elapsed=0.0
+var visible_objects=0
+var scale_factor=0.533333
+var size=Vector2(512,256)
+var ground=166.4
+var font
+var reflecting=false
+var canvas
+var surface
+var water_node
+var water_material
+var daylight=1.0
+var interpolation=1.0
+var previous={}
+var effects=[]
+var last_visual=0
+var slot_count=0
+var ghost_key=""
+var focus_target={}
+
+func capture_previous():
+	previous={"hero":float(model.state.hero.x),"trader":float(model.state.trader.x)}
+	for u in model.state.units:previous[u.id]=float(u.x)
+	for e in model.state.enemies:previous[e.id]=float(e.x)
+
+func render_x(key,current):
+	var before=float(previous.get(key,current))
+	if model.paused() or abs(before-current)>80:return float(current)
+	return lerpf(before,float(current),interpolation)
+
+func _ready():
+	texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR
+	canvas=self
+	water_node=TextureRect.new();water_node.texture=art.texture("water");water_node.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;water_node.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	water_material=ShaderMaterial.new();water_material.shader=load("res://game/shaders/water_flow.gdshader");water_node.material=water_material;add_child(water_node)
+	surface=load("res://game/scripts/world_surface.gd").new();surface.world=self;add_child(surface)
+
+func _process(delta):
+	if model==null:return
+	if not model.paused():elapsed+=minf(delta,0.1)
+	camera_x=lerpf(camera_x,render_x("hero",model.state.hero.x),1-exp(-delta*6))
+	size=get_viewport_rect().size;scale_factor=size.y/480.0;ground=size.y*0.65
+	water_node.position=Vector2(0,size.y*0.72);water_node.size=Vector2(size.x,size.y*0.28)
+	water_material.set_shader_parameter("flow_time",elapsed)
+	water_node.modulate=Color(0.45,0.51,0.64).lerp(Color.WHITE,daylight)
+	focus_target=model.find_target()
+	_collect_effects()
+	effects=effects.filter(func(e):return elapsed-float(e.born)<float(e.duration))
+	queue_redraw();surface.queue_redraw()
+
+func sx(x):return (float(x)-camera_x)*scale_factor+size.x/2
+func visible(x,margin=180):return abs(float(x)-camera_x)<size.x/scale_factor/2+margin
+
+func layer(name,parallax,tint=Color.WHITE,offset=0.0):
+	var width=960.0*scale_factor
+	var shift=-camera_x*scale_factor*parallax+offset
+	var first=int(floor(-shift/width))
+	var count=int(ceil(size.x/width))+1
+	var band={"far":Vector2(0.295,0.655),"middle":Vector2(0,0.655),"land":Vector2(0.625,0.775),"foreground":Vector2(0.845,1.0)}.get(name,Vector2(0,1))
+	for i in range(first,first+count):
+		# Alternate normal/mirrored source tiles: matching border pixels at every join.
+		art.draw_band(canvas,name,Rect2(shift+i*width,0,width+0.5,size.y),band.x,band.y,tint,posmod(i,2)==1)
+
+func sprite(name,x,foot,height,face=1,tint=Color.WHITE,width=0.0):
+	art.at(canvas,name,sx(x),foot,height*scale_factor,face<0,tint,width*scale_factor)
+
+func _draw():
+	if model==null or art==null:return
+	canvas=self
+	size=get_viewport_rect().size
+	scale_factor=size.y/480.0
+	ground=roundf(size.y*0.65)
+	var s=model.state
+	var time=float(s.time)/model.DAY
+	daylight=1.0
+	if s.time<12:daylight=lerpf(0.35,1.0,float(s.time)/12)
+	elif s.time>=120:daylight=lerpf(1.0,0.15,clampf((float(s.time)-120)/20,0,1))
+	var sky=Color(0.20,0.27,0.39).lerp(Color(1.0,1.03,1.0),daylight)
+	if s.time>=120 and s.time<140:sky=sky.lerp(Color(0.85,0.64,0.48),sin((float(s.time)-120)/20*PI)*0.4)
+	art.draw(canvas,"sky_base",Rect2(Vector2.ZERO,size),sky)
+	var sun_progress=clampf(float(s.time)/140,0,1)
+	var sun_x=size.x*(0.1+sun_progress*0.8)
+	var sun_y=size.y*(0.58-sin(sun_progress*PI)*0.47)
+	if s.time<140:art.at(canvas,"sun",sun_x,sun_y,23*scale_factor,false,Color(1,1,1,clampf(daylight+0.15,0,1)))
+	else:art.at(canvas,"moon",size.x*0.68,size.y*0.22,25*scale_factor)
+	for i in range(4):
+		var x=fposmod(i*size.x*0.37+elapsed*(1.0+i*0.2),size.x+120)-60
+		art.at(canvas,"cloud",x,size.y*(0.15+0.075*(i%3)),27*scale_factor,false,Color(1,1,1,0.55))
+	var light=Color(0.43,0.49,0.61).lerp(Color.WHITE,daylight)
+	layer("far",0.10,light)
+	layer("middle",0.32,light)
+
+func draw_surface(target_canvas):
+	canvas=target_canvas
+	var s=model.state
+	var light=Color(0.43,0.49,0.61).lerp(Color.WHITE,daylight)
+	layer("land",1.0,light)
+	var object_light=Color(0.62,0.66,0.76).lerp(Color.WHITE,daylight)
+	visible_objects=0
+	for b in s.buildings:
+		if visible(b.x):_building(b,object_light);visible_objects+=1
+	_focused_ghost()
+	for d in s.drops:
+		if visible(d.x):sprite({"gold":"coin","scrap":"scrap","flag":"flag"}.get(d.kind,"coin"),d.x,ground+2,12,1,light);visible_objects+=1
+	for e in s.enemies:
+		if visible(e.x):_enemy(e,object_light);visible_objects+=1
+	for u in s.units:
+		if visible(u.x):_unit(u,object_light);visible_objects+=1
+	var trader=s.trader.duplicate();trader.x=render_x("trader",trader.x)
+	if trader.phase!="away" and visible(trader.x):
+		_prison_cart(trader.x+65,light)
+		sprite("trader",trader.x,ground+2,41,-1 if trader.phase=="leaving" else 1,light)
+	_hero(object_light)
+	for shot in s.shots:
+		var pos=lerpf(float(shot.x),float(shot.to),1-float(shot.left)/float(shot.total))
+		var elevation=20+float(shot.get("lift",0))*float(shot.left)/float(shot.total)
+		if visible(pos):sprite("arrow",pos,ground-elevation*scale_factor,5,1 if shot.to>shot.x else -1,object_light)
+	if not model.global_data.settings.get("low_fx",false):_reflections(light)
+	layer("foreground",1.15,light)
+	_interaction_preview()
+	_draw_effects()
+
+func _reflections(light):
+	# Reflection is a normal transform of the original AI bitmaps, with no generated effects.
+	reflecting=true
+	canvas.draw_set_transform(Vector2(sin(elapsed*0.7)*1.3*scale_factor,size.y*0.77+ground*0.38+sin(elapsed)*0.6*scale_factor),0,Vector2(1,-0.38+sin(elapsed*0.8)*0.002))
+	var tint=Color(light.r*0.8,light.g*0.9,light.b,0.17)
+	for b in model.state.buildings:
+		if visible(b.x):_building(b,tint)
+	for u in model.state.units:
+		if visible(u.x):_unit(u,tint)
+	for e in model.state.enemies:
+		if visible(e.x):_enemy(e,tint)
+	_hero(tint)
+	var t=model.state.trader
+	if t.phase!="away" and visible(t.x):_prison_cart(t.x+65,tint);sprite("trader",t.x,ground+2,41,-1 if t.phase=="leaving" else 1,tint)
+	canvas.draw_set_transform(Vector2.ZERO,0,Vector2.ONE);reflecting=false
+
+func _hero(light):
+	var p=model.state.hero
+	var tint=light
+	if not reflecting and p.hurt>0:tint=light.lerp(Color(1.0,0.65,0.58,light.a),0.35)
+	sprite("rider_"+p.mount,render_x("hero",p.x),ground+6-float(p.fly)*scale_factor,66,p.face,tint)
+
+func _bar(x,y,progress,tint=Color.WHITE):
+	art.draw(canvas,"ui_bar",Rect2(x-20,y,40,6),tint)
+	if progress>0:art.draw(canvas,"ui_bar_fill",Rect2(x-18,y+2,36*clampf(progress,0,1),2),tint)
+
+func building_height(b,level=-1):
+	var rank=int(b.level) if level<0 else level
+	match b.kind:
+		"hall":return 132.0+8*maxi(0,rank-1)
+		"tools":return 114.0
+		"merchant_gold","merchant_army","merchant_mount":return 116.0
+		"den":return 114.0
+		"prison":return 96.0+8*maxi(0,rank-1)
+		"wall":return 58.0+14*maxi(0,rank-1)
+		"tower":return 112.0+12*maxi(0,rank-1)
+		"net":return 80.0+8*maxi(0,rank-1)
+		"rock":return 76.0+8*maxi(0,rank-1)
+		"camp":return 68.0
+		"wreck":return 72.0
+		"outpost":return 132.0
+	return 45.0
+
+func _site_ghost_active(b):
+	var target=focus_target
+	return target.get("object_id",0)==b.id and not target.get("disabled",false) and target.get("cost",0)>0 and target.get("shop","")==""
+
+func _building(b,light):
+	var x=b.x
+	var height=building_height(b)
+	if b.level==0 and b.kind in ["wall","tower","net","rock","prison","den"]:
+		if b.job.is_empty() and not _site_ghost_active(b):sprite("build_site_sign",x,ground,48,1,light)
+		if not reflecting and not b.job.is_empty():
+			_ghost_building(b,1,Color(light.r,light.g,light.b,0.5))
+			_bar(sx(x),ground-(building_height(b,1)+14)*scale_factor,1-float(b.job.left)/float(b.job.total))
+		return
+	match b.kind:
+		"hall":sprite("hall_ruin" if b.hp<=0 else "hall"+str(b.level),x,ground,65 if b.hp<=0 else height,1,light)
+		"tools","merchant_gold","merchant_army","merchant_mount":
+			var role=b.get("role","idle")
+			sprite(role,x-10,ground-22*scale_factor,39,1,light)
+			var key="tool_"+role if b.kind=="tools" else b.kind.replace("merchant_","market_")
+			sprite(key,x,ground,height,1,light)
+		"den":
+			sprite("thieves_den",x,ground,height,1,light)
+		"prison":
+			if b.level>0:
+				var width=230.0+float(b.level-1)*30
+				var suffix="" if b.level==2 else str(b.level)
+				sprite("prison_back"+suffix,x,ground,height,1,light,width)
+				var count=model.state.captives.size()
+				for i in range(count):
+					var c=model.state.captives[i]
+					var cx=x-width*0.37+float(i+0.5)*width*0.74/maxi(1,count)
+					# Feet, heads and limbs are kept inside the closed front-frame bounds.
+					sprite("captive_"+c.type,cx,ground-7*scale_factor,35,1,light)
+				sprite("prison_front"+suffix,x,ground,height,1,light,width)
+		"wall":
+			sprite("wall"+str(b.level),x,ground,height,1,light)
+		"tower","net","rock":
+			sprite({"tower":"tower","net":"net_trap","rock":"rock_trap"}[b.kind]+("2" if b.level>=2 else ""),x,ground,height,1,light)
+		"camp":
+			sprite("hall1",x,ground,height,1,light)
+			for i in range(int(b.stock)):sprite("idle",x-24+i*22,ground+2,27,1,light)
+		"wreck":
+			if b.level>0:sprite("battlefield_wreck",x,ground,height,1,light)
+		"chest":
+			if b.level>0:sprite("chest",x,ground,18,1,light)
+		"outpost":
+			if b.hp>0:sprite("outpost",x,ground,height,-b.side,light)
+		"rally":sprite("flag",x,ground,43,1,light)
+		"supply":
+			if b.task=="wheel":_cart(x,ground,light,b.ready_day<=model.state.day)
+			elif b.task=="keys":
+				sprite("prison_back",x,ground,43,1,light,79)
+				if b.ready_day<=model.state.day:sprite("idle",x,ground-4*scale_factor,25,1,light)
+				sprite("prison_front",x,ground,43,1,light,79)
+			elif b.ready_day<=model.state.day:sprite("arrows" if b.task=="arrows" else "chest",x,ground,25,1,light)
+		"trader_stop":return
+	if reflecting:return
+	if not b.job.is_empty():
+		if b.job.mode=="upgrade":_ghost_building(b,int(b.level)+1,Color(light.r,light.g,light.b,0.38))
+		var progress=1-float(b.job.left)/float(b.job.total)
+		_bar(sx(x),ground-height*scale_factor-12,progress)
+	elif b.has("hp") and b.hp<b.max_hp and b.level>0:
+		_bar(sx(x),ground-(height+14)*scale_factor,b.hp/b.max_hp,Color(1,0.7,0.6))
+
+func _cart(x,foot,light,wheels):
+	sprite("wagon",x,foot+(-7 if wheels else 1)*scale_factor,35,1,light)
+	if wheels:
+		for dx in [-22,23]:sprite("wheel",x+dx,foot+1,19,1,light)
+
+func _prison_cart(x,light):
+	_cart(x,ground+3,light,true)
+	var foot=ground-27*scale_factor
+	sprite("prison_back1",x,foot,39,1,light,81)
+	var cargo=model.state.trader.get("cargo",[])
+	for i in range(mini(3,cargo.size())):
+		sprite("captive_"+cargo[i],x-24+i*24,foot-5*scale_factor,25,1,light)
+	sprite("prison_front1",x,foot,39,1,light,81)
+
+func _unit(u,light):
+	var unit_x=render_x(u.id,u.x)
+	var y=ground+3+float(u.id%3)*scale_factor
+	if u.get("on_tower",0)>0:
+		var tower=model.by_id(model.state.buildings,u.on_tower)
+		if not tower.is_empty():y-=model.tower_stand_height(tower.level)*scale_factor
+	if not u.cargo.is_empty() and u.cargo.kind=="captive":
+		var behind=unit_x-u.face*43
+		# One hauler leads the net, connected by the separately generated rope bitmap.
+		var hand=unit_x-u.face*9
+		var attachment=behind+u.face*8
+		art.draw(canvas,"rope",Rect2(minf(sx(hand),sx(attachment)),y-10*scale_factor,abs(sx(hand)-sx(attachment)),2*scale_factor),light,u.face<0)
+		sprite("captive_"+u.cargo.type,behind,y,21,1,light)
+		sprite("net",behind,y+1,26,1,light)
+	sprite(u.role+("_"+str(int(u.get("rank",1))) if int(u.get("rank",1))>1 and u.role!="idle" else ""),unit_x,y,38,u.face,light)
+	if u.hidden>0:
+		sprite("pocket",unit_x-9*u.face,y-7*scale_factor,10+mini(4,u.hidden),u.face,light)
+		if u.hidden>3:sprite("pocket",unit_x+9*u.face,y-8*scale_factor,12,u.face,light)
+	if not u.cargo.is_empty() and u.cargo.kind!="captive":sprite("flag" if u.cargo.kind=="flag" else "scrap",unit_x-10*u.face,y-12*scale_factor,21,u.face,light)
+	if not u.mission.is_empty() and u.mission.stage=="return":
+		if u.mission.kind=="wheel":sprite("wheel",unit_x+u.face*18,ground+3,24,u.face,light)
+		elif u.mission.kind=="keys":
+			for i in range(2):sprite("idle",unit_x-u.face*(29+22*i),ground+3,26,u.face,light)
+			sprite("key",unit_x+u.face*10,y-11*scale_factor,10,u.face,light)
+		else:sprite("arrows" if u.mission.kind=="arrows" else "chest",unit_x-14*u.face,y-12*scale_factor,20,u.face,light)
+
+func _enemy(e,light):
+	var enemy_x=render_x(e.id,e.x)
+	if e.mode=="downed":
+		sprite("captive_"+e.type,enemy_x,ground+3,20,e.side,light)
+		sprite("net",enemy_x,ground+4,25,e.side,light)
+	elif e.type=="siege":_cart(enemy_x,ground,light,true);sprite("dwarf",enemy_x+38*e.side,ground,33,e.side,light)
+	elif e.type=="elf" and e.ammo<=0:
+		sprite("captive_elf",enemy_x,ground+2,37,e.side,light)
+		sprite("club",enemy_x-e.side*10,ground-5*scale_factor,19,e.side,light)
+	else:sprite(e.type,enemy_x,ground+2,37 if e.type!="dwarf" else 31,e.side,light)
+
+# One coin silhouette per required coin. Actual art is shared with the purse.
+func slot_position(x,cost,index):
+	var columns=mini(10,cost);var row=int(index/columns);var in_row=mini(columns,cost-row*columns)
+	var height=94.0
+	var b=model.by_id(model.state.buildings,focus_target.get("object_id",0))
+	if not b.is_empty():height=building_height(b,mini(int(b.level)+1,int(model.upgrade_info(b).get("max",b.level+1))))
+	var rows=int(ceil(float(cost)/columns))
+	var top=maxf(88*scale_factor,ground-(height+24+(rows-1)*20)*scale_factor)
+	return Vector2(sx(x)+(float(index%columns)-(in_row-1)*0.5)*19*scale_factor,top+row*20*scale_factor)
+
+func _interaction_preview():
+	slot_count=0
+	var target=focus_target
+	if target.is_empty() or target.get("disabled",false):return
+	var cost=int(target.get("cost",0))
+	if cost<=0 or target.get("shop","")!="":return
+
+	var paid=int(model.state.get("payment",{}).get("paid",0))
+	slot_count=cost
+	for i in range(cost):
+		var pos=slot_position(target.x,cost,i)
+		var tint=Color(0.78,0.79,0.66,0.27) if i>=paid else Color(1.0,0.91,0.65,0.95)
+		art.at(canvas,"coin",pos.x,pos.y+7*scale_factor,14*scale_factor,false,tint)
+
+func _focused_ghost():
+	ghost_key=""
+	var target=focus_target
+	if target.is_empty() or target.get("disabled",false) or target.get("cost",0)<=0 or target.get("shop","")!="":return
+	var b=model.by_id(model.state.buildings,target.get("object_id",0))
+	if not b.is_empty() and b.kind in ["hall","wall","tower","prison","den","net","rock"]:
+		if not ("修复" in target.label or "补充" in target.label):ghost_key=_ghost_building(b,int(b.level)+1,Color(0.96,0.98,0.80,0.48+0.035*sin(elapsed*2.6)))
+
+func _ghost_building(b,next,tint):
+	var key="";var h=building_height(b,next)
+	if b.kind=="hall":key="hall"+str(mini(3,next))
+	elif b.kind=="wall":key="wall"+str(mini(3,next))
+	elif b.kind=="tower":key="tower"+("2" if next>=2 else "")
+	elif b.kind=="prison":key="prison_back"+("" if next==2 else str(mini(3,next)))
+	elif b.kind=="den":key="thieves_den"
+	elif b.kind in ["net","rock"]:key=("net_trap" if b.kind=="net" else "rock_trap")+("2" if next>=2 else "")
+	if key!="":
+		var width=230.0+float(next-1)*30 if b.kind=="prison" else 0.0
+		sprite(key,b.x,ground,h,1,tint,width)
+		if b.kind=="prison":sprite(key.replace("back","front"),b.x,ground,h,1,tint,width)
+	return key
+
+func _push_effect(e):
+	e.born=elapsed;effects.append(e)
+	if effects.size()>128:effects.pop_front()
+
+func _collect_effects():
+	if model.visual_events.is_empty() or int(model.visual_events[-1].serial)<=last_visual:return
+	for e in model.visual_events:
+		if int(e.serial)<=last_visual:continue
+		last_visual=int(e.serial)
+		if not visible(e.get("x",model.state.hero.x)):continue
+		var rng=RandomNumberGenerator.new();rng.seed=int(e.serial)*7919+17
+		match e.kind:
+			"coin_pay":
+				var slot=slot_position(e.to,e.cost,e.index)
+				_push_effect({"kind":"coin","x":float(e.x),"y":-27.0,"to":float(e.to)+(slot.x-sx(e.to))/scale_factor,"to_y":(slot.y-ground)/scale_factor+7,"duration":0.32,"arc":28.0})
+			"coin_return":
+				for i in range(mini(12,int(e.count))):
+					_push_effect({"kind":"coin","x":float(e.x)+(i-6)*5,"y":-74.0,"to":float(e.to),"to_y":-25.0,"duration":0.42+i*0.012,"arc":24.0})
+			"pickup":
+				_push_effect({"kind":"coin","x":float(e.x),"y":-7.0,"to":float(model.state.hero.x),"to_y":-29.0,"duration":0.28,"arc":16.0})
+			"whip":
+				_push_effect({"kind":"whip","x":float(e.from),"to":float(e.x),"duration":0.24,"face":int(e.face)})
+			"hit","funded","recruit","build_complete":
+				var amount=5 if e.kind=="hit" else 8
+				for i in range(amount):
+					_push_effect({"kind":"dash","x":float(e.x),"y":-19.0 if e.kind=="hit" else -7.0,"vx":rng.randf_range(-35,35),"vy":rng.randf_range(-55,-18),"duration":rng.randf_range(0.25,0.48),"tone":Color("d8b879") if e.kind=="funded" else Color("b8b493"),"length":rng.randf_range(2,5)})
+
+func _draw_effects():
+	var stroke_batches={}
+	for e in effects:
+		var age=elapsed-float(e.born);var t=clampf(age/float(e.duration),0,1)
+		if e.kind=="coin":
+			var eased=1-pow(1-t,2)
+			var x=lerpf(e.x,e.to,eased);var y=lerpf(e.y,e.to_y,eased)-sin(t*PI)*float(e.arc)
+			art.at(canvas,"coin",sx(x),ground+y*scale_factor,12*scale_factor,false,Color(1,1,1,1-t*0.15))
+		elif e.kind=="dash":
+			var p=Vector2(sx(e.x+e.vx*age),ground+(e.y+e.vy*age+50*age*age)*scale_factor)
+			var bucket=mini(3,int(t*4))+(4 if e.tone==Color("d8b879") else 0)
+			if not stroke_batches.has(bucket):
+				var tone=e.tone;tone.a=(1.0-float(bucket%4)*0.25-0.125)*0.8
+				stroke_batches[bucket]={"points":PackedVector2Array(),"tone":tone}
+			var points=stroke_batches[bucket].points;points.append(p);points.append(p+Vector2(e.length*scale_factor,-scale_factor));stroke_batches[bucket].points=points
+		elif e.kind=="whip":
+			var points=PackedVector2Array()
+			for i in range(13):
+				var f=i/12.0;points.append(Vector2(lerpf(sx(e.x),sx(e.to),f),ground+(-25-sin(f*PI)*18*sin(t*PI))*scale_factor))
+			canvas.draw_polyline(points,Color(0.58,0.39,0.20,1-t),1.6*scale_factor,true)
+	# At most eight painted-stroke batches instead of a draw command per particle.
+	for batch in stroke_batches.values():canvas.draw_multiline(batch.points,batch.tone,2*scale_factor,true)
+

@@ -1,0 +1,40 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const project = path.resolve(__dirname, '../../../cocos');
+const build = process.argv[2] ? path.resolve(process.argv[2]) : path.join(project, 'build/store-20261104');
+const version = process.argv[3] ?? '0.10.0';
+const original = path.join(build, 'wechatgame-store');
+const work = fs.mkdtempSync(path.join(build, 'staged-'));
+const staged = path.join(work, 'wechatgame');
+const extension = path.join(project,'extensions/taptap-minigame-tools');
+require(require.resolve('fs-extra',{paths:[extension,path.join(extension,'converter')]})).copySync(original,staged);
+const resourceSubpackage = path.join(staged, 'subpackages/resources');
+fs.mkdirSync(path.dirname(resourceSubpackage), {recursive:true});
+fs.renameSync(path.join(staged, 'assets/resources'), resourceSubpackage);
+const settingsFiles = fs.readdirSync(path.join(staged,'src')).filter(name=>/^settings\.[a-f0-9]+\.json$/.test(name));
+assert.equal(settingsFiles.length,1,'Cocos settings');
+const settingsFile = path.join(staged,'src',settingsFiles[0]);
+const settings = JSON.parse(fs.readFileSync(settingsFile,'utf8'));
+assert.ok(settings.assets.preloadBundles.some(item=>item.bundle==='resources'));
+assert.equal(settings.assets.subpackages.length,0);
+settings.assets.subpackages.push('resources');
+fs.writeFileSync(settingsFile, JSON.stringify(settings));
+const gamePath = path.join(staged,'game.json');
+const game = JSON.parse(fs.readFileSync(gamePath,'utf8'));
+assert.ok(!(game.subPackages || game.subpackages)?.length);
+game.subPackages = [{name:'resources',root:'subpackages/resources/'}];
+fs.writeFileSync(gamePath,JSON.stringify(game,null,2));
+const indexFile = fs.readdirSync(resourceSubpackage).find(name=>/^index\.[a-f0-9]+\.js$/.test(name));
+const index = fs.readFileSync(path.join(resourceSubpackage,indexFile),'utf8').trim();
+assert.match(index.split(/\r?\n/)[0],/^System\.register\("chunks:\/\/\/_virtual\/resources",\[\],\(function\(\)\{return\{execute:function\(\)\{\}\}\}\)\);$/);
+assert.ok(index.includes('virtual:///prerequisite-imports/resources'));
+fs.writeFileSync(path.join(resourceSubpackage,'game.js'),index+'\n');
+const projectConfigPath = path.join(staged,'project.config.json');
+const projectConfig = JSON.parse(fs.readFileSync(projectConfigPath,'utf8'));
+delete projectConfig.appid; // Creator 的微信预设值不是目标 TapTap 小游戏身份。
+fs.writeFileSync(projectConfigPath,JSON.stringify(projectConfig));
+const { convertWechatToTap } = require(path.join(extension,'dist/converter-ts.js'));
+convertWechatToTap({source:staged,target:path.join(work,'TapBuild'),gameVersion:version,useSubpackage:true})
+    .then(()=>console.log('TAP_ZIP='+path.join(work,'TapBuild/game.zip')))
+    .catch(error=>{console.error(error);process.exitCode=1;});

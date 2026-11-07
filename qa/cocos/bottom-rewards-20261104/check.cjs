@@ -1,0 +1,87 @@
+const assert = require('node:assert/strict');
+const { GameModel } = require('./model/GameModel.js');
+const { ChapterDirector } = require('./model/ChapterDirector.js');
+const { RULES } = require('./model/Rules.js');
+
+const old = new GameModel().snapshot();
+old.revision = 18;
+const building = (state, kind) => state.buildings.find(b => b.kind === kind && b.region === -1);
+building(old, 'gear').x = 896;
+building(old, 'forge').x = -254;
+building(old, 'forge').job = {left:7,total:16,next:1};
+building(old, 'tower').x = building(old,'wall').x - 360;
+const game = new GameModel(old);
+const s = game.state;
+const wall = building(s,'wall'), tower = building(s,'tower'), gear = building(s,'gear');
+assert.ok(Math.abs(game.forge.x-gear.x) <= 145 && Math.abs(gear.x-game.hall.x) < 190);
+assert.equal(game.forge.job.left,7);
+assert.equal(wall.x-tower.x,RULES.towerWallGap);
+assert.equal(new GameModel(game.snapshot()).forge.x,game.forge.x);
+for(const b of [wall,tower]) { b.level=1; b.hp=b.maxHp=120; }
+
+const setEnemy = (kind,x) => {
+    const e = game.makeEnemy(kind,x,0);
+    s.enemies = [e];
+    game.rebuildEnemyCache();
+    return e;
+};
+const brute = game.makeGoblin('brute',wall.x-23);
+s.goblins = [brute];
+const elf = setEnemy('elf',wall.x+25);
+game.updateGoblins(.1);
+assert.equal(elf.hp,elf.maxHp);
+assert.ok(brute.x < wall.x && !brute.retreat);
+brute.x = wall.x+30;
+game.updateGoblins(.1);
+assert.ok(brute.x < wall.x+30,'A saved guard outside an intact wall must step back');
+brute.x = wall.x-23;
+game.hurtTarget(wall.id,999,wall.x+30);
+const footman = setEnemy('human',wall.x-5);
+brute.hp = brute.maxHp*.45;
+brute.combatTarget=0; brute.thinkAt=0;
+game.updateGoblins(.1);
+assert.ok(footman.hp < footman.maxHp && !brute.retreat && brute.x < wall.x);
+brute.hp = brute.maxHp*.19;
+game.updateGoblins(.1);
+assert.ok(brute.retreat?.x < brute.x);
+
+s.goblins = [game.makeGoblin('hunter',tower.x)];
+s.goblins[0].towerId=tower.id; s.goblins[0].task='tower';
+wall.hp=wall.maxHp;
+const mage = setEnemy('mage',wall.x+RULES.enemy.mage.range);
+game.updateGoblins(.1);
+assert.ok(s.shots.some(shot => shot.targetId === mage.id && shot.fromY>100));
+
+const hints = new GameModel();
+const hs = hints.state, chapter = hs.chapter;
+Object.assign(chapter.seen,{opening:true,towerReady:true,trader:true,expedition:true,hidden:true});
+chapter.seen['facility:forge']=true;
+Object.assign(chapter.done,{hammer:true,bow:true,wall:true,tower:true});
+const director = new ChapterDirector(hints,()=>{});
+const read = () => { hs.elapsed+=.2; director.update(.2); return director.guide; };
+const expectNotice = (key) => {
+    const notice=read();
+    assert.equal(notice?.key,key);
+    assert.equal(notice.target,undefined);
+    assert.equal(notice.action,undefined);
+    assert.equal(hints.pauses.size,0);
+    hs.elapsed+=5.5;
+    assert.notEqual(read()?.key,key);
+};
+hs.player.x=building(hs,'treasury').x;
+expectNotice('treasury');
+hs.player.x=500;
+hs.trader.phase='trading'; hs.trader.x=500;
+const captive=hints.makeEnemy('human',500,0);
+captive.state='captured';
+hs.enemies=[captive];
+expectNotice('captive');
+expectNotice('trade');
+hs.player.x=-300;
+chapter.done.craft=true;
+expectNotice('armorReady');
+hs.camps[0].rewarded=true;
+expectNotice('scout');
+hints.hall.level=2;
+expectNotice('dispatch');
+console.log('PASS: cave migration, close tower coverage, defenders stay behind walls and flee only at low HP, reminders expire without arrows');

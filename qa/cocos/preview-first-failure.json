@@ -1,0 +1,49 @@
+{
+  "error": "TimeoutError: page.waitForFunction: Timeout 30000ms exceeded.",
+  "logs": [
+    {
+      "type": "timeEnd",
+      "text": "Init Base: 0.216064453125 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Init Infrastructure: 12.550048828125 ms"
+    },
+    {
+      "type": "log",
+      "text": "meshopt wasm decoder initialized"
+    },
+    {
+      "type": "log",
+      "text": "[PHYSICS2D]: register box2d."
+    },
+    {
+      "type": "timeEnd",
+      "text": "Init SubSystem: 108.663818359375 ms"
+    },
+    {
+      "type": "log",
+      "text": "Cocos Creator v3.8.8"
+    },
+    {
+      "type": "log",
+      "text": "Using custom pipeline: Builtin"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Init Project: 52.278076171875 ms"
+    },
+    {
+      "type": "error",
+      "text": "Can not find class '49YuMwq2dDibui+JoAkRco'"
+    },
+    {
+      "type": "error",
+      "text": "Sorry, the component of 'MonarchGame' which with an index of 0 is corrupted! It has been removed."
+    },
+    {
+      "type": "log",
+      "text": "Corrupted component value: null"
+    }
+  ]
+}

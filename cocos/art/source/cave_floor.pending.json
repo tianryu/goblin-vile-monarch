@@ -1,0 +1,9 @@
+{
+  "assetName": "cave_floor",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-db7f3053-148a-40a1-b2cd-9618fac6e30a.png",
+  "prompt": "Use case: stylized-concept. Separate ground-layer game texture, style-matching the attached cave, NOT a full cave or background. Draw a VERY LONG THIN SIDE-VIEW ROCK GROUND STRIP for the inside of that cave, about 12 times wider than tall, centered on transparent canvas. Flat horizontal WALKING TOP with a few tiny unobtrusive flat stone shapes; bluish dark slate-gray rock crust and dark brown earth below in broad matte irregular hand-painted patches like the input. NO grass on the left or center. Irregular rounded rocky lower silhouette, no rectangular frame or straight clipped vertical end. The RIGHTMOST one-fifth transitions naturally from gray rock into warm brown cave-mouth soil with a few olive moss patches, narrowing to an irregular low taper so it can overlap outdoor earth seamlessly. The top walking plane remains level, no hills or platforms. LEFT end broad solid cave rock. Thin cutaway side section only, no sky, water, cavern roof, objects, perspective, characters, shadows, glow, text or white border. Whole long strip with generous transparent margin, nonpixel low-detail flat matte art.",
+  "edge": null,
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": false
+}

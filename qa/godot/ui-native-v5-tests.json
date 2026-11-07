@@ -1,0 +1,11 @@
+{
+	"failures": [],
+	"passes": [
+		"thin stamina bitmap style fits inside its real bar",
+		"thin clock bitmap style fits inside its real bar",
+		"unlimited reserve never overflows the compact purse HUD",
+		"small safe-area cards separate picture text stock and price",
+		"free restart centers camera immediately at the fresh monarch"
+	],
+	"scope": "Native headless UI integration with an in-memory save adapter. Does not overwrite native or browser saves."
+}

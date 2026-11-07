@@ -1,0 +1,281 @@
+{
+  "tool": "built-in image_gen",
+  "sharedPrompt": "Art direction: original goblin tribe game, TRUE low-resolution hand-crafted pixel sprites matching the provided approved screenshot. Refined coarse pixel clusters, 3–6 shades per material, restrained olive green/brown/ochre/teal palette. Crisp square pixels, NO smooth illustration, no glossy shading, no thick comic outlines, no tiny texture noise. Asset production for a real 2D side-view game, not a mockup. All outputs must be independently usable assets. No typography, labels, grid lines, cell borders, watermarks, HUD or reference-image fragments. Transparent output wherever requested, real alpha transparency not a checkerboard. For sprite sheets, all cells exactly equal size and objects same size and foot baseline per cell, with 12% empty padding, no overlap between cells. No baked shadow, ground strip, water reflection or scenery on transparent assets.",
+  "records": [
+    {
+      "batch": 1,
+      "name": "forest-background",
+      "prompt": "Using the provided screenshot as an EDIT target, REMOVE ALL man-made structures, fences, campfire, torches, poles, stalls, tents, flags, characters, animals, UI and their reflections. Reconstruct ONLY continuous forest, sky, grass bank, earth and marsh. Keep the same road/ground line at exactly 65% of image height, same landscape/tree positions, same colors. One clean 2:1 landscape scenery plate, matching the original background as closely as possible. No buildings anywhere.",
+      "transparent": false,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-9cd902a1-e883-432d-8293-b9b50277f7dc.png"
+    },
+    {
+      "batch": 1,
+      "name": "hall-stages",
+      "prompt": "Generate ONE transparent 3-column 1-row sprite sheet of the SAME goblin chieftain hall at three upgrade levels. Each cell has only one independent building. Side view, wide patched red/moss hide tent with a wooden doorway and small pennant, closely match the central hall's shape, proportions, color and silhouette in the reference. Stage1 a complete modest hall like reference; stage2 added timber beams and larger banner; stage3 reinforced scrap metal and tusk doorway, still same silhouette and scale. Not a castle. Equal 3:1 sheet, foot baseline 88% cell. No ground, flames, goblins or reflection.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-57f61cf0-5ea4-49dd-bede-76c9d6ba3bc0.png"
+    },
+    {
+      "batch": 1,
+      "name": "merchant-gold",
+      "prompt": "Extract/recreate ONLY the small coin merchant stall from the reference left of the hall, on true transparent background. One complete 2D side-view asset: two timber posts, small faded red cloth canopy, table with a little gold stock and tiny green goblin merchant. Match reference scale and color closely. Small chunky pixel face without detailed eyes or cartoon outline. Nothing else. Square image with generous transparent border.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ab79bb09-5eaa-409c-8aa3-c024895dd4bf.png"
+    },
+    {
+      "batch": 1,
+      "name": "merchant-army",
+      "prompt": "Generate ONLY the small reinforcement merchant stall from the approved game reference, an independently usable transparent sprite. A simple two-post timber frame, low table, small short bow and wooden hammer displayed, tiny green goblin wearing a battered pot helmet standing beside table. Side view low-res pixel art, restrained brown/green, no detailed face. No ground, labels, scenery or reflection. Asset centered with transparent margin. No other stalls.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-0d1ec64c-28a5-415d-960b-1e8a8f88177e.png"
+    },
+    {
+      "batch": 2,
+      "name": "merchant-mount",
+      "prompt": "Generate one independent transparent mount merchant asset closely matching the right-hand animal paddock of the reference: a simple low timber rail paddock, four posts, low crossbeam, a small drab cloth patch, tiny green goblin keeper on left. EMPTY paddock, no animals. Side view low-res pixel game sprite, not a perspective illustration. Wide asset centered on transparent canvas, no ground/reflection/text.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-e94c8377-813c-4eec-96ba-9f122c9e5cb1.png"
+    },
+    {
+      "batch": 2,
+      "name": "walls",
+      "prompt": "ONE transparent sprite sheet, 3 equal columns and 1 row, one goblin defensive wall per cell, standing on same baseline. Side view. Stage1 short pointed wooden stakes tied with rope; stage2 stronger timber stakes with horizontal beams; stage3 scrap-metal plates on wooden stakes. Same width, increasing height, restrained browns/grey, little detail. No ground or scenery, no characters.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-fc0ec053-fb90-4bee-aeba-3ecd17ccf598.png"
+    },
+    {
+      "batch": 2,
+      "name": "towers",
+      "prompt": "ONE transparent sprite sheet 2 equal columns 1 row, two levels of a side-view goblin lookout tower. Thin timber legs, small wood platform and simple rail, similar to far-right tower in reference. Stage2 slightly taller with extra braces. Same baseline, no characters, no ground or scenery.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-0ba54aad-c7bf-4fd2-85e7-571a1155394c.png"
+    },
+    {
+      "batch": 2,
+      "name": "farms",
+      "prompt": "ONE transparent sprite sheet 2 equal columns 1 row, two levels of a tiny side-view goblin mushroom farm. Several chunky cream/tan mushrooms on a low soil bed with small wood stakes, second stage has more mushrooms and a tiny simple shelter. Low wide assets, same baseline, no farmers, no scenery or reflections.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-5fd0b7e9-aca0-4dfe-bf85-669e95c8f133.png"
+    },
+    {
+      "batch": 3,
+      "name": "layer-sky",
+      "prompt": "Create ONLY the SKY background layer from this input: blue-lavender evening sky, small low sun and a few pixel clouds in their exact original positions. Remove ALL trees, plants, land, water and structures. Fill the entire 2:1 landscape canvas with continuation of the same sky. Preserve original colors and sun position. This is opaque farthest layer for parallax.",
+      "transparent": false,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-59ce77b2-1983-46d2-b3dc-b5074ba1ee38.png"
+    },
+    {
+      "batch": 3,
+      "name": "layer-far",
+      "prompt": "Extract ONLY the farthest pale blue distant tree silhouettes from this scene into a truly transparent full-size 2:1 canvas. Preserve their exact positions, scale, soft muted blue colors and horizon height. Delete sky, sun, closer green/teal trees, ground, bank, water and foreground. Keep transparent space above and below the distant treeline. This is the slow-scrolling distant forest layer, not a full scene. Preserve source alignment.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-a4fa1413-8100-4f91-86bd-2c248695fc6f.png"
+    },
+    {
+      "batch": 3,
+      "name": "layer-middle",
+      "prompt": "Extract ONLY the mid-distance medium blue/teal forest silhouettes from this scene into a truly transparent full-size 2:1 canvas. Preserve exact source positions, dimensions, colors and bottom alignment near y=65% canvas. Remove sky, sun, pale faraway trees, the huge closest dark trunks/foliage on the left, all ground/water and bottom grasses. This is one isolated middle forest parallax layer, NOT a whole scene.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-cdfcf2ca-557b-43bd-99ca-1d98340e64e2.png"
+    },
+    {
+      "batch": 3,
+      "name": "layer-near",
+      "prompt": "Extract ONLY the large closest dark-green trees and trunks on the left and near forest edges from this scene onto a truly transparent full-size 2:1 canvas. Keep exact original positions, scale and pixel colors. Tree trunks terminate at original ground height around65%. Delete sky, sun, ALL distant and middle forest, grass bank, ground, water and bottom foreground reeds. No rescaling or recentering. One isolated near-tree parallax layer.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-199accbf-2c66-4d1c-a0aa-2af9325ba742.png"
+    },
+    {
+      "batch": 4,
+      "name": "unit-worker",
+      "prompt": "A green big-eared goblin worker in a simple brown tunic, grey pants, carrying a chunky small wooden hammer. ONE square transparent sprite sheet with a strict 2x2 grid of FOUR equal cells, same character at identical size and same ground baseline in every cell, facing RIGHT in strict side view. Frames in reading order form one 4-frame walking loop: left foot forward, feet together, right foot forward, feet together. Keep body identity and tool identical between frames, only legs/arms move slightly. Each character is a genuine tiny low-res sprite designed at about 12x18 logical pixels, then enlarged with nearest-neighbor crisp squares; face is a 3x3 green block with one dark eye pixel, not an illustration. Full body, transparent margins, no ground, shadow or labels.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-6ed0e7d9-1267-4f12-bdf5-f1d3a482cecf.png"
+    },
+    {
+      "batch": 4,
+      "name": "unit-hunter",
+      "prompt": "A green big-eared goblin hunter in brown cloth with a red headband, grey pants, holding a short wooden bow. ONE square transparent sprite sheet with a strict 2x2 grid of FOUR equal cells, same character at identical size and same ground baseline in every cell, facing RIGHT in strict side view. Frames in reading order form one 4-frame walking loop: left foot forward, feet together, right foot forward, feet together. Keep body identity and tool identical between frames, only legs/arms move slightly. Each character is a genuine tiny low-res sprite designed at about 12x18 logical pixels, then enlarged with nearest-neighbor crisp squares; face is a 3x3 green block with one dark eye pixel, not an illustration. Full body, transparent margins, no ground, shadow or labels.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c43b3149-bf89-48b3-b3fd-242461a23ee9.png"
+    },
+    {
+      "batch": 4,
+      "name": "unit-farmer",
+      "prompt": "A green big-eared goblin mushroom farmer in earth-brown cloth, small tan mushroom-shaped hat, holding a simple short hoe. ONE square transparent sprite sheet with a strict 2x2 grid of FOUR equal cells, same character at identical size and same ground baseline in every cell, facing RIGHT in strict side view. Frames in reading order form one 4-frame walking loop: left foot forward, feet together, right foot forward, feet together. Keep body identity and tool identical between frames, only legs/arms move slightly. Each character is a genuine tiny low-res sprite designed at about 12x18 logical pixels, then enlarged with nearest-neighbor crisp squares; face is a 3x3 green block with one dark eye pixel, not an illustration. Full body, transparent margins, no ground, shadow or labels.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-e2e6726f-9b21-49d7-9273-edc84f5a4700.png"
+    },
+    {
+      "batch": 4,
+      "name": "unit-captain",
+      "prompt": "A green big-eared goblin captain with a battered cooking-pot iron helmet, scrap-metal chest plate and small pot-lid shield, short sword held low. Sturdy but tiny original pixel sprite. ONE square transparent sprite sheet with a strict 2x2 grid of FOUR equal cells, same character at identical size and same ground baseline in every cell, facing RIGHT in strict side view. Frames in reading order form one 4-frame walking loop: left foot forward, feet together, right foot forward, feet together. Keep body identity and tool identical between frames, only legs/arms move slightly. Each character is a genuine tiny low-res sprite designed at about 12x18 logical pixels, then enlarged with nearest-neighbor crisp squares; face is a 3x3 green block with one dark eye pixel, not an illustration. Full body, transparent margins, no ground, shadow or labels.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-73ca313f-010e-4c1b-8341-819cba49cd6d.png"
+    },
+    {
+      "batch": 5,
+      "name": "layer-ground",
+      "prompt": "Extract ONLY the grass-edged EARTH BANK and narrow road strip from the input. Full original-size 2:1 transparent canvas, keep grass top at y=65% and earth bank ending near y=76%. Preserve original exact rock/root/grass pixel colors and position. EVERYTHING above the grass line and below the bottom of the earth bank must be transparent. No water, trees, shrubs, reeds, reflection, buildings or characters. A horizontal independent terrain layer usable as a repeating world strip.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-82be2aa8-8bd7-48e1-929b-37123cd9fe1c.png"
+    },
+    {
+      "batch": 5,
+      "name": "layer-water",
+      "prompt": "Extract ONLY the lower water surface from the input, on full-size 2:1 transparent canvas preserving original alignment. Water occupies y=76% through100%. Remove ALL sky, trees, land, roots, bank, tall foreground grasses and all recognizable object/tree reflections. Keep subdued blue/teal pixel water with small sparse flat ripples and subtle warm sunset reflection at original x position, no new objects. Everything above y=76% is transparent. Independent water layer.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-3c4ea7e9-5ee7-4517-839e-b0fc11fba55f.png"
+    },
+    {
+      "batch": 5,
+      "name": "layer-foreground",
+      "prompt": "Extract ONLY the darkest closest foreground reed/grass silhouettes along the very bottom and side edges of the input, on a true transparent full-size 2:1 canvas. Keep exact positions and dark green/teal colors. Remove ALL sky, forest trees, ground, bank, water and reflections. Preserve lots of clear transparent center for mobile touch controls. This is the frontmost parallax decorative grass layer, not terrain.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-31248c06-07db-42ed-a588-28056e9fea10.png"
+    },
+    {
+      "batch": 5,
+      "name": "merchant-army",
+      "prompt": "Generate ONLY the small reinforcement merchant stall from the approved game reference, an independently usable transparent sprite. A simple two-post timber frame, low table, small short bow and wooden hammer displayed, tiny green goblin wearing a battered pot helmet standing beside table. Side view low-res pixel art, restrained brown/green, no detailed face. No ground, labels, scenery or reflection. Asset centered with transparent margin. No other stalls.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-0d1ec64c-28a5-415d-960b-1e8a8f88177e.png"
+    },
+    {
+      "batch": 6,
+      "name": "unit-idle",
+      "prompt": "A tiny green big-eared goblin in plain brown tunic and grey trousers, empty hands, no hat or tools. Four-frame walking cycle. Face only a few blocky pixels, dark one-pixel eye. Square transparent 2x2 sprite sheet: FOUR equal cells, same subject at same scale and foot baseline, facing RIGHT, frames in reading order a coherent 4-frame motion loop. No background, no ground, no shadow, no text, no borders. Crisp large square pixel clusters, extremely low logical resolution, not a smooth illustrated creature.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-38a4974d-fe3f-4241-8adf-47a47ac76d54.png"
+    },
+    {
+      "batch": 6,
+      "name": "monarch",
+      "prompt": "ONLY a tiny green goblin monarch RIDER, without any mount. Crooked 3-point golden crown, short burgundy cape, brown tunic and grey pants. Side view seated riding pose with bent legs hanging down, hands holding invisible reins. Four coherent frames with slight cape/arm movement for riding, same body shape/identity in every cell. No animal or throne. Simple 16x20 logical pixel style matching goblin sprites. Square transparent 2x2 sprite sheet: FOUR equal cells, same subject at same scale and foot baseline, facing RIGHT, frames in reading order a coherent 4-frame motion loop. No background, no ground, no shadow, no text, no borders. Crisp large square pixel clusters, extremely low logical resolution, not a smooth illustrated creature.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-e3f4506a-e8cb-462b-810a-69517fb6289e.png"
+    },
+    {
+      "batch": 6,
+      "name": "mount-boar",
+      "prompt": "ONLY a stocky tusked brown wild boar MOUNT with empty back (NO rider), short legs, tiny dark eye, ivory tusks, simple brown saddle. Four clear WALK/RUN gait frames alternating legs, same body size, same brown color. Original pixel sprite matching boar in reference, not a cute detailed cartoon face. Square transparent 2x2 sprite sheet: FOUR equal cells, same subject at same scale and foot baseline, facing RIGHT, frames in reading order a coherent 4-frame motion loop. No background, no ground, no shadow, no text, no borders. Crisp large square pixel clusters, extremely low logical resolution, not a smooth illustrated creature.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-faac058a-c0d6-4a50-b1ad-4d07d34d919a.png"
+    },
+    {
+      "batch": 6,
+      "name": "mount-wolf",
+      "prompt": "ONLY a lean grey wolf MOUNT with empty back (NO rider), simple brown saddle, pointed ears, longer legs, tiny eye. Four coherent RUN/WALK gait frames. Muted grey/brown palette, not smiling or cute. Same scale and body identity across cells. Square transparent 2x2 sprite sheet: FOUR equal cells, same subject at same scale and foot baseline, facing RIGHT, frames in reading order a coherent 4-frame motion loop. No background, no ground, no shadow, no text, no borders. Crisp large square pixel clusters, extremely low logical resolution, not a smooth illustrated creature.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-3dc26c12-f870-4870-98b7-4aef754b0c0b.png"
+    },
+    {
+      "batch": 7,
+      "name": "mount-lizard",
+      "prompt": "ONLY a grey-green cave lizard mount with empty back (NO rider), broad low body, four short legs, thick tapering tail, tiny pale eye and simple brown saddle. Four walking frames alternating legs. Muted olive/teal scale blocks, no tiny scale textures. Square transparent sprite sheet, strict 2x2 grid of FOUR equally-sized cells, same subject facing RIGHT at identical size and baseline in each cell. Four coherent gait/wingbeat frames in reading order. Full body visible, transparent border, no labels/ground/shadow/scenery. Tiny low-res pixel sprite with crisp square clusters, not a detailed painting.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-7820ee42-bd04-47a8-b8f3-7edfc240d4fc.png"
+    },
+    {
+      "batch": 7,
+      "name": "mount-bat",
+      "prompt": "ONLY a purple giant cave bat MOUNT with empty back (NO rider), small harness, simple tiny head and broad membrane wings. FOUR actual flying frames: wings up, half spread, fully down, half spread. Same body size/center, no goblin. Muted violet low-res pixels. Square transparent sprite sheet, strict 2x2 grid of FOUR equally-sized cells, same subject facing RIGHT at identical size and baseline in each cell. Four coherent gait/wingbeat frames in reading order. Full body visible, transparent border, no labels/ground/shadow/scenery. Tiny low-res pixel sprite with crisp square clusters, not a detailed painting.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-8ffb6201-e2b3-4cef-8777-a49991d78b40.png"
+    },
+    {
+      "batch": 7,
+      "name": "enemy-small",
+      "prompt": "An original small nocturnal coin-raider enemy, dark slate-blue imp with tiny pale eyes, hunched body and simple ragged cloth, entirely distinct from green goblin villagers. Four walking frames, compact clear silhouette, no gore, no resemblance to another game's specific monster. Square transparent sprite sheet, strict 2x2 grid of FOUR equally-sized cells, same subject facing RIGHT at identical size and baseline in each cell. Four coherent gait/wingbeat frames in reading order. Full body visible, transparent border, no labels/ground/shadow/scenery. Tiny low-res pixel sprite with crisp square clusters, not a detailed painting.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-40d772c4-6d9d-43be-a06f-a0eafab7ee8b.png"
+    },
+    {
+      "batch": 7,
+      "name": "enemy-heavy",
+      "prompt": "An original armored nocturnal raider enemy, stocky grey-blue creature with crude scrap iron helmet and chest plate, broad shoulders, short heavy legs. Four walking frames. Dark desaturated metal/blue, one small pale eye, no gore, no giant horns or over-detailed armor. Square transparent sprite sheet, strict 2x2 grid of FOUR equally-sized cells, same subject facing RIGHT at identical size and baseline in each cell. Four coherent gait/wingbeat frames in reading order. Full body visible, transparent border, no labels/ground/shadow/scenery. Tiny low-res pixel sprite with crisp square clusters, not a detailed painting.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ffc60f2e-10d1-44d2-b901-8ebd54ee4d70.png"
+    },
+    {
+      "batch": 8,
+      "name": "camp",
+      "prompt": "One independent small goblin refugee camp sprite: a low moss-green triangular scrap-cloth tent with a dark entrance, tiny rolled blanket and bundle at one side. Strict side view, simple chunky pixels matching reference. TRUE transparent background, no people, no terrain, no shadow or glow. Single centered object with clear transparent margin.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-fce57811-bdfe-4dfc-ab0a-4813a4b1b578.png"
+    },
+    {
+      "batch": 8,
+      "name": "portal",
+      "prompt": "A square transparent 2x2 sprite sheet of one original enemy forest-rift entrance, four subtle animated frames. A rough low stone arch/ruined timber gateway with a dark violet opening and several sparse muted purple pixels that change between frames. Side view, NOT a recognizable portal from another game. Same structure/size/baseline all cells. No ground, no diffuse glow or aura outside the hard sprite silhouette.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-6968c2cf-a514-40d7-8867-798ffd67c4ac.png"
+    },
+    {
+      "batch": 8,
+      "name": "tree",
+      "prompt": "One standalone full side-view forest tree matching the approved background palette: dark olive/teal blocky leafy crown, simple brown trunk, a few branching pixels. Tiny low-res game sprite, refined silhouette not leaf noise. Transparent background, no ground, reflection, shadow or other trees. Full tree centered with transparent margins.",
+      "transparent": true
+    },
+    {
+      "batch": 8,
+      "name": "chest",
+      "prompt": "Transparent sprite sheet 2 equal columns 1 row: the same small goblin wooden treasure chest CLOSED then OPEN, warm brown planks with a simple dull brass strap and a few gold coins inside the open state. Same scale/baseline. Strict side view, tiny chunky pixels. No glow/aura, ground, shadow or text.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-4718b35d-6ff7-4798-bff5-db59d83d2a7a.png"
+    },
+    {
+      "batch": 9,
+      "name": "tools",
+      "prompt": "A square transparent 2x2 asset sheet with FOUR different small goblin tool display stands, one centered per equal cell on same baseline. Reading order: wooden hammer stand; short bow stand; farming hoe stand; iron pot helmet plus small shield stand. Each is a low simple timber table with ONLY the corresponding item displayed, no characters. Very sparse chunky pixel art, no labels, no ground/shadow/glow.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f9ee2f2e-cb32-4cc7-ace8-6ee046064c03.png"
+    },
+    {
+      "batch": 9,
+      "name": "rally",
+      "prompt": "One independent goblin expedition flag sprite, strict side view: a tall thin wooden pole with one small weathered burgundy triangular tribal pennant, a simple pale tusk symbol, tiny stone at foot. Transparent background, no scenery, no people, no shadow, no glow. Low-res chunky pixel asset.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-4ac74948-e508-4430-bba9-64a9ba76790f.png"
+    },
+    {
+      "batch": 9,
+      "name": "fire",
+      "prompt": "Square true-transparent 2x2 sprite sheet of a tiny campfire on a small crossed-log pile, FOUR flame animation frames in reading order. Same logs, size, position and baseline each cell, flame shape changes with a few blocky orange/yellow pixels. Actual very low-res 12x16 logical-pixel flame, no diffuse light bloom, aura, sparks cloud, ground, text or scenery.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-5cd25622-4e95-4297-9e02-e8512b2569da.png"
+    },
+    {
+      "batch": 9,
+      "name": "torch",
+      "prompt": "Square true-transparent 2x2 sprite sheet of one simple wooden torch post with a tiny orange flame at its top, FOUR flame animation frames in reading order. Same pole/position/baseline all cells, only flame pixels change. Coarse low-res sprite, no glow cloud, no ground, no scenery, no labels.",
+      "transparent": true,
+      "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-082ccf28-eeb7-4be4-a0d7-d1c7f163d988.png"
+    },
+    {
+      "batch": 10,
+      "name": "tree",
+      "prompt": "ONE standalone dark teal/olive forest tree as an independent low-resolution side-view game sprite. Simple chunky leafy crown, brown branching trunk, no tiny leaf texture, match forest colors of reference. Full tree with roots ending on one baseline, centered, true transparent background. No other trees, ground, shadow, glowing halo, scenery, or text. Hard pixel silhouette only.",
+      "transparent": true
+    },
+    {
+      "batch": 10,
+      "name": "enemy-ranged",
+      "prompt": "Square transparent 2x2 FOUR-frame walking sprite sheet. ONE original nocturnal ranged raider: small slate-blue imp in ragged grey-brown hood, holding a simple wooden sling/staff for tossing stones. Same character, identical scale and foot baseline all cells, facing RIGHT, four coherent walk poses in reading order. Tiny low-res chunky pixel sprite, no ground/shadow/glow/text. Distinct from green goblin allies.",
+      "transparent": true
+    },
+    {
+      "batch": 10,
+      "name": "effects",
+      "prompt": "Transparent sprite sheet strict 4 columns x 3 rows, 12 equal square cells, EACH cell isolated and centered with generous transparent padding, no labels or borders. Pixel game objects in exact reading order: row1 four frames of the SAME small GOLD COIN rotating (front/edge/back/edge); row2 four frames of a small gold/cream IMPACT SPARK bursting then fading (hard pixels, NO bloom); row3 a short horizontal ARROW pointing right, a tiny 3-point GOLD CROWN, a small pair of WOODEN BUILDING STAKES tied by rope, a tiny pale DUST PUFF. Every object hard-edged low-res pixels, no soft haze or shadows.",
+      "transparent": true
+    },
+    {
+      "batch": 10,
+      "name": "ui-icons",
+      "prompt": "Transparent UI icon sprite sheet, EXACT 4 columns x2 rows of equal square cells. One crisp simple low-res icon centered in each cell, transparent padding, NO circles/buttons/frames/text. Reading order: row1 GOLD COIN, GREEN GOBLIN HEAD, PALE RUNNING PERSON, PALE SPEECH BUBBLE with3dark dots; row2 PALE PAUSE TWO BARS, WOODEN HAMMER, SHORT BOW, GOLD CROWN. Restrained pixel clusters designed at16x16 logical pixels, no gradients/no glow/no soft shadows. All icons centered and equal visible size.",
+      "transparent": true
+    }
+  ]
+}

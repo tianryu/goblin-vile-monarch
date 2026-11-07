@@ -1,0 +1,22 @@
+{
+  "scope": "All three captive idle clips inside rear/front prison layers, isolated desktop Edge software WebGL",
+  "passes": [
+    "human: full original idle cycle is visible",
+    "human: exactly one opaque captive",
+    "human: complete frame remains within the cage",
+    "human: rear cage precedes prisoner and front bars",
+    "elf: full original idle cycle is visible",
+    "elf: exactly one opaque captive",
+    "elf: complete frame remains within the cage",
+    "elf: rear cage precedes prisoner and front bars",
+    "dwarf: full original idle cycle is visible",
+    "dwarf: exactly one opaque captive",
+    "dwarf: complete frame remains within the cage",
+    "dwarf: rear cage precedes prisoner and front bars",
+    "Idle animation neither sells captives nor opens dialogs",
+    "Pause holds every captive pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": []
+}

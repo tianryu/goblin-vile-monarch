@@ -1,0 +1,10 @@
+{
+  "assetName": "lure",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-777915de-82a5-4d13-81b1-03f5f2f0aee7.png",
+  "prompt": "One independent 2D game building sprite: a shabby GOBLIN RECRUITMENT COIN TRAY for the attached flat hand-painted medieval game. A short crooked wooden stand with a wide shallow EMPTY dish at waist level, above it a rough wooden sign shaped like a goblin ear/head silhouette and two ragged burgundy cloth strips. No written words. This is a lure for wandering goblins, not a merchant stall: NO vendor or character, no tools, no weapons, no coins baked into art because game coins will be placed in the dish. Narrow compact front elevation, thin sticks, full base resting on one flat baseline. Broad matte muted color shapes, irregular clean contours, little volume, no pixel art, no 3D rendering, no glossy highlights. Truly TRANSPARENT background and generous margins, no ground shadow, no scenery.",
+  "edge": "building",
+  "reviewed": true,
+  "review": "独立空钱盘、哥布林耳朵标识与布条，后续合成检查透明边界。",
+  "generator": "builtin-imagegen",
+  "facing": 1
+}

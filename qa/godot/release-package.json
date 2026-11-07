@@ -1,0 +1,100 @@
+{
+  "scope": "Local release Web export only. No upload, platform submission, live ads or physical phone validation.",
+  "single_root_folder": "goblin-monarch",
+  "files": [
+    {
+      "name": "boot-font.ttf",
+      "bytes": 284040,
+      "gzip_bytes": 181025,
+      "sha256": "d2bba09cdccb0a5a2bc04b5cb3c14c72759953239008b37d4abcd18adead34f5"
+    },
+    {
+      "name": "boot-sky_base.png",
+      "bytes": 520114,
+      "gzip_bytes": 520292,
+      "sha256": "3478935b1cf8e9d9f54c1d67d1ce9c8e7cd2c0a3e943c675093eb8571ee37e86"
+    },
+    {
+      "name": "boot-ui_back.png",
+      "bytes": 47111,
+      "gzip_bytes": 47144,
+      "sha256": "3dd71b120c0571658ce228a0e77bb4b0df51b35f111d7034ba7824a69567b488"
+    },
+    {
+      "name": "boot-ui_bar.png",
+      "bytes": 15993,
+      "gzip_bytes": 16016,
+      "sha256": "b2541bd3adf8a1f9dce6e886e7ee9ad4a74df5f4a08ffcf41b03b6089a598ef1"
+    },
+    {
+      "name": "boot-ui_bar_fill.png",
+      "bytes": 22489,
+      "gzip_bytes": 22517,
+      "sha256": "8463342ad6ed4f013099dd5df6243040b5b9dd1fd111b4255f32197d51167906"
+    },
+    {
+      "name": "boot-ui_button.png",
+      "bytes": 43964,
+      "gzip_bytes": 43997,
+      "sha256": "ce2d6c5a2f9577977c09b52741d3c82dfaf97e4cdb9651bcbf0a8cc58b7ba48f"
+    },
+    {
+      "name": "boot-ui_logo.png",
+      "bytes": 151124,
+      "gzip_bytes": 151184,
+      "sha256": "a312f198138ba056e6f7fcf9bf2a9376174143ee2bcfb7bccb9d585484d94220"
+    },
+    {
+      "name": "index.audio.position.worklet.js",
+      "bytes": 2973,
+      "gzip_bytes": 1161,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    {
+      "name": "index.audio.worklet.js",
+      "bytes": 7298,
+      "gzip_bytes": 2194,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    },
+    {
+      "name": "index.html",
+      "bytes": 10462,
+      "gzip_bytes": 3710,
+      "sha256": "5eeb805745f58526e0f664c327388b049ca4fe351e9d4f82ab1a25c5da52d540"
+    },
+    {
+      "name": "index.js",
+      "bytes": 279815,
+      "gzip_bytes": 68471,
+      "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+    },
+    {
+      "name": "index.pck",
+      "bytes": 67974892,
+      "gzip_bytes": 67435140,
+      "sha256": "ecac05598b9d467b48b16e8144ac3dc45ec681a2a987c50ee4feecdf98383801"
+    },
+    {
+      "name": "index.png",
+      "bytes": 10314,
+      "gzip_bytes": 10289,
+      "sha256": "f17608db6e1eeba9125a5e494b1079211a30f9fceca312f06a49c2f810b80b3d"
+    },
+    {
+      "name": "index.wasm",
+      "bytes": 39514754,
+      "gzip_bytes": 10054758,
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+    },
+    {
+      "name": "LICENSES.txt",
+      "bytes": 9327,
+      "gzip_bytes": 3370,
+      "sha256": "7bd48368890cab17fb7d4374c0744ba8a88b9bc43422b8ae75df6554bb766e29"
+    }
+  ],
+  "raw_bytes": 108894670,
+  "gzip_sum_bytes": 78561268,
+  "zip_bytes": 78563062,
+  "zip_sha256": "d7b5e0f1b7bfa218b16b01a979005c284a0538fee6b75c3e3e5a40b5e0dad48a"
+}

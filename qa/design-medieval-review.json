@@ -1,0 +1,21 @@
+{
+  "scope": "Design image inspection, not runtime benchmark",
+  "image": "../reboot-v2-flat/03-prison-medieval-corrected.png",
+  "approvedStylePreserved": true,
+  "detailsUserReview": "pending",
+  "manualChecks": [
+    "Medieval pullover tunic, belt, trousers; no hat or jacket",
+    "Three human captives and one dwarf inside closed cage; front bars occlude bodies",
+    "One goblin to left of captive net, continuous trailing rope; matching reflections",
+    "Chinese labels preserved and no middle-dot separator seen"
+  ],
+  "gallery": {
+    "zoom": true,
+    "errors": [],
+    "mobileHorizontalOverflow": false
+  },
+  "detailViews": [
+    "qa/screenshots/prison-occlusion-detail.png",
+    "qa/screenshots/merchant-hauler-detail.png"
+  ]
+}

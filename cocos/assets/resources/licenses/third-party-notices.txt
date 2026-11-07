@@ -1,0 +1,38 @@
+哥布林：卑劣君主
+制作与鸣谢
+
+字体
+Goblin Hand Cocos 是霞鹜文楷的子集，使用 SIL Open Font License 1.1。
+作者 LXGW 与 The Klee Project Authors。
+https://github.com/lxgw/LxgwWenKai
+完整许可见 WenKai-OFL.txt。
+
+音乐与鼓乐
+RandomMind, The Bard’s Tale. CC0.
+https://opengameart.org/content/medieval-the-bards-tale
+Cleyton Kauffman, Forest Whisper Theme. CC0.
+https://opengameart.org/content/forest-whisper-theme
+https://soundcloud.com/cleytonkauffman
+William Hector, Horde War Drums loop. CC0.
+https://opengameart.org/content/horde-war-drums-loop
+
+环境和战斗录音
+Félix Blume, 森林鸟鸣。https://freesound.org/people/felix.blume/sounds/414098/
+OwlStorm, 夜虫。https://freesound.org/people/OwlStorm/sounds/320145/
+loudernoises, 小溪。https://freesound.org/people/loudernoises/sounds/696686/
+yaros_nov, 营火。https://freesound.org/people/yaros_nov/sounds/434026/
+DeVern, Distant War Horn. https://freesound.org/people/DeVern/sounds/512490/
+KaBlazik_Samples, KB Heartbeat. https://freesound.org/people/KaBlazik_Samples/sounds/588575/
+Jofae, Swing Woosh. https://freesound.org/people/Jofae/sounds/389590/
+StarNinjas, 20 Sword Sound Effects. https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes
+Independent.nu, 35 Wooden Cracks, Hits and Destructions. https://lpc.opengameart.org/content/35-wooden-crackshitsdestructions
+Kenney, Interface Sounds, RPG Audio, Impact Sounds.
+https://kenney.nl/assets/interface-sounds
+https://kenney.nl/assets/rpg-audio
+https://kenney.nl/assets/impact-sounds
+以上音频素材的许可为 CC0 1.0。游戏中使用的部分版本经过裁切、混音或压缩。
+https://creativecommons.org/publicdomain/zero/1.0/
+
+引擎
+Cocos Creator 3.8.8，MIT 许可。完整引擎声明见 Cocos-LICENSE.txt。
+https://github.com/cocos/cocos-engine

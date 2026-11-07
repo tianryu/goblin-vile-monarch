@@ -1,0 +1,20 @@
+{
+  "scope": "Pine foliage and tribal cloth in isolated desktop Edge software WebGL",
+  "passes": [
+    "tree_willow/wind: complete wind cycle advances",
+    "tree_willow/wind: one fixed placement per object",
+    "tree_willow/wind: source base stays fixed within one source pixel",
+    "tree_willow/wind: no coin or dialog side effects",
+    "tree_willow/wind: pause freezes the current wind pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "id": "tree_willow/wind",
+      "position": -528.624053955078,
+      "source_frames": 19
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "revision": 7,
+  "assets": [
+    {
+      "name": "butterfly",
+      "source": "game\\art\\source\\world-v7\\butterfly.png",
+      "size": [
+        84,
+        96
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "cycle_dial",
+      "source": "game\\art\\source\\world-v7\\cycle_dial.png",
+      "size": [
+        320,
+        317
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "dwarf_dead",
+      "source": "game\\art\\source\\world-v7\\dwarf_dead.png",
+      "size": [
+        210,
+        103
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "dwarf_wounded",
+      "source": "game\\art\\source\\world-v7\\dwarf_wounded.png",
+      "size": [
+        201,
+        110
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "elf_dead",
+      "source": "game\\art\\source\\world-v7\\elf_dead.png",
+      "size": [
+        210,
+        59
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "elf_wounded",
+      "source": "game\\art\\source\\world-v7\\elf_wounded.png",
+      "size": [
+        210,
+        98
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "empty_tool_brute",
+      "source": "game\\art\\source\\world-v7\\empty_tool_brute.png",
+      "size": [
+        320,
+        282
+      ],
+      "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+    },
+    {
+      "name": "empty_tool_hunter",
+      "source": "game\\art\\source\\world-v7\\empty_tool_hunter.png",
+      "size": [
+        307,
+        320
+      ],
+      "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+    },
+    {
+      "name": "empty_tool_thief",
+      "source": "game\\art\\source\\world-v7\\empty_tool_thief.png",
+      "size": [
+        283,
+        320
+      ],
+      "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+    },
+    {
+      "name": "empty_tool_worker",
+      "source": "game\\art\\source\\world-v7\\empty_tool_worker.png",
+      "size": [
+        320,
+        270
+      ],
+      "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+    },
+    {
+      "name": "forest_bird",
+      "source": "game\\art\\source\\world-v7\\forest_bird.png",
+      "size": [
+        96,
+        81
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "forest_shrub",
+      "source": "game\\art\\source\\world-v7\\forest_shrub.png",
+      "size": [
+        213,
+        150
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "gold_mine",
+      "source": "game\\art\\source\\world-v7\\gold_mine.png",
+      "size": [
+        420,
+        298
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "human_dead",
+      "source": "game\\art\\source\\world-v7\\human_dead.png",
+      "size": [
+        210,
+        93
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "human_wounded",
+      "source": "game\\art\\source\\world-v7\\human_wounded.png",
+      "size": [
+        191,
+        110
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "icon_play",
+      "source": "game\\art\\source\\world-v7\\icon_play.png",
+      "size": [
+        320,
+        308
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "icon_restart",
+      "source": "game\\art\\source\\world-v7\\icon_restart.png",
+      "size": [
+        320,
+        307
+      ],
+      "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+    },
+    {
+      "name": "icon_rotate",
+      "source": "game\\art\\source\\world-v7\\icon_rotate.png",
+      "size": [
+        320,
+        313
+      ],
+      "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+    },
+    {
+      "name": "icon_run",
+      "source": "game\\art\\source\\world-v7\\icon_run.png",
+      "size": [
+        320,
+        276
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "icon_whip",
+      "source": "game\\art\\source\\world-v7\\icon_whip.png",
+      "size": [
+        320,
+        307
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "mushroom_farm",
+      "source": "game\\art\\source\\world-v7\\mushroom_farm.png",
+      "size": [
+        387,
+        300
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "price_board",
+      "source": "game\\art\\source\\world-v7\\price_board.png",
+      "size": [
+        96,
+        100
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "purse",
+      "source": "game\\art\\source\\world-v7\\purse.png",
+      "size": [
+        320,
+        229
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "stream_crossing",
+      "source": "game\\art\\source\\world-v7\\stream_crossing.png",
+      "size": [
+        420,
+        206
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "tree_oak",
+      "source": "game\\art\\source\\world-v7\\tree_oak.png",
+      "size": [
+        480,
+        434
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "tree_pine",
+      "source": "game\\art\\source\\world-v7\\tree_pine.png",
+      "size": [
+        286,
+        560
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "tree_willow",
+      "source": "game\\art\\source\\world-v7\\tree_willow.png",
+      "size": [
+        480,
+        435
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "tribal_banner",
+      "source": "game\\art\\source\\world-v7\\tribal_banner.png",
+      "size": [
+        191,
+        320
+      ],
+      "review": "accepted: inspected on opaque green background; clean alpha without diffuse aura, planted stones and medieval rope pole, matte black cloth with rusty red goblin skull, no lettering, friendly banner differs from enemy blue flag"
+    },
+    {
+      "name": "ui_action_ring",
+      "source": "game\\art\\source\\world-v7\\ui_action_ring.png",
+      "size": [
+        320,
+        318
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    },
+    {
+      "name": "woodcut_camp",
+      "source": "game\\art\\source\\world-v7\\woodcut_camp.png",
+      "size": [
+        382,
+        300
+      ],
+      "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+    }
+  ],
+  "frames": 143,
+  "textures": 27,
+  "normal_maps": {
+    "actors-ink.png": "normal-actors-ink.png",
+    "actors.png": "normal-actors.png",
+    "land.png": "normal-land.png",
+    "net_trap2.png": "normal-net_trap2.png",
+    "rock_trap2.png": "normal-rock_trap2.png",
+    "tower2.png": "normal-tower2.png",
+    "world-v6.png": "normal-world-v6.png",
+    "world-v7.png": "normal-world-v7.png"
+  },
+  "normal_bake": "Aligned diffuse/alpha-derived technical normals, broad matte relief, no new diffuse artwork.",
+  "diffuse_rgba_bytes": 36263456,
+  "normal_rgba_bytes": 29114112,
+  "rgba_bytes": 65377568,
+  "package_budget_paused_by_user": true
+}

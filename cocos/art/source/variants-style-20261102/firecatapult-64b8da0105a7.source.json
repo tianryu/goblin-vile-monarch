@@ -1,0 +1,13 @@
+{
+  "assetName": "firecatapult",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-9b16b308-81c7-4487-ab79-5d1bb37d19a1.png",
+  "prompt": "ONE independent FIRE-POT CATAPULT sprite for the attached flat hand-painted medieval game. Strict 2D side elevation, facing RIGHT, compact heavy wooden torsion catapult with exactly TWO visible dark iron-rimmed wooden wheels, both bottoms on one flat baseline, reinforced dark iron plates, muted burgundy cloth tag. Throwing arm RESTS to the LEFT behind hinge, its bowl holds a sealed round clay OIL JAR with a short unlit fuse. NO fire or smoke baked into sprite, no glowing particles, no projectile flying, no people. Clearly looks stronger and darker than a basic wooden catapult. Full connected axles and support beams, no floating fragments. Broad matte painted shapes, little detail and volume, no pixel art, no realistic 3D. GENUINE transparent cutout with margins, no ground shadow, no lettering.",
+  "edge": "building",
+  "reviewed": false,
+  "review": "与当前实机基准画风不一致，不得作为合格成品素材采用。",
+  "generator": "builtin-imagegen",
+  "facing": 1,
+  "priorStructureReview": "火罐封闭且无烘焙火焰，双轮完整，待小尺寸合成检查。",
+  "styleRejected": true,
+  "styleApproved": false
+}

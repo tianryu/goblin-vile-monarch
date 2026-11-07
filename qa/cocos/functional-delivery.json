@@ -1,0 +1,21 @@
+{
+  "target": "local-functional-preview",
+  "notTapTapUploadPackage": true,
+  "directory": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\release\\cocos-functional-20261102-r2",
+  "url": "http://127.0.0.1:42821/",
+  "archive": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\release\\cocos-functional-20261102-r2.zip",
+  "bytes": 16291520,
+  "sha256": "e86193045adcf1448eaacf6eb6542aeb59f1ae4e560763eae1fd5c72c507254e",
+  "fileCount": 700,
+  "modelChecks": 25,
+  "browserChecks": 15,
+  "realPhone": false,
+  "realAds": false,
+  "fullNormalEconomyCampaignPassed": false,
+  "sourceBuildLog": "qa/cocos/build-functional-round2.log",
+  "deferred": [
+    "character/building art polish",
+    "brute axe orientation",
+    "normal-economy full-campaign strategy and balance"
+  ]
+}

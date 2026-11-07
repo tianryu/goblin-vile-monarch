@@ -1,0 +1,12 @@
+{
+  "assetName": "hunter_3",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-e392a93d-43f4-4a1f-90bc-9155fb75da9f.png",
+  "prompt": "Use case: precise-object-edit. This is a static fantasy cartoon game costume. Make the SECOND, WHITE IRON equipment quality of this exact goblin. Preserve exact face, ears, nose, green skin, body, red cloth, feet baseline and bow pose. Change ALL BROWN costume armor surfaces and helmet to PALE WHITE-IRON GRAY, a large nearly ivory-silver matte fill and one medium gray flat patch, no gleam, no gradient. The helmet is visibly larger, with a flat short central raised ridge and small side cheek plates while the entire eye, nose, grin and both ears remain uncovered; keep red scarf tails. Make the gray shoulder pads slightly wider and extend white-iron lower-leg guards over the front of the boots. Replace the entire brown bow with a WHITE IRON BOW, thicker pale gray metal limbs with dark gray recessed ends and a dark brown central grip, unchanged string, no wood-colored limbs. Only large simple painted color shapes, not polished 3D, no fine detail or rivets. Keep same matte flat irregular hand-painted cartoon artist as input. Must read as clearly different from the brown version at 74px high. One whole right-facing static sprite with real transparent background and margin, no arrow, no labels, no white outline.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": false,
+  "quality": "white-iron",
+  "request": "F38 broad armor, obvious helmet and changed bow; second quality",
+  "technicalCleanup": "Detached transparent-edge specks may be removed without repainting character."
+}

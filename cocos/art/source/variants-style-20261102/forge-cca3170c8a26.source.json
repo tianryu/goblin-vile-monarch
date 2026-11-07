@@ -1,0 +1,13 @@
+{
+  "assetName": "forge",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-70c8bd4d-2702-4c08-af69-7d4cae450eab.png",
+  "prompt": "A single medieval goblin equipment workbench for a side-scrolling game, painted by the SAME artist as the rightmost wooden tool stall on this reference sheet. Use that same slim slightly crooked timber frame, simple tabletop and flat wide feet. A small ragged IVORY cloth awning hangs across the upper beam. One plain dull gray breastplate and one plain dull gray helmet hang high above the table for identification. On top of the table, a simple small anvil, tongs and a brown bellows. No tools below the table, no vendor, no people. Match the reference's muted brown and low-contrast flat matte irregular paint shapes. Metal consists of two close-valued gray patches; do not add scratches, pin highlights or many rivets. Clear readable asymmetric silhouette, thin simple frame, generous space under the table. No thick black outline or heavy comic ink, no 3D modeling, no texture grain, no scenery, no lettering or cast shadow. One complete standalone game asset only on genuinely transparent background. Do not output a reference sheet or any reference labels.",
+  "edge": "building",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "同底色与128像素检查已看。白布、木架、灰甲均采用少量哑光块，桌面工具完整；待引擎合成。",
+  "reviewStatus": "approved-source-pending-engine"
+}

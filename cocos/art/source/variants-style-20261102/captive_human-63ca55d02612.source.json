@@ -1,0 +1,14 @@
+{
+  "assetName": "captive_human",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c8bff182-25e4-4d60-96f0-0b9b547a8ce9.png",
+  "prompt": "Use case: precise-object-edit. Make ONE very small equipment-removal edit to this exact side-view medieval cartoon human game sprite. ONLY REMOVE HIS METAL HELMET, replacing it with a simple short rough BROWN HAIRSTYLE on the same head. Preserve the EXACT face identity, eye, nose, ear, expression, head anatomy, blue cloth tunic, off-white undershirt, brown belt, trousers, boots, body proportions, hands held behind his back, pose, feet baseline and LEFT-facing direction. He is unarmed and wears only cloth and leather, with no armor and no helmet. Use the identical low-detail flat matte hand-painted nonpixel style, broad simple color patches, clean irregular contours and little volume. Do not make a different person or a more detailed illustration. Whole single static character, real transparent background with margin, no white/pink outline, no text, no scenery, no shadow.",
+  "edge": "enemy",
+  "facing": -1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "correction": "Remove armor after stripping. Normal clothing, no helmet or weapon, preserve stance.",
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "与原人类服装/鼻型/姿势同一平面手绘风格，源图与74像素缩图检查；铁盔已去除、短褐发、无武器；待捕获体型和笼体引擎检查",
+  "reviewStatus": "approved-source-pending-engine"
+}

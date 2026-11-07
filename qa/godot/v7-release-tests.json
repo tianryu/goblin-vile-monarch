@@ -1,0 +1,18 @@
+{
+  "scope": "V7 local release export, desktop Edge touch and WebGL. Not physical phone or TapTap host.",
+  "passes": [
+    "Release boots directly into world",
+    "Debug hooks are absent",
+    "No invented advertisement provider",
+    "Pause and gameplay render differently",
+    "Production saves to local storage",
+    "Saved release reloads",
+    "Relative assets boot under nested portal path",
+    "Source art and model tests stay out of PCK",
+    "Old browser game is absent",
+    "Build is V7 and contains tribal banner with normals",
+    "No runtime console or shader errors"
+  ],
+  "failures": [],
+  "errors": []
+}

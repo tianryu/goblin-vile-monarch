@@ -1,0 +1,80 @@
+{
+  "kind": "desktop-browser-and-mobile-viewport",
+  "realPhone": false,
+  "tapTapHost": false,
+  "checks": [
+    {
+      "name": "fresh-four-idle",
+      "pass": true
+    },
+    {
+      "name": "keyboard-left-right",
+      "pass": true
+    },
+    {
+      "name": "world-taps-do-not-spend",
+      "pass": true
+    },
+    {
+      "name": "pause-button-freezes-and-resumes-simulation",
+      "pass": true
+    },
+    {
+      "name": "two-real-input-coins-purchase-tool",
+      "pass": true
+    },
+    {
+      "name": "idle-collects-paid-tool",
+      "pass": true
+    },
+    {
+      "name": "partial-payment-refunds-on-walking-away",
+      "pass": true
+    },
+    {
+      "name": "construction-completes-after-full-payment",
+      "pass": true
+    },
+    {
+      "name": "automatic-save-reload-preserves-built-wall",
+      "pass": true
+    },
+    {
+      "name": "enemy-guard-attacks-during-day",
+      "pass": true
+    },
+    {
+      "name": "late-campaign-combat-fixture-can-win",
+      "pass": true
+    },
+    {
+      "name": "victory-restart-button-is-free",
+      "pass": true
+    },
+    {
+      "name": "defeat-result-and-free-restart",
+      "pass": true
+    },
+    {
+      "name": "mobile-viewport-multitouch-move-and-run",
+      "pass": true
+    },
+    {
+      "name": "no-script-or-resource-errors",
+      "pass": true
+    }
+  ],
+  "logs": [],
+  "lateCombatFixture": {
+    "status": "won",
+    "hp": 0,
+    "alive": 12
+  },
+  "mobileInput": {
+    "x": 587.7566666666667,
+    "run": true,
+    "axis": 1
+  },
+  "passed": 15,
+  "failed": 0
+}

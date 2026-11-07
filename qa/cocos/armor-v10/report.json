@@ -1,0 +1,208 @@
+{
+  "checks": [
+    {
+      "name": "four-real-gear-assets-six-cutout-parts",
+      "pass": true
+    },
+    {
+      "name": "desktop-and-landscape-mobile-render-no-errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "realPhone": false,
+  "actors": [
+    {
+      "id": 50,
+      "gear": 0,
+      "parts": [
+        {
+          "key": "goblin50:armFar@rig:hunter:armFar",
+          "x": -294.9009375,
+          "y": -65.77999999999997,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin50:legFar@rig:hunter:legFar",
+          "x": -291.25875,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin50:legNear@rig:hunter:legNear",
+          "x": -310.198125,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin50:body@rig:hunter:body",
+          "x": -300,
+          "y": -73.18,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin50:armNear@rig:hunter:armNear",
+          "x": -309.4696875,
+          "y": -63.56,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin50:head@rig:hunter:head",
+          "x": -300.7284375,
+          "y": -60.60000000000002,
+          "angle": 0,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "gear": 1,
+      "parts": [
+        {
+          "key": "goblin51:armFar@rig:hunter_2:armFar",
+          "x": -104.94140625,
+          "y": -65.77999999999997,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin51:legFar@rig:hunter_2:legFar",
+          "x": -101.328125,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin51:legNear@rig:hunter_2:legNear",
+          "x": -120.1171875,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin51:body@rig:hunter_2:body",
+          "x": -110,
+          "y": -73.18,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin51:armNear@rig:hunter_2:armNear",
+          "x": -119.39453125,
+          "y": -63.56,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin51:head@rig:hunter_2:head",
+          "x": -110.72265625,
+          "y": -60.60000000000002,
+          "angle": 0.5,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "gear": 2,
+      "parts": [
+        {
+          "key": "goblin52:armFar@rig:hunter_3:armFar",
+          "x": 85.05859375,
+          "y": -65.77999999999997,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin52:legFar@rig:hunter_3:legFar",
+          "x": 88.671875,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin52:legNear@rig:hunter_3:legNear",
+          "x": 69.8828125,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin52:body@rig:hunter_3:body",
+          "x": 80,
+          "y": -73.18,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin52:armNear@rig:hunter_3:armNear",
+          "x": 70.60546875,
+          "y": -63.56,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin52:head@rig:hunter_3:head",
+          "x": 79.27734375,
+          "y": -60.60000000000002,
+          "angle": 0.5,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "gear": 3,
+      "parts": [
+        {
+          "key": "goblin53:armFar@rig:hunter_4:armFar",
+          "x": 274.99789062499997,
+          "y": -65.77999999999997,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin53:legFar@rig:hunter_4:legFar",
+          "x": 278.56781250000006,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin53:legNear@rig:hunter_4:legNear",
+          "x": 260.00421874999995,
+          "y": -87.98000000000002,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin53:body@rig:hunter_4:body",
+          "x": 270,
+          "y": -73.18,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin53:armNear@rig:hunter_4:armNear",
+          "x": 260.71820312499995,
+          "y": -63.56,
+          "angle": 0,
+          "opacity": 1
+        },
+        {
+          "key": "goblin53:head@rig:hunter_4:head",
+          "x": 269.286015625,
+          "y": -60.60000000000002,
+          "angle": 0,
+          "opacity": 1
+        }
+      ]
+    }
+  ]
+}

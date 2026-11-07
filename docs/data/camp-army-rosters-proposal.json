@@ -1,0 +1,149 @@
+{
+  "status": "proposal-not-implemented",
+  "date": "2026-11-03",
+  "countsIncludeElitesAndBosses": true,
+  "siegeEnginesCountSeparately": true,
+  "camps": [
+    {
+      "id": "scout",
+      "name": "斥候营地",
+      "coreTotal": 15,
+      "core": {
+        "human": 9,
+        "elf": 6
+      },
+      "fieldReserveTotal": 12,
+      "fieldReserve": {
+        "human": 8,
+        "elf": 4
+      },
+      "wallLines": 0,
+      "towerCrew": 0,
+      "siegeStock": {},
+      "fieldReserveMeaning": "opening stock only, never daily sortie quota or threat gate",
+      "shootingLevels": []
+    },
+    {
+      "id": "vanguard",
+      "name": "先锋营地",
+      "coreTotal": 30,
+      "core": {
+        "human": 12,
+        "elf": 8,
+        "jumper": 6,
+        "dwarf": 3,
+        "heavy": 1
+      },
+      "fieldReserveTotal": 20,
+      "fieldReserve": {
+        "human": 8,
+        "elf": 6,
+        "jumper": 4,
+        "dwarf": 2
+      },
+      "wallLines": 0,
+      "towerCrew": 0,
+      "siegeStock": {},
+      "fieldReserveMeaning": "opening stock only, never daily sortie quota or threat gate",
+      "shootingLevels": []
+    },
+    {
+      "id": "front",
+      "name": "前军营地",
+      "coreTotal": 50,
+      "core": {
+        "shield": 16,
+        "elf": 14,
+        "dwarf": 14,
+        "jumper": 4,
+        "bulwark": 1,
+        "longbow": 1
+      },
+      "fieldReserveTotal": 30,
+      "fieldReserve": {
+        "shield": 12,
+        "elf": 8,
+        "dwarf": 6,
+        "jumper": 4
+      },
+      "wallLines": 1,
+      "towerCrew": 2,
+      "siegeStock": {
+        "ram": 1,
+        "catapult": 1
+      },
+      "fieldReserveMeaning": "opening stock only, never daily sortie quota or threat gate",
+      "shootingLevels": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "main",
+      "name": "中军大营",
+      "coreTotal": 70,
+      "core": {
+        "shield": 22,
+        "dwarf": 18,
+        "elf": 16,
+        "mage": 12,
+        "engineer": 1,
+        "siege_boss": 1
+      },
+      "fieldReserveTotal": 40,
+      "fieldReserve": {
+        "shield": 14,
+        "mage": 10,
+        "elf": 8,
+        "dwarf": 4,
+        "jumper": 4
+      },
+      "wallLines": 3,
+      "towerCrew": 7,
+      "siegeStock": {
+        "catapult": 1,
+        "firecatapult": 1
+      },
+      "fieldReserveMeaning": "opening stock only, never daily sortie quota or threat gate",
+      "shootingLevels": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "ship",
+      "name": "运兵大船",
+      "coreTotal": 30,
+      "core": {
+        "shield": 10,
+        "dwarf": 4,
+        "mage": 6,
+        "elf": 8,
+        "pyromancer": 1,
+        "fleet_boss": 1
+      },
+      "fieldReserveTotal": 20,
+      "fieldReserve": {
+        "shield": 6,
+        "mage": 6,
+        "dwarf": 3,
+        "jumper": 3,
+        "elf": 2
+      },
+      "wallLines": 2,
+      "towerCrew": 8,
+      "siegeStock": {
+        "firecatapult": 1
+      },
+      "fieldReserveMeaning": "opening stock only, never daily sortie quota or threat gate",
+      "shootingLevels": [
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "raidScheduleRef": "global-raid-calendar-proposal.json"
+}

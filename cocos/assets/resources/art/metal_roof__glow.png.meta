@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "b12426b9-678e-43e9-974f-f95baab42a39",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "b12426b9-678e-43e9-974f-f95baab42a39@6c48a",
+      "displayName": "metal_roof__glow",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "b12426b9-678e-43e9-974f-f95baab42a39",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "b12426b9-678e-43e9-974f-f95baab42a39@f9941",
+      "displayName": "metal_roof__glow",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 2,
+        "trimY": 2,
+        "width": 1046,
+        "height": 252,
+        "rawWidth": 1050,
+        "rawHeight": 256,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -523,
+            -126,
+            0,
+            523,
+            -126,
+            0,
+            -523,
+            126,
+            0,
+            523,
+            126,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            2,
+            254,
+            1048,
+            254,
+            2,
+            2,
+            1048,
+            2
+          ],
+          "nuv": [
+            0.0019047619047619048,
+            0.0078125,
+            0.9980952380952381,
+            0.0078125,
+            0.0019047619047619048,
+            0.9921875,
+            0.9980952380952381,
+            0.9921875
+          ],
+          "minPos": [
+            -523,
+            -126,
+            0
+          ],
+          "maxPos": [
+            523,
+            126,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b12426b9-678e-43e9-974f-f95baab42a39@6c48a",
+        "atlasUuid": "",
+        "trimType": "auto"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": false,
+    "hasAlpha": true,
+    "redirect": "b12426b9-678e-43e9-974f-f95baab42a39@6c48a"
+  }
+}

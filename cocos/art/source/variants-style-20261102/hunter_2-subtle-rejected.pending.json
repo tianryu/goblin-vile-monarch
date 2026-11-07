@@ -1,0 +1,9 @@
+{
+  "assetName": "hunter_2",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ad89b430-4529-488d-885e-e93cf3b06d10.png",
+  "prompt": "Minimal equipment-only edit of the attached approved red-clothed goblin hunter. Preserve EXACT face identity, head size, long nose, ear, eye, tooth shapes, body proportions, skin paint patches, red tunic and headwrap, boots, empty-handed bow pose and irregular matte painted rendering. Add only a small plain DULL GRAY shoulder plate on the near shoulder and two small plain gray kneepads. One brown leather strap holds the shoulder plate. Metal is a flat irregular two-tone gray patch, NO scratches, rust, bevels, shiny rivets, fine texture or black contour lines. Leave most of the red tunic visible. Do not redraw/smooth the face or make the body more muscular. Keep empty bow: NO arrow, no fletching, no separate projectile. One whole static character facing RIGHT, level feet, transparent background and margins. No labels, no white sticker border; the runtime adds it. This is the first armor stage of the exact same character, painted by the same artist.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": false
+}

@@ -1,0 +1,99 @@
+{
+  "scope": "Local desktop-delivery acceptance only. User provided new platform app1018356; actual ad activation/playback and physical phone acceptance remain external.",
+  "updated_at": "2026-11-01T22:18:33.702508+08:00",
+  "release_package": {
+    "raw_bytes": 108894670,
+    "zip_bytes": 78563062,
+    "zip_sha256": "d7b5e0f1b7bfa218b16b01a979005c284a0538fee6b75c3e3e5a40b5e0dad48a"
+  },
+  "runtime_clips": 88,
+  "unique_sheets": 87,
+  "core_character_states": 70,
+  "core_missing": [],
+  "core_pending": [],
+  "native": {
+    "game_model": 43,
+    "services": 36,
+    "ui": 11,
+    "visibility": 21,
+    "enemy_pose_and_arrow_height": 22,
+    "reactions_and_chief": 20
+  },
+  "campaign": {
+    "seeds": [
+      731,
+      123,
+      55
+    ],
+    "all_won": true,
+    "advertisement_receipts": 0,
+    "evidence": "qa/godot/v8-final-campaign.log"
+  },
+  "browser": {
+    "release": {
+      "passed": 13,
+      "failures": [],
+      "evidence": "qa/godot/v8-release-tests.json"
+    },
+    "touch_ui": {
+      "passed": 30,
+      "failures": [],
+      "evidence": "qa/godot/v7-browser-tests.json"
+    },
+    "merchant_mount_and_input": {
+      "passed": 11,
+      "failures": [],
+      "evidence": "qa/godot/v7-service-tests.json"
+    },
+    "bat_motion_and_arrow": {
+      "passed": 30,
+      "failures": [],
+      "evidence": "qa/godot/v8-bat-completion.json"
+    },
+    "chief_and_rank2_hit": {
+      "passed": 25,
+      "failures": [],
+      "evidence": "qa/godot/v8-chief-gesture-animation.json"
+    },
+    "elf_melee": {
+      "passed": 13,
+      "failures": [],
+      "evidence": "qa/godot/v8-enemy-combat-animation-elf_melee.json"
+    }
+  },
+  "soak": {
+    "seconds": 300,
+    "errors": [],
+    "night": true,
+    "torches": true,
+    "all_alive": true,
+    "frame_interval_ms": {
+      "p50": 42.5,
+      "p95": 60.60000000000582,
+      "p99": 60.70000000001164
+    },
+    "animation_rgba_estimate_min": 79107296,
+    "animation_rgba_estimate_max": 85781008,
+    "engine_static_min": 64032722,
+    "engine_static_max": 64252604
+  },
+  "taptap": {
+    "app_id": 1018356,
+    "developer_id": 510750,
+    "name": "我是哥布林：君主",
+    "app_type_from_list": "non-level",
+    "selected_and_refreshed": true,
+    "miniapp_id": "unavailable",
+    "ads_status": 0,
+    "ad_space_id": null,
+    "activation_url": "https://developer.taptap.cn/forge/510750/app/1018356/operation/ad-monetization",
+    "operations": "Only list/select local context/get info/check ads. No app metadata edits, uploads or publication."
+  },
+  "limitations": [
+    "No physical phone or TapTap host measurement.",
+    "No90-percent visual similarity measurement.",
+    "No claim that every optional per-rank reaction variant has a unique animation.",
+    "Software-WebGL stress diagnostics do not prove phone frame rate or whole-process memory.",
+    "Current app ad status0 blocks SDK configuration; never reuse old app IDs."
+  ]
+}

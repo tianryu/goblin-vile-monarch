@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-03",
+  "checkpoint": "v11-20261103",
+  "kind": "local-cocos-functional-preview",
+  "url": "http://127.0.0.1:42826/",
+  "notTapTapUploadPackage": true,
+  "published": false,
+  "realPhone": false,
+  "realAds": false,
+  "modelChecks": 83,
+  "browserGroups": 8,
+  "normalEconomyWinningSeeds": [
+    731,
+    2026
+  ],
+  "incompleteSeed": 1103,
+  "balanceLimits": "真人败率未测，保守控制器147至173分钟，第三种子中军推进超时",
+  "buildLog": "qa/cocos/build-v11-round5.log",
+  "sourceHashes": {
+    "cocos/assets/scripts/MonarchGame.ts": "e95bf80b5060e3005a6dd341df97bb075e9abc6e05f5165e5c914af945977e31",
+    "cocos/assets/scripts/model/GameModel.ts": "43cf67fbedca1bc18eb95b676b72e1c905aa5b1b6353e0cb18abd8d7c0f4f4cf",
+    "cocos/assets/scripts/model/PrisonLayout.ts": "81e0aace8d2f32de57f3c267fc9abe24767ccf155625e83af32c7467f089f5fa",
+    "cocos/assets/scripts/model/Progression.ts": "d78ec19e329dce493e13c11a3c5c70f128bbd39971e3e9b20d0758f0e02d1005",
+    "cocos/assets/scripts/model/Rules.ts": "8c5030a88a27a1c170d0785432d196d13cff9d85c514575e062d033ed48ef169",
+    "cocos/assets/scripts/model/State.ts": "3c050c464e43c841e69aa3c70f922101f1596370b2f93405e795ce0c8af71e89",
+    "cocos/assets/scripts/model/WorldUpgrade.ts": "402b8974f1889247b0179e8ba26d1e309d38c6387c8283db0581684513f7ef0d",
+    "cocos/assets/scripts/platform/Platform.ts": "e1e747e715c7064584fe0b7bcf5044e13908b6cebf7f95d5d57f56ab8845df2d",
+    "cocos/assets/scripts/view/ArtBank.ts": "812c7a04da46ef3c139c5bf9cf3db9fed9cc9c026f749d1b1b2916c3920aee11",
+    "cocos/assets/scripts/view/Controls.ts": "cd31cb214758d7d4d16ea763fa33b10ccc8556d9388a6aee344bf681955d9533",
+    "cocos/assets/scripts/view/CutoutMotion.ts": "15f4f4212bb6c0d9b86943164b620541ffd5789116d56a34362bfd68b3701741",
+    "cocos/assets/scripts/view/GameView.ts": "c87d46c8b329e8eea594d9e35b77c48ccbdc4b38c6f6ac34100b69fd0333d5cf",
+    "cocos/assets/scripts/view/Painter.ts": "62ffbf9e6278f3b6336bf068672c1142e4c87867c30842d9497b5d310a822178",
+    "cocos/assets/scripts/view/Transitions.ts": "3627c294c0f2a0533756fbd4f762871bee1919356eef166eddbf8697e61c8f23"
+  },
+  "evidence": [
+    "qa/cocos/v11-model-final.log",
+    "qa/cocos/v11-browser/final/report.json",
+    "qa/cocos/v11-diagnostics.json",
+    "qa/cocos/v11-render-stress.json",
+    "qa/cocos/v11-render-stress-first-failure.json"
+  ],
+  "deferred": [
+    "真人乐趣与难度确认",
+    "手机与TapTap宿主",
+    "真实广告",
+    "祭坛和多人待办"
+  ],
+  "independentPackageSmoke": {
+    "package": "cocos-v11-20261103-r1",
+    "errors": [],
+    "failedRequests": [],
+    "realPhone": false,
+    "started": true,
+    "movement": true,
+    "saveReload": true,
+    "savedX": 524.0000000000003
+  },
+  "directory": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\release\\cocos-v11-20261103-r1",
+  "archive": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\release\\cocos-v11-20261103-r1.zip",
+  "archiveBytes": 25564213,
+  "archiveSha256": "6ebf5a3c4aa3de320f3e6534c2441b27775cacd8ea764620e751e8f4cc841edc"
+}

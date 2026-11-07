@@ -1,0 +1,1506 @@
+{
+  "status": "won",
+  "seed": 731,
+  "normalEconomy": true,
+  "adReceipts": 0,
+  "elapsed": 8843.20000003961,
+  "days": 37,
+  "trace": [
+    {
+      "event": "foundation",
+      "t": 212,
+      "day": 1,
+      "gold": 6,
+      "bank": 2,
+      "pop": 5,
+      "hall": 1,
+      "flag": 0,
+      "kills": 6,
+      "sold": 0,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 1
+      }
+    },
+    {
+      "event": "repair-ordered",
+      "t": 234,
+      "day": 2,
+      "gold": 8,
+      "bank": 0,
+      "pop": 5,
+      "hall": 1,
+      "flag": 0,
+      "kills": 6,
+      "sold": 0,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 294,
+      "day": 2,
+      "gold": 10,
+      "bank": 0,
+      "pop": 5,
+      "hall": 1,
+      "flag": 0,
+      "kills": 8,
+      "sold": 0,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 1
+      }
+    },
+    {
+      "event": "repair-ordered",
+      "t": 387,
+      "day": 2,
+      "gold": 11,
+      "bank": 0,
+      "pop": 5,
+      "hall": 1,
+      "flag": 0,
+      "kills": 14,
+      "sold": 0,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 1
+      }
+    },
+    {
+      "event": "trade",
+      "t": 403,
+      "day": 2,
+      "gold": 11,
+      "bank": 7,
+      "pop": 5,
+      "hall": 1,
+      "flag": 0,
+      "kills": 14,
+      "sold": 2,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 412,
+      "day": 2,
+      "gold": 20,
+      "bank": 0,
+      "pop": 5,
+      "hall": 1,
+      "flag": 0,
+      "kills": 14,
+      "sold": 2,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 1
+      }
+    },
+    {
+      "event": "trade",
+      "t": 433,
+      "day": 2,
+      "gold": 20,
+      "bank": 3,
+      "pop": 6,
+      "hall": 1,
+      "flag": 0,
+      "kills": 14,
+      "sold": 3,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 1,
+        "idle": 1
+      }
+    },
+    {
+      "event": "trade",
+      "t": 462,
+      "day": 3,
+      "gold": 16,
+      "bank": 4,
+      "pop": 6,
+      "hall": 1,
+      "flag": 0,
+      "kills": 14,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 471,
+      "day": 3,
+      "gold": 22,
+      "bank": 0,
+      "pop": 6,
+      "hall": 1,
+      "flag": 0,
+      "kills": 14,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 502,
+      "day": 3,
+      "gold": 26,
+      "bank": 0,
+      "pop": 6,
+      "hall": 1,
+      "flag": 0,
+      "kills": 14,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 581,
+      "day": 3,
+      "gold": 4,
+      "bank": 0,
+      "pop": 6,
+      "hall": 2,
+      "flag": 0,
+      "kills": 14,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 644,
+      "day": 3,
+      "gold": 8,
+      "bank": 0,
+      "pop": 6,
+      "hall": 2,
+      "flag": 0,
+      "kills": 19,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 655,
+      "day": 3,
+      "gold": 10,
+      "bank": 0,
+      "pop": 6,
+      "hall": 2,
+      "flag": 0,
+      "kills": 19,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 677,
+      "day": 3,
+      "gold": 12,
+      "bank": 0,
+      "pop": 6,
+      "hall": 2,
+      "flag": 0,
+      "kills": 19,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 735,
+      "day": 4,
+      "gold": 5,
+      "bank": 0,
+      "pop": 6,
+      "hall": 2,
+      "flag": 0,
+      "kills": 20,
+      "sold": 4,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2
+      }
+    },
+    {
+      "event": "trade",
+      "t": 740,
+      "day": 4,
+      "gold": 5,
+      "bank": 6,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 20,
+      "sold": 6,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 816,
+      "day": 4,
+      "gold": 4,
+      "bank": 2,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 21,
+      "sold": 6,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 887,
+      "day": 4,
+      "gold": 10,
+      "bank": 0,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 27,
+      "sold": 6,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 917,
+      "day": 4,
+      "gold": 12,
+      "bank": 0,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 27,
+      "sold": 6,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 970,
+      "day": 5,
+      "gold": 4,
+      "bank": 0,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 28,
+      "sold": 6,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "trade",
+      "t": 970,
+      "day": 5,
+      "gold": 4,
+      "bank": 6,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 28,
+      "sold": 8,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1001,
+      "day": 5,
+      "gold": 12,
+      "bank": 0,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 28,
+      "sold": 8,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "trade",
+      "t": 1002,
+      "day": 5,
+      "gold": 12,
+      "bank": 3,
+      "pop": 7,
+      "hall": 2,
+      "flag": 0,
+      "kills": 28,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1037,
+      "day": 5,
+      "gold": 6,
+      "bank": 0,
+      "pop": 8,
+      "hall": 2,
+      "flag": 1,
+      "kills": 28,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1065,
+      "day": 5,
+      "gold": 6,
+      "bank": 4,
+      "pop": 8,
+      "hall": 2,
+      "flag": 1,
+      "kills": 28,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 2,
+        "brute": 2,
+        "idle": 2
+      }
+    },
+    {
+      "event": "population-ready",
+      "t": 1074,
+      "day": 5,
+      "gold": 7,
+      "bank": 0,
+      "pop": 8,
+      "hall": 2,
+      "flag": 1,
+      "kills": 28,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 3,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1127,
+      "day": 5,
+      "gold": 2,
+      "bank": 0,
+      "pop": 8,
+      "hall": 2,
+      "flag": 1,
+      "kills": 36,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 3,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1166,
+      "day": 5,
+      "gold": 2,
+      "bank": 0,
+      "pop": 9,
+      "hall": 2,
+      "flag": 1,
+      "kills": 36,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 3,
+        "brute": 2,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1182,
+      "day": 6,
+      "gold": 4,
+      "bank": 2,
+      "pop": 9,
+      "hall": 2,
+      "flag": 1,
+      "kills": 36,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 3,
+        "brute": 2,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1192,
+      "day": 6,
+      "gold": 10,
+      "bank": 0,
+      "pop": 9,
+      "hall": 2,
+      "flag": 1,
+      "kills": 36,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 3,
+        "brute": 2,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1236,
+      "day": 6,
+      "gold": 12,
+      "bank": 0,
+      "pop": 9,
+      "hall": 2,
+      "flag": 1,
+      "kills": 36,
+      "sold": 9,
+      "roles": {
+        "worker": 2,
+        "hunter": 4,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "trade",
+      "t": 1236,
+      "day": 6,
+      "gold": 12,
+      "bank": 15,
+      "pop": 9,
+      "hall": 2,
+      "flag": 1,
+      "kills": 36,
+      "sold": 14,
+      "roles": {
+        "worker": 2,
+        "hunter": 4,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "draft",
+      "id": 176,
+      "role": "brute",
+      "result": "done",
+      "order": "gather",
+      "used": 1,
+      "t": 1254.466666666183
+    },
+    {
+      "event": "draft",
+      "id": 292,
+      "role": "brute",
+      "result": "done",
+      "order": "gather",
+      "used": 2,
+      "t": 1254.466666666183
+    },
+    {
+      "event": "draft",
+      "id": 561,
+      "role": "hunter",
+      "result": "done",
+      "order": "gather",
+      "used": 3,
+      "t": 1254.466666666183
+    },
+    {
+      "event": "draft",
+      "id": 474,
+      "role": "hunter",
+      "result": "done",
+      "order": "gather",
+      "used": 4,
+      "t": 1254.466666666183
+    },
+    {
+      "event": "trade",
+      "t": 1294,
+      "day": 6,
+      "gold": 17,
+      "bank": 3,
+      "pop": 9,
+      "hall": 2,
+      "flag": 1,
+      "kills": 36,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 4,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "repair-ordered",
+      "t": 1347,
+      "day": 6,
+      "gold": 10,
+      "bank": 7,
+      "pop": 10,
+      "hall": 2,
+      "flag": 1,
+      "kills": 45,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1377,
+      "day": 6,
+      "gold": 20,
+      "bank": 0,
+      "pop": 10,
+      "hall": 2,
+      "flag": 1,
+      "kills": 45,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "dispatch-0",
+      "t": 1428,
+      "day": 7,
+      "gold": 17,
+      "bank": 0,
+      "pop": 10,
+      "hall": 2,
+      "flag": 1,
+      "kills": 45,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1432,
+      "day": 7,
+      "gold": 21,
+      "bank": 0,
+      "pop": 10,
+      "hall": 2,
+      "flag": 1,
+      "kills": 45,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "cleared-0",
+      "t": 1465,
+      "day": 7,
+      "gold": 21,
+      "bank": 5,
+      "pop": 10,
+      "hall": 2,
+      "flag": 1,
+      "kills": 60,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 2,
+        "idle": 1
+      }
+    },
+    {
+      "event": "claimed-0",
+      "t": 1683,
+      "day": 8,
+      "gold": 31,
+      "bank": 34,
+      "pop": 11,
+      "hall": 2,
+      "flag": 1,
+      "kills": 70,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 2,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 1939,
+      "day": 9,
+      "gold": 28,
+      "bank": 0,
+      "pop": 11,
+      "hall": 3,
+      "flag": 1,
+      "kills": 78,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 2,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 2149,
+      "day": 10,
+      "gold": 24,
+      "bank": 0,
+      "pop": 12,
+      "hall": 3,
+      "flag": 1,
+      "kills": 87,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 3,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 2294,
+      "day": 10,
+      "gold": 20,
+      "bank": 0,
+      "pop": 13,
+      "hall": 3,
+      "flag": 1,
+      "kills": 91,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 3,
+        "idle": 3
+      }
+    },
+    {
+      "event": "draft",
+      "id": 607,
+      "role": "hunter",
+      "result": "done",
+      "order": "gather",
+      "used": 5,
+      "t": 2394.0333333318135
+    },
+    {
+      "event": "draft",
+      "id": 51,
+      "role": "hunter",
+      "result": "done",
+      "order": "gather",
+      "used": 6,
+      "t": 2397.5333333318104
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 2454,
+      "day": 11,
+      "gold": 19,
+      "bank": 0,
+      "pop": 13,
+      "hall": 3,
+      "flag": 2,
+      "kills": 97,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 5,
+        "brute": 3,
+        "idle": 3
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 2472,
+      "day": 11,
+      "gold": 18,
+      "bank": 0,
+      "pop": 13,
+      "hall": 3,
+      "flag": 2,
+      "kills": 97,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 6,
+        "brute": 3,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 2477,
+      "day": 11,
+      "gold": 20,
+      "bank": 0,
+      "pop": 13,
+      "hall": 3,
+      "flag": 2,
+      "kills": 97,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 6,
+        "brute": 3,
+        "idle": 2
+      }
+    },
+    {
+      "event": "repair-ordered",
+      "t": 2584,
+      "day": 11,
+      "gold": 13,
+      "bank": 3,
+      "pop": 14,
+      "hall": 3,
+      "flag": 2,
+      "kills": 111,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 7,
+        "brute": 3,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 2611,
+      "day": 11,
+      "gold": 19,
+      "bank": 5,
+      "pop": 14,
+      "hall": 3,
+      "flag": 2,
+      "kills": 111,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 7,
+        "brute": 3,
+        "idle": 2
+      }
+    },
+    {
+      "event": "dispatch-1",
+      "t": 2629,
+      "day": 12,
+      "gold": 18,
+      "bank": 5,
+      "pop": 14,
+      "hall": 3,
+      "flag": 2,
+      "kills": 111,
+      "sold": 15,
+      "roles": {
+        "worker": 2,
+        "hunter": 7,
+        "brute": 3,
+        "idle": 2
+      }
+    },
+    {
+      "event": "trade",
+      "t": 2638,
+      "day": 12,
+      "gold": 18,
+      "bank": 27,
+      "pop": 14,
+      "hall": 3,
+      "flag": 2,
+      "kills": 111,
+      "sold": 21,
+      "roles": {
+        "worker": 2,
+        "hunter": 7,
+        "brute": 3,
+        "idle": 2
+      }
+    },
+    {
+      "event": "cleared-1",
+      "t": 2693,
+      "day": 12,
+      "gold": 13,
+      "bank": 29,
+      "pop": 15,
+      "hall": 3,
+      "flag": 2,
+      "kills": 142,
+      "sold": 21,
+      "roles": {
+        "worker": 2,
+        "hunter": 7,
+        "brute": 3,
+        "idle": 3
+      }
+    },
+    {
+      "event": "claimed-1",
+      "t": 2924,
+      "day": 13,
+      "gold": 14,
+      "bank": 74,
+      "pop": 16,
+      "hall": 3,
+      "flag": 2,
+      "kills": 151,
+      "sold": 21,
+      "roles": {
+        "worker": 2,
+        "hunter": 8,
+        "brute": 3,
+        "idle": 3
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 3651,
+      "day": 16,
+      "gold": 31,
+      "bank": 0,
+      "pop": 16,
+      "hall": 4,
+      "flag": 2,
+      "kills": 188,
+      "sold": 21,
+      "roles": {
+        "worker": 2,
+        "hunter": 8,
+        "brute": 3,
+        "idle": 3
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 3837,
+      "day": 17,
+      "gold": 28,
+      "bank": 0,
+      "pop": 17,
+      "hall": 4,
+      "flag": 2,
+      "kills": 202,
+      "sold": 21,
+      "roles": {
+        "worker": 2,
+        "hunter": 8,
+        "brute": 3,
+        "idle": 4
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 4076,
+      "day": 18,
+      "gold": 29,
+      "bank": 0,
+      "pop": 18,
+      "hall": 4,
+      "flag": 3,
+      "kills": 218,
+      "sold": 21,
+      "roles": {
+        "worker": 3,
+        "hunter": 8,
+        "brute": 3,
+        "idle": 4
+      }
+    },
+    {
+      "event": "draft",
+      "id": 52,
+      "role": "hunter",
+      "result": "done",
+      "order": "gather",
+      "used": 8,
+      "t": 4240.166666665435
+    },
+    {
+      "event": "repair-ordered",
+      "t": 4284,
+      "day": 18,
+      "gold": 15,
+      "bank": 0,
+      "pop": 19,
+      "hall": 4,
+      "flag": 3,
+      "kills": 234,
+      "sold": 21,
+      "roles": {
+        "worker": 4,
+        "hunter": 8,
+        "brute": 3,
+        "idle": 4
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 4338,
+      "day": 19,
+      "gold": 29,
+      "bank": 1,
+      "pop": 19,
+      "hall": 4,
+      "flag": 3,
+      "kills": 234,
+      "sold": 21,
+      "roles": {
+        "worker": 4,
+        "hunter": 8,
+        "brute": 3,
+        "idle": 4
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 4386,
+      "day": 19,
+      "gold": 29,
+      "bank": 8,
+      "pop": 19,
+      "hall": 4,
+      "flag": 3,
+      "kills": 234,
+      "sold": 21,
+      "roles": {
+        "worker": 4,
+        "hunter": 8,
+        "brute": 4,
+        "idle": 3
+      }
+    },
+    {
+      "event": "repair-ordered",
+      "t": 4523,
+      "day": 19,
+      "gold": 24,
+      "bank": 11,
+      "pop": 20,
+      "hall": 4,
+      "flag": 3,
+      "kills": 250,
+      "sold": 21,
+      "roles": {
+        "worker": 4,
+        "hunter": 10,
+        "brute": 4,
+        "idle": 2
+      }
+    },
+    {
+      "event": "dispatch-2",
+      "t": 4572,
+      "day": 20,
+      "gold": 21,
+      "bank": 14,
+      "pop": 20,
+      "hall": 4,
+      "flag": 3,
+      "kills": 250,
+      "sold": 21,
+      "roles": {
+        "worker": 4,
+        "hunter": 10,
+        "brute": 4,
+        "idle": 2
+      }
+    },
+    {
+      "event": "cleared-2",
+      "t": 4669,
+      "day": 20,
+      "gold": 21,
+      "bank": 25,
+      "pop": 20,
+      "hall": 4,
+      "flag": 3,
+      "kills": 302,
+      "sold": 21,
+      "roles": {
+        "worker": 4,
+        "hunter": 10,
+        "brute": 4,
+        "idle": 2
+      }
+    },
+    {
+      "event": "claimed-2",
+      "t": 5115,
+      "day": 22,
+      "gold": 10,
+      "bank": 117,
+      "pop": 20,
+      "hall": 4,
+      "flag": 3,
+      "kills": 325,
+      "sold": 21,
+      "roles": {
+        "worker": 4,
+        "hunter": 10,
+        "brute": 4,
+        "idle": 2
+      }
+    },
+    {
+      "event": "repair-ordered",
+      "t": 7427,
+      "day": 32,
+      "gold": 13,
+      "bank": 0,
+      "pop": 19,
+      "hall": 5,
+      "flag": 4,
+      "kills": 633,
+      "sold": 21,
+      "roles": {
+        "worker": 3,
+        "hunter": 10,
+        "brute": 4,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 7505,
+      "day": 32,
+      "gold": 31,
+      "bank": 5,
+      "pop": 18,
+      "hall": 5,
+      "flag": 4,
+      "kills": 682,
+      "sold": 21,
+      "roles": {
+        "hunter": 10,
+        "worker": 2,
+        "brute": 4,
+        "idle": 2
+      }
+    },
+    {
+      "event": "draft",
+      "id": 1560,
+      "role": "hunter",
+      "result": "done",
+      "order": "gather",
+      "used": 10,
+      "t": 7628.13333337524
+    },
+    {
+      "event": "repair-ordered",
+      "t": 7926,
+      "day": 34,
+      "gold": 20,
+      "bank": 3,
+      "pop": 19,
+      "hall": 5,
+      "flag": 4,
+      "kills": 713,
+      "sold": 21,
+      "roles": {
+        "hunter": 10,
+        "worker": 3,
+        "brute": 4,
+        "idle": 2
+      }
+    },
+    {
+      "event": "dispatch-3",
+      "t": 7955,
+      "day": 34,
+      "gold": 17,
+      "bank": 3,
+      "pop": 20,
+      "hall": 5,
+      "flag": 4,
+      "kills": 713,
+      "sold": 21,
+      "roles": {
+        "hunter": 10,
+        "worker": 3,
+        "brute": 4,
+        "idle": 3
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 8003,
+      "day": 34,
+      "gold": 29,
+      "bank": 3,
+      "pop": 20,
+      "hall": 5,
+      "flag": 4,
+      "kills": 714,
+      "sold": 21,
+      "roles": {
+        "hunter": 10,
+        "worker": 3,
+        "brute": 4,
+        "idle": 3
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 8081,
+      "day": 34,
+      "gold": 28,
+      "bank": 5,
+      "pop": 20,
+      "hall": 5,
+      "flag": 4,
+      "kills": 768,
+      "sold": 21,
+      "roles": {
+        "hunter": 9,
+        "worker": 4,
+        "brute": 4,
+        "idle": 3
+      }
+    },
+    {
+      "event": "cleared-3",
+      "t": 8164,
+      "day": 35,
+      "gold": 28,
+      "bank": 5,
+      "pop": 20,
+      "hall": 5,
+      "flag": 4,
+      "kills": 800,
+      "sold": 21,
+      "roles": {
+        "hunter": 9,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    },
+    {
+      "event": "continue-to-ship",
+      "t": 8164,
+      "day": 35,
+      "gold": 28,
+      "bank": 5,
+      "pop": 20,
+      "hall": 5,
+      "flag": 4,
+      "kills": 800,
+      "sold": 21,
+      "roles": {
+        "hunter": 9,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    },
+    {
+      "event": "draft",
+      "id": 2772,
+      "role": "hunter",
+      "result": "done",
+      "order": "gather",
+      "used": 10,
+      "t": 8167.866666715446
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 8387,
+      "day": 36,
+      "gold": 28,
+      "bank": 16,
+      "pop": 22,
+      "hall": 5,
+      "flag": 4,
+      "kills": 816,
+      "sold": 21,
+      "roles": {
+        "hunter": 11,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    },
+    {
+      "event": "dispatch-4",
+      "t": 8467,
+      "day": 36,
+      "gold": 25,
+      "bank": 30,
+      "pop": 22,
+      "hall": 5,
+      "flag": 4,
+      "kills": 817,
+      "sold": 21,
+      "roles": {
+        "hunter": 11,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    },
+    {
+      "event": "scrap-surplus",
+      "t": 8686,
+      "day": 37,
+      "gold": 29,
+      "bank": 45,
+      "pop": 22,
+      "hall": 5,
+      "flag": 4,
+      "kills": 925,
+      "sold": 21,
+      "roles": {
+        "hunter": 11,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    },
+    {
+      "event": "cleared-4",
+      "t": 8743,
+      "day": 37,
+      "gold": 29,
+      "bank": 65,
+      "pop": 22,
+      "hall": 5,
+      "flag": 4,
+      "kills": 937,
+      "sold": 21,
+      "roles": {
+        "hunter": 11,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    },
+    {
+      "event": "continue-to-ship",
+      "t": 8743,
+      "day": 37,
+      "gold": 29,
+      "bank": 65,
+      "pop": 22,
+      "hall": 5,
+      "flag": 4,
+      "kills": 937,
+      "sold": 21,
+      "roles": {
+        "hunter": 11,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    },
+    {
+      "event": "recapture-3",
+      "t": 8818,
+      "day": 37,
+      "gold": 26,
+      "bank": 65,
+      "pop": 21,
+      "hall": 5,
+      "flag": 4,
+      "kills": 957,
+      "sold": 21,
+      "roles": {
+        "hunter": 10,
+        "worker": 4,
+        "brute": 5,
+        "idle": 2
+      }
+    }
+  ],
+  "maxActive": 58,
+  "endingPopulation": 21,
+  "camps": [
+    {
+      "id": 20,
+      "index": 0,
+      "x": 5200,
+      "hp": 0,
+      "maxHp": 135,
+      "defeated": true,
+      "claimed": true,
+      "rewarded": true,
+      "rebuild": 0,
+      "reserve": [],
+      "heroesPending": [],
+      "reinforcementClock": 2.5666666666666735,
+      "frontierSince": 1
+    },
+    {
+      "id": 25,
+      "index": 1,
+      "x": 9200,
+      "hp": 0,
+      "maxHp": 220,
+      "defeated": true,
+      "claimed": true,
+      "rewarded": true,
+      "rebuild": 0,
+      "reserve": [],
+      "heroesPending": [],
+      "reinforcementClock": 2.466666666666674,
+      "frontierSince": 7
+    },
+    {
+      "id": 30,
+      "index": 2,
+      "x": 14200,
+      "hp": 0,
+      "maxHp": 330,
+      "defeated": true,
+      "claimed": true,
+      "rewarded": true,
+      "rebuild": 0,
+      "reserve": [],
+      "heroesPending": [],
+      "reinforcementClock": 3.9333333333333353,
+      "frontierSince": 12
+    },
+    {
+      "id": 35,
+      "index": 3,
+      "x": 20700,
+      "hp": 0,
+      "maxHp": 450,
+      "defeated": true,
+      "claimed": false,
+      "rewarded": true,
+      "rebuild": 0.03333333333333333,
+      "reserve": [],
+      "heroesPending": [],
+      "reinforcementClock": 0.23333333333333928,
+      "frontierSince": 32
+    },
+    {
+      "id": 40,
+      "index": 4,
+      "x": 22400,
+      "hp": 0,
+      "maxHp": 650,
+      "defeated": true,
+      "claimed": false,
+      "rewarded": true,
+      "rebuild": 100.23333333333021,
+      "reserve": [],
+      "heroesPending": [],
+      "reinforcementClock": 0.8000000000000058,
+      "frontierSince": 37
+    }
+  ]
+}

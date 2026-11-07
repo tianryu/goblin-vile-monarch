@@ -1,0 +1,13 @@
+{
+  "assetName": "territory_marker",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-fda48e92-d660-4071-a92e-ce95b355a5d7.png",
+  "prompt": "Use case: stylized-concept. One small medieval goblin territory marker for this exact flat hand-painted 2D side-view game. Style reference is the attached game's wooden props: broad matte close-valued brown paint shapes, little volume, few details, no pixel art or realistic texture. A crooked short WOODEN STAKE is firmly planted vertically, with a BLUE HUMAN HELMET hanging upside down on one side and two small BURGUNDY CLOTH STRIPS knotted at the top, a simple tooth-shaped ivory wood token tied on the front. Very modest recognizable captured-trophy roadside marker, not a huge flagpole, not a coat of arms, no crown or ornate banner. Objects tied securely, feet at common horizontal ground line. Width half its height, whole prop with margin on transparent background, orthographic side view. No people, scenery, shadows, floor, text, particles or white outline.",
+  "edge": "building",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "低调战利品木桩配破布和敌盔，非普通城界大旗，底部落实，匹配木料色块，待69像素引擎检查",
+  "reviewStatus": "approved-source-pending-engine"
+}

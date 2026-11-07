@@ -1,0 +1,5 @@
+{
+  "kind": "test-controller-interruption",
+  "pid": 20620,
+  "reason": "旧测试器终局后等待回血和移动的循环没有终止条件，停止该次模拟；不作为通关或失败成绩。"
+}

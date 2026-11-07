@@ -1,0 +1,4101 @@
+{
+  "scope": "Five-minute desktop Edge software WebGL stress, 60 units and 40 durable enemies. Not phone/TapTap performance.",
+  "duration_seconds": 300,
+  "frame_count": 16707,
+  "frame_interval_ms": {
+    "p50": 18.19999999999709,
+    "p95": 18.300000000046566,
+    "p99": 24.30000000000291,
+    "max": 24.400000000023283
+  },
+  "samples": [
+    {
+      "elapsed": 15004.89999999851,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 1,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0172,
+        "engine_static_bytes": 60475210,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 9,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 151.966666666666,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 22327459
+    },
+    {
+      "elapsed": 25018,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 1,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0173,
+        "engine_static_bytes": 60484150,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 5,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 161.933333333332,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 33784243
+    },
+    {
+      "elapsed": 35044.5,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 1,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0218,
+        "engine_static_bytes": 60479306,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 5,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 172.066666666665,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 17561749
+    },
+    {
+      "elapsed": 45060.69999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0189,
+        "engine_static_bytes": 60502822,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 5,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 2.09999999999773,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 20218553
+    },
+    {
+      "elapsed": 55082.39999999851,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0177,
+        "engine_static_bytes": 60478818,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 5,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 12.133333333331,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 15974661
+    },
+    {
+      "elapsed": 65098.5,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0182,
+        "engine_static_bytes": 60494882,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 5,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 22.1666666666646,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 20701308
+    },
+    {
+      "elapsed": 75128.5,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0182,
+        "engine_static_bytes": 60491686,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 32.0666666666651,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 21509049
+    },
+    {
+      "elapsed": 85153.29999999702,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0184,
+        "engine_static_bytes": 60491686,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 42.0999999999979,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 18833393
+    },
+    {
+      "elapsed": 95177.19999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0185,
+        "engine_static_bytes": 60486198,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 52.066666666664,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 25138713
+    },
+    {
+      "elapsed": 105203.39999999851,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0184,
+        "engine_static_bytes": 60491114,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 62.0666666666634,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 23352279
+    },
+    {
+      "elapsed": 115229.60000000149,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.019,
+        "engine_static_bytes": 60503286,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 72.1333333333295,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 20253327
+    },
+    {
+      "elapsed": 125243.60000000149,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.023,
+        "engine_static_bytes": 60491114,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 82.2999999999956,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 17854039
+    },
+    {
+      "elapsed": 135251.3999999985,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0208,
+        "engine_static_bytes": 60491702,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 92.1333333333284,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 23781421
+    },
+    {
+      "elapsed": 145280.69999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0189,
+        "engine_static_bytes": 60486214,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 102.166666666661,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 19234933
+    },
+    {
+      "elapsed": 155291.6000000015,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0192,
+        "engine_static_bytes": 60495354,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 112.266666666661,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 25271203
+    },
+    {
+      "elapsed": 165297,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0191,
+        "engine_static_bytes": 60504154,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 14,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "黄昏",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 122.299999999993,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 23222132
+    },
+    {
+      "elapsed": 175317.19999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 44,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0193,
+        "engine_static_bytes": 60493050,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 14,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "黄昏",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 132.366666666659,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 19523023
+    },
+    {
+      "elapsed": 185330.69999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 52,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0194,
+        "engine_static_bytes": 60509502,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 142.299999999992,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 27044541
+    },
+    {
+      "elapsed": 195353.3999999985,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 52,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.019,
+        "engine_static_bytes": 60501542,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 152.333333333325,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 24809437
+    },
+    {
+      "elapsed": 205382.69999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 52,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0191,
+        "engine_static_bytes": 60513198,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 162.366666666658,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 22612008
+    },
+    {
+      "elapsed": 215400.69999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 2,
+        "decoded_art_bytes": 19293424,
+        "enemies": 52,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0193,
+        "engine_static_bytes": 60510746,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 172.366666666657,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 19833077
+    },
+    {
+      "elapsed": 225420.29999999702,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 52,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0192,
+        "engine_static_bytes": 60508890,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 2.39999999999008,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 26760941
+    },
+    {
+      "elapsed": 235441.8999999985,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 50,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0187,
+        "engine_static_bytes": 60515942,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 3,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 12.3333333333234,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 23055148
+    },
+    {
+      "elapsed": 245463.8999999985,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 50,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0191,
+        "engine_static_bytes": 60507326,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 4,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 22.3333333333237,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 21260068
+    },
+    {
+      "elapsed": 255486.19999999553,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 50,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0187,
+        "engine_static_bytes": 60509798,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 4,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 32.3666666666575,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 114
+      },
+      "jsHeap": 28109279
+    },
+    {
+      "elapsed": 265502,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 50,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0186,
+        "engine_static_bytes": 60513706,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 16,
+        "hero_x": -350,
+        "kills": 5,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 42.4333333333236,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 118
+      },
+      "jsHeap": 26501049
+    },
+    {
+      "elapsed": 275526.299999997,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 49,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0185,
+        "engine_static_bytes": 60509954,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 19,
+        "hero_x": -350,
+        "kills": 7,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 52.4999999999897,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 120
+      },
+      "jsHeap": 23895027
+    },
+    {
+      "elapsed": 285545.5,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 48,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0189,
+        "engine_static_bytes": 60522402,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 18,
+        "hero_x": -350,
+        "kills": 8,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 62.5333333333224,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 119
+      },
+      "jsHeap": 21664576
+    },
+    {
+      "elapsed": 295570.3999999985,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 48,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0202,
+        "engine_static_bytes": 60508346,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 18,
+        "hero_x": -350,
+        "kills": 8,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 72.5999999999885,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 119
+      },
+      "jsHeap": 28070206
+    },
+    {
+      "elapsed": 305598,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "content_clip": [
+          207,
+          110,
+          624,
+          281
+        ],
+        "day": 3,
+        "decoded_art_bytes": 19293424,
+        "enemies": 48,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0186,
+        "engine_static_bytes": 60508346,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gold": 21,
+        "hero_x": -350,
+        "kills": 8,
+        "modal": "",
+        "mount": "boar",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            895,
+            335,
+            112,
+            112
+          ],
+          "joystick": [
+            23,
+            358,
+            170,
+            94
+          ],
+          "pause": [
+            959,
+            12,
+            64,
+            64
+          ],
+          "run": [
+            787,
+            363,
+            86,
+            86
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 82.599999999988,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "key": "run",
+            "rect": [
+              787,
+              363,
+              86,
+              86
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "action",
+            "rect": [
+              895,
+              335,
+              112,
+              112
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "key": "pause",
+            "rect": [
+              959,
+              12,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 119
+      },
+      "jsHeap": 25882265
+    }
+  ],
+  "processes": [
+    {
+      "type": "browser",
+      "id": 37708,
+      "cpuTime": 5.204636
+    },
+    {
+      "type": "renderer",
+      "id": 12764,
+      "cpuTime": 0.101579
+    },
+    {
+      "type": "renderer",
+      "id": 28340,
+      "cpuTime": 125.000394
+    },
+    {
+      "type": "GPU",
+      "id": 42156,
+      "cpuTime": 4568.509605
+    },
+    {
+      "type": "network.mojom.NetworkService",
+      "id": 31924,
+      "cpuTime": 0.297985
+    },
+    {
+      "type": "storage.mojom.StorageService",
+      "id": 43204,
+      "cpuTime": 0.080603
+    },
+    {
+      "type": "audio.mojom.AudioService",
+      "id": 45596,
+      "cpuTime": 1.619853
+    }
+  ],
+  "errors": []
+}

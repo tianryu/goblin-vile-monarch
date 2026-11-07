@@ -1,0 +1,12 @@
+{
+  "hero-motion-20261105": {
+    "renders": 30,
+    "scaleCalls": 5010,
+    "positionCalls": 5490
+  },
+  "performance-20261105": {
+    "renders": 30,
+    "scaleCalls": 0,
+    "positionCalls": 30
+  }
+}

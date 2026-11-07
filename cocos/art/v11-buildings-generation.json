@@ -1,0 +1,38 @@
+[
+  {
+    "name": "hall4",
+    "prompt": "ONE isolated full 2D side-view game building, transparent background. Preserve exactly the reference flat matte hand-painted cartoon style with broad simple muted color shapes, irregular clean dark contours, minimal detail. No 3D, texture, gradients, glow, ground, shadows, text, labels, colored outline. Whole building inside margins. Upgrade this exact goblin chief hall by one tier. Keep red shabby cloth roof and crooked wooden medieval silhouette, add a timber side annex with a small workshop lean-to, stout angled buttresses and larger doorway. No tower, no castle.",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-a910363e-fff5-4996-99c4-e7ccb093b67b.png"
+  },
+  {
+    "name": "hall5",
+    "prompt": "ONE isolated full 2D side-view game building, transparent background. Preserve exactly the reference flat matte hand-painted cartoon style with broad simple muted color shapes, irregular clean dark contours, minimal detail. No 3D, texture, gradients, glow, ground, shadows, text, labels, colored outline. Whole building inside margins. The final tier of this exact goblin chief hall. Same low red cloth/wood center, two crooked connected side annexes, broad timber supports with iron braces, a raised small rear awning for hoarded shields, and bigger jagged entrance. Read as a developed goblin camp, not a castle.",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-50565fab-f33d-48d0-b538-59de35d81c13.png"
+  },
+  {
+    "name": "wall4",
+    "prompt": "ONE isolated full 2D side-view game building, transparent background. Preserve exactly the reference flat matte hand-painted cartoon style with broad simple muted color shapes, irregular clean dark contours, minimal detail. No 3D, texture, gradients, glow, ground, shadows, text, labels, colored outline. Whole building inside margins. Upgrade this exact goblin barrier to a stout defensive gate barricade: original irregular sharpened tree trunks now in a double staggered row with large iron diagonal braces and two tall end posts. Hand built wooden defensive silhouette. No brick, no stone.",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/wall3.png",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-02a17107-030e-4c44-b4e4-d7da40384703.png"
+  },
+  {
+    "name": "wall5",
+    "prompt": "ONE isolated full 2D side-view game building, transparent background. Preserve exactly the reference flat matte hand-painted cartoon style with broad simple muted color shapes, irregular clean dark contours, minimal detail. No 3D, texture, gradients, glow, ground, shadows, text, labels, colored outline. Whole building inside margins. The strongest tier of this exact goblin barricade: close-set double timber palisade with one narrow braced central passage closed by crossed heavy beams, tall thick crooked end posts, broad iron plates, extra stout rear supports. Distinct upper silhouette, no stone castle.",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/wall3.png",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-37225e9b-12a5-4ce3-9e0f-c537ed5c7928.png"
+  },
+  {
+    "name": "tower4",
+    "prompt": "ONE isolated full 2D side-view game building, transparent background. Preserve exactly the reference flat matte hand-painted cartoon style with broad simple muted color shapes, irregular clean dark contours, minimal detail. No 3D, texture, gradients, glow, ground, shadows, text, labels, colored outline. Whole building inside margins. Upgrade this exact goblin archer platform: two visible offset firing decks with irregular timber railings, heavy crossed braces, small muted red rag canopy over one side, accessible wooden ladder. Do not include any characters or weapons.",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/tower2.png",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-e4f3baf7-b04d-4f85-b485-addf5a97367b.png"
+  },
+  {
+    "name": "tower5",
+    "prompt": "ONE isolated full 2D side-view game building, transparent background. Preserve exactly the reference flat matte hand-painted cartoon style with broad simple muted color shapes, irregular clean dark contours, minimal detail. No 3D, texture, gradients, glow, ground, shadows, text, labels, colored outline. Whole building inside margins. The final tier of this goblin archer platform: three offset open firing perches linked by short planks, broad stout wooden angled supports, small red rag awning, heavy gray iron brace plates, visible ladder, no castle, no characters.",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/tower2.png",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-809de553-93dc-4a6b-b3fd-62dc69ed2143.png"
+  }
+]

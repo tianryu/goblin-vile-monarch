@@ -1,0 +1,33 @@
+✔ new campaign starts with exactly four idle goblins, no thief systems or auto camps (1.3171ms)
+✔ part-paid construction refunds carried coins on departure and load, exactly once (3.4219ms)
+✔ tool purchase leaves real inventory and an idle goblin walks there to pick it up (4.0316ms)
+✔ construction waits for labor and completes without duplicate cost (15.5539ms)
+✔ all professions react to whipping, reveal hidden coins and overstun (0.9019ms)
+✔ hall base growth and equipment percentage compose without stacking upgrades (15.0956ms)
+✔ manufacturing consumes one pair of stripped equipment and one expensive payment (0.2475ms)
+✔ recruitment bait pauses at population cap and never silently consumes it (39.7664ms)
+✔ manual treasury withdrawal respects purse cap and surplus gains go to treasury (0.2102ms)
+✔ nearby daytime guard attacks player instead of waiting for night (4.2911ms)
+✔ raid retreats at casualty threshold, never at dawn, and abandons machines once (3.5886ms)
+✔ shield reduces frontal arrows but melee remains effective (0.1317ms)
+✔ machine reserves exactly two existing workers and two flag slots atomically (0.4032ms)
+✔ autonomous dispatch advances without following monarch, no brute prerequisite (6.1044ms)
+✔ cleared region rebuilds unless its own wall is completed, no repeat first reward (57.4772ms)
+✔ looting and prisoner hauling use one carrier, strip each enemy only once (2.9629ms)
+✔ hunter sees real animals and creates income by actual hits (8.4293ms)
+✔ civilian flees at run speed while idle residents spread inside safe area (10.5154ms)
+✔ reward completion receipts are idempotent and repeated mount ads remain useful (0.1758ms)
+✔ death and fifth camp victory settle once; restart is free and retains unlocked mounts (0.2023ms)
+✔ home defenders use the wall instead of chasing outside its cover (2.2331ms)
+✔ enemy attacks nearby captured machinery and damage is real (2.3444ms)
+✔ loading earlier V9 save supplies new elf ammo and prison fields (0.3601ms)
+✔ paid construction reserves its worker before abandoned-machine salvaging (6.4373ms)
+✔ overflow prisoner already beside full cage is not hauled repeatedly (1.8389ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 286.6977

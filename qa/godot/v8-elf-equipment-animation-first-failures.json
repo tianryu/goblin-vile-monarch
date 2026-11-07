@@ -1,0 +1,1896 @@
+{
+  "scope": "Actual elf shooting and ammo exhaustion in isolated desktop Edge software WebGL",
+  "passes": [
+    "1: actual ranged attacks cover the full generated release",
+    "1: one opaque enemy throughout shooting",
+    "1: one left-facing source flips once toward the target",
+    "1: separate world arrows fly while ammo decreases",
+    "-1: actual ranged attacks cover the full generated release",
+    "-1: one opaque enemy throughout shooting",
+    "-1: one left-facing source flips once toward the target",
+    "-1: separate world arrows fly while ammo decreases",
+    "Final shot remains a bow release after the ammo counter reaches zero",
+    "Arrow aimed at chief is visibly emitted",
+    "Empty archer switches to a held dagger body and approaches",
+    "No bound captive body or detached melee club is rendered",
+    "Melee contact stops in front of the mounted chief",
+    "Dagger body turns toward a target behind",
+    "Pause freezes weapon change, pose, ammo and health",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "1: shots cause damage without reward or dialogs",
+    "-1: shots cause damage without reward or dialogs",
+    "Equipment replacement has no overlapping or translucent body"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "side": 1,
+      "poses": 13
+    },
+    {
+      "side": -1,
+      "poses": 15
+    }
+  ],
+  "lastArrow": {
+    "samples": [
+      {
+        "enemies": [
+          {
+            "ammo": 1,
+            "attack_pose": 0,
+            "cooldown": 0.198701185981433,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 0,
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              660.19921875,
+              276.1875,
+              39.6015625,
+              41.625
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              1893,
+              8,
+              137,
+              144
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 1,
+            "attack_pose": 0,
+            "cooldown": 0.0987011859814326,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 0.409610778120713,
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              660.19921875,
+              276.1875,
+              39.6015625,
+              41.625
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              1893,
+              8,
+              137,
+              144
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 1,
+            "attack_pose": 0,
+            "cooldown": 0.0653678526480993,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 0.875544704670397,
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              660.19921875,
+              276.1875,
+              39.6015625,
+              41.625
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              1893,
+              8,
+              137,
+              144
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 1.1,
+            "cooldown": 1.1,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "animation": "elf/shoot",
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              654.922241210938,
+              275.745544433594,
+              45.3828125,
+              42.4921875
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              157,
+              147
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 1.03333333333333,
+            "cooldown": 1.03333333333333,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "animation": "elf/shoot",
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              654.922241210938,
+              275.745544433594,
+              45.3828125,
+              42.4921875
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              157,
+              147
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.966666666666667,
+            "cooldown": 0.966666666666667,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "animation": "elf/shoot",
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              654.922241210938,
+              275.745544433594,
+              45.3828125,
+              42.4921875
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              157,
+              0,
+              157,
+              147
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.9,
+            "cooldown": 0.9,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "animation": "elf/shoot",
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              654.922241210938,
+              275.745544433594,
+              45.3828125,
+              42.4921875
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              314,
+              0,
+              157,
+              147
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.833333333333333,
+            "cooldown": 0.833333333333333,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": false,
+            "type": "elf",
+            "x": 600
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "animation": "elf/shoot",
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              654.922241210938,
+              275.745544433594,
+              45.3828125,
+              42.4921875
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              147,
+              157,
+              147
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.733333333333333,
+            "cooldown": 0.733333333333333,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 597.866666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "animation": "elf/shoot",
+            "key": "world/enemy/68/elf/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              654.922241210938,
+              275.745544433594,
+              45.3828125,
+              42.4921875
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              157,
+              147,
+              157,
+              147
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.7,
+            "cooldown": 0.7,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 595.733333333333
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 0.119862788155223,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              651.282409667969,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.633333333333333,
+            "cooldown": 0.633333333333333,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 591.466666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              647.864624023438,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.566666666666667,
+            "cooldown": 0.566666666666667,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 587.2
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              643.295043945312,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.5,
+            "cooldown": 0.5,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 582.933333333333
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              639.675964355469,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.433333333333333,
+            "cooldown": 0.433333333333333,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 578.666666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              634.85693359375,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.366666666666667,
+            "cooldown": 0.366666666666667,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 574.4
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              630.056945800781,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.3,
+            "cooldown": 0.3,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 570.133333333333
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              626.456909179688,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.233333333333333,
+            "cooldown": 0.233333333333333,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 565.866666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              622.901245117188,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.166666666666667,
+            "cooldown": 0.166666666666667,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 561.6
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              618.101257324219,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.1,
+            "cooldown": 0.1,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 557.333333333333
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              614.523681640625,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0.0666666666666668,
+            "cooldown": 0.0666666666666668,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 555.2
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              610.913024902344,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 9.71445146547012e-17,
+            "cooldown": 9.71445146547012e-17,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 550.933333333334
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              607.27490234375,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 546.666666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              603.510498046875,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 542.4
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              599.619262695312,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 540.266666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              595.993530273438,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 533.866666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              591.152099609375,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 529.6
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              586.81591796875,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 527.466666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              583.193542480469,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 523.2
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              579.080200195312,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 516.8
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              573.949096679688,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 512.533333333334
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              569.978698730469,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 510.4
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              567.341674804688,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 506.133333333334
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              562.186096191406,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 501.866666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              558.215759277344,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 497.6
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              553.08984375,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 491.2
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              548.240783691406,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 489.066666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              544.622863769531,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 484.8
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              540.80224609375,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 480.533333333334
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              536.919372558594,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 476.266666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              533.1181640625,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 472
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              529.316955566406,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 469.866666666667
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              525.496337890625,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      },
+      {
+        "enemies": [
+          {
+            "ammo": 0,
+            "attack_pose": 0,
+            "cooldown": 0,
+            "face": -1,
+            "hp": 800,
+            "id": 68,
+            "mode": "active",
+            "moving": true,
+            "type": "elf",
+            "x": 465.6
+          }
+        ],
+        "bodies": [
+          {
+            "alpha": 1,
+            "key": "world/enemy/68/elf_melee/0",
+            "layer": 80,
+            "origin": [
+              0,
+              0
+            ],
+            "rect": [
+              521.67578125,
+              276.958343505859,
+              42.3958320617676,
+              40.0833320617676
+            ],
+            "requested": true,
+            "rotation": 0,
+            "scope": "world/enemy/68",
+            "source": [
+              0,
+              0,
+              220,
+              208
+            ],
+            "tint_alpha": 1
+          }
+        ]
+      }
+    ],
+    "turned": {
+      "enemies": [
+        {
+          "ammo": 0,
+          "attack_pose": 0.566666666666667,
+          "cooldown": 0.566666666666667,
+          "face": 1,
+          "hp": 800,
+          "id": 68,
+          "mode": "active",
+          "moving": true,
+          "type": "elf",
+          "x": 499.733333333334
+        }
+      ],
+      "bodies": [
+        {
+          "alpha": 1,
+          "key": "world/enemy/68/elf_melee/0",
+          "layer": 80,
+          "origin": [
+            0,
+            0
+          ],
+          "rect": [
+            315.842803955078,
+            276.958343505859,
+            -42.3958320617676,
+            40.0833320617676
+          ],
+          "requested": true,
+          "rotation": 0,
+          "scope": "world/enemy/68",
+          "source": [
+            0,
+            0,
+            220,
+            208
+          ],
+          "tint_alpha": 1
+        }
+      ]
+    }
+  }
+}

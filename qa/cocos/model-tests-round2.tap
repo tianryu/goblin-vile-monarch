@@ -1,0 +1,51 @@
+✔ new campaign starts with exactly four idle goblins, no thief systems or auto camps (1.1569ms)
+✔ part-paid construction refunds carried coins on departure and load, exactly once (2.8195ms)
+✔ tool purchase leaves real inventory and an idle goblin walks there to pick it up (3.9133ms)
+✖ construction waits for labor and completes without duplicate cost (13.3191ms)
+✔ all professions react to whipping, reveal hidden coins and overstun (0.7382ms)
+✔ hall base growth and equipment percentage compose without stacking upgrades (12.6946ms)
+✔ manufacturing consumes one pair of stripped equipment and one expensive payment (0.2428ms)
+✔ recruitment bait pauses at population cap and never silently consumes it (36.9588ms)
+✔ manual treasury withdrawal respects purse cap and surplus gains go to treasury (0.2386ms)
+✔ nearby daytime guard attacks player instead of waiting for night (3.6538ms)
+✔ raid retreats at casualty threshold, never at dawn, and abandons machines once (2.9424ms)
+✔ shield reduces frontal arrows but melee remains effective (0.1348ms)
+✔ machine reserves exactly two existing workers and two flag slots atomically (0.2975ms)
+✔ autonomous dispatch advances without following monarch, no brute prerequisite (5.5893ms)
+✔ cleared region rebuilds unless its own wall is completed, no repeat first reward (48.7557ms)
+✔ looting and prisoner hauling use one carrier, strip each enemy only once (3.8065ms)
+✔ hunter sees real animals and creates income by actual hits (7.6194ms)
+✔ civilian flees at run speed while idle residents spread inside safe area (10.041ms)
+✔ reward completion receipts are idempotent and repeated mount ads remain useful (0.1643ms)
+✔ death and fifth camp victory settle once; restart is free and retains unlocked mounts (0.1696ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 19
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 254.58
+
+✖ failing tests:
+
+test at cocos\tests\model.test.cjs:27:1
+✖ construction waits for labor and completes without duplicate cost (13.3191ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Users\田煜\Documents\ChatGPT\IAAG_ Monarch\cocos\tests\model.test.cjs:30:99)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

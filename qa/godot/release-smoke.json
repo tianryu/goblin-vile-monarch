@@ -1,0 +1,20 @@
+{
+  "scope": "Local release export tested in desktop Edge. Not physical phone or TapTap live evidence.",
+  "tests": {
+    "release_boot": true,
+    "no_debug_entry": true,
+    "no_mock_ads": true,
+    "input_changes_render": true,
+    "nested_path_boot": true,
+    "no_raw_sources": true,
+    "no_model_test_scripts": true,
+    "no_legacy_js": true,
+    "no_console_errors": true
+  },
+  "hooks": {
+    "qa": "undefined",
+    "state": "undefined",
+    "adProvider": "undefined"
+  },
+  "errors": []
+}

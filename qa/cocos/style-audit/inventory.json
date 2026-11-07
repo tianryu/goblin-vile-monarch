@@ -1,0 +1,1143 @@
+{
+  "count": 160,
+  "assets": [
+    {
+      "asset": "far",
+      "group": "environment",
+      "source": "game/art/runtime/far.png",
+      "sha256": "e6606decd69653b3a3ae9641a61c3892f7220615017f6546e533d44b5e1ae657",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "sky_base",
+      "group": "environment",
+      "source": "game/art/runtime/sky_base.png",
+      "sha256": "aefecb833450c4a04f5df7b44c30820aa998800eabdf01d39ddbbc339cf6f8bc",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "land",
+      "group": "environment",
+      "source": "game/art/runtime/land-level-v8.png",
+      "sha256": "8e67e184019c7e7f56ca33f1e846139be410c3d914193841f4851a49cdbae091",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "water",
+      "group": "environment",
+      "source": "game/art/runtime/water.png",
+      "sha256": "c012aaf3858213766210af1f5c97baf6059dcd54e2512f27aa1b37458e901084",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "middle",
+      "group": "environment",
+      "source": "game/art/runtime/middle.png",
+      "sha256": "d76a20b4ceada6ace4effb1ec6160509a2c7ccecf2175ea2f67b7116106620a0",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "foreground",
+      "group": "environment",
+      "source": "game/art/runtime/foreground.png",
+      "sha256": "8e95bf87b5edd81b96cdd1f15edbc3501a73f287ba0a51117f719bcf190b3a8b",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hall1",
+      "group": "buildings",
+      "source": "game/art/runtime/hall1-no-flame-v8.png",
+      "sha256": "671d5a1e57b1999ca944ffbdf35950d2b22fbf0d9f8297d10c8040a8e1f06636",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hall2",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "51a174722047374edfdff52167c65a358d4ad97ed6311b15a67c9f04b3cab522",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hall3",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "aa697126a6f767c031f70f85b22cb91f45818bbe28af1d2549a6aa186cfe81de",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "stall",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "f8fa37cb4ca72fb44e04bcf6ea392cfb57c4ead18656f05e682b59d0f9657ac8",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "wall2",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "ce4c7bf41491ae26a976f70d4c6d8023e5bfb8f9d3a8a31452b541fc930b02a1",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "wall3",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "019491416fa772bf0ae2110b35ef2788a5a822e83be3d898a36cecbdc755dff0",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tower",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "e675f0be8cc94fe23b5a54c6d71c1717fd9414a39324ab3068dfa9cf09b079ac",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "net_trap",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "78a17a9a603b0e7bd610425be1e58ead911c1d7698c16b678fdb2c120274a50e",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rock_trap",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "9c148ef2b0cd87074631d2f8c7eb4b567314709adb0a3b6576fccd0dd426c7d5",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "outpost",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "a4c486e9939bd748f6cb21ec33ce88ece12710d1be2869d2dbe1b9d65ca4f216",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "wall1",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "13be7386281a4dcb8b31f3f286188f728822b5d528c8bbbbd63dcca181bb9eae",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "sun",
+      "group": "environment",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "5996b9727577f8fd0d149f75a3cf9fe19334d60a8c324fdb15bac7c5410c8c18",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "moon",
+      "group": "environment",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "fee9317cbc207921ff6527cf09dc46cc9b05787f2e3ff7015edba07388646c41",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "cloud",
+      "group": "environment",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "90c5b4f0392aae8a293797c80429521581d2c817ea57aebf1546787bd89100e7",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "monarch",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "07b6561f8ca801f2826bd7059815aae13162df3661b1465785b8fdb75a0aa5c4",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "worker",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "fd484486cea9b63cce9d4371a1a2dbc03f378567ed26bd56a5b6a4dcd431a053",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hunter",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "8cff1695591fe5e71d6287ca3e49c3b28f781eaa7250c2fd88aa1007b399a153",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "brute",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "7754838af355ddf2026850347da2cbcfe17cb258503f0ac4c02216cae243fbd0",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "thief",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "e2071d787ba68e618ca169f73bb697c28e8eee96ba706e2d53bd6d379b8e2617",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "idle",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "40b0cae10cf134a4e7fd6740d7d9a27870474e9136404811c9ba76370364ff51",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "boar",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "b8a63d682c14e7feb8c6ef38de69001980d2fad9d152f55b0abaab8b2cfcf274",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "lizard",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "139215a9daf1f071fa53ae9abcf4c17d3d428a76520f9643da051a972dafebb6",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "wolf",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "49d4f8107df8adb4ec231b4b43f6179a45f8411bcc02e091d63d815999c5c366",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "bat",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "980254a47907fb3133b89f6de6767cd27c6ad6da8326ab847597c83f5fe98110",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "human",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "f91cde08868efe1e27e8ae9c035e228d9f949ca1fc194e29772589a942618852",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "dwarf",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "a85ff08fef07392f75f3fd5cec06eda39886f116ae6251dad2278d3313e43428",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "elf",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "fe67bca3287e19fa8876ebf129183449d509ff14151ba5be9b4a271e35a57085",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "captive_human",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "b62c59021a7196362835bfcffbeb21a1129c8119d9ab11a234bda892757ca5e2",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "captive_dwarf",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "e08d78cb83bb9b231cdfe7d26102c753309b194b881048efc68e3481c9b67a17",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "captive_elf",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "c8d7c7f1763604279915f2ea37afc5dbc1b985ba5e26b21fb7a93f6d63cb0332",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "trader",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "9a4741600d56316d826109f6c2a31581d42f38d104c114600c1e88b55f2d1783",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "torch",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "73722da7e0342a649de867e31faf52de89958a3aa7766be4dc3d83560e74e898",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "prison_front3",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "c893e9e15221e417d5691db5d078ad1cac131c26652e3c8af364aa95ac382e38",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "prison_front",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "636370a82a916829c72498bd6f7312e76e7fd611394ae4a404616d5d00986141",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "prison_front1",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "a0a4bc4fc821fa4054e3df1d7dc1e8133640f0bd7f4808a2511413d9efff4b3a",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "prison_back3",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "1d72c917259bdd8165a79951f7fc101c5e130f1c60e6450529efd2fd2dece047",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "coin",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "bbd322b19628ab9c068ca804174b77823a1212d88a413d2a0aa9c8f87a9ea9b4",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "scrap",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "bfc7a80793b502d5a1a77caf6d58643914a4f3846d30f1c8cf3decbabffdd2e6",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "arrow",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "31d5ec210d1cb0857185799ee875d31a4fd9b2afadac6e7b0cf972589e983ea6",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "wheel",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "48be5fc2afcf933050ef300fc050d04d728ab56e82cf5920e4cbe8f701cd9a0c",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "key",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "a85f5f55ac993a39e2e92759bc472210a00ebe125449a1bb0cc79e8ba6bff7e1",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "chest",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "d148f5ca0933bf80d222933107a63cb1679b57c5f5ed9b603ab2ba24429165f3",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "flag",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "64c1689fef20de9b01f73b4e52d7abafd324d7d3445196e25129610810da410e",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "net",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "c2118a7874400f6b6dea43a16bfbf8387a9c7425007f05e35bd084fd2cbb5009",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hammer",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "b6f47a0b62c8f88207c8e86a9ef631ee8396291d3ae767492184448290a9f33b",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "bow",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "38b90f79bc492ca90dd69e6265c629ab4b381c13b5d859a8a6bccd84b0413e83",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "club",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "03826b8c5f045d9008a04723a4850626f0e5f707ddba689b7f7abafd58195d61",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "crown",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "8659f3f4b895a5663f4486b2e6d52e5132eb30459b602ee40e5c70ccd2cb9ed2",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hood",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "64851706f85421ab8b2147abb1e5b4649a9c562e73ca852d95a05143d929d4af",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "pocket",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "65c16969db2db4b88906f2697965dca1aa513866246c58ec24aafc68233fc674",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "arrows",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "03f935ce1dc29487004bad343840230c0b59477a26416fccdfacd6f6854cef3b",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "prison_back1",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "1728643b731e6d45a6688cbfa4b21648dc994ab1d0835ce11ed7e52bd57e9b70",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "wagon",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "141673bc90feb9a759ab738c1d6d9d6ee87ac382a6222a1d695b6aac8cc1fac9",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "prison_back",
+      "group": "buildings",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "a88d4ce1fb48ee0d2d0b49609cf465fac31fe6d619d515a5f24c880c68b1508a",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rope",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "e25a752298942816bc9ba39a6f57bdaa6b8ababeac847ad18b7dadca943fab27",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_bat",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "6f38a985a31581d034eb6916b242e948f07796862c2b440c0e1e90a239c8d1b0",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_bat_bare",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "4991b73032f2e6bf279f5cd94bfca21949d63634d0071b50ecb8541859b40769",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_boar",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "d9fbe4ef99fe59937eec49ed48a9b6f36b01d0e2dbb8e646ded8742155ebbeb6",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_boar_bare",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "7f29ca76e06119772227fbe96e49dbe70d687706b105ecb60454c92a43486453",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_lizard",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "71a83e32b3770ebbb02de859a88527b6fb7afed959a7acc331643943ebbe84fc",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_lizard_bare",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "cdf453a2274b47eb484f5372aa4562ad00b650812017dc174fbc702e70ade0ab",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_wolf",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "55e356d9c48469098bf45cbf27ca9632e96b4750b248b9b206734150b624523d",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rider_wolf_bare",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "ff009a6dbe7853adaba6a69556de54c41f590668cc125cd1accd514b05852f0a",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_action_control",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_action_control.png",
+      "sha256": "b246d1778916416508cdd929a205aa9c7a82bee4fb5736023b03495e120a2d8e",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_bar",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_bar.png",
+      "sha256": "a2d824211fa4561a4e5072525128722dea65e4c443c07baf2a8f0a21e069f855",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_bar_fill",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_bar_fill.png",
+      "sha256": "0ed3453ffb68fab056d99b2bcedd0af807c6e8609a7ad8b1d9325b8f56aa2443",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_button",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_button_v5.png",
+      "sha256": "f0c0b0e237d1d8d0554dabab41e41abeb3166254049ae0efbbb1e146d79c9b52",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_button_primary",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_primary_v5.png",
+      "sha256": "5b63fa4551d7afed00e855577477a689e5ee8035f8f9ba1bf622ff6f42258038",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_context",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_panel_v5.png",
+      "sha256": "83e3ae2a3162efd65c08af9cd71383d79b1575bc39225189dca9390c12cff609",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_hud",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_tag_v5.png",
+      "sha256": "6365956dd89d4c469b3d9c6ff40c2c3b4aa0ec87a1ac1302e9244187a423ea93",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_joystick_base",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_joystick_base.png",
+      "sha256": "7b3b8a7b006c47f9522025a5c44da4753d4ea494d889849d78a1e21da90e8132",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_joystick_knob",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_joystick_knob.png",
+      "sha256": "24e496dd093c991c32eb3d7961a41415cf1b11d617953d8cbdd3f3c9bafcea3e",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_logo",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_logo.png",
+      "sha256": "09a4d2e69611646d580360d43e436f4bb5523fcaeff88654739517d12d3cf8a5",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_panel",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_panel_v5.png",
+      "sha256": "83e3ae2a3162efd65c08af9cd71383d79b1575bc39225189dca9390c12cff609",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_pause_control",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_pause_control.png",
+      "sha256": "0509f1ed79800e596d87469f57a1b1a3e3f818f19c39b2a81a5d6a37df524b98",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_run_control",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_run_control.png",
+      "sha256": "04dd7d0d62fa51f0fabf59245d856d1f755bc8be4ac1d0dd67f7ae81c6a36c94",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "brute_2",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "9da5b0f94f05d34b34907d45d064289649a5606e23fa4ec3e5f396fe8ae903a9",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "brute_3",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "4bb8c0e88795d52fa477f5a2503b4f1905e0c772d2863e41a3a5ea1d4a3abce1",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hunter_2",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "ad53805fc9aaa78f9ddf6d6454e5ac57f10b9b5ff87c6a4bae288cc567b73279",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hunter_3",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "392f22e5877a160fb2ba545398460cef1dddde157dfec3d8dd75b5bc2f0bd64a",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "net_trap2",
+      "group": "buildings",
+      "source": "game/art/runtime/net_trap2.png",
+      "sha256": "b60da382c8ad0aa1df5be4db40dac67534bf15121c0221aacecba72496a06e67",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "rock_trap2",
+      "group": "buildings",
+      "source": "game/art/runtime/rock_trap2.png",
+      "sha256": "3a4037d345b1c653845ab0c28bae8d3b63d04e08649a4b1df80380fc6061b66a",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "thief_2",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "0c3deb195ce87c660e9b6342a0b31b89234a039d401d3776e515a524b924ec4f",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "thief_3",
+      "group": "historical-unused",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "30bf34f19b00a956e2bb890949e0fd5964eb4db52e9ad91cde44c98fa2034503",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tower2",
+      "group": "buildings",
+      "source": "game/art/runtime/tower2.png",
+      "sha256": "f792661ebd09ebfce702c80771e82a8d5c9ae0fa23c0bddea6feb743d52018a5",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_button_v5",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_button_v5.png",
+      "sha256": "f0c0b0e237d1d8d0554dabab41e41abeb3166254049ae0efbbb1e146d79c9b52",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_card_selected_v5",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_card_selected_v5.png",
+      "sha256": "d1ef7af8dc5ff6be4208f3a1e3827e6e36922da3dae8947032919f7338b8c140",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_card_v5",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_card_v5.png",
+      "sha256": "0f7427a5f79edf8823ce7f3814ee0444ed80e85521c57d608186f4aca26ccb7f",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_panel_v5",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_panel_v5.png",
+      "sha256": "83e3ae2a3162efd65c08af9cd71383d79b1575bc39225189dca9390c12cff609",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_primary_v5",
+      "group": "historical-unused",
+      "source": "game/art/runtime/ui_primary_v5.png",
+      "sha256": "5b63fa4551d7afed00e855577477a689e5ee8035f8f9ba1bf622ff6f42258038",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_tag_v5",
+      "group": "props-ui",
+      "source": "game/art/runtime/ui_tag_v5.png",
+      "sha256": "6365956dd89d4c469b3d9c6ff40c2c3b4aa0ec87a1ac1302e9244187a423ea93",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "worker_2",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "ed57440e6a2617e5bc0dccdd3ae47891174f1139808557f62b2da3d99783ab94",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "worker_3",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "61b6bc76c9cdeb7921730fd0515b636d459bcab74b3b8d2818e9eb0bd81ef440",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "market_gold",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "afa6312bf061abb0399fcbc7e2897b1b14aee70085562366f7939c9ea7bb887f",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "market_mount",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "d7def11410e794e83d4efe9607059727094acfba4e2689899e14eee1c45d0a7d",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "thieves_den",
+      "group": "historical-unused",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "10d4cee1348ee69325c01daed95a7c6779ae2447f4ea597b4486ebf44a3c1849",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tool_brute",
+      "group": "historical-unused",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "0e9f3dd6bbf33812b1a1d4bd94d8529340bb163acba9454c6a81a99ee1b1b19e",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tool_hunter",
+      "group": "historical-unused",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "3071b98783e35b7a23304cfe836ac9bec009168955ad85e357412db62595845b",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tool_thief",
+      "group": "historical-unused",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "8f3e2a778f386ef5c61c716a6d2e12318b69ef5c26d66677e55e9c4bf1da3afd",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "market_army",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "b1da81fb29caf53fec39c2c71f14762241c42284c4b498ca2a88b286da5f9087",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tool_worker",
+      "group": "historical-unused",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "bec09430ea97745afed6f047733b6c8ae84aadf23fdb4bda9fd92bd4880339a6",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "battlefield_wreck",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "4a919f7fbb48f6e1e7d8caac554e2d66553553141430888fb14330980e3827dc",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "build_site_sign",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "cb9597fbd7194fbf693711b3fb3601c3da761bba0a46225d2b07094b94d49a05",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "hall_ruin",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "6e82112e61b583009150a448974181dd00308a3b4a45ce06dadc30afb19de17d",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "heart_icon",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v6.png",
+      "sha256": "d12b8d32f8381c8a748304767b3ddae21891aafb1dfcc98e4fd392f22b4754e7",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tree_pine",
+      "group": "environment",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "1a53fcb5642d86896287f373231ead72f47f9f60999a4e19ea28c4146eba5e91",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tree_willow",
+      "group": "environment",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "00728b9d41f812ef467ba10b9d57d9dbdd4abc6fdefb59059da5e65acabcd250",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tree_oak",
+      "group": "environment",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "d6b858517731dcf83a634f3540580b6e5b945c8eaa7b223e7dc5ed43f6b650d2",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "empty_tool_hunter",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "b22042d84837e85b483c1425ae7ea0f9e8d6bb4243ead7cbceb98ab3e16f5e01",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "empty_tool_thief",
+      "group": "historical-unused",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "d0ac0946d8aaf6f36a8337ffd3428b58a647a65b64d9012b30b5e41c2af09f04",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "tribal_banner",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "a7cc2eb577b6be703250685ef7856696b53d6e02bf6c14287d8ecf94b120525a",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "ui_action_ring",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "e7443056e077454b2332323c33f765cffd00e77de366696ab925e1596cb6a0d3",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "cycle_dial",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "6945556881143857246faa2729e101313ae49c35b9c91888575da7f2a32ac444",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "icon_rotate",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "e88673e8816ff03946d198a744d9d0eaf15519b3c7427a7eebd07efa2e53f205",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "icon_play",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "25090c3245a9718865696bab4b1545515a2792738be2ee2eb8166695a39aabb6",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "icon_restart",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "6739bc7ac922ae0eee774f1087328aa534bfb95c78f1d4ea22721cfc38d76685",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "icon_whip",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "90ece441752b002d9387d904df858afee91a1b9c10dead3b14a20f569f876771",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "mushroom_farm",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "d464776e3aec158597d138f35fd79ecd14609ecd25e1ca0c286cd86502451c67",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "woodcut_camp",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "6e9bee04b8d0ef44137483dbccdc9938bbea9d6945102f301ffdd652546acd51",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "gold_mine",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "c09ab40fd01d221037fe95ac7c3f304146e662ebd3fbffbdadca4606a97d4d3b",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "empty_tool_brute",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "8ee208392c96a450445fc37eaffac7a0e0aad0ff9b5595811e3d5681fd5b1028",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "icon_run",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "09e96d18c3586dbbe25c048e7fdbac4c30455050c81241801e1c5c9dcb429d86",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "empty_tool_worker",
+      "group": "buildings",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "8a533d6d5bea10f6447ab6e1fba4cd784b244e25b7104f8e2132b1418906adcc",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "purse",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "ce37068ff6b58e2a6b86854bf1d0837c3adf1a7cd49afc5213b1613634c3c038",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "stream_crossing",
+      "group": "environment",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "b26a42c8be90736936ccf367faceecddd74e3141923f1ee85e800ab35c522165",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "forest_shrub",
+      "group": "environment",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "ae84c22737bbf911d22153a8b3b6304af392e6e8007be7723d412f7bfc1519b2",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "dwarf_wounded",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "522b255a4186d682a668349ee6602e348bb57a38e70b85f9e76641c7a99d9233",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "human_wounded",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "83e35c4eeb33823eb33e573c9b48410f6ea3d5b3fbcddfbd06d0dcf69fe9ec14",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "dwarf_dead",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "0d5e062669713881c24b0363be2dfcc66a68b0a53a1430cb3ad754b579362ee5",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "price_board",
+      "group": "historical-unused",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "005519c1b3754c8943bc823b3988c70d9813c824dc7bff5453bb990dc26242df",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "elf_wounded",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "2f618c30a2082d4ac09d02e1690a53e6bfd9f15f637a6ecc0c263eccd2bceb4b",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "butterfly",
+      "group": "environment",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "60d0f4d35fc2456b2dcaf9f5b5788f528a2d1dee0e28c4c8dc60177f1003b775",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "human_dead",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "4b4c8e3c10874416325166963775cb15cd32d5de1e016b1e565acf985665d2ad",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "forest_bird",
+      "group": "environment",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "3a1b654f1e1aa7f018c42f4719a7ecca0a3c87ff43d5636f5f0f762b41a6f908",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "elf_dead",
+      "group": "characters",
+      "source": "game/art/runtime/actors-ink.png",
+      "sha256": "350bdfb5c8be16669e25f9c5ef07e3b0b8796db265f1ee061910b67331c4ed2f",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "purse_rim",
+      "group": "props-ui",
+      "source": "game/art/runtime/world-v7.png",
+      "sha256": "da5984f9479d125586f48af54f34547f5cbdf5f5d959c1875020228fb2b0418a",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "torch_unlit",
+      "group": "props-ui",
+      "source": "game/art/runtime/actors.png",
+      "sha256": "327a4f8b59eb21525ac63c4f8fc18188055920d53cca39db0564803abdbe4fe4",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "elf_melee",
+      "group": "characters",
+      "source": "game/art/runtime/elf-melee-v8.png",
+      "sha256": "f7f366751f73d69f16a0b121b119b062dce6e35774751fc65cf339efbdb67bea",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:cave",
+      "group": "new-candidates",
+      "source": "cocos/art/source/cave.png",
+      "sha256": "15eb5b413e0157d1c4854fef87ba5849111fcc1c71ed2fc30bbade801bd2613e",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:worker",
+      "group": "new-candidates",
+      "source": "cocos/art/source/worker.png",
+      "sha256": "c2965453f3f0aa09fb4395407c3d30d6ade77327ea52a894be09e70d8bfff783",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:hunter",
+      "group": "new-candidates",
+      "source": "cocos/art/source/hunter.png",
+      "sha256": "f978759aca7ae69bc91da95806fedbdfc777e5bb13ffa33ad3120b57e08a631e",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:brute",
+      "group": "new-candidates",
+      "source": "cocos/art/source/brute.png",
+      "sha256": "3cbec0e39d1aa42ca256d47014c30dd00a2884da00ff7e969906a78b81caf517",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:open_chest",
+      "group": "new-candidates",
+      "source": "cocos/art/source/open_chest.png",
+      "sha256": "3fdb70ad974f530fc481dd8ab6cefa56ad5152e3a01bd04151d0cce48e0032a2",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:rabbit",
+      "group": "new-candidates",
+      "source": "cocos/art/source/rabbit.png",
+      "sha256": "0ee2433369a6747a11b85b875e2d73bdf5987dfad2f1182fb39301434420e9fc",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:lure",
+      "group": "new-candidates",
+      "source": "cocos/art/source/lure.png",
+      "sha256": "310bec73748e78d1047b281fe4d46f095cc8e43332d04f1ec91b55b360c07a13",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:deer",
+      "group": "new-candidates",
+      "source": "cocos/art/source/deer.png",
+      "sha256": "97cd977596a4c823a4150291ddc94da8e882635080473251222fe88e2e8e867b",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:shield",
+      "group": "new-candidates",
+      "source": "cocos/art/source/shield.png",
+      "sha256": "0ef2d89619ca9276371210ff4624727b0940fb7205eae966a435a6e4e4447b76",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:mage",
+      "group": "new-candidates",
+      "source": "cocos/art/source/mage.png",
+      "sha256": "ae9f12823e4f6eae0310cc59573d3563a0a8b3b1117f2fe0a0adc32faeadd586",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:hunter_2",
+      "group": "new-candidates",
+      "source": "cocos/art/source/hunter_2.png",
+      "sha256": "82171e74ada9f32da3ca51a37074f2c3c490bb7a9aae063cdfbd38a90d35ff86",
+      "reviewStatus": "rejected-style"
+    },
+    {
+      "asset": "new:catapult",
+      "group": "new-candidates",
+      "source": "cocos/art/source/catapult.png",
+      "sha256": "33afd224a6050e8c4373b87e5743be46ea47d859b94a52652b11fe0e52298d62",
+      "reviewStatus": "pending-comparison"
+    },
+    {
+      "asset": "new:ram",
+      "group": "new-candidates",
+      "source": "cocos/art/source/ram.png",
+      "sha256": "64253e9f136eb3436bdf687a286b8233f89ac004d86de436488f0902c7543184",
+      "reviewStatus": "rejected-style"
+    },
+    {
+      "asset": "new:firecatapult",
+      "group": "new-candidates",
+      "source": "cocos/art/source/firecatapult.png",
+      "sha256": "21a57e6d2136411376dfe240dcb23674a546ae829a15735a031e04ad6bfbd6d1",
+      "reviewStatus": "rejected-style"
+    },
+    {
+      "asset": "new:ship",
+      "group": "new-candidates",
+      "source": "cocos/art/source/ship.png",
+      "sha256": "eeb0faf0752fcfaa8a224d5644a678fafc1c1bd6045f94b58fcb93cd39782cac",
+      "reviewStatus": "rejected-style"
+    },
+    {
+      "asset": "new:forge",
+      "group": "new-candidates",
+      "source": "cocos/art/source/forge.png",
+      "sha256": "4f33e7179f2fdc7455ba19bceb7a133e720a58291591c55d69335dc72a05e216",
+      "reviewStatus": "pending-comparison"
+    }
+  ],
+  "pages": [
+    "qa\\cocos\\style-audit\\environment-1.jpg",
+    "qa\\cocos\\style-audit\\environment-2.jpg",
+    "qa\\cocos\\style-audit\\buildings-1.jpg",
+    "qa\\cocos\\style-audit\\buildings-2.jpg",
+    "qa\\cocos\\style-audit\\buildings-3.jpg",
+    "qa\\cocos\\style-audit\\historical-unused-1.jpg",
+    "qa\\cocos\\style-audit\\historical-unused-2.jpg",
+    "qa\\cocos\\style-audit\\historical-unused-3.jpg",
+    "qa\\cocos\\style-audit\\characters-1.jpg",
+    "qa\\cocos\\style-audit\\characters-2.jpg",
+    "qa\\cocos\\style-audit\\characters-3.jpg",
+    "qa\\cocos\\style-audit\\props-ui-1.jpg",
+    "qa\\cocos\\style-audit\\props-ui-2.jpg",
+    "qa\\cocos\\style-audit\\props-ui-3.jpg",
+    "qa\\cocos\\style-audit\\new-candidates-1.jpg",
+    "qa\\cocos\\style-audit\\new-candidates-2.jpg"
+  ]
+}

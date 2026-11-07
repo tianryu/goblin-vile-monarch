@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-30",
+  "tool": "built-in image_gen",
+  "scope": "single-scene art-direction studies, not production assets or runtime screenshots",
+  "userReview": "Flat hand-painted style accepted by user; latest medieval/cage/one-hauler correction pending review",
+  "images": [
+    {
+      "file": "01-prison-flat-study.png",
+      "reference": "../reboot-v1/02-prison-market-uglycute.png",
+      "source": "C:/Users/田煜/.codex/generated_images/01a185e2-9903-79b2-a07f-8952b848c1b3/exec-853b5144-203d-4574-a462-a02a87ce7438.png",
+      "prompt": "PROMPT.txt",
+      "review": "Merchant clothing corrected and palette softened; ground and material details still too pronounced, so refined again."
+    },
+    {
+      "file": "02-prison-flat-refined.png",
+      "reference": "01-prison-flat-study.png",
+      "source": "C:/Users/田煜/.codex/generated_images/01a185e2-9903-79b2-a07f-8952b848c1b3/exec-9cc02fc0-a118-449e-a74c-fcf3f9493cf5.png",
+      "prompt": "PROMPT_REFINEMENT.txt",
+      "review": "User accepted flat hand-painted style. User rejected modern jacket/hat, prisoners in front of bars, and two haulers; replaced by next revision. Previous self-check missed cage occlusion."
+    },
+    {
+      "file": "03-prison-medieval-corrected.png",
+      "reference": "02-prison-flat-refined.png",
+      "source": "C:/Users/田煜/.codex/generated_images/01a185e2-9903-79b2-a07f-8952b848c1b3/exec-c73d0917-4b2d-475d-b685-f5dbe8eab895.png",
+      "prompt": "PROMPT_MEDIEVAL_CORRECTIONS.txt",
+      "review": "Inspected: bareheaded medieval tunic merchant, all four captives within cage behind continuous front bars, one goblin leading net to left, matching reflections. Same approved flat style. Detail revision awaits user review."
+    }
+  ]
+}

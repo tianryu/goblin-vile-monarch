@@ -1,0 +1,41 @@
+{
+  "scope": "Three ranks of generated melee attacks during actual stand-off combat in isolated desktop Edge software WebGL",
+  "passes": [
+    "brute: exactly one opaque goblin body",
+    "brute: fighters keep a visible contact gap",
+    "brute: damage progresses without duplicated coin or kill settlement",
+    "brute: pause freezes pose and damage",
+    "brute: opposite target flips the same attack body",
+    "brute_2: exactly one opaque goblin body",
+    "brute_2: fighters keep a visible contact gap",
+    "brute_2: damage progresses without duplicated coin or kill settlement",
+    "brute_2: pause freezes pose and damage",
+    "brute_2: opposite target flips the same attack body",
+    "brute_3: real melee advances through the original swing poses",
+    "brute_3: exactly one opaque goblin body",
+    "brute_3: fighters keep a visible contact gap",
+    "brute_3: damage progresses without duplicated coin or kill settlement",
+    "brute_3: pause freezes pose and damage",
+    "brute_3: opposite target flips the same attack body",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "brute: real melee advances through the original swing poses",
+    "brute_2: real melee advances through the original swing poses"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "name": "brute",
+      "source_frames": 21
+    },
+    {
+      "name": "brute_2",
+      "source_frames": 20
+    },
+    {
+      "name": "brute_3",
+      "source_frames": 24
+    }
+  ]
+}

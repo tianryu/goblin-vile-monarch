@@ -1,0 +1,7 @@
+{
+  "name": "tree_oak",
+  "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One ancient broad oak tree, crooked trunk and huge irregular muted olive leafy crown, visible roots on a flat ground line. Entire tree visible. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-d926449e-ed48-4d36-ab29-c470a852de2c.png",
+  "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+}

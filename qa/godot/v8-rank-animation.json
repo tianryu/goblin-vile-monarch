@@ -1,0 +1,94 @@
+{
+  "scope": "Seven full-cycle rank walks in isolated desktop Edge software WebGL",
+  "passes": [
+    "worker_3: complete gait advances",
+    "worker_3: one stable body identity",
+    "worker_3: no extra coin transactions",
+    "worker_3: AI actually travels",
+    "worker_3: ground anchor stays flat",
+    "worker_3: paused animation stays still",
+    "brute: complete gait advances",
+    "brute: one stable body identity",
+    "brute: no extra coin transactions",
+    "brute: AI actually travels",
+    "brute: ground anchor stays flat",
+    "brute: paused animation stays still",
+    "brute_2: complete gait advances",
+    "brute_2: one stable body identity",
+    "brute_2: no extra coin transactions",
+    "brute_2: AI actually travels",
+    "brute_2: ground anchor stays flat",
+    "brute_2: paused animation stays still",
+    "brute_3: complete gait advances",
+    "brute_3: one stable body identity",
+    "brute_3: no extra coin transactions",
+    "brute_3: AI actually travels",
+    "brute_3: ground anchor stays flat",
+    "brute_3: paused animation stays still",
+    "thief: complete gait advances",
+    "thief: one stable body identity",
+    "thief: no extra coin transactions",
+    "thief: AI actually travels",
+    "thief: ground anchor stays flat",
+    "thief: paused animation stays still",
+    "thief_2: complete gait advances",
+    "thief_2: one stable body identity",
+    "thief_2: no extra coin transactions",
+    "thief_2: AI actually travels",
+    "thief_2: ground anchor stays flat",
+    "thief_2: paused animation stays still",
+    "thief_3: complete gait advances",
+    "thief_3: one stable body identity",
+    "thief_3: no extra coin transactions",
+    "thief_3: AI actually travels",
+    "thief_3: ground anchor stays flat",
+    "thief_3: paused animation stays still",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "name": "worker_3",
+      "frames": 27,
+      "travel": -283.133333333333,
+      "decoded_bytes": 8049680
+    },
+    {
+      "name": "brute",
+      "frames": 26,
+      "travel": -311.999999999999,
+      "decoded_bytes": 10445360
+    },
+    {
+      "name": "brute_2",
+      "frames": 26,
+      "travel": -323.9999999999991,
+      "decoded_bytes": 11443728
+    },
+    {
+      "name": "brute_3",
+      "frames": 26,
+      "travel": -319.1999999999991,
+      "decoded_bytes": 12433472
+    },
+    {
+      "name": "thief",
+      "frames": 27,
+      "travel": -274.866666666666,
+      "decoded_bytes": 11492896
+    },
+    {
+      "name": "thief_2",
+      "frames": 28,
+      "travel": -272.799999999999,
+      "decoded_bytes": 9283792
+    },
+    {
+      "name": "thief_3",
+      "frames": 27,
+      "travel": -281.066666666666,
+      "decoded_bytes": 12282832
+    }
+  ]
+}

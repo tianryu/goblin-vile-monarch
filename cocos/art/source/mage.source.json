@@ -1,0 +1,9 @@
+{
+  "assetName": "mage",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-494d732e-3b32-4888-b8aa-f3e7cea2cfab.png",
+  "prompt": "One independent static MAGIC MASTER enemy game sprite, in the exact flat hand-painted 2D cartoon style of the attached medieval game screenshot. Small stern elderly HUMAN mage facing LEFT, long pointed nose, short white beard, dark indigo-purple hood and robe with muted cream cuffs, brown boots visible on flat baseline. In one hand a crooked wooden staff tipped with a dull amber crystal, other hand slightly raised empty. Clearly different silhouette from sword soldiers, no crown. No baked fireballs, no magic aura, no sparkles or floating ornaments. Flat broad matte color patches, low detail, clean irregular dark internal contours, no pixels, no 3D, no glossy material or gradients outside silhouette. Truly TRANSPARENT background, generous margins, full body, one character only, no labels. Pink enemy outline will be added by runtime asset pipeline later.",
+  "edge": "enemy",
+  "facing": -1,
+  "reviewed": true,
+  "review": "法杖与空手分离，单个完整施法者，没有烘焙魔法弹，风格已检查。"
+}

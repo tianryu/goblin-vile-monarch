@@ -1,0 +1,18 @@
+{
+  "scope": "V7 world-only services and input on desktop DPR2 touch. Test adapter completions are simulated, not actual ads.",
+  "passes": [
+    "Army worker offer adds exactly two without shop",
+    "Forty direct coins buy and equip lizard",
+    "Unlocked wolf equips through world icon",
+    "Owned selected mount has repeat voluntary boost offer",
+    "Mount boost stacks without watch cooldown",
+    "Bat low flight suppresses ground interaction",
+    "Releasing sprint lands for interactions",
+    "Two thumb move and sprint work",
+    "Cancel clears both touches",
+    "Portrait uses icon guard and pauses",
+    "No service or shader errors"
+  ],
+  "failures": [],
+  "errors": []
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "Whole rider idle in isolated desktop Edge software WebGL",
+  "passes": [
+    "rider_wolf/idle: complete breathing and blink cycle",
+    "rider_wolf/idle: one solid rider and mount",
+    "rider_wolf/idle: shared canvas stays planted",
+    "rider_wolf/idle: no extra coin or dialog side effects",
+    "rider_wolf/idle: whole subject flips about its fixed anchor",
+    "rider_wolf/idle: pause holds current pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "id": "rider_wolf/idle",
+      "frames": 19
+    }
+  ]
+}

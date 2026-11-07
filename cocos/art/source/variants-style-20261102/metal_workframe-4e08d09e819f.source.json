@@ -1,0 +1,13 @@
+{
+  "name": "metal_workframe",
+  "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/tower2.png",
+  "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. One isolated medieval goblin IRON WORK FRAME attachment for a workshop. Two short chunky dark iron side columns joined by broad riveted upper lintel and diagonal corner braces, fully empty transparent interior, wide rectangular front-side silhouette, width twice height. No tools, no building, no cloth, no ground.",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ebce9cbf-f407-4ff1-a0af-3d92947d5928.png",
+  "generator": "builtin-imagegen",
+  "edge": "building",
+  "facing": 1,
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "按最新木构到砖石到金属要求检查12张源图及缩图：材质、轮廓与部件均有变化，保持原平面哑光手绘风格，无背景、断边或文字；待引擎验收。"
+}

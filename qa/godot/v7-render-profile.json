@@ -1,0 +1,70 @@
+{
+  "scope": "Frozen identical synthetic stress fixture, DPR2 Edge software WebGL, diagnostic component comparison only.",
+  "reports": [
+    {
+      "config": {
+        "time": 60
+      },
+      "p50": 24.200000000000728,
+      "p95": 24.300000000000182,
+      "engine": 0.0253,
+      "draws": 55,
+      "torches": 0
+    },
+    {
+      "config": {
+        "time": 185
+      },
+      "p50": 36.29999999999927,
+      "p95": 36.400000000001455,
+      "engine": 0.0351,
+      "draws": 54,
+      "torches": 4
+    },
+    {
+      "config": {
+        "time": 185,
+        "local": false
+      },
+      "p50": 24.299999999999272,
+      "p95": 30.30000000000291,
+      "engine": 0.0265,
+      "draws": 54,
+      "torches": 0
+    },
+    {
+      "config": {
+        "time": 185,
+        "normals": false
+      },
+      "p50": 36.30000000000291,
+      "p95": 36.5,
+      "engine": 0.0381,
+      "draws": 54,
+      "torches": 4
+    },
+    {
+      "config": {
+        "time": 185,
+        "directional": false,
+        "local": false
+      },
+      "p50": 24.299999999999272,
+      "p95": 30.400000000001455,
+      "engine": 0.0303,
+      "draws": 54,
+      "torches": 0
+    },
+    {
+      "config": {
+        "time": 185,
+        "no_reflections": true
+      },
+      "p50": 30.400000000001455,
+      "p95": 36.400000000001455,
+      "engine": 0.0351,
+      "draws": 47,
+      "torches": 4
+    }
+  ]
+}

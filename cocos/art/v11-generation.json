@@ -1,0 +1,72 @@
+[
+  {
+    "name": "elite_heavy",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/dwarf.png",
+    "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. A very broad heavily armored dwarf great-hammer infantry, enormous square stone-and-iron two-handed hammer held horizontally forward at waist, squat thick legs, blue and cream cloth, iron bucket helmet leaving angry bearded face visible. Strong unmistakably wider shoulder silhouette, no crown.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c352e982-8f10-48f1-b1c8-f592a99ded9d.png",
+    "edge": "enemy",
+    "facing": -1,
+    "reviewed": false,
+    "styleApproved": false
+  },
+  {
+    "name": "elite_longbow",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/elf.png",
+    "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. An elite elf longbow veteran with a longer reinforced dark wood bow, pale iron shoulder plate and open-faced leaf-shaped helmet, green cloth sash. Both hands on bow, bowstring visible, NO loose arrow or airborne arrow. Long narrow angular silhouette.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-8acd607b-f194-4c20-be2b-dbe45ffca151.png",
+    "edge": "enemy",
+    "facing": -1,
+    "reviewed": false,
+    "styleApproved": false
+  },
+  {
+    "name": "elite_bulwark",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/shield.png",
+    "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. A huge human holy shield guardian, full face visible beneath iron helmet, immense tall cream-and-blue rectangular wooden pavise in far hand, short heavy sword held correctly in near hand, visible stocky legs, wider shoulders. Flat simple armor, no heraldic text.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-8500c995-408d-4a06-9821-a5cd65f78447.png",
+    "edge": "enemy",
+    "facing": -1,
+    "reviewed": false,
+    "styleApproved": false
+  },
+  {
+    "name": "elite_engineer",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/dwarf.png",
+    "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. A sturdy dwarf siege engineer with a broad leather apron over blue tunic, open iron cap, a large wooden repair mallet in one hand and a heavy wrench in the other, thick gloves, no shield. Practical compact stocky silhouette.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-07024e00-4efc-4491-8c0a-c5aab839ebaf.png",
+    "edge": "enemy",
+    "facing": -1,
+    "reviewed": false,
+    "styleApproved": false
+  },
+  {
+    "name": "elite_pyromancer",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/mage.png",
+    "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. An elderly powerful fire mage, dark muted brick-red hooded robe with pale ochre hem, bent wooden staff with amber gem held in one hand, other hand open for casting, hooked nose and white beard. No fire painted into sprite, no particles.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-984b436d-c3ac-449f-bbfd-eabbc28ffb7e.png",
+    "edge": "enemy",
+    "facing": -1,
+    "reviewed": false,
+    "styleApproved": false
+  },
+  {
+    "name": "elite_charger",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/human.png",
+    "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. A heavy human assault knight on foot, no horse, blue-and-cream surcoat, broad iron pauldrons, small round shoulder shield and long heavy lance held forward low in two hands, open-faced helmet, strong charging-ready stance. Very simple flat shapes.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-eaa347d3-f248-412f-a3fc-ba34a8d0d03a.png",
+    "edge": "enemy",
+    "facing": -1,
+    "reviewed": false,
+    "styleApproved": false
+  },
+  {
+    "name": "elite_jumper",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/human.png",
+    "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. A lightly armored human wall-vaulting scout soldier with short blue tunic, cream belt, soft leather cap, no shield, short dagger in one hand and short wooden vaulting pole in other, crouched spring-ready bent knees. Thin athletic silhouette, no cape.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ce523afd-8e44-4f06-8e33-53bf70d33322.png",
+    "edge": "enemy",
+    "facing": -1,
+    "reviewed": false,
+    "styleApproved": false
+  }
+]

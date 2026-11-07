@@ -1,0 +1,7 @@
+{
+  "name": "stream_crossing",
+  "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. A small woodland brook crossing with an old flat wooden footbridge, side-view 2D game terrain patch. Horizontal walking deck across center, creek visible behind and flowing diagonally below toward foreground, mossy grass banks and rounded pebbles, no sky, no mountains, no characters. The creek reaches the bottom edge of the patch. Transparent background. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-3651f41b-e661-4fe4-9139-29b08cbd35af.png",
+  "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+}

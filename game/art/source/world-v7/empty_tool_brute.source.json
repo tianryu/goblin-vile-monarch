@@ -1,0 +1,7 @@
+{
+  "name": "empty_tool_brute",
+  "prompt": "Edit this exact medieval flat hand-painted goblin tool stall. Keep its tall distinctive profession emblem at the TOP, the same posts, canopy, overall silhouette, palette and ground contact. Remove ALL sale tools and portable items from counter and lower racks. Leave exactly five EMPTY visible hooks along the counter front so paid tools can later be displayed by the game. Keep the profession emblem above as a fixed sign, not an inventory item. No seller or character. Broad matte flat painted patches, minimal volume, clean irregular contours, no pixel art, no text, transparent background.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-2124040d-ae95-4e34-b11b-375dd33dd757.png",
+  "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+}

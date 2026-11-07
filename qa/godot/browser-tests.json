@@ -1,0 +1,156 @@
+{
+  "scope": "Desktop Edge with touch emulation, not a physical phone or live TapTap ad test",
+  "passes": [
+    "Web boot and new campaign",
+    "Horizontal joystick moves right",
+    "Joystick ignores vertical drag",
+    "Two fingers can move and run",
+    "Touch cancel releases movement and run",
+    "Proximity action opens gold merchant",
+    "Unavailable real ads never fake a reward",
+    "Controlled ad fixture cancellation grants nothing",
+    "Controlled ad fixture completion rewards exactly once",
+    "World objects do not respond to direct taps",
+    "Pause freezes game time",
+    "Mount merchant opens",
+    "Normal coins purchase lizard",
+    "Scene contains independent runtime art",
+    "Web local save survives reload",
+    "Portrait orientation pauses simulation",
+    "Landscape resumes with cleared input",
+    "Nested deployment path boots"
+  ],
+  "failures": [],
+  "console": [],
+  "last_state": {
+    "axis": 0,
+    "boosts": {
+      "bat": 0,
+      "wolf": 0
+    },
+    "capacity": 20,
+    "captives": 3,
+    "content_clip": [
+      167,
+      14,
+      0,
+      0
+    ],
+    "day": 1,
+    "decoded_art_bytes": 19293424,
+    "enemies": 0,
+    "engine_draw_calls": 31,
+    "engine_process_seconds": 0,
+    "engine_static_bytes": 59922986,
+    "flags": {
+      "left": false,
+      "right": false
+    },
+    "fly": 0,
+    "gold": 10,
+    "hero_x": -650,
+    "kills": 0,
+    "modal": "",
+    "mount": "boar",
+    "paused": false,
+    "phase": "白天",
+    "population": 6,
+    "prison_capacity": 6,
+    "rects": {
+      "action": [
+        895,
+        335,
+        112,
+        112
+      ],
+      "joystick": [
+        23,
+        358,
+        170,
+        94
+      ],
+      "pause": [
+        959,
+        12,
+        64,
+        64
+      ],
+      "run": [
+        787,
+        363,
+        86,
+        86
+      ]
+    },
+    "reserve": 0,
+    "roles": {
+      "hunter": 3,
+      "idle": 1,
+      "worker": 2
+    },
+    "run": false,
+    "scrap": 100,
+    "stamina": 100,
+    "status": "playing",
+    "target": {
+      "action": "投币",
+      "cost": 16,
+      "disabled": false,
+      "id": "b1",
+      "kind": "hall",
+      "label": "升级酋长大厅",
+      "object_id": 1,
+      "scrap": 6,
+      "shop": "",
+      "x": -650
+    },
+    "time": 35.8666666666666,
+    "tool_stock": {
+      "brute": 0,
+      "hunter": 0,
+      "thief": 0,
+      "worker": 0
+    },
+    "trader_cargo": [],
+    "ui": [
+      {
+        "disabled": false,
+        "key": "run",
+        "rect": [
+          787,
+          363,
+          86,
+          86
+        ],
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "key": "action",
+        "rect": [
+          895,
+          335,
+          112,
+          112
+        ],
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "key": "pause",
+        "rect": [
+          959,
+          12,
+          64,
+          64
+        ],
+        "text": ""
+      }
+    ],
+    "viewport": [
+      1038,
+      480
+    ],
+    "visible_objects": 15
+  }
+}

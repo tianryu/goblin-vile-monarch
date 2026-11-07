@@ -1,0 +1,42 @@
+{
+  "checkpoint": "v11-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "five-material-tiers-and-functional-attachments",
+      "pass": true
+    },
+    {
+      "name": "tower-five-has-three-real-hunters-on-separate-decks",
+      "pass": true
+    },
+    {
+      "name": "prison-five-ten-captives-including-full-sized-boss",
+      "pass": true
+    },
+    {
+      "name": "new-strong-units-bosses-and-ordinary-jumper-render",
+      "pass": true
+    },
+    {
+      "name": "paid-upgrade-real-input-and-worker-completion",
+      "pass": true
+    },
+    {
+      "name": "mobile-joystick-run-and-pause-still-work",
+      "pass": true
+    },
+    {
+      "name": "current-save-reload-preserves-tier-five",
+      "pass": true
+    },
+    {
+      "name": "normal-campaign-saves-render-and-show-real-victory",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "passed": 8
+}

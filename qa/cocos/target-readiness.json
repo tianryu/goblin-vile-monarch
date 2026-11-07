@@ -1,0 +1,48 @@
+{
+  "scope": "target documentation and downloaded official adapter archive only",
+  "documents": [
+    {
+      "file": "AGENTS.md",
+      "middle_dot_count": 0
+    },
+    {
+      "file": "docs/COCOS_TAPTAP_TARGET.md",
+      "middle_dot_count": 0
+    },
+    {
+      "file": "docs/PROGRESS_HANDOFF.md",
+      "middle_dot_count": 0
+    },
+    {
+      "file": "docs/GAME_DESIGN.md",
+      "middle_dot_count": 0
+    },
+    {
+      "file": "docs/PERFORMANCE_BUDGET.md",
+      "middle_dot_count": 0
+    },
+    {
+      "file": "docs/STICKER_MOTION_V9.md",
+      "middle_dot_count": 0
+    },
+    {
+      "file": "docs/ISSUE_TRACKER_V9.md",
+      "middle_dot_count": 0
+    },
+    {
+      "file": "tools/taptap/README.md",
+      "middle_dot_count": 0
+    }
+  ],
+  "plugin": {
+    "version": "1.2.2",
+    "size": 13755538,
+    "sha256": "6b8a9a3cc62b6c54cefab397097babb771d9d99f90442cddff06310a4c9ed73f",
+    "zip_crc": "pass",
+    "paths": "pass"
+  },
+  "cocos_project_created": false,
+  "gameplay_changed": false,
+  "taptap_runtime_tested": false,
+  "upload_performed": false
+}

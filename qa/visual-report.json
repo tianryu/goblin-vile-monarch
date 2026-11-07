@@ -1,0 +1,16 @@
+{
+  "reference": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\art\\design\\goblin-monarch-gameplay-v2.png",
+  "runtime": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\art\\design\\runtime-first.png",
+  "dimensions": [
+    1774,
+    887
+  ],
+  "metric": "RGB SSIM, Gaussian 11x11 sigma 1.5, population covariance",
+  "whole_frame_ssim": 0.5769623244817852,
+  "similarity_percent": 57.7,
+  "threshold_percent": 90,
+  "passed": false,
+  "mean_absolute_rgb_error": 30.661,
+  "normalization": "No alignment, color correction, mask, region weighting or content removal. Original identical-size whole frames. Only 5px mathematical window border omitted.",
+  "limitations": "Same scene/time/view comparison, not cross-scene similarity or device FPS evidence. Joystick intentionally differs from approved two-arrow mockup. Environment is derived from the approved art; dynamic sprites/UI are implemented separately."
+}

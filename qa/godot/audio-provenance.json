@@ -1,0 +1,60 @@
+{
+  "license": "CC0",
+  "author": "Kenney",
+  "assets": [
+    {
+      "name": "click",
+      "source_entry": "Audio/click_003.ogg",
+      "bytes": 4371,
+      "sha256": "2fa929138bc3a0f432696588f66eac94b8f6d463905ec8808c6461ce4b054292"
+    },
+    {
+      "name": "back",
+      "source_entry": "Audio/back_002.ogg",
+      "bytes": 7029,
+      "sha256": "61581c58194e3f19f531072edabbc344204c7e0a2887b8ededce4357bcf09195"
+    },
+    {
+      "name": "confirm",
+      "source_entry": "Audio/confirmation_002.ogg",
+      "bytes": 14169,
+      "sha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c"
+    },
+    {
+      "name": "error",
+      "source_entry": "Audio/error_003.ogg",
+      "bytes": 12256,
+      "sha256": "885b28175c7b511118bcffab95675b48bbac9005cf6514656ebdad979276b3ab"
+    },
+    {
+      "name": "coin",
+      "source_entry": "OGG/handleCoins.ogg",
+      "bytes": 25394,
+      "sha256": "8a91f969e932df709df80ee124d86a51389eed9b67f22e5e716bc2bbf60d8dab"
+    },
+    {
+      "name": "chop",
+      "source_entry": "OGG/chop.ogg",
+      "bytes": 9370,
+      "sha256": "d00c2b3c9fff07e376145c8c8c45c90e5084ec192f6ce0387db233f7b86f1486"
+    },
+    {
+      "name": "arrow",
+      "source_entry": "OGG/knifeSlice.ogg",
+      "bytes": 15532,
+      "sha256": "4cd96dc630bed9840c15f1dd2306da2cc56a4da26a5d3f1a03c5a7265ac5e54f"
+    },
+    {
+      "name": "cage",
+      "source_entry": "OGG/metalLatch.ogg",
+      "bytes": 10208,
+      "sha256": "ba9ba60b172b3ebc131a940f25793cd2e207aca7af73dc80d637277f060f1708"
+    },
+    {
+      "name": "hoof",
+      "source_entry": "OGG/footstep00.ogg",
+      "bytes": 9475,
+      "sha256": "6fe61ef1fc3bcf0e253bf2eb64759db6cb69e2fe452f4d88cc597ecf78a3d601"
+    }
+  ]
+}

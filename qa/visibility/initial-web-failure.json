@@ -1,0 +1,14 @@
+{
+  "scope": "V7 desktop touch emulation and controlled test fixtures, no phone or real advertisement evidence.",
+  "passes": [],
+  "failures": [],
+  "errors": [
+    "SCRIPT ERROR: Parse Error: Could not preload resource script \"res://game/scripts/world.gd\".",
+    "   at: GDScript::reload (res://game/scripts/main.gd:5)",
+    "SCRIPT ERROR: Parse Error: Could not resolve script \"res://game/scripts/world.gd\".",
+    "   at: GDScript::reload (res://game/scripts/main.gd:5)",
+    "ERROR: Failed to load script \"res://game/scripts/main.gd\" with error \"Parse error\".",
+    "   at: load (modules/gdscript/gdscript_resource_format.cpp:46)"
+  ],
+  "exception": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded."
+}

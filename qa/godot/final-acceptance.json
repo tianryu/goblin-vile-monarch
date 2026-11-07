@@ -1,0 +1,51 @@
+{
+  "scope": "Local static-texture client acceptance only. Not platform certification.",
+  "checks": [
+    {
+      "source": "model-tests.json",
+      "passed": 43
+    },
+    {
+      "source": "finishing-model-tests.json",
+      "passed": 35
+    },
+    {
+      "source": "browser-tests.json",
+      "passed": 18
+    },
+    {
+      "source": "finishing-browser-tests.json",
+      "passed": 69
+    },
+    {
+      "source": "boot-audio-tests.json",
+      "passed": 7
+    },
+    {
+      "source": "release-smoke.json",
+      "passed": 9
+    }
+  ],
+  "total_local_checks": 181,
+  "campaigns_won": 3,
+  "stress_seconds": 300,
+  "frame_interval_ms": {
+    "p50": 18.19999999999709,
+    "p95": 18.300000000046566,
+    "p99": 24.30000000000291,
+    "max": 24.400000000023283
+  },
+  "runtime_bitmap_rgba_bytes": 19293424,
+  "runtime_plus_boot_bitmap_rgba_bytes": 22707680,
+  "zip_bytes": 14577004,
+  "zip_sha256": "3467410714014a73d7b8b177332e5b40fc333c30ff24163ba20ee2b0e164668d",
+  "deferred": [
+    "Character frame animations by user request"
+  ],
+  "not_verified": [
+    "Physical Android/iOS phone and TapTap host",
+    "Live ads SDK and new platform application configuration",
+    "Platform app identity and release review",
+    "90 percent match against user-approved new same-view target art"
+  ]
+}

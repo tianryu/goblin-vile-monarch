@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "precise-object-edit",
+  "source_image": "artifacts/animation-v8/hall1-fire-edit-input.png",
+  "generated_original": "exec-c172049c-dda6-4d4f-a302-b858dd5e9d6e.png",
+  "review": "accepted-no-baked-flame-static-base",
+  "inspection": "Full generated image inspected: flame removed, exposed dark tent opening and charcoal/logs retained inside stone ring; same flag, posts, cloth and crate. Canvas uses genuine alpha. Ordinary shared crop/resize at export.",
+  "tokens": "not available from built-in tool"
+}

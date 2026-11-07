@@ -1,0 +1,14 @@
+{
+  "thieves_den": {
+    "path": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-fd6cdff4-c6ed-4876-b8f1-eb4ce76a3862.png",
+    "prompt": "Edit target image 1. Reference image 2 is STYLE ONLY. Preserve the tall narrow crooked purple-roof thieves den, all doors, key flag, ladder and ground contact. Redraw surfaces in exactly the flat hand-painted cartoon style of image 2: broad matte muted close-valued color patches, simple irregular clean contours, minimal volume, only two tones per material. Remove all tiny grain scratches rust dots noisy texture and realistic lighting. No pixel art, no 3D, no text, no cast backdrop, no diffuse halo. Same subject and silhouette. Isolated single game asset, genuinely transparent background."
+  },
+  "battlefield_wreck": {
+    "path": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-30e7aa9d-4277-45e1-9034-aeb0a090a150.png",
+    "prompt": "Edit target image 1. Reference image 2 is STYLE ONLY. Preserve this collapsed cart wreck composition, supporting wheel on ground, fallen wheel, broken boards, blue-white shield and fallen flag. Nothing floating. Redraw surfaces in exactly the flat hand-painted cartoon style of image 2: broad matte muted close-valued color patches, simple irregular clean contours, minimal volume, only two tones per material. Remove all tiny grain scratches rust dots noisy texture and realistic lighting. No pixel art, no 3D, no text, no cast backdrop, no diffuse halo. Same subject and silhouette. Isolated single game asset, genuinely transparent background."
+  },
+  "hall_ruin": {
+    "path": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-3d85069e-f019-45eb-91e3-b227708c4bb6.png",
+    "prompt": "Edit target image 1. Reference image 2 is STYLE ONLY. Preserve the ruined timber hall pile, cold stone hearth, fallen door, torn red flag and continuous ground contact. Redraw surfaces in exactly the flat hand-painted cartoon style of image 2: broad matte muted close-valued color patches, simple irregular clean contours, minimal volume, only two tones per material. Remove all tiny grain scratches rust dots noisy texture and realistic lighting. No pixel art, no 3D, no text, no cast backdrop, no diffuse halo. Same subject and silhouette. Isolated single game asset, genuinely transparent background."
+  }
+}

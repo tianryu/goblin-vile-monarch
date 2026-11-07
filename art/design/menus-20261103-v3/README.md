@@ -1,0 +1,20 @@
+# 右侧主菜单与简洁暂停菜单
+
+2026年11月3日，使用内置imagegen，未使用CLI或其他图像模型。两张均以现有实机/主菜单图为编辑参照，已经检查文字、风格与布局。设计稿待用户审核，不是可操作界面。
+
+- main-menu.png：标题与菜单都放右侧，继续游戏、新的征程、排行榜（生存天数）、云存档、声音开关。
+- pause-menu.png：局内右侧暂停卡，只有声音、排行榜（生存天数）、云存档、回到主菜单。右上原暂停键切为播放图标，可继续游戏，不额外增加第五条。
+
+原系统设置页、音量滑杆、画质、帧率、震动和居中稿全部废止，不作为后续实施依据。排行与云存档尚未接入，不显示虚假名次、账号状态或同步成功。背景按当前实机平面哑光手绘贴纸风格，使用同系列橄榄绿与米金色界面。
+
+## 实际提交的主菜单提示词
+
+Use case: ui-mockup precise edit of the supplied ACTUAL game main menu. The user's LATEST design replaces earlier centered layout. Put BOTH GAME TITLE and ALL MAIN MENU CONTROLS ON THE RIGHT. Keep the existing 2D flat matte hand-painted goblin tribe art/style/identities/scene exactly recognizable: ugly-cute green goblins, same crowned goblin chief riding brown boar, pale beige sticker borders, medieval cave and tribe, blue foreground water and land. Do not turn it into 3D, pixel art, photorealistic or ornate fantasy concept art. Keep world scene and characters concentrated in original middle/left so right UI has clear space; don't invent new characters. At UPPER RIGHT put a compact wooden olive title plaque reading exactly '我是哥布林：君主', aligned over the menu and with safe right margin. All controls in a single vertical column in rightmost quarter, around x=1020 on a 1280x600 layout. Use existing olive-green hand-painted warm gold/beige rim buttons. FOUR wide generously spaced buttons, exact labels top to bottom: '继续游戏', '新的征程', '排行榜', '云存档'. On the 排行榜 button only, include small secondary line '生存天数'. Continue strongest; others quieter. Button centers around y=220,300,385,470, safe width about310, heights60-70. Under them ONE compact sound toggle reading exactly '声音' and '开' with speaker symbol, around y=550, height35, safe bottom margin. No system settings button, no sliders, quality, FPS, vibration or gear icon. No fake online-success/account/cloud-sync status. No gameplay HUD or joystick. Chinese crisp and correct, no middle-dot separators. ONE full-screen landscape image, matching reference aspect ratio, no arrows or callouts or phone frame. RIGHT-ALIGNED TITLE AND MENU are mandatory, not centered.
+
+参考图：menus-20261103-v1/main-menu.png，作为界面编辑底图，不采用其旧设置入口。
+
+## 实际提交的暂停菜单提示词
+
+Use case: ui-mockup compositing over actual game. Produce ONE landscape in-game PAUSE MENU design matching the supplied main-menu UI and actual game screenshot. Reference1 is the ACTUAL game scene/HUD and strict style baseline. Reference2 is the latest RIGHT-side main menu, use same olive green hand-painted warm gold/beige rim buttons and ivory Chinese lettering. Preserve actual flat 2D matte ugly-cute goblins, crowned chief riding brown boar, medieval cave tents, beige sticker edges, horizontal land, separate foreground water. No style reinvention, no 3D, pixel art, realistic lighting, ornate frame or glossy RPG. Show the real gameplay scene gently dimmed and frozen behind a COMPACT parchment/olive pause card on the RIGHT side, keeping left and central scene visible. Existing top-right round pause control remains visible OUTSIDE the card and becomes a play triangle for resuming; no extra resume entry in the popup. Remove current floating interaction header and ghost coin costs, hide joystick/bottom gameplay actions while paused. Card heading exact '暂停'. ONLY FOUR menu rows, big clearly separated touch controls: first '声音' with a single switch/button displaying '开' and speaker symbol; second '排行榜' with small secondary text '生存天数'; third '云存档'; fourth '回到主菜单'. Put return-to-main last at bottom near right thumb. No fifth row, no '系统设置', no music/effects sliders, no vibration, no quality selector, no FPS selector, no restart/save-delete. No fake connected/cloud-success/rank-number status. Use restrained existing ivory parchment and olive/gold UI, no giant white form filling entire screen. Everything within safe screen margins, crisp correct Chinese, no decorative separator dots, no explanation sentences or annotations or device mockup. This is only a pending design mockup, not an actual online-service screen.
+
+参考图：qa/cocos/patrol-browser/final-build6/fresh-start.png为实机参照，本目录main-menu.png为界面系列参照。

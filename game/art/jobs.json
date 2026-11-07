@@ -1,0 +1,210 @@
+{
+  "reference": "game/art/source/worker.png",
+  "current_source": "game/art/source/flat-v3",
+  "style": "NON-PIXEL flat hand-painted cartoon. User explicitly replaced previous pixel direction.",
+  "common": "Standalone STATIC NON-PIXEL production bitmap matching worker.png, hunter.png, monarch.png and flat-v3/human.png. Broad matte hand-painted organic contours, muted sage/grey-blue/clay/burgundy, only2-3 close-valued shades. No pixel grid, stair steps,3D bevel, dense texture, diffuse halos, text, UI or watermark. Transparent outside physical subject. Single static pose only, no animation frames. ",
+  "jobs": [
+    {
+      "name": "sky_base",
+      "transparent": false,
+      "kind": "layer",
+      "prompt": "ONLY a plain full-canvas2:1 SKY BASE, neutral pale-grey hand-painted vertical tonal wash, slightly lighter at bottom. Completely empty: no sun,moon,clouds,stars,trees,hills,water or land. Broad close tones only. Opaque entire canvas. Runtime will change its tint through day/night."
+    },
+    {
+      "name": "land",
+      "transparent": true,
+      "kind": "layer",
+      "prompt": "ONLY a separate2:1 LAND ROAD layer. Top64% fully transparent; at y64% a thin irregular sage grass edge, y65-73% flat clay-brown earthen strip and darker underside. EVERYTHING BELOW y74% FULLY TRANSPARENT, no water/reflection. Minimal patches, no pebbles. Tileable left/right. No sky or other subjects."
+    },
+    {
+      "name": "water",
+      "transparent": false,
+      "kind": "layer",
+      "prompt": "ONLY a full2:1 calm WATER texture in muted grey-teal blue, broad sparse horizontal ripples. NO fixed sun reflections, NO bright apricot patches, no reflected buildings/characters/trees, no land/sky/shore. Opaque tileable texture. Will be cropped to foreground lower quarter and tinted dynamically."
+    },
+    {
+      "name": "middle",
+      "transparent": true,
+      "kind": "layer",
+      "prompt": "Only a full2:1 mid-distance FOREST layer matching reference. Large broad grey-green tree silhouettes mostly on LEFT half, simple trunks reaching baseline y64%; low shrubs to right. Top clear in center/right; below y65% transparent. No sky,castle,land,water,props,buildings or characters. Minimal interior leaf detail. Maintain source canvas alignment."
+    },
+    {
+      "name": "celestial",
+      "transparent": true,
+      "kind": "atlas3",
+      "prompt": "THREE separate STATIC atmosphere elements in3equal columns one row: LEFT a flat pale ochre SUN DISC, CENTER a simple pale-grey crescent MOON, RIGHT one broad wispy CLOUD mass muted offwhite/grey. True transparent background, equal margins, clean edges, no glow. No labels or sky. These are three distinct static cutouts, not animation."
+    },
+    {
+      "name": "monarch",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE tiny ugly-CUTE GREEN goblin KING RIDER facingRIGHT, small crooked gold crown, faded red cape, crooked long nose,big pointed ears, squinting sly grin and one fang. SEATED riding pose, knees bent and empty hands at waist, NO MOUNT drawn. Simple dark tunic, compact body. Same species as reference boar king, full visible small rider on transparency."
+    },
+    {
+      "name": "worker",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE ugly-cute GREEN goblin WORKER facingRIGHT, large pointy ears,crooked nose,sly grin, little belly, brown ragged tunic,belt,burgundy headband. Holds small wooden HAMMER in right hand lowered at side; other hand free, two legs. No crown. Static side-view."
+    },
+    {
+      "name": "hunter",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE ugly-cute GREEN goblin HUNTER facingRIGHT, pointed ears,crooked nose,cheeky squint, burgundy headband and faded brown tunic. LEFT hand holds small bow in front, RIGHT hand separate at bowstring near chest, two distinct hands, two legs. No crown. Static side-view."
+    },
+    {
+      "name": "brute",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE ugly-cute GREEN goblin BRUTE facingRIGHT, slightly stockier but small,pointy ears,crooked nose,smug fang grin, ragged muted burgundy vest, plain belt, small scrap shoulder pad. One hand holds wooden CLUB in front, other hand free. Two hands,two legs, NO crown. Static side-view."
+    },
+    {
+      "name": "thief",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE ugly-cute GREEN goblin THIEF facingRIGHT, large ears poking from faded burgundy HOOD, long crooked nose,narrow sly eyes and greedy grin, hunched small body, brown trousers, empty hands held forward like sneaking. No weapon or crown, no extra limbs. Static side view."
+    },
+    {
+      "name": "idle",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE ugly-cute GREEN unemployed goblin facingRIGHT, big ears,crooked nose,little fang grin, brown ragged sleeveless tunic, little round belly, simple belt, empty hands at waist, both legs. No hat/crown/weapon. Compact tiny static side-view."
+    },
+    {
+      "name": "boar",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE squat BROWN WILD BOAR MOUNT facingRIGHT, short legs,one visible cream tusk,small ears,rough but simplified outline,plain dark leather saddle on back EMPTY without rider. Flat matte2-tone taupe-brown. Same boar proportions as reference king mount."
+    },
+    {
+      "name": "lizard",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE squat muted TEAL CAVE LIZARD MOUNT facingRIGHT, four short legs,low long tail,short snout, small simple saddle on back EMPTY. Friendly strange fantasy animal, flat2-tone, no spikes overload, no glow or rider."
+    },
+    {
+      "name": "wolf",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE dark grey-blue WOLF MOUNT facingRIGHT,lean body,pointy ears,bushy tail,readable four legs,small empty brown saddle. Flat muted2-tone, not realistic furry detail, no rider."
+    },
+    {
+      "name": "bat",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE giant muted plum/grey BAT MOUNT facingRIGHT, large ears,stubby body,two broad wings held OPEN in one static low-flight pose, small empty saddle on back. Cute sinister fantasy animal, flat shapes,no rider/no wing sequence."
+    },
+    {
+      "name": "human",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE medieval HUMAN FOOT SOLDIER facingLEFT, peach skin, steel pot helmet,muted blue/cream tunic,brown boots. Shield FRONT LEFT of torso held in LEFT hand; sword BACK RIGHT in OTHER RIGHT hand pointed down. Two visibly separate arms and hands, two legs. Static side view, same tiny scale as reference soldiers."
+    },
+    {
+      "name": "dwarf",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE short stocky medieval DWARF SIEGE BREAKER facingLEFT,peach skin,brown beard,steel cap,muted blue/cream gear. ONE warhammer held in TWO separate hands spaced on shaft. No shield. Two legs. Compact static side view."
+    },
+    {
+      "name": "elf",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE slim ELF ARCHER facingLEFT,pale skin,pale hair,long pointed ears,muted forest green/cream clothes. LEFT hand holds bow in frontLEFT; RIGHT hand separately pulls string near chest, two arms/two legs. Static side view, no glow."
+    },
+    {
+      "name": "captives",
+      "transparent": true,
+      "kind": "atlas3",
+      "prompt": "THREE separate STATIC UNARMED captive characters in3equal columns1row, same baseline and scale, bodies fully visible on transparency. LEFT peach-skinned HUMAN blue/cream tunic small steel cap; CENTER short brown-bearded DWARF; RIGHT pale-haired ELF in muted green/cream. All hands close body, no weapons/shields/rope/cage, worried expressions. Not animation."
+    },
+    {
+      "name": "trader",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE medieval HUMAN slave trader facingLEFT,peach skin,short dark hair/receding hairline and beard,NO HAT. Slightly stout,sly expression. ONE rough oatmeal PULLOVER TUNIC closed front with tiny laced slit neck,plain belt,hem mid-thigh,cloth trousers,leg wraps,worn shoes. Purse in one hand,ledger in OTHER. NO jacket,vest,collar,buttons,wide brim or trench coat. Match corrected reference trader."
+    },
+    {
+      "name": "hall",
+      "transparent": true,
+      "kind": "atlas3",
+      "prompt": "Three STATIC goblin settlement building upgrade designs,3equal columns1row: LEFT tiny ragged tent/campfire shelter, CENTER modest wood chief hut faded red cloth roof, RIGHT reinforced modest chief hut with salvaged shields. Black/faded-red goblin flags, all SMALL horizontal side-view, no giant skulls/horns. No characters. Same baseline. Each distinct building only, not animation."
+    },
+    {
+      "name": "stall",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE empty simple medieval goblin merchant/tool STALL, horizontal front/side view, two wooden posts,low faded burgundy cloth awning,plain counter and small crates. No person,words,coins/weapons baked in. Flat modest wooden shape, empty display counter to overlay independent merchandise."
+    },
+    {
+      "name": "prison_back",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONLY the BACK STRUCTURE of a wide low rectangular medieval PRISON. Front-on side-view, plain dark flat back wall, wood/iron perimeter frame and roof, interior empty. NO FRONT BARS, NO prisoners, no sign/text. Width-to-height about2.6:1. Flat muted dark wood/grey iron, simple shape. Front-bar layer will be separate. Transparent outside silhouette."
+    },
+    {
+      "name": "prison_front",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONLY the FRONT BAR LAYER of a wide low rectangular medieval PRISON, front-on flat elevation. Width-to-height2.6:1, closed front outer frame and approx9 straight thin iron vertical bars, small lock and bottom rail. EVERY GAP BETWEEN BARS truly TRANSPARENT, no back wall, no dark filled interior, no prisoners, no sign/text, no side perspective. This layer must overlay prisoners so bars cover bodies. Muted flat grey/dark wood, no highlights. Full frame centered with margins."
+    },
+    {
+      "name": "wall",
+      "transparent": true,
+      "kind": "atlas3",
+      "prompt": "Three STATIC goblin ROAD BARRIER levels in3equal columns1row, same ground baseline: LEFT short rough wooden stakes, CENTER taller wood fence with2salvaged human shields, RIGHT reinforced wood stakes and rusty iron patches. Flat front-on side view, minimal details, no people or text. No huge fortresses."
+    },
+    {
+      "name": "tower",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE small goblin wooden ARCHER PLATFORM, two rough posts and raised simple platform with small faded red flag. Empty, no goblin. Flat side view, modest silhouette, ladder part of wood sprite, no modern parts."
+    },
+    {
+      "name": "net_trap",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE goblin ROPE NET TRAP wooden frame, side-view: single upright post and short horizontal beam with coiled rope/hook at end, net mechanism ready but NO captive/person hanging. Modest size, muted wood, flat style. Standalone static transparent cutout."
+    },
+    {
+      "name": "rock_trap",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE small goblin ROCK DROP TRAP, wooden angled rack with a few broad grey stones resting in cradle, rope trigger, static side-view, no characters. Simple flat wood/stone patches, no 3D bevel."
+    },
+    {
+      "name": "outpost",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE compact medieval ALLIANCE MILITARY TENT OUTPOST,blue/ivory cloth tent,plain small wood fence and one blue pennant. No soldiers,arrows,chests,cages or wheels baked in. Small flat2D side-view modular building, muted colors."
+    },
+    {
+      "name": "wagon",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE simple medieval WOODEN SUPPLY CART BODY facingLEFT, side view,low planked box and shaft,NO WHEELS attached, exposed simple axle stubs. No horse/rider/prisoners. Independent wheel cutout will be added/removed for theft gameplay. Flat muted brown, static transparent cutout."
+    },
+    {
+      "name": "loot",
+      "transparent": true,
+      "kind": "atlas4",
+      "prompt": "A STATIC4x4 equally spaced transparent game PROP ATLAS, each cell one separate object, no labels. Row1: gold COIN,grey SCRAP pile,small ARROW pointingRIGHT,wooden WHEEL. Row2:iron KEY,closed money CHEST,blue/ivory military FLAG on short pole,empty rope NET bag. Row3:straight thin horizontal ROPE length,small HAMMER,small BOW,wood CLUB. Row4:tiny golden CROWN,folded burgundy HOOD,bulging cloth POCKET pouch,small bundle of ARROWS. Flat low-pixel hand-painted same palette, all clean silhouettes and equal cell margins. No animation or UI text."
+    },
+    {
+      "name": "torch",
+      "transparent": true,
+      "kind": "sprite",
+      "prompt": "ONE medieval wooden TORCH stake with a SMALL static flat ochre flame, no animation, no glow/halo. Brown pole,muted orange/yellow flame2shapes, transparent outside. Match reference restrained fire."
+    },
+    {
+      "name": "foreground",
+      "transparent": true,
+      "kind": "layer",
+      "prompt": "ONLY foreground DARK MARSH GRASSES on a2:1 transparent canvas. Top84% fully transparent; sparse dark grey-green upright reeds grow from bottom edge left/right, center mostly clear. Simple flat silhouettes, no land/water/sky/props/UI or glow. No dense texture. Layer for foreground bottom of screen."
+    },
+    {"name":"prison_back1","transparent":true,"kind":"sprite","prompt":"Level1 wooden prison rear. Final prompt and source in flat-v3/prison_back1.source.json."},
+    {"name":"prison_front1","transparent":true,"kind":"sprite","prompt":"Level1 wooden prison front grate with transparent gaps. See source record."},
+    {"name":"prison_back3","transparent":true,"kind":"sprite","prompt":"Level3 stone dungeon rear. See source record."},
+    {"name":"prison_front3","transparent":true,"kind":"sprite","prompt":"Level3 stone/iron front grate with transparent gaps. See source record."}
+  ]
+}

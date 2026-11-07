@@ -1,0 +1,9 @@
+{
+  "assetName": "hunter",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-12f06438-7221-4a0e-ba49-71ef3e845158.png",
+  "prompt": "Precise identity-preserving edit of attached goblin hunter game sprite. Keep exact ugly-cute hooked nose, squinting sly face, uneven little tusks, big pointed ears, squat belly and flat matte hand-painted cartoon shape language. Change clothing to bright deep RED medieval short tunic, red hood/head cloth, brown belt/trousers/boots, brighter grass green skin. Keep a plain wooden bow in left hand but lower it slightly; right hand relaxed near chest. REMOVE the arrow entirely, no nocked arrow and no airborne projectile or motion effects. Single complete full body facing RIGHT on one flat baseline. No crown, no pixel edges, no 3D lighting, no rich texture, no background or labels. GENUINE TRANSPARENT cutout with full margins. No new white outline, pipeline will apply it. This is a standalone static idle sticker, not animation frames.",
+  "edge": "ally",
+  "reviewed": true,
+  "review": "红衣、弓与空手分离，没有悬空箭矢，已目视检查。",
+  "generator": "builtin-imagegen"
+}

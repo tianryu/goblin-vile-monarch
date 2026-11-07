@@ -1,0 +1,18 @@
+{
+  "checkpoint": "patrol-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "real-whip-input-drops-hidden-courier-money-and-equipment-once",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   4,\n+   2,\n+   2\n-   0,\n-   0,\n-   0\n  ]\n"
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "failedRequests": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   4,\n+   2,\n+   2\n-   0,\n-   0,\n-   0\n  ]\n",
+  "passed": 0
+}

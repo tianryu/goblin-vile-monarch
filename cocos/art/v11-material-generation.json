@@ -1,0 +1,74 @@
+[
+  {
+    "name": "hall3",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. THIRD tier goblin hall: the same crooked red-cloth goblin hall, now on coarse chunky gray STONE foundation with visible stone door jambs, wooden upper frame, small red rag roof, bone flag. No modern house, no castle towers.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c7f0b35c-34cf-4999-82ec-0c62840564f4.png"
+  },
+  {
+    "name": "hall4",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. FOURTH tier goblin hall, same squat crooked goblin architecture and red rag banners but broad irregular BRICK AND STONE walls, iron reinforced timber doorway, a side workshop, patchy dull iron roof sections and coarse iron braces. Clearly stone building rather than wooden tent.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-43571de7-7d75-4ae1-8fb3-f2a4c3aa8b95.png"
+  },
+  {
+    "name": "hall5",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. FIFTH and final goblin hall: broad squat ramshackle fortress workshop, rough brick base and walls clad in large dark dull IRON PLATES with broad riveted iron entrance arch, blue-gray metal roof sheets, small shabby red cloth flags, rough goblin skull emblem flag. Two small side annexes, no modern factory or shiny steel, no huge castle tower.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-6fc42014-09bc-4c4e-8dde-7d3516c61e32.png"
+  },
+  {
+    "name": "wall3",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/wall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. THIRD tier goblin defensive barrier: coarse GRAY STONE piers and a low jagged stone wall supporting thick sharpened timber gate posts. The stonework must dominate the base and sides. Goblin rough medieval construction, not a neat human castle.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-4531e2da-031f-4666-98f3-a0550fcc689d.png"
+  },
+  {
+    "name": "wall4",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/wall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. FOURTH tier goblin defensive barrier: chunky BRICK AND STONE wall with broad dull iron braces, heavy iron-banded timber gate across a narrow closed passage, irregular stone piers. Clearly more masonry and iron than wood.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-fc824b47-1dbd-4535-85d0-2bcff1f0c121.png"
+  },
+  {
+    "name": "wall5",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/wall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. FIFTH tier goblin defensive barrier: a massive dark blue-gray IRON PLATE barricade on short rough stone footing, heavy riveted interlocking metal panels, reinforced metal gate, blunt jagged iron spikes and wide diagonal iron braces. Almost entirely metal, little exposed wood. No modern military equipment.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-cfb7e783-fec2-42b7-b1b0-b30c104f7cad.png"
+  },
+  {
+    "name": "tower3",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/tower2.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. THIRD tier goblin archer scaffold: two open firing decks on chunky irregular GRAY STONE pillars, timber floors and simple wood ladder, small red rag pennant. Stone supports are unmistakable and not just wood recolored.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-83f44409-e69a-4da2-bb4e-319a44581fc5.png"
+  },
+  {
+    "name": "tower4",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/tower2.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. FOURTH tier goblin archer tower: two offset open firing decks, irregular BRICK AND STONE side pillars, broad iron beams and braces, iron-railed timber floors, ladder, little red rag awning. Side-view flat silhouette, not a castle.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c94aa4a7-5e4e-4301-bfd9-d67d21efd507.png"
+  },
+  {
+    "name": "tower5",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/tower2.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. FIFTH tier goblin archer tower: THREE distinct open horizontal firing platforms at three different heights, broad IRON columns and diagonal metal trusses anchored into chunky short brick footings, heavy metal railings and ladder, small red rag canopy. Mostly dark blue-gray metal with a few pale iron plate patches, no modern factory, no characters.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-eaae1cc3-5d37-4dc2-9382-42bf05c2cb67.png"
+  },
+  {
+    "name": "stone_plinth",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/wall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. One separate low wide masonry foundation attachment for a goblin work stall. Rough chunky gray STONE blocks forming a horizontal base and two short corner buttresses, flat front-side view, completely empty open center above. No posts, no whole building, no ground. Width roughly 3 times height.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f9817e34-a027-42fa-af48-619a032f2b27.png"
+  },
+  {
+    "name": "metal_workframe",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/tower2.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. One isolated medieval goblin IRON WORK FRAME attachment for a workshop. Two short chunky dark iron side columns joined by broad riveted upper lintel and diagonal corner braces, fully empty transparent interior, wide rectangular front-side silhouette, width twice height. No tools, no building, no cloth, no ground.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ebce9cbf-f407-4ff1-a0af-3d92947d5928.png"
+  },
+  {
+    "name": "metal_roof",
+    "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+    "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. One isolated wide low medieval goblin IRON ROOF attachment for a workshop: a crooked canopy made of overlapping dull blue-gray broad riveted metal plates with heavy iron edge braces, flat side view, width four times height. No building, no posts, no ground, no text.",
+    "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-a6202afe-b7ea-46f3-b249-3550cccf373b.png"
+  }
+]

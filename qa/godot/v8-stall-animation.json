@@ -1,0 +1,15 @@
+{
+  "scope": "Generated flexible cloth on the real worker stall, isolated desktop Edge software WebGL",
+  "passes": [
+    "Full original fabric sequence plays",
+    "Stall keeps one unchanged world rectangle",
+    "All three original-coordinate foot bounds stay exactly fixed",
+    "Wind does not change currency or tool stock",
+    "Pause freezes fabric pose",
+    "A real coin purchase adds exactly one displayed hammer",
+    "Proximity glow follows the animated stall",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": []
+}

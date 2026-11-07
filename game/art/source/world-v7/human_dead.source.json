@@ -1,0 +1,7 @@
+{
+  "name": "human_dead",
+  "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. This same character lies motionless horizontally on the ground, arms relaxed, eyes closed, peaceful cartoon defeat pose. Both feet and head rest on the same ground plane. Keep the exact race, medieval clothing, proportions and palette of the character reference. NO NET, NO CAGE, NO ROPE, NO BLOOD. Weapons set aside or absent, hands not holding sword and shield together. Entire body visible, isolated static sprite. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-766ced64-8753-41cb-bbb5-796a3e231261.png",
+  "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "Enemy walking and nearest-target facing in isolated desktop Edge software WebGL",
+  "passes": [
+    "human: a complete generated gait plays",
+    "human: one solid subject in each observed frame",
+    "human: actual AI approaches the nearby chief",
+    "human: left-facing art agrees with target direction",
+    "human: no extra transactions or dialogs",
+    "human: a nearer target behind changes actual facing",
+    "human: pause holds the current pose",
+    "dwarf: a complete generated gait plays",
+    "dwarf: one solid subject in each observed frame",
+    "dwarf: actual AI approaches the nearby chief",
+    "dwarf: left-facing art agrees with target direction",
+    "dwarf: no extra transactions or dialogs",
+    "dwarf: a nearer target behind changes actual facing",
+    "dwarf: pause holds the current pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "type": "human",
+      "poses": 24,
+      "travel": 210.166666666663
+    },
+    {
+      "type": "dwarf",
+      "poses": 28,
+      "travel": 166.06666666666501
+    }
+  ]
+}

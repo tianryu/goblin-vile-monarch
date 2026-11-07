@@ -1,0 +1,9 @@
+{
+  "assetName": "open_chest",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-5c34f1ae-0f84-4049-95df-8d4084b0359e.png",
+  "prompt": "Edit this ONE treasury chest sprite. Remove ALL the brown/orange glow and soft shadow surrounding the chest: outside the hard wooden silhouette must be 100 percent transparent, including every pixel in the margins. Make chest more FLAT side-on with less bevel/volume, simple broad matte brown painted color patches like a 2D paper cutout. Keep the lid open behind an empty cavity and low front panel, medieval crude planks, no coins. No surrounding colored haze, no soft halo, no background, no ground cast shadow, no gradients outside silhouette. One complete independent transparent prop. Edges clean and stable, the only semi-transparent pixels should be normal 1-pixel edge antialiasing.",
+  "edge": "building",
+  "reviewed": true,
+  "review": "在灰绿底板合成检查，外部没有可见光晕，空箱与低前沿完整。",
+  "generator": "builtin-imagegen"
+}

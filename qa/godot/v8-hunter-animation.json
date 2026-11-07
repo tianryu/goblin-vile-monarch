@@ -1,0 +1,5131 @@
+{
+  "scope": "Hunter attack animation integration, isolated Edge software WebGL; source arrow alpha checked separately",
+  "passes": [
+    "Hunter 1 actually plays the shooting clip",
+    "Hunter 1 advances multiple attack frames",
+    "Hunter 1 faces the enemy during the shot",
+    "Hunter 1 has one body identity",
+    "Hunter 1 emits a separate world arrow",
+    "Hunter 1 plants his feet for the release",
+    "Hunter -1 actually plays the shooting clip",
+    "Hunter -1 advances multiple attack frames",
+    "Hunter -1 faces the enemy during the shot",
+    "Hunter -1 has one body identity",
+    "Hunter -1 emits a separate world arrow",
+    "Hunter -1 plants his feet for the release",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "directions": [
+    {
+      "direction": 1,
+      "samples": [
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.15,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.36,
+              "stun": 0,
+              "x": -39
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                230.258819580078,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.08333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.293333333333333,
+              "stun": 0,
+              "x": -39
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                225.497772216797,
+                273.942230224609,
+                60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.725805212620027,
+              "key": "world/shot/0.973/-39.0/160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                298.986114501953,
+                288.5,
+                14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/0.973/-39.0/160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.01666666666667,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.226666666666667,
+              "stun": 0,
+              "x": -39
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                225.497772216797,
+                273.942230224609,
+                60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/0.973/-39.0/160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                354.263885498047,
+                288.5,
+                14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/0.973/-39.0/160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.95,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.16,
+              "stun": 0,
+              "x": -39
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                225.497772216797,
+                273.942230224609,
+                60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                406,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/0.973/-39.0/160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                409.541656494141,
+                288.5,
+                14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/0.973/-39.0/160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.883333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0933333333333334,
+              "stun": 0,
+              "x": -39
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                225.497772216797,
+                273.942230224609,
+                60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.741185074,
+              "key": "world/shot/0.973/-39.0/160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                437.180541992188,
+                288.5,
+                14.5833330154419,
+                5
+              ],
+              "requested": false,
+              "rotation": 0,
+              "scope": "world/shot/0.973/-39.0/160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.816666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0266666666666667,
+              "stun": 0,
+              "x": -39
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                225.497772216797,
+                273.942230224609,
+                60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.00209540740740741,
+              "key": "world/shot/0.973/-39.0/160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                437.180541992188,
+                288.5,
+                14.5833330154419,
+                5
+              ],
+              "requested": false,
+              "rotation": 0,
+              "scope": "world/shot/0.973/-39.0/160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.783333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -41.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                226.2890625,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                616,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.716666666666666,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -45.5
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                222.227294921875,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                616,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.65,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -49.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                218.255065917969,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                616,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.583333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -54.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                214.329071044922,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                616,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.516666666666666,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -58.5
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                210.356842041016,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                616,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.45,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -62.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                206.384628295898,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                770,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.416666666666666,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -65
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                202.412399291992,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                770,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.35,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -69.3333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                198.599075317383,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                770,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.283333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -73.6666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                194.621795654297,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                770,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.216666666666666,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -78
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                190.526794433594,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                770,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.15,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -82.3333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                186.554565429688,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                770,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.083333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -86.6666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                182.570785522461,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                924,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.0499999999999997,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -88.8333333333334
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                178.598571777344,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                924,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -93.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                174.626342773438,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                924,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -97.5
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                170.65412902832,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                924,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -101.833333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                166.749069213867,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                924,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -106.166666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                162.995681762695,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -108.333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                159.274429321289,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -112.666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                155.471923828125,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                172.661590576172,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -117
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                151.675933837891,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.24748782441701,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                168.865585327148,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -121.333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                147.85417175293,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.719737507313153,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                165.043823242188,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -123.5
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                143.869552612305,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.999792313645237,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                161.059204101562,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -127.833333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                139.833053588867,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                157.022705078125,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -132.166666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                135.817016601562,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                153.00666809082,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -136.5
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                131.956008911133,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                149.145660400391,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -140.833333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                128.056015014648,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                145.245666503906,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -145.166666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                124.128112792969,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                141.317764282227,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -147.333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                120.036460876465,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                137.226104736328,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -151.666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                115.929901123047,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                133.119552612305,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -156
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                111.974098205566,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                129.16374206543,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -160.333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                108.269096374512,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                125.45874786377,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -164.666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                104.321495056152,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                121.51114654541,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -166.833333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                100.398513793945,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                117.588165283203,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -171.166666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                96.4591217041016,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                462,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                113.648773193359,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -175.5
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                92.5197296142578,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                462,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                109.709381103516,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -177.666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                89.5487670898438,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                462,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                106.738418579102,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -180
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                86.5067138671875,
+                275.325012207031,
+                -47.203125,
+                42.75
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                1026,
+                168,
+                159,
+                144
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                103.483276367188,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -180
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/idle",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                86.2671508789062,
+                274.026672363281,
+                -48.390625,
+                44.234375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                326,
+                298,
+                163,
+                149
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                103.375,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 1,
+              "cooldown": 0,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -180
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/idle",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                86.2671508789062,
+                274.026672363281,
+                -48.390625,
+                44.234375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                326,
+                298,
+                163,
+                149
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                103.375,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "direction": -1,
+      "samples": [
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.15,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.36,
+              "stun": 0,
+              "x": -36.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                609.757202148438,
+                273.097778320312,
+                -47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                924,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.08333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.293333333333333,
+              "stun": 0,
+              "x": -36.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                598.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.963780323219322,
+              "key": "world/shot/0.873/-36.8333333333333/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                591.662048339844,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/0.873/-36.8333333333333/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.01666666666667,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.226666666666667,
+              "stun": 0,
+              "x": -36.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                598.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/0.873/-36.8333333333333/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                557.449096679688,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/0.873/-36.8333333333333/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.95,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.16,
+              "stun": 0,
+              "x": -36.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                598.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/0.873/-36.8333333333333/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                506.129638671875,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/0.873/-36.8333333333333/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.883333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0933333333333334,
+              "stun": 0,
+              "x": -36.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                598.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.479172025034294,
+              "key": "world/shot/0.873/-36.8333333333333/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                506.129638671875,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": false,
+              "rotation": 0,
+              "scope": "world/shot/0.873/-36.8333333333333/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.816666666666666,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0266666666666667,
+              "stun": 0,
+              "x": -36.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                598.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.783333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -34
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                610.550109863281,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.716666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -28.3333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                616.050537109375,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.65,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -22.6666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                621.346069335938,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.583333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -17
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                626.658569335938,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.516666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -11.3333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                631.971069335938,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                0,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.45,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -5.66666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                637.747253417969,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.383333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": -4.44089209850063e-15
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                643.413940429688,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.316666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 5.66666666666666
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                649.080627441406,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                322,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.25,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 11.3333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                654.656616210938,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.183333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 17
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                659.969116210938,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                154,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.116666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 22.6666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                665.16357421875,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.083333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 25.5
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                669.031066894531,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.0166666666666664,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 31.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                673.163024902344,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                161,
+                308,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.15,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.36,
+              "stun": 0,
+              "x": 31.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                666.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0,
+              "key": "world/shot/2.04/31.1666666666667/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                667.324096679688,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/2.04/31.1666666666667/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.08333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.293333333333333,
+              "stun": 0,
+              "x": 31.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                666.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/2.04/31.1666666666667/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                640.773132324219,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/2.04/31.1666666666667/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.01666666666667,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.226666666666667,
+              "stun": 0,
+              "x": 31.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                666.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/2.04/31.1666666666667/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                587.671325683594,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/2.04/31.1666666666667/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.95,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.16,
+              "stun": 0,
+              "x": 31.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                666.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                406,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/2.04/31.1666666666667/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                534.569458007812,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/2.04/31.1666666666667/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.883333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0933333333333334,
+              "stun": 0,
+              "x": 31.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                666.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.740740740740741,
+              "key": "world/shot/2.04/31.1666666666667/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                508.018524169922,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": false,
+              "rotation": 0,
+              "scope": "world/shot/2.04/31.1666666666667/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.816666666666666,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0266666666666667,
+              "stun": 0,
+              "x": 31.1666666666667
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                666.403259277344,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.000728642740740756,
+              "key": "world/shot/2.04/31.1666666666667/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                508.018524169922,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": false,
+              "rotation": 0,
+              "scope": "world/shot/2.04/31.1666666666667/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.75,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 36.8333333333333
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                679.298095703125,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                462,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.683333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/walk",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                684.976135253906,
+                273.097778320312,
+                47.796875,
+                45.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                483,
+                462,
+                161,
+                154
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.65,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.583333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.516666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                300,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.45,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                300,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.383333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                406,
+                300,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.316666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                300,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.25,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                300,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.183333333333333,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                450,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.116666666666666,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                450,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.0499999999999997,
+              "efficiency": 1,
+              "face": 1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                450,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.15,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.36,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0,
+              "key": "world/shot/3.207/40.0/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                674.930541992188,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/3.207/40.0/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.08333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.293333333333333,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/3.207/40.0/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                619.375,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/3.207/40.0/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 1.01666666666667,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.226666666666667,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                406,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/3.207/40.0/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                563.819458007812,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/3.207/40.0/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.95,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.16,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                406,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/shot/3.207/40.0/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                536.041687011719,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/shot/3.207/40.0/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.883333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0933333333333334,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                609,
+                0,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.702974965706447,
+              "key": "world/shot/3.207/40.0/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                508.263885498047,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": false,
+              "rotation": 0,
+              "scope": "world/shot/3.207/40.0/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.816666666666666,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0.0266666666666667,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.0113283275034293,
+              "key": "world/shot/3.207/40.0/-160.0/arrow/0",
+              "layer": 200,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                508.263885498047,
+                288.5,
+                -14.5833330154419,
+                5
+              ],
+              "requested": false,
+              "rotation": 0,
+              "scope": "world/shot/3.207/40.0/-160.0",
+              "source": [
+                535,
+                1053,
+                280,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.783333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                203,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "units": [
+            {
+              "carry": 0,
+              "cooldown": 0.683333333333333,
+              "efficiency": 1,
+              "face": -1,
+              "hidden": 0,
+              "id": 68,
+              "mission": {},
+              "role": "hunter",
+              "shot_pose": 0,
+              "stun": 0,
+              "x": 40
+            }
+          ],
+          "actors": [
+            {
+              "alpha": 1,
+              "animation": "hunter/shoot",
+              "key": "world/unit/68/hunter/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                675.236572265625,
+                273.942230224609,
+                -60.265625,
+                44.53125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                406,
+                150,
+                203,
+                150
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

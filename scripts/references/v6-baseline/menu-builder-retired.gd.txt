@@ -1,0 +1,185 @@
+extends RefCounted
+var ui
+var m
+var kind=""
+var ident=0
+func _init(owner_ui):ui=owner_ui;m=ui.model
+func size():return ui.panel_content.size
+func image(name,rect,parent=null):
+	var p=TextureRect.new();p.texture=ui.art.texture(name);p.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;p.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;p.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	p.position=rect.position;p.size=rect.size;(ui.panel_content if parent==null else parent).add_child(p);return p
+func words(value,rect,font_size=20,parent=null,align=HORIZONTAL_ALIGNMENT_LEFT):
+	var l=ui.label(value,ui.panel_content if parent==null else parent,font_size);l.position=rect.position;l.size=rect.size;l.horizontal_alignment=align
+	l.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;l.clip_text=true;return l
+func selected(default_value):
+	if not ui.selections.has(kind):ui.selections[kind]=default_value
+	return str(ui.selections[kind])
+func choose(value):ui.selections[kind]=value;ui.open_panel(kind,ident)
+func execute(callable,close=false):
+	var result=callable.call();ui._save();ui._refresh()
+	var ok=result.get("ok",false) if result is Dictionary else bool(result)
+	if close and ok:ui.close_panel()
+	else:ui.open_panel(kind,ident)
+func action(value,callback,key,disabled=false,slot="primary"):return ui.mobile.footer(value,callback,key,slot,disabled)
+func header(title,description="",sheet=true):ui.mobile.header(title,description,sheet)
+func tier():return clampi(int(m.hall().level),1,3)
+func role_art(role):return role+("_"+str(tier()) if tier()>1 else "")
+func card(index,count,art,title,detail,price=-1,choice="",chosen=""):
+	var available=size();var gap=14.0;var w=(available.x-gap*(count-1))/count;var h=minf(232,available.y);var x=index*(w+gap);var y=(available.y-h)/2
+	var detail_h=maxf(49,ceilf(ui.theme.default_font.get_height(18))*2)
+	var price_y=h-41;var detail_y=price_y-6-detail_h;var title_y=detail_y-34
+	var art_rect=Rect2(12,12,w-24,maxf(20,minf(100,title_y-16)))
+	var b=ui.button("",ui.panel_content,choose.bind(choice),"select_"+choice if choice!="" else "")
+	b.set_meta("qa_card",true);b.set_meta("art_rect",art_rect)
+	b.position=Vector2(x,y);b.size=Vector2(w,h);b.mouse_filter=Control.MOUSE_FILTER_IGNORE if choice=="" else Control.MOUSE_FILTER_STOP
+	for mode in ["normal","hover","pressed","focus","disabled"]:
+		var texture="ui_card_selected_v5" if choice!="" and choice==chosen else "ui_card_v5"
+		var box=ui.skin.box(texture,Vector2(12,14),Vector2.ZERO);box.modulate_color=Color(0.94,0.94,0.90) if mode=="pressed" else Color.WHITE;b.add_theme_stylebox_override(mode,box)
+	image(art,art_rect,b).name="CardArt"
+	words(title,Rect2(10,title_y,w-20,31),23,b,HORIZONTAL_ALIGNMENT_CENTER).name="CardTitle"
+	words(detail,Rect2(10,detail_y,w-20,detail_h),18,b,HORIZONTAL_ALIGNMENT_CENTER).name="CardDetail"
+	if price>=0:
+		image("coin",Rect2(w/2-31,price_y+4,21,21),b);words(str(price),Rect2(w/2-5,price_y,68,30),22,b).name="CardPrice"
+	return b
+func message(art,lines):
+	var s=size();image(art,Rect2(12,12,240,s.y-24))
+	var y=(s.y-lines.size()*38)/2
+	for line in lines:words(line,Rect2(282,y,s.x-300,37),21);y+=38
+func buy_tool(role):execute(m.buy_tool.bind(role))
+func equip_mount(mount):execute(m.equip_mount.bind(mount),true)
+func buy_lizard():
+	if m.buy_lizard():m.equip_mount("lizard");ui.close_panel();ui._save()
+	else:ui._refresh()
+func sell(species):execute(m.sell_captives.bind(species))
+func exchange():execute(m.sell_captives.bind("all",true))
+func start_theft(target):execute(m.start_theft.bind(target),true)
+func rally(side):execute(m.rally.bind(side),true)
+func switch_side():ui.theft_side=-ui.theft_side;ui.open_panel("steal",ident)
+func prison_upgrade():ui.close_panel();m.focus_prison_upgrade();ui._refresh()
+func new_campaign():
+	m.new_campaign();ui.world.camera_x=m.state.hero.x;ui.world.previous={};ui.world.effects.clear();ui.close_panel()
+func guide_next():
+	if ui.guide_page<3:ui.guide_page+=1;ui.open_panel("guide")
+	else:ui.close_panel()
+func guide_prev():ui.guide_page-=1;ui.open_panel("guide")
+func pause_entry(key):
+	if key=="sound":m.global_data.settings.sound=not m.global_data.settings.sound;ui._save();ui.open_panel("pause")
+	elif key=="reflections":m.global_data.settings.low_fx=not m.global_data.settings.low_fx;ui._save();ui.open_panel("pause")
+	else:ui.open_panel(key)
+func populate(menu_kind,object_id):
+	kind=menu_kind;ident=object_id
+	ui.panel_content.clip_contents=true;ui.panel_title.show();ui.mobile.subtitle.show()
+	match kind:
+		"welcome":
+			header("","",false);ui.panel_title.hide();ui.panel_content.clip_contents=false
+			var s=size();image("ui_logo",Rect2(s.x/2-180,-58,360,248))
+			var l=words("经营、追赃、捕俘、偷窃。夺下联军的两面军旗。",Rect2(70,206,s.x-140,38),22,null,HORIZONTAL_ALIGNMENT_CENTER);ui.mobile.white(l)
+			ui.panel_close.text="部落手册"
+			action("开始统治",ui.close_panel,"start")
+		"tools":
+			var stall=m.by_id(m.state.buildings,ident);var role=stall.get("role","worker")
+			header(m.ROLE_NAMES[role]+"工具摊","工具挂在此处，空闲爪牙会走来领取。大厅升级后装备随之提升。")
+			var desc={"worker":"建造、维修与拖运","hunter":"狩猎挣钱，守住防线","brute":"护住同伴，带队出征","thief":"偷走补给，救回同族"}[role]
+			card(0,2,"tool_"+role,"专属工具","待领取 "+str(m.state.tool_stock[role])+"份",m.ROLE_COSTS[role])
+			card(1,2,role_art(role),m.ROLE_NAMES[role]+" "+["Ⅰ","Ⅱ","Ⅲ"][tier()-1]+"阶",desc)
+			action(str(m.ROLE_COSTS[role])+"金币 购买1份工具",buy_tool.bind(role),"buy_tool")
+		"gold":
+			header("金币商人","钱袋 "+str(m.state.gold)+"，储备 "+ui.short_number(m.global_data.reserve)+"。每次30金币，没有次数限制。")
+			card(0,1,"coin","商人的私藏","金币立刻到账\n当前储备 "+ui.short_number(m.global_data.reserve),30)
+			action("看广告 领30金币",ui.request_ad.bind("gold"),"ad_gold")
+		"army":
+			header("援军商人","工具已经配好，满员时保留在候补队列。")
+			var choice=selected("hunter");var i=0
+			for role in ["hunter","worker"]:
+				card(i,2,role_art(role),"2名"+m.ROLE_NAMES[role],("远程防守与日间收入" if role=="hunter" else "抢修、建设和拖运")+"\n候补 "+ui.short_number(m.global_data.pending[role]),-1,role,choice);i+=1
+			action("看广告 领2名"+m.ROLE_NAMES[choice],ui.request_ad.bind(choice),"ad_"+choice)
+		"mount":
+			header("坐骑商人","永久兑换。狼与蝙蝠可重复观看广告叠加强化。")
+			var choice=selected(m.state.hero.mount);var i=0
+			for mount in ["boar","lizard","wolf","bat"]:
+				var owned=mount in m.global_data.mounts;var desc={"boar":"均衡耐跑","lizard":"泥地不减速","wolf":"高速冲刺","bat":"低飞越障"}[mount]
+				if mount in ["wolf","bat"] and m.global_data.boosts[mount]>0:desc+="\n强化 "+ui.short_number(int(m.global_data.boosts[mount]))+"秒"
+				else:desc+="\n"+("已拥有" if owned else ("游戏金币永久兑换" if mount=="lizard" else "广告永久解锁"))
+				card(i,4,"rider_"+mount,m.MOUNTS[mount].name,desc,40 if mount=="lizard" and not owned else -1,mount,choice);i+=1
+			if choice in m.global_data.mounts:
+				action("正在骑乘" if m.state.hero.mount==choice else "骑乘",equip_mount.bind(choice),"equip_"+choice,m.state.hero.mount==choice)
+				if choice in ["wolf","bat"]:action("广告 强化5分钟",ui.request_ad.bind(choice),"ad_"+choice,false,"secondary")
+			elif choice=="lizard":action("40金币 兑换并骑乘",buy_lizard,"buy_lizard")
+			else:action("看广告 永久解锁",ui.request_ad.bind(choice),"ad_"+choice)
+		"prison":
+			var p=m.building("prison");var next=mini(3,p.level+1);var info=m.upgrade_info(p)
+			header("部落监牢","已收押 "+str(m.state.captives.size())+" / "+str(m.prison_capacity())+"。安全后工匠拖回活口，满员时会逃跑。")
+			var a=card(0,2,"prison_back"+("" if p.level==2 else str(p.level)),["木笼 一级","加固铁笼 二级","地牢 三级"][p.level-1],"当前容量 "+str(m.prison_capacity()))
+			image("prison_front"+("" if p.level==2 else str(p.level)),a.get_meta("art_rect"),a)
+			var b=card(1,2,"prison_back"+("" if next==2 else str(next)),"扩建后 "+["木笼","加固铁笼","地牢"][next-1],"容量 "+str([0,3,6,10][next])+"人\n"+str(info.scrap)+"块废铁",int(info.gold) if p.level<3 else -1)
+			image("prison_front"+("" if next==2 else str(next)),b.get_meta("art_rect"),b)
+			action("已达最高等级" if p.level>=3 else "投币扩建监牢",prison_upgrade,"prison_upgrade",p.level>=3 or not p.job.is_empty())
+		"trader":
+			header("人类奴隶商人","监牢 "+str(m.state.captives.size())+" / "+str(m.prison_capacity())+"，囚车"+str(m.state.trader.cargo.size())+"人。金币满袋时留在地上。")
+			var choice=selected("human");var i=0;var total=0
+			for species in ["human","dwarf","elf"]:
+				var count=m.state.captives.filter(func(c):return c.type==species).size();total+=count*m.SELL_PRICES[species]
+				card(i,3,"captive_"+species,m.ENEMY_NAMES[species],str(count)+"名，每名"+str(m.SELL_PRICES[species])+"金币",-1,species,choice);i+=1
+			var count=m.state.captives.filter(func(c):return c.type==choice).size()
+			action("出售"+str(count)+"名 "+str(count*m.SELL_PRICES[choice])+"金币",sell.bind(choice),"sell_selected",count==0)
+			action("全卖 "+ui.short_number(total)+"金币",sell.bind("all"),"sell_all",m.state.captives.is_empty(),"secondary")
+			action("换5废铁",exchange,"exchange",m.state.captives.is_empty(),"left_aux")
+		"steal":
+			header("盗贼窝",("西侧" if ui.theft_side<0 else "东侧")+"敌营。完成现场作业，带着赃物回来后生效。")
+			var choice=selected("arrows");var chosen={};var i=0
+			for b in m.state.buildings:
+				if b.kind!="supply" or b.side!=ui.theft_side:continue
+				var known=b.x>=m.state.explored.min and b.x<=m.state.explored.max
+				var desc={"arrows":"减少精灵箭量","wheel":"阻止一波攻城器械","pay":"15金币，减少敌兵","keys":"救回两名同族"}[b.task]
+				if not known:desc="先骑乘侦察敌营"
+				elif b.get("assigned",0)>0:desc="盗贼行动中"
+				elif b.ready_day>m.state.day:desc="等待补给"
+				card(i,4,{"arrows":"arrows","wheel":"wheel","pay":"coin","keys":"key"}[b.task],m.task_name(b.task),desc,3,b.task,choice);i+=1
+				if b.task==choice:chosen=b
+			var ready=not chosen.is_empty() and chosen.ready_day<=m.state.day and chosen.get("assigned",0)==0 and chosen.x>=m.state.explored.min and chosen.x<=m.state.explored.max
+			action("3金币 派遣盗贼",start_theft.bind(chosen.get("id",0)),"start_theft",not ready)
+			action("切换东营" if ui.theft_side<0 else "切换西营",switch_side,"steal_side",false,"left_aux")
+		"rally":
+			var b=m.by_id(m.state.buildings,ident);var side=b.get("side",1)
+			header("西侧出征点" if side<0 else "东侧出征点","先留足守军，再把军旗真正运回大厅。")
+			card(0,2,"flag","西侧指挥营" if side<0 else "东侧指挥营","击败驻军，摧毁指挥营")
+			card(1,2,role_art("brute"),"出征小队","至少1名打手和1名战友\n本次至多6名战士",5)
+			action("5金币 组织出征",rally.bind(side),"rally")
+		"pause":
+			header("部落歇脚","征程已暂停，广告强化也停止计时。",false)
+			var entries=[["部落账本","ledger"],["部落手册","guide"],["声音 "+("开" if m.global_data.settings.sound else "关"),"sound"],["水面倒影 "+("关" if m.global_data.settings.low_fx else "开"),"reflections"],["免费重新开始","restart"],["鸣谢与许可","credits"]]
+			var w=(size().x-28)/3;var h=78.0;var y=(size().y-170)/2
+			for i in range(entries.size()):
+				var key=entries[i][1];var button=ui.button(entries[i][0],ui.panel_content,pause_entry.bind(key),key)
+				button.position=Vector2((i%3)*(w+14),y+floor(i/3.0)*92);button.size=Vector2(w,h)
+			action("继续征程",ui.close_panel,"resume")
+		"guide":
+			var titles=["一  移动与投币","二  建设与经营","三  活口与交易","四  偷窃与反攻"]
+			var lines=[["左右摇杆移动，按住靴子奔跑。","靠近出现金币虚影，按住右下逐枚投币。","未投满就离开，金币全额返还。","生命归零阵亡，白天回安全大厅疗伤。"],["营地招募爪牙，四种工具摊各配一种职业。","大厅升级，爪牙换上更好的装备。","先守好两侧路障，猎手白天带回收入。","侧袋鼓起的是私藏，抽鞭子追回。"],["战后工匠独自拖回仍活着的敌人。","监牢逐级容纳3、6、10名俘虏。","人类商人偶数日赶着囚车来交易。","可以出售，也可换成维修用的废铁。"],["骑乘侦察补给点，再从盗贼窝派人。","偷箭、偷轮、偷军饷削弱下一波。","偷钥匙可以救回两名同族。","击破两座指挥营，运回双旗获胜。"]]
+			var page=clampi(ui.guide_page,0,3);header("部落手册",titles[page]);message(["rider_boar",role_art("worker"),"prison_back",role_art("thief")][page],lines[page])
+			if page>0:action("上一页",guide_prev,"guide_prev",false,"left_aux")
+			action("下一页" if page<3 else "回到征程",guide_next,"guide_next")
+		"credits":
+			header("鸣谢与许可","完整许可随游戏文件一同提供。")
+			message("monarch",["引擎 Godot，MIT许可。","字体基于霞鹜文楷，OFL许可。","短音效 Kenney，CC0许可。","特效参考pixelfx，MIT许可。","角色、建筑与界面位图独立AI生成。"])
+			ui.panel_close.text="返回菜单";action("继续征程",ui.close_panel,"resume")
+		"ledger":
+			header("部落账本","候补工匠 "+ui.short_number(m.global_data.pending.worker)+"，猎手 "+ui.short_number(m.global_data.pending.hunter)+"，同族待归 "+ui.short_number(m.state.pending_rescue))
+			var s=size();var cols=["金币 "+str(m.state.gold),"储备 "+ui.short_number(m.global_data.reserve),"废铁 "+ui.short_number(m.state.scrap),"人口 "+str(m.state.units.size())+" / "+str(m.capacity())]
+			for i in range(4):words(cols[i],Rect2(i*s.x/4,20,s.x/4,32),23,null,HORIZONTAL_ALIGNMENT_CENTER)
+			var roles=["worker","hunter","brute","thief"]
+			for i in range(4):
+				var role=roles[i];var x=i*s.x/4;image(role_art(role),Rect2(x+16,68,s.x/4-32,68));words(m.ROLE_NAMES[role]+str(m.state.units.filter(func(u):return u.role==role).size()),Rect2(x,140,s.x/4,30),21,null,HORIZONTAL_ALIGNMENT_CENTER)
+			for i in range(2):
+				var held=m.state.flags["left" if i==0 else "right"];words(("西营 " if i==0 else "东营 ")+("军旗已运回" if held else "军旗未夺回"),Rect2(i*s.x/2,190,s.x/2,32),21,null,HORIZONTAL_ALIGNMENT_CENTER)
+			action("部落手册",ui.open_panel.bind("guide"),"guide")
+		"restart":
+			header("再起一座部落","")
+			message("rider_"+m.state.hero.mount,["本次征程重新开始。","永久坐骑、候补与未用广告储备保留。","本局已投入的资源不重复返还。"])
+			ui.panel_close.text="继续当前征程";action("确认 免费重新开始",new_campaign,"confirm_restart")
+		"result":
+			var won=m.state.status=="won";header("森林归部落了" if won else "部落还会回来的","")
+			message("rider_"+m.state.hero.mount,["两面联军军旗已运回大厅。" if won else "首领阵亡，部落等待下一位统治者。","第"+str(m.state.day)+"日  击退"+str(m.state.kills)+"名联军","永久坐骑与未用广告资源已保留。"])
+			ui.panel_close.text="查看战报";action("免费开启新征程",new_campaign,"new_campaign")
+	ui.mobile.place_footer()
+

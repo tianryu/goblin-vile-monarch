@@ -1,0 +1,29 @@
+{
+  "checkpoint": "repair-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "treasury-held-empty-full-and-leaving",
+      "pass": true
+    },
+    {
+      "name": "coin-size-and-each-profession-hit-keeps-outline",
+      "pass": true
+    },
+    {
+      "name": "merchant-pulls-cart-both-directions-and-pause-freezes-parts",
+      "pass": true
+    },
+    {
+      "name": "large-prisoners-and-single-hauler-preserve-height",
+      "pass": true
+    },
+    {
+      "name": "warning-fades-and-tiny-bars-never-reverse",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "passed": 5
+}

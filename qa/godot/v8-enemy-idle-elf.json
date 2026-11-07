@@ -1,0 +1,20 @@
+{
+  "scope": "Natural guard pauses in isolated desktop Edge software WebGL",
+  "passes": [
+    "elf: full generated idle cycle appears during natural pauses",
+    "elf: one complete solid subject during every idle observation",
+    "elf: real patrol remains near its camp post",
+    "elf: animation causes no coins or dialogs",
+    "elf: pause freezes the current idle pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "type": "elf",
+      "asset": "elf",
+      "observed_poses": 19
+    }
+  ]
+}

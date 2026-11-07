@@ -1,0 +1,16 @@
+{
+  "assetName": "hunter_2",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-467d3342-215b-423c-a70d-56ab473c5306.png",
+  "prompt": "Use case: precise-object-edit. This is a friendly fantasy game costume asset, one static cartoon goblin with a curved bow. Edit this exact sprite to the BROWN equipment quality. Keep his exact face, large pointed ears, crooked nose, red scarf tails, red skirt, pose, body scale and feet position unchanged. Recolor the large torso armor, shoulder plates, wrist guards and knee plates to flat matte BROWN metal, using one warm brown fill and one darker brown patch, little detail. Add a clearly visible open-face BROWN HELMET, a simple domed cap and broad brow band, ears and entire face uncovered, no spikes or ornaments. Change the curved bow limbs to thick BROWN BRONZE instead of wood, broad simple metal silhouette and one flat lighter bronze patch along each limb, plain dark leather grip and unchanged fine string; bow about 35 percent thicker than original. The large helmet and upgraded bow must be clear at a tiny game size. Preserve the input's low-detail FLAT MATTE HAND-PAINTED nonpixel cartoon style, no glossy shading, no realistic texture, no new scene, no arrow or extra objects. One whole right-facing character, real transparent background and margin, no labels or added outline.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "quality": "brown",
+  "request": "F38 large armor and helmet plus changed bow material; quality brown -> white iron -> blue",
+  "supersedes": "small shoulder pad and knee-only pending variant",
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "与原猎手同画风、同脸型和姿势；74像素下褐色整套胸甲、头盔与加粗铜褐弓清晰，未带箭；透明杂点仅技术清理，待引擎验收",
+  "reviewStatus": "approved-source-pending-engine"
+}

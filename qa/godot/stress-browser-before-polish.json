@@ -1,0 +1,2301 @@
+{
+  "scope": "Five-minute desktop Edge software WebGL stress, 60 units and 40 durable enemies. Not phone/TapTap performance.",
+  "duration_seconds": 300,
+  "frame_count": 15201,
+  "frame_interval_ms": {
+    "p50": 18.20000000001164,
+    "p95": 24.30000000000291,
+    "p99": 24.300000000017462,
+    "max": 24.400000000023283
+  },
+  "samples": [
+    {
+      "elapsed": 16790.699999999255,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 1,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.019,
+        "engine_static_bytes": 59539507,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 10,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 151.999999999999,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 16471452
+    },
+    {
+      "elapsed": 26802.199999999255,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 1,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0189,
+        "engine_static_bytes": 59539391,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 161.933333333332,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 19629865
+    },
+    {
+      "elapsed": 36818.199999999255,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 1,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0191,
+        "engine_static_bytes": 59539391,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 172.099999999998,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 14143779
+    },
+    {
+      "elapsed": 46841.89999999851,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0197,
+        "engine_static_bytes": 59561135,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 2.13333333333106,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 13192077
+    },
+    {
+      "elapsed": 56863.599999997765,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0211,
+        "engine_static_bytes": 59542891,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 11.9999999999977,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111
+      },
+      "jsHeap": 14055971
+    },
+    {
+      "elapsed": 66893.09999999776,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0224,
+        "engine_static_bytes": 59549187,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 8,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 22.1666666666646,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 14812852
+    },
+    {
+      "elapsed": 76910.89999999851,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0208,
+        "engine_static_bytes": 59546639,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 32.1999999999985,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 14601549
+    },
+    {
+      "elapsed": 86931.89999999851,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0192,
+        "engine_static_bytes": 59546035,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 42.2333333333312,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 15139770
+    },
+    {
+      "elapsed": 96956,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0212,
+        "engine_static_bytes": 59557939,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 52.1999999999973,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 13608308
+    },
+    {
+      "elapsed": 106982.79999999702,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0217,
+        "engine_static_bytes": 59550131,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 62.0999999999968,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 13939925
+    },
+    {
+      "elapsed": 116996.29999999702,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0224,
+        "engine_static_bytes": 59550131,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 72.2666666666629,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 14450916
+    },
+    {
+      "elapsed": 127032.09999999776,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0206,
+        "engine_static_bytes": 59550131,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 11,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 82.1999999999956,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 15010839
+    },
+    {
+      "elapsed": 137052.5,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.02,
+        "engine_static_bytes": 59550299,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 14,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -302.9
+        },
+        "time": 92.1666666666617,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 15785992
+    },
+    {
+      "elapsed": 147069.19999999925,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0205,
+        "engine_static_bytes": 59550735,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 14,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 102.333333333328,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 15843577
+    },
+    {
+      "elapsed": 157090.69999999925,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0225,
+        "engine_static_bytes": 59550131,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 14,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 112.233333333327,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 14877213
+    },
+    {
+      "elapsed": 167126.09999999776,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0214,
+        "engine_static_bytes": 59558775,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 14,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "黄昏",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 122.299999999993,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 15364993
+    },
+    {
+      "elapsed": 177136.3999999985,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 40,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0218,
+        "engine_static_bytes": 59554487,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 14,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "黄昏",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 132.266666666659,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 15830898
+    },
+    {
+      "elapsed": 187150.5,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 48,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0219,
+        "engine_static_bytes": 59570187,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 17,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 142.433333333326,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 16092735
+    },
+    {
+      "elapsed": 197169.19999999925,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 48,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0212,
+        "engine_static_bytes": 59562211,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 17,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 152.433333333325,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 16710131
+    },
+    {
+      "elapsed": 207178.09999999776,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 48,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0212,
+        "engine_static_bytes": 59567771,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 17,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 162.366666666658,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 16737863
+    },
+    {
+      "elapsed": 217206.19999999925,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 2,
+        "decoded_art_bytes": 14196736,
+        "enemies": 48,
+        "engine_draw_calls": 30,
+        "engine_process_seconds": 0.0217,
+        "engine_static_bytes": 59562211,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 17,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 172.333333333324,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 15823944
+    },
+    {
+      "elapsed": 227242.19999999925,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 48,
+        "engine_draw_calls": 31,
+        "engine_process_seconds": 0.0225,
+        "engine_static_bytes": 59564139,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 17,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 2.39999999999008,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 16401478
+    },
+    {
+      "elapsed": 237273.79999999702,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 47,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0221,
+        "engine_static_bytes": 59563467,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 18,
+        "hero_x": -350,
+        "kills": 3,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 12.4666666666567,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112
+      },
+      "jsHeap": 16531696
+    },
+    {
+      "elapsed": 247288.29999999702,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 47,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0212,
+        "engine_static_bytes": 59568127,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 18,
+        "hero_x": -350,
+        "kills": 4,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 22.3999999999903,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 95
+      },
+      "jsHeap": 17180590
+    },
+    {
+      "elapsed": 257318,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 47,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0215,
+        "engine_static_bytes": 59566811,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 21,
+        "hero_x": -350,
+        "kills": 4,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 8,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 32.4999999999908,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 115
+      },
+      "jsHeap": 17737691
+    },
+    {
+      "elapsed": 267341.3999999985,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 47,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0218,
+        "engine_static_bytes": 59568635,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 21,
+        "hero_x": -350,
+        "kills": 5,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 16,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 42.4666666666569,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 118
+      },
+      "jsHeap": 16379827
+    },
+    {
+      "elapsed": 277362.799999997,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 46,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0218,
+        "engine_static_bytes": 59569019,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 21,
+        "hero_x": -350,
+        "kills": 7,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 16,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 52.4666666666563,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 118
+      },
+      "jsHeap": 17033338
+    },
+    {
+      "elapsed": 287374.299999997,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 45,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0228,
+        "engine_static_bytes": 59567871,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 24,
+        "hero_x": -350,
+        "kills": 8,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 20,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 62.5999999999891,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 116
+      },
+      "jsHeap": 17735516
+    },
+    {
+      "elapsed": 297384.59999999776,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 45,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0222,
+        "engine_static_bytes": 59567091,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 24,
+        "hero_x": -350,
+        "kills": 8,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 24,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 72.5999999999885,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 116
+      },
+      "jsHeap": 17516591
+    },
+    {
+      "elapsed": 307403.59999999776,
+      "state": {
+        "axis": 0,
+        "capacity": 60,
+        "captives": 0,
+        "day": 3,
+        "decoded_art_bytes": 14196736,
+        "enemies": 45,
+        "engine_draw_calls": 32,
+        "engine_process_seconds": 0.0209,
+        "engine_static_bytes": 59566487,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "gold": 24,
+        "hero_x": -350,
+        "kills": 8,
+        "modal": "",
+        "paused": false,
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            883,
+            356,
+            130,
+            88
+          ],
+          "joystick": [
+            28,
+            343,
+            130,
+            112
+          ],
+          "pause": [
+            935,
+            13,
+            80,
+            60
+          ],
+          "run": [
+            779,
+            372,
+            92,
+            72
+          ]
+        },
+        "reserve": 0,
+        "run": false,
+        "scrap": 24,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 82.6333333333213,
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 116
+      },
+      "jsHeap": 18209870
+    }
+  ],
+  "processes": [
+    {
+      "type": "browser",
+      "id": 48960,
+      "cpuTime": 8.521825
+    },
+    {
+      "type": "renderer",
+      "id": 22808,
+      "cpuTime": 4.932169
+    },
+    {
+      "type": "renderer",
+      "id": 35764,
+      "cpuTime": 132.998433
+    },
+    {
+      "type": "GPU",
+      "id": 46560,
+      "cpuTime": 4550.951011
+    },
+    {
+      "type": "network.mojom.NetworkService",
+      "id": 13088,
+      "cpuTime": 4.034776
+    },
+    {
+      "type": "storage.mojom.StorageService",
+      "id": 40636,
+      "cpuTime": 3.817602
+    },
+    {
+      "type": "audio.mojom.AudioService",
+      "id": 39364,
+      "cpuTime": 3.716229
+    }
+  ],
+  "errors": []
+}

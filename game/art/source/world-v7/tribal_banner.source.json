@@ -1,0 +1,7 @@
+{
+  "name": "tribal_banner",
+  "prompt": "Keep this exact isolated medieval goblin tribal war banner, pole, rope and ground stones, same shape and red skull emblem. Remove the entire brown smoky halo, ambient glow, haze, vignette, dark backdrop and all diffuse shadow outside the object. Crisp clean transparent alpha outside cloth/pole/rocks with no aura at all. Flatten the object rendering to broad simple matte hand-painted cartoon patches, minimal volume, restrained close-valued colors, clean irregular contours. Not pixel art. No text. Isolated game sprite on actual transparent background.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-38de0a1b-d0c8-406e-9b35-6a27fc195069.png",
+  "review": "accepted: inspected on opaque green background; clean alpha without diffuse aura, planted stones and medieval rope pole, matte black cloth with rusty red goblin skull, no lettering, friendly banner differs from enemy blue flag"
+}

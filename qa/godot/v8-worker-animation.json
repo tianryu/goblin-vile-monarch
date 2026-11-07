@@ -1,0 +1,401 @@
+{
+  "scope": "Visible worker construction animation and idle loop in isolated Edge software WebGL",
+  "passes": [
+    "Walking worker uses a full generated gait",
+    "Real coin-funded construction uses the generated hammer action",
+    "Work cycle advances through many source poses",
+    "Repeated visuals do not spend extra coins",
+    "Construction stays in the world without a dialog",
+    "An idle goblin uses the generated breathing loop",
+    "Idle advances through blink and breathing frames",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "samples": [
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "gold": 46,
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 6500096,
+        "loaded": 5,
+        "pending": 0
+      }
+    }
+  ]
+}

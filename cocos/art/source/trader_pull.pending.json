@@ -1,0 +1,11 @@
+{
+  "assetName": "trader_pull",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-8b813d43-1ebb-4044-b178-c6b0b3ec7fd6.png",
+  "prompt": "Use case: precise-object-edit. Edit target is this EXACT existing medieval human merchant from our flat hand-painted cartoon game. Change only his arms and hand props to a walking cart-pulling pose, preserving exact face identity, beard, short hair, body proportions, off-white belted pullover tunic, olive cloth trousers, leg wraps, shoes, paint patches and nonpixel style. Merchant faces LEFT. His FRONT hand cradles the existing ledger closely against his chest on the LEFT side. His OTHER arm extends BEHIND him toward the RIGHT, with elbow slightly bent and fist at BELT/WAIST HEIGHT, about 40 percent of full height above the feet, ready to grip a cart shaft. That rear fist is clearly visible on the RIGHT, with a short small rope loop held in it. Keep hands separate and anatomically correct. Move the little gold coin pouch to his belt instead of holding it. Stance is a modest walking mid-step, both boots near same ground line. Do not include a cart, shaft, floor or scenery: the game adds the cart separately. The rear fist and body must be crisp and suitable for 78px sprite height. Keep broad matte painted shapes, little volume and simple irregular contours; no 3D modeling, gradient shading, pixel blocks or added detail. One whole LEFT-facing static character on true transparent background with margin. No text, labels, white/green sticker border, no shadow.",
+  "edge": "merchant",
+  "facing": -1,
+  "pivot": 0.42,
+  "generator": "builtin-imagegen",
+  "reviewed": false,
+  "handAnchor": "rear grip is approximately +30,-32 at 78px height, facing left"
+}

@@ -1,0 +1,301 @@
+{
+  "scope": "Current V7 model, desktop browser, local Web package and artifact checks. No actual phone, SDK or platform validation.",
+  "checks": [
+    "v7-model-tests passes",
+    "v7-advanced-tests passes",
+    "v7-native-tests passes",
+    "v7-browser-tests passes",
+    "v7-service-tests passes",
+    "v7-release-tests passes",
+    "v7-boot-tests passes",
+    "V7 manifest and 30 individually reviewed independent sprites",
+    "Every sprite fits its own atlas",
+    "All 16 normal atlases match diffuse coordinates and dimensions",
+    "Normal maps visibly contribute to the lighting shader",
+    "First-party copy has no middle dot separator",
+    "Bundled font covers active Chinese source copy",
+    "Modified OFL font has a renamed family",
+    "Only result is a modal game state",
+    "Three no-ad normal-economy campaigns achieve both flags",
+    "Current ZIP hash matches production export",
+    "ZIP is intact and has one root folder",
+    "Package includes required licenses",
+    "Five-minute full day/night soak remains alive without runtime errors"
+  ],
+  "failures": [],
+  "reports": {
+    "v7-model-tests": {
+      "passes": 43,
+      "failures": [],
+      "errors": []
+    },
+    "v7-advanced-tests": {
+      "passes": 36,
+      "failures": [],
+      "errors": []
+    },
+    "v7-native-tests": {
+      "passes": 8,
+      "failures": [],
+      "errors": []
+    },
+    "v7-browser-tests": {
+      "passes": 30,
+      "failures": [],
+      "errors": []
+    },
+    "v7-service-tests": {
+      "passes": 11,
+      "failures": [],
+      "errors": []
+    },
+    "v7-release-tests": {
+      "passes": 11,
+      "failures": [],
+      "errors": []
+    },
+    "v7-boot-tests": {
+      "passes": 10,
+      "failures": [],
+      "errors": []
+    }
+  },
+  "scenario_assertion_count": 149,
+  "campaigns": [
+    {
+      "destination": {
+        "id": 97,
+        "kind": "whip",
+        "x": 238.0
+      },
+      "receipts": 0,
+      "roles": {
+        "brute": 3,
+        "hunter": 12,
+        "worker": 3
+      },
+      "seed": 731,
+      "stats": {
+        "capacity": 60,
+        "captives": 3,
+        "day": 6,
+        "enemies": 0,
+        "flags": {
+          "left": true,
+          "right": true
+        },
+        "gold": 50,
+        "hero_hp": 100.0,
+        "hero_max_hp": 100.0,
+        "hero_x": -143.799999999995,
+        "kills": 52,
+        "phase": "正午",
+        "population": 18,
+        "prison_capacity": 3,
+        "reserve": 0,
+        "status": "won",
+        "territory": 5500.0,
+        "time": 52.2999999999537,
+        "vault": 553
+      }
+    },
+    {
+      "destination": {
+        "id": 171,
+        "kind": "whip",
+        "x": 354.0
+      },
+      "receipts": 0,
+      "roles": {
+        "brute": 2,
+        "hunter": 13,
+        "worker": 3
+      },
+      "seed": 123,
+      "stats": {
+        "capacity": 60,
+        "captives": 3,
+        "day": 7,
+        "enemies": 0,
+        "flags": {
+          "left": true,
+          "right": true
+        },
+        "gold": 50,
+        "hero_hp": 100.0,
+        "hero_max_hp": 100.0,
+        "hero_x": 307.600000000001,
+        "kills": 69,
+        "phase": "正午",
+        "population": 18,
+        "prison_capacity": 3,
+        "reserve": 0,
+        "status": "won",
+        "territory": 5500.0,
+        "time": 54.7999999999444,
+        "vault": 754
+      }
+    },
+    {
+      "destination": {
+        "kind": "sell",
+        "x": 1860.0
+      },
+      "receipts": 0,
+      "roles": {
+        "brute": 2,
+        "hunter": 13,
+        "worker": 3
+      },
+      "seed": 55,
+      "stats": {
+        "capacity": 60,
+        "captives": 3,
+        "day": 6,
+        "enemies": 0,
+        "flags": {
+          "left": true,
+          "right": true
+        },
+        "gold": 50,
+        "hero_hp": 100.0,
+        "hero_max_hp": 100.0,
+        "hero_x": 467.999999999989,
+        "kills": 52,
+        "phase": "正午",
+        "population": 18,
+        "prison_capacity": 3,
+        "reserve": 0,
+        "status": "won",
+        "territory": 5500.0,
+        "time": 71.2999999999535,
+        "vault": 609
+      }
+    }
+  ],
+  "new_independent_assets": 30,
+  "frames": 142,
+  "diffuse_sheets": 35,
+  "normal_sheets": 16,
+  "runtime_rgba_bytes": 57695520,
+  "runtime_boot_splash_rgba_bytes": 60412176,
+  "budget_paused_by_user": true,
+  "package": {
+    "scope": "Local release Web export only. No upload, platform submission, live ads or physical phone validation.",
+    "single_root_folder": "goblin-monarch",
+    "files": [
+      {
+        "name": "boot-font.ttf",
+        "bytes": 227272,
+        "gzip_bytes": 144477,
+        "sha256": "46596c32593ed582ebc21c370c20dc7325d8befdfab0fd72a939da00fc5fe547"
+      },
+      {
+        "name": "boot-sky_base.png",
+        "bytes": 519403,
+        "gzip_bytes": 519573,
+        "sha256": "db634dc1f635c1c3d636a816374f005b79d5ef41c4fe2c21575dd953caabe3ef"
+      },
+      {
+        "name": "boot-ui_back.png",
+        "bytes": 47111,
+        "gzip_bytes": 47144,
+        "sha256": "3dd71b120c0571658ce228a0e77bb4b0df51b35f111d7034ba7824a69567b488"
+      },
+      {
+        "name": "boot-ui_bar.png",
+        "bytes": 15993,
+        "gzip_bytes": 16016,
+        "sha256": "b2541bd3adf8a1f9dce6e886e7ee9ad4a74df5f4a08ffcf41b03b6089a598ef1"
+      },
+      {
+        "name": "boot-ui_bar_fill.png",
+        "bytes": 22489,
+        "gzip_bytes": 22517,
+        "sha256": "8463342ad6ed4f013099dd5df6243040b5b9dd1fd111b4255f32197d51167906"
+      },
+      {
+        "name": "boot-ui_button.png",
+        "bytes": 43964,
+        "gzip_bytes": 43997,
+        "sha256": "ce2d6c5a2f9577977c09b52741d3c82dfaf97e4cdb9651bcbf0a8cc58b7ba48f"
+      },
+      {
+        "name": "boot-ui_logo.png",
+        "bytes": 151124,
+        "gzip_bytes": 151184,
+        "sha256": "a312f198138ba056e6f7fcf9bf2a9376174143ee2bcfb7bccb9d585484d94220"
+      },
+      {
+        "name": "index.audio.position.worklet.js",
+        "bytes": 2973,
+        "gzip_bytes": 1161,
+        "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+      },
+      {
+        "name": "index.audio.worklet.js",
+        "bytes": 7298,
+        "gzip_bytes": 2194,
+        "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+      },
+      {
+        "name": "index.html",
+        "bytes": 9507,
+        "gzip_bytes": 3436,
+        "sha256": "fbeb938d36977b0bdb994d63c0351c1eaf64438ab3da4796bded39a5e4083b4d"
+      },
+      {
+        "name": "index.js",
+        "bytes": 279815,
+        "gzip_bytes": 68471,
+        "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+      },
+      {
+        "name": "index.pck",
+        "bytes": 7791456,
+        "gzip_bytes": 7597028,
+        "sha256": "0f4e8194864682faedb8baff7a7197d0fa63461784466d20cf409166324d9d7e"
+      },
+      {
+        "name": "index.png",
+        "bytes": 10314,
+        "gzip_bytes": 10289,
+        "sha256": "f17608db6e1eeba9125a5e494b1079211a30f9fceca312f06a49c2f810b80b3d"
+      },
+      {
+        "name": "index.wasm",
+        "bytes": 39514754,
+        "gzip_bytes": 10054758,
+        "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+      },
+      {
+        "name": "LICENSES.txt",
+        "bytes": 9327,
+        "gzip_bytes": 3370,
+        "sha256": "7bd48368890cab17fb7d4374c0744ba8a88b9bc43422b8ae75df6554bb766e29"
+      }
+    ],
+    "raw_bytes": 48652800,
+    "gzip_sum_bytes": 18685615,
+    "zip_bytes": 18687409,
+    "zip_sha256": "1f1bfd01c365fb9226ef9e833c4e77b5df358d6dddc503a0e0427655f4e211a4"
+  },
+  "stress": {
+    "duration_seconds": 300,
+    "frame_interval_ms": {
+      "p50": 30.300000000046566,
+      "p95": 48.5,
+      "p99": 48.60000000000582
+    },
+    "software_dpr2_p95_target_ms": 40,
+    "software_dpr2_p95_target_met": false
+  },
+  "visual_review": "Actual V7 screenshots manually checked: flat style, normal-lit day/night, no tool sellers or explanatory dialogs, tool stock, price signs, treasury, bodies, depth, thumb controls and allowed results. Not an independent similarity score.",
+  "visual_similarity_percent": null,
+  "unverified": [
+    "Physical Android/iOS and low-end device performance",
+    "Real TapTap host and rewarded advertisement SDK",
+    "Independent 90 percent visual similarity",
+    "Platform release"
+  ]
+}

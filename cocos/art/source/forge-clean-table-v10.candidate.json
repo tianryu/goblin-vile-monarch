@@ -1,0 +1,9 @@
+{
+  "assetName": "forge",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-13f6fd27-265b-4e6e-a283-de55e48139c7.png",
+  "prompt": "Use case: precise-object-edit. Edit this EXACT game equipment stall image. Only remove the three loose objects on the TABLETOP: the anvil on the left, tongs in the center and bellows on the right. Fill those object areas with genuine transparency above the table and the same existing wood top where appropriate, leaving a clean empty usable tabletop. Preserve the frame, posts, feet, cloth awning, hanging torso armor, hanging helmet, chains, proportions, height, front view, color patches and original flat matte hand-painted nonpixel style EXACTLY. No redesign or new tools, no extra equipment, no seller, no new white border, no text. True transparent background and clean edges; remove stray colored alpha specks around the outside. Whole stall with original margins.",
+  "edge": "building",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": false
+}

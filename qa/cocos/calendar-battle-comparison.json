@@ -1,0 +1,99 @@
+{
+  "fixture": true,
+  "normalEconomy": false,
+  "realPhone": false,
+  "description": "同一主厅三级、三级墙塔、三恶霸五白铁猎手两工匠，敌军起点移近以排除行军差异，140秒单波战斗",
+  "results": [
+    {
+      "day": 1,
+      "enemyInitial": 6,
+      "engineKinds": [],
+      "wallBroke": false,
+      "wallEndHp": 340,
+      "casualties": {},
+      "survivors": 10,
+      "chiefHp": 100,
+      "status": "playing",
+      "enemyLost": 3,
+      "enemyRetreating": true,
+      "peakActiveField": 6,
+      "p95ModelMs": 0.3307000000000002,
+      "garrisonUnaffected": true
+    },
+    {
+      "day": 5,
+      "enemyInitial": 14,
+      "engineKinds": [],
+      "wallBroke": false,
+      "wallEndHp": 340,
+      "casualties": {},
+      "survivors": 10,
+      "chiefHp": 100,
+      "status": "playing",
+      "enemyLost": 7,
+      "enemyRetreating": true,
+      "peakActiveField": 12,
+      "p95ModelMs": 0.2697000000000571,
+      "garrisonUnaffected": true
+    },
+    {
+      "day": 10,
+      "enemyInitial": 24,
+      "engineKinds": [
+        "ram"
+      ],
+      "wallBroke": true,
+      "wallEndHp": 0,
+      "casualties": {},
+      "survivors": 10,
+      "chiefHp": 100,
+      "status": "playing",
+      "enemyLost": 12,
+      "enemyRetreating": true,
+      "peakActiveField": 17,
+      "p95ModelMs": 0.304300000000012,
+      "garrisonUnaffected": true
+    },
+    {
+      "day": 20,
+      "enemyInitial": 44,
+      "engineKinds": [
+        "firecatapult"
+      ],
+      "wallBroke": true,
+      "wallEndHp": 0,
+      "casualties": {
+        "hunter": 1
+      },
+      "survivors": 9,
+      "chiefHp": 100,
+      "status": "playing",
+      "enemyLost": 23,
+      "enemyRetreating": true,
+      "peakActiveField": 31,
+      "p95ModelMs": 0.38730000000032305,
+      "garrisonUnaffected": true
+    },
+    {
+      "day": 30,
+      "enemyInitial": 74,
+      "engineKinds": [
+        "firecatapult",
+        "catapult"
+      ],
+      "wallBroke": true,
+      "wallEndHp": 0,
+      "casualties": {
+        "hunter": 1
+      },
+      "survivors": 9,
+      "chiefHp": 100,
+      "status": "playing",
+      "enemyLost": 38,
+      "enemyRetreating": true,
+      "peakActiveField": 36,
+      "p95ModelMs": 0.3360000000002401,
+      "garrisonUnaffected": true
+    }
+  ]
+}

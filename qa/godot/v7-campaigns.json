@@ -1,0 +1,115 @@
+{
+	"runs": [
+		{
+			"destination": {
+				"id": 121,
+				"kind": "whip",
+				"x": 238.0
+			},
+			"receipts": 0,
+			"roles": {
+				"brute": 3,
+				"hunter": 12,
+				"worker": 3
+			},
+			"seed": 731,
+			"stats": {
+				"capacity": 60,
+				"captives": 3,
+				"day": 6,
+				"enemies": 0,
+				"flags": {
+					"left": true,
+					"right": true
+				},
+				"gold": 50,
+				"hero_hp": 100.0,
+				"hero_max_hp": 100.0,
+				"hero_x": -23.8000000000149,
+				"kills": 52,
+				"phase": "正午",
+				"population": 18,
+				"prison_capacity": 3,
+				"reserve": 0,
+				"status": "won",
+				"territory": 5500.0,
+				"time": 65.4999999999538,
+				"vault": 568
+			}
+		},
+		{
+			"destination": {
+				"id": 122,
+				"kind": "whip",
+				"x": -296.0
+			},
+			"receipts": 0,
+			"roles": {
+				"brute": 3,
+				"hunter": 12,
+				"worker": 3
+			},
+			"seed": 123,
+			"stats": {
+				"capacity": 60,
+				"captives": 3,
+				"day": 7,
+				"enemies": 0,
+				"flags": {
+					"left": true,
+					"right": true
+				},
+				"gold": 50,
+				"hero_hp": 100.0,
+				"hero_max_hp": 100.0,
+				"hero_x": 144.000000000001,
+				"kills": 69,
+				"phase": "白天",
+				"population": 18,
+				"prison_capacity": 3,
+				"reserve": 0,
+				"status": "won",
+				"territory": 5500.0,
+				"time": 44.5999999999443,
+				"vault": 756
+			}
+		},
+		{
+			"destination": {
+				"kind": "sell",
+				"x": 1860.0
+			},
+			"receipts": 0,
+			"roles": {
+				"brute": 2,
+				"hunter": 13,
+				"worker": 3
+			},
+			"seed": 55,
+			"stats": {
+				"capacity": 60,
+				"captives": 3,
+				"day": 6,
+				"enemies": 4,
+				"flags": {
+					"left": true,
+					"right": true
+				},
+				"gold": 50,
+				"hero_hp": 100.0,
+				"hero_max_hp": 100.0,
+				"hero_x": 1359.59999999999,
+				"kills": 52,
+				"phase": "白天",
+				"population": 18,
+				"prison_capacity": 3,
+				"reserve": 0,
+				"status": "won",
+				"territory": 5500.0,
+				"time": 111.799999999951,
+				"vault": 622
+			}
+		}
+	],
+	"scope": "Headless ordinary economy player using carried coins and physical hall withdrawals, no ads or injected resources"
+}

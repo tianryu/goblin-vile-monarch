@@ -1,0 +1,344 @@
+{
+  "assets": [
+    {
+      "name": "far",
+      "source": "far.png",
+      "width": 1774,
+      "height": 887,
+      "transparent_fraction": 0.7606591007017307,
+      "partial_alpha_fraction": 0.23904602240301792,
+      "layout_slot": [
+        0.3,
+        0.65
+      ],
+      "source_vertical_bounds": [
+        339,
+        638
+      ]
+    },
+    {
+      "name": "sky_base",
+      "source": "sky_base.png",
+      "width": 1774,
+      "height": 887,
+      "transparent_fraction": 0.0,
+      "partial_alpha_fraction": 0.0
+    },
+    {
+      "name": "land",
+      "source": "land.png",
+      "width": 1774,
+      "height": 887,
+      "transparent_fraction": 0.8365047428152355,
+      "partial_alpha_fraction": 0.1628254290649479,
+      "layout_slot": [
+        0.63,
+        0.77
+      ],
+      "source_vertical_bounds": [
+        551,
+        730
+      ]
+    },
+    {
+      "name": "water",
+      "source": "water.png",
+      "width": 1774,
+      "height": 887,
+      "transparent_fraction": 0.0,
+      "partial_alpha_fraction": 0.0
+    },
+    {
+      "name": "middle",
+      "source": "middle.png",
+      "width": 1774,
+      "height": 887,
+      "transparent_fraction": 0.4955698559551787,
+      "partial_alpha_fraction": 0.503957324195539,
+      "layout_slot": [
+        0.0,
+        0.65
+      ],
+      "source_vertical_bounds": [
+        0,
+        887
+      ]
+    },
+    {
+      "name": "celestial",
+      "source": "celestial.png",
+      "width": 2172,
+      "height": 724,
+      "transparent_fraction": 0.7387327920393151,
+      "partial_alpha_fraction": 0.2608201570973617
+    },
+    {
+      "name": "monarch",
+      "source": "monarch.png",
+      "width": 1263,
+      "height": 1246,
+      "transparent_fraction": 0.8339948325536412,
+      "partial_alpha_fraction": 0.1653150731588907
+    },
+    {
+      "name": "worker",
+      "source": "worker.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.8316527359006654,
+      "partial_alpha_fraction": 0.16765136190730634
+    },
+    {
+      "name": "hunter",
+      "source": "hunter.png",
+      "width": 1403,
+      "height": 1121,
+      "transparent_fraction": 0.7309276731459222,
+      "partial_alpha_fraction": 0.26756415302241976
+    },
+    {
+      "name": "brute",
+      "source": "brute.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7442934748037606,
+      "partial_alpha_fraction": 0.25477971578692926
+    },
+    {
+      "name": "thief",
+      "source": "thief.png",
+      "width": 1376,
+      "height": 1143,
+      "transparent_fraction": 0.780869142810637,
+      "partial_alpha_fraction": 0.2185586176727909
+    },
+    {
+      "name": "idle",
+      "source": "idle.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.8339567192091905,
+      "partial_alpha_fraction": 0.16538172843275703
+    },
+    {
+      "name": "boar",
+      "source": "boar.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.770810274417007,
+      "partial_alpha_fraction": 0.22843402923552536
+    },
+    {
+      "name": "lizard",
+      "source": "lizard.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7754163327099475,
+      "partial_alpha_fraction": 0.22422108570919685
+    },
+    {
+      "name": "wolf",
+      "source": "wolf.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7311298550945893,
+      "partial_alpha_fraction": 0.26776649746192893
+    },
+    {
+      "name": "bat",
+      "source": "bat.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.6902573693116039,
+      "partial_alpha_fraction": 0.3088056435505006
+    },
+    {
+      "name": "human",
+      "source": "human.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.8275835527906059,
+      "partial_alpha_fraction": 0.17160350113863337
+    },
+    {
+      "name": "dwarf",
+      "source": "dwarf.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7246949861964556,
+      "partial_alpha_fraction": 0.27450351767744235
+    },
+    {
+      "name": "elf",
+      "source": "elf.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7703281045252726,
+      "partial_alpha_fraction": 0.22807844484307216
+    },
+    {
+      "name": "captives",
+      "source": "captives.png",
+      "width": 2172,
+      "height": 724,
+      "transparent_fraction": 0.722958828078101,
+      "partial_alpha_fraction": 0.2762475453537234
+    },
+    {
+      "name": "trader",
+      "source": "trader.png",
+      "width": 1363,
+      "height": 1154,
+      "transparent_fraction": 0.7235117000296267,
+      "partial_alpha_fraction": 0.2758449032425415
+    },
+    {
+      "name": "hall",
+      "source": "hall.png",
+      "width": 2079,
+      "height": 756,
+      "transparent_fraction": 0.5959106051698644,
+      "partial_alpha_fraction": 0.4033806189890846
+    },
+    {
+      "name": "stall",
+      "source": "stall-final.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7669071155044973,
+      "partial_alpha_fraction": 0.23118074373751638
+    },
+    {
+      "name": "prison_back",
+      "source": "prison_back.png",
+      "width": 2022,
+      "height": 778,
+      "transparent_fraction": 0.2665016438711449,
+      "partial_alpha_fraction": 0.7328639464604009
+    },
+    {
+      "name": "prison_front",
+      "source": "prison_front.png",
+      "width": 2020,
+      "height": 778,
+      "transparent_fraction": 0.5327438977830945,
+      "partial_alpha_fraction": 0.4653007203033928
+    },
+    {
+      "name": "wall",
+      "source": "wall.png",
+      "width": 2172,
+      "height": 724,
+      "transparent_fraction": 0.6060197338298586,
+      "partial_alpha_fraction": 0.39223276151521624
+    },
+    {
+      "name": "tower",
+      "source": "tower.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.8059202574965332,
+      "partial_alpha_fraction": 0.1923997811788354
+    },
+    {
+      "name": "net_trap",
+      "source": "net_trap.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7730124804396779,
+      "partial_alpha_fraction": 0.22523186137933668
+    },
+    {
+      "name": "rock_trap",
+      "source": "rock_trap.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.7652106153709146,
+      "partial_alpha_fraction": 0.23375761739373815
+    },
+    {
+      "name": "outpost",
+      "source": "outpost.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.6625510476699362,
+      "partial_alpha_fraction": 0.3361977278220933
+    },
+    {
+      "name": "wagon",
+      "source": "wagon-square.png",
+      "width": 1254,
+      "height": 1254,
+      "transparent_fraction": 0.8142130191362122,
+      "partial_alpha_fraction": 0.18500352301661796
+    },
+    {
+      "name": "loot",
+      "source": "loot.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.6704171596503951,
+      "partial_alpha_fraction": 0.3282050303423533
+    },
+    {
+      "name": "torch",
+      "source": "torch.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent_fraction": 0.9253947050367034,
+      "partial_alpha_fraction": 0.07430377975395341
+    },
+    {
+      "name": "foreground",
+      "source": "foreground.png",
+      "width": 1774,
+      "height": 887,
+      "transparent_fraction": 0.8065893546898772,
+      "partial_alpha_fraction": 0.19230167940017973,
+      "layout_slot": [
+        0.85,
+        1.0
+      ],
+      "source_vertical_bounds": [
+        366,
+        887
+      ]
+    },
+    {
+      "name": "prison_back1",
+      "source": "prison_back1.png",
+      "width": 2023,
+      "height": 777,
+      "transparent_fraction": 0.2530035861721477,
+      "partial_alpha_fraction": 0.7465281820200258
+    },
+    {
+      "name": "prison_front1",
+      "source": "prison_front1.png",
+      "width": 2020,
+      "height": 778,
+      "transparent_fraction": 0.5123616024841559,
+      "partial_alpha_fraction": 0.4875009544656265
+    },
+    {
+      "name": "prison_back3",
+      "source": "prison_back3.png",
+      "width": 2022,
+      "height": 778,
+      "transparent_fraction": 0.25374606831282626,
+      "partial_alpha_fraction": 0.7459564329648926
+    },
+    {
+      "name": "prison_front3",
+      "source": "prison_front3.png",
+      "width": 2021,
+      "height": 778,
+      "transparent_fraction": 0.507659294630035,
+      "partial_alpha_fraction": 0.4899741658600123
+    }
+  ],
+  "missing": [],
+  "frames": 61,
+  "rgba_bytes": 15769600,
+  "production_png_bytes": 2502189
+}

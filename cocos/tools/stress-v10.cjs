@@ -1,0 +1,11 @@
+// 桌面Node模型诊断，不能当作手机帧率或实际整局难度结论。
+const {GameModel}=require('../../qa/cocos/model-build/GameModel'),{RULES}=require('../../qa/cocos/model-build/Rules'),fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const g=new GameModel();g.state.goblins=[];g.state.player.hp=1000000;g.hall.level=3;g.flag.level=2;
+for(const c of g.state.camps){for(let i=0;i<10;i++){const n=g.makeGoblin(i%3?'hunter':'brute',c.x-220+i*30);n.hp=n.maxHp=100000;n.cooldown=9999;n.order='hold';g.state.goblins.push(n);}}
+for(const e of g.state.enemies){e.hp=e.maxHp=100000;e.cooldown=9999;}
+g.spawnRaid=()=>{};const samples=[];let maxActive=0,maxAlive=0;
+for(let i=0;i<1200;i++){const t=performance.now();g.tick(1/30);samples.push(performance.now()-t);maxAlive=Math.max(maxAlive,g.state.enemies.filter(e=>e.hp>0&&e.state==='active').length);maxActive=Math.max(maxActive,...g.state.camps.map(c=>g.state.enemies.filter(e=>e.camp===c.index&&!e.company&&e.hp>0&&e.state==='active').length));}
+samples.sort((a,b)=>a-b);assert.ok(maxActive<=RULES.maxGarrisonActive);assert.equal(g.state.status,'playing');
+const images=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../assets/resources/art/catalog.json'),'utf8')),rigs=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../assets/resources/rigs/catalog.json'),'utf8')).rigs;
+const result={environment:'desktop Node model only',realPhone:false,renderPerformance:false,fixture:'50 durable allies spread across five camps, finite garrisons, no raids',simulationSeconds:40,ticks:samples.length,tickMs:{p50:samples[Math.floor(samples.length*.5)],p95:samples[Math.floor(samples.length*.95)],max:samples.at(-1)},peakActiveGarrisonPerCamp:maxActive,peakAliveEnemies:maxAlive,remainingReserves:g.state.camps.map(c=>c.reserve.length+c.heroesPending.length),allies:g.population,textureRgbaEstimateBytes:Object.entries(images).filter(([n])=>!n.endsWith('__glow')).reduce((a,[,v])=>a+v.width*v.height*4,0),note:'Estimate above excludes glow masks, rig atlases, engine memory and GPU copies; no low-end-phone performance claim',rigAtlasCount:Object.keys(rigs).length};
+fs.writeFileSync(path.resolve(__dirname,'../../qa/cocos/v10-stress-model.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

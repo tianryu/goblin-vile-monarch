@@ -1,0 +1,33 @@
+{
+  "name": "goblinmonarch",
+  "platform": "wechatgame",
+  "debug": false,
+  "buildPath": "project://build/battle-economy-release-20261105",
+  "outputName": "wechatgame-store",
+  "startScene": "ed9c19c0-f798-4d1c-9717-015ca7d55722",
+  "scenes": [
+    {
+      "url": "db://assets/scenes/Main.scene",
+      "uuid": "ed9c19c0-f798-4d1c-9717-015ca7d55722"
+    }
+  ],
+  "md5Cache": true,
+  "sourceMaps": false,
+  "experimentalEraseModules": false,
+  "packages": {
+    "wechatgame": {
+      "orientation": "landscape",
+      "appid": "",
+      "isSubdomain": false,
+      "useWechatPlugin": false,
+      "hotUpdateDll": false,
+      "separateEngine": false
+    },
+    "taptap-minigame-tools": {
+      "enableTapConvert": false,
+      "tapAppid": "",
+      "gameVersion": "0.10.4",
+      "deleteWechatBuild": false
+    }
+  }
+}

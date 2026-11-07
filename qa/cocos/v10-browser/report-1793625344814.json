@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "name": "mouse-drag-joystick",
+      "pass": true
+    },
+    {
+      "name": "click-sprint-toggle-works-with-keyboard",
+      "pass": true
+    },
+    {
+      "name": "pause-freezes-rendered-moving-characters",
+      "pass": true
+    },
+    {
+      "name": "treasury-ten-clicks-and-icon-amount",
+      "pass": true
+    },
+    {
+      "name": "closed-left-world-is-black",
+      "pass": true
+    },
+    {
+      "name": "role-counts-and-smaller-worker",
+      "pass": true
+    },
+    {
+      "name": "prisoners-keep-standing-character-size",
+      "pass": false,
+      "error": "Error: page.evaluate: TypeError: Cannot read properties of undefined (reading '0')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:120)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (File not found)",
+    "Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "realPhone": false,
+  "normalEconomyCampaign": false,
+  "failure": "Error: page.evaluate: TypeError: Cannot read properties of undefined (reading '0')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:120)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "passed": 6,
+  "failed": 1
+}

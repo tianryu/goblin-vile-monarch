@@ -1,0 +1,11 @@
+{
+  "assetName": "hunter_4",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-dff89eb7-ff5f-4b0a-a343-70bb90b7d04a.png",
+  "refinementPrompt": "Preserve everything. ONLY remove repeated rounded light blotches on all metal. Replace each surface with solid matte medium slate gray plus at most one darker straight-edged polygon. No spots, shine, scratches or decorative pattern. Keep face, bow, cloth, skin and pose unchanged. Transparent background.",
+  "priorRejectedPath": "C:/Users/田煜/.codex/generated_images/01a185e2-9903-79b2-a07f-8952b848c1b3/exec-dbd9e7e7-02ae-4b7a-8aa6-abbb93145b7b.png",
+  "prompt": "Minimal equipment-only edit of this approved goblin hunter to his best armor stage. Preserve his EXACT face identity, long crooked nose, eye, ears, tusks, body proportions, pose, skin paint shapes, red torn tunic, boots and empty-handed bow. Add a plain matte dark slate-gray short breastplate, shoulder plates, forearm plates and knee guards. Add a small plain open-faced iron skullcap; his long ears stick out freely and his squinting face remains entirely visible. Burgundy head-wrap tails remain visible behind the cap. The red tunic remains visible on sides and torn skirt. Each metal piece has just TWO close gray irregular paint patches with no decorative engraving, scratches, shiny bevel, rust or heavy black contour. Keep torso lean, no bulky shoulder spikes. Same low-contrast matte angular hand-painted artist as input. No arrow, no crown, no quiver, no labels, no white sticker outline. Whole static character facing RIGHT, both feet level and inside frame, transparent background with margins.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": false
+}

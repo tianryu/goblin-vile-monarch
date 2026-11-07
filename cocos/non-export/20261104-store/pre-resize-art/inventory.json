@@ -1,0 +1,152 @@
+[
+  {
+    "name": "catapult.png",
+    "before": 427627,
+    "after": 196504
+  },
+  {
+    "name": "cave.png",
+    "before": 291676,
+    "after": 124476
+  },
+  {
+    "name": "chest_front.png",
+    "before": 247375,
+    "after": 112138
+  },
+  {
+    "name": "deer.png",
+    "before": 221747,
+    "after": 217909
+  },
+  {
+    "name": "far.png",
+    "before": 131767,
+    "after": 65193
+  },
+  {
+    "name": "firecatapult.png",
+    "before": 473559,
+    "after": 206631
+  },
+  {
+    "name": "forge.png",
+    "before": 288364,
+    "after": 256569
+  },
+  {
+    "name": "gear_pile.png",
+    "before": 336332,
+    "after": 136070
+  },
+  {
+    "name": "hall3.png",
+    "before": 395431,
+    "after": 363922
+  },
+  {
+    "name": "hall4.png",
+    "before": 527832,
+    "after": 282560
+  },
+  {
+    "name": "hall5.png",
+    "before": 693476,
+    "after": 280273
+  },
+  {
+    "name": "hanging_menu.png",
+    "before": 325575,
+    "after": 226091
+  },
+  {
+    "name": "lure.png",
+    "before": 189790,
+    "after": 182506
+  },
+  {
+    "name": "metal_roof.png",
+    "before": 180511,
+    "after": 87041
+  },
+  {
+    "name": "metal_workframe.png",
+    "before": 254824,
+    "after": 121680
+  },
+  {
+    "name": "middle.png",
+    "before": 206204,
+    "after": 104281
+  },
+  {
+    "name": "open_chest.png",
+    "before": 530703,
+    "after": 289609
+  },
+  {
+    "name": "ram.png",
+    "before": 484292,
+    "after": 281459
+  },
+  {
+    "name": "ship.png",
+    "before": 286330,
+    "after": 133966
+  },
+  {
+    "name": "sky_base.png",
+    "before": 387689,
+    "after": 176547
+  },
+  {
+    "name": "stone_plinth.png",
+    "before": 143105,
+    "after": 70792
+  },
+  {
+    "name": "territory_marker.png",
+    "before": 144240,
+    "after": 138875
+  },
+  {
+    "name": "timber_frame.png",
+    "before": 277726,
+    "after": 132086
+  },
+  {
+    "name": "tower3.png",
+    "before": 286971,
+    "after": 275483
+  },
+  {
+    "name": "tower4.png",
+    "before": 303396,
+    "after": 284784
+  },
+  {
+    "name": "tower5.png",
+    "before": 288835,
+    "after": 276294
+  },
+  {
+    "name": "ui_panel_v5.png",
+    "before": 208514,
+    "after": 148930
+  },
+  {
+    "name": "wall3.png",
+    "before": 609424,
+    "after": 286262
+  },
+  {
+    "name": "wall4.png",
+    "before": 599911,
+    "after": 247502
+  },
+  {
+    "name": "wall5.png",
+    "before": 686897,
+    "after": 287736
+  }
+]

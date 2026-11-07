@@ -1,0 +1,60 @@
+{
+  "scope": "Desktop Edge DPR2 with touch and injected safe-area values. Not a physical notched phone or live ad SDK.",
+  "passes": [
+    "High-DPI canvas rasterizes at native two-pixel density",
+    "Joystick and right action respect side safe areas",
+    "Merchant waits for action-finger release",
+    "Releasing another finger does not open merchant",
+    "Cancelling pending interaction never opens a shop",
+    "Opening merchant cannot press through into a purchase",
+    "Footer clears bottom safe area",
+    "Selection remains free at DPR2",
+    "Confirm buys intended profession once at DPR2",
+    "Safe-area pause still refunds incomplete coin payment",
+    "Procedural water runs at native DPI",
+    "Modal pauses wave clock at native DPI",
+    "Large bottom safe area keeps tools card content separate",
+    "Large bottom safe area keeps gold card content separate",
+    "Large bottom safe area keeps army card content separate",
+    "Large bottom safe area keeps mount card content separate",
+    "Large bottom safe area keeps prison card content separate",
+    "Large bottom safe area keeps steal card content separate",
+    "Large bottom safe area keeps rally card content separate",
+    "Portrait guard pauses at native DPI",
+    "No DPR2 or safe-area script errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "canvas": {
+    "w": 1688,
+    "h": 780,
+    "cw": 844,
+    "ch": 390
+  },
+  "touch_events": [
+    {
+      "type": "touchstart",
+      "ids": [
+        1
+      ]
+    },
+    {
+      "type": "touchstart",
+      "ids": [
+        2
+      ]
+    },
+    {
+      "type": "touchend",
+      "ids": [
+        1
+      ]
+    },
+    {
+      "type": "touchcancel",
+      "ids": [
+        2
+      ]
+    }
+  ]
+}

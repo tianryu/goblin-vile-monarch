@@ -1,0 +1,347 @@
+{
+  "recordedAt": "2026-10-30T03:35:06.048Z",
+  "scope": "Old prototype source assets, not redesigned game and not physical phone measurements",
+  "method": "PNG IHDR width × height × 4 bytes; single uncompressed RGBA copy only",
+  "exclusions": [
+    "Browser process, DOM and JS heap",
+    "GPU copies and texture allocation",
+    "Canvas backing buffers and ImageData",
+    "Advertising SDK and audio decoding"
+  ],
+  "allSources": {
+    "files": 39,
+    "encodedMiB": 26.227,
+    "estimatedRGBA_MiB": 234.034
+  },
+  "loadedByOldPrototype": {
+    "files": 37,
+    "encodedMiB": 22.705,
+    "estimatedRGBA_MiB": 222.029
+  },
+  "framebuffers": [
+    {
+      "width": 1774,
+      "height": 887,
+      "rgbaMiB": 6.003
+    },
+    {
+      "width": 512,
+      "height": 256,
+      "rgbaMiB": 0.5
+    }
+  ],
+  "files": [
+    {
+      "file": "assets\\camp.png",
+      "loadedByOldPrototype": true,
+      "width": 1536,
+      "height": 1024,
+      "encodedBytes": 1039285,
+      "estimatedRGBABytes": 6291456
+    },
+    {
+      "file": "assets\\chest.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 530162,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\effects.png",
+      "loadedByOldPrototype": true,
+      "width": 1448,
+      "height": 1086,
+      "encodedBytes": 391821,
+      "estimatedRGBABytes": 6290112
+    },
+    {
+      "file": "assets\\enemy-heavy.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 553608,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\enemy-ranged.png",
+      "loadedByOldPrototype": true,
+      "width": 1263,
+      "height": 1245,
+      "encodedBytes": 626964,
+      "estimatedRGBABytes": 6289740
+    },
+    {
+      "file": "assets\\enemy-small.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 402522,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\farms.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 638724,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\fire.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 241553,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\forest-background.png",
+      "loadedByOldPrototype": false,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 1859230,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\hall-stages.png",
+      "loadedByOldPrototype": true,
+      "width": 2172,
+      "height": 724,
+      "encodedBytes": 1240269,
+      "estimatedRGBABytes": 6290112
+    },
+    {
+      "file": "assets\\layer-far.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 793709,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\layer-foreground.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 206103,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\layer-ground.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 424345,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\layer-middle.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 770399,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\layer-near.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 681874,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\layer-sky.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 1271330,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\layer-water.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 532651,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\merchant-army.png",
+      "loadedByOldPrototype": true,
+      "width": 1536,
+      "height": 1024,
+      "encodedBytes": 1094861,
+      "estimatedRGBABytes": 6291456
+    },
+    {
+      "file": "assets\\merchant-gold.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 377749,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\merchant-mount.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 455993,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\monarch.png",
+      "loadedByOldPrototype": true,
+      "width": 1262,
+      "height": 1246,
+      "encodedBytes": 422687,
+      "estimatedRGBABytes": 6289808
+    },
+    {
+      "file": "assets\\mount-bat.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 599940,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\mount-boar.png",
+      "loadedByOldPrototype": true,
+      "width": 1536,
+      "height": 1024,
+      "encodedBytes": 1287332,
+      "estimatedRGBABytes": 6291456
+    },
+    {
+      "file": "assets\\mount-lizard.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 536312,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\mount-wolf.png",
+      "loadedByOldPrototype": true,
+      "width": 1265,
+      "height": 1244,
+      "encodedBytes": 702485,
+      "estimatedRGBABytes": 6294640
+    },
+    {
+      "file": "assets\\portal.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 1245453,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\rally.png",
+      "loadedByOldPrototype": true,
+      "width": 1224,
+      "height": 1285,
+      "encodedBytes": 249851,
+      "estimatedRGBABytes": 6291360
+    },
+    {
+      "file": "assets\\tools.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 821369,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\torch.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 237292,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\towers.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 490366,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\tree.png",
+      "loadedByOldPrototype": true,
+      "width": 1321,
+      "height": 1191,
+      "encodedBytes": 989496,
+      "estimatedRGBABytes": 6293244
+    },
+    {
+      "file": "assets\\tribe-environment.png",
+      "loadedByOldPrototype": false,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 1833773,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\ui-icons.png",
+      "loadedByOldPrototype": true,
+      "width": 1774,
+      "height": 887,
+      "encodedBytes": 481397,
+      "estimatedRGBABytes": 6294152
+    },
+    {
+      "file": "assets\\unit-captain.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 604631,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\unit-farmer.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 485219,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\unit-hunter.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 529508,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\unit-idle.png",
+      "loadedByOldPrototype": true,
+      "width": 1385,
+      "height": 1136,
+      "encodedBytes": 388265,
+      "estimatedRGBABytes": 6293440
+    },
+    {
+      "file": "assets\\unit-worker.png",
+      "loadedByOldPrototype": true,
+      "width": 1254,
+      "height": 1254,
+      "encodedBytes": 432592,
+      "estimatedRGBABytes": 6290064
+    },
+    {
+      "file": "assets\\walls.png",
+      "loadedByOldPrototype": true,
+      "width": 2172,
+      "height": 724,
+      "encodedBytes": 1030308,
+      "estimatedRGBABytes": 6290112
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-30",
+  "scope": "Design images and documentation, not game performance or visual similarity",
+  "images": [
+    {
+      "file": "art\\design\\reboot-v1\\01-tribe-day-uglycute.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1936387
+    },
+    {
+      "file": "art\\design\\reboot-v1\\02-prison-market-uglycute.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2054209
+    },
+    {
+      "file": "art\\design\\reboot-v1\\03-night-defense-final.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1946836
+    },
+    {
+      "file": "art\\design\\reboot-v1\\04-thief-outpost-uglycute-pixel.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2061285
+    }
+  ],
+  "copyViolations": [],
+  "imageTextManualReview": "Four final images inspected; no prohibited separator seen. Target caption reads 路障修复.",
+  "userApproval": "pending",
+  "phonePerformance": "unmeasured; see design budgets",
+  "previewValidation": {
+    "imagesLoaded": 4,
+    "zoomWorks": true,
+    "scriptErrors": 0,
+    "mobileHorizontalOverflow": false,
+    "overview": "qa/screenshots/design-gallery.png"
+  }
+}

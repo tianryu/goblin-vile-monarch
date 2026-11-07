@@ -1,0 +1,5 @@
+{
+  "scope": "Difference of actual runtime screenshots in a clear water region 1.2 seconds apart. Sky and UI are excluded. Not a perceptual style score.",
+  "water_mean_abs_rgb": 4.618129006410256,
+  "water_changed_fraction": 0.5748197115384616
+}

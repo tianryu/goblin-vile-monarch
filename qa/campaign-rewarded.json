@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "status": "won",
+  "day": 8,
+  "seconds": 1065,
+  "rewardedAdTransactions": 18,
+  "provider": "Controlled test provider, NOT real TapTap ad playback",
+  "mounts": [
+    "boar",
+    "wolf",
+    "bat",
+    "lizard"
+  ],
+  "kills": 81,
+  "log": [
+    {
+      "side": -1,
+      "day": 7,
+      "seconds": 905.9000000001374
+    },
+    {
+      "side": 1,
+      "day": 8,
+      "seconds": 1031.800000000157
+    }
+  ]
+}

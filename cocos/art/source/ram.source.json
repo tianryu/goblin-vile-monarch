@@ -1,0 +1,13 @@
+{
+  "assetName": "ram",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-becd9f07-155f-45f4-87f4-578e23dcf96d.png",
+  "prompt": "Use case: style-transfer. Image 1 is the edit target, a medieval covered wooden cart. Image 2 shows four actual game assets and is the STYLE STANDARD, especially the plain wheel and rock trap. Keep the target's complete side-view shape, red ragged canopy, hanging horizontal log, right-facing iron cap and TWO wheels on a single baseline. Repaint every surface in the same low-contrast matte irregular paint shapes as image 2. Use dull mid brown timber, burgundy cloth with just three broad folds, plain two-tone gray iron and beige ropes. Replace the target's thick dark comic outlines, bright orange rims and many wood grain lines. Use simple open spoke wheels like the reference wheel. Do not draw any of the reference props in output. No black outline, gradients, glow, shiny edges, lettering, people, ground or cast shadow. One whole static medieval fantasy game prop, enough transparent margin around all parts. The result must sit beside the reference rock trap without changing art style.",
+  "edge": "building",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "已查看真实alpha、旧木器对照与缩图。双轮同地线，哑光破布和木架取消黑边及亮纹；待引擎合成。",
+  "reviewStatus": "approved-source-pending-engine"
+}

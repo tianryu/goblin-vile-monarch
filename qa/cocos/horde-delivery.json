@@ -1,0 +1,73 @@
+{
+  "checkpoint": "horde-20261104",
+  "url": "http://127.0.0.1:42828/?build=horde-20261104",
+  "notTapTapUploadPackage": true,
+  "published": false,
+  "realAds": false,
+  "rankingReady": false,
+  "cloudSaveReady": false,
+  "typecheckCompleted": true,
+  "creatorBuildCompleted": true,
+  "testingSkippedByUser": true,
+  "gameplayTested": false,
+  "browserTested": false,
+  "graphicsTested": false,
+  "performanceTested": false,
+  "phoneTested": false,
+  "fixesImplemented": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15"
+  ],
+  "fixesValidated": [],
+  "sourceHashes": {
+    "cocos/assets/scripts/MonarchGame.ts": "3d7d12915eadb40e43047285128cfa489e5ea3c55df011e0167e2d8aa8570279",
+    "cocos/assets/scripts/model/CampaignRules.ts": "6d00b7f1ebf0ef21bea29d8034790b03347bffd6c6300ea50f813b3945e8bfc2",
+    "cocos/assets/scripts/model/CampaignUpgrade.ts": "e8740c5ec05134b8d55fa13e6c4d904b9e5209e727e4e736594e994643a7fd4b",
+    "cocos/assets/scripts/model/GameModel.ts": "0e8e8d1b596618d1a7b2350f0c5d2aebeb01b4ba51fc10ed826f4883defe06ed",
+    "cocos/assets/scripts/model/HordeUpgrade.ts": "0be56c0dbce82530d266d227284a570deaed173f9ced6c4d702c8154bc7c4d11",
+    "cocos/assets/scripts/model/PrisonLayout.ts": "81e0aace8d2f32de57f3c267fc9abe24767ccf155625e83af32c7467f089f5fa",
+    "cocos/assets/scripts/model/Progression.ts": "d78ec19e329dce493e13c11a3c5c70f128bbd39971e3e9b20d0758f0e02d1005",
+    "cocos/assets/scripts/model/Rules.ts": "1cbc53b1272fbcb2ac6c38bfa089a4c1211a4c1e688270f640f8f07858f58961",
+    "cocos/assets/scripts/model/State.ts": "f302022894a0984e55b036c91aab7ae3e5ff190967a3202e9c55a0a1c607ff09",
+    "cocos/assets/scripts/model/WorldUpgrade.ts": "402b8974f1889247b0179e8ba26d1e309d38c6387c8283db0581684513f7ef0d",
+    "cocos/assets/scripts/platform/Platform.ts": "32347c7f7f8c7edcc66610567d7ddf498cfcae9875101b6a2ee7602af502f2b9",
+    "cocos/assets/scripts/view/ArtBank.ts": "32eaffa0ea529ee239992f4ddb6b2012a9053969298625ff81702449eac34ec2",
+    "cocos/assets/scripts/view/Controls.ts": "0fd66fcf8adbaad0f9bdb1998a30979b6ab318d3c3c9f4d23f0256842d567a04",
+    "cocos/assets/scripts/view/CutoutMotion.ts": "88abf64ce3b87c48eba07b58288400838ba2198b8f99e2ca43459c4a0a734b01",
+    "cocos/assets/scripts/view/GameView.ts": "61e290cf46993316838d090f3f2d40268f6a68a96d0c05dcab0ed88499883532",
+    "cocos/assets/scripts/view/HangingMenu.ts": "17f376d5f1ff3e52980e1624c1c2f3954ad70f067ee0a8e36df9b0d674d2658c",
+    "cocos/assets/scripts/view/Painter.ts": "c7a0ed07b0eae5d7fe3e6f10fdaea135449b377621f3289c40fe7b3f013a4a68",
+    "cocos/assets/scripts/view/Transitions.ts": "3627c294c0f2a0533756fbd4f762871bee1919356eef166eddbf8697e61c8f23",
+    "cocos/assets/resources/materials/armor-palette.effect": "0d6e8ca941fada911deab91f21475d892f4cfd47e5a608bb2d1fb140bb84facb",
+    "cocos/assets/resources/fonts/GoblinHand.ttf": "5214ede7fc36ba47a014e9bf5607915ace34818c345c5cc76839b41768a49870",
+    "cocos/config/build-horde.json": "963cc49fca5229e78182f046be1ae88d81445ad8f51922bffa09b5503cb74d0f"
+  },
+  "evidence": [
+    "qa/cocos/horde-20261104/compile.log",
+    "qa/cocos/horde-20261104/build-delivery.log"
+  ],
+  "retainedFailures": [
+    "qa/cocos/horde-20261104/build.log",
+    "qa/cocos/horde-20261104/build-stderr.log"
+  ],
+  "notes": [
+    "首次准备脚本缺fontTools，创建构建配置前失败；依赖补齐后独立重建。",
+    "Creator脚本成功后可能有worker SIGTERM调试信息，原日志保留，未声称运行无错误。"
+  ],
+  "archive": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\release\\cocos-horde-20261104-r1.zip",
+  "archiveBytes": 26088703,
+  "archiveSha256": "c32716e2b46e73f379d1820d6ffaf49707736eafab0ec67b7a75cd1ce885e8cd"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "elite_pyromancer",
+  "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/mage.png",
+  "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. An elderly powerful fire mage, dark muted brick-red hooded robe with pale ochre hem, bent wooden staff with amber gem held in one hand, other hand open for casting, hooked nose and white beard. No fire painted into sprite, no particles.",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-984b436d-c3ac-449f-bbfd-eabbc28ffb7e.png",
+  "generator": "builtin-imagegen",
+  "edge": "enemy",
+  "facing": -1,
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "源图与90像素缩图已检查。延续原人类/矮人/精灵/法师平面哑光轮廓，武器握法正确，无多余飞箭，无裁断；待引擎验收。"
+}

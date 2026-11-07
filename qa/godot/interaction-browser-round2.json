@@ -1,0 +1,282 @@
+{
+  "scope": "V5 desktop Edge touch emulation, deterministic QA scenarios and controlled ad provider. Not a phone or live TapTap test.",
+  "passes": [
+    {
+      "name": "960x480 welcome bounds and thumb controls"
+    },
+    {
+      "name": "960x480 tools bounds and thumb controls"
+    },
+    {
+      "name": "960x480 gold bounds and thumb controls"
+    },
+    {
+      "name": "960x480 army bounds and thumb controls"
+    },
+    {
+      "name": "960x480 mount bounds and thumb controls"
+    },
+    {
+      "name": "960x480 prison bounds and thumb controls"
+    },
+    {
+      "name": "960x480 trader bounds and thumb controls"
+    },
+    {
+      "name": "960x480 steal bounds and thumb controls"
+    },
+    {
+      "name": "960x480 rally bounds and thumb controls"
+    },
+    {
+      "name": "960x480 pause bounds and thumb controls"
+    },
+    {
+      "name": "960x480 guide bounds and thumb controls"
+    },
+    {
+      "name": "960x480 ledger bounds and thumb controls"
+    },
+    {
+      "name": "960x480 credits bounds and thumb controls"
+    },
+    {
+      "name": "960x480 restart bounds and thumb controls"
+    },
+    {
+      "name": "740x360 welcome bounds and thumb controls"
+    },
+    {
+      "name": "740x360 tools bounds and thumb controls"
+    },
+    {
+      "name": "740x360 gold bounds and thumb controls"
+    },
+    {
+      "name": "740x360 army bounds and thumb controls"
+    },
+    {
+      "name": "740x360 mount bounds and thumb controls"
+    },
+    {
+      "name": "740x360 prison bounds and thumb controls"
+    },
+    {
+      "name": "740x360 trader bounds and thumb controls"
+    },
+    {
+      "name": "740x360 steal bounds and thumb controls"
+    },
+    {
+      "name": "740x360 rally bounds and thumb controls"
+    },
+    {
+      "name": "740x360 pause bounds and thumb controls"
+    },
+    {
+      "name": "740x360 guide bounds and thumb controls"
+    },
+    {
+      "name": "740x360 ledger bounds and thumb controls"
+    },
+    {
+      "name": "740x360 credits bounds and thumb controls"
+    },
+    {
+      "name": "740x360 restart bounds and thumb controls"
+    },
+    {
+      "name": "844x390 welcome bounds and thumb controls"
+    },
+    {
+      "name": "844x390 tools bounds and thumb controls"
+    },
+    {
+      "name": "844x390 gold bounds and thumb controls"
+    },
+    {
+      "name": "844x390 army bounds and thumb controls"
+    },
+    {
+      "name": "844x390 mount bounds and thumb controls"
+    },
+    {
+      "name": "844x390 prison bounds and thumb controls"
+    },
+    {
+      "name": "844x390 trader bounds and thumb controls"
+    },
+    {
+      "name": "844x390 steal bounds and thumb controls"
+    },
+    {
+      "name": "844x390 rally bounds and thumb controls"
+    },
+    {
+      "name": "844x390 pause bounds and thumb controls"
+    },
+    {
+      "name": "844x390 guide bounds and thumb controls"
+    },
+    {
+      "name": "844x390 ledger bounds and thumb controls"
+    },
+    {
+      "name": "844x390 credits bounds and thumb controls"
+    },
+    {
+      "name": "844x390 restart bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 welcome bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 tools bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 gold bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 army bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 mount bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 prison bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 trader bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 steal bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 rally bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 pause bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 guide bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 ledger bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 credits bounds and thumb controls"
+    },
+    {
+      "name": "1280x720 restart bounds and thumb controls"
+    },
+    {
+      "name": "Native canvas active"
+    },
+    {
+      "name": "Unbuilt wall shows exactly four coin ghosts and wall preview"
+    },
+    {
+      "name": "One tap holds one real coin without completing"
+    },
+    {
+      "name": "Second tap retains first contribution"
+    },
+    {
+      "name": "Walking away returns partial payment"
+    },
+    {
+      "name": "Holding fills four coins once then stops"
+    },
+    {
+      "name": "Pause refunds partial payment"
+    },
+    {
+      "name": "Extra tools remain useful as stock"
+    },
+    {
+      "name": "Game-coin mount is acquired and equipped"
+    },
+    {
+      "name": "Unavailable ads never fabricate success"
+    },
+    {
+      "name": "Unlimited consecutive voluntary ad rewards"
+    },
+    {
+      "name": "Ad disables footer and keeps simulation paused"
+    },
+    {
+      "name": "Duplicate receipt and callback give no duplicate reward"
+    },
+    {
+      "name": "Wrong kind is rejected"
+    },
+    {
+      "name": "Cancelled ad restores bottom return button"
+    }
+  ],
+  "failures": [
+    {
+      "name": "Selecting a profession does not spend money"
+    },
+    {
+      "name": "Bottom confirm buys selected tool"
+    }
+  ],
+  "errors": [],
+  "screens": [
+    "960-welcome.png",
+    "960-tools.png",
+    "960-gold.png",
+    "960-army.png",
+    "960-mount.png",
+    "960-prison.png",
+    "960-trader.png",
+    "960-steal.png",
+    "960-rally.png",
+    "960-pause.png",
+    "960-guide.png",
+    "960-ledger.png",
+    "960-credits.png",
+    "960-restart.png",
+    "960-guide-2.png",
+    "960-guide-3.png",
+    "960-guide-4.png",
+    "960-victory.png",
+    "960-defeat.png",
+    "740-welcome.png",
+    "740-tools.png",
+    "740-gold.png",
+    "740-army.png",
+    "740-mount.png",
+    "740-prison.png",
+    "740-trader.png",
+    "740-steal.png",
+    "740-rally.png",
+    "740-pause.png",
+    "740-guide.png",
+    "740-ledger.png",
+    "740-credits.png",
+    "740-restart.png",
+    "740-guide-2.png",
+    "740-guide-3.png",
+    "740-guide-4.png",
+    "740-victory.png",
+    "740-defeat.png",
+    "844-guide-2.png",
+    "844-guide-3.png",
+    "844-guide-4.png",
+    "844-victory.png",
+    "844-defeat.png",
+    "1280-guide-2.png",
+    "1280-guide-3.png",
+    "1280-guide-4.png",
+    "1280-victory.png",
+    "1280-defeat.png",
+    "coin-ghost-empty.png",
+    "coin-ghost-one.png",
+    "wall-funded.png",
+    "ad-unavailable.png"
+  ],
+  "exception": "Error: Missing ad_worker army"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "ui_action_ring",
+  "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One round game touch button frame, irregular warm wooden rim with thin worn brass edge, empty dark green circular center. Entirely blank, no hand, no words, no symbols. Flat front view. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-b5427954-5861-4de1-ac51-ac457f1bfd13.png",
+  "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+}

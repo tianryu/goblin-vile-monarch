@@ -1,0 +1,19 @@
+{
+  "scope": "Oak canopy sequence and fixed root placement in isolated desktop Edge software WebGL",
+  "passes": [
+    "Visible oaks use the generated canopy sequence",
+    "Wind advances through a complete set of poses",
+    "Each tree keeps one stable placement",
+    "Roots stay at the source contact line",
+    "Tree rendering has no coin transactions or dialogs",
+    "This isolated scene stays inside the animation cache target",
+    "Pause freezes wind and leaves the tree visible",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "visible_tree_scopes": [
+    "world/decor/439.652923583984"
+  ],
+  "max_animation_bytes": 23036464
+}

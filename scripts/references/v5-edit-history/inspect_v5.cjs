@@ -1,0 +1,4 @@
+const{chromium}=require('playwright'),fs=require('fs');
+(async()=>{const b=await chromium.launch({channel:'msedge',headless:true,args:['--enable-webgl','--use-angle=swiftshader']});const p=await b.newPage({viewport:{width:960,height:480},hasTouch:true});let errors=[];p.on('console',m=>{if(m.type()==='error')errors.push(m.text())});p.on('pageerror',e=>errors.push(e.message));await p.goto('http://127.0.0.1:42819/');await p.waitForFunction(()=>window.__goblinState,null,{timeout:60000});fs.mkdirSync('qa/interaction-v5',{recursive:true});
+for(const kind of ['welcome','tools','trader','guide','pause','ledger']){await p.evaluate(kind=>window.goblinQaCommand(JSON.stringify({op:'open',kind})),kind);await p.waitForTimeout(350);await p.screenshot({path:'qa/interaction-v5/first-'+kind+'.png'});console.log(JSON.stringify(await p.evaluate(()=>window.__goblinState)));}
+console.log(JSON.stringify({errors}));await b.close()})().catch(e=>{console.error(e);process.exitCode=1});

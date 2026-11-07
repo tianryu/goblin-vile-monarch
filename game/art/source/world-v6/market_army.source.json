@@ -1,0 +1,7 @@
+{
+  "name": "market_army",
+  "prompt": "One production-ready static transparent PNG game asset for a medieval goblin side-scrolling mobile game. Same NON-PIXEL flat hand-painted cartoon art as the reference: irregular clean painted contours, broad matte muted ochre wood/gray iron/olive/brick-red patches, just two close-value shades per material, minimal volume. Strict side elevation, slight hand-drawn wonkiness, no top-down or isometric view. Large readable silhouette at 100 pixels high. Whole object framed with margin, all feet and support posts on one consistent ground baseline. No background, no cast shadow, no halo, no scenery, no characters, no text, letters, numbers, interface, glow or pixel blocks. Redesign the reference into a tall goblin reinforcement recruiting pavilion. Two upright short-speared standards frame a broad muster booth, large paired-helmet emblem at the top, spare leather helmets and folded olive tunics on a grounded bench, small muted red flags. No characters, no coin piles, no archery target.",
+  "method": "built-in imagegen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c3d4ba65-9de9-4b22-bfea-4e70f814bf42.png",
+  "review": "accepted: two helmets crest, standards and spare armor; non-pixel painted transparent static bitmap"
+}

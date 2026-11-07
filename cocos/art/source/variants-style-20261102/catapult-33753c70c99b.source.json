@@ -1,0 +1,10 @@
+{
+  "assetName": "catapult",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-1c3674f1-fcd0-4fe0-8d51-ab24a0b4a1c4.png",
+  "prompt": "One independent medieval CATAPULT siege-engine game sprite for the attached hand-painted goblin game. Strict 2D side elevation facing RIGHT, a compact crude wooden torsion catapult on exactly TWO visible solid wooden wheels, both wheel bottoms on one level horizontal baseline. Triangular timber chassis, thick axle, visible throwing arm in REST position, shallow sling/bowl with one gray rock, rope bindings, no people. Keep lever comfortably inside full canvas. No arrows, movement lines, smoke, projectiles or background. Match simple flat matte hand-painted color shapes of the reference, clean irregular contour, little volume, no 3D model look, no pixel art. Do not draw scenery, ground, cast shadow or lettering. GENUINE transparent cutout, single machine with generous margins. Readable game silhouette at 128 pixels high.",
+  "edge": "building",
+  "reviewed": true,
+  "review": "双轮同一脚线，轴、支架、投臂与石块完整，朝右投射。",
+  "generator": "builtin-imagegen",
+  "facing": 1
+}

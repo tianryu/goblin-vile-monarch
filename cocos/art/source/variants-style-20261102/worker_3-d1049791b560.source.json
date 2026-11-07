@@ -1,0 +1,13 @@
+{
+  "assetName": "worker_3",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-da5fd943-691c-46d3-bfbd-46e42fd72423.png",
+  "prompt": "Equipment-only rank-up edit of this exact existing goblin worker. Preserve his EXACT sly face, long orange nose, eye, pointy ears, proportions, stance, green skin, white rolled-sleeve shirt and empty far hand. Add a small plain open-faced matte gray metal skullcap, with red headband tails visible behind and ears freely exposed. Add a short dark-tan leather apron with one broad pocket over lower front of shirt, and two brown wrist cuffs. Change the mallet's wooden head to a larger PLAIN gray iron hammer head, still one continuous handle clearly gripped in the same hand. Keep the white upper torso and sleeves prominent. No armor on his face, no crown. Metal uses only two clean close gray planes; no round blotches, rust, scratches, rivets, glossy highlights, black ink contour or fine textures. Same broad matte irregular painted patches as this baseline, not more realistic. Whole character facing RIGHT, level feet, transparent background with margin. No added tools, labels or sticker border.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "同一白衣工匠，灰铁帽与大铁锤，锤柄连续且握点正确，源图通过待引擎验收",
+  "reviewStatus": "approved-source-pending-engine"
+}

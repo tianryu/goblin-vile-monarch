@@ -1,0 +1,15 @@
+// 守营者沿真实巡逻AI短暂停步，检查闲置动画，未冻结模型或伪造动作状态。
+const {chromium}=require('playwright'),fs=require('fs');let browser;
+(async()=>{
+ const r={scope:'Natural guard pauses in isolated desktop Edge software WebGL',passes:[],failures:[],errors:[],cases:[]};const check=(n,c)=>(c?r.passes:r.failures).push(n);
+ browser=await chromium.launch({channel:'msedge',headless:true,args:['--enable-webgl','--use-angle=swiftshader']});const ctx=await browser.newContext({viewport:{width:1400,height:600}}),p=await ctx.newPage();p.on('pageerror',e=>r.errors.push(e.message));p.on('console',m=>{if(m.type()==='error')r.errors.push(m.text())});await p.goto('http://127.0.0.1:42819/');await p.waitForFunction(()=>window.__goblinState?.animation,null,{timeout:60000});
+ const cmd=c=>p.evaluate(c=>window.goblinQaCommand(JSON.stringify(c)),c),state=()=>p.evaluate(()=>window.__goblinState);await cmd({op:'motion_probe'});
+ const assets=(process.argv.find(a=>a.startsWith('--assets='))||'--assets=human,dwarf').split('=')[1].split(',');
+ for(const asset of assets){const type=asset==='elf_melee'?'elf':asset;
+  await cmd({op:'new',seed:908});await cmd({op:'clear'});await cmd({op:'time',value:30});await cmd({op:'move',x:400});await cmd({op:'spawn',type,side:1,x:900,guard:true,ammo:asset==='elf_melee'?0:6});await p.waitForTimeout(650);const rows=[],start=(await state()).water_time;
+  for(let i=0;i<260;i++){await p.waitForTimeout(45);const s=await state();rows.push(s);if(s.water_time-start>8)break;}
+  const bodies=rows.map(s=>s.motion.actors.filter(a=>a.requested&&a.scope.startsWith('world/enemy/')&&a.animation===asset+'/idle')),poses=bodies.flat();check(type+': full generated idle cycle appears during natural pauses',new Set(poses.map(a=>JSON.stringify(a.source))).size>=17);check(type+': one complete solid subject during every idle observation',bodies.filter(a=>a.length).every(a=>a.length===1&&a[0].alpha>.999&&a[0].tint_alpha>.999));check(type+': real patrol remains near its camp post',rows.every(s=>s.enemies.length===1&&Math.abs(s.enemies[0].x-900)<=56));check(type+': animation causes no coins or dialogs',rows.every(s=>s.gold===18&&s.modal===''));
+  await p.waitForFunction(asset=>window.__goblinState.motion.actors.some(a=>a.requested&&a.animation===asset+'/idle'),asset,{timeout:12000});await cmd({op:'freeze'});await p.screenshot({path:'qa/animation-v8/'+asset+'-idle-engine.png'});await p.waitForTimeout(220);const a=await state();await p.waitForTimeout(330);const b=await state();check(type+': pause freezes the current idle pose',a.water_time===b.water_time&&JSON.stringify(a.motion.actors.filter(x=>x.requested).map(x=>x.source))===JSON.stringify(b.motion.actors.filter(x=>x.requested).map(x=>x.source)));r.cases.push({type,asset,observed_poses:new Set(poses.map(a=>JSON.stringify(a.source))).size});
+ }
+ check('No runtime or shader errors',r.errors.length===0);fs.writeFileSync('qa/godot/v8-enemy-idle-'+assets.join('-')+'.json',JSON.stringify(r,null,2));await browser.close();console.log(JSON.stringify(r));process.exitCode=r.failures.length?1:0;
+})().catch(async e=>{console.error(e);if(browser)await browser.close();process.exitCode=1});

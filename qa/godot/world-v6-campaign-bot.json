@@ -1,0 +1,1068 @@
+{
+	"runs": [
+		{
+			"decisions": 821,
+			"hall_hp": 420.0,
+			"history": [
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 18,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -311.0,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 0,
+					"reserve": 0,
+					"scrap": 8,
+					"status": "playing",
+					"time": 0.1
+				},
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 8,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 273.599999999998,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 0,
+					"reserve": 0,
+					"scrap": 8,
+					"status": "playing",
+					"time": 60.1000000000006
+				},
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 24,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1375.72,
+					"kills": 0,
+					"phase": "黄昏",
+					"population": 6,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 5,
+					"status": "playing",
+					"time": 120.099999999997
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 2,
+					"enemies": 10,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 0,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -711.600000000005,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 4,
+					"status": "playing",
+					"time": 0.0999999999940542
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 2,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 3,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 164.79999999999,
+					"kills": 6,
+					"phase": "白天",
+					"population": 8,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 4,
+					"status": "playing",
+					"time": 60.0999999999946
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 2,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 13,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1526.82,
+					"kills": 6,
+					"phase": "黄昏",
+					"population": 9,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 14,
+					"status": "playing",
+					"time": 120.099999999992
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 3,
+					"enemies": 12,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 17,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -554.079999999996,
+					"kills": 6,
+					"phase": "白天",
+					"population": 9,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 0.099999999988114
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 3,
+					"enemies": 6,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 7,
+					"hero_hp": 99.1999999999999,
+					"hero_max_hp": 100.0,
+					"hero_x": 1531.5,
+					"kills": 14,
+					"phase": "白天",
+					"population": 11,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 60.0999999999887
+				},
+				{
+					"capacity": 40,
+					"captives": 3,
+					"day": 3,
+					"enemies": 6,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 4,
+					"hero_hp": 99.1999999999999,
+					"hero_max_hp": 100.0,
+					"hero_x": 288.740000000008,
+					"kills": 14,
+					"phase": "黄昏",
+					"population": 14,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 120.099999999986
+				},
+				{
+					"capacity": 40,
+					"captives": 3,
+					"day": 4,
+					"enemies": 14,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 39,
+					"hero_hp": 99.1999999999999,
+					"hero_max_hp": 100.0,
+					"hero_x": -946.159999999991,
+					"kills": 14,
+					"phase": "白天",
+					"population": 16,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 0.0999999999821739
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 4,
+					"enemies": 9,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 95.1999999999999,
+					"hero_max_hp": 100.0,
+					"hero_x": -749.839999999986,
+					"kills": 24,
+					"phase": "白天",
+					"population": 17,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 60.0999999999828
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 4,
+					"enemies": 6,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -223.959999999988,
+					"kills": 26,
+					"phase": "黄昏",
+					"population": 18,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 21,
+					"status": "playing",
+					"time": 120.09999999998
+				},
+				{
+					"capacity": 40,
+					"captives": 1,
+					"day": 5,
+					"enemies": 7,
+					"flags": {
+						"left": true,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -1283.15999999999,
+					"kills": 28,
+					"phase": "白天",
+					"population": 17,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 0.0999999999762338
+				},
+				{
+					"capacity": 40,
+					"captives": 1,
+					"day": 5,
+					"enemies": 5,
+					"flags": {
+						"left": true,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -370.099999999996,
+					"kills": 34,
+					"phase": "白天",
+					"population": 18,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 60.0999999999768
+				}
+			],
+			"last_destination": {},
+			"receipts": 0,
+			"roles": {
+				"brute": 3,
+				"hunter": 10,
+				"thief": 2,
+				"worker": 3
+			},
+			"runtime_ms": 3828,
+			"seed": 731,
+			"stats": {
+				"capacity": 40,
+				"captives": 3,
+				"day": 5,
+				"enemies": 5,
+				"flags": {
+					"left": true,
+					"right": true
+				},
+				"gold": 50,
+				"hero_hp": 100.0,
+				"hero_max_hp": 100.0,
+				"hero_x": -370.099999999996,
+				"kills": 34,
+				"phase": "白天",
+				"population": 18,
+				"prison_capacity": 3,
+				"reserve": 0,
+				"scrap": 37,
+				"status": "won",
+				"time": 101.299999999975
+			},
+			"tool_stock": {
+				"brute": 0,
+				"hunter": 0,
+				"thief": 0,
+				"worker": 0
+			}
+		},
+		{
+			"decisions": 318,
+			"hall_hp": 420.0,
+			"history": [
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 18,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -311.0,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 0,
+					"reserve": 0,
+					"scrap": 8,
+					"status": "playing",
+					"time": 0.1
+				},
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 6,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 270.299999999998,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 0,
+					"reserve": 0,
+					"scrap": 8,
+					"status": "playing",
+					"time": 60.1000000000006
+				},
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 16,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1374.3,
+					"kills": 0,
+					"phase": "黄昏",
+					"population": 6,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 5,
+					"status": "playing",
+					"time": 120.099999999997
+				},
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 2,
+					"enemies": 10,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 0,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -473.920000000002,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 7,
+					"status": "playing",
+					"time": 0.0999999999940542
+				},
+				{
+					"capacity": 20,
+					"captives": 1,
+					"day": 2,
+					"enemies": 6,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 2,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -1255.46000000001,
+					"kills": 6,
+					"phase": "白天",
+					"population": 9,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 7,
+					"status": "playing",
+					"time": 60.0999999999946
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 2,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 26,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -532.840000000004,
+					"kills": 6,
+					"phase": "黄昏",
+					"population": 10,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 7,
+					"status": "playing",
+					"time": 120.099999999992
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 3,
+					"enemies": 12,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 24,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -457.640000000004,
+					"kills": 6,
+					"phase": "白天",
+					"population": 10,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 14,
+					"status": "playing",
+					"time": 0.099999999988114
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 3,
+					"enemies": 6,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 15,
+					"hero_hp": 84.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1478.96,
+					"kills": 14,
+					"phase": "白天",
+					"population": 11,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 11,
+					"status": "playing",
+					"time": 60.0999999999887
+				},
+				{
+					"capacity": 40,
+					"captives": 3,
+					"day": 3,
+					"enemies": 6,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 9,
+					"hero_hp": 84.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 543.980000000007,
+					"kills": 14,
+					"phase": "黄昏",
+					"population": 13,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 11,
+					"status": "playing",
+					"time": 120.099999999986
+				},
+				{
+					"capacity": 40,
+					"captives": 3,
+					"day": 4,
+					"enemies": 14,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 7,
+					"hero_hp": 84.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 822.420000000015,
+					"kills": 14,
+					"phase": "白天",
+					"population": 15,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 0.0999999999821739
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 4,
+					"enemies": 8,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 78.540000000021,
+					"kills": 24,
+					"phase": "白天",
+					"population": 15,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 60.0999999999828
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 4,
+					"enemies": 5,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1281.22000000002,
+					"kills": 26,
+					"phase": "黄昏",
+					"population": 16,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 120.09999999998
+				},
+				{
+					"capacity": 40,
+					"captives": 1,
+					"day": 5,
+					"enemies": 7,
+					"flags": {
+						"left": true,
+						"right": false
+					},
+					"gold": 47,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 616.560000000032,
+					"kills": 30,
+					"phase": "白天",
+					"population": 17,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 0.0999999999762338
+				},
+				{
+					"capacity": 40,
+					"captives": 1,
+					"day": 5,
+					"enemies": 3,
+					"flags": {
+						"left": true,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -353.479999999972,
+					"kills": 34,
+					"phase": "白天",
+					"population": 18,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 25,
+					"status": "playing",
+					"time": 60.0999999999768
+				}
+			],
+			"last_destination": {
+				"id": 34,
+				"kind": "build",
+				"x": 1440.0
+			},
+			"receipts": 0,
+			"roles": {
+				"brute": 3,
+				"hunter": 11,
+				"thief": 1,
+				"worker": 3
+			},
+			"runtime_ms": 3470,
+			"seed": 123,
+			"stats": {
+				"capacity": 40,
+				"captives": 3,
+				"day": 5,
+				"enemies": 3,
+				"flags": {
+					"left": true,
+					"right": true
+				},
+				"gold": 50,
+				"hero_hp": 100.0,
+				"hero_max_hp": 100.0,
+				"hero_x": -264.179999999977,
+				"kills": 34,
+				"phase": "白天",
+				"population": 18,
+				"prison_capacity": 3,
+				"reserve": 0,
+				"scrap": 21,
+				"status": "won",
+				"time": 92.8999999999752
+			},
+			"tool_stock": {
+				"brute": 0,
+				"hunter": 0,
+				"thief": 0,
+				"worker": 0
+			}
+		},
+		{
+			"decisions": 297,
+			"hall_hp": 420.0,
+			"history": [
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 18,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -311.0,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 0,
+					"reserve": 0,
+					"scrap": 8,
+					"status": "playing",
+					"time": 0.1
+				},
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 10,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 270.299999999998,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 0,
+					"reserve": 0,
+					"scrap": 8,
+					"status": "playing",
+					"time": 60.1000000000006
+				},
+				{
+					"capacity": 20,
+					"captives": 0,
+					"day": 1,
+					"enemies": 4,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 25,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1374.3,
+					"kills": 0,
+					"phase": "黄昏",
+					"population": 6,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 5,
+					"status": "playing",
+					"time": 120.099999999997
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 2,
+					"enemies": 10,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 1,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -711.140000000005,
+					"kills": 0,
+					"phase": "白天",
+					"population": 6,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 4,
+					"status": "playing",
+					"time": 0.0999999999940542
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 2,
+					"enemies": 7,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 6,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1116.25999999999,
+					"kills": 6,
+					"phase": "白天",
+					"population": 7,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 4,
+					"status": "playing",
+					"time": 60.0999999999946
+				},
+				{
+					"capacity": 40,
+					"captives": 3,
+					"day": 2,
+					"enemies": 6,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 5,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 648.679999999999,
+					"kills": 6,
+					"phase": "黄昏",
+					"population": 8,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 11,
+					"status": "playing",
+					"time": 120.099999999992
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 3,
+					"enemies": 12,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 30,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -662.839999999997,
+					"kills": 6,
+					"phase": "白天",
+					"population": 10,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 0.099999999988114
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 3,
+					"enemies": 8,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 26,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 389.160000000009,
+					"kills": 14,
+					"phase": "白天",
+					"population": 12,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 60.0999999999887
+				},
+				{
+					"capacity": 40,
+					"captives": 3,
+					"day": 3,
+					"enemies": 8,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 20,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1039.60000000002,
+					"kills": 14,
+					"phase": "黄昏",
+					"population": 14,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 120.099999999986
+				},
+				{
+					"capacity": 40,
+					"captives": 3,
+					"day": 4,
+					"enemies": 14,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 16,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 1587.32000000003,
+					"kills": 14,
+					"phase": "白天",
+					"population": 15,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 0.0999999999821739
+				},
+				{
+					"capacity": 40,
+					"captives": 0,
+					"day": 4,
+					"enemies": 9,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -934.459999999969,
+					"kills": 24,
+					"phase": "白天",
+					"population": 16,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 60.0999999999828
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 4,
+					"enemies": 5,
+					"flags": {
+						"left": false,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 304.840000000039,
+					"kills": 26,
+					"phase": "黄昏",
+					"population": 18,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 17,
+					"status": "playing",
+					"time": 120.09999999998
+				},
+				{
+					"capacity": 40,
+					"captives": 1,
+					"day": 5,
+					"enemies": 8,
+					"flags": {
+						"left": true,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": 349.840000000038,
+					"kills": 26,
+					"phase": "白天",
+					"population": 18,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 15,
+					"status": "playing",
+					"time": 0.0999999999762338
+				},
+				{
+					"capacity": 40,
+					"captives": 2,
+					"day": 5,
+					"enemies": 1,
+					"flags": {
+						"left": true,
+						"right": false
+					},
+					"gold": 50,
+					"hero_hp": 100.0,
+					"hero_max_hp": 100.0,
+					"hero_x": -353.499999999969,
+					"kills": 34,
+					"phase": "白天",
+					"population": 18,
+					"prison_capacity": 3,
+					"reserve": 0,
+					"scrap": 39,
+					"status": "playing",
+					"time": 60.0999999999768
+				}
+			],
+			"last_destination": {
+				"kind": "collect",
+				"x": 1722.19999999995
+			},
+			"receipts": 0,
+			"roles": {
+				"brute": 3,
+				"hunter": 11,
+				"thief": 1,
+				"worker": 3
+			},
+			"runtime_ms": 3933,
+			"seed": 55,
+			"stats": {
+				"capacity": 40,
+				"captives": 3,
+				"day": 5,
+				"enemies": 1,
+				"flags": {
+					"left": true,
+					"right": true
+				},
+				"gold": 42,
+				"hero_hp": 100.0,
+				"hero_max_hp": 100.0,
+				"hero_x": 1693.10000000003,
+				"kills": 34,
+				"phase": "白天",
+				"population": 18,
+				"prison_capacity": 3,
+				"reserve": 0,
+				"scrap": 43,
+				"status": "won",
+				"time": 114.499999999974
+			},
+			"tool_stock": {
+				"brute": 0,
+				"hunter": 0,
+				"thief": 0,
+				"worker": 0
+			}
+		}
+	],
+	"scope": "Headless Godot model, real economy, one-coin contribution input every 0.2 seconds, no ads or resource injection. Bot is a test player, not browser/phone proof."
+}

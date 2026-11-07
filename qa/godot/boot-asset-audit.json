@@ -1,0 +1,44 @@
+{
+  "scope": "One decoded RGBA copy per runtime and boot PNG. Not process or GPU measurement.",
+  "assets": [
+    {
+      "asset": "ui_logo",
+      "width": 360,
+      "height": 260,
+      "rgba_bytes": 374400
+    },
+    {
+      "asset": "ui_bar",
+      "width": 330,
+      "height": 38,
+      "rgba_bytes": 50160
+    },
+    {
+      "asset": "ui_bar_fill",
+      "width": 496,
+      "height": 38,
+      "rgba_bytes": 75392
+    },
+    {
+      "asset": "ui_button",
+      "width": 379,
+      "height": 96,
+      "rgba_bytes": 145536
+    },
+    {
+      "asset": "ui_back",
+      "width": 423,
+      "height": 96,
+      "rgba_bytes": 162432
+    },
+    {
+      "asset": "sky_base",
+      "width": 960,
+      "height": 480,
+      "rgba_bytes": 1843200
+    }
+  ],
+  "boot_rgba_bytes": 2651120,
+  "conservative_runtime_plus_boot_rgba_bytes": 68028688,
+  "budget_paused_by_user": true
+}

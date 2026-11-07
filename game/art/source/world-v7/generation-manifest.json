@@ -1,0 +1,212 @@
+[
+  {
+    "name": "butterfly",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One small ochre and cream woodland butterfly seen from the side with both wings lifted above a tiny dark body, suitable for flying past flowers. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f6af9b95-d019-44ee-b7fa-0ed673375b41.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "cycle_dial",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One round medieval woodland astrolabe clock UI frame, rough warm wood outer rim and antique brass inner ring, few hand-painted carved tick marks, small leaf ornaments, large empty dark olive circular center for moving sun/moon and day numeral overlay. No writing, no numbers, no sun or moon painted in center. Front view flat. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-b2d4cf17-c21a-4053-a95d-27624127b94a.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "dwarf_dead",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. This same character lies motionless horizontally on the ground, arms relaxed, eyes closed, peaceful cartoon defeat pose. Both feet and head rest on the same ground plane. Keep the exact race, medieval clothing, proportions and palette of the character reference. NO NET, NO CAGE, NO ROPE, NO BLOOD. Weapons set aside or absent, hands not holding sword and shield together. Entire body visible, isolated static sprite. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-bd0df324-5da3-405e-9849-52cd35ad5291.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "dwarf_wounded",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. This same character has been knocked down but is alive. Lying horizontally on one side, knees slightly bent, propped weakly on one elbow, one free hand raised slightly, eyes open, tired pained expression. Keep the exact race, medieval clothing, proportions and palette of the character reference. NO NET, NO CAGE, NO ROPE, NO BLOOD. Weapons set aside or absent, hands not holding sword and shield together. Entire body visible, isolated static sprite. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-d595855f-b130-4aba-8744-0ca9143aafe8.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "elf_dead",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. This same character lies motionless horizontally on the ground, arms relaxed, eyes closed, peaceful cartoon defeat pose. Both feet and head rest on the same ground plane. Keep the exact race, medieval clothing, proportions and palette of the character reference. NO NET, NO CAGE, NO ROPE, NO BLOOD. Weapons set aside or absent, hands not holding sword and shield together. Entire body visible, isolated static sprite. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f56d31fb-7d9b-4131-b9b8-fda04078b5c6.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "elf_wounded",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. This same character has been knocked down but is alive. Lying horizontally on one side, knees slightly bent, propped weakly on one elbow, one free hand raised slightly, eyes open, tired pained expression. Keep the exact race, medieval clothing, proportions and palette of the character reference. NO NET, NO CAGE, NO ROPE, NO BLOOD. Weapons set aside or absent, hands not holding sword and shield together. Entire body visible, isolated static sprite. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-80d50914-fbe4-42fa-b0a6-58744f9cdf79.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "empty_tool_brute",
+    "prompt": "Edit this exact medieval flat hand-painted goblin tool stall. Keep its tall distinctive profession emblem at the TOP, the same posts, canopy, overall silhouette, palette and ground contact. Remove ALL sale tools and portable items from counter and lower racks. Leave exactly five EMPTY visible hooks along the counter front so paid tools can later be displayed by the game. Keep the profession emblem above as a fixed sign, not an inventory item. No seller or character. Broad matte flat painted patches, minimal volume, clean irregular contours, no pixel art, no text, transparent background.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-2124040d-ae95-4e34-b11b-375dd33dd757.png",
+    "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+  },
+  {
+    "name": "empty_tool_hunter",
+    "prompt": "Edit this exact medieval flat hand-painted goblin tool stall. Keep its tall distinctive profession emblem at the TOP, the same posts, canopy, overall silhouette, palette and ground contact. Remove ALL sale tools and portable items from counter and lower racks. Leave exactly five EMPTY visible hooks along the counter front so paid tools can later be displayed by the game. Keep the profession emblem above as a fixed sign, not an inventory item. No seller or character. Broad matte flat painted patches, minimal volume, clean irregular contours, no pixel art, no text, transparent background.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-a5d36837-24a0-491d-8baa-4c147d5c8456.png",
+    "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+  },
+  {
+    "name": "empty_tool_thief",
+    "prompt": "Edit this exact medieval flat hand-painted goblin tool stall. Keep its tall distinctive profession emblem at the TOP, the same posts, canopy, overall silhouette, palette and ground contact. Remove ALL sale tools and portable items from counter and lower racks. Leave exactly five EMPTY visible hooks along the counter front so paid tools can later be displayed by the game. Keep the profession emblem above as a fixed sign, not an inventory item. No seller or character. Broad matte flat painted patches, minimal volume, clean irregular contours, no pixel art, no text, transparent background.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-67510a22-ba57-478a-9bcc-a8e5a8482401.png",
+    "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+  },
+  {
+    "name": "empty_tool_worker",
+    "prompt": "Edit this exact medieval flat hand-painted goblin tool stall. Keep its tall distinctive profession emblem at the TOP, the same posts, canopy, overall silhouette, palette and ground contact. Remove ALL sale tools and portable items from counter and lower racks. Leave exactly five EMPTY visible hooks along the counter front so paid tools can later be displayed by the game. Keep the profession emblem above as a fixed sign, not an inventory item. No seller or character. Broad matte flat painted patches, minimal volume, clean irregular contours, no pixel art, no text, transparent background.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-7027bc1c-a48f-4112-823c-72a54b447c67.png",
+    "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+  },
+  {
+    "name": "forest_bird",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One tiny forest swallow in side view flying to the right with wings stretched upward, muted charcoal and cream, clear simple flat silhouette. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-b874f069-2175-49cf-841f-1eac16ab843d.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "forest_shrub",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. A single low clump of wild forest ferns, broad olive leaves and two small ochre mushrooms, grounded roots. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-da8d7fbf-ffce-4a8b-b012-b2b7e012686a.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "gold_mine",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One crooked goblin gold-mine entrance in low gray rocks, timber bracing, ore trolley sitting on rails, hanging old lantern, large gold nugget crest above. No characters. Grounded side elevation. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-9629e7ab-e93f-4ff0-8707-ca50cf464b62.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "human_dead",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. This same character lies motionless horizontally on the ground, arms relaxed, eyes closed, peaceful cartoon defeat pose. Both feet and head rest on the same ground plane. Keep the exact race, medieval clothing, proportions and palette of the character reference. NO NET, NO CAGE, NO ROPE, NO BLOOD. Weapons set aside or absent, hands not holding sword and shield together. Entire body visible, isolated static sprite. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-766ced64-8753-41cb-bbb5-796a3e231261.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "human_wounded",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. This same character has been knocked down but is alive. Lying horizontally on one side, knees slightly bent, propped weakly on one elbow, one free hand raised slightly, eyes open, tired pained expression. Keep the exact race, medieval clothing, proportions and palette of the character reference. NO NET, NO CAGE, NO ROPE, NO BLOOD. Weapons set aside or absent, hands not holding sword and shield together. Entire body visible, isolated static sprite. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ae89abe6-4375-42e0-8ab0-24580d92750f.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "icon_play",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One simple ivory triangular play symbol carved on a small dark brown wooden token, game rewarded-video icon, no lettering. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c2fe75af-bf5e-4da5-9024-484bf91998e8.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "icon_restart",
+    "prompt": "A simple ivory curved circular arrow, arrow tip broad and clear, medieval hand-painted game UI symbol. Flat matte painted patches, clean irregular contours, no 3D, no pixel art, no glow, no lettering. Transparent background, one isolated icon.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-8849c8e9-bc66-42d7-9850-ced392f5d440.png",
+    "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+  },
+  {
+    "name": "icon_rotate",
+    "prompt": "A simple cream silhouette of a landscape phone-shaped rectangle with a curved arrow around it, indicating device rotation. No text, no screen contents, game UI symbol. Flat matte painted patches, clean irregular contours, no 3D, no pixel art, no glow, no lettering. Transparent background, one isolated icon.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-976478c8-c387-4f52-956a-ac07b04beaf8.png",
+    "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+  },
+  {
+    "name": "icon_run",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One rough medieval brown leather boot in a running pose with two small cream motion marks. Isolated clear simple game UI symbol, no character. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-5c3053b4-2860-4e2e-998b-46e308732e5e.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "icon_whip",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One simple curved brown leather whip with a short dark wooden handle, clear coiled S silhouette. Isolated game UI symbol, no hands or characters. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-69c6ced7-119c-4414-8270-6ae74c431683.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "mushroom_farm",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One goblin mushroom-growing shed, crooked timber canopy, wicker baskets, three big dull plum mushrooms growing from raised beds, a very large mushroom crest high on the roof. No characters. Grounded side elevation. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-d95c904c-f44d-482f-b4b9-79b0181f3afc.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "price_board",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One small blank irregular wooden signboard hanging by two short cords from a crooked stake. Broad clean empty dark matte face for overlaying icons and numbers. No symbols or lettering. Side view. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-4f13ffb9-035b-4911-b3fe-6ff05fb76af0.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "purse",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One open-topped empty medieval soft brown leather coin purse for a mobile HUD. Front view, wide open oval mouth so coins can be placed visibly inside, broad rounded pouch below, red drawstring knotted on right, large empty dark interior. No coins, no writing. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-2a637e3b-3de8-4ea7-a960-732ee59ef960.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "stream_crossing",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. A small woodland brook crossing with an old flat wooden footbridge, side-view 2D game terrain patch. Horizontal walking deck across center, creek visible behind and flowing diagonally below toward foreground, mossy grass banks and rounded pebbles, no sky, no mountains, no characters. The creek reaches the bottom edge of the patch. Transparent background. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-3651f41b-e661-4fe4-9139-29b08cbd35af.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "tree_oak",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One ancient broad oak tree, crooked trunk and huge irregular muted olive leafy crown, visible roots on a flat ground line. Entire tree visible. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-d926449e-ed48-4d36-ab29-c470a852de2c.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "tree_pine",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One tall sparse pine tree with asymmetrical matte blue-green tiered boughs and visible bare lower trunk and roots. Entire tree visible. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-864332f1-2b92-4358-b105-1764ac60cf7b.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "tree_willow",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One weeping willow with sparse long drooping teal-green leaves and forked crooked brown trunk, roots visible. Entire tree visible. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-33faeb99-b8b6-4825-a487-9641afaf277e.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "tribal_banner",
+    "prompt": "Keep this exact isolated medieval goblin tribal war banner, pole, rope and ground stones, same shape and red skull emblem. Remove the entire brown smoky halo, ambient glow, haze, vignette, dark backdrop and all diffuse shadow outside the object. Crisp clean transparent alpha outside cloth/pole/rocks with no aura at all. Flatten the object rendering to broad simple matte hand-painted cartoon patches, minimal volume, restrained close-valued colors, clean irregular contours. Not pixel art. No text. Isolated game sprite on actual transparent background.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-38de0a1b-d0c8-406e-9b35-6a27fc195069.png",
+    "review": "accepted: inspected on opaque green background; clean alpha without diffuse aura, planted stones and medieval rope pole, matte black cloth with rusty red goblin skull, no lettering, friendly banner differs from enemy blue flag"
+  },
+  {
+    "name": "ui_action_ring",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One round game touch button frame, irregular warm wooden rim with thin worn brass edge, empty dark green circular center. Entirely blank, no hand, no words, no symbols. Flat front view. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-b5427954-5861-4de1-ac51-ac457f1bfd13.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  },
+  {
+    "name": "woodcut_camp",
+    "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One goblin logging workshop, stacked rough logs, chopping block, heavy axe embedded in it, crooked small roof, a very large crossed axe emblem high above. No characters. Grounded side elevation. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+    "method": "built-in image_gen",
+    "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-25562883-7fba-4a4c-a3c3-a49aa5702c4d.png",
+    "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+  }
+]

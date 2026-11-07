@@ -1,0 +1,131 @@
+{
+  "scope": "Eleven rank idle loops, isolated desktop Edge software WebGL",
+  "passes": [
+    "worker: breathing loop advances",
+    "worker: one opaque body, no transition clone",
+    "worker: feet remain planted",
+    "worker: proximity target retains its outline",
+    "worker: visual loop has no coin or dialog side effects",
+    "worker: pause freezes current pose",
+    "hunter: breathing loop advances",
+    "hunter: one opaque body, no transition clone",
+    "hunter: feet remain planted",
+    "hunter: proximity target retains its outline",
+    "hunter: visual loop has no coin or dialog side effects",
+    "hunter: pause freezes current pose",
+    "brute: breathing loop advances",
+    "brute: one opaque body, no transition clone",
+    "brute: feet remain planted",
+    "brute: proximity target retains its outline",
+    "brute: visual loop has no coin or dialog side effects",
+    "brute: pause freezes current pose",
+    "thief: breathing loop advances",
+    "thief: one opaque body, no transition clone",
+    "thief: feet remain planted",
+    "thief: proximity target retains its outline",
+    "thief: visual loop has no coin or dialog side effects",
+    "thief: pause freezes current pose",
+    "worker_2: breathing loop advances",
+    "worker_2: one opaque body, no transition clone",
+    "worker_2: feet remain planted",
+    "worker_2: proximity target retains its outline",
+    "worker_2: visual loop has no coin or dialog side effects",
+    "worker_2: pause freezes current pose",
+    "hunter_2: breathing loop advances",
+    "hunter_2: one opaque body, no transition clone",
+    "hunter_2: feet remain planted",
+    "hunter_2: proximity target retains its outline",
+    "hunter_2: visual loop has no coin or dialog side effects",
+    "hunter_2: pause freezes current pose",
+    "brute_2: breathing loop advances",
+    "brute_2: one opaque body, no transition clone",
+    "brute_2: feet remain planted",
+    "brute_2: proximity target retains its outline",
+    "brute_2: visual loop has no coin or dialog side effects",
+    "brute_2: pause freezes current pose",
+    "thief_2: breathing loop advances",
+    "thief_2: one opaque body, no transition clone",
+    "thief_2: feet remain planted",
+    "thief_2: proximity target retains its outline",
+    "thief_2: visual loop has no coin or dialog side effects",
+    "thief_2: pause freezes current pose",
+    "worker_3: breathing loop advances",
+    "worker_3: one opaque body, no transition clone",
+    "worker_3: feet remain planted",
+    "worker_3: proximity target retains its outline",
+    "worker_3: visual loop has no coin or dialog side effects",
+    "worker_3: pause freezes current pose",
+    "brute_3: breathing loop advances",
+    "brute_3: one opaque body, no transition clone",
+    "brute_3: feet remain planted",
+    "brute_3: proximity target retains its outline",
+    "brute_3: visual loop has no coin or dialog side effects",
+    "brute_3: pause freezes current pose",
+    "thief_3: breathing loop advances",
+    "thief_3: one opaque body, no transition clone",
+    "thief_3: feet remain planted",
+    "thief_3: proximity target retains its outline",
+    "thief_3: visual loop has no coin or dialog side effects",
+    "thief_3: pause freezes current pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "name": "worker",
+      "source_frames": 19,
+      "decoded_bytes": 8849856
+    },
+    {
+      "name": "hunter",
+      "source_frames": 19,
+      "decoded_bytes": 6714560
+    },
+    {
+      "name": "brute",
+      "source_frames": 19,
+      "decoded_bytes": 8394560
+    },
+    {
+      "name": "thief",
+      "source_frames": 19,
+      "decoded_bytes": 12661696
+    },
+    {
+      "name": "worker_2",
+      "source_frames": 19,
+      "decoded_bytes": 10277440
+    },
+    {
+      "name": "hunter_2",
+      "source_frames": 19,
+      "decoded_bytes": 11038160
+    },
+    {
+      "name": "brute_2",
+      "source_frames": 19,
+      "decoded_bytes": 11503760
+    },
+    {
+      "name": "thief_2",
+      "source_frames": 19,
+      "decoded_bytes": 14617696
+    },
+    {
+      "name": "worker_3",
+      "source_frames": 19,
+      "decoded_bytes": 12084240
+    },
+    {
+      "name": "brute_3",
+      "source_frames": 19,
+      "decoded_bytes": 10847200
+    },
+    {
+      "name": "thief_3",
+      "source_frames": 19,
+      "decoded_bytes": 14885440
+    }
+  ]
+}

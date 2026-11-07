@@ -1,0 +1,22 @@
+{
+  "status": "pending-user-style-check",
+  "mode": "built-in imagegen, precise object edit",
+  "runtime_modified": false,
+  "rejected_round1_images": 6,
+  "planned_visual_groups": 20,
+  "first_image": {
+    "actual": {
+      "file": "references/01-worker-stall-runtime.png",
+      "width": 1100,
+      "height": 550,
+      "sha256": "6eeb2f35fc9bbe2b358b238f060034b295dd2b94d49de3049522ddb165bbc545"
+    },
+    "edited": {
+      "file": "01-worker-table-v1.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "8399c862665c9bd0fa8c1876e083dd9f8e2179efc8dd018aa2b0effe060e21dc"
+    }
+  },
+  "archive_hashes_unchanged": true
+}

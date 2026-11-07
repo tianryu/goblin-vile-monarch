@@ -1,0 +1,46 @@
+{
+  "checkpoint": "starter-20261103",
+  "url": "http://127.0.0.1:42828/",
+  "notTapTapUploadPackage": true,
+  "published": false,
+  "menuImplemented": false,
+  "realPhone": false,
+  "realAds": false,
+  "sourceHashes": {
+    "cocos/assets/scripts/MonarchGame.ts": "ac9abc5040b05385022c2a4733cdb8f9a917b07c04e8da3930acddacfc2ae4ad",
+    "cocos/assets/scripts/model/CampaignRules.ts": "4bbb47d5f8328c7f6ee50a045849c2a4e6614a28d52ef2d185fe56d1a94156ae",
+    "cocos/assets/scripts/model/CampaignUpgrade.ts": "e8740c5ec05134b8d55fa13e6c4d904b9e5209e727e4e736594e994643a7fd4b",
+    "cocos/assets/scripts/model/GameModel.ts": "7beb75db52af05c8b2fe1399752e0b195f5c2d778362d50f6454a10d7c0908b4",
+    "cocos/assets/scripts/model/PrisonLayout.ts": "81e0aace8d2f32de57f3c267fc9abe24767ccf155625e83af32c7467f089f5fa",
+    "cocos/assets/scripts/model/Progression.ts": "d78ec19e329dce493e13c11a3c5c70f128bbd39971e3e9b20d0758f0e02d1005",
+    "cocos/assets/scripts/model/Rules.ts": "01d649cde70f8e94bae83e3850aac1b7776fb6cc62030c23d810864d4ad605de",
+    "cocos/assets/scripts/model/State.ts": "aea211f9cbbd72180c8d5f24f76fbc45045a986f6f3fcced336585e30e02bd7d",
+    "cocos/assets/scripts/model/WorldUpgrade.ts": "402b8974f1889247b0179e8ba26d1e309d38c6387c8283db0581684513f7ef0d",
+    "cocos/assets/scripts/platform/Platform.ts": "e1e747e715c7064584fe0b7bcf5044e13908b6cebf7f95d5d57f56ab8845df2d",
+    "cocos/assets/scripts/view/ArtBank.ts": "867f467a3615b8e3e0849e6c1b32d7a69e24e32ca0b002213b723f272c4bbe28",
+    "cocos/assets/scripts/view/Controls.ts": "0eb757fac85d104432a93eeaeaeff1785546a86125cb9769dc41e81d1a6fb2a0",
+    "cocos/assets/scripts/view/CutoutMotion.ts": "ec25359dc45655124ad569fb3ccdf203433840aeb5ebd934f83e1b571cdcf172",
+    "cocos/assets/scripts/view/GameView.ts": "003c13a664088ce49003bd7624be201703e40a4431ed4a0a86d9fcdd4281f4ed",
+    "cocos/assets/scripts/view/Painter.ts": "62ffbf9e6278f3b6336bf068672c1142e4c87867c30842d9497b5d310a822178",
+    "cocos/assets/scripts/view/Transitions.ts": "3627c294c0f2a0533756fbd4f762871bee1919356eef166eddbf8697e61c8f23"
+  },
+  "evidence": [
+    "qa/cocos/starter-browser.json",
+    "qa/cocos/starter-acceptance.log",
+    "qa/cocos/current-performance-20261103.json",
+    "qa/cocos/build-starter.log"
+  ],
+  "packageSmoke": {
+    "checkpoint": "starter-20261103",
+    "errors": [],
+    "failedRequests": [],
+    "realPhone": false,
+    "started": true,
+    "movement": true,
+    "saveReload": true,
+    "savedX": 616.9999999999998
+  },
+  "archive": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\release\\cocos-starter-20261103-r1.zip",
+  "archiveBytes": 25731987,
+  "archiveSha256": "589bfbd367025aae009d2370f6d1a51e616801edf66d022ee00fb244216429f3"
+}

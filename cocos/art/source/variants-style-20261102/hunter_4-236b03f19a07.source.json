@@ -1,0 +1,15 @@
+{
+  "assetName": "hunter_4",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f835d838-af67-4409-8bf5-4cbbc3734bd3.png",
+  "prompt": "Use case: precise-object-edit. Make the THIRD, BLUE equipment quality of this exact static goblin costume sprite. Preserve same exact face, ears, crooked nose, eye and grin, green skin, red scarf tails and skirt, body proportions, pose and feet line. All helmet, body, shoulder, forearm and shin armor becomes a clearly BLUE set: broad matte medium cobalt-blue shapes with darker navy-blue single flat patches and a few pale blue flat trim panels. Helmet has a larger angular blue central crest and blue side cheek guards, entire face and pointed ears remain visible, NO crown. Widen the blue shoulder plates a little for a strong higher-tier silhouette, but do not make a different muscular character. Bow becomes an unmistakably BLUE COMPOSITE BOW: wider blue metal limbs with simple pale-blue end plates, slightly more pronounced angular tip curves, dark leather central grip, same string and hand placement. The head and bow must be the most obvious blue identification marks at 74px high. Keep input low-detail flat matte hand-painted nonpixel cartoon style, no glow, no magic particles, no gradients, no shiny 3D surfaces, no fine scratches or rivets. Single whole right-facing character, genuine transparent background with clean stable edges, no stray colored pixels or loose specks, no arrow, no labels, no added outline.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "quality": "blue",
+  "request": "F38 blue armor with obvious blue helmet crest and blue reinforced bow",
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "74像素下蓝色甲、大蓝盔脊与蓝色复合弓明显区别于白铁；脸、耳和红衣保持，待引擎验收",
+  "reviewStatus": "approved-source-pending-engine"
+}

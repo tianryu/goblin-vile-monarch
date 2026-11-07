@@ -1,0 +1,105 @@
+{
+  "engine": "Cocos Creator 3.8.8",
+  "target": "taptap-minigame",
+  "context": {
+    "id": 2,
+    "kind": "hall",
+    "x": 400,
+    "name": "哥布林主厅",
+    "description": "壮大部落，开放新建筑",
+    "actions": [
+      {
+        "key": "upgrade:2:",
+        "targetId": 2,
+        "type": "upgrade",
+        "cost": 24,
+        "icon": "hammer",
+        "disabled": false
+      },
+      {
+        "key": "whip:44",
+        "targetId": 44,
+        "type": "whip",
+        "cost": 0,
+        "icon": "icon_whip"
+      }
+    ],
+    "level": 1
+  },
+  "population": 4,
+  "size": [
+    1280,
+    600
+  ],
+  "nodes": 162,
+  "logs": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Init Base: 7.64404296875 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Init Infrastructure: 1668.427001953125 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Init SubSystem: 25.678955078125 ms"
+    },
+    {
+      "type": "log",
+      "text": "Cocos Creator v3.8.8"
+    },
+    {
+      "type": "log",
+      "text": "Using custom pipeline: Builtin"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Init Project: 17.886962890625 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "LoadScene db://assets/scenes/Main.scene: 5.20703125 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "InitScene: 0.095947265625 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "AttachPersist: 0.050048828125 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "AutoRelease: 0.060791015625 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Destroy: 0.235107421875 ms"
+    },
+    {
+      "type": "timeEnd",
+      "text": "Activate: 2.4580078125 ms"
+    },
+    {
+      "type": "log",
+      "text": "Success to load scene: db://assets/scenes/Main.scene"
+    },
+    {
+      "type": "info",
+      "text": "[Monarch] production bitmaps ready"
+    },
+    {
+      "type": "info",
+      "text": "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: http://127.0.0.1:42821/assets/resources/native/1e/1e10525f-c06a-41ee-a771-698f967ec6f0.6707b/GoblinHand.ttf"
+    },
+    {
+      "type": "info",
+      "text": "[Monarch] Cocos game ready, TapTap minigame target"
+    }
+  ]
+}

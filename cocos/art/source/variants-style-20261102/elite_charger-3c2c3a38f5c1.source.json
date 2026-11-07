@@ -1,0 +1,13 @@
+{
+  "name": "elite_charger",
+  "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/human.png",
+  "prompt": "Create ONE full-body left-facing 2D medieval fantasy enemy sprite on genuine transparent background. Match the reference EXACT flat matte hand-painted cartoon game style: broad simple muted color shapes, irregular clean dark contour, no texture, no gradients, no 3D, no lighting, no glow, no text, no outside colored outline. Entire weapon and feet inside image with padding. Weapon correctly held, shield separate hand. Not a sprite sheet. A heavy human assault knight on foot, no horse, blue-and-cream surcoat, broad iron pauldrons, small round shoulder shield and long heavy lance held forward low in two hands, open-faced helmet, strong charging-ready stance. Very simple flat shapes.",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-eaa347d3-f248-412f-a3fc-ba34a8d0d03a.png",
+  "generator": "builtin-imagegen",
+  "edge": "enemy",
+  "facing": -1,
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "源图与90像素缩图已检查。延续原人类/矮人/精灵/法师平面哑光轮廓，武器握法正确，无多余飞箭，无裁断；待引擎验收。"
+}

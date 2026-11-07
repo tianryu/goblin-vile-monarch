@@ -1,0 +1,13 @@
+{
+  "assetName": "ram",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-ffe281a9-79fe-4a5a-bf20-db2cfb4ed172.png",
+  "prompt": "ONE independent medieval BATTERING RAM siege-machine sprite for the attached flat hand-painted goblin game. Strict side elevation facing RIGHT. A compact low wooden cart on exactly TWO visible full round wooden wheels with their bottoms on one baseline. Thin triangular timber frame supporting a suspended horizontal thick log by two ropes, log's iron ram head points RIGHT. Small dull dark-red hide canopy over top, NO stone wall, no people or goblins, no baked smoke or flames, no ground or cast shadow. Clear functional construction, wheels visibly connected to axle, no floating pieces. Broad matte painted color patches and irregular simple contour like reference, not pixel art, no 3D model shading, no glossy texture. Complete transparent cutout with margins, one static object, no labels.",
+  "edge": "building",
+  "reviewed": false,
+  "review": "与当前实机基准画风不一致，不得作为合格成品素材采用。",
+  "generator": "builtin-imagegen",
+  "facing": 1,
+  "priorStructureReview": "冲车双轮接地，悬木、绳索和前端铁头连接正确。",
+  "styleRejected": true,
+  "styleApproved": false
+}

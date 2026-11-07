@@ -1,0 +1,497 @@
+extends Control
+
+const Model=preload("res://game/scripts/model.gd")
+const Art=preload("res://game/scripts/art_bank.gd")
+const Store=preload("res://game/scripts/save_store.gd")
+const World=preload("res://game/scripts/world.gd")
+const UiSkin=preload("res://game/scripts/ui_skin.gd")
+const Menus=preload("res://game/scripts/menu_builder.gd")
+const MobileUi=preload("res://game/scripts/mobile_ui.gd")
+const Sounds=preload("res://game/scripts/sound_bank.gd")
+const Joystick=preload("res://game/scripts/horizontal_joystick.gd")
+
+var skin
+var mobile
+var menu_controller
+var selections={}
+var guide_page=0
+var guide_return="pause"
+var key_action_held=false
+var action_interval=0.0
+var action_consumed=false
+var pending_shop={}
+var sound
+var theft_side=-1
+var context_bg
+var toast_bg
+var action_caption
+var toast_key=""
+var toast_deadline=0
+var panel_feedback_sequence=0
+var model=Model.new()
+var art=Art.new()
+var store=Store.new()
+var world
+var view
+var backdrop
+var hud
+var coins
+var health
+var supplies
+var population
+var clock
+var hint
+var objective
+var toast
+var stamina
+var day_progress
+var joystick
+var run_button
+var action_button
+var pause_button
+var panel_layer
+var panel_box
+var panel_content
+var panel_title
+var panel_feedback
+var panel_close
+var rotate_cover
+var modal=""
+var modal_object=0
+var joystick_finger=-999
+var run_finger=-999
+var action_finger=-999
+var mouse_move=false
+var target_lock={}
+var accumulator=0.0
+var autosave=0.0
+var refresh_timer=0.0
+var qa_callback
+var qa_stress_mode=false
+var qa_next_publish_msec=0
+var rectangles={}
+var ad_callback
+var ad_inflight=false
+var ad_requested_kind=""
+var ad_request_serial=0
+var ad_deadline=0
+
+func _ready():
+	var loaded=store.read_into(model)
+	sound=Sounds.new();sound.model=model;add_child(sound)
+	_build_theme()
+	mobile=MobileUi.new(self)
+	menu_controller=Menus.new(self)
+	_build_world()
+	_build_hud()
+	_build_panel()
+	_build_rotation()
+	get_viewport().size_changed.connect(_layout)
+	_layout()
+	_setup_qa()
+	if not loaded:open_panel("welcome")
+	_refresh()
+
+func _build_theme():
+	skin=UiSkin.new(art)
+	theme=skin.theme()
+
+func _build_world():
+	# Draw sprites directly to the native 2D canvas. No 480px render texture upscaling.
+	world=World.new();world.model=model;world.art=art;add_child(world)
+
+func label(text_value,parent,font_size=19):
+	var l=Label.new();l.text=text_value;l.add_theme_font_size_override("font_size",font_size)
+	l.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	parent.add_child(l);return l
+
+func button(text_value,parent,callback,key=""):
+	var b=Button.new();b.text=text_value;b.custom_minimum_size=Vector2(0,64);b.focus_mode=Control.FOCUS_NONE;b.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	parent.add_child(b);b.pressed.connect(func():sound.play("click");callback.call())
+	if key!="":b.set_meta("qa_key",key)
+	return b
+
+func _build_hud():
+	mobile.build_hud()
+
+func _build_panel():
+	mobile.build_panel()
+
+func _build_rotation():
+	rotate_cover=ColorRect.new();rotate_cover.color=Color(0.06,0.11,0.08,0.82);rotate_cover.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);add_child(rotate_cover)
+	var logo=skin.picture(rotate_cover,"ui_joystick_base",Rect2());logo.set_anchors_and_offsets_preset(Control.PRESET_CENTER);logo.offset_left=-225;logo.offset_top=-110;logo.offset_right=225;logo.offset_bottom=110
+	var l=label("请横屏游玩",rotate_cover,52);mobile.white(l);l.set_anchors_and_offsets_preset(Control.PRESET_CENTER);l.offset_left=-460;l.offset_right=460;l.offset_top=-260;l.offset_bottom=-180;l.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;l.vertical_alignment=VERTICAL_ALIGNMENT_CENTER
+	var help=label("旋转屏幕后继续征程",rotate_cover,42);mobile.white(help);help.set_anchors_and_offsets_preset(Control.PRESET_CENTER);help.offset_left=-460;help.offset_right=460;help.offset_top=180;help.offset_bottom=250;help.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;help.vertical_alignment=VERTICAL_ALIGNMENT_CENTER
+
+func _layout():
+	var s=get_viewport_rect().size
+	var inset=Vector4.ZERO
+	if OS.has_feature("web"):
+		var raw=JavaScriptBridge.eval("(()=>{let e=document.getElementById('goblin-safe-area');if(!e){e=document.createElement('div');e.id='goblin-safe-area';e.style.cssText='position:fixed;visibility:hidden;pointer-events:none;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)';document.body.appendChild(e)}const c=getComputedStyle(e);return JSON.stringify([parseFloat(c.paddingLeft)||0,parseFloat(c.paddingTop)||0,parseFloat(c.paddingRight)||0,parseFloat(c.paddingBottom)||0,innerHeight])})()",true)
+		var values=JSON.parse_string(str(raw))
+		if values is Array and values.size()==5:
+			var ratio=s.y/maxf(1,float(values[4]));inset=Vector4(values[0]*ratio,values[1]*ratio,values[2]*ratio,values[3]*ratio)
+	mobile.layout(inset)
+	rotate_cover.visible=s.x<s.y
+	model.pause("portrait",rotate_cover.visible)
+	_clear_input()
+	if modal!="":open_panel(modal,modal_object)
+
+func _clear_input():
+	joystick_finger=-999;run_finger=-999;action_finger=-999;mouse_move=false;target_lock={}
+	model.input_axis=0;model.input_run=false
+	key_action_held=false;action_interval=0;action_consumed=false
+	pending_shop={}
+	model.cancel_payment()
+	if joystick!=null:joystick.set_axis(0)
+
+func _notification(what):
+	if what==NOTIFICATION_APPLICATION_FOCUS_OUT or what==NOTIFICATION_APPLICATION_PAUSED:
+		if model!=null:model.pause("background",true);store.write(model)
+		_clear_input()
+	elif what==NOTIFICATION_APPLICATION_FOCUS_IN or what==NOTIFICATION_APPLICATION_RESUMED:
+		if model!=null:model.pause("background",false)
+		_clear_input()
+
+func _input(event):
+	if event is InputEventMouse and event.device==InputEvent.DEVICE_ID_EMULATION:return
+	if event is InputEventKey and not event.echo:
+		if event.pressed and event.keycode==KEY_ESCAPE:
+			if modal!="":handle_back()
+			else:open_panel("pause")
+		if event.keycode in [KEY_E,KEY_SPACE]:
+			if event.pressed and modal=="":key_action_held=true;_begin_action()
+			elif not event.pressed:key_action_held=false;target_lock={};action_consumed=false
+	if modal!="" or rotate_cover.visible:return
+	if event is InputEventScreenTouch:
+		if event.pressed and not event.canceled:_press_touch(event.index,event.position)
+		else:
+			var canceled=event.canceled
+			if OS.has_feature("web"):
+				canceled=canceled or bool(JavaScriptBridge.eval("(()=>{const s=window.GoblinInputCancelled;if(!s)return false;const id="+str(event.index)+";const hit=s.has(id);s.delete(id);return hit})()",true))
+			_release_touch(event.index,canceled)
+			if canceled:model.cancel_payment()
+	elif event is InputEventScreenDrag:
+		if event.index==joystick_finger:_drag_joystick(event.position)
+	elif event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_LEFT:
+		if event.pressed:_press_touch(-1,event.position)
+		else:_release_touch(-1)
+	elif event is InputEventMouseMotion and joystick_finger==-1:_drag_joystick(event.position)
+
+func _press_touch(finger,pos):
+	if joystick.get_global_rect().has_point(pos) and joystick_finger==-999:
+		joystick_finger=finger;_drag_joystick(pos)
+	elif run_button.get_global_rect().has_point(pos) and run_finger==-999:run_finger=finger;model.input_run=true
+	elif action_button.is_visible_in_tree() and action_button.get_global_rect().has_point(pos) and action_finger==-999:
+		action_finger=finger;_begin_action()
+
+func _release_touch(finger,canceled=false):
+	if finger==joystick_finger:joystick_finger=-999;model.input_axis=0;joystick.set_axis(0)
+	if finger==run_finger:run_finger=-999;model.input_run=false
+	if finger==action_finger:
+		action_finger=-999;target_lock={};action_consumed=false
+		if not pending_shop.is_empty():
+			var next=pending_shop.duplicate();pending_shop={}
+			var b=model.by_id(model.state.buildings,next.get("object_id",0))
+			if not canceled and not b.is_empty() and abs(model.state.hero.x-model.describe_building(b).x)<=86 and model.state.hero.fly<=3:open_panel(next.shop,next.get("object_id",0))
+			get_viewport().set_input_as_handled()
+
+func _begin_action():
+	target_lock=model.find_target().duplicate(true);action_interval=0.18;action_consumed=false
+	if target_lock.is_empty():action_consumed=true;return
+	_do_action()
+
+func _drag_joystick(pos):
+	var dx=(pos.x-joystick.get_global_rect().get_center().x)/40.0
+	model.input_axis=0.0 if abs(dx)<0.18 else clampf(dx,-1,1)
+	joystick.set_axis(model.input_axis)
+
+func _do_action():
+	if model.paused() or action_consumed:return
+	var result=model.contribute(target_lock)
+	if result.get("shop","")!="":
+		if action_finger!=-999:pending_shop=result.duplicate()
+		else:open_panel(result.shop,result.get("object_id",0))
+	if not result.get("payment",false) or result.get("completed",false) or not result.get("ok",false):action_consumed=true
+	_save();_refresh()
+
+func _process(delta):
+	if ad_inflight and Time.get_ticks_msec()>ad_deadline:_on_ad_result([],ad_request_serial)
+	if joystick_finger==-999 and modal=="" and not model.paused():
+		model.input_axis=float(int(Input.is_physical_key_pressed(KEY_D) or Input.is_physical_key_pressed(KEY_RIGHT))-int(Input.is_physical_key_pressed(KEY_A) or Input.is_physical_key_pressed(KEY_LEFT)))
+	if run_finger==-999 and modal=="":model.input_run=Input.is_physical_key_pressed(KEY_SHIFT)
+	if (action_finger!=-999 or key_action_held) and not action_consumed and modal=="":
+		action_interval-=delta
+		if action_interval<=0:_do_action();action_interval=0.18
+	accumulator+=minf(delta,0.1)
+	while accumulator>=1.0/30.0:
+		world.capture_previous();model.tick(1.0/30.0);accumulator-=1.0/30.0
+	world.interpolation=accumulator*30.0
+	for b in [action_button,run_button]:
+		var pressed=(action_finger!=-999 or key_action_held) if b==action_button else model.input_run
+		b.scale=b.scale.lerp(Vector2.ONE*(0.94 if pressed else 1.0),1-exp(-delta*22))
+	autosave+=delta;refresh_timer+=delta
+	if autosave>=5 and model.dirty:_save();autosave=0
+	if refresh_timer>0.08:
+		_refresh();refresh_timer=0
+		if OS.has_feature("web") and OS.is_debug_build():
+			if not qa_stress_mode or Time.get_ticks_msec()>=qa_next_publish_msec:
+				_publish_qa();qa_next_publish_msec=Time.get_ticks_msec()+500
+	if model.state.status!="playing" and modal not in ["result","ledger","guide","credits"]:open_panel("result")
+
+func _save():
+	if store.write(model):model.dirty=false
+	else:model.notify(store.last_error)
+
+func _refresh():
+	hud.visible=modal==""
+	# The purse stays compact even with unlimited ad reserves. Exact reserves are in the merchant and ledger.
+	coins.text=str(model.state.gold)+("+" if model.global_data.reserve>0 else "")
+	health.text=str(int(ceil(model.state.hero.hp)))+"/100"
+	health.add_theme_color_override("font_color",Color("ec987d") if model.state.hero.hp<=30 else Color("f4e7c7"))
+	population.text=str(model.state.units.size())+"/"+str(model.capacity())
+	clock.text="第"+str(model.state.day)+"日  "+model.phase();day_progress.value=model.state.time
+	var target=model.find_target();var available=not target.is_empty()
+	action_button.visible=available;action_caption.visible=available;hint.visible=available
+	action_caption.text=target.get("action","投币");action_button.disabled=target.get("disabled",false)
+	hint.text=target.get("label","")
+	if target.get("cost",0)>0:
+		var paid=int(model.state.get("payment",{}).get("paid",0))
+		action_caption.text="投币 "+str(paid)+"/"+str(target.cost)
+		if target.get("scrap",0)>0:hint.text+=" "+str(target.scrap)+"废铁"
+	toast.text=""
+	if not model.events.is_empty():
+		var latest=model.events[-1];var key=str(latest.get("id",latest.at))+latest.text
+		if key!=toast_key:
+			toast_key=key;toast_deadline=Time.get_ticks_msec()+3800
+			if "不足" in latest.text or "需要" in latest.text:sound.play("error",-22)
+			elif "监牢" in latest.text or "活口已" in latest.text:sound.play("cage",-23)
+			elif "完成" in latest.text or "到手" in latest.text or "军旗" in latest.text:sound.play("confirm",-24)
+		if Time.get_ticks_msec()<toast_deadline:toast.text=latest.text
+	toast_bg.visible=toast.text!="" and modal=="";toast.visible=toast_bg.visible
+	panel_feedback.text="广告播放中，完成后领取奖励" if ad_inflight else toast.text
+	if not ad_inflight and (model.events.is_empty() or int(model.events[-1].get("id",0))<=panel_feedback_sequence):panel_feedback.text=""
+	if modal in ["welcome","result","guide","credits"]:panel_feedback.text=""
+	stamina.max_value=model.MOUNTS[model.state.hero.mount].stamina;stamina.value=model.state.hero.stamina
+	if not store.last_error.is_empty():
+		if modal=="":toast.text=store.last_error;toast_bg.show();toast.show()
+		else:panel_feedback.text=store.last_error
+
+func short_number(value):
+	if value>=100000000:return str(int(value/100000000))+"亿"
+	if value>=10000:return str(int(value/10000))+"万"
+	return str(value)
+
+func stage_hint():
+	var s=model.state
+	if s.flags.left and s.flags.right:return "联军退散，森林归部落！"
+	if s.flags.left or s.flags.right:return "最后一面军旗  "+("前往东营" if s.flags.left else "前往西营")
+	var west=0;var east=0
+	for e in s.enemies:
+		if e.mode=="active" and not e.get("guard",false):
+			if e.side<0:west+=1
+			else:east+=1
+	if west+east>0:return "联军来袭  西侧"+str(west)+"  东侧"+str(east)
+	if s.total<18:return "第一步  修筑两侧路障，守住大厅"
+	if s.recruited<=6 and s.day<=2:return "森林营地招募爪牙  工具摊分配职业"
+	if model.building("prison").level==0 and s.kills>0:return "建造监牢  工匠会拖回战场上的活口"
+	if model.building("den").level==0 and s.day>=2:return "修建盗贼窝  偷走联军物资再出征"
+	return "征服西营与东营，把两面军旗带回大厅"
+
+func close_panel():
+	if ad_inflight:return
+	if modal=="welcome":model.state.tutorial=1
+	modal="";panel_layer.hide();model.pause("panel",false);_clear_input();_save();_refresh()
+
+func handle_back():
+	if ad_inflight:return
+	if modal=="welcome":guide_page=0;guide_return="welcome";open_panel("guide")
+	elif modal=="guide":open_panel(guide_return)
+	elif modal=="result":open_panel("ledger")
+	elif modal=="credits":open_panel("pause")
+	elif modal=="ledger" and model.state.status!="playing":open_panel("result")
+	else:close_panel()
+
+func paragraph(text_value):
+	var l=label(text_value,panel_content,19);l.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;l.custom_minimum_size.x=600
+	return l
+
+func panel_action(text_value,callback,key="",disabled=false):
+	var b=button(text_value,panel_content,callback,key);b.disabled=disabled;return b
+
+func after_action(callback,rebuild=true):
+	callback.call();_save();_refresh()
+	if rebuild:open_panel(modal,modal_object)
+
+func open_panel(kind,object_id=0):
+	if kind=="guide" and modal!="guide":guide_return=modal if modal!="" else "pause";guide_page=0
+	if kind!=modal:panel_feedback_sequence=model.event_sequence
+	_clear_input();modal=kind;modal_object=object_id;model.pause("panel",true);panel_layer.show()
+	_save()
+	for child in panel_content.get_children():panel_content.remove_child(child);child.queue_free()
+	mobile.clear_actions();menu_controller.populate(kind,object_id)
+	if ad_inflight:
+		var controls=[];_append_controls(panel_layer,controls)
+		for c in controls:
+			if c is Button:c.disabled=true
+	_refresh()
+
+func request_ad(kind):
+	if ad_inflight:return
+	# Live completion is only accepted from the platform adapter, never a timer or close button.
+	if not OS.has_feature("web") or not JavaScriptBridge.eval("typeof window.GoblinRewardedAds === 'object' && window.GoblinRewardedAds.ready === true",true):
+		model.notify("广告暂时不可用，可以继续游玩。");_refresh()
+		return
+	ad_inflight=true;model.pause("ad",true);_clear_input()
+	panel_feedback.text="广告播放中，完成后领取奖励"
+	var pending_controls=[];_append_controls(panel_layer,pending_controls)
+	for c in pending_controls:
+		if c is Button:c.disabled=true
+	ad_requested_kind=kind
+	ad_request_serial+=1;ad_deadline=Time.get_ticks_msec()+180000
+	ad_callback=JavaScriptBridge.create_callback(_on_ad_result.bind(ad_request_serial))
+	var window=JavaScriptBridge.get_interface("window");window.goblinAdResult=ad_callback
+	JavaScriptBridge.eval("try{window.GoblinRewardedAds.show("+JSON.stringify(kind)+",window.goblinAdResult)}catch(e){window.goblinAdResult(JSON.stringify({completed:false}))}",true)
+
+func _on_ad_result(args,serial=-1):
+	if not ad_inflight or serial!=ad_request_serial:return
+	ad_inflight=false;model.pause("ad",false)
+	var parser=JSON.new();var data=null
+	if args.size()>0 and parser.parse(str(args[0]))==OK:data=parser.data
+	if data is Dictionary and data.get("completed",false) and data.get("receipt","")!="" and data.get("kind","")==ad_requested_kind:
+		model.grant_reward(ad_requested_kind,data.receipt);_save()
+	else:model.notify("未完成观看，没有发放奖励")
+	ad_requested_kind=""
+	if modal!="":open_panel(modal,modal_object)
+	else:_save();_refresh()
+
+func _setup_qa():
+	if not OS.has_feature("web") or not OS.is_debug_build():return
+	qa_callback=JavaScriptBridge.create_callback(_qa_command)
+	var window=JavaScriptBridge.get_interface("window")
+	window.goblinQaCommand=qa_callback
+
+func _qa_command(args):
+	if args.size()==0:return
+	var command=JSON.parse_string(str(args[0]))
+	if not command is Dictionary:return
+	match command.get("op",""):
+		"move":model.state.hero.x=float(command.x);world.camera_x=model.state.hero.x
+		"close":close_panel()
+		"new":qa_stress_mode=false;model.new_campaign(int(command.get("seed",42)),false);close_panel()
+		"time":model.state.time=float(command.value)
+		"reward":model.grant_reward(command.kind,command.receipt)
+		"open":open_panel(command.kind,command.get("id",0))
+		"resources":model.state.gold=int(command.get("gold",50));model.state.scrap=int(command.get("scrap",100))
+		"guide_page":
+			if modal!="guide":open_panel("guide")
+			guide_page=clampi(int(command.get("page",0)),0,3);open_panel("guide")
+		"freeze":model.pause("qa_scene",bool(command.get("value",true)))
+		"levels":
+			var rank=clampi(int(command.get("rank",2)),1,3);model.hall().level=rank
+			for u in model.state.units:
+				if u.role!="idle":model.promote_unit(u,rank)
+			for b in model.state.buildings:
+				if b.kind in ["wall","tower","net","rock"]:
+					b.level=mini(rank,int(model.upgrade_info(b).max));b.charges=1
+			if command.get("prison",false):model.building("prison").level=rank
+		"look":
+			close_panel()
+			if command.has("mount"):
+				if not command.mount in model.global_data.mounts:model.global_data.mounts.append(command.mount)
+				model.equip_mount(command.mount)
+			model.state.hero.face=int(command.get("face",1));model.state.hero.fly=float(command.get("fly",0))
+			model.state.hero.hp=clampf(float(command.get("hp",model.state.hero.hp)),0,100)
+			model.pause("qa_scene",true)
+		"advance":
+			for i in range(int(float(command.get("seconds",1))/0.05)):model.tick(0.05)
+		"outcome":
+			model.state.status="won" if command.get("win",true) else "lost";open_panel("result")
+		"chief_attack":
+			close_panel();model.state.enemies.clear();model.state.units.clear();model.pause("qa_scene",false)
+			var foe=model.spawn_enemy(command.get("type","human"),1,model.state.hero.x+15);foe.cooldown=0
+		"hall_ruin":model.hall().hp=0
+		"night_scene":
+			model.new_campaign(712,false);close_panel();model.state.enemies.clear();model.state.units.clear()
+			model.state.day=4;model.state.time=150;model.state.wave_day=4;model.state.hero.x=1490;world.camera_x=1490;model.hall().level=2
+			for b in model.state.buildings:
+				if b.kind=="wall" and b.x==1540:b.level=2;b.hp=240;b.max_hp=240
+				if b.kind=="tower" and b.x==1440:b.level=2
+				if b.kind=="net" and b.x==1660:b.level=2;b.charges=1
+			for i in range(5):model.add_unit("hunter",1415+i*15)
+			for i in range(2):model.add_unit("brute",1490+i*22)
+			for i in range(6):model.spawn_enemy(["human","elf","dwarf"][i%3],1,1740+i*55)
+			for u in model.state.units:
+				if u.role=="hunter":model._hunter(u,0.0)
+			model.pause("qa_scene",true)
+		"scene":
+			close_panel();model.state.enemies.clear();model.state.time=35;model.state.hero.x=280;world.camera_x=280
+			model.building("prison").level=2;model.building("den").level=1
+			model.state.captives=[{"id":9001,"type":"human"},{"id":9002,"type":"dwarf"},{"id":9003,"type":"elf"}]
+			model.state.trader.phase="staying";model.state.trader.x=model.CORE_SITES.trader_stop;model.state.trader.until=99999
+			var worker=model.state.units[0];worker.x=30;worker.face=1;worker.cargo={"kind":"captive","type":"human"}
+			var greedy=model.state.units[1];greedy.x=360;greedy.hidden=5
+			model.pause("qa_scene",true)
+			if command.get("interactive",false):worker.cargo={};greedy.hidden=0;model.pause("qa_scene",false)
+		"design_world":
+			_qa_command([JSON.stringify({"op":"scene"})]);hud.hide();panel_layer.hide()
+		"unfreeze":model.pause("qa_scene",false)
+		"stress":
+			qa_stress_mode=true
+			model.new_campaign(42819,false);close_panel();model.hall().level=3;model.hall().hp=1000000;model.hall().max_hp=1000000
+			model.state.hero.x=-350;world.camera_x=-350;model.state.time=140;model.state.wave_day=1
+			while model.state.units.size()<60:model.add_unit("hunter" if model.state.units.size()%2 else "worker",-350+randf_range(-330,330))
+			for u in model.state.units:u.hp=1000000
+			model.state.hero.hp=1000000
+			for i in range(40):
+				var enemy=model.spawn_enemy(["human","dwarf","elf"][i%3],-1 if i%2 else 1,-350+randf_range(-390,390));enemy.hp=1000000;enemy.max_hp=1000000
+	_refresh();_publish_qa()
+
+func _publish_qa():
+	var data=model.stats();data.modal=modal;data.paused=model.paused();data.axis=model.input_axis;data.run=model.input_run;data.visible_objects=world.visible_objects;data.decoded_art_bytes=art.decoded_bytes;data.target=model.find_target();data.rects={}
+	data.engine_static_bytes=Performance.get_monitor(Performance.MEMORY_STATIC)
+	data.engine_process_seconds=Performance.get_monitor(Performance.TIME_PROCESS)
+	data.engine_draw_calls=Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)
+	if qa_stress_mode:
+		data.qa_telemetry_interval_ms=500
+		JavaScriptBridge.eval("window.__goblinState="+JSON.stringify(data),true)
+		return
+	data.mount=model.state.hero.mount;data.stamina=model.state.hero.stamina;data.fly=model.state.hero.fly;data.trader_cargo=model.state.trader.get("cargo",[])
+	data.boosts=model.global_data.boosts.duplicate()
+	var clip=panel_content.get_parent().get_global_rect();data.content_clip=[clip.position.x,clip.position.y,clip.size.x,clip.size.y]
+	data.payment=model.state.get("payment",{}).duplicate();data.hero_x=model.state.hero.x;data.hero_face=model.state.hero.face
+	data.effects=world.effects.size();data.coin_slots=world.slot_count;data.ghost_key=world.ghost_key;data.native_canvas=true
+	data.tool_stock=model.state.tool_stock.duplicate();data.roles={};data.ui=[];data.cards=[]
+	data.sites=[]
+	for b in model.state.buildings:
+		var mode="built"
+		if b.level==0 and b.kind in ["wall","tower","net","rock","prison","den"]:mode="ghost" if world._site_ghost_active(b) else ("construction" if not b.job.is_empty() else "sign")
+		data.sites.append({"id":b.id,"kind":b.kind,"role":b.get("role",""),"x":b.x,"level":b.level,"hp":b.get("hp",0),"mode":mode,"height":world.building_height(b),"job":b.job})
+	data.hud_health=health.text
+	data.gear=[]
+	for u in model.state.units:data.gear.append({"role":u.role,"rank":u.get("rank",1),"x":u.x,"on_tower":u.get("on_tower",0)})
+	for u in model.state.units:data.roles[u.role]=int(data.roles.get(u.role,0))+1
+	var controls=[joystick,run_button,action_button,pause_button]
+	_append_controls(panel_layer,controls)
+	for c in controls:
+		if c is Control and c.is_visible_in_tree():
+			if c.has_meta("qa_card"):
+				var slots={}
+				for name in ["CardArt","CardTitle","CardDetail","CardPrice"]:
+					var part=c.get_node_or_null(name)
+					if part!=null:
+						var rect=part.get_global_rect();slots[name]=[rect.position.x,rect.position.y,rect.size.x,rect.size.y]
+				data.cards.append(slots)
+			var key="joystick" if c==joystick else str(c.get_meta("qa_key",""))
+			if key!="":var r=c.get_global_rect();data.rects[key]=[r.position.x,r.position.y,r.size.x,r.size.y]
+			if c is Button:
+				var r=c.get_global_rect();data.ui.append({"key":key,"text":c.text,"disabled":c.disabled,"footer":c.has_meta("footer_slot") or c==panel_close,"rect":[r.position.x,r.position.y,r.size.x,r.size.y]})
+	data.viewport=[get_viewport_rect().size.x,get_viewport_rect().size.y]
+	data.hero_anchor=[world.sx(model.state.hero.x),world.ground+6-float(model.state.hero.fly)*world.scale_factor]
+	data.daylight=world.daylight;data.water_time=world.elapsed
+	JavaScriptBridge.eval("window.__goblinState="+JSON.stringify(data),true)
+
+func _append_controls(parent,list):
+	for child in parent.get_children():
+		list.append(child)
+		_append_controls(child,list)

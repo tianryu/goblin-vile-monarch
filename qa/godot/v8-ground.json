@@ -1,0 +1,17 @@
+{
+  "source": "game\\art\\source\\animation-v8\\land-flat.png",
+  "source_sha256": "c5fff106c9ff0d823391a65e4fff7998c77dc33be0fb898375dfca59440dcbd9",
+  "method": "Independent AI flat path; shared crop/resize only. No column warp.",
+  "source_crop": [
+    0,
+    296,
+    2170,
+    460
+  ],
+  "grass_edge_range": [
+    1,
+    9
+  ],
+  "constant_walk_height": 8,
+  "output": "land-level-v8.png"
+}

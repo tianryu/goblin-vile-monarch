@@ -1,0 +1,11 @@
+{
+  "scope": "Environment cloth and foliage in isolated desktop Edge software WebGL",
+  "passes": [
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "hall1/wind: visible real-map fixture exists"
+  ],
+  "errors": [],
+  "cases": []
+}

@@ -1,0 +1,46 @@
+{
+  "scope": "Worker lash, overstun, independent recovery and enemy-caused death in isolated desktop Edge software WebGL, synthetic touch",
+  "passes": [
+    "1: a real lash plays multiple recoil poses",
+    "1: recoil stays on one opaque body with planted feet",
+    "1: hidden coins are collected once through world pickup",
+    "1: pause freezes stun, pose and resources",
+    "1: recovery returns to walking with the same live identity",
+    "1: all reaction clips keep a fixed shared ground anchor",
+    "1: no additional hidden income, ad or dialog during reactions",
+    "-1: a real lash plays multiple recoil poses",
+    "-1: hidden coins are collected once through world pickup",
+    "-1: pause freezes stun, pose and resources",
+    "-1: recovery returns to walking with the same live identity",
+    "-1: all reaction clips keep a fixed shared ground anchor",
+    "Enemy death keeps original unit identity for one falling corpse",
+    "Dead body plays one fall then holds a still final pose",
+    "Fallen corpse is reflected with the same non-looping motion",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "1: four actual lashes trigger a single fall",
+    "1: the fallen living goblin holds the last pose instead of looping",
+    "1: separate generated getup plays through recovery",
+    "-1: recoil stays on one opaque body with planted feet",
+    "-1: four actual lashes trigger a single fall",
+    "-1: the fallen living goblin holds the last pose instead of looping",
+    "-1: separate generated getup plays through recovery",
+    "-1: no additional hidden income, ad or dialog during reactions"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "side": 1,
+      "hit": 5,
+      "fall": 0,
+      "getup": 0
+    },
+    {
+      "side": -1,
+      "hit": 5,
+      "fall": 0,
+      "getup": 0
+    }
+  ]
+}

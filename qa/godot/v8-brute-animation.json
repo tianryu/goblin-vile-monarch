@@ -1,0 +1,94 @@
+{
+  "scope": "Three ranks of generated melee attacks during actual stand-off combat in isolated desktop Edge software WebGL",
+  "passes": [
+    "brute: real melee shows complete anticipation strike and recovery",
+    "brute: exactly one opaque goblin body",
+    "brute: fighters keep a visible contact gap",
+    "brute: damage progresses without duplicated coin or kill settlement",
+    "brute: pause freezes pose and damage",
+    "brute: opposite target flips the same attack body",
+    "brute_2: real melee shows complete anticipation strike and recovery",
+    "brute_2: exactly one opaque goblin body",
+    "brute_2: fighters keep a visible contact gap",
+    "brute_2: damage progresses without duplicated coin or kill settlement",
+    "brute_2: pause freezes pose and damage",
+    "brute_2: opposite target flips the same attack body",
+    "brute_3: real melee shows complete anticipation strike and recovery",
+    "brute_3: exactly one opaque goblin body",
+    "brute_3: fighters keep a visible contact gap",
+    "brute_3: damage progresses without duplicated coin or kill settlement",
+    "brute_3: pause freezes pose and damage",
+    "brute_3: opposite target flips the same attack body",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "name": "brute",
+      "source_frames": 15,
+      "seen_source_indices": [
+        20,
+        24,
+        28,
+        30,
+        54,
+        0,
+        4,
+        8,
+        12,
+        14,
+        18,
+        26,
+        2,
+        16,
+        10
+      ]
+    },
+    {
+      "name": "brute_2",
+      "source_frames": 17,
+      "seen_source_indices": [
+        30,
+        34,
+        36,
+        40,
+        48,
+        54,
+        0,
+        10,
+        14,
+        18,
+        22,
+        28,
+        6,
+        32,
+        38,
+        12,
+        26
+      ]
+    },
+    {
+      "name": "brute_3",
+      "source_frames": 16,
+      "seen_source_indices": [
+        32,
+        36,
+        38,
+        44,
+        48,
+        0,
+        12,
+        16,
+        20,
+        24,
+        30,
+        40,
+        54,
+        8,
+        28,
+        34
+      ]
+    }
+  ]
+}

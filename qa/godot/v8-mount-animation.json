@@ -1,0 +1,83 @@
+{
+  "scope": "Generated mount walks, runs and bat flight in isolated desktop Edge software WebGL",
+  "passes": [
+    "rider_boar/walk: requested clip is installed",
+    "rider_boar/walk: full generated cycle advances",
+    "rider_boar/walk: monarch and mount stay one opaque subject",
+    "rider_boar/walk: terrain anchor is flat",
+    "rider_boar/walk: no extra coin transactions or dialogs",
+    "rider_boar/walk: opposite direction flips the same complete body",
+    "rider_boar/walk: pause freezes current pose",
+    "rider_lizard/walk: requested clip is installed",
+    "rider_lizard/walk: full generated cycle advances",
+    "rider_lizard/walk: monarch and mount stay one opaque subject",
+    "rider_lizard/walk: terrain anchor is flat",
+    "rider_lizard/walk: no extra coin transactions or dialogs",
+    "rider_lizard/walk: opposite direction flips the same complete body",
+    "rider_lizard/walk: pause freezes current pose",
+    "rider_lizard/run: requested clip is installed",
+    "rider_lizard/run: full generated cycle advances",
+    "rider_lizard/run: monarch and mount stay one opaque subject",
+    "rider_lizard/run: terrain anchor is flat",
+    "rider_lizard/run: no extra coin transactions or dialogs",
+    "rider_lizard/run: opposite direction flips the same complete body",
+    "rider_lizard/run: pause freezes current pose",
+    "rider_wolf/walk: requested clip is installed",
+    "rider_wolf/walk: full generated cycle advances",
+    "rider_wolf/walk: monarch and mount stay one opaque subject",
+    "rider_wolf/walk: terrain anchor is flat",
+    "rider_wolf/walk: no extra coin transactions or dialogs",
+    "rider_wolf/walk: opposite direction flips the same complete body",
+    "rider_wolf/walk: pause freezes current pose",
+    "rider_wolf/run: requested clip is installed",
+    "rider_wolf/run: full generated cycle advances",
+    "rider_wolf/run: monarch and mount stay one opaque subject",
+    "rider_wolf/run: terrain anchor is flat",
+    "rider_wolf/run: no extra coin transactions or dialogs",
+    "rider_wolf/run: opposite direction flips the same complete body",
+    "rider_wolf/run: pause freezes current pose",
+    "rider_bat/run: requested clip is installed",
+    "rider_bat/run: full generated cycle advances",
+    "rider_bat/run: monarch and mount stay one opaque subject",
+    "rider_bat/run: terrain anchor is flat",
+    "rider_bat/run: actual low flight is active",
+    "rider_bat/run: no extra coin transactions or dialogs",
+    "rider_bat/run: opposite direction flips the same complete body",
+    "rider_bat/run: pause freezes current pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "id": "rider_boar/walk",
+      "source_frames": 27,
+      "decoded_bytes": 15124656
+    },
+    {
+      "id": "rider_lizard/walk",
+      "source_frames": 28,
+      "decoded_bytes": 20423360
+    },
+    {
+      "id": "rider_lizard/run",
+      "source_frames": 27,
+      "decoded_bytes": 20691344
+    },
+    {
+      "id": "rider_wolf/walk",
+      "source_frames": 27,
+      "decoded_bytes": 27916688
+    },
+    {
+      "id": "rider_wolf/run",
+      "source_frames": 26,
+      "decoded_bytes": 20198096
+    },
+    {
+      "id": "rider_bat/run",
+      "source_frames": 14,
+      "decoded_bytes": 31307648
+    }
+  ]
+}

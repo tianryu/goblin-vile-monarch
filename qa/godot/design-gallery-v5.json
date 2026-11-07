@@ -1,0 +1,193 @@
+{
+  "scope": "Local design gallery and paired screenshot links. Not a phone test.",
+  "pairs": 23,
+  "sources": [
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/world.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/coin-ghost-empty.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/welcome.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-welcome.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/tools.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-tools.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/gold.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-gold.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/army.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-army.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/mount.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-mount.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/prison.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-prison.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/trader.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-trader.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/steal.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-steal.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/rally.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-rally.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/pause.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-pause.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/guide-1.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-guide.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/guide-2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-guide-2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/guide-3.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-guide-3.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/guide-4.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-guide-4.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/ledger.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-ledger.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/credits.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-credits.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/restart.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-restart.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/victory.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-victory.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/defeat.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/960-defeat.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/loading.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/release-loading.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/error.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/release-error.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/art/design/interaction-v5/rotate.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42817/qa/interaction-v5/rotate.png",
+      "status": 200
+    }
+  ],
+  "url": "http://127.0.0.1:42817/art/design/interaction-v5/index.html",
+  "errors": [],
+  "ok": true
+}

@@ -1,0 +1,38 @@
+{
+  "checkpoint": "calendar-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "first-two-camps-are-tents-without-walls-or-towers",
+      "pass": true
+    },
+    {
+      "name": "late-camps-have-layered-walls-and-real-multilevel-tower-crews",
+      "pass": true
+    },
+    {
+      "name": "day-thirty-has-seventy-four-and-two-engines-even-at-scout-progress",
+      "pass": true
+    },
+    {
+      "name": "field-casualties-do-not-drain-core-garrisons-and-survive-reload",
+      "pass": true
+    },
+    {
+      "name": "adjacent-port-retains-expanded-world-and-connected-scenery",
+      "pass": true
+    },
+    {
+      "name": "real-input-payment-refund-and-worker-construction-still-work",
+      "pass": true
+    },
+    {
+      "name": "mobile-multitouch-run-and-pause-freeze",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "passed": 7
+}

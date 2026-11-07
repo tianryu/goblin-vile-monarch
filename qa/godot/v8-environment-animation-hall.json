@@ -1,0 +1,20 @@
+{
+  "scope": "Environment cloth and foliage in isolated desktop Edge software WebGL",
+  "passes": [
+    "hall1/wind: complete wind cycle advances",
+    "hall1/wind: one fixed placement per object",
+    "hall1/wind: source base stays fixed within one source pixel",
+    "hall1/wind: no coin or dialog side effects",
+    "hall1/wind: pause freezes the current wind pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "id": "hall1/wind",
+      "position": -160,
+      "source_frames": 18
+    }
+  ]
+}

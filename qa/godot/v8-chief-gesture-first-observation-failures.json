@@ -1,0 +1,1202 @@
+{
+  "scope": "Chief gesture and rank2 recoil, desktop Edge software WebGL with actual contextual touch input",
+  "passes": [
+    "1: pause holds chief arm and rank2 recoil together",
+    "1: rider and mount stay one solid inseparable subject",
+    "1: chief retains the fixed walk plane",
+    "1: worker retains the fixed walk plane",
+    "1: one successful lash pays hidden coins once",
+    "1: moving cancels gesture and resumes actual gait",
+    "1: second lash cannot create hidden money again",
+    "-1: pause holds chief arm and rank2 recoil together",
+    "-1: rider and mount stay one solid inseparable subject",
+    "-1: chief retains the fixed walk plane",
+    "-1: worker retains the fixed walk plane",
+    "-1: one successful lash pays hidden coins once",
+    "-1: moving cancels gesture and resumes actual gait",
+    "-1: second lash cannot create hidden money again",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "1: real lash shows the generated seated gesture",
+    "1: real lash shows the rank2 recoil and recovery",
+    "1: chief faces the actual selected goblin",
+    "-1: real lash shows the generated seated gesture",
+    "-1: real lash shows the rank2 recoil and recovery",
+    "-1: chief faces the actual selected goblin"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "side": 1,
+      "chief_poses": 5,
+      "rank2_poses": 5,
+      "samples": [
+        {
+          "time": 1.15548518518519,
+          "gold": 25,
+          "pose": 0.346666666666667,
+          "chief": [
+            {
+              "alpha": 1,
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                444.731262207031,
+                246.25,
+                -79.40625,
+                71.5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                736,
+                330,
+                231,
+                208
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                445.793884277344,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.30088518518519,
+          "gold": 25,
+          "pose": 0.28,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                229,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                445.793884277344,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.38978518518519,
+          "gold": 25,
+          "pose": 0.213333333333333,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                445.793884277344,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                272,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.46087407407407,
+          "gold": 25,
+          "pose": 0.113333333333333,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                445.793884277344,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                296,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.4830962962963,
+          "gold": 25,
+          "pose": 0.113333333333333,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                445.793884277344,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                296,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.58525185185185,
+          "gold": 25,
+          "pose": 0.0133333333333334,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                687,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                447.445678710938,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                264,
+                684,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.66355185185185,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.591064453125,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                396,
+                684,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.78511851851852,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.053924560547,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                132,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.83036094276094,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                432.248901367188,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                132,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.90765185185185,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                427.456878662109,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                264,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "chief_poses": 3,
+      "rank2_poses": 4,
+      "samples": [
+        {
+          "time": 3.59851851851852,
+          "gold": 25,
+          "pose": 0.38,
+          "chief": [
+            {
+              "alpha": 1,
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.862487792969,
+                246.25,
+                79.40625,
+                71.5
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                736,
+                330,
+                231,
+                208
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                469.697784423828,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.7346074074074,
+          "gold": 25,
+          "pose": 0.28,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                229,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                469.697784423828,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.84775185185185,
+          "gold": 25,
+          "pose": 0.113333333333333,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                469.697784423828,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                408,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.92904814814815,
+          "gold": 25,
+          "pose": 0.0800000000000001,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                469.697784423828,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                296,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 4.03258148148148,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                475.519989013672,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 4.11518148148148,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                480.641204833984,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                132,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 4.18828148148148,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                485.173400878906,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                264,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 4.26328148148148,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                672,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                489.823394775391,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                264,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 4.34557239057239,
+          "gold": 25,
+          "pose": 0,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                896,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                494.925445556641,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                396,
+                855,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

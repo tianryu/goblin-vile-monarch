@@ -1,0 +1,13 @@
+{
+  "name": "wall5",
+  "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/wall3.png",
+  "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. FIFTH tier goblin defensive barrier: a massive dark blue-gray IRON PLATE barricade on short rough stone footing, heavy riveted interlocking metal panels, reinforced metal gate, blunt jagged iron spikes and wide diagonal iron braces. Almost entirely metal, little exposed wood. No modern military equipment.",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-cfb7e783-fec2-42b7-b1b0-b30c104f7cad.png",
+  "generator": "builtin-imagegen",
+  "edge": "building",
+  "facing": 1,
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "按最新木构到砖石到金属要求检查12张源图及缩图：材质、轮廓与部件均有变化，保持原平面哑光手绘风格，无背景、断边或文字；待引擎验收。"
+}

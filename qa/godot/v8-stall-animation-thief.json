@@ -1,0 +1,17 @@
+{
+  "scope": "Generated flexible cloth on the real thief stall, isolated desktop Edge software WebGL",
+  "passes": [
+    "Full original fabric sequence plays",
+    "Stall keeps one unchanged world rectangle",
+    "Original-coordinate foot bounds stay fixed within one source pixel",
+    "Wind does not change currency or tool stock",
+    "Pause freezes fabric pose",
+    "A real coin purchase adds exactly one displayed tool",
+    "Proximity glow follows the animated stall",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "observed_source_frames": 19,
+  "observed_game_seconds": 4.8446
+}

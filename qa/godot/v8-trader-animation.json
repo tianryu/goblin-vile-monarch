@@ -1,0 +1,18 @@
+{
+  "scope": "Medieval trader actual arrival, bag gesture and departure in isolated desktop Edge software WebGL",
+  "passes": [
+    "Arrival uses a complete generated walking cycle",
+    "The actual trader approaches the camp stop",
+    "Exactly one opaque merchant body",
+    "At the stop he raises his own closed bag and blinks",
+    "Stationary feet keep one fixed placement",
+    "Showing a bag never awards coins or sells captives",
+    "Pause holds the merchant gesture",
+    "Departure flips the same body and resumes walking",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "walk_frames": 24,
+  "trade_frames": 19
+}

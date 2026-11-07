@@ -1,0 +1,377 @@
+{
+  "scope": "V8 representative sequences and flat walk plane in isolated desktop Edge software WebGL, not phone validation.",
+  "passes": [
+    "Actual run input resolves a generated rider clip",
+    "Animation advances through multiple source atlas cells",
+    "Terrain no longer bounces the walk anchor",
+    "Actor atlas is loaded on demand",
+    "Display never spends player coins",
+    "Paused visual action clock stays fixed",
+    "Opposite movement keeps the original facing control",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "samples": [
+    {
+      "x": -72.6666666666667,
+      "anchor": [
+        486.712443679871,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": -47.1111111111111,
+      "anchor": [
+        501.556235518336,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": -31.6111111111111,
+      "anchor": [
+        503.425715268507,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": -10.9444444444444,
+      "anchor": [
+        508.62350110824,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 4.55555555555555,
+      "anchor": [
+        507.468210858829,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 20.0555555555556,
+      "anchor": [
+        510.65993333485,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 40.7222222222222,
+      "anchor": [
+        510.782841977735,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 56.2222222222222,
+      "anchor": [
+        508.261725399388,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 71.7222222222222,
+      "anchor": [
+        511.194456747693,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 82.0555555555556,
+      "anchor": [
+        506.969558619177,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 149.222222222222,
+      "anchor": [
+        507.88833545672,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 169.888888888889,
+      "anchor": [
+        511.982507787968,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 185.388888888889,
+      "anchor": [
+        510.908169047855,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 200.888888888889,
+      "anchor": [
+        511.978660665515,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 216.388888888889,
+      "anchor": [
+        509.167236531924,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 231.888888888889,
+      "anchor": [
+        507.440009320204,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 247.388888888889,
+      "anchor": [
+        510.043516664227,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    },
+    {
+      "x": 262.888888888889,
+      "anchor": [
+        507.662656911867,
+        315
+      ],
+      "animation": {
+        "clips": [
+          "idle/walk",
+          "rider_boar/run",
+          "hunter/shoot",
+          "worker/walk",
+          "idle/idle",
+          "worker/work"
+        ],
+        "decoded_bytes": 8305616,
+        "loaded": 5,
+        "pending": 0
+      }
+    }
+  ]
+}

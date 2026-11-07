@@ -1,0 +1,35 @@
+const {chromium}=require('playwright'),fs=require('fs');let browser;
+(async()=>{
+ const report={scope:'V6 desktop touch, layout, save and controlled adapter regression. Simulated completions are test fixtures, not live advertisements.',passes:[],failures:[],errors:[]};
+ const check=(name,ok)=>(ok?report.passes:report.failures).push(name);
+ browser=await chromium.launch({channel:'msedge',headless:true,args:['--enable-webgl','--use-angle=swiftshader']});
+ const ctx=await browser.newContext({viewport:{width:960,height:480},hasTouch:true});const p=await ctx.newPage();p.on('pageerror',e=>report.errors.push(e.message));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
+ await p.goto('http://127.0.0.1:42819/');await p.waitForFunction(()=>window.__goblinState,null,{timeout:60000});
+ const state=()=>p.evaluate(()=>window.__goblinState),cmd=async c=>{await p.evaluate(c=>window.goblinQaCommand(JSON.stringify(c)),c);await p.waitForTimeout(160)},point=async key=>{const s=await state(),r=s.rects[key],b=await p.locator('canvas').boundingBox();if(!r)throw Error(key+' missing in '+s.modal);return{x:b.x+(r[0]+r[2]/2)*b.width/s.viewport[0],y:b.y+(r[1]+r[3]/2)*b.height/s.viewport[1]}},tap=async key=>{const q=await point(key);await p.touchscreen.tap(q.x,q.y);await p.waitForTimeout(180)},complete=async(kind,receipt,completed=true)=>{await p.evaluate(d=>window.__adFixture.callback(JSON.stringify(d)),{kind,receipt,completed});await p.waitForTimeout(180)};
+ for(const [w,h] of [[740,360],[960,480]]){
+  await p.setViewportSize({width:w,height:h});await cmd({op:'scene'});
+  for(const kind of ['welcome','tools','gold','army','mount','prison','trader','steal','rally','pause','guide','ledger','credits','restart']){
+   await cmd({op:'open',kind});const s=await state(),ratio=h/s.viewport[1],buttons=s.ui.filter(b=>!['run','action','pause'].includes(b.key));
+   const bad=buttons.some(b=>{const[x,y,bw,bh]=b.rect,[cx,cy,cw,ch]=s.content_clip;return x<0||y<0||x+bw>s.viewport[0]+1||y+bh>s.viewport[1]+1||bh*ratio<47.5||(!b.footer&&(x<cx-1||x+bw>cx+cw+1||y<cy-1||y+bh>cy+ch+1))});
+   const footer=buttons.filter(b=>b.footer),overlap=footer.some((a,i)=>footer.slice(i+1).some(b=>a.rect[0]<b.rect[0]+b.rect[2]-1&&a.rect[0]+a.rect[2]>b.rect[0]+1));
+   check(w+' '+kind+' keeps controls in bounds at thumb size',!bad&&!overlap);
+  }
+ }
+ await p.setViewportSize({width:844,height:390});await cmd({op:'new',seed:618});await cmd({op:'move',x:760});await tap('action');let s=await state(),cash=s.gold+s.reserve;
+ check('New gold stall opens its proximity merchant',s.modal==='gold');await tap('ad_gold');s=await state();check('Missing SDK never invents reward',s.gold+s.reserve===cash);
+ await p.evaluate(()=>window.GoblinRewardedAds={ready:true,show(kind,callback){window.__adFixture={kind,callback}}});
+ for(let i=0;i<3;i++){await tap('ad_gold');await complete('gold','v6-gold-'+i)}s=await state();check('Repeated voluntary ads have no count or watch cooldown',s.gold+s.reserve===cash+90);cash+=90;
+ await tap('ad_gold');s=await state();check('In-flight ad pauses world and disables controls',s.paused&&s.ui.every(b=>b.disabled));await complete('gold','v6-gold-2');s=await state();check('Duplicate receipts cannot mint extra rewards',s.gold+s.reserve===cash);
+ await tap('ad_gold');await complete('wolf','v6-wrong-kind');s=await state();check('Wrong reward kind rejected',s.gold+s.reserve===cash);await tap('ad_gold');await complete('gold','cancelled',false);await tap('close');check('Cancelled ad restores usable return control',(await state()).modal==='');
+ await cmd({op:'move',x:970});await tap('action');check('New army stall opens its proximity merchant',(await state()).modal==='army');await tap('select_worker');const workers=(await state()).roles.worker;await tap('ad_worker');await complete('worker','v6-workers');await tap('close');check('Chosen worker reinforcement adds exactly two',(await state()).roles.worker===workers+2);
+ await cmd({op:'move',x:1180});await tap('action');check('New mount stall opens its proximity merchant',(await state()).modal==='mount');await tap('select_lizard');s=await state();cash=s.gold+s.reserve;await tap('buy_lizard');s=await state();check('Coin mount costs forty and equips integrated rider',s.mount==='lizard'&&s.gold+s.reserve===cash-40&&s.modal==='');
+ await tap('action');await tap('select_bat');await tap('ad_bat');await complete('bat','v6-bat-unlock');await tap('equip_bat');s=await state();check('Rewarded mount unlock equips bat without splitting rider',s.mount==='bat'&&s.modal==='');
+ await p.keyboard.down('Shift');await p.waitForTimeout(650);s=await state();check('Bat can rise into low flight',s.fly>20);await p.keyboard.up('Shift');await p.waitForTimeout(650);check('Releasing run lands bat cleanly',(await state()).fly===0);
+ await cmd({op:'new',seed:619});await cmd({op:'move',x:440});await p.touchscreen.tap(420,200);check('World art cannot be directly tapped into a menu',(await state()).modal==='');
+ const cdp=await ctx.newCDPSession(p),joy=await point('joystick'),run=await point('run');s=await state();await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:joy.x+28,y:joy.y,id:1},{x:run.x,y:run.y,id:2}]});await p.waitForTimeout(450);check('Two thumbs move and run together',(await state()).hero_x>s.hero_x+20&&(await state()).run);await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});await p.waitForTimeout(180);check('Touch cancellation clears movement and sprint',(await state()).axis===0&&!(await state()).run);
+ await tap('pause');s=await state();await p.waitForTimeout(300);check('Pause stops world and water clocks',(await state()).time===s.time&&(await state()).water_time===s.water_time);await tap('resume');
+ await cmd({op:'move',x:-380});await tap('pause');s=await state();await p.reload();await p.waitForFunction(()=>window.__goblinState,null,{timeout:60000});check('Browser save reload preserves current chief and health',Math.abs((await state()).hero_x-s.hero_x)<1&&(await state()).hero_hp===s.hero_hp);
+ for(const mount of ['boar','lizard','wolf','bat']){await cmd({op:'look',mount,face:1});await p.waitForTimeout(1200);let a=await state();await cmd({op:'look',mount,face:-1});let b=await state();check(mount+' turns around same saddle anchor',Math.abs(a.hero_anchor[0]-b.hero_anchor[0])<.2&&Math.abs(a.hero_anchor[1]-b.hero_anchor[1])<.2)}
+ await p.setViewportSize({width:390,height:844});await p.waitForTimeout(200);check('Portrait guard pauses and clears input',(await state()).paused&&(await state()).axis===0);await p.setViewportSize({width:844,height:390});await cmd({op:'unfreeze'});check('Landscape restores unpaused world',!(await state()).paused);
+ check('Regression has no runtime errors',report.errors.length===0);fs.writeFileSync('qa/godot/world-v6-regression-tests.json',JSON.stringify(report,null,2));console.log(JSON.stringify({passes:report.passes.length,failures:report.failures,errors:report.errors}));await browser.close();process.exitCode=report.failures.length?1:0;
+})().catch(async e=>{console.error(e);if(browser)await browser.close();process.exitCode=1});

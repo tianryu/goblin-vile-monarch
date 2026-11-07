@@ -1,0 +1,102 @@
+{
+  "kind": "Layout prototypes created before the Godot UI rewrite, using independent AI bitmap components. Not gameplay screenshots or a measured visual match.",
+  "viewport": [
+    960,
+    480
+  ],
+  "pages": [
+    {
+      "id": "world",
+      "title": "主游戏"
+    },
+    {
+      "id": "welcome",
+      "title": "领地等着你"
+    },
+    {
+      "id": "tools",
+      "title": "破烂工具铺"
+    },
+    {
+      "id": "gold",
+      "title": "金币商人"
+    },
+    {
+      "id": "army",
+      "title": "援军商人"
+    },
+    {
+      "id": "mount",
+      "title": "坐骑商人"
+    },
+    {
+      "id": "prison",
+      "title": "部落监牢"
+    },
+    {
+      "id": "trader",
+      "title": "人类奴隶商人"
+    },
+    {
+      "id": "steal",
+      "title": "盗贼窝"
+    },
+    {
+      "id": "rally",
+      "title": "东侧出征点"
+    },
+    {
+      "id": "pause",
+      "title": "部落歇脚"
+    },
+    {
+      "id": "guide-1",
+      "title": "部落手册"
+    },
+    {
+      "id": "guide-2",
+      "title": "部落手册"
+    },
+    {
+      "id": "guide-3",
+      "title": "部落手册"
+    },
+    {
+      "id": "guide-4",
+      "title": "部落手册"
+    },
+    {
+      "id": "ledger",
+      "title": "部落账本"
+    },
+    {
+      "id": "credits",
+      "title": "鸣谢与许可"
+    },
+    {
+      "id": "restart",
+      "title": "再起一座部落"
+    },
+    {
+      "id": "victory",
+      "title": "森林归部落了"
+    },
+    {
+      "id": "defeat",
+      "title": "部落还会回来的"
+    },
+    {
+      "id": "loading",
+      "title": "正在召集爪牙"
+    },
+    {
+      "id": "error",
+      "title": "营地暂时没搭起来"
+    },
+    {
+      "id": "rotate",
+      "title": "请横屏游玩"
+    }
+  ],
+  "errors": []
+}

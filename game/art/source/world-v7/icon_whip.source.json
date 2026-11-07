@@ -1,0 +1,7 @@
+{
+  "name": "icon_whip",
+  "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One simple curved brown leather whip with a short dark wooden handle, clear coiled S silhouette. Isolated game UI symbol, no hands or characters. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-69c6ced7-119c-4414-8270-6ae74c431683.png",
+  "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+}

@@ -1,0 +1,14 @@
+{
+  "engineVersion": "3.8.8",
+  "delivery": "taptap-minigame",
+  "intermediatePlatform": "wechatgame",
+  "extension": "taptap-minigame-tools",
+  "extensionVersion": "1.2.2",
+  "storeAppId": 1018356,
+  "developerId": 510750,
+  "miniappId": "",
+  "orientation": "landscape",
+  "version": "0.9.0",
+  "ads": { "rewardedVideoAdUnitId": "" },
+  "output": "build/TapBuild/game.zip"
+}

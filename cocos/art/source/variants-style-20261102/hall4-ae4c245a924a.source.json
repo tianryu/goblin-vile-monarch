@@ -1,0 +1,13 @@
+{
+  "name": "hall4",
+  "prompt": "ONE isolated full 2D side-view game building, transparent background. Preserve exactly the reference flat matte hand-painted cartoon style with broad simple muted color shapes, irregular clean dark contours, minimal detail. No 3D, texture, gradients, glow, ground, shadows, text, labels, colored outline. Whole building inside margins. Upgrade this exact goblin chief hall by one tier. Keep red shabby cloth roof and crooked wooden medieval silhouette, add a timber side annex with a small workshop lean-to, stout angled buttresses and larger doorway. No tower, no castle.",
+  "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-a910363e-fff5-4996-99c4-e7ccb093b67b.png",
+  "generator": "builtin-imagegen",
+  "edge": "building",
+  "facing": 1,
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "与原hall3/wall3/tower2平面哑光手绘轮廓逐项对照。主厅有独立侧屋，墙有双排支撑，四级箭台两层、五级重绘为三层。完整透明静态位图，待实际尺寸引擎验收。"
+}

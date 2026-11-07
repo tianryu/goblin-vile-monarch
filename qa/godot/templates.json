@@ -1,0 +1,18 @@
+{
+  "source": "https://godot-releases.nbg1.your-objectstorage.com/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz",
+  "destination": "C:\\Users\\\u7530\u715c\\AppData\\Roaming\\Godot\\export_templates\\4.7.2.stable",
+  "installed": [
+    {
+      "name": "version.txt",
+      "bytes": 13
+    },
+    {
+      "name": "web_nothreads_debug.zip",
+      "bytes": 10232720
+    },
+    {
+      "name": "web_nothreads_release.zip",
+      "bytes": 10245903
+    }
+  ]
+}

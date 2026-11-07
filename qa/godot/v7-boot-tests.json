@@ -1,0 +1,91 @@
+{
+  "scope": "V7 local loader, error state and audio decoding in desktop Edge. Not phone or subjective listening evidence.",
+  "passes": [
+    "Independent bitmap logo loads",
+    "Loader contains no gameplay explanation",
+    "Loader is removed after boot",
+    "Nine non-silent audio clips decode",
+    "Decoded audio remains under eight MiB",
+    "Error offers reachable retry",
+    "Error copy clears retry area",
+    "No help dialog is offered",
+    "Retry uses concise copy",
+    "No normal boot exception"
+  ],
+  "failures": [],
+  "errors": [],
+  "audio": [
+    {
+      "name": "arrow.ogg",
+      "duration": 0.5995416666666666,
+      "channels": 2,
+      "peak": 0.8586164712905884,
+      "rms": 0.09267852946833012,
+      "decoded_float_bytes": 230224
+    },
+    {
+      "name": "back.ogg",
+      "duration": 0.06820833333333333,
+      "channels": 1,
+      "peak": 0.8953595757484436,
+      "rms": 0.16314418393334054,
+      "decoded_float_bytes": 13096
+    },
+    {
+      "name": "cage.ogg",
+      "duration": 0.2613333333333333,
+      "channels": 2,
+      "peak": 1.1912970542907715,
+      "rms": 0.10153276658402789,
+      "decoded_float_bytes": 100352
+    },
+    {
+      "name": "chop.ogg",
+      "duration": 0.24025,
+      "channels": 2,
+      "peak": 1.057729959487915,
+      "rms": 0.12084819030979588,
+      "decoded_float_bytes": 92256
+    },
+    {
+      "name": "click.ogg",
+      "duration": 0.007104166666666667,
+      "channels": 1,
+      "peak": 0.8516181707382202,
+      "rms": 0.18681129355201953,
+      "decoded_float_bytes": 1364
+    },
+    {
+      "name": "coin.ogg",
+      "duration": 0.8455208333333334,
+      "channels": 2,
+      "peak": 1.022395372390747,
+      "rms": 0.04018399552929147,
+      "decoded_float_bytes": 324680
+    },
+    {
+      "name": "confirm.ogg",
+      "duration": 0.539,
+      "channels": 1,
+      "peak": 0.8948010206222534,
+      "rms": 0.18022644856235806,
+      "decoded_float_bytes": 103488
+    },
+    {
+      "name": "error.ogg",
+      "duration": 0.5334583333333334,
+      "channels": 2,
+      "peak": 0.9285581111907959,
+      "rms": 0.09947845699384651,
+      "decoded_float_bytes": 204848
+    },
+    {
+      "name": "hoof.ogg",
+      "duration": 0.24885416666666665,
+      "channels": 2,
+      "peak": 1.038862705230713,
+      "rms": 0.12432670087499098,
+      "decoded_float_bytes": 95560
+    }
+  ]
+}

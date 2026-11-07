@@ -1,0 +1,24 @@
+{
+  "scope": "Generated mount walks, runs and bat flight in isolated desktop Edge software WebGL",
+  "passes": [
+    "rider_bat/run: requested clip is installed",
+    "rider_bat/run: monarch and mount stay one opaque subject",
+    "rider_bat/run: terrain anchor is flat",
+    "rider_bat/run: actual low flight is active",
+    "rider_bat/run: no extra coin transactions or dialogs",
+    "rider_bat/run: opposite direction flips the same complete body",
+    "rider_bat/run: pause freezes current pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "rider_bat/run: full generated cycle advances"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "id": "rider_bat/run",
+      "source_frames": 11,
+      "decoded_bytes": 18766464
+    }
+  ]
+}

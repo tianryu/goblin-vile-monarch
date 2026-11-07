@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>视觉逐图审核</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#202720;color:#eee5d1;font:16px/1.7 system-ui,sans-serif}main{max-width:1440px;margin:auto;padding:24px}h1{font-size:26px;margin:0 0 8px}h2{font-size:20px;margin:24px 0 12px}p{max-width:1000px}a{color:#e7c47b}.status{display:inline-block;background:#4d4934;border:1px solid #8c7951;border-radius:6px;padding:5px 12px}.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:#2d352d;border:1px solid #55604d;border-radius:8px;padding:10px}img{width:100%;height:auto;display:block}figcaption{padding:8px 0 0}small{color:#bcc2b0}button{font:inherit;color:#eee5d1;background:#3c493c;border:1px solid #8c7951;border-radius:5px;padding:8px 16px;cursor:pointer}.tools{display:flex;gap:12px;margin:12px 0}.tools button[aria-pressed=true]{background:#705c35}.single .compare{grid-template-columns:1fr}.single figure{display:none}.single figure.selected{display:block}ol{padding-left:26px;columns:2;column-gap:38px}li{break-inside:avoid;margin-bottom:10px}.note{padding:12px 16px;background:#303a30;border-left:3px solid #b69658}@media(max-width:850px){.compare{grid-template-columns:1fr}ol{columns:1}main{padding:16px}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;margin:20px 0}.gallery figure{display:block!important}
+</style>
+<main>
+<h1>视觉逐图审核</h1>
+<p>用户已确认01工具桌面稿与当前画风一致，后续沿实机截图逐张修改和自检。已生成01至12、斥候与先锋营地，另补阵营描边、建筑浅米边、建筑全白边，共17张最终候选。其余计划图暂停。前一批偏离画风的6张候选已停用。近战职业名称：恶霸。</p>
+<p class="status">新增对照：可交互建筑浅米边 / 与己方角色相同的白边</p>
+<p class="note">以下左右两图都是截图基础上的设计修改稿，不是已经改好游戏的运行截图。左图为建筑浅米边及主厅金色选中边，右图所有可交互建筑统一白边。游戏代码、实际素材和发行包尚未改变。</p>
+<div class="tools"><button data-view="both" aria-pressed="true">并排对照</button><button data-view="before" aria-pressed="false">只看原图</button><button data-view="after" aria-pressed="false">只看修改稿</button></div>
+<div class="compare">
+<figure id="before"><a href="extra-layered-outline-v2.png"><img src="extra-layered-outline-v2.png" alt="可交互建筑浅米色描边效果稿"></a><figcaption>浅米边：主厅为金色选中状态</figcaption></figure>
+<figure id="after"><a href="extra-interactive-buildings-white.png"><img src="extra-interactive-buildings-white.png" alt="可交互建筑与己方角色统一白色描边效果稿"></a><figcaption>全白边：主厅、工具摊和监牢统一白色</figcaption></figure>
+</div>
+<p><small>自检：全白稿的主厅、两个工具摊与右侧监牢外边均已改白；角色白边不变，树木与前景仍用暗边，UI未加白框。本张刻意不加金色选中光，便于比较基础描边；金色呼吸交互反馈并未取消。截图编辑不是着色器实现，运动边缘、层级、性能及真机均未验收。</small></p>
+<h2>已生成的设计修改稿</h2>
+<p>点击图片看原尺寸。只有01的画风与修改方法获用户确认，其余为自检候选；静态姿态和布局图不等于游戏功能已实现。</p>
+<div class="gallery">
+<figure><a href="extra-team-outline.png"><img src="extra-team-outline.png" loading="lazy" alt="敌我阵营宽描边"></a><figcaption>描边试样：己方白色，敌军淡粉色</figcaption></figure>
+<figure><a href="extra-layered-outline-v2.png"><img src="extra-layered-outline-v2.png" loading="lazy" alt="建筑浅米色描边"></a><figcaption>场景试样A：普通建筑米边，选中建筑金边</figcaption></figure>
+<figure><a href="extra-interactive-buildings-white.png"><img src="extra-interactive-buildings-white.png" loading="lazy" alt="建筑全白描边"></a><figcaption>场景试样B：可交互建筑和己方统一白边</figcaption></figure>
+<figure><a href="01-worker-table-v1.png"><img src="01-worker-table-v1.png" loading="lazy" alt="工具摆到桌面，画风校准"></a><figcaption>01 工具摆到桌面，画风校准<br><small>用户已确认画风与修改方法</small></figcaption></figure>
+<figure><a href="10-hunting.png"><img src="10-hunting.png" loading="lazy" alt="动物狩猎与生产"></a><figcaption>10 动物狩猎与生产<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="11-charge-retreat.png"><img src="11-charge-retreat.png" loading="lazy" alt="冲锋与快逃"></a><figcaption>11 冲锋与快逃<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="12-assembly-escort.png"><img src="12-assembly-escort.png" loading="lazy" alt="八人护械队形"></a><figcaption>12 八人护械队形<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="02-roles.png"><img src="02-roles.png" loading="lazy" alt="职业与归属区分"></a><figcaption>02 职业与归属区分<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="03-readability.png"><img src="03-readability.png" loading="lazy" alt="角色与环境可读性"></a><figcaption>03 角色与环境可读性<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="04-rider-left.png"><img src="04-rider-left.png" loading="lazy" alt="骑乘左向锚点"></a><figcaption>04 骑乘左向锚点<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="05-hit-highlight.png"><img src="05-hit-highlight.png" loading="lazy" alt="受击与目标高亮"></a><figcaption>05 受击与目标高亮<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="06-cave-start.png"><img src="06-cave-start.png" loading="lazy" alt="洞穴与四人开局"></a><figcaption>06 洞穴与四人开局<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="07-treasury-purse.png"><img src="07-treasury-purse.png" loading="lazy" alt="钱箱存量与透明钱袋"></a><figcaption>07 钱箱存量与透明钱袋<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="08-prison-hauling.png"><img src="08-prison-hauling.png" loading="lazy" alt="监牢与单人拖俘"></a><figcaption>08 监牢与单人拖俘<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="09-recruitment.png"><img src="09-recruitment.png" loading="lazy" alt="金币招募与无主哥布林"></a><figcaption>09 金币招募与无主哥布林<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="13a-scout-camp.png"><img src="13a-scout-camp.png" loading="lazy" alt="斥候营地"></a><figcaption>13a 斥候营地<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+<figure><a href="13b-vanguard-camp.png"><img src="13b-vanguard-camp.png" loading="lazy" alt="先锋营地"></a><figcaption>13b 先锋营地<br><small>自检后的设计修改稿，内容待用户审核</small></figcaption></figure>
+</div>
+<h2>完整视觉调整顺序</h2>
+<ol>
+<li>工具桌面与三个职业摊辨识，摊位无卖家</li>
+<li>无主、爪牙、猎手、工匠、恶霸的形象区分</li>
+<li>人物明度、描边、背景退色与职业大色块</li>
+<li>骑手坐实、转身锚点、脚点和物件贴地</li>
+<li>各职业受击抽搐，受击仍保持高亮</li>
+<li>左洞穴生活区、紧凑主厅与洞口工作区</li>
+<li>金币箱库存变化与透明钱袋</li>
+<li>开局小笼、牢旁俘虏、单人拖俘与人类商人</li>
+<li>金币吸引建筑和新投靠哥布林</li>
+<li>小动物、狩猎、生产劳动与闲逛</li>
+<li>冲锋、追击与生产单位快逃姿态</li>
+<li>洞口旗帜、征召、容量与两工匠护械队形</li>
+<li>五阶段敌军营地与清空、巩固、复建状态</li>
+<li>联军各兵种、大盾、法师与法术预警</li>
+<li>三类攻城器械、轮子贴地与操作员手位</li>
+<li>剥装、杂装堆、改造台与装备穿戴变化</li>
+<li>各类建筑的不同等级外观</li>
+<li>昼夜、日月、云、火炬、水面与分层</li>
+<li>原UI上的交互图标、双行名称、金币/建筑虚影与显隐</li>
+<li>胜负结算与删除偷窃入口后的界面</li>
+</ol>
+<p>已绘01至12及13中的斥候/先锋两营；01其余工具摊、13前军/中军/船区/复建和14至20尚未补齐。按用户最新要求暂停继续生成，没有后台生图队列。<a href="../../../docs/VISUAL_REVISION_V9.md">完整清单与检查记录</a>　<a href="../../../docs/ISSUE_TRACKER_V9.md">25项实施台账</a>　<a href="references/01-worker-stall-runtime.png">01原Godot截图</a></p>
+</main>
+<script>
+// 对照只改变审阅页布局，不修改图片或游戏状态。
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{const mode=b.dataset.view;document.body.classList.toggle('single',mode!=='both');document.querySelectorAll('.compare > figure').forEach(f=>f.classList.toggle('selected',f.id===mode));document.querySelectorAll('[data-view]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)))})
+</script>
+</html>

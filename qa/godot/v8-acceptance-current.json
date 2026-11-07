@@ -1,0 +1,43 @@
+{
+  "scope": "Current V8 fire and six representative clips, targeted desktop tests only, not complete game or phone acceptance",
+  "groups": [
+    {
+      "file": "qa/fire-v8/acceptance.json",
+      "passes": 9,
+      "failures": [],
+      "errors": []
+    },
+    {
+      "file": "qa/godot/v8-animation-browser.json",
+      "passes": 8,
+      "failures": [],
+      "errors": []
+    },
+    {
+      "file": "qa/godot/v8-hunter-animation.json",
+      "passes": 13,
+      "failures": [],
+      "errors": []
+    },
+    {
+      "file": "qa/godot/v8-worker-animation.json",
+      "passes": 8,
+      "failures": [],
+      "errors": []
+    },
+    {
+      "file": "qa/godot/v7-native-tests.json",
+      "passes": 11,
+      "failures": [],
+      "errors": []
+    },
+    {
+      "file": "qa/godot/v8-release-tests.json",
+      "passes": 13,
+      "failures": [],
+      "errors": []
+    }
+  ],
+  "passed_assertions": 62,
+  "all_selected_passed": true
+}

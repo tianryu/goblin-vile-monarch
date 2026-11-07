@@ -1,0 +1,3007 @@
+{
+  "scope": "Chief gesture and rank2 recoil, desktop Edge software WebGL with actual contextual touch input",
+  "passes": [
+    "1: pause holds chief arm and rank2 recoil together",
+    "1: real-time touch shows multiple generated seated poses",
+    "1: real-time touch shows multiple rank2 recoil poses",
+    "1: chief faces the actual selected goblin",
+    "1: rider and mount stay one solid inseparable subject",
+    "1: chief retains the fixed walk plane",
+    "1: worker retains the fixed walk plane",
+    "1: one successful lash drops hidden coins once",
+    "1: frame-stepped real gesture covers its late recovery",
+    "1: frame-stepped rank2 recoil reaches ready stance",
+    "1: moving cancels gesture and resumes actual gait",
+    "1: second lash cannot create hidden money again",
+    "-1: pause holds chief arm and rank2 recoil together",
+    "-1: real-time touch shows multiple generated seated poses",
+    "-1: real-time touch shows multiple rank2 recoil poses",
+    "-1: chief faces the actual selected goblin",
+    "-1: rider and mount stay one solid inseparable subject",
+    "-1: chief retains the fixed walk plane",
+    "-1: worker retains the fixed walk plane",
+    "-1: one successful lash drops hidden coins once",
+    "-1: frame-stepped real gesture covers its late recovery",
+    "-1: frame-stepped rank2 recoil reaches ready stance",
+    "-1: moving cancels gesture and resumes actual gait",
+    "-1: second lash cannot create hidden money again",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "side": 1,
+      "chief_poses": 8,
+      "rank2_poses": 6,
+      "stepped_chief": 14,
+      "stepped_rank2": 10,
+      "samples": [
+        {
+          "time": 0.68014126984127,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.1,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": 4948.8
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.38,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                0,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                507.593902587891,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                0,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 0.767085714285714,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.2,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": 4948.8
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.28,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                229,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                507.593902587891,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 0.84094126984127,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.266666666666667,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": 4948.8
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.213333333333333,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                507.593902587891,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                272,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 0.891107936507937,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.333333333333333,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": 4948.8
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.146666666666667,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                507.593902587891,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                408,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 0.92724126984127,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.366666666666667,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": 4948.8
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.113333333333333,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                507.593902587891,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                296,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 0.960574603174603,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.4,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": 4948.8
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.0800000000000001,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                507.593902587891,
+                274.533325195312,
+                -40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                296,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.02980793650794,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0.0133333333333334,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                687,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/idle",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                510.179992675781,
+                274.195556640625,
+                -36.9444427490234,
+                44.3333320617676
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                336,
+                140,
+                168
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.0241325001270132,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                522.174987792969,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.0241325001270132,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                526.174987792969,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.0241325001270132,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                530.174987792969,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.0464746031746,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.6533203125,
+                241.153335571289,
+                83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                687,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                510.386993408203,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.0901793425798913,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                521.115356445312,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.0901793425798913,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                525.115356445312,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.0901793425798913,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                529.115356445312,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.13169682539683,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                503.143096923828,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                132,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.729977790102759,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                513.871459960938,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.729977790102759,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                517.871459960938,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.729977790102759,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                521.871459960938,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.19318571428571,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                497.916564941406,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                264,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                508.644897460938,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                512.644897460938,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                516.644897460938,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.2506746031746,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                493.029998779297,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                264,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                503.758331298828,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                507.758331298828,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                511.758331298828,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.26734126984127,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                491.613342285156,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                396,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                502.341674804688,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                506.341674804688,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                510.341674804688,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 1.34587662337662,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": 1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                433.799987792969,
+                242.766662597656,
+                83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                484.937835693359,
+                273.604431152344,
+                -34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                396,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                495.666168212891,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                499.666168212891,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                503.666168212891,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "chief_poses": 9,
+      "rank2_poses": 6,
+      "stepped_chief": 14,
+      "stepped_rank2": 10,
+      "samples": [
+        {
+          "time": 3.08876248196248,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.0666666666666667,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": -4652.93333333333
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.413333333333333,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                0,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.897766113281,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                0,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.1309101010101,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.1,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": -4652.93333333333
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.38,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                0,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.897766113281,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                0,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.2232847041847,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.2,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": -4652.93333333333
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.28,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                229,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.897766113281,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.28995137085137,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.266666666666667,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": -4652.93333333333
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.213333333333333,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                229,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.897766113281,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.32951803751803,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.3,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": -4652.93333333333
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.18,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.897766113281,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                272,
+                148,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.40340692640692,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [
+            {
+              "age": 0.366666666666667,
+              "amount": 7,
+              "id": 69,
+              "kind": "gold",
+              "x": -4652.93333333333
+            }
+          ],
+          "carry": [
+            0
+          ],
+          "pose": 0.113333333333333,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                458,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.897766113281,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                296,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.45983655603655,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0.0466666666666667,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                687,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/hit",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.897766113281,
+                274.533325195312,
+                40.375,
+                43.9375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                136,
+                296,
+                136,
+                148
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.47835507455507,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0.0133333333333334,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                243,
+                687,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/idle",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                408.742218017578,
+                274.195556640625,
+                36.9444427490234,
+                44.3333320617676
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                140,
+                336,
+                140,
+                168
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                420.441680908203,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                424.441680908203,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                428.441680908203,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.52413655603655,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/whip",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.8154296875,
+                241.153335571289,
+                -83.53125,
+                78.71875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                687,
+                243,
+                229
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                411.520568847656,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                264,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.16116236935362,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                422.375579833984,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.16116236935362,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                426.375579833984,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.16116236935362,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                430.375579833984,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.6178847041847,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                419.489166259766,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                396,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.87107842750467,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                430.344177246094,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.87107842750467,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                434.344177246094,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.87107842750467,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                438.344177246094,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.64010692640692,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                421.378051757812,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                396,
+                513,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.971250999499178,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                432.233062744141,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.971250999499178,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.233062744141,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 0.971250999499178,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                440.233062744141,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.68677359307359,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                486,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                425.3447265625,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                684,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.19970703125,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                440.19970703125,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                444.19970703125,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.73375137085137,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                429.337829589844,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                0,
+                684,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                440.192840576172,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                444.192840576172,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                448.192840576172,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "time": 3.82576803751804,
+          "gold": 18,
+          "total_coins": 25,
+          "drops": [],
+          "carry": [
+            7
+          ],
+          "pose": 0,
+          "face": -1,
+          "chief": [
+            {
+              "alpha": 1,
+              "animation": "rider_boar/idle",
+              "key": "world/hero/rider_boar/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                442.668762207031,
+                242.766662597656,
+                -83.53125,
+                77
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                729,
+                448,
+                243,
+                224
+              ],
+              "tint_alpha": 1
+            }
+          ],
+          "unit": [
+            {
+              "alpha": 1,
+              "animation": "worker_2/walk",
+              "key": "world/unit/68/worker_2/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                437.159240722656,
+                273.604431152344,
+                34.8333320617676,
+                45.125
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                132,
+                684,
+                132,
+                171
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/0",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                448.014251708984,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/1",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                452.014251708984,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            },
+            {
+              "alpha": 1,
+              "key": "world/unit/68/coin/2",
+              "layer": 70,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                456.014251708984,
+                269.700012207031,
+                5.25,
+                6
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/unit/68",
+              "source": [
+                305,
+                1053,
+                84,
+                96
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

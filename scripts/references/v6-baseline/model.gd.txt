@@ -1,0 +1,1004 @@
+class_name MonarchModel
+extends RefCounted
+
+const DAY = 180.0
+const WORLD_EDGE = 4200.0
+const INTERACT_RADIUS = 72.0
+const HERO_MAX_HP = 100.0
+const CORE_SITES = {"hall":-380.0,"den":-1040.0,"prison":290.0,"trader_stop":535.0,"merchant_gold":760.0,"merchant_army":970.0,"merchant_mount":1180.0}
+const TOOL_SITES = {"worker":-160.0,"hunter":60.0,"brute":-600.0,"thief":-820.0}
+const SIDE_SITES = {"wall":[1540,2420,3120],"tower":[1440,2320,3020],"net":[1660,2540],"rock":[2780],"rally":[1330],"camp":[1900,3220],"wreck":[2160],"chest":[2900],"outpost":[3780],"supply":[3320,3422,3524,3626]}
+const BAG_MAX = 50
+const ROLE_COSTS = {"worker":2,"hunter":2,"brute":4,"thief":5}
+const ROLE_NAMES = {"idle":"流浪哥布林","worker":"工匠","hunter":"猎手","brute":"打手","thief":"盗贼"}
+const MOUNTS = {
+	"boar":{"name":"獠牙野猪","speed":94.0,"run":155.0,"stamina":100.0},
+	"lizard":{"name":"洞穴蜥蜴","speed":100.0,"run":170.0,"stamina":165.0},
+	"wolf":{"name":"掠夺座狼","speed":112.0,"run":205.0,"stamina":100.0},
+	"bat":{"name":"巨耳蝙蝠","speed":102.0,"run":180.0,"stamina":85.0}
+}
+const ENEMY_NAMES = {"human":"人类步兵","dwarf":"矮人破城兵","elf":"精灵游侠","siege":"矮人攻城车"}
+const SELL_PRICES = {"human":6,"dwarf":10,"elf":8,"siege":12}
+
+var rng = RandomNumberGenerator.new()
+var state = {}
+var global_data = {}
+var input_axis = 0.0
+var input_run = false
+var pause_reasons = {}
+var events = []
+var dirty = false
+var next_id = 1
+var ai_timer = 0.0
+var event_sequence=0
+var visual_events=[]
+var visual_sequence=0
+var upgrade_focus_id=0
+var active_fronts={-1:false,1:false}
+
+func _init(seed_value = 42):
+	rng.seed = seed_value
+	global_data = default_global()
+	new_campaign(seed_value, false)
+
+func default_global():
+	return {"schema":3,"reserve":0,"mounts":["boar"],"boosts":{"wolf":0.0,"bat":0.0},"pending":{"hunter":0,"worker":0},"receipts":[],"settings":{"sound":true,"low_fx":false},"wins":0}
+
+func new_campaign(seed_value = 0, refund_unspent = true):
+	cancel_payment()
+	visual_events.clear()
+	active_fronts={-1:false,1:false}
+	upgrade_focus_id=0
+	if refund_unspent and not state.is_empty():
+		global_data.reserve += int(state.get("ad_in_bag",0))
+	if seed_value == 0: seed_value = int(Time.get_unix_time_from_system())
+	rng.seed = seed_value
+	next_id = 1
+	state = {"schema":3,"seed":seed_value,"day":1,"time":0.0,"total":0.0,"status":"playing","gold":18,"scrap":8,"ad_in_bag":0,"kills":0,"recruited":6,"wave_day":0,"buildings":[],"units":[],"enemies":[],"drops":[],"shots":[],"effects":[],"captives":[],"flags":{"left":false,"right":false},"trader":{"phase":"away","x":WORLD_EDGE,"until":0.0,"last_day":0},"steal_effects":{"left":{},"right":{}},"hero":{"x":-300.0,"face":1,"mount":"boar","stamina":100.0,"fly":0.0,"hurt":0.0},"tutorial":0,"loot_total":0,"explored":{"min":-720.0,"max":720.0}}
+	state.pending_rescue=0
+	state.payment={}
+	state.trader.cargo=[]
+	state.tool_stock={"worker":0,"hunter":0,"brute":0,"thief":0}
+	pause_reasons.clear()
+	input_axis = 0.0
+	input_run = false
+	state.erase("crown")
+	state.rules_version=6;state.world_layout=6
+	state.hero.x=-300.0;state.hero.hp=HERO_MAX_HP;state.hero.max_hp=HERO_MAX_HP
+	state.trader.x=WORLD_EDGE;state.explored={"min":-1350.0,"max":1350.0}
+	_build("hall",CORE_SITES.hall,1,{"hp":220.0,"max_hp":220.0})
+	for role in ["worker","hunter","brute","thief"]:_build("tools",TOOL_SITES[role],1,{"role":role})
+	for kind in ["merchant_gold","den","merchant_army","prison","trader_stop","merchant_mount"]:_build(kind,CORE_SITES[kind],0 if kind in ["den","prison"] else 1)
+	for side in [-1,1]:
+		for x in SIDE_SITES.wall:
+			_build("wall",x*side,0,{"side":side,"hp":0.0,"max_hp":0.0})
+		for x in SIDE_SITES.tower: _build("tower",x*side,0,{"side":side})
+		for x in SIDE_SITES.net:
+			_build("net",x*side,0,{"side":side,"charges":0})
+		_build("rock",SIDE_SITES.rock[0]*side,0,{"side":side,"charges":0})
+		_build("rally",SIDE_SITES.rally[0]*side,1,{"side":side})
+		for x in SIDE_SITES.camp: _build("camp",x*side,1,{"stock":2,"refresh":0.0,"side":side})
+		_build("wreck",SIDE_SITES.wreck[0]*side,1,{"side":side})
+		_build("chest",SIDE_SITES.chest[0]*side,1,{"side":side})
+		_build("outpost",SIDE_SITES.outpost[0]*side,1,{"hp":160.0,"max_hp":160.0,"side":side})
+		for i in range(4):
+			_build("supply",SIDE_SITES.supply[i]*side,1,{"side":side,"task":["arrows","wheel","pay","keys"][i],"ready_day":1})
+	for i in range(2): add_unit("worker",hall().x+40+i*45)
+	for i in range(3): add_unit("hunter",hall().x+170+i*42)
+	add_unit("idle",TOOL_SITES.worker+25)
+	for side in [-1,1]:
+		for i in range(2):
+			var guard=spawn_enemy("human" if i==0 else ("elf" if side<0 else "dwarf"),side,(SIDE_SITES.outpost[0]-40+i*65)*side)
+			guard.guard=true;guard.home=guard.x
+	notify("森林归谁？先修路障，再和联军算账。")
+	dirty = true
+
+func _id():
+	var value = next_id
+	next_id += 1
+	return value
+
+func _build(kind,x,level,extra = {}):
+	var b = {"id":_id(),"kind":kind,"x":float(x),"level":level,"job":{},"side":0,"charges":0}
+	b.merge(extra,true)
+	state.buildings.append(b)
+	return b
+
+func add_unit(role,x):
+	var u = {"id":_id(),"role":role,"x":float(x),"face":1,"hp":36.0 if role=="brute" else 18.0,"mode":"idle","target":float(x),"timer":rng.randf_range(0,4),"cooldown":0.0,"hidden":0,"carry":0,"cargo":{},"job_id":0,"side":0,"fear":0.0,"mission":{},"moving":false}
+	state.units.append(u)
+	u.rank=1
+	if role!="idle":promote_unit(u,int(hall().level))
+	return u
+
+func promote_unit(u,rank):
+	var prior=int(u.get("rank",1));u.rank=clampi(rank,1,3)
+	if u.rank>prior:u.hp+=6*(u.rank-prior)
+
+func visual(kind,data={}):
+	visual_sequence+=1
+	var event=data.duplicate();event.kind=kind;event.serial=visual_sequence
+	visual_events.append(event)
+	if visual_events.size()>96:visual_events.pop_front()
+
+func building(kind):
+	for b in state.buildings:
+		if b.kind == kind: return b
+	return {}
+
+func by_id(items,ident):
+	for item in items:
+		if item.id == ident: return item
+	return {}
+
+func hall(): return building("hall")
+func tool_stall(role):
+	for b in state.buildings:
+		if b.kind=="tools" and b.get("role","worker")==role:return b
+	return {}
+
+func tower_stand_height(level):return 70.0+12.0*maxi(0,int(level)-1)
+func phase(): return "白天" if state.time<120 else ("黄昏" if state.time<140 else "夜晚")
+func night(): return state.time>=140
+func capacity(): return [20,40,60][clampi(int(hall().level)-1,0,2)]
+func prison_capacity(): return [0,3,6,10][clampi(int(building("prison").level),0,3)]
+func paused(): return not pause_reasons.is_empty()
+func total_gold(): return int(state.gold)+int(global_data.reserve)
+
+func pause(reason,enabled):
+	if enabled:
+		cancel_payment()
+		pause_reasons[reason] = true
+	else: pause_reasons.erase(reason)
+	input_axis = 0.0
+	input_run = false
+
+func notify(message):
+	event_sequence+=1
+	events.append({"id":event_sequence,"text":message,"at":state.get("total",0.0)})
+	if events.size()>8: events.pop_front()
+
+func spend(gold,scrap = 0):
+	if total_gold()<gold or state.scrap<scrap: return false
+	var from_bag = mini(gold,int(state.gold))
+	var normal = int(state.gold)-int(state.ad_in_bag)
+	state.ad_in_bag -= maxi(0,from_bag-normal)
+	state.gold -= from_bag
+	global_data.reserve -= gold-from_bag
+	state.scrap -= scrap
+	dirty = true
+	return true
+
+func deposit(amount,ad_reward = false):
+	var room = maxi(0,BAG_MAX-int(state.gold))
+	var to_bag = mini(amount,room)
+	state.gold += to_bag
+	if ad_reward:
+		state.ad_in_bag += to_bag
+		global_data.reserve += amount-to_bag
+	elif amount>to_bag:
+		_drop("gold",state.hero.x,amount-to_bag)
+	dirty = true
+	return to_bag
+
+func _drop(kind,x,amount,extra = {}):
+	if amount<=0: return
+	for d in state.drops:
+		if d.kind==kind and abs(d.x-x)<28 and kind in ["gold","scrap"]:
+			d.amount += amount
+			return
+	var d = {"id":_id(),"kind":kind,"x":float(x),"amount":amount,"age":0.0}
+	d.merge(extra,true)
+	state.drops.append(d)
+
+func upgrade_info(b):
+	var level = int(b.level)
+	match b.kind:
+		"hall": return {"gold":[16,30][mini(level-1,1)],"scrap":[6,14][mini(level-1,1)],"max":3,"name":"酋长大厅"}
+		"wall": return {"gold":[4,7,12][mini(level,2)],"scrap":[0,3,6][mini(level,2)],"max":3,"name":"路障"}
+		"tower": return {"gold":[6,10][mini(level,1)],"scrap":[2,4][mini(level,1)],"max":2,"name":"箭台"}
+		"net": return {"gold":[6,10][mini(level,1)],"scrap":[2,5][mini(level,1)],"max":2,"name":"绊索吊网"}
+		"rock": return {"gold":[8,12][mini(level,1)],"scrap":[3,5][mini(level,1)],"max":2,"name":"落石架"}
+		"prison": return {"gold":[8,12,22][mini(level,2)],"scrap":[3,6,10][mini(level,2)],"max":3,"name":"监牢"}
+		"den": return {"gold":8,"scrap":2,"max":1,"name":"盗贼窝"}
+	return {}
+
+func describe_building(b):
+	var t = {"id":"b"+str(b.id),"object_id":b.id,"x":b.x,"label":"","action":"投币","cost":0,"scrap":0,"disabled":false,"shop":"","kind":b.kind}
+	match b.kind:
+		"tools": t.label=ROLE_NAMES[b.get("role","worker")]+"工具摊";t.action="交互";t.shop="tools"
+		"merchant_gold": t.label="金币商人";t.action="交互";t.shop="gold"
+		"merchant_army": t.label="援军商人";t.action="交互";t.shop="army"
+		"merchant_mount": t.label="坐骑商人";t.action="交互";t.shop="mount"
+		"trader_stop":
+			t.label="人类商人";t.action="交易";t.shop="trader"
+			if state.trader.phase=="away": t.disabled=true;t.label="商人偶数日来访"
+			else: t.x=state.trader.x
+		"camp":
+			t.label="招募哥布林";t.cost=1
+			t.disabled=b.stock<=0 or state.units.size()>=capacity()
+			if b.stock<=0: t.label="流浪营地 暂无新人"
+			elif state.units.size()>=capacity():t.label="人口已满 升级大厅"
+		"wreck": t.label="拆解战场遗物";t.cost=1;t.disabled=b.level==0
+		"chest": t.label="搜刮钱箱";t.action="搜刮";t.disabled=b.level==0
+		"rally": t.label=("西侧" if b.side<0 else "东侧")+"出征点";t.shop="rally";t.action="集合"
+		"supply": t.label=task_name(b.task);t.action="偷窃";t.shop="steal";t.disabled=int(b.ready_day)>state.day
+		"outpost": t.label="联军指挥营";t.disabled=true
+		_:
+			var info = upgrade_info(b)
+			if info.is_empty(): return {}
+			t.label=info.name
+			if not b.job.is_empty(): t.label+=" 施工中";t.disabled=true
+			elif b.kind=="den" and b.level>0:t.shop="steal";t.action="派遣"
+			elif b.kind=="prison" and b.level>0:t.shop="prison";t.action="交互"
+			elif b.kind in ["wall","hall"] and b.get("hp",0)<b.get("max_hp",0) and b.level>0:t.label+="修复";t.cost=2
+			elif b.kind in ["net","rock"] and b.level>0 and b.charges==0:t.label+="补充";t.cost=2
+			elif b.level>=info.max:t.label+=" 已满级";t.disabled=true
+			elif b.kind not in ["hall","prison","den"] and b.level>=hall().level:t.label="先升级大厅";t.disabled=true
+			else:
+				t.label=("建造" if b.level==0 else "升级")+info.name
+				t.cost=info.gold;t.scrap=info.scrap
+	return t
+
+func find_target():
+	var contribution=state.get("payment",{})
+	if not contribution.is_empty():
+		var paid_target=by_id(state.buildings,contribution.object_id)
+		if not paid_target.is_empty() and abs(state.hero.x-paid_target.x)<INTERACT_RADIUS and state.hero.fly<=3:return contribution_target(paid_target,contribution.get("force_upgrade",false))
+	if upgrade_focus_id!=0:
+		var focus=by_id(state.buildings,upgrade_focus_id)
+		if not focus.is_empty() and abs(state.hero.x-focus.x)<INTERACT_RADIUS and state.hero.fly<=3:return contribution_target(focus,true)
+		upgrade_focus_id=0
+	if state.hero.fly>3:return {"id":"land","label":"松开奔跑后落地交互","action":"落地","disabled":true,"x":state.hero.x,"cost":0,"scrap":0,"shop":""}
+	var best = {}
+	var best_score = 99999.0
+	for u in state.units:
+		if u.hidden<=0 or not u.cargo.is_empty():continue
+		var dist = abs(u.x-state.hero.x)
+		if dist<58 and dist-20<best_score:
+			best_score=dist-20;best={"id":"u"+str(u.id),"object_id":u.id,"kind":"whip","label":"私藏金币","action":"抽鞭子","cost":0,"scrap":0,"disabled":false,"shop":"","x":u.x}
+	for b in state.buildings:
+		var t=describe_building(b)
+		if t.is_empty():continue
+		var dist=abs(float(t.x)-state.hero.x)
+		var score=dist+(30 if t.disabled else 0)
+		if dist<INTERACT_RADIUS and score<best_score:best=t;best_score=score
+	return best
+
+func payment_signature(b,t):return b.kind+":"+str(b.level)+":"+t.label
+
+func focus_prison_upgrade():
+	var b=building("prison")
+	if abs(b.x-state.hero.x)>=INTERACT_RADIUS or b.level>=3 or not b.job.is_empty():return false
+	upgrade_focus_id=b.id
+	return true
+
+func contribution_target(b,forced=false):
+	var t=describe_building(b)
+	if forced and b.kind=="prison":
+		var info=upgrade_info(b)
+		t.shop="";t.label="扩建监牢";t.action="投币";t.cost=info.gold;t.scrap=info.scrap;t.force_upgrade=true
+		t.disabled=b.level>=3 or not b.job.is_empty()
+	return t
+
+func contribute(target={}):
+	if paused() or state.status!="playing":return {"ok":false}
+	if target.is_empty():target=find_target()
+	if target.get("cost",0)<=0 or target.get("shop","")!="":return act(target)
+	var b=by_id(state.buildings,target.get("object_id",0))
+	if b.is_empty() or abs(b.x-state.hero.x)>=INTERACT_RADIUS or state.hero.fly>3:return {"ok":false}
+	var live=contribution_target(b,target.get("force_upgrade",false))
+	if live.get("disabled",true) or live.get("cost",0)<=0:return {"ok":false}
+	var signature=payment_signature(b,live)
+	if not state.payment.is_empty() and (state.payment.signature!=signature or state.payment.object_id!=b.id):cancel_payment()
+	if state.scrap<live.scrap:notify("还需要"+str(live.scrap)+"块废铁");return {"ok":false}
+	if total_gold()<1:notify("金币不足，未完成的投入会在离开时退回");return {"ok":false}
+	if state.payment.is_empty():state.payment={"object_id":b.id,"x":b.x,"signature":signature,"cost":int(live.cost),"scrap":int(live.scrap),"paid":0,"normal_paid":0,"ad_paid":0,"reserve_paid":0,"force_upgrade":target.get("force_upgrade",false)}
+	var prior_gold=int(state.gold);var prior_ad=int(state.ad_in_bag);var prior_reserve=int(global_data.reserve)
+	spend(1)
+	var contribution=state.payment
+	contribution.paid+=1;contribution.ad_paid+=prior_ad-int(state.ad_in_bag);contribution.reserve_paid+=prior_reserve-int(global_data.reserve)
+	contribution.normal_paid+=prior_gold-int(state.gold)-(prior_ad-int(state.ad_in_bag))
+	visual("coin_pay",{"x":state.hero.x,"to":b.x,"index":contribution.paid-1,"cost":contribution.cost,"object_id":b.id})
+	var complete=contribution.paid>=contribution.cost
+	var result={"ok":true,"payment":true,"paid":contribution.paid,"cost":contribution.cost,"completed":complete,"object_id":b.id}
+	if complete:
+		if b.kind=="camp":
+			if b.stock<=0 or state.units.size()>=capacity():cancel_payment();return {"ok":false}
+			b.stock-=1;add_unit("idle",b.x);state.recruited+=1;notify("新爪牙加入部落");visual("recruit",{"x":b.x})
+		else:
+			if not start_build(b,contribution.force_upgrade,true).ok:cancel_payment();return {"ok":false}
+		state.payment={}
+		upgrade_focus_id=0
+		visual("funded",{"x":b.x,"object_id":b.id,"cost":live.cost})
+	dirty=true
+	return result
+
+func cancel_payment():
+	var contribution=state.get("payment",{})
+	if contribution.is_empty():return 0
+	state.payment={}
+	global_data.reserve+=int(contribution.get("reserve_paid",0))
+	state.gold+=int(contribution.get("ad_paid",0))+int(contribution.get("normal_paid",0))
+	state.ad_in_bag+=int(contribution.get("ad_paid",0))
+	visual("coin_return",{"x":float(contribution.x),"to":state.hero.x,"count":int(contribution.paid)})
+	notify("已返还未完成投币 +"+str(int(contribution.paid))+"金币")
+	dirty=true
+	return int(contribution.paid)
+
+func act(target = {}):
+	if state.status!="playing" or paused():return {"ok":false}
+	if target.is_empty():target=find_target()
+	if target.is_empty():
+		return {"ok":false}
+	if target.get("disabled",false):notify(target.label);return {"ok":false}
+	if abs(float(target.x)-state.hero.x)>=INTERACT_RADIUS or state.hero.fly>3:return {"ok":false}
+	if target.get("shop","")!="":return {"ok":true,"shop":target.shop,"object_id":target.get("object_id",0)}
+	if target.kind=="whip":
+		var u=by_id(state.units,target.object_id)
+		if u.is_empty():return {"ok":false}
+		var amount=int(u.hidden);u.hidden=0
+		deposit(amount);u.fear=0.8
+		notify("追回私藏金币 +"+str(amount));visual("whip",{"x":u.x,"from":state.hero.x,"face":state.hero.face});dirty=true
+		return {"ok":true,"amount":amount}
+	var b=by_id(state.buildings,target.object_id)
+	if b.is_empty():return {"ok":false}
+	if b.kind=="camp":
+		if b.stock<=0 or state.units.size()>=capacity() or not spend(1):return {"ok":false}
+		b.stock-=1;add_unit("idle",b.x);state.recruited+=1;notify("新爪牙加入部落");return {"ok":true}
+	if b.kind=="chest":
+		if b.level==0:return {"ok":false}
+		b.level=0;deposit(10);notify("钱箱里藏着10枚金币");return {"ok":true}
+	return start_build(b)
+
+func start_build(b,force_upgrade = false,prepaid=false):
+	if not b.job.is_empty():return {"ok":false,"reason":"工匠正在施工"}
+	var info=upgrade_info(b)
+	var mode="upgrade"
+	var gold=int(info.get("gold",1));var scrap=int(info.get("scrap",0))
+	if b.kind=="wreck":gold=1;scrap=0;mode="salvage"
+	elif not force_upgrade and b.kind in ["wall","hall"] and b.level>0 and b.hp<b.max_hp:gold=2;scrap=0;mode="repair"
+	elif not force_upgrade and b.kind in ["net","rock"] and b.level>0 and b.charges==0:gold=2;scrap=0;mode="reload"
+	elif b.level>=int(info.get("max",1)):return {"ok":false,"reason":"已经满级"}
+	if not spend(0 if prepaid else gold,scrap):notify("金币或废铁不足");return {"ok":false,"reason":"金币或废铁不足"}
+	b.job={"mode":mode,"left":5.0 if mode!="upgrade" else 8.0+3*b.level,"total":5.0 if mode!="upgrade" else 8.0+3*b.level}
+	dirty=true;notify("已备料，工匠前来施工")
+	return {"ok":true}
+
+func buy_tool(role):
+	if not ROLE_COSTS.has(role) or tool_stall(role).is_empty():return false
+	if not spend(ROLE_COSTS[role]):notify("金币不足");return false
+	state.tool_stock[role]+=1;notify(ROLE_NAMES[role]+"工具已挂在专属摊位，空闲爪牙会来领取");dirty=true
+	return true
+
+func buy_lizard():
+	if "lizard" in global_data.mounts:return false
+	if not spend(40):notify("需要40枚金币");return false
+	global_data.mounts.append("lizard");notify("永久获得洞穴蜥蜴");dirty=true
+	return true
+
+func equip_mount(name):
+	if not name in global_data.mounts:return false
+	state.hero.mount=name;state.hero.stamina=minf(state.hero.stamina,MOUNTS[name].stamina);state.hero.fly=0.0;state.hero.exhausted=false;dirty=true
+	return true
+
+func grant_reward(kind,receipt):
+	if receipt=="" or receipt in global_data.receipts:return false
+	if not kind in ["gold","hunter","worker","wolf","bat"]:return false
+	global_data.receipts.append(receipt)
+	match kind:
+		"gold":deposit(30,true);notify("广告奖励 +30金币")
+		"hunter","worker":global_data.pending[kind]+=2;notify("已获得2名"+ROLE_NAMES[kind]+"，满员时在候补队列等待")
+		"wolf","bat":
+			if not kind in global_data.mounts:global_data.mounts.append(kind);notify("永久解锁"+MOUNTS[kind].name)
+			else:global_data.boosts[kind]+=300.0;notify("骑乘强化 +5分钟，可继续叠加")
+	dirty=true
+	return true
+
+func sell_captives(kind="all",exchange=false):
+	if not state.trader.phase in ["arriving","staying"]:notify("等商人来到部落再交易");return 0
+	var sold=[];var coins=0
+	for c in state.captives:
+		if kind=="all" or c.type==kind:
+			sold.append(c);coins+=int(SELL_PRICES.get(c.type,6))
+			if exchange:break
+	if sold.is_empty():notify("监牢里没有对应俘虏");return 0
+	for c in sold:
+		state.captives.erase(c)
+		state.trader.cargo.append(c.type)
+	if exchange:state.scrap+=5;notify("交出一名俘虏，换回5块废铁")
+	else:deposit(coins);notify("售出"+str(sold.size())+"名俘虏，收入"+str(coins)+"金币")
+	dirty=true
+	return sold.size()
+
+func task_name(kind):return {"arrows":"偷箭袋","wheel":"偷车轮","pay":"偷军饷","keys":"偷钥匙"}.get(kind,"偷补给")
+
+func start_theft(ident):
+	var b=by_id(state.buildings,ident)
+	if b.is_empty() or b.kind!="supply" or b.ready_day>state.day or b.get("assigned",0)>0:return false
+	if b.x<state.explored.min or b.x>state.explored.max:notify("先骑乘侦察这处补给点");return false
+	if building("den").level==0:notify("先建造盗贼窝");return false
+	var thief={}
+	for u in state.units:
+		if u.role=="thief" and u.mission.is_empty() and u.cargo.is_empty():thief=u;break
+	if thief.is_empty():notify("需要一名空闲盗贼");return false
+	if not spend(3):notify("派遣需要3金币");return false
+	b.assigned=thief.id
+	thief.mission={"building_id":b.id,"stage":"out","kind":b.task,"side":b.side,"work":6.0};thief.mode="mission"
+	notify(task_name(b.task)+"开始，接应回程能保护赃物");dirty=true
+	return true
+
+func rally(side):
+	var outpost={}
+	for b in state.buildings:
+		if b.kind=="outpost" and b.side==side:outpost=b
+	if outpost.is_empty() or outpost.hp<=0:notify("这侧指挥营已被摧毁");return false
+	var party=[];var brutes=0
+	# Pick a leader first, even when hunters were recruited earlier.
+	for u in state.units:
+		if u.role=="brute" and u.mission.is_empty() and u.cargo.is_empty():party.append(u);brutes=1;break
+	for u in state.units:
+		if u.role in ["brute","hunter"] and u.mission.is_empty() and u.cargo.is_empty() and not u in party:
+			party.append(u)
+			if u.role=="brute":brutes+=1
+			if party.size()>=6:break
+	if party.size()<2 or brutes==0:notify("出征至少需要1名打手和1名其他战士");return false
+	if not spend(5):notify("出征需要5金币");return false
+	for u in party:u.mission={"stage":"sortie","side":side,"building_id":outpost.id}
+	notify(("西" if side<0 else "东")+"侧小队出征，家里记得留守");dirty=true
+	return true
+
+func _move(u,to,speed,dt):
+	var dx=float(to)-u.x
+	u.moving=abs(dx)>2
+	if abs(dx)>1:u.face=1 if dx>0 else -1
+	u.x=move_toward(float(u.x),float(to),speed*dt)
+	return abs(u.x-float(to))<4
+
+func _safe(x,radius=110):
+	for e in state.enemies:
+		if e.mode=="active" and abs(e.x-x)<radius:return false
+	return true
+
+func _nearest_enemy(x,reach):
+	var best={};var distance=reach
+	for e in state.enemies:
+		if e.mode!="active":continue
+		var d=abs(e.x-x)
+		if d<distance:best=e;distance=d
+	return best
+
+func _front(side):
+	var position=hall().x
+	for b in state.buildings:
+		if b.kind=="wall" and b.side==side and b.level>0 and b.hp>0:
+			if side<0:position=minf(position,b.x)
+			else:position=maxf(position,b.x)
+	return position
+
+func _finish_job(b):
+	var mode=b.job.mode
+	if mode=="salvage":b.level=0;state.scrap+=10;notify("废车拆解完成 +10废铁")
+	elif mode=="repair":b.hp=b.max_hp
+	elif mode=="reload":b.charges=1
+	else:
+		b.level+=1
+		if b.kind=="hall":b.max_hp=220.0+100*b.level;b.hp=b.max_hp
+		if b.kind=="hall":
+			for u in state.units:
+				if u.role!="idle":promote_unit(u,int(b.level))
+		if b.kind=="wall":b.max_hp=[0.0,120.0,240.0,410.0][b.level];b.hp=b.max_hp
+		if b.kind in ["net","rock"]:b.charges=1
+		notify(upgrade_info(b).get("name","设施")+"完成")
+	visual("build_complete",{"x":b.x,"object_id":b.id})
+	b.job={};dirty=true
+
+func _worker(u,dt):
+	if not _safe(u.x,88):
+		u.mode="retreating"
+		_move(u,hall().x,96,dt)
+		return
+	if not u.cargo.is_empty():
+		var home=building("prison").x if u.cargo.kind=="captive" else hall().x
+		if _move(u,home,58,dt):
+			if u.cargo.kind=="captive":
+				if state.captives.size()<prison_capacity():
+					state.captives.append({"id":_id(),"type":u.cargo.type});notify("活口已关进监牢")
+				else:_spawn_downed(u.cargo.type,u.x,25);notify("监牢满了，活口暂时留在牢外")
+			elif u.cargo.kind=="flag":state.flags["left" if u.cargo.side<0 else "right"]=true;notify("联军军旗运回部落！")
+			elif u.cargo.kind=="scrap":state.scrap+=u.cargo.amount
+			u.cargo={};dirty=true
+		return
+	# Paid emergency repairs take priority over post-battle hauling.
+	for b in state.buildings:
+		if not b.job.is_empty() and b.job.mode=="repair" and _safe(b.x,125):
+			u.mode="building";u.job_id=b.id
+			if _move(u,b.x,82,dt):
+				b.job.left-=dt*(1+0.15*(int(u.get("rank",1))-1))
+				if b.job.left<=0:_finish_job(b)
+			return
+	var hauling=state.units.filter(func(other):return not other.cargo.is_empty() and other.cargo.kind=="captive").size()
+	if prison_capacity()>state.captives.size()+hauling:
+		var choice={};var distance=WORLD_EDGE*2
+		for e in state.enemies:
+			if e.mode=="downed" and not e.get("assigned",false) and abs(u.x-e.x)<distance and abs(u.x-e.x)/76<e.ttl and _safe(e.x):
+				choice=e;distance=abs(u.x-e.x)
+		if not choice.is_empty():
+			u.mode="hauling"
+			if _move(u,choice.x,76,dt):
+				u.cargo={"kind":"captive","type":choice.type};choice.mode="removed";dirty=true
+			return
+	var job={};var distance=99999.0
+	for b in state.buildings:
+		if not b.job.is_empty() and _safe(b.x,125) and abs(b.x-u.x)<distance:job=b;distance=abs(b.x-u.x)
+	if not job.is_empty():
+		u.mode="building";u.job_id=job.id
+		if _move(u,job.x,82,dt):
+			job.job.left-=dt*(1+0.15*(int(u.get("rank",1))-1))
+			if job.job.left<=0:_finish_job(job)
+		return
+	for d in state.drops:
+		if d.kind in ["scrap","flag"] and _safe(d.x) and (d.kind=="flag" or abs(d.x-u.x)<1250):
+			if _move(u,d.x,76,dt):
+				u.cargo={"kind":d.kind,"amount":d.amount,"side":d.get("side",0)};state.drops.erase(d)
+			return
+	for b in state.buildings:
+		if b.kind in ["net","rock"] and b.level>0 and b.charges==0 and b.job.is_empty() and _safe(b.x,180):
+			var need=1 if b.kind=="net" else 2
+			if state.scrap>=need:
+				if _move(u,b.x,78,dt):state.scrap-=need;b.charges=1;dirty=true
+				return
+	u.mode="idle"
+	_move(u,hall().x+float(u.id%5)*26,62,dt)
+
+func _hunter(u,dt):
+	u.timer-=dt
+	var side=-1 if u.id%2==0 else 1
+	if night() or active_fronts.get(side,false):
+		var rank=0
+		for other in state.units:
+			if other.id==u.id:break
+			if other.role=="hunter" and other.mission.is_empty() and (-1 if other.id%2==0 else 1)==side:rank+=1
+		var home=_front(side)-side*(40+rank*24)
+		var tower={}
+		for b in state.buildings:
+			if b.kind=="tower" and b.side==side and b.level>rank and abs(b.x-_front(side))<180:
+				if tower.is_empty() or abs(b.x-_front(side))<abs(tower.x-_front(side)):tower=b
+		var bonus=0
+		if not tower.is_empty():home=tower.x+float(rank*2-1)*9;bonus=int(tower.level)
+		if abs(u.x-home)>30:bonus=0
+		if bonus>0:u.on_tower=tower.id
+		var foe=_nearest_enemy(u.x,270+bonus*60)
+		if not foe.is_empty() and u.cooldown<=0:
+			_shoot(u,foe,11.0+bonus*2);u.cooldown=1.15
+		if not _safe(u.x,42):home=hall().x;u.fear=1.0
+		if _move(u,home,85,dt) and bonus>0 and abs(u.x-tower.x)<30:u.on_tower=tower.id
+	else:
+		if u.carry>=3:
+			if _move(u,hall().x,76,dt):
+				_drop("gold",u.x,u.carry);u.carry=0
+		else:
+			var forage=hall().x+(-1 if u.id%2==0 else 1)*(180+u.id%4*58)
+			_move(u,forage,65,dt)
+			if u.timer<=0:
+				u.timer=8.0+rng.randf_range(0,3)
+				if u.hidden<7 and rng.randf()<0.28:u.hidden+=1
+				else:u.carry+=1
+		var foe=_nearest_enemy(u.x,250)
+		if not foe.is_empty() and u.cooldown<=0:_shoot(u,foe,11.0);u.cooldown=1.15
+
+func _brute(u,dt):
+	var enemy=_nearest_enemy(u.x,160)
+	var side=-1 if u.id%2==0 else 1
+	var home=_front(side)-side*12
+	if not enemy.is_empty():
+		var friends=0
+		for other in state.units:
+			if other.role=="brute" and abs(other.x-u.x)<130:friends+=1
+		if friends<2 and abs(u.x-_front(side))>70 and u.hp<18:u.fear=1.0;_move(u,home-side*60,90,dt)
+		else:
+			_move(u,enemy.x,75,dt)
+			if abs(u.x-enemy.x)<35 and u.cooldown<=0:damage_enemy(enemy,13);u.cooldown=0.95
+	else:_move(u,home,72,dt)
+
+func _shoot(u,e,damage):
+	damage*=1+0.12*(int(u.get("rank",1))-1)
+	var tower=by_id(state.buildings,u.get("on_tower",0))
+	state.shots.append({"x":u.x,"to":e.x,"left":0.24,"total":0.24,"enemy":false,"lift":tower_stand_height(tower.level) if not tower.is_empty() else 0})
+	damage_enemy(e,damage)
+
+func _mission(u,dt):
+	var m=u.mission
+	if m.stage=="out":
+		var b=by_id(state.buildings,m.building_id)
+		if b.is_empty():u.mission={};return
+		if _move(u,b.x,104,dt):m.stage="work"
+	elif m.stage=="work":
+		u.moving=false;m.work-=dt*(1+0.15*(int(u.get("rank",1))-1))
+		if m.work<=0:
+			var b=by_id(state.buildings,m.building_id)
+			if not b.is_empty():b.ready_day=state.day+2;b.assigned=0
+			m.stage="return";notify(task_name(m.kind)+"到手，撤回部落！")
+	elif m.stage=="return":
+		if _move(u,hall().x,91,dt):
+			var effects=state.steal_effects["left" if m.side<0 else "right"]
+			effects[m.kind]=true
+			match m.kind:
+				"arrows":state.scrap+=5;notify("箭袋到手，下波精灵箭量减少")
+				"wheel":state.scrap+=7;notify("车轮到手，下波攻城车留营维修")
+				"pay":deposit(15);notify("偷到军饷 +15金币，部分雇佣兵离营")
+				"keys":
+					for i in range(2):
+						if state.units.size()<capacity():add_unit("idle",hall().x+30+i*20);state.recruited+=1
+						else:state.pending_rescue+=1
+					notify("两名同族逃回部落")
+			u.mission={};dirty=true
+	elif m.stage=="sortie":
+		var b=by_id(state.buildings,m.building_id)
+		if b.is_empty() or b.hp<=0:m.stage="home";return
+		var enemy=_nearest_enemy(u.x,260 if u.role=="hunter" else 80)
+		if not enemy.is_empty():
+			if u.role=="hunter":
+				if u.cooldown<=0:_shoot(u,enemy,11);u.cooldown=1.15
+			else:
+				_move(u,enemy.x,83,dt)
+				if abs(u.x-enemy.x)<35 and u.cooldown<=0:damage_enemy(enemy,13);u.cooldown=0.95
+		else:
+			var range_to_camp=175 if u.role=="hunter" else 35
+			if abs(u.x-b.x)>range_to_camp:_move(u,b.x-m.side*range_to_camp,85,dt)
+			elif u.cooldown<=0:
+				u.moving=false;b.hp-=11 if u.role=="hunter" else 15;u.cooldown=1.0
+				if b.hp<=0:
+					b.hp=0;b.level=0;u.cargo={"kind":"flag","side":m.side,"amount":1};m.stage="flag_home";notify("指挥营倒了，把军旗带回家！");dirty=true
+	elif m.stage=="flag_home":
+		if _move(u,hall().x,72,dt):state.flags["left" if m.side<0 else "right"]=true;u.cargo={};u.mission={};notify("军旗已运回部落");dirty=true
+	elif m.stage=="home":
+		if _move(u,hall().x,85,dt):u.mission={}
+
+func spawn_enemy(kind,side,x = 99999.0):
+	var hp={"human":28.0,"dwarf":68.0,"elf":25.0,"siege":120.0}[kind]
+	var e={"id":_id(),"type":kind,"side":side,"x":float((WORLD_EDGE-100)*side if x==99999.0 else x),"hp":hp,"max_hp":hp,"mode":"active","cooldown":rng.randf(),"ttl":80.0,"ammo":6,"looted":false}
+	state.enemies.append(e)
+	return e
+
+func spawn_wave():
+	for side in [-1,1]:
+		var out={}
+		for b in state.buildings:
+			if b.kind=="outpost" and b.side==side:out=b
+		if out.is_empty() or out.hp<=0:continue
+		var fx=state.steal_effects["left" if side<0 else "right"]
+		var count=2+mini(state.day,8)
+		if fx.get("pay",false):count=maxi(1,count-2)
+		for i in range(count):
+			var kind="human"
+			if state.day>=2 and i%4==3:kind="elf"
+			if state.day>=3 and i%5==4:kind="dwarf"
+			var e=spawn_enemy(kind,side,(WORLD_EDGE-130+i*52)*side)
+			if kind=="elf" and fx.get("arrows",false):e.ammo=2
+		if state.day>=5 and not fx.get("wheel",false):spawn_enemy("siege",side,(WORLD_EDGE-50)*side)
+		fx.clear()
+	state.wave_day=state.day;notify("联军夜袭！注意两侧防线")
+
+func _spawn_downed(kind,x,ttl=80):
+	var e=spawn_enemy(kind,1,x);e.mode="downed";e.hp=0;e.ttl=ttl;e.looted=true
+	return e
+
+func damage_enemy(e,amount):
+	if e.mode!="active":return
+	if e.type=="dwarf":amount*=0.8
+	visual("hit",{"x":e.x,"heavy":amount>=25})
+	e.hp-=amount
+	if e.hp>0:return
+	state.kills+=1
+	if not e.looted:
+		e.looted=true;_drop("scrap",e.x,2 if e.type!="siege" else 5);_drop("gold",e.x,1)
+	if e.type!="siege" and rng.randf()<0.48:e.mode="downed";e.ttl=90.0
+	else:e.mode="removed"
+	dirty=true
+
+func _enemy(e,dt):
+	if e.mode=="removed":return
+	if e.mode=="downed":
+		e.ttl-=dt
+		if e.ttl<=0:e.mode="escaping"
+		return
+	if e.mode=="escaping":
+		e.x+=e.side*90*dt
+		if abs(e.x)>WORLD_EDGE:e.mode="removed"
+		return
+	e.cooldown=maxf(0,e.cooldown-dt)
+	if e.get("guard",false):
+		_garrison(e,dt)
+		return
+	var target_x=hall().x if hall().hp>0 else state.hero.x
+	var barrier={}
+	for b in state.buildings:
+		if b.kind=="wall" and b.level>0 and b.hp>0 and (e.x-b.x)*e.side>=-5 and (b.x-hall().x)*e.side>0:
+			if barrier.is_empty() or abs(b.x-e.x)<abs(barrier.x-e.x):barrier=b
+	if not barrier.is_empty():target_x=barrier.x+e.side*20
+	var ally={};var ally_dist=100.0 if e.type=="elf" and e.ammo>0 else 32.0
+	for u in state.units:
+		if abs(u.x-e.x)<ally_dist and (u.role!="thief" or not u.mission.is_empty() and u.mission.stage=="return"):
+			ally=u;ally_dist=abs(u.x-e.x)
+	var ranged=e.type=="elf" and e.ammo>0
+	var hero_near=abs(state.hero.x-e.x)<(240 if ranged else 31) and (state.hero.fly<=3 or ranged)
+	if hero_near and e.cooldown<=0:
+		_hit_hero(e);e.cooldown=1.0
+	elif not ally.is_empty() and e.cooldown<=0:
+		ally.hp-=9 if e.type!="siege" else 16;e.cooldown=1.0
+		if e.type=="elf" and e.ammo>0:e.ammo-=1;state.shots.append({"x":e.x,"to":ally.x,"left":0.3,"total":0.3,"enemy":true})
+	elif abs(e.x-target_x)<27:
+		if e.cooldown<=0:
+			var damage=18 if e.type in ["dwarf","siege"] else 7
+			if barrier.is_empty() and hall().hp>0:hall().hp=maxf(0,hall().hp-damage)
+			elif not barrier.is_empty():barrier.hp=maxf(0,barrier.hp-damage)
+			e.cooldown=1.0
+	else:
+		var speed={"human":39.0,"dwarf":27.0,"elf":36.0,"siege":21.0}[e.type]
+		e.x=move_toward(e.x,target_x,speed*dt)
+	for b in state.buildings:
+		if b.level<=0 or b.charges<=0 or abs(b.x-e.x)>24:continue
+		if b.kind=="net" and e.type!="siege":
+			b.charges=0
+			if e.type=="dwarf" and b.level<2:damage_enemy(e,15);notify("矮人扯破了低级捕网")
+			else:e.mode="downed";e.ttl=95.0;e.looted=true;_drop("scrap",e.x,2);notify("捕网罩住了一个活口")
+			break
+		if b.kind=="rock":
+			b.charges=0
+			for other in state.enemies:
+				if other.mode=="active" and abs(other.x-b.x)<100:damage_enemy(other,30+15*(b.level-1))
+			break
+	if building("prison").level>0 and not state.captives.is_empty() and abs(e.x-building("prison").x)<40 and e.cooldown<=0:
+		var freed=state.captives.pop_back()
+		var escaping=spawn_enemy(freed.type,e.side,e.x);escaping.mode="escaping"
+		e.cooldown=1.0;notify("联军砸锁救走了一名俘虏");dirty=true
+
+func _garrison(e,dt):
+	var post={}
+	for b in state.buildings:
+		if b.kind=="outpost" and b.side==e.side:post=b;break
+	if post.is_empty() or post.hp<=0:e.mode="escaping";return
+	var chief_distance=abs(state.hero.x-e.x)
+	var chief_reach=210.0 if e.type=="elf" and e.ammo>0 else 33.0
+	if abs(state.hero.x-e.home)<400 and (state.hero.fly<=3 or e.type=="elf"):
+		if chief_distance>chief_reach:e.x=move_toward(e.x,state.hero.x,34*dt)
+		elif e.cooldown<=0:_hit_hero(e);e.cooldown=1.4
+		return
+	var victim={};var distance=300.0
+	for u in state.units:
+		if abs(u.x-e.home)>400:continue
+		var d=abs(u.x-e.x)
+		if d<distance:victim=u;distance=d
+	var reach=210.0 if e.type=="elf" and e.ammo>0 else 33.0
+	if victim.is_empty():
+		e.x=move_toward(e.x,float(e.home),32*dt)
+		return
+	if distance>reach:e.x=move_toward(e.x,float(victim.x),34*dt)
+	elif e.cooldown<=0:
+		victim.hp-=6 if e.type=="elf" else 8;e.cooldown=1.4
+		if e.type=="elf" and e.ammo>0:e.ammo-=1;state.shots.append({"x":e.x,"to":victim.x,"left":0.3,"total":0.3,"enemy":true})
+
+func _hit_hero(e):
+	var p=state.hero
+	if p.hurt>0:return
+	cancel_payment()
+	if e.type=="elf" and e.ammo>0:e.ammo-=1
+	p.hurt=1.3
+	p.hp=maxf(0,p.hp-float({"human":10,"elf":8,"dwarf":14,"siege":20}.get(e.type,10)))
+	dirty=true
+
+func _trader(dt):
+	var t=state.trader
+	if t.phase=="away" and state.day%2==0 and t.last_day!=state.day:
+		t.phase="arriving";t.x=WORLD_EDGE;t.last_day=state.day;t.cargo=[];notify("人类奴隶商人赶着囚车来了")
+	elif t.phase=="arriving":
+		t.x=move_toward(t.x,CORE_SITES.trader_stop,170*dt)
+		if t.x==CORE_SITES.trader_stop:t.phase="staying";t.until=state.total+110;notify("商人已到部落，趁现在交易")
+	elif t.phase=="staying" and state.total>=t.until:t.phase="leaving";notify("商人准备离开，下次偶数日再来")
+	elif t.phase=="leaving":
+		t.x+=170*dt
+		if t.x>WORLD_EDGE:t.phase="away"
+
+func tick(dt):
+	if paused() or state.status!="playing":return
+	dt=clampf(dt,0,0.1)
+	state.total+=dt;state.time+=dt
+	if state.time>=DAY:
+		state.time-=DAY;state.day+=1;notify("第"+str(state.day)+"日 新的黎明");dirty=true
+	if night() and state.wave_day!=state.day:spawn_wave()
+	var p=state.hero;var mount=MOUNTS[p.mount]
+	p.hurt=maxf(0,p.hurt-dt)
+	if not input_run:p.exhausted=false
+	if p.stamina<=0.5:p.exhausted=true
+	var running=input_run and not p.get("exhausted",false) and p.stamina>0.5 and abs(input_axis)>0.1
+	var boosted=p.mount in ["wolf","bat"] and global_data.boosts.get(p.mount,0)>0
+	var speed=mount.run if running else mount.speed
+	if boosted and p.mount=="wolf" and running:speed*=1.35
+	if abs(p.x)>1200 and int(abs(p.x)/220)%4==0 and p.mount!="lizard" and p.fly<3:speed*=0.8
+	var velocity=float(p.get("velocity",0))
+	velocity=move_toward(velocity,input_axis*speed,1100*dt) if abs(input_axis)>0.1 else 0.0
+	p.velocity=velocity
+	p.x=clampf(p.x+velocity*dt,-WORLD_EDGE+25,WORLD_EDGE-25)
+	if abs(input_axis)>0.1:dirty=true
+	state.explored.min=minf(state.explored.min,p.x-230);state.explored.max=maxf(state.explored.max,p.x+230)
+	if abs(velocity)>6:p.face=1 if velocity>0 else -1
+	if p.mount=="bat" and input_run and not p.get("exhausted",false) and p.stamina>0.5:p.fly=move_toward(p.fly,44,90*dt);running=true
+	else:p.fly=move_toward(p.fly,0,100*dt)
+	if not state.payment.is_empty():
+		var paid_target=by_id(state.buildings,state.payment.object_id)
+		if paid_target.is_empty() or abs(p.x-state.payment.x)>=INTERACT_RADIUS or p.fly>3:cancel_payment()
+		else:
+			var live=contribution_target(paid_target,state.payment.get("force_upgrade",false))
+			if live.get("disabled",false) or payment_signature(paid_target,live)!=state.payment.signature:cancel_payment()
+	if running and not boosted:p.stamina=maxf(0,p.stamina-22*dt)
+	elif not running:p.stamina=minf(mount.stamina,p.stamina+16*dt)
+	if boosted:global_data.boosts[p.mount]=maxf(0,global_data.boosts[p.mount]-dt)
+	if p.hp<HERO_MAX_HP and p.hp>0 and state.time<120 and hall().hp>0 and abs(p.x-hall().x)<110 and _safe(p.x,180):
+		p.hp=minf(HERO_MAX_HP,p.hp+8*dt);dirty=true
+	for d in state.drops.duplicate():
+		d.age+=dt
+		if d.kind=="gold" and abs(d.x-p.x)<35 and state.gold<BAG_MAX:
+			var n=mini(int(d.amount),BAG_MAX-int(state.gold));state.gold+=n;d.amount-=n;state.loot_total+=n;visual("pickup",{"x":d.x,"to":p.x});dirty=true
+			if d.amount<=0:state.drops.erase(d)
+	active_fronts={-1:false,1:false}
+	for e in state.enemies:
+		if e.mode=="active" and not e.get("guard",false):active_fronts[int(e.side)]=true
+	for u in state.units.duplicate():
+		u.cooldown=maxf(0,u.cooldown-dt);u.fear=maxf(0,u.fear-dt);u.moving=false
+		u.on_tower=0
+		if u.hp<=0:
+			if not u.mission.is_empty() and u.mission.has("kind"):
+				var source=by_id(state.buildings,u.mission.get("building_id",0))
+				if not source.is_empty() and source.get("assigned",0)==u.id:source.assigned=0
+			if not u.mission.is_empty():notify(ROLE_NAMES[u.role]+"倒下了，未送回的战利品丢失")
+			_drop("gold",u.x,int(u.hidden)+int(u.carry))
+			if not u.cargo.is_empty():
+				if u.cargo.kind=="flag":_drop("flag",u.x,1,{"side":u.cargo.side})
+				elif u.cargo.kind=="captive":_spawn_downed(u.cargo.type,u.x,55)
+			state.units.erase(u);dirty=true;continue
+		if u.carry>0 and abs(u.x-p.x)<38 and p.fly<3:
+			var amount=mini(int(u.carry),maxi(0,BAG_MAX-int(state.gold)));state.gold+=amount;u.carry-=amount;dirty=true
+		if not u.mission.is_empty():_mission(u,dt)
+		elif u.role=="worker":_worker(u,dt)
+		elif u.role=="hunter":_hunter(u,dt)
+		elif u.role=="brute":_brute(u,dt)
+		elif u.role=="idle":
+			var available=""
+			var nearest=INF
+			for role in ["worker","hunter","brute","thief"]:
+				var stall=tool_stall(role)
+				if state.tool_stock[role]>0 and not stall.is_empty() and abs(stall.x-u.x)<nearest:available=role;nearest=abs(stall.x-u.x)
+			if available!="":
+				if _move(u,tool_stall(available).x,65,dt):
+					state.tool_stock[available]-=1;u.role=available;u.hp=36.0 if available=="brute" else 18.0;u.rank=1;promote_unit(u,int(hall().level));notify(ROLE_NAMES[available]+"从专属摊位领走工具");dirty=true
+			else:_move(u,hall().x+120+u.id%7*20,50,dt)
+		else:_move(u,building("den").x+35+u.id%3*16,62,dt)
+	for e in state.enemies.duplicate():_enemy(e,dt)
+	state.enemies=state.enemies.filter(func(e):return e.mode!="removed")
+	for shot in state.shots:shot.left-=dt
+	state.shots=state.shots.filter(func(a):return a.left>0)
+	for b in state.buildings:
+		if b.kind=="camp":
+			b.refresh+=dt
+			if b.refresh>65:b.refresh=0;b.stock=mini(3,b.stock+1)
+	for role in ["worker","hunter"]:
+		while global_data.pending[role]>0 and state.units.size()<capacity():
+			global_data.pending[role]-=1;add_unit(role,hall().x+40);state.recruited+=1;dirty=true
+	while state.pending_rescue>0 and state.units.size()<capacity():
+		state.pending_rescue-=1;add_unit("idle",hall().x+50);state.recruited+=1;dirty=true
+	_trader(dt)
+	if p.hp<=0:state.status="lost";state.loss_reason="首领阵亡";notify("首领阵亡，征程结束");dirty=true
+	elif state.flags.left and state.flags.right:state.status="won";global_data.wins+=1;notify("两面联军军旗都运回来了！");dirty=true
+	if state.status!="playing":cancel_payment()
+
+func snapshot():
+	return {"state":state.duplicate(true),"global":global_data.duplicate(true),"next_id":next_id,"rng_state":str(rng.state)}
+
+func restore(data):
+	if not data is Dictionary or not data.has("state") or not data.has("global"):return false
+	var incoming=data.state
+	if not incoming is Dictionary or not data.global is Dictionary or int(incoming.get("schema",0))!=3:return false
+	for key in ["hero","flags","trader","steal_effects"]:
+		if not incoming.get(key) is Dictionary:return false
+	for key in ["buildings","units","enemies","drops","shots","captives"]:
+		if not incoming.get(key) is Array:return false
+	for key in ["seed","day","time","gold","scrap","total"]:
+		if not typeof(incoming.get(key)) in [TYPE_INT,TYPE_FLOAT]:return false
+	if not MOUNTS.has(incoming.hero.get("mount","")) or not incoming.hero.has("x"):return false
+	if not incoming.hero.has_all(["face","stamina","fly","hurt"]):return false
+	if not incoming.trader.has_all(["phase","x","until","last_day"]):return false
+	if incoming.hero.has("hp") and (not typeof(incoming.hero.hp) in [TYPE_INT,TYPE_FLOAT] or not is_finite(float(incoming.hero.hp))):return false
+	for b in incoming.buildings:
+		if not b is Dictionary or not b.has_all(["id","kind","x","level","job"]):return false
+		if not b.job is Dictionary:return false
+		if not b.job.is_empty() and not b.job.has_all(["left","total","mode"]):return false
+	for u in incoming.units:
+		if not u is Dictionary or not u.has_all(["id","role","x","hp","hidden","mission","cargo"]):return false
+		if not ROLE_NAMES.has(u.role):return false
+		if not u.has_all(["face","mode","timer","cooldown","carry","job_id","fear"]):return false
+		if not u.mission is Dictionary or not u.cargo is Dictionary:return false
+		if not u.mission.is_empty() and not u.mission.has_all(["stage","building_id"]):return false
+	for e in incoming.enemies:
+		if not e is Dictionary or not e.has_all(["id","type","side","x","hp","max_hp","mode","cooldown","ttl","ammo","looted"]):return false
+		if not ENEMY_NAMES.has(e.type) or e.get("guard",false) and not e.has("home"):return false
+	for d in incoming.drops:
+		if not d is Dictionary or not d.has_all(["id","kind","x","amount","age"]):return false
+	for shot in incoming.shots:
+		if not shot is Dictionary or not shot.has_all(["x","to","left","total"]):return false
+	if not incoming.buildings.any(func(b):return b.kind=="hall") or not incoming.buildings.any(func(b):return b.kind=="prison"):return false
+	for key in ["mounts","receipts"]:
+		if data.global.has(key) and not data.global[key] is Array:return false
+	for key in ["boosts","pending","settings"]:
+		if data.global.has(key) and not data.global[key] is Dictionary:return false
+	var pending_payment=incoming.get("payment",{})
+	if not pending_payment is Dictionary:return false
+	if not pending_payment.is_empty():
+		if not pending_payment.has_all(["object_id","x","signature","cost","scrap","paid","normal_paid","ad_paid","reserve_paid"]):return false
+		for key in ["cost","scrap","paid","normal_paid","ad_paid","reserve_paid"]:
+			if not typeof(pending_payment[key]) in [TYPE_INT,TYPE_FLOAT] or float(pending_payment[key])<0 or float(pending_payment[key])!=int(pending_payment[key]):return false
+		if int(pending_payment.paid)<0 or int(pending_payment.paid)>int(pending_payment.cost):return false
+		if int(pending_payment.normal_paid)+int(pending_payment.ad_paid)+int(pending_payment.reserve_paid)!=int(pending_payment.paid):return false
+	state=incoming.duplicate(true);global_data=default_global();global_data.merge(data.global,true)
+	if not state.get("payment") is Dictionary:state.payment={}
+	for section in ["boosts","pending","settings"]:
+		var defaults=default_global()[section];defaults.merge(global_data[section],true);global_data[section]=defaults
+	if not state.trader.get("cargo") is Array:state.trader.cargo=[]
+	if not state.has("explored"):state.explored={"min":-720.0,"max":720.0}
+	state.pending_rescue=int(state.get("pending_rescue",0))+int(global_data.pending.get("idle",0));global_data.pending.erase("idle")
+	if not state.get("tool_stock") is Dictionary:state.tool_stock={}
+	for role in ["worker","hunter","brute","thief"]:state.tool_stock[role]=maxi(0,int(state.tool_stock.get(role,0)))
+	for role in ["worker","hunter"]:global_data.pending[role]=maxi(0,int(global_data.pending.get(role,0)))
+	if not "boar" in global_data.mounts:global_data.mounts.append("boar")
+	# JSON numbers are doubles. Normalize integer counters and IDs once on load.
+	for key in ["seed","day","gold","scrap","ad_in_bag","kills","recruited","wave_day","tutorial","loot_total"]:
+		state[key]=int(state.get(key,0))
+	for u in state.units:
+		u.rank=clampi(int(u.get("rank",1)),1,3)
+		if u.role!="idle":promote_unit(u,int(hall().level))
+		for key in ["id","face","hidden","carry","job_id","side"]:u[key]=int(u.get(key,0))
+	for b in state.buildings:
+		for key in ["id","level","side","charges"]:b[key]=int(b.get(key,0))
+		for key in ["stock","ready_day"]:
+			if b.has(key):b[key]=int(b[key])
+	for e in state.enemies:
+		for key in ["id","side","ammo"]:e[key]=int(e.get(key,0))
+	for d in state.drops:
+		for key in ["id","amount"]:d[key]=int(d.get(key,0))
+	for key in ["reserve","wins"]:global_data[key]=int(global_data.get(key,0))
+	for key in global_data.pending:global_data.pending[key]=int(global_data.pending[key])
+	next_id=int(data.get("next_id",10000));rng.seed=int(state.seed);rng.state=int(data.get("rng_state",rng.state))
+	cancel_payment()
+	_migrate_v6()
+	pause_reasons.clear();input_axis=0;input_run=false;dirty=false
+	return true
+
+func _migrate_v6():
+	var legacy=not state.hero.has("hp")
+	state.hero.hp=clampf(float(state.hero.get("hp",HERO_MAX_HP)),0,HERO_MAX_HP);state.hero.max_hp=HERO_MAX_HP
+	if legacy and state.status=="lost":state.status="playing";state.erase("loss_reason")
+	state.erase("crown")
+	for e in state.enemies:e.erase("crown")
+	state.rules_version=6
+	if int(state.get("world_layout",0))>=6:return
+	for b in state.buildings:next_id=maxi(next_id,int(b.id)+1)
+	for u in state.units:next_id=maxi(next_id,int(u.id)+1)
+	for e in state.enemies:next_id=maxi(next_id,int(e.id)+1)
+	for b in state.buildings:
+		if CORE_SITES.has(b.kind):b.x=CORE_SITES[b.kind]
+		elif b.kind=="tools":b.role=b.get("role","worker");b.x=TOOL_SITES.get(b.role,TOOL_SITES.worker)
+	for role in TOOL_SITES:
+		if tool_stall(role).is_empty():_build("tools",TOOL_SITES[role],1,{"role":role})
+	for side in [-1,1]:
+		for kind in SIDE_SITES:
+			var sites=state.buildings.filter(func(b):return b.kind==kind and b.get("side",0)==side)
+			sites.sort_custom(func(a,b):return abs(a.x)<abs(b.x))
+			for i in range(sites.size()):sites[i].x=SIDE_SITES[kind][mini(i,SIDE_SITES[kind].size()-1)]*side
+	for e in state.enemies:
+		if e.get("guard",false):e.home+=(SIDE_SITES.outpost[0]-2830)*e.side;e.x=e.home
+	if state.trader.phase=="staying":state.trader.x=CORE_SITES.trader_stop
+	state.explored.min=minf(state.explored.min,-1350);state.explored.max=maxf(state.explored.max,1350)
+	state.world_layout=6
+
+func stats():
+	return {"day":state.day,"time":state.time,"phase":phase(),"gold":state.gold,"reserve":global_data.reserve,"scrap":state.scrap,"population":state.units.size(),"capacity":capacity(),"captives":state.captives.size(),"prison_capacity":prison_capacity(),"enemies":state.enemies.size(),"status":state.status,"kills":state.kills,"hero_x":state.hero.x,"hero_hp":state.hero.hp,"hero_max_hp":HERO_MAX_HP,"flags":state.flags.duplicate()}

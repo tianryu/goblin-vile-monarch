@@ -1,0 +1,13 @@
+{
+  "assetName": "hunter",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-8ac94555-4e1a-451d-8ea4-5360b52e9dda.png",
+  "prompt": "Precise minimal edit of this EXISTING approved game character, not a new character design. Preserve the EXACT crooked face, long pointed nose, squinting eye, big pointed ear, two uneven little tusks, head/body proportions, lean hunched silhouette, angular ragged shape boundaries, bow, boots, pose and matte irregular flat paint patches of the input. Only change the brown sleeveless tunic to a clear red tunic, keeping its same patch shapes and torn hem. Head wrap remains muted burgundy red. Change the skin just slightly greener for readability, not neon yellow. Remove the complete arrow and its fletching from the bow; the near hand is empty in the same position. No loose projectile, no quiver needed. Do not smooth this into a vector mascot, do not round or enlarge the face, do not add gradients, contour ink, shiny materials or skin texture. One complete isolated static character, feet level, facing RIGHT, generous margin, genuine transparent background. No white sticker outline yet; runtime adds it. Preserve same painter and same character identity.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "原图局部改红衣、移除箭，脸型比例与原hunter相同。同底色74像素检查已看，避免前版圆滑矢量轮廓；待引擎合成。",
+  "reviewStatus": "approved-source-pending-engine"
+}

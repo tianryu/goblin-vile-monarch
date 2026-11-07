@@ -1,0 +1,12 @@
+{
+  "assetName": "timber_frame",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-4f318509-e2de-4ee6-a6ab-b1f63d2180a5.png",
+  "prompt": "ONE isolated transparent attachment for a medieval goblin work stall, same EXACT flat matte hand-painted nonpixel cartoon style as reference. A wide low reinforced TIMBER SUPPORT FRAME with two short chunky rough wooden posts, one horizontal wood crossbeam and diagonal wooden corner braces tied by coarse rope, a few small dark iron strap bands. Empty transparent interior. Width twice height, full object in margins. Simple broad matte brown patches and irregular dark outlines, no 3D, no realistic grain, no gradients, no glow, no shadow, no ground, no text or tools or cloth. This is a separate second-tier structural attachment, not a full building.",
+  "generator": "builtin-imagegen",
+  "edge": "building",
+  "facing": 1,
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "独立木构支架，完整透明边界、粗绳与铁箍，延续现有哑光平面手绘，作为二级设施结构加固，待引擎验收。"
+}

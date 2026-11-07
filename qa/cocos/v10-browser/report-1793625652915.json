@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "name": "mouse-drag-joystick",
+      "pass": true
+    },
+    {
+      "name": "click-sprint-toggle-works-with-keyboard",
+      "pass": true
+    },
+    {
+      "name": "pause-freezes-rendered-moving-characters",
+      "pass": true
+    },
+    {
+      "name": "treasury-ten-clicks-and-icon-amount",
+      "pass": true
+    },
+    {
+      "name": "closed-left-world-is-black",
+      "pass": true
+    },
+    {
+      "name": "role-counts-and-smaller-worker",
+      "pass": true
+    },
+    {
+      "name": "prisoners-keep-standing-character-size",
+      "pass": true
+    },
+    {
+      "name": "trader-has-direct-interaction-and-cart",
+      "pass": true
+    },
+    {
+      "name": "hero-garrison-and-enemy-forts-render",
+      "pass": true
+    },
+    {
+      "name": "mobile-two-finger-drag-and-run",
+      "pass": true
+    },
+    {
+      "name": "no-script-errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "realPhone": false,
+  "normalEconomyCampaign": false,
+  "mobileInput": {
+    "x": 571.7916666666666,
+    "axis": 1,
+    "run": true
+  },
+  "passed": 11,
+  "failed": 0
+}

@@ -1,0 +1,167 @@
+{
+  "revision": 6,
+  "assets": [
+    {
+      "name": "battlefield_wreck",
+      "source": "game\\art\\source\\world-v6\\battlefield_wreck.png",
+      "runtime_size": [
+        300,
+        115
+      ],
+      "review": "accepted: broad matte patches, flat silhouettes, grounded supports, no text, transparent alpha"
+    },
+    {
+      "name": "build_site_sign",
+      "source": "game\\art\\source\\world-v6\\build_site_sign.png",
+      "runtime_size": [
+        75,
+        112
+      ],
+      "review": "accepted: wood stake touches soil, large hammer silhouette, no lettering; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "hall_ruin",
+      "source": "game\\art\\source\\world-v6\\hall_ruin.png",
+      "runtime_size": [
+        300,
+        108
+      ],
+      "review": "accepted: broad matte patches, flat silhouettes, grounded supports, no text, transparent alpha"
+    },
+    {
+      "name": "heart_icon",
+      "source": "game\\art\\source\\world-v6\\heart_icon.png",
+      "runtime_size": [
+        48,
+        43
+      ],
+      "review": "accepted: matte red irregular heart with no shine or backdrop; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "market_army",
+      "source": "game\\art\\source\\world-v6\\market_army.png",
+      "runtime_size": [
+        256,
+        219
+      ],
+      "review": "accepted: two helmets crest, standards and spare armor; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "market_gold",
+      "source": "game\\art\\source\\world-v6\\market_gold.png",
+      "runtime_size": [
+        204,
+        220
+      ],
+      "review": "accepted: large coin medallion, scales and gold stock; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "market_mount",
+      "source": "game\\art\\source\\world-v6\\market_mount.png",
+      "runtime_size": [
+        253,
+        220
+      ],
+      "review": "accepted: saddle crest, reins saddles hay; no animals; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "thieves_den",
+      "source": "game\\art\\source\\world-v6\\thieves_den.png",
+      "runtime_size": [
+        158,
+        220
+      ],
+      "review": "accepted: broad matte patches, flat silhouettes, grounded supports, no text, transparent alpha"
+    },
+    {
+      "name": "tool_brute",
+      "source": "game\\art\\source\\world-v6\\tool_brute.png",
+      "runtime_size": [
+        246,
+        220
+      ],
+      "review": "accepted: round shield crest, clubs and cleaver rack; no hand conflicts; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "tool_hunter",
+      "source": "game\\art\\source\\world-v6\\tool_hunter.png",
+      "runtime_size": [
+        235,
+        220
+      ],
+      "review": "accepted: bow-arrow crest, olive canvas, target and arrow bundles; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "tool_thief",
+      "source": "game\\art\\source\\world-v6\\tool_thief.png",
+      "runtime_size": [
+        193,
+        220
+      ],
+      "review": "accepted: plum crooked canopy, key crest, lockpicks rope and pouches; non-pixel painted transparent static bitmap"
+    },
+    {
+      "name": "tool_worker",
+      "source": "game\\art\\source\\world-v6\\tool_worker.png",
+      "runtime_size": [
+        256,
+        211
+      ],
+      "review": "accepted: oversized wooden mallet, saw timber and bench; carpenter distinct; non-pixel painted transparent static bitmap"
+    }
+  ],
+  "trimmed_layers": [
+    {
+      "name": "far",
+      "before": [
+        960,
+        480
+      ],
+      "after": [
+        960,
+        168
+      ],
+      "row_offset": 144
+    },
+    {
+      "name": "middle",
+      "before": [
+        960,
+        480
+      ],
+      "after": [
+        960,
+        312
+      ],
+      "row_offset": 0
+    },
+    {
+      "name": "land",
+      "before": [
+        960,
+        480
+      ],
+      "after": [
+        960,
+        67
+      ],
+      "row_offset": 302
+    },
+    {
+      "name": "foreground",
+      "before": [
+        960,
+        480
+      ],
+      "after": [
+        960,
+        72
+      ],
+      "row_offset": 408
+    }
+  ],
+  "frames": 111,
+  "rgba_bytes": 18790944,
+  "textures": 34,
+  "no_procedural_bitmap_art": true
+}

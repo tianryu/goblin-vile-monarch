@@ -1,0 +1,9 @@
+{
+  "assetName": "gear_pile",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-bb924d34-7aec-4304-932d-6258308174f8.png",
+  "prompt": "Use case: stylized-concept. Asset: one low heap of collected medieval equipment for a side-view flat hand-painted goblin game. Input image is ONLY the style reference; match its simple matte painted wood and gray iron, broad irregular patches and little volume, no sharp polished 3D bevels or detailed texture. Draw a small low grounded pile of TWO EMPTY IRON HELMETS, a bent breastplate, one BLUE-PAINTED WOODEN ROUND SHIELD leaning among them, a brown leather belt and an old broken bow. Objects lie ON EACH OTHER and flat on a shared horizontal bottom line, not floating, no cart, no people, no bodies or background scenery. Main read: obvious discarded armor and shield pile, width about 2.5 times height. Large simple recognizable shapes suitable for 44px game height, muted brown and blue-gray colors. Orthographic flat 2D side-view, genuine transparent background with margin. No text, no icon badge, no white outline, no ground shadow or floor; runtime handles contact shadow.",
+  "edge": "item",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": false
+}

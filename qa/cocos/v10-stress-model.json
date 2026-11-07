@@ -1,0 +1,26 @@
+{
+  "environment": "desktop Node model only",
+  "realPhone": false,
+  "renderPerformance": false,
+  "fixture": "50 durable allies spread across five camps, finite garrisons, no raids",
+  "simulationSeconds": 40,
+  "ticks": 1200,
+  "tickMs": {
+    "p50": 0.5714000000000397,
+    "p95": 0.795599999999979,
+    "max": 3.6308000000000007
+  },
+  "peakActiveGarrisonPerCamp": 16,
+  "peakAliveEnemies": 74,
+  "remainingReserves": [
+    5,
+    15,
+    36,
+    54,
+    8
+  ],
+  "allies": 50,
+  "textureRgbaEstimateBytes": 60044932,
+  "note": "Estimate above excludes glow masks, rig atlases, engine memory and GPU copies; no low-end-phone performance claim",
+  "rigAtlasCount": 10
+}

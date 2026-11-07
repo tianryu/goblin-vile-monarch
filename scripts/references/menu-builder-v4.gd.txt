@@ -1,0 +1,128 @@
+extends RefCounted
+
+var ui
+var m
+func _init(owner_ui):ui=owner_ui;m=ui.model
+
+func text(value):ui.paragraph(value)
+func act(value,callback,key="",disabled=false,parent=null):
+	if parent==null:return ui.panel_action(value,callback,key,disabled)
+	var b=ui.button(value,parent,callback,key);b.disabled=disabled;return b
+func grid(columns=2):
+	var g=GridContainer.new();g.columns=columns;g.size_flags_horizontal=Control.SIZE_EXPAND_FILL;g.add_theme_constant_override("h_separation",10);g.add_theme_constant_override("v_separation",8);ui.panel_content.add_child(g);return g
+func card(parent,image,title,description,image_height=76):
+	var c=VBoxContainer.new();c.custom_minimum_size.x=110 if parent.columns==5 else 140;c.size_flags_horizontal=Control.SIZE_EXPAND_FILL;c.add_theme_constant_override("separation",5);parent.add_child(c)
+	var p=TextureRect.new();p.texture=ui.art.texture(image);p.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;p.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;p.custom_minimum_size=Vector2(0,image_height);p.mouse_filter=Control.MOUSE_FILTER_IGNORE;c.add_child(p)
+	var l=ui.label(title,c,20);l.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	if description!="":l=ui.label(description,c,18);l.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	return c
+func do_then(callable):ui.after_action(callable)
+
+func populate(kind,ident):
+	match kind:
+		"welcome":
+			ui.panel_title.text="领地等着你"
+			var p=TextureRect.new();p.texture=ui.art.texture("ui_logo");p.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;p.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;p.custom_minimum_size=Vector2(0,96);ui.panel_content.add_child(p)
+			text("经营、追赃、捕俘、偷窃。守住部落，抢回两面联军军旗。")
+			var b=act("开始统治",ui.close_panel,"start");ui.skin.control_button(b,"ui_button_primary")
+			act("查看部落手册",func():ui.open_panel("guide"),"guide")
+		"guide":
+			ui.panel_title.text="部落手册"
+			text("左右摇杆移动，按住靴子奔跑。靠近目标后按手掌键交互；松开奔跑，蝙蝠落地后才能交易。")
+			text("白天招募、发工具、修路障。猎手交钱，鼓起的侧袋是私藏，靠近抽鞭子追回。")
+			text("工匠拖回活口，监牢容量3、6、10人。人类商人偶数日到访，出售俘虏换金币或废铁。")
+			text("修盗贼窝、招盗贼，侦察敌营后偷箭、轮、军饷或钥匙。组织打手与猎手出征，军旗必须实际运回。")
+		"pause":
+			text("征程已暂停。关闭游戏不会推进战斗或消耗坐骑强化。")
+			var g=grid()
+			act("继续征程",ui.close_panel,"resume",false,g)
+			act("部落账本",func():ui.open_panel("ledger"),"ledger",false,g)
+			act("部落手册",func():ui.open_panel("guide"),"guide",false,g)
+			act("水面倒影 "+("关" if m.global_data.settings.low_fx else "开"),func():do_then(func():m.global_data.settings.low_fx=not m.global_data.settings.low_fx),"reflections",false,g)
+			act("声音 "+("开" if m.global_data.settings.sound else "关"),func():do_then(func():m.global_data.settings.sound=not m.global_data.settings.sound),"sound",false,g)
+			act("免费重新开始",func():ui.open_panel("restart"),"restart",false,g)
+		"restart":
+			ui.panel_title.text="再起一座部落"
+			text("本次征程重新开始。永久坐骑、候补、未用广告储备与剩余强化会保留。")
+			act("确认开启新征程",func():m.new_campaign();ui.close_panel(),"confirm_restart")
+		"ledger":
+			ui.panel_title.text="部落账本"
+			text("金币储备 "+str(m.global_data.reserve)+"  废铁 "+str(m.state.scrap)+"  击退敌军 "+str(m.state.kills))
+			text("候补工匠 "+str(m.global_data.pending.worker)+"  候补猎手 "+str(m.global_data.pending.hunter)+"  等待归队同族 "+str(m.state.pending_rescue))
+			var g=grid(5)
+			for role in ["idle","worker","hunter","brute","thief"]:
+				var n=m.state.units.filter(func(u):return u.role==role).size()
+				card(g,role,m.ROLE_NAMES[role],str(n)+"名",48)
+			var camps=grid(2)
+			for side in [-1,1]:
+				var secured=m.state.flags["left" if side<0 else "right"]
+				var post={}
+				for b in m.state.buildings:
+					if b.kind=="outpost" and b.side==side:post=b;break
+				card(camps,"flag","西侧指挥营" if side<0 else "东侧指挥营","军旗已运回" if secured else ("军旗正在归途" if post.get("hp",0)<=0 else "营地耐久 "+str(int(post.hp))),24)
+		"tools":
+			text("先买工具也可以。空闲爪牙会自动领取，不额外收钱。")
+			var g=grid(4)
+			for role in ["worker","hunter","brute","thief"]:
+				var c=card(g,role,m.ROLE_NAMES[role],"库存 "+str(m.state.tool_stock[role]))
+				act(str(m.ROLE_COSTS[role])+"金币",func():do_then(func():m.buy_tool(role)),"tool_"+role,false,c)
+		"gold":
+			var g=grid(2);card(g,"coin","30枚金币","装不下的存入储备")
+			var c=VBoxContainer.new();c.size_flags_horizontal=Control.SIZE_EXPAND_FILL;g.add_child(c)
+			ui.label("商人的私藏",c,24);ui.label("每次观看都能获得\n没有次数限制",c,19)
+			act("观看广告  领30金币",func():ui.request_ad("gold"),"ad_gold")
+		"army":
+			text("每次自选两名爪牙，工具配齐。满员时保留为候补。")
+			var g=grid(2)
+			for role in ["hunter","worker"]:
+				var c=card(g,role,"2名"+m.ROLE_NAMES[role],"候补 "+str(m.global_data.pending[role]))
+				act("观看广告",func():ui.request_ad(role),"ad_"+role,false,c)
+		"mount":
+			var g=grid(4)
+			for mount in ["boar","lizard","wolf","bat"]:
+				var owned=mount in m.global_data.mounts
+				var desc={"boar":"均衡耐跑","lizard":"泥地不减速","wolf":"高速冲刺","bat":"按奔跑低飞"}[mount]
+				if mount in ["wolf","bat"] and m.global_data.boosts[mount]>0:desc="强化 "+str(int(m.global_data.boosts[mount]))+"秒"
+				var c=card(g,"rider_"+mount,m.MOUNTS[mount].name,desc,68 if m.state.hero.mount in ["wolf","bat"] else 76)
+				if owned:act("已骑乘" if m.state.hero.mount==mount else "骑乘",func():do_then(func():m.equip_mount(mount)),"equip_"+mount,m.state.hero.mount==mount,c)
+				elif mount=="lizard":act("40金币兑换",func():do_then(func():m.buy_lizard()),"buy_lizard",false,c)
+				elif mount in ["wolf","bat"]:act("广告解锁",func():ui.request_ad(mount),"ad_"+mount,false,c)
+			if m.state.hero.mount in ["wolf","bat"]:
+				var mount=m.state.hero.mount
+				act("观看广告  当前坐骑强化5分钟",func():ui.request_ad(mount),"ad_"+mount)
+			else:text("蜥蜴用金币永久兑换。狼与蝠可用广告永久解锁。")
+		"prison","trader":
+			var trading=kind=="trader"
+			text("监牢 "+str(m.state.captives.size())+" / "+str(m.prison_capacity())+"  "+("囚车 "+str(m.state.trader.cargo.size())+"人  金币满袋时留在地上" if trading else "工匠安全后拖回活口，满员时会逃跑"))
+			var g=grid(3)
+			for species in ["human","dwarf","elf"]:
+				var count=m.state.captives.filter(func(c):return c.type==species).size()
+				var c=card(g,"captive_"+species,m.ENEMY_NAMES[species],str(count)+"名  每名"+str(m.SELL_PRICES[species])+"金币",32 if trading else 65)
+				if trading:act("出售",func():do_then(func():m.sell_captives(species)),"sell_"+species,count==0,c)
+			if trading:
+				var row=grid(2);act("出售全部",func():do_then(func():m.sell_captives()),"sell_all",m.state.captives.is_empty(),row);act("一名换5废铁",func():do_then(func():m.sell_captives("all",true)),"exchange",m.state.captives.is_empty(),row)
+			else:
+				var p=m.building("prison");var info=m.upgrade_info(p)
+				if p.level<3:act("升级容量  "+str(info.gold)+"金币  "+str(info.scrap)+"废铁",func():do_then(func():m.start_build(p,true)),"prison_upgrade",not p.job.is_empty())
+		"steal":
+			var row=grid(2)
+			for side in [-1,1]:act("西侧补给" if side<0 else "东侧补给",func():ui.theft_side=side;ui.open_panel("steal",ident),"steal_side_"+str(side),false,row)
+			var g=grid(4)
+			for b in m.state.buildings:
+				if b.kind!="supply" or b.side!=ui.theft_side:continue
+				var known=b.x>=m.state.explored.min and b.x<=m.state.explored.max;var ready=b.ready_day<=m.state.day and known and b.get("assigned",0)==0
+				var desc={"arrows":"减少精灵箭量","wheel":"阻止一波器械","pay":"15金币 减兵","keys":"救回两名同族"}[b.task]
+				if not ready:desc="盗贼行动中" if b.get("assigned",0)>0 else ("等待补给" if known else "先侦察敌营")
+				var c=card(g,{"arrows":"arrows","wheel":"wheel","pay":"coin","keys":"key"}[b.task],m.task_name(b.task),desc,40)
+				act("派遣 3金币",func():do_then(func():m.start_theft(b.id)),"steal_"+str(b.id),not ready,c)
+		"rally":
+			var b=m.by_id(m.state.buildings,ident);var side=b.get("side",1)
+			var g=grid(2);card(g,"flag","西营出征" if side<0 else "东营出征","军旗必须实际带回大厅")
+			var c=card(g,"brute","至多6名战士","至少1名打手和1名战友")
+			act("组织出征 5金币",func():do_then(func():m.rally(side)),"rally",false,c)
+			text("出征会抽调守军。先守好两侧，再偷物资削弱联军。")
+		"result":
+			var victory=m.state.status=="won"
+			card(grid(1),"rider_"+m.state.hero.mount,"森林该交保护费了" if victory else "部落还会回来的","第"+str(m.state.day)+"日  击退"+str(m.state.kills)+"名联军")
+			text("永久坐骑、候补与未用广告资源已保留。")
+			act("免费开启新征程",func():m.new_campaign();ui.close_panel(),"new_campaign")

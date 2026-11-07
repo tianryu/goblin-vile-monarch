@@ -1,0 +1,755 @@
+{
+  "errors": [],
+  "state": {
+    "active_torch_lights": 1,
+    "ad_inflight": false,
+    "axis": 0,
+    "boosts": {
+      "bat": 0,
+      "wolf": 0
+    },
+    "capacity": 60,
+    "captives": 2,
+    "coin_slots": 0,
+    "day": 1,
+    "daylight": 0,
+    "decoded_art_bytes": 65377568,
+    "enemies": [],
+    "engine_draw_calls": 42,
+    "engine_process_seconds": 0.019,
+    "engine_static_bytes": 59491438,
+    "explanatory_ui": false,
+    "fast_normal_lighting": true,
+    "flags": {
+      "left": false,
+      "right": false
+    },
+    "fly": 0,
+    "ghost_key": "",
+    "glow": false,
+    "gold": 18,
+    "hero_anchor": [
+      480,
+      318
+    ],
+    "hero_face": 1,
+    "hero_hp": 100,
+    "hero_max_hp": 100,
+    "hero_x": 2850,
+    "kills": 0,
+    "modal": "",
+    "moon": [
+      516.799987792969,
+      55.1406860351562
+    ],
+    "moon_visible": true,
+    "mount": "boar",
+    "mounts": [
+      "boar"
+    ],
+    "normal_sheets": 8,
+    "paused": true,
+    "payment": {},
+    "phase": "夜晚",
+    "population": 6,
+    "portrait": false,
+    "prison_capacity": 3,
+    "rects": {
+      "joystick": [
+        24,
+        368,
+        164,
+        88
+      ],
+      "pause": [
+        876,
+        14,
+        60,
+        60
+      ],
+      "run": [
+        676,
+        370,
+        78,
+        78
+      ]
+    },
+    "render_order": [
+      "buildings",
+      "hero",
+      "goblins",
+      "enemies"
+    ],
+    "reserve": 0,
+    "roles": {
+      "hunter": 3,
+      "idle": 1,
+      "worker": 2
+    },
+    "run": false,
+    "sites": [
+      {
+        "hp": 320,
+        "id": 1,
+        "job": {},
+        "kind": "hall",
+        "level": 3,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 0
+      },
+      {
+        "hp": 0,
+        "id": 2,
+        "job": {},
+        "kind": "tools",
+        "level": 1,
+        "requires": 1,
+        "role": "worker",
+        "visible": true,
+        "x": -255
+      },
+      {
+        "hp": 0,
+        "id": 3,
+        "job": {},
+        "kind": "tools",
+        "level": 1,
+        "requires": 1,
+        "role": "hunter",
+        "visible": true,
+        "x": 310
+      },
+      {
+        "hp": 0,
+        "id": 4,
+        "job": {},
+        "kind": "tools",
+        "level": 1,
+        "requires": 2,
+        "role": "brute",
+        "visible": true,
+        "x": 1360
+      },
+      {
+        "hp": 0,
+        "id": 5,
+        "job": {},
+        "kind": "tools",
+        "level": 1,
+        "requires": 3,
+        "role": "thief",
+        "visible": true,
+        "x": -2980
+      },
+      {
+        "hp": 0,
+        "id": 6,
+        "job": {},
+        "kind": "den",
+        "level": 1,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": -2560
+      },
+      {
+        "hp": 0,
+        "id": 7,
+        "job": {},
+        "kind": "prison",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 620
+      },
+      {
+        "hp": 0,
+        "id": 8,
+        "job": {},
+        "kind": "trader_stop",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 1860
+      },
+      {
+        "hp": 0,
+        "id": 9,
+        "job": {},
+        "kind": "merchant_gold",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -570
+      },
+      {
+        "hp": 0,
+        "id": 10,
+        "job": {},
+        "kind": "merchant_army",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 870
+      },
+      {
+        "hp": 0,
+        "id": 11,
+        "job": {},
+        "kind": "merchant_mount",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": -950
+      },
+      {
+        "hp": 0,
+        "id": 12,
+        "job": {},
+        "kind": "wall",
+        "level": 0,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -1550
+      },
+      {
+        "hp": 0,
+        "id": 13,
+        "job": {},
+        "kind": "wall",
+        "level": 0,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": -3220
+      },
+      {
+        "hp": 0,
+        "id": 14,
+        "job": {},
+        "kind": "wall",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": -4820
+      },
+      {
+        "hp": 0,
+        "id": 15,
+        "job": {},
+        "kind": "tower",
+        "level": 0,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -1430
+      },
+      {
+        "hp": 0,
+        "id": 16,
+        "job": {},
+        "kind": "tower",
+        "level": 0,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": -3090
+      },
+      {
+        "hp": 0,
+        "id": 17,
+        "job": {},
+        "kind": "tower",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": -4670
+      },
+      {
+        "hp": 0,
+        "id": 18,
+        "job": {},
+        "kind": "net",
+        "level": 0,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": -1790
+      },
+      {
+        "hp": 0,
+        "id": 19,
+        "job": {},
+        "kind": "net",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": -3410
+      },
+      {
+        "hp": 0,
+        "id": 20,
+        "job": {},
+        "kind": "rock",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": -5010
+      },
+      {
+        "hp": 0,
+        "id": 21,
+        "job": {},
+        "kind": "rally",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": -1240
+      },
+      {
+        "hp": 0,
+        "id": 22,
+        "job": {},
+        "kind": "camp",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -2350
+      },
+      {
+        "hp": 0,
+        "id": 23,
+        "job": {},
+        "kind": "camp",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -5870
+      },
+      {
+        "hp": 0,
+        "id": 24,
+        "job": {},
+        "kind": "wreck",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -4110
+      },
+      {
+        "hp": 0,
+        "id": 25,
+        "job": {},
+        "kind": "chest",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -6350
+      },
+      {
+        "hp": 260,
+        "id": 26,
+        "job": {},
+        "kind": "outpost",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -8120
+      },
+      {
+        "hp": 0,
+        "id": 27,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -7220
+      },
+      {
+        "hp": 0,
+        "id": 28,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -7400
+      },
+      {
+        "hp": 0,
+        "id": 29,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -7590
+      },
+      {
+        "hp": 0,
+        "id": 30,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": -7790
+      },
+      {
+        "hp": 0,
+        "id": 31,
+        "job": {},
+        "kind": "wall",
+        "level": 0,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 1770
+      },
+      {
+        "hp": 0,
+        "id": 32,
+        "job": {},
+        "kind": "wall",
+        "level": 0,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 3480
+      },
+      {
+        "hp": 0,
+        "id": 33,
+        "job": {},
+        "kind": "wall",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": 5060
+      },
+      {
+        "hp": 0,
+        "id": 34,
+        "job": {},
+        "kind": "tower",
+        "level": 0,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 1640
+      },
+      {
+        "hp": 0,
+        "id": 35,
+        "job": {},
+        "kind": "tower",
+        "level": 0,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 3330
+      },
+      {
+        "hp": 0,
+        "id": 36,
+        "job": {},
+        "kind": "tower",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": 4900
+      },
+      {
+        "hp": 0,
+        "id": 37,
+        "job": {},
+        "kind": "net",
+        "level": 0,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 1960
+      },
+      {
+        "hp": 0,
+        "id": 38,
+        "job": {},
+        "kind": "net",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": 3660
+      },
+      {
+        "hp": 0,
+        "id": 39,
+        "job": {},
+        "kind": "rock",
+        "level": 0,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": 5250
+      },
+      {
+        "hp": 0,
+        "id": 40,
+        "job": {},
+        "kind": "rally",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 1110
+      },
+      {
+        "hp": 0,
+        "id": 41,
+        "job": {},
+        "kind": "camp",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 2260
+      },
+      {
+        "hp": 0,
+        "id": 42,
+        "job": {},
+        "kind": "camp",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 5640
+      },
+      {
+        "hp": 0,
+        "id": 43,
+        "job": {},
+        "kind": "wreck",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 4390
+      },
+      {
+        "hp": 0,
+        "id": 44,
+        "job": {},
+        "kind": "chest",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 6020
+      },
+      {
+        "hp": 260,
+        "id": 45,
+        "job": {},
+        "kind": "outpost",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 7840
+      },
+      {
+        "hp": 0,
+        "id": 46,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 7020
+      },
+      {
+        "hp": 0,
+        "id": 47,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 7160
+      },
+      {
+        "hp": 0,
+        "id": 48,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 7350
+      },
+      {
+        "hp": 0,
+        "id": 49,
+        "job": {},
+        "kind": "supply",
+        "level": 1,
+        "requires": 1,
+        "role": "",
+        "visible": true,
+        "x": 7540
+      },
+      {
+        "hp": 0,
+        "id": 50,
+        "job": {},
+        "kind": "woodcut",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": -2080
+      },
+      {
+        "hp": 0,
+        "id": 51,
+        "job": {},
+        "kind": "farm",
+        "level": 1,
+        "requires": 2,
+        "role": "",
+        "visible": true,
+        "x": 2500
+      },
+      {
+        "hp": 0,
+        "id": 52,
+        "job": {},
+        "kind": "farm",
+        "level": 1,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": -3670
+      },
+      {
+        "hp": 0,
+        "id": 53,
+        "job": {},
+        "kind": "mine",
+        "level": 1,
+        "requires": 3,
+        "role": "",
+        "visible": true,
+        "x": -4240
+      }
+    ],
+    "status": "playing",
+    "sun": [
+      -200,
+      480
+    ],
+    "target": {},
+    "territory": 5500,
+    "time": 185,
+    "tool_stock": {
+      "brute": 0,
+      "hunter": 0,
+      "thief": 0,
+      "worker": 0
+    },
+    "torches": 1,
+    "units": [
+      {
+        "carry": 0,
+        "efficiency": 1,
+        "hidden": 0,
+        "id": 54,
+        "role": "worker",
+        "stun": 0,
+        "x": -100
+      },
+      {
+        "carry": 0,
+        "efficiency": 1,
+        "hidden": 0,
+        "id": 55,
+        "role": "worker",
+        "stun": 0,
+        "x": -60
+      },
+      {
+        "carry": 0,
+        "efficiency": 1,
+        "hidden": 0,
+        "id": 56,
+        "role": "hunter",
+        "stun": 0,
+        "x": 170
+      },
+      {
+        "carry": 0,
+        "efficiency": 1,
+        "hidden": 0,
+        "id": 57,
+        "role": "hunter",
+        "stun": 0,
+        "x": 212
+      },
+      {
+        "carry": 0,
+        "efficiency": 1,
+        "hidden": 0,
+        "id": 58,
+        "role": "hunter",
+        "stun": 0,
+        "x": 254
+      },
+      {
+        "carry": 0,
+        "efficiency": 1,
+        "hidden": 0,
+        "id": 59,
+        "role": "idle",
+        "stun": 0,
+        "x": -200
+      }
+    ],
+    "vault": 85,
+    "version": 7,
+    "viewport": [
+      960,
+      480
+    ],
+    "visible_objects": 13,
+    "water_time": 0.602344444444444
+  }
+}

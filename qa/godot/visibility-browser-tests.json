@@ -1,0 +1,34 @@
+{
+  "scope": "Current local Godot Web display changes in desktop Edge DPR2 touch emulation. Fixtures and intermediate draw-command samples, not phone or actual SDK evidence.",
+  "passes": [
+    "Coin ghosts enter through partial opacity",
+    "Building ghost enters through partial opacity",
+    "Real payment still deducts exactly one coin",
+    "Leaving refunds immediately while ghosts are still fading",
+    "Retiring action hit area cannot spend money",
+    "Retired ghosts and slots are reclaimed",
+    "Fast leave and return retains a visible transitioning hint",
+    "Different target keeps old and new coin groups separate",
+    "Pause continues fading contextual controls",
+    "Pause leaves no old run control hit area",
+    "Merchant title and short purpose use existing backing",
+    "Redundant planted price boards are absent",
+    "All fifty purse coins are drawn",
+    "Purse body is transparent and coins have different angles",
+    "Characters use dedicated outline texture pairs",
+    "Trees have contact shadows and a grass foreground edge",
+    "Treasury draws a wide bottom and narrow top",
+    "Result fades while simulation is paused",
+    "Restart uses a partial scene cover",
+    "Restart restores world and clears transition lock",
+    "Repeated targeting cleans up retired outlines and hints",
+    "No script shader or WebGL errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "short_frame_diagnostic": {
+    "scope": "Six seconds after warm-up on desktop software WebGL DPR2, small live scene. Not comparable to old stress fixture or phone performance.",
+    "p50": 30.299999999999272,
+    "p95": 30.400000000001455
+  }
+}

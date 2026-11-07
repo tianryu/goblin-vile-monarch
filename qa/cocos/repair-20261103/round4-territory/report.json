@@ -1,0 +1,17 @@
+{
+  "checkpoint": "repair-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "claimed-territory-fades-after-wall-loss",
+      "pass": true
+    },
+    {
+      "name": "warning-fades-and-tiny-bars-never-reverse",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "passed": 2
+}

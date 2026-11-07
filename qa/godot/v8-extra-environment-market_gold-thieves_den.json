@@ -1,0 +1,35 @@
+{
+  "scope": "Extra environment cycles in real map, isolated desktop Edge software WebGL",
+  "passes": [
+    "market_gold: full wind cycle plays in real map",
+    "market_gold: every object retains its single fixed ground placement",
+    "market_gold: no duplicate or transparent building during a cycle",
+    "market_gold: reviewed source base remains stable",
+    "market_gold: no currency, ads, dialogs or world simulation side effects",
+    "market_gold: approaching retains contextual glow and caption target",
+    "market_gold: pause holds the exact wind pose",
+    "thieves_den: full wind cycle plays in real map",
+    "thieves_den: every object retains its single fixed ground placement",
+    "thieves_den: no duplicate or transparent building during a cycle",
+    "thieves_den: reviewed source base remains stable",
+    "thieves_den: no currency, ads, dialogs or world simulation side effects",
+    "thieves_den: pause holds the exact wind pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "thieves_den: approaching retains contextual glow and caption target"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "asset": "market_gold",
+      "position": -570,
+      "frames": 19
+    },
+    {
+      "asset": "thieves_den",
+      "position": -2560,
+      "frames": 19
+    }
+  ]
+}

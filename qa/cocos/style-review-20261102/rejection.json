@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-02",
+  "reason": "user identified incompatible art styles",
+  "originalGamePreserved": true,
+  "newGenerationPausedForCalibration": true,
+  "assets": [
+    {
+      "asset": "firecatapult",
+      "status": "rejected-style",
+      "sourceSha256": "326ece0b8d198d19052868ed44436689ae2e6afad17a12f638d8f44886583855",
+      "runtimeQuarantined": []
+    },
+    {
+      "asset": "ship",
+      "status": "rejected-style",
+      "sourceSha256": "b5e97da2a85488636a9d16ba57f3fc8a299a37e58b8c7e91f3b0555445296b7a",
+      "runtimeQuarantined": []
+    },
+    {
+      "asset": "ram",
+      "status": "rejected-style",
+      "sourceSha256": "9ed706a74662ef65993d8e55323d8ad89e91857b857e29b02664cbd93a539819",
+      "runtimeQuarantined": []
+    },
+    {
+      "asset": "hunter_2",
+      "status": "rejected-style",
+      "sourceSha256": "b4e1707b772409d5ea861a2755403b57e20f8edb7e6f124550a6ba1dc3fb9c1e",
+      "runtimeQuarantined": [
+        "cocos\\assets\\resources\\art\\hunter_2.png",
+        "cocos\\assets\\resources\\art\\hunter_2.png.meta",
+        "cocos\\assets\\resources\\art\\hunter_2__glow.png",
+        "cocos\\assets\\resources\\art\\hunter_2__glow.png.meta"
+      ]
+    }
+  ],
+  "comparison": "qa/cocos/style-review-20261102/style-comparison.jpg"
+}

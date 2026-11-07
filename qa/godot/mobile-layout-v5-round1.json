@@ -1,0 +1,240 @@
+{
+  "scope": "Desktop Edge DPR2 with touch and injected safe-area values. Not a physical notched phone or live ad SDK.",
+  "passes": [
+    "High-DPI canvas rasterizes at native two-pixel density",
+    "Joystick and right action respect side safe areas",
+    "Merchant waits for action-finger release"
+  ],
+  "failures": [
+    "Releasing another finger does not open merchant",
+    "Cancelling pending interaction never opens a shop"
+  ],
+  "errors": [],
+  "canvas": {
+    "w": 1688,
+    "h": 780,
+    "cw": 844,
+    "ch": 390
+  },
+  "exception": "Error: action",
+  "last_state": {
+    "axis": 0,
+    "boosts": {
+      "bat": 0,
+      "wolf": 0
+    },
+    "capacity": 20,
+    "captives": 0,
+    "coin_slots": 0,
+    "content_clip": [
+      69.538459777832,
+      104,
+      898.923095703125,
+      217.230773925781
+    ],
+    "day": 1,
+    "daylight": 0.451111111111111,
+    "decoded_art_bytes": 21427488,
+    "effects": 0,
+    "enemies": 4,
+    "engine_draw_calls": 45,
+    "engine_process_seconds": 0.058,
+    "engine_static_bytes": 66049891,
+    "flags": {
+      "left": false,
+      "right": false
+    },
+    "fly": 0,
+    "gear": [
+      {
+        "rank": 1,
+        "role": "worker"
+      },
+      {
+        "rank": 1,
+        "role": "worker"
+      },
+      {
+        "rank": 1,
+        "role": "hunter"
+      },
+      {
+        "rank": 1,
+        "role": "hunter"
+      },
+      {
+        "rank": 1,
+        "role": "hunter"
+      },
+      {
+        "rank": 1,
+        "role": "idle"
+      }
+    ],
+    "ghost_key": "",
+    "gold": 50,
+    "hero_anchor": [
+      519,
+      318
+    ],
+    "hero_face": 1,
+    "hero_x": -465,
+    "kills": 0,
+    "modal": "tools",
+    "mount": "boar",
+    "native_canvas": true,
+    "paused": true,
+    "payment": {},
+    "phase": "白天",
+    "population": 6,
+    "prison_capacity": 0,
+    "rects": {
+      "buy_tool": [
+        764.461547851562,
+        379.230773925781,
+        220,
+        64
+      ],
+      "close": [
+        53.538459777832,
+        379.230773925781,
+        140,
+        64
+      ],
+      "select_brute": [
+        526,
+        104,
+        214.230773925781,
+        217.230773925781
+      ],
+      "select_hunter": [
+        297.769226074219,
+        104,
+        214.230773925781,
+        217.230773925781
+      ],
+      "select_thief": [
+        754.230773925781,
+        104,
+        214.230773925781,
+        217.230773925781
+      ],
+      "select_worker": [
+        69.538459777832,
+        104,
+        214.230773925781,
+        217.230773925781
+      ]
+    },
+    "reserve": 0,
+    "roles": {
+      "hunter": 3,
+      "idle": 1,
+      "worker": 2
+    },
+    "run": false,
+    "scrap": 100,
+    "stamina": 100,
+    "status": "playing",
+    "target": {
+      "action": "交互",
+      "cost": 0,
+      "disabled": false,
+      "id": "b2",
+      "kind": "tools",
+      "label": "工具摊",
+      "object_id": 2,
+      "scrap": 0,
+      "shop": "tools",
+      "x": -465
+    },
+    "time": 1.86666666666667,
+    "tool_stock": {
+      "brute": 0,
+      "hunter": 0,
+      "thief": 0,
+      "worker": 0
+    },
+    "trader_cargo": [],
+    "ui": [
+      {
+        "disabled": false,
+        "footer": false,
+        "key": "select_worker",
+        "rect": [
+          69.538459777832,
+          104,
+          214.230773925781,
+          217.230773925781
+        ],
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "footer": false,
+        "key": "select_hunter",
+        "rect": [
+          297.769226074219,
+          104,
+          214.230773925781,
+          217.230773925781
+        ],
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "footer": false,
+        "key": "select_brute",
+        "rect": [
+          526,
+          104,
+          214.230773925781,
+          217.230773925781
+        ],
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "footer": false,
+        "key": "select_thief",
+        "rect": [
+          754.230773925781,
+          104,
+          214.230773925781,
+          217.230773925781
+        ],
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "footer": true,
+        "key": "close",
+        "rect": [
+          53.538459777832,
+          379.230773925781,
+          140,
+          64
+        ],
+        "text": "返回部落"
+      },
+      {
+        "disabled": false,
+        "footer": true,
+        "key": "buy_tool",
+        "rect": [
+          764.461547851562,
+          379.230773925781,
+          220,
+          64
+        ],
+        "text": "2金币 配发工具"
+      }
+    ],
+    "viewport": [
+      1038,
+      480
+    ],
+    "visible_objects": 17,
+    "water_time": 1.89792222222222
+  }
+}

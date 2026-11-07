@@ -1,0 +1,5424 @@
+{
+  "scope": "Bat rest, low glide, flight, landing and arrow presentation in isolated desktop software WebGL. Not phone performance.",
+  "passes": [
+    "idle: full original wing cycle plays",
+    "idle: rider and mount remain one opaque body",
+    "idle: every original wing tip stays above the walk plane",
+    "idle: fixed anchor does not follow decorative grass",
+    "idle: simulation flight state remains correct",
+    "idle: no extra transactions or dialogs",
+    "idle: pause freezes pose and flight",
+    "idle: turning flips the complete merged silhouette",
+    "walk: full original wing cycle plays",
+    "walk: rider and mount remain one opaque body",
+    "walk: every original wing tip stays above the walk plane",
+    "walk: fixed anchor does not follow decorative grass",
+    "walk: simulation flight state remains correct",
+    "walk: no extra transactions or dialogs",
+    "walk: pause freezes pose and flight",
+    "walk: turning flips the complete merged silhouette",
+    "run: full original wing cycle plays",
+    "run: rider and mount remain one opaque body",
+    "run: every original wing tip stays above the walk plane",
+    "run: fixed anchor does not follow decorative grass",
+    "run: simulation flight state remains correct",
+    "run: no extra transactions or dialogs",
+    "run: pause freezes pose and flight",
+    "run: turning flips the complete merged silhouette",
+    "Takeoff and landing never bury either original wing tip",
+    "Changing cycles does not jump the anchor",
+    "Released sprint returns to interactive low hover",
+    "Real elf arrow retains the flying chief as target",
+    "Arrow endpoint rises toward the visible bat instead of ground",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "action": "idle",
+      "observed_poses": 20,
+      "minimum_clearance": 1.45263671875,
+      "samples": [
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            480,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/idle",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                407.699645996094,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "action": "walk",
+      "observed_poses": 19,
+      "minimum_clearance": 1.45263671875,
+      "samples": [
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.735057917431,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.052520751953,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.776210259429,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.222869873047,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.567426648108,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.329162597656,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.76370218494,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.447570800781,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.929685333631,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.500213623047,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.428833457528,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.547149658203,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.602885609774,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.5693359375,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.878404954036,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.589874267578,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.918616058752,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.633880615234,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.060826407109,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.675933837891,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.635219826982,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.676879882812,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            501.386943523069,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.686767578125,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.63835536267,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.689086914062,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.386413790068,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.695343017578,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.100041736701,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.698059082031,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.807700379504,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.699768066406,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.152564896633,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.702789306641,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.320755460186,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.707366943359,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            501.063341473278,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.708129882812,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.829527227888,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.710662841797,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.594752627018,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.712249755859,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.930222518067,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.719665527344,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.450209384572,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.724517822266,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.484592261353,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.732116699219,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.905458447701,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.749114990234,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.14547530689,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.757843017578,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.627521685548,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.770965576172,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.68155588569,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.763214111328,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.876778936244,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.768432617188,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            501.050798734326,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.771331787109,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.354780394675,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.774200439453,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.127171172705,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.775482177734,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.279361733777,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.775451660156,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.352876948528,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.772308349609,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.086319968238,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.772430419922,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.782091429435,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.774627685547,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.554363215255,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.775787353516,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            501.276498006341,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.777923583984,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.067583642801,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.779022216797,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.624930711931,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.788177490234,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                0,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.813133931568,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.786376953125,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            501.001842183521,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.785095214844,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.698786291826,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.780456542969,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                317,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.889166284152,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.780822753906,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.227260455897,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.781921386719,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.591405892366,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.78759765625,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                810,
+                634,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            500.300448428766,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.801116943359,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.33248415341,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.804840087891,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            498.098511805701,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.814819335938,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1215,
+                951,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            499.663490445335,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.821472167969,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 0,
+          "hover": 30,
+          "anchor": [
+            501.123542730528,
+            285
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/walk",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                423.821807861328,
+                207.32861328125,
+                139.21875,
+                108.96875
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                405,
+                1268,
+                405,
+                317
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "action": "run",
+      "observed_poses": 14,
+      "minimum_clearance": 31.08125305175804,
+      "samples": [
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.55241866527,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                434.896423339844,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.087826782061,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.25927734375,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            516.038033398829,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.422027587891,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            516.243411625885,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.627410888672,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            513.351641844044,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.735656738281,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            513.453629653318,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.837615966797,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            515.233494110462,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.83349609375,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            517.220086064131,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.846099853516,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            516.40000716032,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.880004882812,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            512.816603681845,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.896606445312,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.674889271971,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.900329589844,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            516.624639405593,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.906646728516,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            516.437776125966,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.941772460938,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            515.586711490267,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.942718505859,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.972880316698,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.94287109375,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.884280670007,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.970275878906,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.901565879933,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.989562988281,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.658938806392,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.996948242188,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            517.410480195469,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.998474121094,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            517.079808722492,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.999816894531,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            516.50794953017,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.987945556641,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            513.261876040427,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.991882324219,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            513.018474502343,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.998474121094,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            515.769608425808,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.999603271484,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            515.523614661632,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.003601074219,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            515.535175764717,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.017181396484,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            515.519356091717,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.025360107422,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            515.002543495742,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.008544921875,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.753554314205,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.009552001953,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.53733752143,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.009338378906,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            517.411479629152,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.015472412109,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.158101588902,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.012115478516,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            517.161231890228,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.015228271484,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.247658048954,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.227661132812,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.341762914144,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.423767089844,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.427800548412,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.623809814453,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.479684449277,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.757690429688,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.554150325272,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.832153320312,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                0,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.616025486024,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.902038574219,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.469565024509,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.941558837891,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.503664089128,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.975677490234,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.521633614211,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                435.993621826172,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.538566708574,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.010559082031,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.605875047144,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.023864746094,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                377,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.611349170346,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.029357910156,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.616507561806,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.034515380859,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            511.619965335008,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.037963867188,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.360621171127,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.028625488281,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                822,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.176084113629,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.026092529297,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                1233,
+                754,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.182318928838,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.032318115234,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            517.185604551758,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.035614013672,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                0,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        },
+        {
+          "fly": 44,
+          "hover": 30,
+          "anchor": [
+            514.125508816732,
+            241
+          ],
+          "body": [
+            {
+              "alpha": 1,
+              "animation": "rider_bat/run",
+              "key": "world/hero/rider_bat/0",
+              "layer": 50,
+              "origin": [
+                0,
+                0
+              ],
+              "rect": [
+                436.035522460938,
+                161.199996948242,
+                141.28125,
+                129.59375
+              ],
+              "requested": true,
+              "rotation": 0,
+              "scope": "world/hero",
+              "source": [
+                411,
+                1131,
+                411,
+                377
+              ],
+              "tint_alpha": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

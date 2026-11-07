@@ -1,0 +1,269 @@
+{
+  "scope": "Desktop Edge touch emulation and explicit scenario fixtures. Not physical phone or live TapTap ads.",
+  "passes": [
+    {
+      "name": "740x360 welcome buttons stay reachable"
+    },
+    {
+      "name": "740x360 tools buttons stay reachable"
+    },
+    {
+      "name": "740x360 gold buttons stay reachable"
+    },
+    {
+      "name": "740x360 army buttons stay reachable"
+    },
+    {
+      "name": "740x360 mount buttons stay reachable"
+    },
+    {
+      "name": "740x360 prison buttons stay reachable"
+    },
+    {
+      "name": "740x360 trader buttons stay reachable"
+    },
+    {
+      "name": "740x360 steal buttons stay reachable"
+    },
+    {
+      "name": "740x360 rally buttons stay reachable"
+    },
+    {
+      "name": "740x360 pause buttons stay reachable"
+    },
+    {
+      "name": "740x360 guide buttons stay reachable"
+    },
+    {
+      "name": "740x360 ledger buttons stay reachable"
+    },
+    {
+      "name": "740x360 restart buttons stay reachable"
+    },
+    {
+      "name": "844x390 welcome buttons stay reachable"
+    },
+    {
+      "name": "844x390 tools buttons stay reachable"
+    },
+    {
+      "name": "844x390 gold buttons stay reachable"
+    },
+    {
+      "name": "844x390 army buttons stay reachable"
+    },
+    {
+      "name": "844x390 mount buttons stay reachable"
+    },
+    {
+      "name": "844x390 prison buttons stay reachable"
+    },
+    {
+      "name": "844x390 trader buttons stay reachable"
+    },
+    {
+      "name": "844x390 steal buttons stay reachable"
+    },
+    {
+      "name": "844x390 rally buttons stay reachable"
+    },
+    {
+      "name": "844x390 pause buttons stay reachable"
+    },
+    {
+      "name": "844x390 guide buttons stay reachable"
+    },
+    {
+      "name": "844x390 ledger buttons stay reachable"
+    },
+    {
+      "name": "844x390 restart buttons stay reachable"
+    },
+    {
+      "name": "932x430 welcome buttons stay reachable"
+    },
+    {
+      "name": "932x430 tools buttons stay reachable"
+    },
+    {
+      "name": "932x430 gold buttons stay reachable"
+    },
+    {
+      "name": "932x430 army buttons stay reachable"
+    },
+    {
+      "name": "932x430 mount buttons stay reachable"
+    },
+    {
+      "name": "932x430 prison buttons stay reachable"
+    },
+    {
+      "name": "932x430 trader buttons stay reachable"
+    },
+    {
+      "name": "932x430 steal buttons stay reachable"
+    },
+    {
+      "name": "932x430 rally buttons stay reachable"
+    },
+    {
+      "name": "932x430 pause buttons stay reachable"
+    },
+    {
+      "name": "932x430 guide buttons stay reachable"
+    },
+    {
+      "name": "932x430 ledger buttons stay reachable"
+    },
+    {
+      "name": "932x430 restart buttons stay reachable"
+    },
+    {
+      "name": "1280x720 welcome buttons stay reachable"
+    },
+    {
+      "name": "1280x720 tools buttons stay reachable"
+    },
+    {
+      "name": "1280x720 gold buttons stay reachable"
+    },
+    {
+      "name": "1280x720 army buttons stay reachable"
+    },
+    {
+      "name": "1280x720 mount buttons stay reachable"
+    },
+    {
+      "name": "1280x720 prison buttons stay reachable"
+    },
+    {
+      "name": "1280x720 trader buttons stay reachable"
+    },
+    {
+      "name": "1280x720 steal buttons stay reachable"
+    },
+    {
+      "name": "1280x720 rally buttons stay reachable"
+    },
+    {
+      "name": "1280x720 pause buttons stay reachable"
+    },
+    {
+      "name": "1280x720 guide buttons stay reachable"
+    },
+    {
+      "name": "1280x720 ledger buttons stay reachable"
+    },
+    {
+      "name": "1280x720 restart buttons stay reachable"
+    },
+    {
+      "name": "No interaction key on empty road"
+    },
+    {
+      "name": "Worker card gives intended role"
+    },
+    {
+      "name": "Thief tools wait for a recruit"
+    },
+    {
+      "name": "Visible return control closes window"
+    },
+    {
+      "name": "Five consecutive controlled rewards have no cap or cooldown"
+    },
+    {
+      "name": "Wrong reward kind never credits money"
+    },
+    {
+      "name": "Ad completion restores the return button"
+    },
+    {
+      "name": "Sold human moves from prison into cart"
+    },
+    {
+      "name": "Sell all clears prison and fills caged cart"
+    },
+    {
+      "name": "Trading return button remains usable"
+    },
+    {
+      "name": "Fully owned bat merchant keeps boost action visible"
+    },
+    {
+      "name": "Equipped bat can repeatedly buy real-duration boost through controlled provider"
+    },
+    {
+      "name": "Victory has free new campaign"
+    },
+    {
+      "name": "Free new campaign returns to play"
+    },
+    {
+      "name": "Defeat restart never requires advertisement"
+    },
+    {
+      "name": "Corrupted primary save recovers previous valid backup"
+    },
+    {
+      "name": "No Web runtime errors",
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "screens": [
+    "740x360-welcome.png",
+    "740x360-tools.png",
+    "740x360-gold.png",
+    "740x360-army.png",
+    "740x360-mount.png",
+    "740x360-prison.png",
+    "740x360-trader.png",
+    "740x360-steal.png",
+    "740x360-rally.png",
+    "740x360-pause.png",
+    "740x360-guide.png",
+    "740x360-ledger.png",
+    "740x360-restart.png",
+    "844x390-welcome.png",
+    "844x390-tools.png",
+    "844x390-gold.png",
+    "844x390-army.png",
+    "844x390-mount.png",
+    "844x390-prison.png",
+    "844x390-trader.png",
+    "844x390-steal.png",
+    "844x390-rally.png",
+    "844x390-pause.png",
+    "844x390-guide.png",
+    "844x390-ledger.png",
+    "844x390-restart.png",
+    "932x430-welcome.png",
+    "932x430-tools.png",
+    "932x430-gold.png",
+    "932x430-army.png",
+    "932x430-mount.png",
+    "932x430-prison.png",
+    "932x430-trader.png",
+    "932x430-steal.png",
+    "932x430-rally.png",
+    "932x430-pause.png",
+    "932x430-guide.png",
+    "932x430-ledger.png",
+    "932x430-restart.png",
+    "1280x720-welcome.png",
+    "1280x720-tools.png",
+    "1280x720-gold.png",
+    "1280x720-army.png",
+    "1280x720-mount.png",
+    "1280x720-prison.png",
+    "1280x720-trader.png",
+    "1280x720-steal.png",
+    "1280x720-rally.png",
+    "1280x720-pause.png",
+    "1280x720-guide.png",
+    "1280x720-ledger.png",
+    "1280x720-restart.png"
+  ]
+}

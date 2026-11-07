@@ -1,0 +1,2161 @@
+{
+  "build": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\cocos\\build\\performance-20261105",
+  "label": "after",
+  "fixture": true,
+  "realPhone": false,
+  "errors": [],
+  "failures": [],
+  "scenes": [
+    {
+      "wallMs": 12005,
+      "intervals": {
+        "count": 1982,
+        "sum": 12003.599999964237,
+        "p50": 6.099999999998545,
+        "p95": 6.5,
+        "max": 7.699999999999818
+      },
+      "gameIntervals": {
+        "count": 721,
+        "sum": 12004.099999964237,
+        "p50": 17.900000035762787,
+        "p95": 19.399999976158142,
+        "max": 20.600000023841858
+      },
+      "gameOver50ms": 0,
+      "over50ms": 0,
+      "over100ms": 0,
+      "drawCalls": {
+        "count": 1982,
+        "sum": 66625,
+        "p50": 34,
+        "p95": 35,
+        "max": 35
+      },
+      "timings": {
+        "tick": {
+          "count": 361,
+          "sum": 65.99999928474426,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.699999988079071
+        },
+        "render": {
+          "count": 721,
+          "sum": 300.5999999642372,
+          "p50": 0.3999999761581421,
+          "p95": 0.6000000238418579,
+          "max": 1.9000000357627869
+        },
+        "painterEnd": {
+          "count": 721,
+          "sum": 8.800000190734863,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        },
+        "save": {
+          "count": 2,
+          "sum": 0.2999999523162842,
+          "p50": 0.19999998807907104,
+          "p95": 0.19999998807907104,
+          "max": 0.19999998807907104
+        },
+        "updateGoblins": {
+          "count": 361,
+          "sum": 20.10000056028366,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.30000001192092896
+        },
+        "updateEnemies": {
+          "count": 361,
+          "sum": 7.799999833106995,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.19999998807907104
+        },
+        "context": {
+          "count": 721,
+          "sum": 13,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.19999998807907104
+        },
+        "updatePrison": {
+          "count": 361,
+          "sum": 3.4999998211860657,
+          "p50": 0,
+          "p95": 0.09999996423721313,
+          "max": 0.10000002384185791
+        },
+        "environment": {
+          "count": 721,
+          "sum": 41.299999833106995,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        },
+        "goblins": {
+          "count": 721,
+          "sum": 42.29999929666519,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.30000001192092896
+        },
+        "enemies": {
+          "count": 721,
+          "sum": 2.800000250339508,
+          "p50": 0,
+          "p95": 0,
+          "max": 0.19999998807907104
+        },
+        "procedural": {
+          "count": 721,
+          "sum": 45.299999475479126,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.9000000357627869
+        },
+        "hud": {
+          "count": 721,
+          "sum": 41.400000274181366,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        }
+      },
+      "end": {
+        "heap": 22798527,
+        "nodes": 172,
+        "sceneNodes": 209,
+        "frames": 276,
+        "textures": 129,
+        "rgbaBytes": 102591920,
+        "engineMemory": {
+          "bufferSize": 7122052,
+          "textureSize": 110928632
+        },
+        "focus": 1,
+        "glow": 0,
+        "enemies": 30,
+        "active": 30,
+        "effects": 0,
+        "shots": 0
+      },
+      "samples": [
+        {
+          "t": 2003.6999999642376,
+          "heap": 23961771,
+          "nodes": 184,
+          "sceneNodes": 222,
+          "frames": 276,
+          "textures": 130,
+          "rgbaBytes": 102699440,
+          "engineMemory": {
+            "bufferSize": 7122052,
+            "textureSize": 110928632
+          },
+          "focus": 1,
+          "glow": 0,
+          "enemies": 30,
+          "active": 30,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 4009.6999999642376,
+          "heap": 22500863,
+          "nodes": 184,
+          "sceneNodes": 222,
+          "frames": 276,
+          "textures": 130,
+          "rgbaBytes": 102699440,
+          "engineMemory": {
+            "bufferSize": 7122052,
+            "textureSize": 110928632
+          },
+          "focus": 1,
+          "glow": 0,
+          "enemies": 30,
+          "active": 30,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 6009.8999999642365,
+          "heap": 22282543,
+          "nodes": 177,
+          "sceneNodes": 215,
+          "frames": 276,
+          "textures": 130,
+          "rgbaBytes": 102699440,
+          "engineMemory": {
+            "bufferSize": 7122052,
+            "textureSize": 110928632
+          },
+          "focus": 1,
+          "glow": 0,
+          "enemies": 30,
+          "active": 30,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 8015.699999964238,
+          "heap": 25726879,
+          "nodes": 177,
+          "sceneNodes": 215,
+          "frames": 276,
+          "textures": 130,
+          "rgbaBytes": 102699440,
+          "engineMemory": {
+            "bufferSize": 7122052,
+            "textureSize": 110928632
+          },
+          "focus": 1,
+          "glow": 0,
+          "enemies": 30,
+          "active": 30,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 10021.599999964237,
+          "heap": 27395183,
+          "nodes": 171,
+          "sceneNodes": 208,
+          "frames": 276,
+          "textures": 130,
+          "rgbaBytes": 102699440,
+          "engineMemory": {
+            "bufferSize": 7122052,
+            "textureSize": 110928632
+          },
+          "focus": 1,
+          "glow": 0,
+          "enemies": 30,
+          "active": 30,
+          "effects": 0,
+          "shots": 0
+        }
+      ],
+      "playing": "playing",
+      "metricsBefore": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 276,
+        "LayoutCount": 0,
+        "ScriptDuration": 0.146834,
+        "TaskDuration": 0.184582,
+        "JSHeapUsedSize": 13830760
+      },
+      "metricsAfter": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 276,
+        "LayoutCount": 0,
+        "ScriptDuration": 0.872525,
+        "TaskDuration": 1.192508,
+        "JSHeapUsedSize": 15338496
+      },
+      "name": "opening",
+      "rafFps": 165.0978758850479,
+      "fps": 60.05830903790088
+    },
+    {
+      "wallMs": 25004.399999976158,
+      "intervals": {
+        "count": 4123,
+        "sum": 25003.699999964236,
+        "p50": 6.099999999998545,
+        "p95": 6.400000000001455,
+        "max": 26.80000000000291
+      },
+      "gameIntervals": {
+        "count": 1499,
+        "sum": 24992.099999964237,
+        "p50": 18,
+        "p95": 19.30000001192093,
+        "max": 39.5
+      },
+      "gameOver50ms": 0,
+      "over50ms": 0,
+      "over100ms": 0,
+      "drawCalls": {
+        "count": 4123,
+        "sum": 312129,
+        "p50": 76,
+        "p95": 83,
+        "max": 86
+      },
+      "timings": {
+        "tick": {
+          "count": 750,
+          "sum": 130.59999990463257,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.800000011920929
+        },
+        "render": {
+          "count": 1499,
+          "sum": 931.4999994039536,
+          "p50": 0.6000000238418579,
+          "p95": 0.800000011920929,
+          "max": 1.300000011920929
+        },
+        "painterEnd": {
+          "count": 1499,
+          "sum": 33.500000059604645,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        },
+        "save": {
+          "count": 17,
+          "sum": 3.700000047683716,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.30000001192092896
+        },
+        "updateGoblins": {
+          "count": 750,
+          "sum": 44.09999966621399,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.6000000238418579
+        },
+        "updateEnemies": {
+          "count": 750,
+          "sum": 29.700000166893005,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.30000001192092896
+        },
+        "context": {
+          "count": 1499,
+          "sum": 15.500000298023224,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.19999998807907104
+        },
+        "updatePrison": {
+          "count": 750,
+          "sum": 7.400000035762787,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.19999998807907104
+        },
+        "environment": {
+          "count": 1499,
+          "sum": 135.5000006556511,
+          "p50": 0.10000002384185791,
+          "p95": 0.19999998807907104,
+          "max": 0.5
+        },
+        "goblins": {
+          "count": 1499,
+          "sum": 225.79999941587448,
+          "p50": 0.10000002384185791,
+          "p95": 0.2999999523162842,
+          "max": 0.800000011920929
+        },
+        "enemies": {
+          "count": 1499,
+          "sum": 92.200000166893,
+          "p50": 0.09999996423721313,
+          "p95": 0.19999998807907104,
+          "max": 0.699999988079071
+        },
+        "procedural": {
+          "count": 1499,
+          "sum": 152.99999970197678,
+          "p50": 0.10000002384185791,
+          "p95": 0.20000004768371582,
+          "max": 0.5
+        },
+        "hud": {
+          "count": 1499,
+          "sum": 81.1000000834465,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        }
+      },
+      "end": {
+        "heap": 32278162,
+        "nodes": 321,
+        "sceneNodes": 359,
+        "frames": 282,
+        "textures": 112,
+        "rgbaBytes": 96804216,
+        "engineMemory": {
+          "bufferSize": 7146592,
+          "textureSize": 112363868
+        },
+        "focus": 2,
+        "glow": 0,
+        "enemies": 10,
+        "active": 10,
+        "effects": 11,
+        "shots": 9
+      },
+      "samples": [
+        {
+          "t": 2004.0999999642372,
+          "heap": 25975277,
+          "nodes": 287,
+          "sceneNodes": 326,
+          "frames": 282,
+          "textures": 114,
+          "rgbaBytes": 97438968,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 3,
+          "shots": 3
+        },
+        {
+          "t": 4010.099999964237,
+          "heap": 23576922,
+          "nodes": 297,
+          "sceneNodes": 336,
+          "frames": 282,
+          "textures": 114,
+          "rgbaBytes": 97438968,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 2,
+          "shots": 9
+        },
+        {
+          "t": 6010.199999964236,
+          "heap": 31532319,
+          "nodes": 290,
+          "sceneNodes": 329,
+          "frames": 282,
+          "textures": 114,
+          "rgbaBytes": 97438968,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 1,
+          "shots": 0
+        },
+        {
+          "t": 8016.3999999642365,
+          "heap": 25566487,
+          "nodes": 313,
+          "sceneNodes": 352,
+          "frames": 282,
+          "textures": 114,
+          "rgbaBytes": 97438968,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 12,
+          "shots": 9
+        },
+        {
+          "t": 10022.099999964237,
+          "heap": 32721206,
+          "nodes": 321,
+          "sceneNodes": 360,
+          "frames": 282,
+          "textures": 114,
+          "rgbaBytes": 97438968,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 13,
+          "shots": 9
+        },
+        {
+          "t": 12028.099999964237,
+          "heap": 26177180,
+          "nodes": 317,
+          "sceneNodes": 356,
+          "frames": 282,
+          "textures": 114,
+          "rgbaBytes": 97438968,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 13,
+          "shots": 5
+        },
+        {
+          "t": 14034.199999964236,
+          "heap": 29857521,
+          "nodes": 320,
+          "sceneNodes": 358,
+          "frames": 282,
+          "textures": 114,
+          "rgbaBytes": 97438968,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 1,
+          "shots": 9
+        },
+        {
+          "t": 16040.199999964236,
+          "heap": 27903332,
+          "nodes": 315,
+          "sceneNodes": 353,
+          "frames": 282,
+          "textures": 113,
+          "rgbaBytes": 97220088,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 2,
+          "shots": 2
+        },
+        {
+          "t": 18040.39999996424,
+          "heap": 28230367,
+          "nodes": 319,
+          "sceneNodes": 358,
+          "frames": 282,
+          "textures": 112,
+          "rgbaBytes": 96804216,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 2,
+          "shots": 7
+        },
+        {
+          "t": 20046.199999964236,
+          "heap": 26094532,
+          "nodes": 329,
+          "sceneNodes": 367,
+          "frames": 282,
+          "textures": 112,
+          "rgbaBytes": 96804216,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 10,
+          "shots": 7
+        },
+        {
+          "t": 22052.199999964236,
+          "heap": 36089014,
+          "nodes": 313,
+          "sceneNodes": 351,
+          "frames": 282,
+          "textures": 112,
+          "rgbaBytes": 96804216,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 15,
+          "shots": 3
+        },
+        {
+          "t": 24058.199999964236,
+          "heap": 34242450,
+          "nodes": 319,
+          "sceneNodes": 357,
+          "frames": 282,
+          "textures": 112,
+          "rgbaBytes": 96804216,
+          "engineMemory": {
+            "bufferSize": 7146592,
+            "textureSize": 112363868
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 10,
+          "active": 10,
+          "effects": 12,
+          "shots": 9
+        }
+      ],
+      "playing": "playing",
+      "metricsBefore": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 277,
+        "LayoutCount": 0,
+        "ScriptDuration": 1.034631,
+        "TaskDuration": 1.392154,
+        "JSHeapUsedSize": 16053356
+      },
+      "metricsAfter": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 277,
+        "LayoutCount": 0,
+        "ScriptDuration": 2.956562,
+        "TaskDuration": 3.814668,
+        "JSHeapUsedSize": 17163060
+      },
+      "name": "day6-turns",
+      "rafFps": 164.8909791878202,
+      "fps": 59.94944889705129
+    },
+    {
+      "wallMs": 30006.30000001192,
+      "intervals": {
+        "count": 4920,
+        "sum": 30004.300000000003,
+        "p50": 6.099999999991269,
+        "p95": 6.30000000000291,
+        "max": 84.80000000000291
+      },
+      "gameIntervals": {
+        "count": 1793,
+        "sum": 30005,
+        "p50": 18,
+        "p95": 19.399999976158142,
+        "max": 84.59999996423721
+      },
+      "gameOver50ms": 1,
+      "over50ms": 1,
+      "over100ms": 0,
+      "drawCalls": {
+        "count": 4920,
+        "sum": 471815,
+        "p50": 91,
+        "p95": 124,
+        "max": 128
+      },
+      "timings": {
+        "tick": {
+          "count": 901,
+          "sum": 352.4000002145767,
+          "p50": 0.3999999761581421,
+          "p95": 0.6000000238418579,
+          "max": 1.100000023841858
+        },
+        "render": {
+          "count": 1793,
+          "sum": 1479.1000003814697,
+          "p50": 0.800000011920929,
+          "p95": 1.0999999642372131,
+          "max": 1.699999988079071
+        },
+        "painterEnd": {
+          "count": 1793,
+          "sum": 59.30000042915344,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.30000001192092896
+        },
+        "save": {
+          "count": 20,
+          "sum": 8.700000047683716,
+          "p50": 0.40000003576278687,
+          "p95": 0.699999988079071,
+          "max": 0.699999988079071
+        },
+        "updateGoblins": {
+          "count": 901,
+          "sum": 76.59999924898148,
+          "p50": 0.09999996423721313,
+          "p95": 0.19999998807907104,
+          "max": 0.40000003576278687
+        },
+        "updateEnemies": {
+          "count": 901,
+          "sum": 150.60000067949295,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.5
+        },
+        "context": {
+          "count": 1793,
+          "sum": 26.200000286102295,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.30000001192092896
+        },
+        "updatePrison": {
+          "count": 901,
+          "sum": 15.200000166893005,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        },
+        "environment": {
+          "count": 1793,
+          "sum": 175.29999947547913,
+          "p50": 0.10000002384185791,
+          "p95": 0.19999998807907104,
+          "max": 0.30000001192092896
+        },
+        "goblins": {
+          "count": 1793,
+          "sum": 341.89999824762344,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.8999999761581421
+        },
+        "enemies": {
+          "count": 1793,
+          "sum": 257.70000207424164,
+          "p50": 0.10000002384185791,
+          "p95": 0.20000004768371582,
+          "max": 0.40000003576278687
+        },
+        "procedural": {
+          "count": 1793,
+          "sum": 289.000000834465,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.6000000238418579
+        },
+        "hud": {
+          "count": 1793,
+          "sum": 99.89999860525131,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        }
+      },
+      "end": {
+        "heap": 39330246,
+        "nodes": 438,
+        "sceneNodes": 477,
+        "frames": 282,
+        "textures": 110,
+        "rgbaBytes": 95870232,
+        "engineMemory": {
+          "bufferSize": 7182160,
+          "textureSize": 112366376
+        },
+        "focus": 2,
+        "glow": 0,
+        "enemies": 96,
+        "active": 96,
+        "effects": 10,
+        "shots": 16
+      },
+      "samples": [
+        {
+          "t": 2004.699999999997,
+          "heap": 30888850,
+          "nodes": 441,
+          "sceneNodes": 480,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 5,
+          "shots": 15
+        },
+        {
+          "t": 4010.699999999997,
+          "heap": 28596789,
+          "nodes": 459,
+          "sceneNodes": 498,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 14,
+          "shots": 21
+        },
+        {
+          "t": 6017.0999999999985,
+          "heap": 28449471,
+          "nodes": 455,
+          "sceneNodes": 494,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 16,
+          "shots": 5
+        },
+        {
+          "t": 8022.9000000000015,
+          "heap": 35954194,
+          "nodes": 508,
+          "sceneNodes": 547,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 56,
+          "shots": 25
+        },
+        {
+          "t": 10029,
+          "heap": 31180314,
+          "nodes": 474,
+          "sceneNodes": 513,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 66,
+          "shots": 19
+        },
+        {
+          "t": 12034.900000000001,
+          "heap": 33252537,
+          "nodes": 477,
+          "sceneNodes": 516,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 50,
+          "shots": 21
+        },
+        {
+          "t": 14041,
+          "heap": 32187942,
+          "nodes": 475,
+          "sceneNodes": 514,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 10,
+          "shots": 15
+        },
+        {
+          "t": 16047,
+          "heap": 39184134,
+          "nodes": 455,
+          "sceneNodes": 494,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 6,
+          "shots": 5
+        },
+        {
+          "t": 18053,
+          "heap": 26074398,
+          "nodes": 451,
+          "sceneNodes": 490,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 13,
+          "shots": 15
+        },
+        {
+          "t": 20053.199999999997,
+          "heap": 38468574,
+          "nodes": 489,
+          "sceneNodes": 528,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 66,
+          "shots": 10
+        },
+        {
+          "t": 22059.300000000003,
+          "heap": 44147509,
+          "nodes": 433,
+          "sceneNodes": 472,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 64,
+          "shots": 13
+        },
+        {
+          "t": 24059.5,
+          "heap": 32932734,
+          "nodes": 438,
+          "sceneNodes": 477,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 44,
+          "shots": 11
+        },
+        {
+          "t": 26064.899999999994,
+          "heap": 34699001,
+          "nodes": 428,
+          "sceneNodes": 467,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 3,
+          "shots": 2
+        },
+        {
+          "t": 28071,
+          "heap": 51124406,
+          "nodes": 438,
+          "sceneNodes": 477,
+          "frames": 282,
+          "textures": 110,
+          "rgbaBytes": 95870232,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 112366376
+          },
+          "focus": 2,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 2,
+          "shots": 15
+        }
+      ],
+      "playing": "playing",
+      "metricsBefore": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 277,
+        "LayoutCount": 0,
+        "ScriptDuration": 3.097649,
+        "TaskDuration": 3.99259,
+        "JSHeapUsedSize": 18258684
+      },
+      "metricsAfter": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 277,
+        "LayoutCount": 0,
+        "ScriptDuration": 6.018623,
+        "TaskDuration": 7.604519,
+        "JSHeapUsedSize": 18249684
+      },
+      "name": "day30-dense",
+      "rafFps": 163.96556723081636,
+      "fps": 59.754118301799544
+    },
+    {
+      "wallMs": 25005.400000035763,
+      "intervals": {
+        "count": 4034,
+        "sum": 25003.600000011924,
+        "p50": 6.099999999991269,
+        "p95": 6.30000000000291,
+        "max": 42.39999999999418
+      },
+      "gameIntervals": {
+        "count": 1483,
+        "sum": 25004,
+        "p50": 18,
+        "p95": 19.399999976158142,
+        "max": 54.5
+      },
+      "gameOver50ms": 1,
+      "over50ms": 0,
+      "over100ms": 0,
+      "drawCalls": {
+        "count": 4034,
+        "sum": 404261,
+        "p50": 94,
+        "p95": 127,
+        "max": 132
+      },
+      "timings": {
+        "tick": {
+          "count": 750,
+          "sum": 316.0999999642372,
+          "p50": 0.3999999761581421,
+          "p95": 0.6000000238418579,
+          "max": 1.399999976158142
+        },
+        "render": {
+          "count": 1483,
+          "sum": 1373.3999999165535,
+          "p50": 0.8999999761581421,
+          "p95": 1.300000011920929,
+          "max": 2.100000023841858
+        },
+        "painterEnd": {
+          "count": 1483,
+          "sum": 62.09999930858612,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.3999999761581421
+        },
+        "save": {
+          "count": 17,
+          "sum": 9.700000047683716,
+          "p50": 0.5999999642372131,
+          "p95": 0.9000000357627869,
+          "max": 0.9000000357627869
+        },
+        "updateGoblins": {
+          "count": 750,
+          "sum": 67.49999928474426,
+          "p50": 0.09999996423721313,
+          "p95": 0.19999998807907104,
+          "max": 0.30000001192092896
+        },
+        "updateEnemies": {
+          "count": 750,
+          "sum": 141.19999957084656,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.5999999642372131
+        },
+        "context": {
+          "count": 1483,
+          "sum": 22.699999928474426,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        },
+        "updatePrison": {
+          "count": 750,
+          "sum": 13.5,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.19999998807907104
+        },
+        "environment": {
+          "count": 1483,
+          "sum": 152.1999995112419,
+          "p50": 0.10000002384185791,
+          "p95": 0.19999998807907104,
+          "max": 0.30000001192092896
+        },
+        "goblins": {
+          "count": 1483,
+          "sum": 324.0000006556511,
+          "p50": 0.19999998807907104,
+          "p95": 0.3999999761581421,
+          "max": 0.7999999523162842
+        },
+        "enemies": {
+          "count": 1483,
+          "sum": 247.00000071525574,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.5
+        },
+        "procedural": {
+          "count": 1483,
+          "sum": 252.29999804496765,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.699999988079071
+        },
+        "hud": {
+          "count": 1483,
+          "sum": 95.4000004529953,
+          "p50": 0.09999996423721313,
+          "p95": 0.19999998807907104,
+          "max": 0.30000001192092896
+        }
+      },
+      "end": {
+        "heap": 61490239,
+        "nodes": 441,
+        "sceneNodes": 480,
+        "frames": 288,
+        "textures": 110,
+        "rgbaBytes": 96621912,
+        "engineMemory": {
+          "bufferSize": 7182160,
+          "textureSize": 113462792
+        },
+        "focus": 3,
+        "glow": 0,
+        "enemies": 96,
+        "active": 96,
+        "effects": 46,
+        "shots": 17
+      },
+      "samples": [
+        {
+          "t": 2003.9000000119267,
+          "heap": 27866007,
+          "nodes": 446,
+          "sceneNodes": 485,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 5,
+          "shots": 15
+        },
+        {
+          "t": 4010.000000011918,
+          "heap": 29637979,
+          "nodes": 462,
+          "sceneNodes": 501,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 14,
+          "shots": 21
+        },
+        {
+          "t": 6016.100000011924,
+          "heap": 29249367,
+          "nodes": 458,
+          "sceneNodes": 497,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 16,
+          "shots": 5
+        },
+        {
+          "t": 8021.900000011927,
+          "heap": 32275201,
+          "nodes": 510,
+          "sceneNodes": 549,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 58,
+          "shots": 26
+        },
+        {
+          "t": 10022.200000011915,
+          "heap": 41059283,
+          "nodes": 476,
+          "sceneNodes": 515,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 66,
+          "shots": 13
+        },
+        {
+          "t": 12046.200000011915,
+          "heap": 42235349,
+          "nodes": 475,
+          "sceneNodes": 514,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 50,
+          "shots": 23
+        },
+        {
+          "t": 14046.300000011921,
+          "heap": 37900114,
+          "nodes": 478,
+          "sceneNodes": 517,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 10,
+          "shots": 15
+        },
+        {
+          "t": 16052.300000011921,
+          "heap": 31390868,
+          "nodes": 460,
+          "sceneNodes": 499,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 6,
+          "shots": 5
+        },
+        {
+          "t": 18058.200000011915,
+          "heap": 55011281,
+          "nodes": 450,
+          "sceneNodes": 489,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 13,
+          "shots": 15
+        },
+        {
+          "t": 20064.30000001192,
+          "heap": 59122297,
+          "nodes": 486,
+          "sceneNodes": 525,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 61,
+          "shots": 7
+        },
+        {
+          "t": 22070.400000011927,
+          "heap": 56507424,
+          "nodes": 445,
+          "sceneNodes": 484,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 66,
+          "shots": 22
+        },
+        {
+          "t": 24076.400000011927,
+          "heap": 33301219,
+          "nodes": 435,
+          "sceneNodes": 474,
+          "frames": 288,
+          "textures": 110,
+          "rgbaBytes": 96621912,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 113462792
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 96,
+          "active": 96,
+          "effects": 43,
+          "shots": 11
+        }
+      ],
+      "playing": "playing",
+      "metricsBefore": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 278,
+        "LayoutCount": 0,
+        "ScriptDuration": 6.173007,
+        "TaskDuration": 7.802529,
+        "JSHeapUsedSize": 17833464
+      },
+      "metricsAfter": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 278,
+        "LayoutCount": 0,
+        "ScriptDuration": 8.929482,
+        "TaskDuration": 11.186294,
+        "JSHeapUsedSize": 18312596
+      },
+      "name": "revived-dense-turns",
+      "rafFps": 161.32515376655564,
+      "fps": 59.30718964695142
+    },
+    {
+      "wallMs": 55002.5,
+      "intervals": {
+        "count": 9074,
+        "sum": 55001.69999997615,
+        "p50": 6.099999999991269,
+        "p95": 6.2999999999883585,
+        "max": 12.19999999999709
+      },
+      "gameIntervals": {
+        "count": 3300,
+        "sum": 54990.09999996424,
+        "p50": 18,
+        "p95": 19.19999998807907,
+        "max": 22.799999952316284
+      },
+      "gameOver50ms": 0,
+      "over50ms": 0,
+      "over100ms": 0,
+      "drawCalls": {
+        "count": 9074,
+        "sum": 566051,
+        "p50": 63,
+        "p95": 68,
+        "max": 84
+      },
+      "timings": {
+        "tick": {
+          "count": 1650,
+          "sum": 209.70000058412552,
+          "p50": 0.10000002384185791,
+          "p95": 0.20000004768371582,
+          "max": 0.5
+        },
+        "render": {
+          "count": 3300,
+          "sum": 1625.0000017881393,
+          "p50": 0.5,
+          "p95": 0.7999999523162842,
+          "max": 1.5999999642372131
+        },
+        "painterEnd": {
+          "count": 3300,
+          "sum": 59.10000091791153,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.2999999523162842
+        },
+        "save": {
+          "count": 27,
+          "sum": 5.399999916553497,
+          "p50": 0.19999998807907104,
+          "p95": 0.30000001192092896,
+          "max": 0.5
+        },
+        "updateGoblins": {
+          "count": 1650,
+          "sum": 30.900000035762787,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        },
+        "updateEnemies": {
+          "count": 1650,
+          "sum": 64.49999940395355,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.20000004768371582
+        },
+        "context": {
+          "count": 3300,
+          "sum": 52.4000004529953,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.19999998807907104
+        },
+        "updatePrison": {
+          "count": 1650,
+          "sum": 13.499999940395355,
+          "p50": 0,
+          "p95": 0.09999996423721313,
+          "max": 0.10000002384185791
+        },
+        "environment": {
+          "count": 3300,
+          "sum": 368.3999992609024,
+          "p50": 0.10000002384185791,
+          "p95": 0.20000004768371582,
+          "max": 0.6000000238418579
+        },
+        "goblins": {
+          "count": 3300,
+          "sum": 395.39999985694885,
+          "p50": 0.10000002384185791,
+          "p95": 0.20000004768371582,
+          "max": 1.199999988079071
+        },
+        "enemies": {
+          "count": 3300,
+          "sum": 26.09999990463257,
+          "p50": 0,
+          "p95": 0.09999996423721313,
+          "max": 0.2999999523162842
+        },
+        "procedural": {
+          "count": 3300,
+          "sum": 133.19999992847443,
+          "p50": 0,
+          "p95": 0.10000002384185791,
+          "max": 0.5
+        },
+        "hud": {
+          "count": 3300,
+          "sum": 208.70000076293945,
+          "p50": 0.09999996423721313,
+          "p95": 0.10000002384185791,
+          "max": 0.800000011920929
+        }
+      },
+      "end": {
+        "heap": 25212776,
+        "nodes": 212,
+        "sceneNodes": 250,
+        "frames": 290,
+        "textures": 107,
+        "rgbaBytes": 112385792,
+        "engineMemory": {
+          "bufferSize": 9541676,
+          "textureSize": 130968744
+        },
+        "focus": 3,
+        "glow": 0,
+        "enemies": 1,
+        "active": 0,
+        "effects": 0,
+        "shots": 0
+      },
+      "samples": [
+        {
+          "t": 2002.2999999761523,
+          "heap": 24172523,
+          "nodes": 202,
+          "sceneNodes": 241,
+          "frames": 294,
+          "textures": 110,
+          "rgbaBytes": 97227224,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131247328
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 4008.2999999761523,
+          "heap": 28332715,
+          "nodes": 212,
+          "sceneNodes": 251,
+          "frames": 294,
+          "textures": 110,
+          "rgbaBytes": 97466840,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131486944
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 6014.799999976152,
+          "heap": 23163829,
+          "nodes": 211,
+          "sceneNodes": 250,
+          "frames": 294,
+          "textures": 110,
+          "rgbaBytes": 97466840,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131486944
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 8020.399999976158,
+          "heap": 26440842,
+          "nodes": 220,
+          "sceneNodes": 259,
+          "frames": 294,
+          "textures": 110,
+          "rgbaBytes": 113399768,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131196128
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 10026.699999976161,
+          "heap": 27466913,
+          "nodes": 225,
+          "sceneNodes": 263,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112710936,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131196128
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 12032.399999976158,
+          "heap": 25351248,
+          "nodes": 231,
+          "sceneNodes": 270,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112710936,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131196128
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 1,
+          "shots": 0
+        },
+        {
+          "t": 14038.499999976164,
+          "heap": 29370999,
+          "nodes": 236,
+          "sceneNodes": 274,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112749848,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131235040
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 16038.999999976164,
+          "heap": 26304525,
+          "nodes": 229,
+          "sceneNodes": 267,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112749848,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131235040
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 18044.499999976164,
+          "heap": 36797183,
+          "nodes": 234,
+          "sceneNodes": 273,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112743704,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131228896
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 20050.499999976164,
+          "heap": 36714580,
+          "nodes": 229,
+          "sceneNodes": 268,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112743704,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131228896
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 22050.599999976155,
+          "heap": 34754098,
+          "nodes": 227,
+          "sceneNodes": 266,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112743704,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131228896
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 24056.499999976164,
+          "heap": 32329551,
+          "nodes": 219,
+          "sceneNodes": 257,
+          "frames": 294,
+          "textures": 109,
+          "rgbaBytes": 112762136,
+          "engineMemory": {
+            "bufferSize": 7182160,
+            "textureSize": 131283976
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 12,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 26062.599999976155,
+          "heap": 35853062,
+          "nodes": 215,
+          "sceneNodes": 254,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112658176,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131281160
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 28068.599999976155,
+          "heap": 35763085,
+          "nodes": 207,
+          "sceneNodes": 245,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112658176,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131281160
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 1,
+          "shots": 0
+        },
+        {
+          "t": 30068.59999997617,
+          "heap": 40534307,
+          "nodes": 190,
+          "sceneNodes": 228,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112658176,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131241128
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 32074.499999976164,
+          "heap": 37682989,
+          "nodes": 202,
+          "sceneNodes": 241,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112658176,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131241128
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 34080.59999997617,
+          "heap": 39326691,
+          "nodes": 212,
+          "sceneNodes": 251,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112600832,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131183784
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 36086.59999997617,
+          "heap": 24787933,
+          "nodes": 223,
+          "sceneNodes": 262,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112606976,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131189928
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 38086.69999997615,
+          "heap": 26287506,
+          "nodes": 231,
+          "sceneNodes": 269,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112606976,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131189928
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 40092.69999997615,
+          "heap": 29985259,
+          "nodes": 234,
+          "sceneNodes": 272,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112645888,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131228840
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 42098.79999997615,
+          "heap": 30377357,
+          "nodes": 207,
+          "sceneNodes": 246,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112639744,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131262728
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 12,
+          "active": 11,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 44104.79999997615,
+          "heap": 35123573,
+          "nodes": 209,
+          "sceneNodes": 247,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112639744,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131222696
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 11,
+          "active": 10,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 46110.79999997615,
+          "heap": 33401592,
+          "nodes": 190,
+          "sceneNodes": 228,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112639744,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131222696
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 9,
+          "active": 8,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 48116.79999997615,
+          "heap": 30520793,
+          "nodes": 202,
+          "sceneNodes": 241,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112639744,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131222696
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 4,
+          "active": 3,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 50116.89999997616,
+          "heap": 34726697,
+          "nodes": 211,
+          "sceneNodes": 250,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112600832,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131183784
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 1,
+          "active": 0,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 52122.999999976164,
+          "heap": 55673866,
+          "nodes": 223,
+          "sceneNodes": 262,
+          "frames": 294,
+          "textures": 108,
+          "rgbaBytes": 112606976,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 131189928
+          },
+          "focus": 4,
+          "glow": 0,
+          "enemies": 1,
+          "active": 0,
+          "effects": 0,
+          "shots": 0
+        },
+        {
+          "t": 54123.499999976164,
+          "heap": 42757118,
+          "nodes": 216,
+          "sceneNodes": 254,
+          "frames": 290,
+          "textures": 107,
+          "rgbaBytes": 112385792,
+          "engineMemory": {
+            "bufferSize": 9541676,
+            "textureSize": 130968744
+          },
+          "focus": 3,
+          "glow": 0,
+          "enemies": 1,
+          "active": 0,
+          "effects": 0,
+          "shots": 0
+        }
+      ],
+      "playing": "playing",
+      "metricsBefore": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 278,
+        "LayoutCount": 0,
+        "ScriptDuration": 9.017407,
+        "TaskDuration": 11.315854,
+        "JSHeapUsedSize": 16435252
+      },
+      "metricsAfter": {
+        "Documents": 1,
+        "JSEventListeners": 53,
+        "Nodes": 278,
+        "LayoutCount": 0,
+        "ScriptDuration": 12.666544,
+        "TaskDuration": 16.042434,
+        "JSHeapUsedSize": 17388732
+      },
+      "name": "focus-cycles",
+      "rafFps": 164.9743193491205,
+      "fps": 59.99727285123404
+    }
+  ],
+  "environment": {
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "canvas": [
+      1688,
+      780
+    ],
+    "frameRate": 60,
+    "cpuRate": 1
+  }
+}

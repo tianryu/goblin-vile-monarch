@@ -1,0 +1,451 @@
+{
+  "scope": "Godot Web, isolated desktop Edge software WebGL, not phone or TapTap",
+  "passes": [
+    "Flames use the procedural renderer",
+    "Daylight keeps a campfire but extinguishes torches",
+    "Actual game time continuously changes the fire image",
+    "Night lights visible torch flames smoothly",
+    "Pause freezes the procedural flame clock",
+    "Relight resumes the current opacity",
+    "Upgrading the tent removes its old campfire",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "Extinguishing uses an intermediate opacity"
+  ],
+  "errors": [],
+  "samples": [
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 1.50966666666667
+      }
+    ],
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.4061
+      },
+      {
+        "alpha": 1,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.4061
+      },
+      {
+        "alpha": 1,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.4061
+      },
+      {
+        "alpha": 1,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.4061
+      }
+    ]
+  ],
+  "changed_channels": 923,
+  "fade": [
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ],
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ],
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ],
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 1,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": true,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ]
+  ],
+  "reverse": [
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ],
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ],
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ],
+    [
+      {
+        "alpha": 1,
+        "id": "campfire/1",
+        "kind": "campfire",
+        "live": true,
+        "point": [
+          224.810272216797,
+          300.595001220703
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/55.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          309.100006103516,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/-200.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          54.0999984741211,
+          280.5
+        ],
+        "time": 3.81359047619047
+      },
+      {
+        "alpha": 0.5194761386362,
+        "id": "torch/365.0",
+        "kind": "torch",
+        "live": false,
+        "point": [
+          619.099975585938,
+          280.5
+        ],
+        "time": 3.81359047619047
+      }
+    ]
+  ]
+}

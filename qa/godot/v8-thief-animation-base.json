@@ -1,0 +1,21 @@
+{
+  "scope": "Coin-funded theft, source work loop and actual return in isolated desktop Edge software WebGL",
+  "passes": [
+    "thief: scouted supply is selectable at the real den",
+    "thief: three real coins dispatch the thief without a dialog",
+    "thief: complete generated stealing cycle plays",
+    "thief: one opaque work body at a stable foot anchor",
+    "thief: repeated poses never spend extra coins",
+    "thief: pause holds work time and source pose",
+    "thief: normal model finishes the job and returns once",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "name": "thief",
+      "source_frames": 23
+    }
+  ]
+}

@@ -1,0 +1,4533 @@
+{
+  "kind": "normal-economy-first-expedition-continuation",
+  "source": "qa/cocos/calendar-early-economy/731-attempt1.json",
+  "seed": 731,
+  "injectedResources": false,
+  "ads": 0,
+  "cleared": true,
+  "status": "playing",
+  "day": 10,
+  "seconds": 58.89999999994643,
+  "armySurvivors": 4,
+  "deadByRole": {
+    "hunter": 2,
+    "idle": 1
+  },
+  "coreRemaining": 0,
+  "state": {
+    "version": 9,
+    "revision": 12,
+    "seed": 2837903161,
+    "nextId": 1677,
+    "elapsed": 2219.266666665306,
+    "time": 77.26666666656529,
+    "day": 10,
+    "status": "playing",
+    "gold": 28,
+    "treasury": 19,
+    "battleCoinProgress": 1,
+    "gearStock": 13,
+    "equipmentStock": 0,
+    "populationPending": {
+      "hunter": 0,
+      "worker": 0
+    },
+    "player": {
+      "x": 1709.7500000000284,
+      "prevX": 1709.7500000000284,
+      "face": 1,
+      "hp": 100,
+      "stamina": 100,
+      "mount": "boar",
+      "fly": 0,
+      "hurt": 0,
+      "whip": 0,
+      "exhausted": false
+    },
+    "goblins": [
+      {
+        "id": 50,
+        "role": "worker",
+        "x": 1823.0106666666693,
+        "prevX": 1823.0106666666693,
+        "face": -1,
+        "hp": 31.200000000000003,
+        "maxHp": 31.200000000000003,
+        "cooldown": 0,
+        "timer": 36.600000000000485,
+        "targetX": 653.4906925354153,
+        "moving": false,
+        "speed": 0,
+        "carry": 2,
+        "hidden": 0,
+        "lastWhip": 0,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "home",
+        "task": "",
+        "targetId": 1081,
+        "dead": false,
+        "workAt": 19,
+        "buildRestUntil": 1047.4333333330544,
+        "workTime": 16.586666666666833
+      },
+      {
+        "id": 51,
+        "role": "hunter",
+        "x": 2062.217805555556,
+        "prevX": 2062.217805555556,
+        "face": 1,
+        "hp": -1,
+        "maxHp": 41.6,
+        "cooldown": 0,
+        "timer": 2071.7333333321067,
+        "targetX": 365,
+        "moving": false,
+        "speed": 0,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 0,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "home",
+        "task": "",
+        "targetId": 0,
+        "dead": true
+      },
+      {
+        "id": 52,
+        "role": "hunter",
+        "x": 2065,
+        "prevX": 2065,
+        "face": 1,
+        "hp": -1,
+        "maxHp": 41.6,
+        "cooldown": 0,
+        "timer": 2073.199999998772,
+        "targetX": 450,
+        "moving": false,
+        "speed": 0,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 0,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "home",
+        "task": "",
+        "targetId": 0,
+        "dead": true
+      },
+      {
+        "id": 53,
+        "role": "worker",
+        "x": 497.39878703659457,
+        "prevX": 497.39878703659457,
+        "face": -1,
+        "hp": 31.200000000000003,
+        "maxHp": 31.200000000000003,
+        "cooldown": 0,
+        "timer": 2105.9333333320756,
+        "targetX": 296.52622122783214,
+        "moving": false,
+        "speed": 0,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 0,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "home",
+        "task": "",
+        "targetId": 10,
+        "dead": false,
+        "workTime": 0.13333333333333333,
+        "buildRestUntil": 2005.2333333321833
+      },
+      {
+        "id": 491,
+        "role": "brute",
+        "x": 6449.000000000089,
+        "prevX": 6449.000000000089,
+        "face": 1,
+        "hp": 83.94999999999997,
+        "maxHp": 156,
+        "cooldown": 0.9,
+        "timer": 2070.2666666654413,
+        "targetX": 1640,
+        "moving": false,
+        "speed": 0,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 145.53333333332765,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "expedition",
+        "task": "",
+        "targetId": 0,
+        "dead": false
+      },
+      {
+        "id": 617,
+        "role": "idle",
+        "x": 6002.466666666646,
+        "prevX": 6002.466666666646,
+        "face": 1,
+        "hp": -2,
+        "maxHp": 26,
+        "cooldown": 0,
+        "timer": 1750.2999999990654,
+        "targetX": 1640,
+        "moving": false,
+        "speed": 0,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 435.233333333464,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "home",
+        "task": "",
+        "targetId": 0,
+        "dead": true
+      },
+      {
+        "id": 763,
+        "role": "brute",
+        "x": 6455.866666666667,
+        "prevX": 6452,
+        "face": 1,
+        "hp": 56.973333333333265,
+        "maxHp": 156,
+        "cooldown": 0.5333333333333334,
+        "timer": 1454.4333333326679,
+        "targetX": 1640,
+        "moving": true,
+        "speed": 116,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 737.766666666653,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "expedition",
+        "task": "",
+        "targetId": 309,
+        "dead": false
+      },
+      {
+        "id": 875,
+        "role": "hunter",
+        "x": 6321.327137499947,
+        "prevX": 6317.46047083328,
+        "face": 1,
+        "hp": 41.6,
+        "maxHp": 41.6,
+        "cooldown": 0.2500000000000001,
+        "timer": 1116.3333333329754,
+        "targetX": 1640,
+        "moving": true,
+        "speed": 116,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 1043.0999999997086,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "expedition",
+        "task": "",
+        "targetId": 0,
+        "dead": false
+      },
+      {
+        "id": 1015,
+        "role": "hunter",
+        "x": 1997.766666666558,
+        "prevX": 1997.766666666558,
+        "face": -1,
+        "hp": 52,
+        "maxHp": 52,
+        "cooldown": 0,
+        "timer": 861.5999999998737,
+        "targetX": 1640,
+        "moving": false,
+        "speed": 0,
+        "carry": 0,
+        "hidden": 2,
+        "lastWhip": 1333.1666666661115,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 1,
+        "loot": 0,
+        "order": "home",
+        "task": "tower",
+        "targetId": 0,
+        "dead": false,
+        "towerId": 16
+      },
+      {
+        "id": 1214,
+        "role": "idle",
+        "x": 1995.460624721728,
+        "prevX": 1997.764624721728,
+        "face": -1,
+        "hp": 26,
+        "maxHp": 26,
+        "cooldown": 0,
+        "timer": 391.9333333334295,
+        "targetX": 429.6268223738298,
+        "moving": true,
+        "speed": 69.12,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 1630.3666666658412,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "home",
+        "task": "haul",
+        "targetId": 1084,
+        "dead": false
+      },
+      {
+        "id": 1380,
+        "role": "hunter",
+        "x": 6322.400000000034,
+        "prevX": 6318.533333333367,
+        "face": 1,
+        "hp": 41.6,
+        "maxHp": 41.6,
+        "cooldown": 0.2500000000000001,
+        "timer": 264.49999999999477,
+        "targetX": 1640,
+        "moving": true,
+        "speed": 116,
+        "carry": 0,
+        "hidden": 0,
+        "lastWhip": 1936.599999998896,
+        "hit": 0,
+        "stunned": 0,
+        "strikes": 0,
+        "strikeAt": -10,
+        "gear": 0,
+        "loot": 0,
+        "order": "expedition",
+        "task": "",
+        "targetId": 0,
+        "dead": false
+      }
+    ],
+    "enemies": [
+      {
+        "id": 54,
+        "kind": "human",
+        "x": 6123.646666666643,
+        "prevX": 6123.646666666643,
+        "face": -1,
+        "hp": -2.100000000000005,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 14.566666666666626,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.1
+      },
+      {
+        "id": 55,
+        "kind": "elf",
+        "x": 6279.166666666663,
+        "prevX": 6279.166666666663,
+        "face": -1,
+        "hp": -3.900000000000002,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 8.69999999999998,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 5,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 56,
+        "kind": "human",
+        "x": 6132.046666666636,
+        "prevX": 6132.046666666636,
+        "face": -1,
+        "hp": -20.300000000000004,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 13.233333333333297,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.26666666666666666
+      },
+      {
+        "id": 57,
+        "kind": "elf",
+        "x": 6326.0466666666625,
+        "prevX": 6326.0466666666625,
+        "face": -1,
+        "hp": -3.900000000000002,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 6.43333333333332,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 5,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.3
+      },
+      {
+        "id": 58,
+        "kind": "human",
+        "x": 6131.433333333295,
+        "prevX": 6131.433333333295,
+        "face": -1,
+        "hp": -20.300000000000004,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 11.999999999999968,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.3333333333333333
+      },
+      {
+        "id": 59,
+        "kind": "elf",
+        "x": 6387.486666666662,
+        "prevX": 6387.486666666662,
+        "face": -1,
+        "hp": -3.9000000000000004,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 3.2333333333333316,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 6,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0
+      },
+      {
+        "id": 69,
+        "kind": "dwarf",
+        "x": 11864,
+        "prevX": 11864,
+        "face": -1,
+        "hp": 154,
+        "maxHp": 154,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 1,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "hero": "heavy",
+        "sourceCamp": 1,
+        "bodyHeight": 102,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 70,
+        "kind": "human",
+        "x": 11902,
+        "prevX": 11902,
+        "face": -1,
+        "hp": 33,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 1,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 1,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 71,
+        "kind": "dwarf",
+        "x": 11940,
+        "prevX": 11940,
+        "face": -1,
+        "hp": 68.2,
+        "maxHp": 68.2,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 1,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 1,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 72,
+        "kind": "elf",
+        "x": 11750,
+        "prevX": 11750,
+        "face": 1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 1,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 1,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 73,
+        "kind": "jumper",
+        "x": 11788,
+        "prevX": 11788,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 1,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 1,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 74,
+        "kind": "human",
+        "x": 11827.5,
+        "prevX": 11827.5,
+        "face": -1,
+        "hp": 33,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 1,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 1,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 99,
+        "kind": "elf",
+        "x": 18140,
+        "prevX": 18140,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 2,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 2,
+        "towerId": 419
+      },
+      {
+        "id": 100,
+        "kind": "elf",
+        "x": 18950,
+        "prevX": 18950,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 2,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 2,
+        "towerId": 420
+      },
+      {
+        "id": 101,
+        "kind": "elf",
+        "x": 18315,
+        "prevX": 18315,
+        "face": 1,
+        "hp": 121.00000000000001,
+        "maxHp": 121.00000000000001,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 2,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "hero": "longbow",
+        "sourceCamp": 2,
+        "bodyHeight": 88,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 102,
+        "kind": "shield",
+        "x": 18125,
+        "prevX": 18125,
+        "face": 1,
+        "hp": 242.00000000000003,
+        "maxHp": 242.00000000000003,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 2,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "hero": "bulwark",
+        "sourceCamp": 2,
+        "bodyHeight": 104,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 103,
+        "kind": "shield",
+        "x": 18163,
+        "prevX": 18163,
+        "face": 1,
+        "hp": 99.00000000000001,
+        "maxHp": 99.00000000000001,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 2,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 2,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 104,
+        "kind": "dwarf",
+        "x": 18202.5,
+        "prevX": 18202.5,
+        "face": 1,
+        "hp": 68.2,
+        "maxHp": 68.2,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 2,
+        "state": "active",
+        "timer": 4.066666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 2,
+        "aiClock": 0.16666666666666666
+      },
+      {
+        "id": 152,
+        "kind": "elf",
+        "x": 25704,
+        "prevX": 25704,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 3,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 3,
+        "towerId": 424
+      },
+      {
+        "id": 153,
+        "kind": "elf",
+        "x": 25750,
+        "prevX": 25750,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 3,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 3,
+        "towerId": 424
+      },
+      {
+        "id": 154,
+        "kind": "elf",
+        "x": 25742,
+        "prevX": 25742,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 3,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 3,
+        "towerId": 424
+      },
+      {
+        "id": 155,
+        "kind": "elf",
+        "x": 27308,
+        "prevX": 27308,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 3,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 3,
+        "towerId": 426
+      },
+      {
+        "id": 156,
+        "kind": "elf",
+        "x": 26540,
+        "prevX": 26540,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 3,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 3,
+        "towerId": 425
+      },
+      {
+        "id": 157,
+        "kind": "elf",
+        "x": 26556,
+        "prevX": 26556,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 3,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 3,
+        "towerId": 425
+      },
+      {
+        "id": 228,
+        "kind": "elf",
+        "x": 28002,
+        "prevX": 28002,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 4,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 4,
+        "towerId": 429
+      },
+      {
+        "id": 229,
+        "kind": "elf",
+        "x": 28018,
+        "prevX": 28018,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 4,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 4,
+        "towerId": 429
+      },
+      {
+        "id": 230,
+        "kind": "elf",
+        "x": 28702,
+        "prevX": 28702,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 4,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 4,
+        "towerId": 431
+      },
+      {
+        "id": 231,
+        "kind": "elf",
+        "x": 28718,
+        "prevX": 28718,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 4,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 4,
+        "towerId": 431
+      },
+      {
+        "id": 232,
+        "kind": "elf",
+        "x": 28352,
+        "prevX": 28352,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 4,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 4,
+        "towerId": 430
+      },
+      {
+        "id": 233,
+        "kind": "elf",
+        "x": 28368,
+        "prevX": 28368,
+        "face": -1,
+        "hp": 28.6,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 4,
+        "state": "active",
+        "timer": 2219.266666665306,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": false,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2213.2666666653113,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 4,
+        "towerId": 430
+      },
+      {
+        "id": 60,
+        "kind": "human",
+        "x": 6137.166666666644,
+        "prevX": 6137.166666666644,
+        "face": -1,
+        "hp": -8.600000000000001,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 15.399999999999956,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -1752.3666666657302,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.1
+      },
+      {
+        "id": 61,
+        "kind": "elf",
+        "x": 6279.166666666663,
+        "prevX": 6279.166666666663,
+        "face": -1,
+        "hp": -3.9000000000000004,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "dead",
+        "timer": 8.066666666666649,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -1752.3666666657302,
+        "ammo": 5,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.36666666666666664
+      },
+      {
+        "id": 62,
+        "kind": "human",
+        "x": 6132.046666666636,
+        "prevX": 6132.046666666636,
+        "face": -1,
+        "hp": -8.600000000000001,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "dead",
+        "timer": 13.133333333333297,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -1752.3666666657302,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.19999999999999998
+      },
+      {
+        "id": 63,
+        "kind": "elf",
+        "x": 6326.0466666666625,
+        "prevX": 6326.0466666666625,
+        "face": -1,
+        "hp": -3.900000000000002,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 4.733333333333326,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -1747.833333332401,
+        "ammo": 4,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0,
+        "aiClock": 0.03333333333333333
+      },
+      {
+        "id": 1010,
+        "kind": "human",
+        "x": 2318.9333333331047,
+        "prevX": 2318.9333333331047,
+        "face": -1,
+        "hp": -1.0000000000000036,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1233,
+        "camp": 0,
+        "state": "dead",
+        "timer": 220.29999999999006,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -423.2666666667878,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1217,
+        "kind": "human",
+        "x": 2317.8133333330966,
+        "prevX": 2317.8133333330966,
+        "face": -1,
+        "hp": -1.0000000000000018,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1233,
+        "camp": 0,
+        "state": "dead",
+        "timer": 217.5666666666569,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -419.2666666667846,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1084,
+        "kind": "human",
+        "x": 2043.460624721728,
+        "prevX": 2045.764624721728,
+        "face": -1,
+        "hp": -3.9250000000000007,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "bound",
+        "timer": 2.533333333333334,
+        "moving": false,
+        "hit": 0,
+        "stripped": true,
+        "counted": true,
+        "hauler": 1214,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -183.2666666666588,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 307,
+        "kind": "elf",
+        "x": 2344.37333333322,
+        "prevX": 2344.37333333322,
+        "face": -1,
+        "hp": -14.3,
+        "maxHp": 27.3,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "dead",
+        "timer": 151.8333333333273,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -183.2666666666588,
+        "ammo": 5,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 0
+      },
+      {
+        "id": 1083,
+        "kind": "human",
+        "x": 2185.9999999997553,
+        "prevX": 2185.9999999997553,
+        "face": -1,
+        "hp": -12.700000000000005,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 154.96666666666044,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -183.2666666666588,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 415,
+        "kind": "jumper",
+        "x": 602.5,
+        "prevX": 602.5,
+        "face": -1,
+        "hp": -8.125,
+        "maxHp": 27.3,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "captured",
+        "timer": 18.10000000000006,
+        "moving": false,
+        "hit": 0,
+        "stripped": true,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": 0,
+        "snared": 0,
+        "spells": -179.26666666665903,
+        "ammo": 12,
+        "atPrison": true,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1365,
+        "kind": "human",
+        "x": 2232.18666666643,
+        "prevX": 2232.18666666643,
+        "face": -1,
+        "hp": -10.100000000000001,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "dead",
+        "timer": 153.09999999999388,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -179.26666666665903,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1366,
+        "kind": "jumper",
+        "x": 1905.9000000000033,
+        "prevX": 1905.9000000000033,
+        "face": 1,
+        "hp": -3.7049999999999983,
+        "maxHp": 27.3,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "dead",
+        "timer": 23.366666666666987,
+        "moving": false,
+        "hit": 0,
+        "stripped": true,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": 1,
+        "snared": 0,
+        "spells": -179.26666666665903,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1367,
+        "kind": "human",
+        "x": 2301.466666666442,
+        "prevX": 2301.466666666442,
+        "face": -1,
+        "hp": -3.9250000000000007,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "dead",
+        "timer": 150.3666666666607,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -175.23333333332593,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1368,
+        "kind": "jumper",
+        "x": 2227.200000000148,
+        "prevX": 2227.200000000148,
+        "face": -1,
+        "hp": -8.125,
+        "maxHp": 27.3,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 153.6333333333272,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -175.23333333332593,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1369,
+        "kind": "human",
+        "x": 2290.7733333330966,
+        "prevX": 2290.7733333330966,
+        "face": -1,
+        "hp": -3.9250000000000007,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "dead",
+        "timer": 149.59999999999408,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -175.23333333332593,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 1370,
+        "kind": "human",
+        "x": 2289.6533333330885,
+        "prevX": 2289.6533333330885,
+        "face": -1,
+        "hp": -10.100000000000001,
+        "maxHp": 31.5,
+        "cooldown": 0,
+        "company": 1396,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 148.63333333332747,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -175.23333333332593,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "field",
+        "scale": 1.05,
+        "sourceCamp": 4
+      },
+      {
+        "id": 64,
+        "kind": "human",
+        "x": 6186.7399999999825,
+        "prevX": 6186.7399999999825,
+        "face": -1,
+        "hp": -8.600000000000001,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "dead",
+        "timer": 10.866666666666639,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -6.633333333333309,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0
+      },
+      {
+        "id": 65,
+        "kind": "elf",
+        "x": 6332.5533333333315,
+        "prevX": 6332.5533333333315,
+        "face": -1,
+        "hp": -3.900000000000002,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 4.166666666666662,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -6.633333333333309,
+        "ammo": 6,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0
+      },
+      {
+        "id": 66,
+        "kind": "human",
+        "x": 6186.1266666666415,
+        "prevX": 6186.1266666666415,
+        "face": -1,
+        "hp": -8.600000000000001,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "dead",
+        "timer": 9.73333333333331,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -6.633333333333309,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0
+      },
+      {
+        "id": 67,
+        "kind": "human",
+        "x": 6300.1266666666415,
+        "prevX": 6300.1266666666415,
+        "face": -1,
+        "hp": -20.300000000000004,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "dead",
+        "timer": 5.299999999999991,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2.099999999999991,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0
+      },
+      {
+        "id": 68,
+        "kind": "human",
+        "x": 6290.393333333326,
+        "prevX": 6290.393333333326,
+        "face": -1,
+        "hp": -8.600000000000001,
+        "maxHp": 33,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "wounded",
+        "timer": 7.46666666666665,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2.099999999999991,
+        "ammo": 12,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0
+      },
+      {
+        "id": 1515,
+        "kind": "elf",
+        "x": 6400.5,
+        "prevX": 6400.5,
+        "face": -1,
+        "hp": -13,
+        "maxHp": 28.6,
+        "cooldown": 0,
+        "company": 0,
+        "camp": 0,
+        "state": "dead",
+        "timer": 2.4666666666666677,
+        "moving": false,
+        "hit": 0,
+        "stripped": false,
+        "counted": true,
+        "hauler": 0,
+        "prisonSlot": -1,
+        "snared": 0,
+        "spells": -2.099999999999991,
+        "ammo": 8,
+        "atPrison": false,
+        "force": "guard",
+        "scale": 1.1,
+        "sourceCamp": 0
+      }
+    ],
+    "camps": [
+      {
+        "id": 20,
+        "index": 0,
+        "x": 6500,
+        "hp": 0,
+        "maxHp": 135,
+        "defeated": true,
+        "claimed": false,
+        "rewarded": true,
+        "rebuild": 0.03333333333333333,
+        "guardQueue": [],
+        "reserve": [],
+        "heroesPending": [],
+        "reinforcementClock": 0.9666666666666724,
+        "lastReinforcedDay": 10,
+        "frontierSince": 1,
+        "fieldLosses": 63
+      },
+      {
+        "id": 25,
+        "index": 1,
+        "x": 12000,
+        "hp": 220,
+        "maxHp": 220,
+        "defeated": false,
+        "claimed": false,
+        "rewarded": false,
+        "rebuild": 0,
+        "guardQueue": [
+          {
+            "id": 75,
+            "kind": "dwarf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 76,
+            "kind": "elf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 77,
+            "kind": "jumper",
+            "sourceCamp": 1
+          },
+          {
+            "id": 78,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 79,
+            "kind": "dwarf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 80,
+            "kind": "elf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 81,
+            "kind": "jumper",
+            "sourceCamp": 1
+          },
+          {
+            "id": 82,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 83,
+            "kind": "elf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 84,
+            "kind": "jumper",
+            "sourceCamp": 1
+          },
+          {
+            "id": 85,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 86,
+            "kind": "elf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 87,
+            "kind": "jumper",
+            "sourceCamp": 1
+          },
+          {
+            "id": 88,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 89,
+            "kind": "elf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 90,
+            "kind": "jumper",
+            "sourceCamp": 1
+          },
+          {
+            "id": 91,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 92,
+            "kind": "elf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 93,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 94,
+            "kind": "elf",
+            "sourceCamp": 1
+          },
+          {
+            "id": 95,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 96,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 97,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 98,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 1516,
+            "kind": "human",
+            "sourceCamp": 1
+          },
+          {
+            "id": 1517,
+            "kind": "human",
+            "sourceCamp": 1
+          }
+        ],
+        "reserve": [],
+        "heroesPending": [],
+        "reinforcementClock": 3,
+        "lastReinforcedDay": 10,
+        "frontierSince": 10
+      },
+      {
+        "id": 30,
+        "index": 2,
+        "x": 18500,
+        "hp": 330,
+        "maxHp": 330,
+        "defeated": false,
+        "claimed": false,
+        "rewarded": false,
+        "rebuild": 0,
+        "guardQueue": [
+          {
+            "id": 105,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 106,
+            "kind": "jumper",
+            "sourceCamp": 2
+          },
+          {
+            "id": 107,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 108,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 109,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 110,
+            "kind": "jumper",
+            "sourceCamp": 2
+          },
+          {
+            "id": 111,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 112,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 113,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 114,
+            "kind": "jumper",
+            "sourceCamp": 2
+          },
+          {
+            "id": 115,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 116,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 117,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 118,
+            "kind": "jumper",
+            "sourceCamp": 2
+          },
+          {
+            "id": 119,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 120,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 121,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 122,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 123,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 124,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 125,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 126,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 127,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 128,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 129,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 130,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 131,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 132,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 133,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 134,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 135,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 136,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 137,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 138,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 139,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 140,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 141,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 142,
+            "kind": "elf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 143,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 144,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 145,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 146,
+            "kind": "dwarf",
+            "sourceCamp": 2
+          },
+          {
+            "id": 147,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 148,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 1518,
+            "kind": "shield",
+            "sourceCamp": 2
+          },
+          {
+            "id": 1519,
+            "kind": "shield",
+            "sourceCamp": 2
+          }
+        ],
+        "reserve": [],
+        "heroesPending": [],
+        "reinforcementClock": 3,
+        "lastReinforcedDay": 10,
+        "frontierSince": 1
+      },
+      {
+        "id": 35,
+        "index": 3,
+        "x": 26500,
+        "hp": 450,
+        "maxHp": 450,
+        "defeated": false,
+        "claimed": false,
+        "rewarded": false,
+        "rebuild": 0,
+        "guardQueue": [
+          {
+            "id": 158,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 159,
+            "kind": "dwarf",
+            "hero": "siege_boss",
+            "sourceCamp": 3
+          },
+          {
+            "id": 160,
+            "kind": "dwarf",
+            "hero": "engineer",
+            "sourceCamp": 3
+          },
+          {
+            "id": 161,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 162,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 163,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 164,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 165,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 166,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 167,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 168,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 169,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 170,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 171,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 172,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 173,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 174,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 175,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 176,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 177,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 178,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 179,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 180,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 181,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 182,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 183,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 184,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 185,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 186,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 187,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 188,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 189,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 190,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 191,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 192,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 193,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 194,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 195,
+            "kind": "elf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 196,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 197,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 198,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 199,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 200,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 201,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 202,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 203,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 204,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 205,
+            "kind": "mage",
+            "sourceCamp": 3
+          },
+          {
+            "id": 206,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 207,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 208,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 209,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 210,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 211,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 212,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 213,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 214,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 215,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 216,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 217,
+            "kind": "dwarf",
+            "sourceCamp": 3
+          },
+          {
+            "id": 218,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 219,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 220,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 221,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 1520,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 1521,
+            "kind": "shield",
+            "sourceCamp": 3
+          },
+          {
+            "id": 1522,
+            "kind": "shield",
+            "sourceCamp": 3
+          }
+        ],
+        "reserve": [],
+        "heroesPending": [],
+        "reinforcementClock": 3,
+        "lastReinforcedDay": 10,
+        "frontierSince": 1
+      },
+      {
+        "id": 40,
+        "index": 4,
+        "x": 28500,
+        "hp": 650,
+        "maxHp": 650,
+        "defeated": false,
+        "claimed": false,
+        "rewarded": false,
+        "rebuild": 0,
+        "guardQueue": [
+          {
+            "id": 234,
+            "kind": "elf",
+            "sourceCamp": 4
+          },
+          {
+            "id": 235,
+            "kind": "elf",
+            "sourceCamp": 4
+          },
+          {
+            "id": 236,
+            "kind": "shield",
+            "hero": "fleet_boss",
+            "sourceCamp": 4
+          },
+          {
+            "id": 237,
+            "kind": "mage",
+            "hero": "pyromancer",
+            "sourceCamp": 4
+          },
+          {
+            "id": 238,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 239,
+            "kind": "dwarf",
+            "sourceCamp": 4
+          },
+          {
+            "id": 240,
+            "kind": "mage",
+            "sourceCamp": 4
+          },
+          {
+            "id": 241,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 242,
+            "kind": "dwarf",
+            "sourceCamp": 4
+          },
+          {
+            "id": 243,
+            "kind": "mage",
+            "sourceCamp": 4
+          },
+          {
+            "id": 244,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 245,
+            "kind": "dwarf",
+            "sourceCamp": 4
+          },
+          {
+            "id": 246,
+            "kind": "mage",
+            "sourceCamp": 4
+          },
+          {
+            "id": 247,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 248,
+            "kind": "dwarf",
+            "sourceCamp": 4
+          },
+          {
+            "id": 249,
+            "kind": "mage",
+            "sourceCamp": 4
+          },
+          {
+            "id": 250,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 251,
+            "kind": "mage",
+            "sourceCamp": 4
+          },
+          {
+            "id": 252,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 253,
+            "kind": "mage",
+            "sourceCamp": 4
+          },
+          {
+            "id": 254,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 255,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 256,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 257,
+            "kind": "shield",
+            "sourceCamp": 4
+          },
+          {
+            "id": 1523,
+            "kind": "dwarf",
+            "sourceCamp": 4
+          },
+          {
+            "id": 1524,
+            "kind": "dwarf",
+            "sourceCamp": 4
+          }
+        ],
+        "reserve": [],
+        "heroesPending": [],
+        "reinforcementClock": 3,
+        "lastReinforcedDay": 10,
+        "frontierSince": 1
+      }
+    ],
+    "companies": [
+      {
+        "id": 447,
+        "initial": 6,
+        "lost": 3,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 110.03333333332965,
+        "pending": [],
+        "launchClock": -36.20000000000051,
+        "launchX": 6380,
+        "eliteBudget": 0,
+        "day": 1,
+        "withdrawn": 0
+      },
+      {
+        "id": 517,
+        "initial": 8,
+        "lost": 4,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 350.0333333333962,
+        "pending": [],
+        "launchClock": -79.19999999999807,
+        "launchX": 6380,
+        "eliteBudget": 0,
+        "day": 2,
+        "withdrawn": 0
+      },
+      {
+        "id": 632,
+        "initial": 10,
+        "lost": 5,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 590.033333333454,
+        "pending": [],
+        "launchClock": -75.66666666666494,
+        "launchX": 6380,
+        "eliteBudget": 0,
+        "day": 3,
+        "withdrawn": 0
+      },
+      {
+        "id": 766,
+        "initial": 12,
+        "lost": 6,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 830.0333333332358,
+        "pending": [],
+        "launchClock": -33.90000000000064,
+        "launchX": 6380,
+        "eliteBudget": 0,
+        "day": 4,
+        "withdrawn": 0
+      },
+      {
+        "id": 878,
+        "initial": 14,
+        "lost": 7,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 1070.0333333330175,
+        "pending": [],
+        "launchClock": -31.16666666666737,
+        "launchX": 6380,
+        "eliteBudget": 1,
+        "day": 5,
+        "withdrawn": 0
+      },
+      {
+        "id": 1014,
+        "initial": 16,
+        "lost": 8,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 1310.0333333327992,
+        "pending": [],
+        "launchClock": -24.933333333333728,
+        "launchX": 6380,
+        "eliteBudget": 1,
+        "day": 6,
+        "withdrawn": 0
+      },
+      {
+        "id": 1101,
+        "initial": 18,
+        "lost": 9,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 1550.033333332581,
+        "pending": [],
+        "launchClock": -29.466666666667287,
+        "launchX": 6380,
+        "eliteBudget": 1,
+        "day": 7,
+        "withdrawn": 0
+      },
+      {
+        "id": 1233,
+        "initial": 20,
+        "lost": 10,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 1790.0333333323626,
+        "pending": [],
+        "launchClock": -25.366666666667083,
+        "launchX": 6380,
+        "eliteBudget": 1,
+        "day": 8,
+        "withdrawn": 0
+      },
+      {
+        "id": 1396,
+        "initial": 22,
+        "lost": 11,
+        "retreating": true,
+        "camp": 0,
+        "spawnedAt": 2030.0333333321444,
+        "pending": [],
+        "launchClock": -24.566666666667043,
+        "launchX": 6380,
+        "eliteBudget": 1,
+        "day": 9,
+        "withdrawn": 0
+      }
+    ],
+    "machines": [
+      {
+        "id": 1530,
+        "kind": "ram",
+        "x": 6760,
+        "prevX": 6760,
+        "hp": 143,
+        "maxHp": 143,
+        "owner": "enemy",
+        "company": -10,
+        "crew": [],
+        "order": "reserve",
+        "cooldown": 0,
+        "moving": false,
+        "scale": 1.1
+      }
+    ],
+    "buildings": [
+      {
+        "id": 1,
+        "kind": "treasury",
+        "x": 220,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 2,
+        "kind": "hall",
+        "x": 400,
+        "level": 2,
+        "hp": 370,
+        "maxHp": 370,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 3,
+        "kind": "prison",
+        "x": 700,
+        "level": 2,
+        "hp": 170,
+        "maxHp": 170,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 4,
+        "kind": "gear",
+        "x": 910,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 5,
+        "kind": "worker",
+        "x": 1200,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 6,
+        "kind": "hunter",
+        "x": 1345,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 7,
+        "kind": "brute",
+        "x": 1490,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 8,
+        "kind": "lure",
+        "x": 1640,
+        "level": 2,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 1,
+        "timer": 282.6666666666759
+      },
+      {
+        "id": 9,
+        "kind": "flag",
+        "x": 1830,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 10,
+        "kind": "forge",
+        "x": 1050,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 11,
+        "kind": "repair",
+        "x": 2550,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 12,
+        "kind": "goldMerchant",
+        "x": -130,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 13,
+        "kind": "armyMerchant",
+        "x": -300,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 14,
+        "kind": "mountMerchant",
+        "x": 50,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 15,
+        "kind": "wall",
+        "x": 2100,
+        "level": 2,
+        "hp": 170,
+        "maxHp": 170,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 16,
+        "kind": "tower",
+        "x": 2000,
+        "level": 1,
+        "hp": 90,
+        "maxHp": 90,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 17,
+        "kind": "net",
+        "x": 2200,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 18,
+        "kind": "rock",
+        "x": 2300,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 19,
+        "kind": "farm",
+        "x": 1800,
+        "level": 1,
+        "hp": 100,
+        "maxHp": 100,
+        "region": -1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 21,
+        "kind": "wall",
+        "x": 7280,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 0,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 22,
+        "kind": "tower",
+        "x": 7180,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 0,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 23,
+        "kind": "wood",
+        "x": 6820,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 0,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 24,
+        "kind": "farm",
+        "x": 6990,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 0,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 26,
+        "kind": "wall",
+        "x": 12880,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 27,
+        "kind": "tower",
+        "x": 12780,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 28,
+        "kind": "mine",
+        "x": 12350,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 29,
+        "kind": "farm",
+        "x": 12530,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 1,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 31,
+        "kind": "wall",
+        "x": 19440,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 32,
+        "kind": "tower",
+        "x": 19340,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 33,
+        "kind": "wood",
+        "x": 18880,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 34,
+        "kind": "farm",
+        "x": 19070,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 36,
+        "kind": "wall",
+        "x": 27500,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 3,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 37,
+        "kind": "tower",
+        "x": 27400,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 3,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 38,
+        "kind": "mine",
+        "x": 26910,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 3,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 39,
+        "kind": "farm",
+        "x": 27110,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 3,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 41,
+        "kind": "wall",
+        "x": 28315,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 4,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 42,
+        "kind": "tower",
+        "x": 28215,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": 4,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 43,
+        "kind": "wall",
+        "x": 3250,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 44,
+        "kind": "tower",
+        "x": 3150,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 45,
+        "kind": "wood",
+        "x": 2760,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 46,
+        "kind": "farm",
+        "x": 2980,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 47,
+        "kind": "wall",
+        "x": 4250,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 48,
+        "kind": "tower",
+        "x": 4150,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      },
+      {
+        "id": 49,
+        "kind": "mine",
+        "x": 3700,
+        "level": 0,
+        "hp": 0,
+        "maxHp": 0,
+        "region": -2,
+        "stock": 0,
+        "timer": 2219.266666665306
+      }
+    ],
+    "coins": [
+      {
+        "id": 1417,
+        "x": 2182.0000000001482,
+        "value": 2,
+        "age": 157.5666666666603
+      },
+      {
+        "id": 1471,
+        "x": 2344.37333333322,
+        "value": 1,
+        "age": 151.8333333333273
+      },
+      {
+        "id": 1509,
+        "x": 2289.6533333330885,
+        "value": 1,
+        "age": 148.63333333332747
+      },
+      {
+        "id": 1564,
+        "x": 6132.046666666636,
+        "value": 1,
+        "age": 13.233333333333297
+      },
+      {
+        "id": 1587,
+        "x": 6186.7399999999825,
+        "value": 1,
+        "age": 10.866666666666639
+      },
+      {
+        "id": 1619,
+        "x": 6279.166666666663,
+        "value": 1,
+        "age": 8.099999999999982
+      },
+      {
+        "id": 1648,
+        "x": 6300.1266666666415,
+        "value": 1,
+        "age": 5.299999999999991
+      },
+      {
+        "id": 1668,
+        "x": 6387.486666666662,
+        "value": 1,
+        "age": 3.266666666666665
+      },
+      {
+        "id": 1675,
+        "x": 6500,
+        "value": 50,
+        "age": 0.03333333333333333
+      }
+    ],
+    "animals": [
+      {
+        "id": 264,
+        "kind": "deer",
+        "x": 2090,
+        "home": 1830,
+        "hp": 17,
+        "face": 1,
+        "moving": false,
+        "timer": 60.699999999999115
+      },
+      {
+        "id": 265,
+        "kind": "rabbit",
+        "x": 2705.616666666758,
+        "home": 2648.75,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 0.06666666666666667
+      },
+      {
+        "id": 266,
+        "kind": "rabbit",
+        "x": 3509.6333333334323,
+        "home": 3467.5,
+        "hp": 8,
+        "face": 1,
+        "moving": true,
+        "timer": 4.333333333333328
+      },
+      {
+        "id": 267,
+        "kind": "rabbit",
+        "x": 4342.583333333241,
+        "home": 4286.25,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 2.500000000000001
+      },
+      {
+        "id": 268,
+        "kind": "deer",
+        "x": 5161.266666666765,
+        "home": 5105,
+        "hp": 17,
+        "face": -1,
+        "moving": false,
+        "timer": 1.2333333333333338
+      },
+      {
+        "id": 269,
+        "kind": "rabbit",
+        "x": 6097.483333333276,
+        "home": 5923.75,
+        "hp": 8,
+        "face": -1,
+        "moving": true,
+        "timer": 8.099999999999982
+      },
+      {
+        "id": 270,
+        "kind": "rabbit",
+        "x": 6799.099999999852,
+        "home": 6742.5,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 2.6000000000000005
+      },
+      {
+        "id": 271,
+        "kind": "rabbit",
+        "x": 7618.450000000019,
+        "home": 7561.25,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 8.099999999999982
+      },
+      {
+        "id": 272,
+        "kind": "deer",
+        "x": 8436.466666666685,
+        "home": 8380,
+        "hp": 17,
+        "face": -1,
+        "moving": false,
+        "timer": 0.06666666666666667
+      },
+      {
+        "id": 273,
+        "kind": "rabbit",
+        "x": 9255.216666666685,
+        "home": 9198.75,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 1.0666666666666667
+      },
+      {
+        "id": 274,
+        "kind": "rabbit",
+        "x": 10074.700000000019,
+        "home": 10017.5,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 6.099999999999988
+      },
+      {
+        "id": 275,
+        "kind": "rabbit",
+        "x": 10893.450000000019,
+        "home": 10836.25,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 7.0999999999999845
+      },
+      {
+        "id": 276,
+        "kind": "deer",
+        "x": 11620.333333339186,
+        "home": 11655,
+        "hp": 17,
+        "face": 1,
+        "moving": true,
+        "timer": 8.099999999999982
+      },
+      {
+        "id": 277,
+        "kind": "rabbit",
+        "x": 12530.216666666685,
+        "home": 12473.75,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 0.06666666666666667
+      },
+      {
+        "id": 278,
+        "kind": "rabbit",
+        "x": 13348.966666666685,
+        "home": 13292.5,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 1.0666666666666667
+      },
+      {
+        "id": 279,
+        "kind": "rabbit",
+        "x": 14168.450000000019,
+        "home": 14111.25,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 6.099999999999988
+      },
+      {
+        "id": 280,
+        "kind": "deer",
+        "x": 14987.200000000019,
+        "home": 14930,
+        "hp": 17,
+        "face": 1,
+        "moving": false,
+        "timer": 7.0999999999999845
+      },
+      {
+        "id": 281,
+        "kind": "rabbit",
+        "x": 15805.950000000019,
+        "home": 15748.75,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 8.099999999999982
+      },
+      {
+        "id": 282,
+        "kind": "rabbit",
+        "x": 16623.966666666685,
+        "home": 16567.5,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 0.06666666666666667
+      },
+      {
+        "id": 283,
+        "kind": "rabbit",
+        "x": 17442.716666666685,
+        "home": 17386.25,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 1.0666666666666667
+      },
+      {
+        "id": 284,
+        "kind": "deer",
+        "x": 18448.666666647314,
+        "home": 18205,
+        "hp": 17,
+        "face": -1,
+        "moving": true,
+        "timer": 5.733333333333323
+      },
+      {
+        "id": 285,
+        "kind": "rabbit",
+        "x": 19083.68333333294,
+        "home": 19023.75,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 7.0999999999999845
+      },
+      {
+        "id": 286,
+        "kind": "rabbit",
+        "x": 19899.70000000002,
+        "home": 19842.5,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 8.099999999999982
+      },
+      {
+        "id": 287,
+        "kind": "rabbit",
+        "x": 20717.716666666685,
+        "home": 20661.25,
+        "hp": 8,
+        "face": -1,
+        "moving": false,
+        "timer": 0.06666666666666667
+      },
+      {
+        "id": 288,
+        "kind": "deer",
+        "x": 21536.466666666685,
+        "home": 21480,
+        "hp": 17,
+        "face": -1,
+        "moving": false,
+        "timer": 1.0666666666666667
+      },
+      {
+        "id": 289,
+        "kind": "rabbit",
+        "x": 22355.95000000002,
+        "home": 22298.75,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 6.099999999999988
+      },
+      {
+        "id": 290,
+        "kind": "rabbit",
+        "x": 23174.70000000002,
+        "home": 23117.5,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 7.0999999999999845
+      },
+      {
+        "id": 291,
+        "kind": "rabbit",
+        "x": 23993.45000000002,
+        "home": 23936.25,
+        "hp": 8,
+        "face": 1,
+        "moving": false,
+        "timer": 8.099999999999982
+      },
+      {
+        "id": 292,
+        "kind": "deer",
+        "x": 24811.466666666685,
+        "home": 24755,
+        "hp": 17,
+        "face": -1,
+        "moving": false,
+        "timer": 0.06666666666666667
+      },
+      {
+        "id": 293,
+        "kind": "rabbit",
+        "x": 25570.283333334857,
+        "home": 25573.75,
+        "hp": 8,
+        "face": -1,
+        "moving": true,
+        "timer": 8.59999999999998
+      },
+      {
+        "id": 294,
+        "kind": "rabbit",
+        "x": 26395.700000001518,
+        "home": 26392.5,
+        "hp": 8,
+        "face": 1,
+        "moving": true,
+        "timer": 4.533333333333327
+      },
+      {
+        "id": 295,
+        "kind": "rabbit",
+        "x": 27175.583333334867,
+        "home": 27211.25,
+        "hp": 8,
+        "face": 1,
+        "moving": true,
+        "timer": 7.0999999999999845
+      }
+    ],
+    "shots": [],
+    "effects": [
+      {
+        "id": 1676,
+        "kind": "smoke",
+        "x": 6500,
+        "age": 0.03333333333333333,
+        "life": 1.4,
+        "size": 3
+      }
+    ],
+    "gearDrops": [
+      {
+        "id": 629,
+        "x": 6002.466666666646,
+        "amount": 1,
+        "age": 1750.3333333323988
+      }
+    ],
+    "fortifications": [
+      {
+        "id": 418,
+        "camp": 2,
+        "kind": "gate",
+        "x": 17825,
+        "hp": 310,
+        "maxHp": 310,
+        "cooldown": 2,
+        "rank": 2
+      },
+      {
+        "id": 419,
+        "camp": 2,
+        "kind": "tower",
+        "x": 18140,
+        "hp": 170,
+        "maxHp": 170,
+        "cooldown": -2217.2666666653076,
+        "levels": 1,
+        "rank": 1
+      },
+      {
+        "id": 420,
+        "camp": 2,
+        "kind": "tower",
+        "x": 18950,
+        "hp": 170,
+        "maxHp": 170,
+        "cooldown": -2217.2666666653076,
+        "levels": 1,
+        "rank": 1
+      },
+      {
+        "id": 421,
+        "camp": 3,
+        "kind": "gate",
+        "x": 25348,
+        "hp": 385,
+        "maxHp": 385,
+        "cooldown": 2,
+        "rank": 3
+      },
+      {
+        "id": 422,
+        "camp": 3,
+        "kind": "gate",
+        "x": 26308,
+        "hp": 420,
+        "maxHp": 420,
+        "cooldown": 2,
+        "rank": 4
+      },
+      {
+        "id": 423,
+        "camp": 3,
+        "kind": "gate",
+        "x": 27196,
+        "hp": 455,
+        "maxHp": 455,
+        "cooldown": 2,
+        "rank": 5
+      },
+      {
+        "id": 424,
+        "camp": 3,
+        "kind": "tower",
+        "x": 25732,
+        "hp": 210,
+        "maxHp": 210,
+        "cooldown": -2217.2666666653076,
+        "levels": 3,
+        "rank": 5
+      },
+      {
+        "id": 425,
+        "camp": 3,
+        "kind": "tower",
+        "x": 26548,
+        "hp": 210,
+        "maxHp": 210,
+        "cooldown": -2217.2666666653076,
+        "levels": 2,
+        "rank": 3
+      },
+      {
+        "id": 426,
+        "camp": 3,
+        "kind": "tower",
+        "x": 27316,
+        "hp": 210,
+        "maxHp": 210,
+        "cooldown": -2217.2666666653076,
+        "levels": 2,
+        "rank": 3
+      },
+      {
+        "id": 427,
+        "camp": 4,
+        "kind": "gate",
+        "x": 27842,
+        "hp": 460,
+        "maxHp": 460,
+        "cooldown": 2,
+        "rank": 4
+      },
+      {
+        "id": 428,
+        "camp": 4,
+        "kind": "gate",
+        "x": 28808,
+        "hp": 495,
+        "maxHp": 495,
+        "cooldown": 2,
+        "rank": 5
+      },
+      {
+        "id": 429,
+        "camp": 4,
+        "kind": "tower",
+        "x": 28010,
+        "hp": 250,
+        "maxHp": 250,
+        "cooldown": -2217.2666666653076,
+        "levels": 2,
+        "rank": 3
+      },
+      {
+        "id": 430,
+        "camp": 4,
+        "kind": "tower",
+        "x": 28360,
+        "hp": 250,
+        "maxHp": 250,
+        "cooldown": -2217.2666666653076,
+        "levels": 2,
+        "rank": 3
+      },
+      {
+        "id": 431,
+        "camp": 4,
+        "kind": "tower",
+        "x": 28710,
+        "hp": 250,
+        "maxHp": 250,
+        "cooldown": -2217.2666666653076,
+        "levels": 2,
+        "rank": 3
+      },
+      {
+        "id": 432,
+        "camp": 4,
+        "kind": "tower",
+        "x": 29018,
+        "hp": 250,
+        "maxHp": 250,
+        "cooldown": -2217.2666666653076,
+        "levels": 2,
+        "rank": 3
+      }
+    ],
+    "recruitment": {
+      "start": 2100,
+      "limit": 1,
+      "count": 0,
+      "next": 2222.799505465664
+    },
+    "pledge": null,
+    "expedition": {
+      "state": "hold",
+      "camp": 0
+    },
+    "unlockedMounts": [
+      "boar"
+    ],
+    "mountBoost": {},
+    "adReceipts": [],
+    "trader": {
+      "x": 2650.333333333365,
+      "prevX": 2650.333333333365,
+      "present": false,
+      "timer": 114.06666666667013,
+      "phase": "away"
+    },
+    "raids": 9,
+    "kills": 94,
+    "sold": 18,
+    "spent": 165,
+    "army": {
+      "reserve": [
+        {
+          "id": 337,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 338,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 339,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 358,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 359,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 360,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 361,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 362,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 363,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 364,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 365,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 366,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 367,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 368,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 369,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 370,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 371,
+          "kind": "shield",
+          "sourceCamp": 3
+        },
+        {
+          "id": 372,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 373,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 374,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 375,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 376,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 377,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 378,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 379,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 380,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 381,
+          "kind": "mage",
+          "sourceCamp": 3
+        },
+        {
+          "id": 398,
+          "kind": "shield",
+          "sourceCamp": 4
+        },
+        {
+          "id": 399,
+          "kind": "shield",
+          "sourceCamp": 4
+        },
+        {
+          "id": 400,
+          "kind": "shield",
+          "sourceCamp": 4
+        },
+        {
+          "id": 401,
+          "kind": "shield",
+          "sourceCamp": 4
+        },
+        {
+          "id": 402,
+          "kind": "shield",
+          "sourceCamp": 4
+        },
+        {
+          "id": 403,
+          "kind": "shield",
+          "sourceCamp": 4
+        },
+        {
+          "id": 404,
+          "kind": "mage",
+          "sourceCamp": 4
+        },
+        {
+          "id": 405,
+          "kind": "mage",
+          "sourceCamp": 4
+        },
+        {
+          "id": 406,
+          "kind": "mage",
+          "sourceCamp": 4
+        },
+        {
+          "id": 407,
+          "kind": "mage",
+          "sourceCamp": 4
+        },
+        {
+          "id": 408,
+          "kind": "mage",
+          "sourceCamp": 4
+        },
+        {
+          "id": 409,
+          "kind": "mage",
+          "sourceCamp": 4
+        },
+        {
+          "id": 410,
+          "kind": "dwarf",
+          "sourceCamp": 4
+        },
+        {
+          "id": 411,
+          "kind": "dwarf",
+          "sourceCamp": 4
+        },
+        {
+          "id": 412,
+          "kind": "dwarf",
+          "sourceCamp": 4
+        },
+        {
+          "id": 326,
+          "kind": "dwarf",
+          "sourceCamp": 1,
+          "hpRatio": 1,
+          "readyAt": 1201.8666666662855
+        },
+        {
+          "id": 327,
+          "kind": "dwarf",
+          "sourceCamp": 1,
+          "hpRatio": 1,
+          "readyAt": 1433.1333333327418
+        },
+        {
+          "id": 382,
+          "kind": "elf",
+          "sourceCamp": 3,
+          "hpRatio": 1,
+          "readyAt": 1434.6333333327404
+        },
+        {
+          "id": 383,
+          "kind": "elf",
+          "sourceCamp": 3,
+          "hpRatio": 1,
+          "readyAt": 1434.6333333327404
+        },
+        {
+          "id": 347,
+          "kind": "elf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1434.6666666660738
+        },
+        {
+          "id": 349,
+          "kind": "dwarf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1678.466666665852
+        },
+        {
+          "id": 385,
+          "kind": "elf",
+          "sourceCamp": 3,
+          "hpRatio": 1,
+          "readyAt": 1679.1666666658514
+        },
+        {
+          "id": 386,
+          "kind": "elf",
+          "sourceCamp": 3,
+          "hpRatio": 1,
+          "readyAt": 1679.1666666658514
+        },
+        {
+          "id": 387,
+          "kind": "elf",
+          "sourceCamp": 3,
+          "hpRatio": 1,
+          "readyAt": 1679.1666666658514
+        },
+        {
+          "id": 388,
+          "kind": "elf",
+          "sourceCamp": 3,
+          "hpRatio": 1,
+          "readyAt": 1679.1999999991847
+        },
+        {
+          "id": 348,
+          "kind": "dwarf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1679.9666666658507
+        },
+        {
+          "id": 351,
+          "kind": "dwarf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1918.3666666656338
+        },
+        {
+          "id": 1221,
+          "kind": "human",
+          "sourceCamp": 4,
+          "hpRatio": 1,
+          "readyAt": 1918.499999998967
+        },
+        {
+          "id": 389,
+          "kind": "elf",
+          "sourceCamp": 3,
+          "hpRatio": 1,
+          "readyAt": 1919.0999999989665
+        },
+        {
+          "id": 416,
+          "kind": "elf",
+          "sourceCamp": 4,
+          "hpRatio": 1,
+          "readyAt": 1919.0999999989665
+        },
+        {
+          "id": 417,
+          "kind": "elf",
+          "sourceCamp": 4,
+          "hpRatio": 1,
+          "readyAt": 1919.0999999989665
+        },
+        {
+          "id": 305,
+          "kind": "elf",
+          "sourceCamp": 0,
+          "hpRatio": 1,
+          "readyAt": 1919.0999999989665
+        },
+        {
+          "id": 304,
+          "kind": "elf",
+          "sourceCamp": 0,
+          "hpRatio": 1,
+          "readyAt": 1919.0999999989665
+        },
+        {
+          "id": 306,
+          "kind": "elf",
+          "sourceCamp": 0,
+          "hpRatio": 0.3846153846153846,
+          "readyAt": 1919.0999999989665
+        },
+        {
+          "id": 1007,
+          "kind": "dwarf",
+          "hero": "heavy",
+          "sourceCamp": 4,
+          "hpRatio": 0.7091836734693877,
+          "readyAt": 1920.266666665632
+        },
+        {
+          "id": 350,
+          "kind": "dwarf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1920.266666665632
+        },
+        {
+          "id": 1373,
+          "kind": "human",
+          "sourceCamp": 4,
+          "hpRatio": 1,
+          "readyAt": 2156.5999999987507
+        },
+        {
+          "id": 1372,
+          "kind": "human",
+          "sourceCamp": 4,
+          "hpRatio": 1,
+          "readyAt": 2156.833333332084
+        },
+        {
+          "id": 353,
+          "kind": "dwarf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 2157.066666665417
+        },
+        {
+          "id": 1371,
+          "kind": "human",
+          "sourceCamp": 4,
+          "hpRatio": 1,
+          "readyAt": 2157.066666665417
+        },
+        {
+          "id": 321,
+          "kind": "elf",
+          "sourceCamp": 1,
+          "hpRatio": 1,
+          "readyAt": 2157.4333333320833
+        },
+        {
+          "id": 320,
+          "kind": "elf",
+          "sourceCamp": 1,
+          "hpRatio": 1,
+          "readyAt": 2157.733333332083
+        },
+        {
+          "id": 318,
+          "kind": "elf",
+          "sourceCamp": 1,
+          "hpRatio": 1,
+          "readyAt": 2157.7666666654163
+        },
+        {
+          "id": 317,
+          "kind": "elf",
+          "sourceCamp": 1,
+          "hpRatio": 1,
+          "readyAt": 2158.066666665416
+        },
+        {
+          "id": 316,
+          "kind": "elf",
+          "sourceCamp": 1,
+          "hpRatio": 0.3846153846153846,
+          "readyAt": 2158.066666665416
+        },
+        {
+          "id": 867,
+          "kind": "dwarf",
+          "hero": "heavy",
+          "sourceCamp": 4,
+          "hpRatio": 0.9418367346938775,
+          "readyAt": 2158.599999998749
+        },
+        {
+          "id": 352,
+          "kind": "dwarf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 2158.599999998749
+        }
+      ],
+      "initial": 122,
+      "recruited": 39,
+      "lost": 63,
+      "recovered": 0,
+      "retired": 0,
+      "transferred": 0,
+      "returned": 63,
+      "guardInitial": 195,
+      "guardRecruited": 10,
+      "guardLost": 16,
+      "guardRecovered": 0,
+      "guardTransferred": 0,
+      "enginesBuilt": 1
+    },
+    "raidPrep": {
+      "day": 10,
+      "units": [
+        {
+          "id": 1525,
+          "kind": "elf",
+          "hero": "longbow",
+          "sourceCamp": 4
+        },
+        {
+          "id": 328,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 340,
+          "kind": "elf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 959.6333333331725
+        },
+        {
+          "id": 390,
+          "kind": "dwarf",
+          "sourceCamp": 3
+        },
+        {
+          "id": 1526,
+          "kind": "jumper",
+          "sourceCamp": 4
+        },
+        {
+          "id": 329,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 342,
+          "kind": "elf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1200.833333332953
+        },
+        {
+          "id": 391,
+          "kind": "dwarf",
+          "sourceCamp": 3
+        },
+        {
+          "id": 1527,
+          "kind": "jumper",
+          "sourceCamp": 4
+        },
+        {
+          "id": 330,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 343,
+          "kind": "elf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1200.833333332953
+        },
+        {
+          "id": 392,
+          "kind": "dwarf",
+          "sourceCamp": 3
+        },
+        {
+          "id": 1528,
+          "kind": "shield",
+          "hero": "bulwark",
+          "sourceCamp": 4
+        },
+        {
+          "id": 1529,
+          "kind": "jumper",
+          "sourceCamp": 4
+        },
+        {
+          "id": 331,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 344,
+          "kind": "elf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1200.833333332953
+        },
+        {
+          "id": 393,
+          "kind": "dwarf",
+          "sourceCamp": 3
+        },
+        {
+          "id": 332,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 341,
+          "kind": "elf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1200.8666666662864
+        },
+        {
+          "id": 333,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 346,
+          "kind": "elf",
+          "sourceCamp": 2,
+          "hpRatio": 1,
+          "readyAt": 1434.6333333327404
+        },
+        {
+          "id": 334,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 335,
+          "kind": "shield",
+          "sourceCamp": 2
+        },
+        {
+          "id": 336,
+          "kind": "shield",
+          "sourceCamp": 2
+        }
+      ],
+      "engines": [
+        1530
+      ],
+      "eliteBudget": 2
+    },
+    "raidsWaiting": []
+  }
+}

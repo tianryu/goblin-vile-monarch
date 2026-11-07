@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-11-05T10:08:08.854Z",
+  "results": [
+    {
+      "name": "遗体收益与重复结算",
+      "pass": true,
+      "details": {
+        "manual": 5,
+        "auto": 1
+      }
+    },
+    {
+      "name": "苦工一级主屋有爪牙仍先救活口，多人预约不同目标",
+      "pass": true,
+      "details": [
+        390,
+        391
+      ]
+    },
+    {
+      "name": "施工人员不抢俘虏，其他苦工不再被全局施工任务挡住",
+      "pass": true
+    },
+    {
+      "name": "爪牙不拖活口，苦工避开有敌人和敌墙阻挡的伤兵",
+      "pass": true
+    },
+    {
+      "name": "二级主屋连续搬两名活口，俘虏成交价4至6，装备拆卖一币",
+      "pass": true,
+      "details": {
+        "prices": [
+          5,
+          5
+        ],
+        "gearPrice": 1
+      }
+    },
+    {
+      "name": "苦工白天积攒、每晚仅一次送款，读档不会再次送款",
+      "pass": true,
+      "details": {
+        "per100seconds": 3,
+        "deposited": 3
+      }
+    },
+    {
+      "name": "箭塔范围和攻速提高，箭矢命中移动猎物且不重复伤害",
+      "pass": true
+    },
+    {
+      "name": "旧档夜晚比例迁移，月升月落、白天时长和同日出兵不重复",
+      "pass": true,
+      "details": {
+        "night": 80,
+        "migration": 160
+      }
+    },
+    {
+      "name": "夜袭结束后出征不因敌多人少自动逃跑，重伤仍会退却",
+      "pass": true,
+      "details": {
+        "healthy": "fights",
+        "critical": "retreats"
+      }
+    },
+    {
+      "name": "鼓车追上行走和奔跑首领、转向不等换把手，不限制队伍",
+      "pass": true,
+      "details": {
+        "minGap": 180,
+        "maxGap": 180
+      }
+    },
+    {
+      "name": "鼓车攻城时停留，胜利返回，玩家行走比之前快且不穿敌墙",
+      "pass": true
+    }
+  ]
+}

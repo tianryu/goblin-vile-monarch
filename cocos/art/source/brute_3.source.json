@@ -1,0 +1,14 @@
+{
+  "assetName": "brute_3",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f3571cf6-f96a-4750-9c9a-aade124c7b40.png",
+  "prompt": "Use case: precise-object-edit. Make a rank-three costume variant of this EXACT existing flat hand-painted cartoon goblin guard. Keep his face, ears, crooked nose, grin, green skin patches, posture, broad belly, ragged brown cloth, feet, wooden round shield and UPRIGHT AXE completely unchanged. In particular the axe metal head stays ABOVE the gripping fist at the top of the continuous vertical shaft, cutting edge points RIGHT, and shield stays in his OTHER hand. Add a large simple matte gray torso plate above belt, one wider gray shoulder plate and two gray knee guards. Upgrade the open-faced iron cap to have a broad plain brow band, leaving eyes, nose, grin and ears uncovered. Keep some patched brown cloth visible around armor. Just broad close-valued irregular painted color patches, very little detail, no bevels, shiny gradients, tiny studs, scratches, black ink contour or 3D rendering. Do not change hand placement or axe orientation. One whole right-facing static game sprite, transparent background with generous margin, no extra items, no labels, no outline.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "correction": "Upright axe inherited unchanged from accepted brute_2, adds broad armor, open face cap",
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "近手正持斧、刃朝前、盾在另一手；同基准脸型与哑光色块，胸甲肩甲和护膝较二阶明确；74像素缩图通过待引擎",
+  "reviewStatus": "approved-source-pending-engine"
+}

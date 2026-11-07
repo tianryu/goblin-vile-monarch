@@ -1,0 +1,7 @@
+{
+  "name": "butterfly",
+  "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One small ochre and cream woodland butterfly seen from the side with both wings lifted above a tiny dark body, suitable for flying past flowers. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f6af9b95-d019-44ee-b7fa-0ed673375b41.png",
+  "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+}

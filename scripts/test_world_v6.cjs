@@ -1,0 +1,37 @@
+const{chromium}=require('playwright'),fs=require('fs');let browser,page,report;
+(async()=>{
+ report={scope:'Desktop Edge mobile viewport, DPR2 touch and simulated safe area. No physical phone or live SDK claims.',passes:[],failures:[],errors:[]};
+ const check=(n,ok)=>(ok?report.passes:report.failures).push(n);
+ browser=await chromium.launch({channel:'msedge',headless:true,args:['--enable-webgl','--use-angle=swiftshader']});
+ const ctx=await browser.newContext({viewport:{width:844,height:390},deviceScaleFactor:2,hasTouch:true});
+ await ctx.addInitScript(()=>{const get=window.getComputedStyle;window.getComputedStyle=function(e,...args){const c=get.call(this,e,...args);if(e.id!=='goblin-safe-area')return c;return new Proxy(c,{get(t,p){if(p==='paddingLeft'||p==='paddingRight')return'24px';if(p==='paddingBottom')return'34px';return Reflect.get(t,p,t)}})}});
+ page=await ctx.newPage();page.on('pageerror',e=>report.errors.push(e.message));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
+ await page.goto('http://127.0.0.1:42819/');await page.waitForFunction(()=>window.__goblinState,null,{timeout:60000});
+ const state=()=>page.evaluate(()=>window.__goblinState),cmd=async c=>{await page.evaluate(c=>window.goblinQaCommand(JSON.stringify(c)),c);await page.waitForTimeout(160)},point=async key=>{const s=await state(),r=s.rects[key],box=await page.locator('canvas').boundingBox();if(!r)throw Error('Missing control '+key);return{x:box.x+(r[0]+r[2]/2)*box.width/s.viewport[0],y:box.y+(r[1]+r[3]/2)*box.height/s.viewport[1]}},tap=async key=>{const q=await point(key);await page.touchscreen.tap(q.x,q.y);await page.waitForTimeout(220)},shot=async name=>page.screenshot({path:'qa/world-v6/'+name+'.png'});
+ await cmd({op:'new',seed:616});await cmd({op:'time',value:35});await cmd({op:'resources',gold:50,scrap:100});
+ let s=await state();check('Chief starts healthy and visible in compact HUD',s.hero_hp===100&&s.hud_health==='100/100');check('Four distinct tool stalls exist in live world',s.sites.filter(b=>b.kind==='tools').length===4);
+ await shot('center');
+ await cmd({op:'move',x:-1740});await shot('wooden-signs');s=await state();check('Unbuilt remote wall shows planted sign',s.sites.find(b=>b.kind==='wall'&&b.x===-1540).mode==='sign');
+ await cmd({op:'move',x:-1540});s=await state();check('Approaching swaps sign to actual wall ghost',s.ghost_key==='wall1'&&s.sites.find(b=>b.x===-1540).mode==='ghost'&&s.coin_slots===4);await shot('wall-ghost');
+ await tap('action');await tap('action');s=await state();check('Two taps escrow exactly two real coins',s.payment.paid===2&&s.gold===48);await shot('partial-payment');
+ await page.keyboard.down('d');await page.waitForTimeout(1150);await page.keyboard.up('d');await page.waitForTimeout(200);s=await state();check('Walking out of range automatically refunds all partial coins',s.gold===50&&Object.keys(s.payment).length===0);await shot('refunded');
+ for(const role of ['worker','hunter','brute','thief']){
+  await cmd({op:'new',seed:616});await cmd({op:'time',value:35});await cmd({op:'resources',gold:50,scrap:100});s=await state();const stall=s.sites.find(b=>b.role===role);await cmd({op:'move',x:stall.x});
+  s=await state();check(role+' world prompt identifies its specific profession',s.target.object_id===stall.id&&s.target.shop==='tools');await shot('stall-'+role);await tap('action');s=await state();check(role+' proximity button opens two clear dedicated cards',s.modal==='tools'&&s.cards.length===2&&!s.ui.some(b=>b.key.startsWith('select_')));await shot('shop-'+role);
+  await tap('buy_tool');s=await state();check(role+' purchase stays stocked while menu pauses world',s.tool_stock[role]===1&&s.roles.idle===1&&s.gold===50-({worker:2,hunter:2,brute:4,thief:5}[role]));
+  await tap('close');await cmd({op:'advance',seconds:18});s=await state();check(role+' idle goblin reaches correct stall and changes profession once',s.tool_stock[role]===0&&(!s.roles.idle||s.roles.idle===0)&&s.roles[role]===({worker:3,hunter:4,brute:1,thief:1}[role]));
+ }
+ await cmd({op:'new',seed:616});await cmd({op:'time',value:35});await cmd({op:'move',x:2160});await cmd({op:'look'});await shot('grounded-wreck');
+ await cmd({op:'scene'});await shot('prison-trader');s=await state();check('Prison and traders rise above mounted chief',s.sites.filter(b=>['prison','merchant_gold','merchant_army','merchant_mount','tools'].includes(b.kind)).every(b=>b.height>90));
+ for(const x of [760,970,1180]){await cmd({op:'move',x});await shot('merchant-'+x)}
+ await cmd({op:'night_scene'});await shot('tall-defense');
+ await cmd({op:'new',seed:616});await cmd({op:'move',x:-380});await cmd({op:'time',value:35});await cmd({op:'look',hp:40});await cmd({op:'unfreeze'});await page.waitForTimeout(1000);s=await state();check('Returning to safe hall restores chief health in running Web game',s.hero_hp>45&&s.hud_health.endsWith('/100'));await shot('healing');
+ await cmd({op:'hall_ruin'});await cmd({op:'look',hp:40});await cmd({op:'unfreeze'});await page.waitForTimeout(650);s=await state();check('Hall ruins remain playable and stop healing',s.status==='playing'&&s.hero_hp===40&&s.target.label.includes('修复'));await shot('hall-ruin');
+ await cmd({op:'resources',gold:50});await cmd({op:'chief_attack',type:'human'});await page.waitForTimeout(450);s=await state();check('Enemy damages chief health without stealing money or ending on hall loss',s.hero_hp<40&&s.gold===50&&s.status==='playing');await shot('chief-hurt');
+ await cmd({op:'look',hp:0});await cmd({op:'unfreeze'});s=await state();check('Chief death opens defeat screen',s.status==='lost'&&s.modal==='result');await shot('chief-defeat');await tap('new_campaign');s=await state();check('Defeat restart is free and restores healthy chief',s.status==='playing'&&s.hero_hp===100&&s.modal==='');
+ const canvas=await page.locator('canvas').evaluate(e=>({width:e.width,height:e.height,cssWidth:e.clientWidth,cssHeight:e.clientHeight}));report.canvas=canvas;check('New art and HUD render at native DPR2',canvas.width>=canvas.cssWidth*1.99);
+ await cmd({op:'move',x:-160});await tap('action');s=await state();const ratio=390/s.viewport[1],b=s.rects.buy_tool;check('Dedicated tool purchase is thumb reachable above bottom safe area',(s.viewport[1]-b[1]-b[3])*ratio>=34+21*ratio-.8);
+ check('Tool card art text stock and price do not overlap',s.cards.every(c=>{const a=c.CardArt,t=c.CardTitle,d=c.CardDetail,p=c.CardPrice;return a[1]+a[3]<=t[1]-2&&t[1]+t[3]<=d[1]-2&&(!p||d[1]+d[3]<=p[1]-3)}));
+ await page.setViewportSize({width:740,height:360});await page.waitForTimeout(250);await shot('small-tools');s=await state();check('Small landscape keeps all dedicated tool card content inside panel',s.cards.every(c=>Object.values(c).every(r=>r[1]>=s.content_clip[1]&&r[1]+r[3]<=s.content_clip[1]+s.content_clip[3]+1)));
+ check('No runtime errors in new world interactions',report.errors.length===0);fs.writeFileSync('qa/godot/world-v6-browser-tests.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));await browser.close();process.exitCode=report.failures.length?1:0;
+})().catch(async e=>{console.error(e);if(report){report.exception=String(e);if(page){report.last_state=await page.evaluate(()=>window.__goblinState);await page.screenshot({path:'qa/world-v6/browser-failure.png'})}fs.writeFileSync('qa/godot/world-v6-browser-tests.json',JSON.stringify(report,null,2))}if(browser)await browser.close();process.exitCode=1});

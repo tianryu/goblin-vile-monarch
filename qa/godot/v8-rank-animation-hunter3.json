@@ -1,0 +1,22 @@
+{
+  "scope": "Seven full-cycle rank walks in isolated desktop Edge software WebGL",
+  "passes": [
+    "hunter_3: complete gait advances",
+    "hunter_3: one stable body identity",
+    "hunter_3: no extra coin transactions",
+    "hunter_3: AI actually travels",
+    "hunter_3: ground anchor stays flat",
+    "hunter_3: paused animation stays still",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "name": "hunter_3",
+      "frames": 27,
+      "travel": -366.1666666666675,
+      "decoded_bytes": 22575904
+    }
+  ]
+}

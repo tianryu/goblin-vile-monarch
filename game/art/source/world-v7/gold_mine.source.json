@@ -1,0 +1,7 @@
+{
+  "name": "gold_mine",
+  "prompt": "Use case: game asset, stylized flat hand-painted 2D cartoon. One crooked goblin gold-mine entrance in low gray rocks, timber bracing, ore trolley sitting on rails, hanging old lantern, large gold nugget crest above. No characters. Grounded side elevation. Match the reference art: clean slightly irregular painted contours, broad matte close-valued muted patches, only 2 tones per material, minimal volume. No realistic texture noise, no 3D, no pixel art, no gradients or halos, no shadows on backdrop. Genuine transparent background, one subject only, no writing, no borders around canvas.",
+  "method": "built-in image_gen",
+  "original": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-9629e7ab-e93f-4ff0-8707-ca50cf464b62.png",
+  "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+}

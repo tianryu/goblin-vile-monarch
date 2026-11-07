@@ -1,0 +1,21 @@
+{
+  "checkpoint": "repair-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "treasury-held-empty-full-and-leaving",
+      "pass": true
+    },
+    {
+      "name": "coin-size-and-each-profession-hit-keeps-outline",
+      "pass": false,
+      "error": "Error: page.evaluate: TypeError: m.dropCoins is not a function\n    at eval (eval at evaluate (:311:30), <anonymous>:1:136)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    }
+  ],
+  "errors": [
+    "Failed to load resource: net::ERR_NO_BUFFER_SPACE"
+  ],
+  "failure": "Error: page.evaluate: TypeError: m.dropCoins is not a function\n    at eval (eval at evaluate (:311:30), <anonymous>:1:136)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "passed": 1
+}

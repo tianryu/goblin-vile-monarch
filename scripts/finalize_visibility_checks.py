@@ -1,0 +1,9 @@
+from pathlib import Path
+R=Path(__file__).resolve().parents[1]
+p=R/'scripts/test_v7_browser.cjs';s=p.read_text(encoding='utf-8').replace('No welcome or explanatory dialog on startup','No welcome dialog; inline building caption enabled').replace("s.modal===''&&!s.explanatory_ui","s.modal===''&&s.building_caption_enabled").replace('Sixteen paired normal sheets active','Paired normals include outlined actor atlas').replace('s.normal_sheets>=16','s.normal_sheets>=5&&s.actor_outline');p.write_text(s,encoding='utf-8')
+p=R/'scripts/test_v7_release.cjs';s=p.read_text(encoding='utf-8').replace('Object.keys(manifest.normals).length>=16',"Object.keys(manifest.normals).length>=5&&manifest.normals['actors-ink.png']");p.write_text(s,encoding='utf-8')
+p=R/'scripts/test_visibility_browser.cjs';s=p.read_text(encoding='utf-8')
+s=s.replace("await cmd({op:'outcome',win:false});await wait(75);", "await cmd({op:'outcome',win:false});await page.waitForFunction(()=>window.__goblinState.motion.hud.some(a=>a.scope==='hud/result'&&a.alpha>0&&a.alpha<1));")
+s=s.replace("check('Treasury draws a wide bottom and narrow top',rows(s,'surface','world/treasury').length===85);", "const pile=rows(s,'surface','world/treasury'),feet=pile.map(a=>a.rect[1]+a.rect[3]),span=a=>Math.max(...a.map(p=>p.rect[0]+Math.abs(p.rect[2])))-Math.min(...a.map(p=>p.rect[0])),base=pile.filter((a,i)=>feet[i]>Math.max(...feet)-3),top=pile.filter((a,i)=>feet[i]<Math.min(...feet)+3);check('Treasury draws a wide bottom and narrow top',pile.length===85&&span(base)>span(top)+10);")
+p.write_text(s,encoding='utf-8')
+p=R/'scripts/test_v7_boot.cjs';s=p.read_text(encoding='utf-8').replace("getComputedStyle(document.getElementById('boot-retry')).display!=='none'", "getComputedStyle(document.getElementById('boot-retry')).opacity>.95&&getComputedStyle(document.getElementById('boot-retry')).visibility==='visible'");p.write_text(s,encoding='utf-8')

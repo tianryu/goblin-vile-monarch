@@ -1,0 +1,94 @@
+extends RefCounted
+var ui
+var spec={}
+var sheet
+var subtitle
+var actions
+var safe=Vector4.ZERO
+func _init(owner_ui):
+	ui=owner_ui
+	var p="res://game/data/ui_layout.json"
+	if FileAccess.file_exists(p):spec=JSON.parse_string(FileAccess.get_file_as_string(p))
+func value(key,fallback):return float(spec.get(key,fallback))
+func white(node):
+	node.add_theme_color_override("font_color",Color("f4e7c7"))
+	node.add_theme_color_override("font_shadow_color",Color(0.08,0.12,0.08,0.65));node.add_theme_constant_override("shadow_offset_y",1)
+func build_hud():
+	ui.hud=Control.new();ui.hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);ui.hud.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.add_child(ui.hud)
+	ui.skin.picture(ui.hud,"ui_hud",Rect2()).name="ResourcePlaque"
+	ui.skin.picture(ui.hud,"ui_hud",Rect2()).name="ClockPlaque"
+	for name in ["coin","heart_icon","idle"]:ui.skin.picture(ui.hud,name,Rect2()).name="Icon_"+name
+	ui.coins=ui.label("",ui.hud,21);ui.health=ui.label("",ui.hud,20);ui.population=ui.label("",ui.hud,20);ui.clock=ui.label("",ui.hud,21)
+	ui.supplies=ui.label("",ui.hud,20);ui.supplies.hide()
+	ui.hint=ui.label("",ui.hud,20);ui.hint.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	ui.toast=ui.label("",ui.hud,19);ui.toast.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	for n in [ui.coins,ui.health,ui.population,ui.clock,ui.hint,ui.toast]:white(n)
+	ui.toast_bg=ui.skin.picture(ui.hud,"ui_hud",Rect2());ui.hud.move_child(ui.toast_bg,0)
+	ui.stamina=ProgressBar.new();ui.stamina.show_percentage=false;ui.stamina.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.hud.add_child(ui.stamina)
+	ui.day_progress=ProgressBar.new();ui.day_progress.show_percentage=false;ui.day_progress.max_value=ui.model.DAY;ui.day_progress.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.hud.add_child(ui.day_progress)
+	ui.joystick=ui.Joystick.new();ui.joystick.base=ui.art.texture("ui_joystick_base");ui.joystick.knob=ui.art.texture("ui_joystick_knob");ui.joystick.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.hud.add_child(ui.joystick)
+	ui.run_button=ui.button("",ui.hud,func():pass,"run");ui.skin.control_button(ui.run_button,"ui_run_control");ui.run_button.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	ui.action_button=ui.button("",ui.hud,func():pass,"action");ui.skin.control_button(ui.action_button,"ui_action_control");ui.action_button.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	ui.action_caption=ui.label("",ui.hud,20);white(ui.action_caption);ui.action_caption.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	ui.pause_button=ui.button("",ui.hud,func():ui.open_panel("pause"),"pause");ui.skin.control_button(ui.pause_button,"ui_pause_control")
+func build_panel():
+	ui.panel_layer=ColorRect.new();ui.panel_layer.color=Color(0.06,0.11,0.08,0.66);ui.panel_layer.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);ui.add_child(ui.panel_layer)
+	sheet=ui.skin.picture(ui.panel_layer,"ui_panel",Rect2())
+	ui.panel_title=ui.label("",ui.panel_layer,34);white(ui.panel_title)
+	subtitle=ui.label("",ui.panel_layer,20);white(subtitle);subtitle.clip_text=true
+	ui.panel_box=Control.new();ui.panel_box.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.panel_layer.add_child(ui.panel_box)
+	ui.panel_content=Control.new();ui.panel_content.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);ui.panel_content.clip_contents=true;ui.panel_box.add_child(ui.panel_content)
+	actions=Control.new();actions.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.panel_layer.add_child(actions)
+	ui.panel_close=ui.button("返回部落",actions,ui.handle_back,"close")
+	ui.panel_feedback=ui.label("",ui.panel_layer,18);white(ui.panel_feedback);ui.panel_feedback.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;ui.panel_feedback.clip_text=true
+	ui.panel_layer.hide()
+func header(title,description="",show_sheet=true):
+	ui.panel_title.text=title;subtitle.text=description;sheet.visible=show_sheet
+func footer(text,callback,key,slot="primary",disabled=false):
+	var b=ui.button(text,actions,callback,key);b.disabled=disabled;b.set_meta("footer_slot",slot)
+	if slot=="primary":
+		for mode in ["normal","hover","focus","pressed","disabled"]:
+			var style=ui.skin.box("ui_button_primary",Vector2(18,12),Vector2(10,8));style.modulate_color=Color(0.56,0.58,0.51) if mode=="disabled" else Color.WHITE;b.add_theme_stylebox_override(mode,style)
+	return b
+func clear_actions():
+	for c in actions.get_children():
+		if c!=ui.panel_close:actions.remove_child(c);c.queue_free()
+	ui.panel_close.show();ui.panel_close.text="返回部落";ui.panel_close.disabled=false
+func place_footer():
+	var s=ui.get_viewport_rect().size;var left=24+safe.x;var right=s.x-24-safe.z;var y=s.y-86-safe.w
+	ui.panel_close.position=Vector2(left,y);ui.panel_close.size=Vector2(140,64)
+	for b in actions.get_children():
+		if b==ui.panel_close:continue
+		var slot=str(b.get_meta("footer_slot","primary"));var x=right-220;var w=220.0
+		if slot=="secondary":x=right-418;w=184
+		elif slot=="left_aux":x=left+154;w=156
+		b.position=Vector2(x,y);b.size=Vector2(w,64)
+func layout(inset):
+	safe=inset
+	var s=ui.get_viewport_rect().size;var left=24+safe.x;var right=s.x-safe.z
+	ui.hud.get_node("ResourcePlaque").position=Vector2(left,14+safe.y);ui.hud.get_node("ResourcePlaque").size=Vector2(328,48)
+	ui.hud.get_node("ClockPlaque").position=Vector2(s.x/2-88,14+safe.y);ui.hud.get_node("ClockPlaque").size=Vector2(176,46)
+	ui.hud.get_node("Icon_coin").position=Vector2(left+12,26+safe.y);ui.hud.get_node("Icon_coin").size=Vector2(23,23)
+	ui.hud.get_node("Icon_heart_icon").position=Vector2(left+96,27+safe.y);ui.hud.get_node("Icon_heart_icon").size=Vector2(22,22)
+	ui.hud.get_node("Icon_idle").position=Vector2(left+214,25+safe.y);ui.hud.get_node("Icon_idle").size=Vector2(26,26)
+	ui.coins.position=Vector2(left+41,23+safe.y);ui.coins.size=Vector2(52,29)
+	ui.health.position=Vector2(left+123,23+safe.y);ui.health.size=Vector2(85,29)
+	ui.population.position=Vector2(left+246,23+safe.y);ui.population.size=Vector2(78,29)
+	ui.clock.position=Vector2(s.x/2-82,20+safe.y);ui.clock.size=Vector2(164,28);ui.clock.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	ui.day_progress.position=Vector2(s.x/2-62,51+safe.y);ui.day_progress.size=Vector2(124,5)
+	ui.pause_button.position=Vector2(right-88,10+safe.y);ui.pause_button.size=Vector2(64,64)
+	ui.joystick.position=Vector2(left+4,s.y-116-safe.w);ui.joystick.size=Vector2(164,88)
+	ui.run_button.position=Vector2(right-308,s.y-104-safe.w);ui.run_button.size=Vector2(72,72)
+	ui.action_button.position=Vector2(right-136,s.y-120-safe.w);ui.action_button.size=Vector2(96,96)
+	ui.action_caption.position=Vector2(right-144,s.y-29-safe.w);ui.action_caption.size=Vector2(112,27)
+	ui.hint.position=Vector2(right-190,s.y-164-safe.w);ui.hint.size=Vector2(200,30)
+	ui.stamina.position=Vector2(right-301,s.y-25-safe.w);ui.stamina.size=Vector2(58,7)
+	ui.toast_bg.position=Vector2(s.x/2-310,76+safe.y);ui.toast_bg.size=Vector2(620,38)
+	ui.toast.position=ui.toast_bg.position+Vector2(14,5);ui.toast.size=Vector2(592,28)
+	for b in [ui.action_button,ui.run_button]:b.pivot_offset=b.size/2
+	sheet.position=Vector2(24+safe.x,90+safe.y);sheet.size=Vector2(s.x-48-safe.x-safe.z,s.y-218-safe.y-safe.w)
+	ui.panel_box.position=Vector2(40+safe.x,104+safe.y);ui.panel_box.size=Vector2(s.x-80-safe.x-safe.z,s.y-248-safe.y-safe.w)
+	ui.panel_title.position=Vector2(36+safe.x,16+safe.y);ui.panel_title.size=Vector2(s.x-72-safe.x-safe.z,44)
+	subtitle.position=Vector2(38+safe.x,57+safe.y);subtitle.size=Vector2(s.x-76-safe.x-safe.z,28)
+	ui.panel_feedback.position=Vector2(40+safe.x,s.y-120-safe.w);ui.panel_feedback.size=Vector2(s.x-80-safe.x-safe.z,27)
+	place_footer()

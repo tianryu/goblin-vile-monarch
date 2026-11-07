@@ -1,0 +1,42 @@
+{
+  "checkpoint": "hanging-menu-20261103",
+  "url": "http://127.0.0.1:42828/?build=hanging-menu-20261103",
+  "notTapTapUploadPackage": true,
+  "published": false,
+  "nativeCocosMenusImplemented": true,
+  "rankingReady": false,
+  "cloudSaveReady": false,
+  "testingSkippedByUser": true,
+  "gameplayTested": false,
+  "browserTested": false,
+  "phoneTested": false,
+  "realAds": false,
+  "typecheckCompleted": true,
+  "creatorBuildCompleted": true,
+  "sourceHashes": {
+    "cocos/assets/scripts/MonarchGame.ts": "ec8b0b1a009b5bf7252ba1b6eb202360d807e86c9c3f3268231603ba777c5792",
+    "cocos/assets/scripts/model/CampaignRules.ts": "4bbb47d5f8328c7f6ee50a045849c2a4e6614a28d52ef2d185fe56d1a94156ae",
+    "cocos/assets/scripts/model/CampaignUpgrade.ts": "e8740c5ec05134b8d55fa13e6c4d904b9e5209e727e4e736594e994643a7fd4b",
+    "cocos/assets/scripts/model/GameModel.ts": "7beb75db52af05c8b2fe1399752e0b195f5c2d778362d50f6454a10d7c0908b4",
+    "cocos/assets/scripts/model/PrisonLayout.ts": "81e0aace8d2f32de57f3c267fc9abe24767ccf155625e83af32c7467f089f5fa",
+    "cocos/assets/scripts/model/Progression.ts": "d78ec19e329dce493e13c11a3c5c70f128bbd39971e3e9b20d0758f0e02d1005",
+    "cocos/assets/scripts/model/Rules.ts": "01d649cde70f8e94bae83e3850aac1b7776fb6cc62030c23d810864d4ad605de",
+    "cocos/assets/scripts/model/State.ts": "aea211f9cbbd72180c8d5f24f76fbc45045a986f6f3fcced336585e30e02bd7d",
+    "cocos/assets/scripts/model/WorldUpgrade.ts": "402b8974f1889247b0179e8ba26d1e309d38c6387c8283db0581684513f7ef0d",
+    "cocos/assets/scripts/platform/Platform.ts": "32347c7f7f8c7edcc66610567d7ddf498cfcae9875101b6a2ee7602af502f2b9",
+    "cocos/assets/scripts/view/ArtBank.ts": "867f467a3615b8e3e0849e6c1b32d7a69e24e32ca0b002213b723f272c4bbe28",
+    "cocos/assets/scripts/view/Controls.ts": "ab01491fd04c9cdd01a1204c45774e25959d0620999ec7a5dc2253256b58044b",
+    "cocos/assets/scripts/view/CutoutMotion.ts": "ec25359dc45655124ad569fb3ccdf203433840aeb5ebd934f83e1b571cdcf172",
+    "cocos/assets/scripts/view/GameView.ts": "9e4cff584f352e555c6ccdc3dc20abed47265b68191042599616f240a2500e8b",
+    "cocos/assets/scripts/view/HangingMenu.ts": "17f376d5f1ff3e52980e1624c1c2f3954ad70f067ee0a8e36df9b0d674d2658c",
+    "cocos/assets/scripts/view/Painter.ts": "62ffbf9e6278f3b6336bf068672c1142e4c87867c30842d9497b5d310a822178",
+    "cocos/assets/scripts/view/Transitions.ts": "3627c294c0f2a0533756fbd4f762871bee1919356eef166eddbf8697e61c8f23"
+  },
+  "evidence": [
+    "qa/cocos/hanging-menu-compile.log",
+    "qa/cocos/build-hanging-menu-final.log"
+  ],
+  "archive": "C:\\Users\\田煜\\Documents\\ChatGPT\\IAAG_ Monarch\\release\\cocos-hanging-menu-20261103-r1.zip",
+  "archiveBytes": 26080437,
+  "archiveSha256": "c309361181e443951090b5309913571154cba54a7ab9a091237e6dcdd6ab652f"
+}

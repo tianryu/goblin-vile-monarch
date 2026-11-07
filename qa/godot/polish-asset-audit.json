@@ -1,0 +1,153 @@
+{
+  "assets": [
+    {
+      "asset": "rider_bat",
+      "source": "game\\art\\source\\polish-v4\\rider_bat.png",
+      "width": 269,
+      "height": 192,
+      "rgba_bytes": 206592
+    },
+    {
+      "asset": "rider_bat_bare",
+      "source": "game\\art\\source\\polish-v4\\rider_bat_bare.png",
+      "width": 269,
+      "height": 192,
+      "rgba_bytes": 206592
+    },
+    {
+      "asset": "rider_boar",
+      "source": "game\\art\\source\\polish-v4\\rider_boar.png",
+      "width": 215,
+      "height": 192,
+      "rgba_bytes": 165120
+    },
+    {
+      "asset": "rider_boar_bare",
+      "source": "game\\art\\source\\polish-v4\\rider_boar_bare.png",
+      "width": 215,
+      "height": 192,
+      "rgba_bytes": 165120
+    },
+    {
+      "asset": "rider_lizard",
+      "source": "game\\art\\source\\polish-v4\\rider_lizard.png",
+      "width": 265,
+      "height": 192,
+      "rgba_bytes": 203520
+    },
+    {
+      "asset": "rider_lizard_bare",
+      "source": "game\\art\\source\\polish-v4\\rider_lizard_bare.png",
+      "width": 265,
+      "height": 192,
+      "rgba_bytes": 203520
+    },
+    {
+      "asset": "rider_wolf",
+      "source": "game\\art\\source\\polish-v4\\rider_wolf.png",
+      "width": 249,
+      "height": 192,
+      "rgba_bytes": 191232
+    },
+    {
+      "asset": "rider_wolf_bare",
+      "source": "game\\art\\source\\polish-v4\\rider_wolf_bare.png",
+      "width": 249,
+      "height": 192,
+      "rgba_bytes": 191232
+    },
+    {
+      "asset": "ui_action_control",
+      "source": "game\\art\\source\\polish-v4\\ui_action_control.png",
+      "width": 160,
+      "height": 159,
+      "rgba_bytes": 101760
+    },
+    {
+      "asset": "ui_bar",
+      "source": "game\\art\\source\\polish-v4\\ui_bar.png",
+      "width": 330,
+      "height": 38,
+      "rgba_bytes": 50160
+    },
+    {
+      "asset": "ui_bar_fill",
+      "source": "game\\art\\source\\polish-v4\\ui_bar_fill.png",
+      "width": 496,
+      "height": 38,
+      "rgba_bytes": 75392
+    },
+    {
+      "asset": "ui_button",
+      "source": "game\\art\\source\\polish-v4\\ui_button.png",
+      "width": 512,
+      "height": 112,
+      "rgba_bytes": 229376
+    },
+    {
+      "asset": "ui_button_primary",
+      "source": "game\\art\\source\\polish-v4\\ui_button_primary.png",
+      "width": 455,
+      "height": 128,
+      "rgba_bytes": 232960
+    },
+    {
+      "asset": "ui_context",
+      "source": "game\\art\\source\\polish-v4\\ui_context.png",
+      "width": 549,
+      "height": 112,
+      "rgba_bytes": 245952
+    },
+    {
+      "asset": "ui_hud",
+      "source": "game\\art\\source\\polish-v4\\ui_hud.png",
+      "width": 511,
+      "height": 112,
+      "rgba_bytes": 228928
+    },
+    {
+      "asset": "ui_joystick_base",
+      "source": "game\\art\\source\\polish-v4\\ui_joystick_base.png",
+      "width": 256,
+      "height": 88,
+      "rgba_bytes": 90112
+    },
+    {
+      "asset": "ui_joystick_knob",
+      "source": "game\\art\\source\\polish-v4\\ui_joystick_knob.png",
+      "width": 160,
+      "height": 160,
+      "rgba_bytes": 102400
+    },
+    {
+      "asset": "ui_logo",
+      "source": "game\\art\\source\\polish-v4\\ui_logo.png",
+      "width": 360,
+      "height": 260,
+      "rgba_bytes": 374400
+    },
+    {
+      "asset": "ui_panel",
+      "source": "game\\art\\source\\polish-v4\\ui_panel.png",
+      "width": 768,
+      "height": 274,
+      "rgba_bytes": 841728
+    },
+    {
+      "asset": "ui_pause_control",
+      "source": "game\\art\\source\\polish-v4\\ui_pause_control.png",
+      "width": 160,
+      "height": 159,
+      "rgba_bytes": 101760
+    },
+    {
+      "asset": "ui_run_control",
+      "source": "game\\art\\source\\polish-v4\\ui_run_control.png",
+      "width": 160,
+      "height": 160,
+      "rgba_bytes": 102400
+    }
+  ],
+  "rgba_bytes": 20079856,
+  "source_art_only": true
+}

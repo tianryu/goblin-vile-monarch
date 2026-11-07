@@ -1,0 +1,23 @@
+{
+  "environment": "Desktop Edge SwiftShader, 844x390 at DPR 1, 16 defenders and 32 enemies",
+  "comparisons": {
+    "field-recovery-20261104": {
+      "elapsedSeconds": 8.500199999988078,
+      "frames": 510,
+      "fps": 59.998588268595476,
+      "frameIntervalP95Ms": 21.799999952316284,
+      "renderJsP95Ms": 1.300000011920929,
+      "tickP95Ms": 0.699999988079071,
+      "uniqueTextureRgbaEstimateBytes": 132418428
+    },
+    "store-20261104": {
+      "elapsedSeconds": 8.502300000011921,
+      "frames": 511,
+      "fps": 60.10138433121432,
+      "frameIntervalP95Ms": 20.899999976158142,
+      "renderJsP95Ms": 1.199999988079071,
+      "tickP95Ms": 0.6000000238418579,
+      "uniqueTextureRgbaEstimateBytes": 98152616
+    }
+  }
+}

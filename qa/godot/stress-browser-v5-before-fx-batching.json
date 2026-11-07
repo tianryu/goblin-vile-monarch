@@ -1,0 +1,2403 @@
+{
+  "scope": "V5 five-minute desktop Edge software WebGL at DPR2, native canvas and 60 friendly units plus 40 durable enemies. Not phone/TapTap performance.",
+  "duration_seconds": 60,
+  "frame_count": 1565,
+  "frame_interval_ms": {
+    "p50": 36.29999999999927,
+    "p95": 60.60000000000218,
+    "p99": 72.70000000000073,
+    "max": 90.80000000000291
+  },
+  "samples": [
+    {
+      "elapsed": 14064.90000000596,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "coin_slots": 0,
+        "content_clip": [
+          40,
+          104,
+          958,
+          232
+        ],
+        "day": 1,
+        "daylight": 0.15,
+        "decoded_art_bytes": 21165472,
+        "effects": 128,
+        "enemies": 44,
+        "engine_draw_calls": 143,
+        "engine_process_seconds": 0.0621,
+        "engine_static_bytes": 64007514,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gear": [
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "idle"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          }
+        ],
+        "ghost_key": "",
+        "gold": 9,
+        "hero_anchor": [
+          519,
+          318
+        ],
+        "hero_face": 1,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "native_canvas": true,
+        "paused": false,
+        "payment": {},
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            902,
+            360,
+            96,
+            96
+          ],
+          "joystick": [
+            28,
+            364,
+            164,
+            88
+          ],
+          "pause": [
+            950,
+            10,
+            64,
+            64
+          ],
+          "run": [
+            730,
+            376,
+            72,
+            72
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 151.933333333333,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "run",
+            "rect": [
+              730,
+              376,
+              72,
+              72
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "action",
+            "rect": [
+              902,
+              360,
+              96,
+              96
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "pause",
+            "rect": [
+              950,
+              10,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111,
+        "water_time": 11.8542666666667
+      },
+      "jsHeap": 24051088
+    },
+    {
+      "elapsed": 24121.70000000298,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "coin_slots": 0,
+        "content_clip": [
+          40,
+          104,
+          958,
+          232
+        ],
+        "day": 1,
+        "daylight": 0.15,
+        "decoded_art_bytes": 21165472,
+        "effects": 0,
+        "enemies": 44,
+        "engine_draw_calls": 142,
+        "engine_process_seconds": 0.0576,
+        "engine_static_bytes": 63915986,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gear": [
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "idle"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          }
+        ],
+        "ghost_key": "",
+        "gold": 5,
+        "hero_anchor": [
+          519,
+          318
+        ],
+        "hero_face": 1,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "native_canvas": true,
+        "paused": false,
+        "payment": {},
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            902,
+            360,
+            96,
+            96
+          ],
+          "joystick": [
+            28,
+            364,
+            164,
+            88
+          ],
+          "pause": [
+            950,
+            10,
+            64,
+            64
+          ],
+          "run": [
+            730,
+            376,
+            72,
+            72
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 162.033333333332,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "run",
+            "rect": [
+              730,
+              376,
+              72,
+              72
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "action",
+            "rect": [
+              902,
+              360,
+              96,
+              96
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "pause",
+            "rect": [
+              950,
+              10,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111,
+        "water_time": 21.9904
+      },
+      "jsHeap": 35209990
+    },
+    {
+      "elapsed": 34172.70000000298,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "coin_slots": 0,
+        "content_clip": [
+          40,
+          104,
+          958,
+          232
+        ],
+        "day": 1,
+        "daylight": 0.15,
+        "decoded_art_bytes": 21165472,
+        "effects": 2,
+        "enemies": 44,
+        "engine_draw_calls": 143,
+        "engine_process_seconds": 0.0578,
+        "engine_static_bytes": 63912750,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gear": [
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "idle"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          }
+        ],
+        "ghost_key": "",
+        "gold": 5,
+        "hero_anchor": [
+          519,
+          318
+        ],
+        "hero_face": 1,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "native_canvas": true,
+        "paused": false,
+        "payment": {},
+        "phase": "夜晚",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            902,
+            360,
+            96,
+            96
+          ],
+          "joystick": [
+            28,
+            364,
+            164,
+            88
+          ],
+          "pause": [
+            950,
+            10,
+            64,
+            64
+          ],
+          "run": [
+            730,
+            376,
+            72,
+            72
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 172.033333333332,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "run",
+            "rect": [
+              730,
+              376,
+              72,
+              72
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "action",
+            "rect": [
+              902,
+              360,
+              96,
+              96
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "pause",
+            "rect": [
+              950,
+              10,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111,
+        "water_time": 32.0018
+      },
+      "jsHeap": 18892061
+    },
+    {
+      "elapsed": 44242,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "coin_slots": 0,
+        "content_clip": [
+          40,
+          104,
+          958,
+          232
+        ],
+        "day": 2,
+        "daylight": 0.461944444444321,
+        "decoded_art_bytes": 21165472,
+        "effects": 128,
+        "enemies": 44,
+        "engine_draw_calls": 162,
+        "engine_process_seconds": 0.0778,
+        "engine_static_bytes": 64035962,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gear": [
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "idle"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          }
+        ],
+        "ghost_key": "",
+        "gold": 5,
+        "hero_anchor": [
+          519,
+          318
+        ],
+        "hero_face": 1,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "native_canvas": true,
+        "paused": false,
+        "payment": {},
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            902,
+            360,
+            96,
+            96
+          ],
+          "joystick": [
+            28,
+            364,
+            164,
+            88
+          ],
+          "pause": [
+            950,
+            10,
+            64,
+            64
+          ],
+          "run": [
+            730,
+            376,
+            72,
+            72
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "交互",
+          "cost": 0,
+          "disabled": false,
+          "id": "b3",
+          "kind": "merchant_gold",
+          "label": "金币商人",
+          "object_id": 3,
+          "scrap": 0,
+          "shop": "gold",
+          "x": -315
+        },
+        "time": 2.09999999999773,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "run",
+            "rect": [
+              730,
+              376,
+              72,
+              72
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "action",
+            "rect": [
+              902,
+              360,
+              96,
+              96
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "pause",
+            "rect": [
+              950,
+              10,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111,
+        "water_time": 42.0544777777778
+      },
+      "jsHeap": 21860653
+    },
+    {
+      "elapsed": 54295.20000000298,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "coin_slots": 0,
+        "content_clip": [
+          40,
+          104,
+          958,
+          232
+        ],
+        "day": 2,
+        "daylight": 1,
+        "decoded_art_bytes": 21165472,
+        "effects": 0,
+        "enemies": 44,
+        "engine_draw_calls": 171,
+        "engine_process_seconds": 0.059,
+        "engine_static_bytes": 63912634,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gear": [
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "idle"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          }
+        ],
+        "ghost_key": "",
+        "gold": 5,
+        "hero_anchor": [
+          519,
+          318
+        ],
+        "hero_face": 1,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "native_canvas": true,
+        "paused": false,
+        "payment": {},
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            902,
+            360,
+            96,
+            96
+          ],
+          "joystick": [
+            28,
+            364,
+            164,
+            88
+          ],
+          "pause": [
+            950,
+            10,
+            64,
+            64
+          ],
+          "run": [
+            730,
+            376,
+            72,
+            72
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 12.133333333331,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "run",
+            "rect": [
+              730,
+              376,
+              72,
+              72
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "action",
+            "rect": [
+              902,
+              360,
+              96,
+              96
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "pause",
+            "rect": [
+              950,
+              10,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 111,
+        "water_time": 52.0965444444443
+      },
+      "jsHeap": 24724503
+    },
+    {
+      "elapsed": 64336.79999999702,
+      "state": {
+        "axis": 0,
+        "boosts": {
+          "bat": 0,
+          "wolf": 0
+        },
+        "capacity": 60,
+        "captives": 0,
+        "coin_slots": 0,
+        "content_clip": [
+          40,
+          104,
+          958,
+          232
+        ],
+        "day": 2,
+        "daylight": 1,
+        "decoded_art_bytes": 21165472,
+        "effects": 67,
+        "enemies": 44,
+        "engine_draw_calls": 176,
+        "engine_process_seconds": 0.0506,
+        "engine_static_bytes": 63978230,
+        "flags": {
+          "left": false,
+          "right": false
+        },
+        "fly": 0,
+        "gear": [
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "worker"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "hunter"
+          },
+          {
+            "rank": 1,
+            "role": "idle"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          },
+          {
+            "rank": 3,
+            "role": "worker"
+          },
+          {
+            "rank": 3,
+            "role": "hunter"
+          }
+        ],
+        "ghost_key": "",
+        "gold": 5,
+        "hero_anchor": [
+          519,
+          318
+        ],
+        "hero_face": 1,
+        "hero_x": -350,
+        "kills": 0,
+        "modal": "",
+        "mount": "boar",
+        "native_canvas": true,
+        "paused": false,
+        "payment": {},
+        "phase": "白天",
+        "population": 60,
+        "prison_capacity": 0,
+        "rects": {
+          "action": [
+            902,
+            360,
+            96,
+            96
+          ],
+          "joystick": [
+            28,
+            364,
+            164,
+            88
+          ],
+          "pause": [
+            950,
+            10,
+            64,
+            64
+          ],
+          "run": [
+            730,
+            376,
+            72,
+            72
+          ]
+        },
+        "reserve": 0,
+        "roles": {
+          "hunter": 30,
+          "idle": 1,
+          "worker": 29
+        },
+        "run": false,
+        "scrap": 8,
+        "stamina": 100,
+        "status": "playing",
+        "target": {
+          "action": "抽鞭子",
+          "cost": 0,
+          "disabled": false,
+          "id": "u51",
+          "kind": "whip",
+          "label": "私藏金币",
+          "object_id": 51,
+          "scrap": 0,
+          "shop": "",
+          "x": -296
+        },
+        "time": 22.1666666666646,
+        "tool_stock": {
+          "brute": 0,
+          "hunter": 0,
+          "thief": 0,
+          "worker": 0
+        },
+        "trader_cargo": [],
+        "ui": [
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "run",
+            "rect": [
+              730,
+              376,
+              72,
+              72
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "action",
+            "rect": [
+              902,
+              360,
+              96,
+              96
+            ],
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "footer": false,
+            "key": "pause",
+            "rect": [
+              950,
+              10,
+              64,
+              64
+            ],
+            "text": ""
+          }
+        ],
+        "viewport": [
+          1038,
+          480
+        ],
+        "visible_objects": 112,
+        "water_time": 62.1128333333332
+      },
+      "jsHeap": 21915522
+    }
+  ],
+  "processes": [
+    {
+      "type": "browser",
+      "id": 13428,
+      "cpuTime": 4.674489
+    },
+    {
+      "type": "renderer",
+      "id": 22336,
+      "cpuTime": 0.084638
+    },
+    {
+      "type": "renderer",
+      "id": 21108,
+      "cpuTime": 29.99661
+    },
+    {
+      "type": "GPU",
+      "id": 31496,
+      "cpuTime": 831.258526
+    },
+    {
+      "type": "network.mojom.NetworkService",
+      "id": 44464,
+      "cpuTime": 0.395226
+    },
+    {
+      "type": "storage.mojom.StorageService",
+      "id": 38896,
+      "cpuTime": 0.079427
+    },
+    {
+      "type": "audio.mojom.AudioService",
+      "id": 25268,
+      "cpuTime": 0.503841
+    }
+  ],
+  "errors": []
+}

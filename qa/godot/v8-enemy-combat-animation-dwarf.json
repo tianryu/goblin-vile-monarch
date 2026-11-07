@@ -1,0 +1,30 @@
+{
+  "scope": "Actual dwarf melee animation in isolated desktop Edge software WebGL",
+  "passes": [
+    "1: actual attacks cover the generated swing",
+    "1: one complete opaque enemy during every attack pose",
+    "1: original left-facing art follows the real target",
+    "1: combatants stay apart at contact",
+    "1: ongoing damage causes no repeated reward or dialogs",
+    "1: pause freezes attack time and damage",
+    "-1: actual attacks cover the generated swing",
+    "-1: one complete opaque enemy during every attack pose",
+    "-1: original left-facing art follows the real target",
+    "-1: combatants stay apart at contact",
+    "-1: ongoing damage causes no repeated reward or dialogs",
+    "-1: pause freezes attack time and damage",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "side": 1,
+      "source_frames": 16
+    },
+    {
+      "side": -1,
+      "source_frames": 17
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "scope": "Living wounded and still corpses, then captive rear/front cage occlusion in isolated desktop Edge software WebGL",
+  "passes": [
+    "Captive breathes and blinks inside the cage",
+    "Prison breathing does not sell captives or create a dialog",
+    "Pause freezes captive pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [
+    "Prison keeps rear, prisoner and front layers in that order"
+  ],
+  "errors": [],
+  "cases": [],
+  "cage_layers": [
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    },
+    {
+      "rear": 20,
+      "person": 20.1,
+      "front": 20.2,
+      "prison_id": 7
+    }
+  ],
+  "prison_sample": [
+    {
+      "alpha": 1,
+      "key": "world/building/7/prison_back1/0",
+      "layer": 20,
+      "origin": [
+        0,
+        0
+      ],
+      "rect": [
+        365,
+        215.5,
+        230,
+        98
+      ],
+      "requested": true,
+      "rotation": 0,
+      "scope": "world/building/7",
+      "source": [
+        103,
+        1252,
+        300,
+        94
+      ],
+      "tint_alpha": 1
+    },
+    {
+      "alpha": 1,
+      "animation": "captive_human/idle",
+      "key": "world/building/7/captive/9901/captive_human/0",
+      "layer": 20.1,
+      "origin": [
+        0,
+        0
+      ],
+      "rect": [
+        423.761108398438,
+        268.194458007812,
+        26.796875,
+        40.7421875
+      ],
+      "requested": true,
+      "rotation": 0,
+      "scope": "world/building/7/captive/9901",
+      "source": [
+        0,
+        149,
+        98,
+        149
+      ],
+      "tint_alpha": 1
+    },
+    {
+      "alpha": 1,
+      "key": "world/building/7/captive/9902/captive_elf/0",
+      "layer": 20.1,
+      "origin": [
+        0,
+        0
+      ],
+      "rect": [
+        509.835144042969,
+        269.3125,
+        25.4296875,
+        39.375
+      ],
+      "requested": true,
+      "rotation": 0,
+      "scope": "world/building/7/captive/9902",
+      "source": [
+        1082,
+        8,
+        93,
+        144
+      ],
+      "tint_alpha": 1
+    },
+    {
+      "alpha": 1,
+      "key": "world/building/7/front/prison_front1/0",
+      "layer": 20.2,
+      "origin": [
+        0,
+        0
+      ],
+      "rect": [
+        365,
+        215.5,
+        230,
+        98
+      ],
+      "requested": true,
+      "rotation": 0,
+      "scope": "world/building/7/front",
+      "source": [
+        608,
+        944,
+        300,
+        102
+      ],
+      "tint_alpha": 1
+    }
+  ]
+}

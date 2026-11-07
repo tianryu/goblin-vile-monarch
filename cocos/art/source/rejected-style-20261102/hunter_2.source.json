@@ -1,0 +1,13 @@
+{
+  "assetName": "hunter_2",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-a1fbaac4-a12a-4400-905b-924143ca24e0.png",
+  "prompt": "Identity-preserving edit of this exact red-clothed goblin hunter sprite. Keep face, body proportions, facing RIGHT, bow with NO arrow, red tunic/head-cloth, complete feet and simple matte flat-painted art. Add FIRST-TIER scavenged goblin equipment: a small mismatched dull steel shoulder guard on one shoulder, patched dark leather chest straps and dull steel knee pads. Keep at least two thirds of red outfit visible for role readability. No helmet yet, no crown. Same posture and silhouette scale. Truly transparent background. No new outline, glow, scenery, arrows, animation frames or text. One complete standalone upgraded character.",
+  "edge": "ally",
+  "reviewed": false,
+  "review": "与当前实机基准画风不一致，不得作为合格成品素材采用。",
+  "generator": "builtin-imagegen",
+  "facing": 1,
+  "priorStructureReview": "保持红衣、弓无箭，新增肩甲和护膝，角色比例稳定。",
+  "styleRejected": true,
+  "styleApproved": false
+}

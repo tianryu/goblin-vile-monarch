@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "environment": "Windows headless Edge, synthetic mobile touch (not physical Android)",
+  "checks": [
+    {
+      "name": "游戏启动无脚本错误",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "点击世界商人不会打开商店",
+      "passed": true
+    },
+    {
+      "name": "键盘向右实际行走",
+      "passed": true,
+      "detail": {
+        "start": 200,
+        "moved": 250.99649999999997
+      }
+    },
+    {
+      "name": "摇杆竖向拖动不移动角色",
+      "passed": true
+    },
+    {
+      "name": "摇杆仅取水平轴，释放回中停止",
+      "passed": true,
+      "detail": {
+        "start": 200,
+        "moved": 252.7364999999998
+      }
+    },
+    {
+      "name": "靠近商人主键变为交互",
+      "passed": true
+    },
+    {
+      "name": "情境键打开对应援军商店",
+      "passed": true
+    },
+    {
+      "name": "交易面板暂停世界",
+      "passed": true
+    },
+    {
+      "name": "无真实广告时不伪造援军",
+      "passed": true
+    },
+    {
+      "name": "离开商人主键恢复投币",
+      "passed": true
+    },
+    {
+      "name": "双指摇杆与奔跑可同时操作",
+      "passed": true,
+      "detail": {
+        "x": 70.8187249999999,
+        "axis": 1,
+        "run": true
+      }
+    },
+    {
+      "name": "触控释放无卡住",
+      "passed": true
+    },
+    {
+      "name": "暂停与声音开关存在",
+      "passed": true
+    },
+    {
+      "name": "重新加载恢复实际位置",
+      "passed": true
+    },
+    {
+      "name": "横屏布局1280×720",
+      "passed": true
+    },
+    {
+      "name": "横屏布局2340×1080",
+      "passed": true
+    },
+    {
+      "name": "横屏布局844×390",
+      "passed": true
+    },
+    {
+      "name": "竖屏旋转提示并暂停",
+      "passed": true
+    },
+    {
+      "name": "桌面浏览器60族人压力场景>=30fps",
+      "passed": true,
+      "detail": {
+        "fps": 164.91661616721362,
+        "npcs": 60,
+        "enemies": 18
+      }
+    },
+    {
+      "name": "整轮无脚本异常",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

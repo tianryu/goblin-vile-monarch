@@ -1,0 +1,555 @@
+{
+  "scope": "Current display/grounding/outline/skill batch with local model, native, desktop browser and Web export evidence. No full campaign, live ads or physical phone claims.",
+  "checks": [
+    "v7-model-tests current checks pass",
+    "v7-advanced-tests current checks pass",
+    "v7-native-tests current checks pass",
+    "visibility-model-tests current checks pass",
+    "visibility-browser-tests current checks pass",
+    "v7-browser-tests current checks pass",
+    "v7-service-tests current checks pass",
+    "v7-release-tests current checks pass",
+    "v7-boot-tests current checks pass",
+    "All sprite regions and outline padding stay in their atlas",
+    "Both factions, trader, prisoners and complete riders have outline padding",
+    "Normal maps align with active diffuse sheets",
+    "Ground contact metadata follows the original land width",
+    "Repeated planted prices are no longer rendered",
+    "Current first-party copy avoids middle dot separators",
+    "Bundled font contains current visible Chinese labels",
+    "Renamed skill archive is intact and has the requested root",
+    "Installed skill exactly matches the distribution files",
+    "Skill contains the global transition reference",
+    "Original skill remains recoverable",
+    "Production ZIP matches the recorded digest",
+    "Production ZIP is intact with one root"
+  ],
+  "failures": [],
+  "reports": {
+    "v7-model-tests": {
+      "passes": 43,
+      "failures": [],
+      "errors": []
+    },
+    "v7-advanced-tests": {
+      "passes": 36,
+      "failures": [],
+      "errors": []
+    },
+    "v7-native-tests": {
+      "passes": 11,
+      "failures": [],
+      "errors": []
+    },
+    "visibility-model-tests": {
+      "passes": 16,
+      "failures": [],
+      "errors": []
+    },
+    "visibility-browser-tests": {
+      "passes": 22,
+      "failures": [],
+      "errors": []
+    },
+    "v7-browser-tests": {
+      "passes": 30,
+      "failures": [],
+      "errors": []
+    },
+    "v7-service-tests": {
+      "passes": 11,
+      "failures": [],
+      "errors": []
+    },
+    "v7-release-tests": {
+      "passes": 11,
+      "failures": [],
+      "errors": []
+    },
+    "v7-boot-tests": {
+      "passes": 10,
+      "failures": [],
+      "errors": []
+    }
+  },
+  "scenario_assertions": 190,
+  "source_sha256": {
+    "game\\scripts\\art_bank.gd": "95275faa5b99bc6e7c587d13a3f668eb764400c637fd1114941b9e3db654b81a",
+    "game\\scripts\\horizontal_joystick.gd": "5193baa4ce160537fbf6f18c07dcb6caf108e9468fd0bf6e049df14237c812fd",
+    "game\\scripts\\main.gd": "302b779c7ac3882d10d7615daba78b33afaa26ed9155f9ab7a8b1b807c5101ed",
+    "game\\scripts\\minimal_hud.gd": "cc180c5f32691dccaf73e5ce6b27950c7c4efde93e534281d894cc318ba9afea",
+    "game\\scripts\\model.gd": "8161e4911174b306ab05939e40db3f8954282151280402a5f2ce716686c53b89",
+    "game\\scripts\\purse_coins.gd": "7d16ba5dc7d78f499b771cf9322efd4339c71b889b7dd23c5517ae4a0d10f45e",
+    "game\\scripts\\save_store.gd": "99e7e192faf853d36094327349fc6dc8a81de24a94a714d2f27f10f508407b70",
+    "game\\scripts\\sound_bank.gd": "659e8b737579445634d2c847454633450fb0304aea4eb69a5b340e657162c002",
+    "game\\scripts\\ui_skin.gd": "3a060405f53180b103cd1e060a2bdb0817e0b9a17d7ec191253a0d81faaa31ea",
+    "game\\scripts\\visual_transitions.gd": "54408ff0be0672dac48b42f8fc985fde67c2473f6b55ca72a110b74fb4dd2511",
+    "game\\scripts\\world.gd": "411ab609865da395143285e9eb06c3b1ab1a9f375ddea43028a569b84550c857",
+    "game\\scripts\\world_overlay.gd": "4796b02f91f56a48a2e9d050e8f63a534b495545d0dfd2b080d9c89161ab3449",
+    "game\\scripts\\world_surface.gd": "64809a25dcb564e45df33972a4867e67f8d7d07d3278a2cd3f71536149d7c8d3",
+    "game\\shaders\\proximity_glow.gdshader": "c69a1b1d1aa443bda99aafbdbdf2407df015af129e365d39d6fbab8173cdbb8a",
+    "game\\shaders\\water_flow.gdshader": "fb9b3e14481e487873b810ddc7e709b2c6699dbd91b21d378979f0557e9c0512",
+    "game\\shaders\\world_light.gdshader": "f737ef7b17ece4c886592231c136e6198dc905b6dcc383a253687f81f2921963",
+    "game\\shaders\\world_light_fast.gdshader": "7b4bbd103049f450711536346449f8f182b18aa50cff762eda5198af2b758120",
+    "scripts\\prepare_v7_assets.py": "7ade663f6daf90c1e114dd651a23c596594c6f1775265f18ef123349833795f9",
+    "scripts\\prepare_web_shell.py": "0d48ae77f63df9a9bb286b4f579b259ace1395184c48d6d52621e3505d3e8f45"
+  },
+  "active_frames": 143,
+  "diffuse_sheets": 27,
+  "normal_sheets": 8,
+  "asset_audit": {
+    "revision": 7,
+    "assets": [
+      {
+        "name": "butterfly",
+        "source": "game\\art\\source\\world-v7\\butterfly.png",
+        "size": [
+          84,
+          96
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "cycle_dial",
+        "source": "game\\art\\source\\world-v7\\cycle_dial.png",
+        "size": [
+          320,
+          317
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "dwarf_dead",
+        "source": "game\\art\\source\\world-v7\\dwarf_dead.png",
+        "size": [
+          210,
+          103
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "dwarf_wounded",
+        "source": "game\\art\\source\\world-v7\\dwarf_wounded.png",
+        "size": [
+          201,
+          110
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "elf_dead",
+        "source": "game\\art\\source\\world-v7\\elf_dead.png",
+        "size": [
+          210,
+          59
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "elf_wounded",
+        "source": "game\\art\\source\\world-v7\\elf_wounded.png",
+        "size": [
+          210,
+          98
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "empty_tool_brute",
+        "source": "game\\art\\source\\world-v7\\empty_tool_brute.png",
+        "size": [
+          320,
+          282
+        ],
+        "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+      },
+      {
+        "name": "empty_tool_hunter",
+        "source": "game\\art\\source\\world-v7\\empty_tool_hunter.png",
+        "size": [
+          307,
+          320
+        ],
+        "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+      },
+      {
+        "name": "empty_tool_thief",
+        "source": "game\\art\\source\\world-v7\\empty_tool_thief.png",
+        "size": [
+          283,
+          320
+        ],
+        "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+      },
+      {
+        "name": "empty_tool_worker",
+        "source": "game\\art\\source\\world-v7\\empty_tool_worker.png",
+        "size": [
+          320,
+          270
+        ],
+        "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+      },
+      {
+        "name": "forest_bird",
+        "source": "game\\art\\source\\world-v7\\forest_bird.png",
+        "size": [
+          96,
+          81
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "forest_shrub",
+        "source": "game\\art\\source\\world-v7\\forest_shrub.png",
+        "size": [
+          213,
+          150
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "gold_mine",
+        "source": "game\\art\\source\\world-v7\\gold_mine.png",
+        "size": [
+          420,
+          298
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "human_dead",
+        "source": "game\\art\\source\\world-v7\\human_dead.png",
+        "size": [
+          210,
+          93
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "human_wounded",
+        "source": "game\\art\\source\\world-v7\\human_wounded.png",
+        "size": [
+          191,
+          110
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "icon_play",
+        "source": "game\\art\\source\\world-v7\\icon_play.png",
+        "size": [
+          320,
+          308
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "icon_restart",
+        "source": "game\\art\\source\\world-v7\\icon_restart.png",
+        "size": [
+          320,
+          307
+        ],
+        "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+      },
+      {
+        "name": "icon_rotate",
+        "source": "game\\art\\source\\world-v7\\icon_rotate.png",
+        "size": [
+          320,
+          313
+        ],
+        "review": "accepted: inspected empty counter and hanging hooks, profession crest retained, no seller, flat matte style; UI icons clear and without text"
+      },
+      {
+        "name": "icon_run",
+        "source": "game\\art\\source\\world-v7\\icon_run.png",
+        "size": [
+          320,
+          276
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "icon_whip",
+        "source": "game\\art\\source\\world-v7\\icon_whip.png",
+        "size": [
+          320,
+          307
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "mushroom_farm",
+        "source": "game\\art\\source\\world-v7\\mushroom_farm.png",
+        "size": [
+          387,
+          300
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "price_board",
+        "source": "game\\art\\source\\world-v7\\price_board.png",
+        "size": [
+          96,
+          100
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "purse",
+        "source": "game\\art\\source\\world-v7\\purse.png",
+        "size": [
+          320,
+          229
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "stream_crossing",
+        "source": "game\\art\\source\\world-v7\\stream_crossing.png",
+        "size": [
+          420,
+          206
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "tree_oak",
+        "source": "game\\art\\source\\world-v7\\tree_oak.png",
+        "size": [
+          480,
+          434
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "tree_pine",
+        "source": "game\\art\\source\\world-v7\\tree_pine.png",
+        "size": [
+          286,
+          560
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "tree_willow",
+        "source": "game\\art\\source\\world-v7\\tree_willow.png",
+        "size": [
+          480,
+          435
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "tribal_banner",
+        "source": "game\\art\\source\\world-v7\\tribal_banner.png",
+        "size": [
+          191,
+          320
+        ],
+        "review": "accepted: inspected on opaque green background; clean alpha without diffuse aura, planted stones and medieval rope pole, matte black cloth with rusty red goblin skull, no lettering, friendly banner differs from enemy blue flag"
+      },
+      {
+        "name": "ui_action_ring",
+        "source": "game\\art\\source\\world-v7\\ui_action_ring.png",
+        "size": [
+          320,
+          318
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      },
+      {
+        "name": "woodcut_camp",
+        "source": "game\\art\\source\\world-v7\\woodcut_camp.png",
+        "size": [
+          382,
+          300
+        ],
+        "review": "accepted: manually reviewed flat matte hand-painted style, transparent cutout, readable silhouette, correct pose or blank UI, no net on fallen enemies, no text"
+      }
+    ],
+    "frames": 143,
+    "textures": 27,
+    "normal_maps": {
+      "actors-ink.png": "normal-actors-ink.png",
+      "actors.png": "normal-actors.png",
+      "land.png": "normal-land.png",
+      "net_trap2.png": "normal-net_trap2.png",
+      "rock_trap2.png": "normal-rock_trap2.png",
+      "tower2.png": "normal-tower2.png",
+      "world-v6.png": "normal-world-v6.png",
+      "world-v7.png": "normal-world-v7.png"
+    },
+    "normal_bake": "Aligned diffuse/alpha-derived technical normals, broad matte relief, no new diffuse artwork.",
+    "diffuse_rgba_bytes": 36263456,
+    "normal_rgba_bytes": 29114112,
+    "rgba_bytes": 65377568,
+    "package_budget_paused_by_user": true
+  },
+  "boot_audit": {
+    "scope": "One decoded RGBA copy per runtime and boot PNG. Not process or GPU measurement.",
+    "assets": [
+      {
+        "asset": "ui_logo",
+        "width": 360,
+        "height": 260,
+        "rgba_bytes": 374400
+      },
+      {
+        "asset": "ui_bar",
+        "width": 330,
+        "height": 38,
+        "rgba_bytes": 50160
+      },
+      {
+        "asset": "ui_bar_fill",
+        "width": 496,
+        "height": 38,
+        "rgba_bytes": 75392
+      },
+      {
+        "asset": "ui_button",
+        "width": 379,
+        "height": 96,
+        "rgba_bytes": 145536
+      },
+      {
+        "asset": "ui_back",
+        "width": 423,
+        "height": 96,
+        "rgba_bytes": 162432
+      },
+      {
+        "asset": "sky_base",
+        "width": 960,
+        "height": 480,
+        "rgba_bytes": 1843200
+      }
+    ],
+    "boot_rgba_bytes": 2651120,
+    "conservative_runtime_plus_boot_rgba_bytes": 68028688,
+    "budget_paused_by_user": true
+  },
+  "short_frame_diagnostic": {
+    "scope": "Six seconds after warm-up on desktop software WebGL DPR2, small live scene. Not comparable to old stress fixture or phone performance.",
+    "p50": 30.299999999999272,
+    "p95": 30.400000000001455
+  },
+  "package": {
+    "scope": "Local release Web export only. No upload, platform submission, live ads or physical phone validation.",
+    "single_root_folder": "goblin-monarch",
+    "files": [
+      {
+        "name": "boot-font.ttf",
+        "bytes": 284040,
+        "gzip_bytes": 181025,
+        "sha256": "d2bba09cdccb0a5a2bc04b5cb3c14c72759953239008b37d4abcd18adead34f5"
+      },
+      {
+        "name": "boot-sky_base.png",
+        "bytes": 520114,
+        "gzip_bytes": 520292,
+        "sha256": "3478935b1cf8e9d9f54c1d67d1ce9c8e7cd2c0a3e943c675093eb8571ee37e86"
+      },
+      {
+        "name": "boot-ui_back.png",
+        "bytes": 47111,
+        "gzip_bytes": 47144,
+        "sha256": "3dd71b120c0571658ce228a0e77bb4b0df51b35f111d7034ba7824a69567b488"
+      },
+      {
+        "name": "boot-ui_bar.png",
+        "bytes": 15993,
+        "gzip_bytes": 16016,
+        "sha256": "b2541bd3adf8a1f9dce6e886e7ee9ad4a74df5f4a08ffcf41b03b6089a598ef1"
+      },
+      {
+        "name": "boot-ui_bar_fill.png",
+        "bytes": 22489,
+        "gzip_bytes": 22517,
+        "sha256": "8463342ad6ed4f013099dd5df6243040b5b9dd1fd111b4255f32197d51167906"
+      },
+      {
+        "name": "boot-ui_button.png",
+        "bytes": 43964,
+        "gzip_bytes": 43997,
+        "sha256": "ce2d6c5a2f9577977c09b52741d3c82dfaf97e4cdb9651bcbf0a8cc58b7ba48f"
+      },
+      {
+        "name": "boot-ui_logo.png",
+        "bytes": 151124,
+        "gzip_bytes": 151184,
+        "sha256": "a312f198138ba056e6f7fcf9bf2a9376174143ee2bcfb7bccb9d585484d94220"
+      },
+      {
+        "name": "index.audio.position.worklet.js",
+        "bytes": 2973,
+        "gzip_bytes": 1161,
+        "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+      },
+      {
+        "name": "index.audio.worklet.js",
+        "bytes": 7298,
+        "gzip_bytes": 2194,
+        "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+      },
+      {
+        "name": "index.html",
+        "bytes": 10461,
+        "gzip_bytes": 3707,
+        "sha256": "0244ee0c67fc663cd45ad90a1ce64a646f9ba7901f0729ca290a22312c27f083"
+      },
+      {
+        "name": "index.js",
+        "bytes": 279815,
+        "gzip_bytes": 68471,
+        "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+      },
+      {
+        "name": "index.pck",
+        "bytes": 9090964,
+        "gzip_bytes": 8872364,
+        "sha256": "18354336c78f60e25ec7080d9bfa8929f6d59bc61455fb8cbc25c4c5bc5b66fe"
+      },
+      {
+        "name": "index.png",
+        "bytes": 10314,
+        "gzip_bytes": 10289,
+        "sha256": "f17608db6e1eeba9125a5e494b1079211a30f9fceca312f06a49c2f810b80b3d"
+      },
+      {
+        "name": "index.wasm",
+        "bytes": 39514754,
+        "gzip_bytes": 10054758,
+        "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+      },
+      {
+        "name": "LICENSES.txt",
+        "bytes": 9327,
+        "gzip_bytes": 3370,
+        "sha256": "7bd48368890cab17fb7d4374c0744ba8a88b9bc43422b8ae75df6554bb766e29"
+      }
+    ],
+    "raw_bytes": 50010741,
+    "gzip_sum_bytes": 19998489,
+    "zip_bytes": 20000283,
+    "zip_sha256": "6a63dead8a36b666cdcb5a66a960a5b8f1ca64c65cac55e962d9f2a57371f255"
+  },
+  "skill": {
+    "package": "C:\\Users\\田煜\\Desktop\\Godot\\Games\\soushen\\outputs\\tianryu_game_development_skill_20261031\\tianruy游戏开发规范.skill",
+    "sha256": "e8bf8b9221d1b7c466b9fa0e5ced4446d80d4a25fd49303866833cbf9cc7e6ac",
+    "installed": "C:\\Users\\田煜\\.codex\\skills\\tianruy-game-development-standards",
+    "format_validator": "quick_validate.py succeeded with UTF-8 mode and existing local PyYAML dependency"
+  },
+  "visual_review": "Actual captures reviewed for opacity stages, grounding, wide bottom coin pile, transparent purse, two-line captions, role outlines, cage containment and glow occlusion. No independent perceptual percentage.",
+  "unverified": [
+    "Physical Android/iOS and low-end performance",
+    "TapTap host and real advertisement SDK",
+    "Independent 90 percent visual similarity",
+    "Five-minute stress on this revised renderer",
+    "Platform release"
+  ]
+}

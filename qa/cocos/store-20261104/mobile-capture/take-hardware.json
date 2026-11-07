@@ -1,0 +1,96 @@
+{
+  "timing": {
+    "camp": 0.0017999999523162843,
+    "build": 26.01169999998808,
+    "defense": 53.005799999952316,
+    "siege": 82.01439999997616
+  },
+  "evidence": {
+    "camp": {
+      "x": 143,
+      "wall": 2880,
+      "chest": 260,
+      "hall": 70,
+      "camps": [
+        6500,
+        12000,
+        18500,
+        26500,
+        28500
+      ],
+      "enemies": 30
+    },
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "cssWidth": 960,
+      "cssHeight": 540,
+      "touch": 1
+    },
+    "treasuryAfter": 17,
+    "build": {
+      "x": 3042,
+      "wall": 2880,
+      "chest": 260,
+      "hall": 70,
+      "camps": [
+        6500,
+        12000,
+        18500,
+        26500,
+        28500
+      ],
+      "enemies": 30
+    },
+    "wallBuilt": 1,
+    "defense": {
+      "x": 2616,
+      "wall": 2880,
+      "chest": 260,
+      "hall": 70,
+      "camps": [
+        6500,
+        12000,
+        18500,
+        26500,
+        28500
+      ],
+      "enemies": 36
+    },
+    "siege": {
+      "x": 17895,
+      "wall": 2880,
+      "chest": 260,
+      "hall": 70,
+      "camps": [
+        6500,
+        12000,
+        18500,
+        26500,
+        28500
+      ],
+      "enemies": 62
+    },
+    "cues": {
+      "hoof_soft": 23,
+      "coin": 20,
+      "chest_open": 2,
+      "chop": 43,
+      "construction_done": 1,
+      "arrow": 122,
+      "raid_horn": 2,
+      "wall_thud": 15,
+      "sword_heavy": 72,
+      "whip_snap": 27,
+      "wood_break": 1,
+      "shield_hit": 11,
+      "heartbeat": 1
+    },
+    "end": {
+      "status": "playing",
+      "hp": 128.73333333333315,
+      "expedition": "return"
+    },
+    "browserErrors": []
+  }
+}

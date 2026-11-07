@@ -1,0 +1,13 @@
+{
+  "name": "hall3",
+  "ref": "C:/Users/田煜/Documents/ChatGPT/IAAG_ Monarch/cocos/assets/resources/art/hall3.png",
+  "prompt": "ONE isolated complete transparent 2D game asset, maintain EXACT reference nonpixel flat hand-painted matte cartoon style. Simple broad muted patches, clean irregular dark contours, minimal detail. NO realistic texture, no gradients, no 3D, no lighting effects, no outside colored outline, no drop shadow, no text. Keep full object inside generous transparent margins. THIRD tier goblin hall: the same crooked red-cloth goblin hall, now on coarse chunky gray STONE foundation with visible stone door jambs, wooden upper frame, small red rag roof, bone flag. No modern house, no castle towers.",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-c7f0b35c-34cf-4999-82ec-0c62840564f4.png",
+  "generator": "builtin-imagegen",
+  "edge": "building",
+  "facing": 1,
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "按最新木构到砖石到金属要求检查12张源图及缩图：材质、轮廓与部件均有变化，保持原平面哑光手绘风格，无背景、断边或文字；待引擎验收。"
+}

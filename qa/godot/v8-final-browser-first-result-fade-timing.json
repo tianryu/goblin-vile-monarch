@@ -1,0 +1,38 @@
+{
+  "scope": "V7 desktop touch emulation and controlled test fixtures, no phone or real advertisement evidence.",
+  "passes": [
+    "No welcome dialog; inline building caption enabled",
+    "Paired normals include outlined actor atlas",
+    "High tiers start hidden",
+    "Tool purchase starts directly on world",
+    "Paid tool hangs without opening dialog",
+    "Idle physically claims new tool",
+    "Walking away refunds contribution and stays in world",
+    "Treasury withdraw uses bag icon without a bank dialog",
+    "Any nearby goblin offers whip icon",
+    "Whip takes real hidden coins with no label or dialog",
+    "Hall tier two expands territory and reveals intermediate buildings",
+    "Tier three reveals mine thief and outer line",
+    "Daylight is directional and normal lit",
+    "Requested depth order is explicit",
+    "Sun travels from horizon through noon to other horizon",
+    "Moon completes its own rise zenith and set",
+    "Night activates local torch lights",
+    "Living downed and dead corpse are separate visible states",
+    "Missing ad SDK never rewards or opens explanatory window",
+    "Voluntary ad starts from world and pauses without dialog",
+    "Authentic-shape fixture gives exactly thirty once",
+    "Repeated receipt is idempotent",
+    "Pause keeps world open with inline resume and restart",
+    "Inline resume restores gameplay",
+    "New save restores bank and coin bag",
+    "740 landscape thumb controls fit",
+    "1280 landscape thumb controls fit",
+    "Defeat is an allowed result dialog",
+    "No script shader or WebGL errors"
+  ],
+  "failures": [
+    "Result restart is immediate and free"
+  ],
+  "errors": []
+}

@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-11-05T10:12:55.573Z",
+  "device": "desktop Edge D3D11, 1280x600 touch emulation",
+  "results": [
+    {
+      "name": "升级期间当前建筑完整显示，保留血条和施工条",
+      "details": {
+        "currentArt": true,
+        "opacity": 255,
+        "ghostOpacity": 64,
+        "hp": 255,
+        "progress": 255
+      }
+    },
+    {
+      "name": "升级中仍能正常受击",
+      "details": {
+        "before": 80,
+        "after": 70.76923076923077,
+        "job": true,
+        "level": 1
+      }
+    },
+    {
+      "name": "地面与车上鼓同尺寸，行军和攻城鼓乐音量一致",
+      "details": {
+        "ground": {
+          "height": 61,
+          "alpha": 255
+        },
+        "march": {
+          "height": 61,
+          "volume": 0.3499846537363352
+        },
+        "assault": {
+          "volume": 0.3499999826828111,
+          "playing": true
+        }
+      }
+    },
+    {
+      "name": "构建内鼓车双向奔跑跟随且不限制军队锚点",
+      "details": [
+        {
+          "face": 1,
+          "gap": 180,
+          "anchor": 4875,
+          "player": 4875
+        },
+        {
+          "face": -1,
+          "gap": 180,
+          "anchor": 4000,
+          "player": 4000
+        }
+      ]
+    },
+    {
+      "name": "浏览器无未捕获异常",
+      "details": []
+    }
+  ]
+}

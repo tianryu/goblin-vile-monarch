@@ -1,0 +1,29 @@
+{
+  "migration": {
+    "pile": 896,
+    "forge": 846,
+    "wall": 2891,
+    "stock": 5,
+    "level": 1,
+    "id": 10,
+    "mock": true
+  },
+  "storage": [
+    32,
+    42,
+    1
+  ],
+  "guides": [
+    [
+      "facility:lure",
+      false,
+      false
+    ],
+    [
+      "facility:brute",
+      false,
+      false
+    ]
+  ],
+  "errors": []
+}

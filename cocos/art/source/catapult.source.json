@@ -1,0 +1,13 @@
+{
+  "assetName": "catapult",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-f84dd76d-e088-4ba1-be7c-42639c7fd31a.png",
+  "prompt": "Use case: style-transfer. Image 1 is the CATAPULT edit target. Image 2 is a sheet of FOUR ACTUAL GAME ASSETS, the sole rendering/style standard, especially the wheel at left and rock trap at center-right. Restyle the target to look painted by the same artist as the rock trap, NOT a mobile-game equipment icon. Preserve its complete side-view geometry, two level wheels, gray stone in left bowl and wooden throwing arm. Replace orange glossy wood, many grain scratches, bright rim highlights and thick dark comic ink with muted brown broad irregular MATTE paint patches and low contrast, as on image 2. Wheels should use the plain muted wooden wheel language from image 2. Small metal parts have only two matte gray paint shapes, no gradients, scratches or highlights. Edges are defined by adjoining painted shapes, not a black line. Keep the whole object inside canvas with margins. One standalone catapult only. Do not include the four reference objects or any labels, no environment, no cast shadow, no glow. Genuinely transparent background. Do not add a paper sticker outline; game will apply its own outline. This is a correction of rendering style only, not a redesign.",
+  "edge": "building",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "同底色和128像素高复核：取消漫画黑边与亮纹，轮辐、木架和旧rock_trap相近，结构完整；仍待引擎合成。",
+  "reviewStatus": "approved-source-pending-engine"
+}

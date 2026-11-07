@@ -1,0 +1,35 @@
+{
+  "checkpoint": "repair-20261103",
+  "fixture": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "name": "treasury-held-empty-full-and-leaving",
+      "pass": true
+    },
+    {
+      "name": "coin-size-and-each-profession-hit-keeps-outline",
+      "pass": true
+    },
+    {
+      "name": "merchant-pulls-cart-both-directions-and-pause-freezes-parts",
+      "pass": true
+    },
+    {
+      "name": "large-prisoners-and-single-hauler-preserve-height",
+      "pass": true
+    },
+    {
+      "name": "rally-full-notice-dispatch-hold-continue-and-recall",
+      "pass": true
+    },
+    {
+      "name": "claimed-territory-fades-after-wall-loss",
+      "pass": false,
+      "error": "Error: page.evaluate: TypeError: m.hitTarget is not a function\n    at eval (eval at evaluate (:311:30), <anonymous>:1:94)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    }
+  ],
+  "errors": [],
+  "failure": "Error: page.evaluate: TypeError: m.hitTarget is not a function\n    at eval (eval at evaluate (:311:30), <anonymous>:1:94)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "passed": 5
+}

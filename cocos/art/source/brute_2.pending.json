@@ -1,0 +1,10 @@
+{
+  "assetName": "brute_2",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-a8f2e10d-e628-42e8-ad46-c74b5d23a30c.png",
+  "prompt": "Equipment-only rank-up of this exact goblin game sprite. Preserve EVERYTHING about the exact original face, big ears, crooked orange nose, green skin, ochre ragged vest, bulky proportions, feet, pose and flat matte irregular painted style. Preserve the newly corrected UPRIGHT AXE exactly: its head is above the gripping fist, sharp blade points RIGHT, one continuous shaft, no change in hand or arm position. Keep round wooden shield in the other hand. Add only a simple plain open-faced dull gray skullcap and ONE plain near shoulder plate. Simplify metal on shield rim to two muted gray planes. No scratches, spots, rust, shine, tiny rivets, heavy black line, crown, extra objects or white sticker outline. Entire character facing RIGHT, same stance and foot baseline, transparent background with margin. Do not rotate, flip, lower or redesign the axe.",
+  "edge": "ally",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": false,
+  "correction": "Axe head above hand, blade toward facing direction, continuous shaft, shield held in the other hand"
+}

@@ -1,0 +1,2171 @@
+{
+  "far": {
+    "width": 620,
+    "height": 109,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 109,
+    "source": "game/art/runtime/far.png",
+    "facing": 1
+  },
+  "sky_base": {
+    "width": 620,
+    "height": 310,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 310,
+    "source": "game/art/runtime/sky_base.png",
+    "facing": 1
+  },
+  "land": {
+    "width": 960,
+    "height": 67,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 67,
+    "source": "game/art/runtime/land-level-v8.png",
+    "facing": 1
+  },
+  "water": {
+    "width": 512,
+    "height": 256,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 256,
+    "source": "game/art/runtime/water.png",
+    "facing": 1
+  },
+  "middle": {
+    "width": 620,
+    "height": 202,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 202,
+    "source": "game/art/runtime/middle.png",
+    "facing": 1
+  },
+  "foreground": {
+    "width": 960,
+    "height": 72,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 72,
+    "source": "game/art/runtime/foreground.png",
+    "facing": 1
+  },
+  "hall1": {
+    "width": 281,
+    "height": 194,
+    "anchorX": 0.5,
+    "anchorY": 0.041237113402061855,
+    "contentHeight": 178,
+    "source": "game/art/runtime/hall1-no-flame-v8.png",
+    "facing": 1
+  },
+  "hall1__glow": {
+    "width": 281,
+    "height": 194,
+    "anchorX": 0.5,
+    "anchorY": 0.041237113402061855,
+    "contentHeight": 178,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hall2": {
+    "width": 218,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "hall2__glow": {
+    "width": 218,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hall3": {
+    "width": 620,
+    "height": 603,
+    "anchorX": 0.5,
+    "anchorY": 0.029411764705882353,
+    "contentHeight": 568,
+    "source": "cocos/art/source/hall3.png",
+    "facing": 1
+  },
+  "hall3__glow": {
+    "width": 699,
+    "height": 680,
+    "anchorX": 0.5,
+    "anchorY": 0.029411764705882353,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "wall2": {
+    "width": 262,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "wall2__glow": {
+    "width": 262,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "wall3": {
+    "width": 620,
+    "height": 419,
+    "anchorX": 0.5,
+    "anchorY": 0.029411764705882353,
+    "contentHeight": 394,
+    "source": "cocos/art/source/wall3.png",
+    "facing": 1
+  },
+  "wall3__glow": {
+    "width": 1006,
+    "height": 680,
+    "anchorX": 0.5,
+    "anchorY": 0.029411764705882353,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "tower": {
+    "width": 160,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "tower__glow": {
+    "width": 160,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "net_trap": {
+    "width": 190,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "net_trap__glow": {
+    "width": 190,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "rock_trap": {
+    "width": 259,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "rock_trap__glow": {
+    "width": 259,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "outpost": {
+    "width": 281,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "outpost__glow": {
+    "width": 281,
+    "height": 196,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 180,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "wall1": {
+    "width": 316,
+    "height": 191,
+    "anchorX": 0.5,
+    "anchorY": 0.041884816753926704,
+    "contentHeight": 175,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "wall1__glow": {
+    "width": 316,
+    "height": 191,
+    "anchorX": 0.5,
+    "anchorY": 0.041884816753926704,
+    "contentHeight": 175,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "sun": {
+    "width": 132,
+    "height": 128,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "moon": {
+    "width": 111,
+    "height": 128,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "cloud": {
+    "width": 276,
+    "height": 128,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "worker": {
+    "width": 292,
+    "height": 376,
+    "anchorX": 0.5404109589041096,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/worker.png",
+    "facing": 1
+  },
+  "worker__glow": {
+    "width": 292,
+    "height": 376,
+    "anchorX": 0.5404109589041096,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hunter": {
+    "width": 371,
+    "height": 376,
+    "anchorX": 0.440566037735849,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/hunter.png",
+    "facing": 1
+  },
+  "hunter__glow": {
+    "width": 371,
+    "height": 376,
+    "anchorX": 0.440566037735849,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "brute": {
+    "width": 465,
+    "height": 376,
+    "anchorX": 0.543978494623656,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/brute.png",
+    "facing": 1
+  },
+  "brute__glow": {
+    "width": 465,
+    "height": 376,
+    "anchorX": 0.543978494623656,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "idle": {
+    "width": 112,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "idle__glow": {
+    "width": 112,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "boar": {
+    "width": 219,
+    "height": 128,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "lizard": {
+    "width": 280,
+    "height": 128,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "wolf": {
+    "width": 195,
+    "height": 128,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "bat": {
+    "width": 209,
+    "height": 128,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "human": {
+    "width": 121,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": -1
+  },
+  "human__glow": {
+    "width": 121,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "dwarf": {
+    "width": 169,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": -1
+  },
+  "dwarf__glow": {
+    "width": 169,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elf": {
+    "width": 145,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": -1
+  },
+  "elf__glow": {
+    "width": 145,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "captive_human": {
+    "width": 250,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/captive_human.png",
+    "facing": -1
+  },
+  "captive_human__glow": {
+    "width": 250,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "captive_dwarf": {
+    "width": 114,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "captive_dwarf__glow": {
+    "width": 114,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "captive_elf": {
+    "width": 101,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "captive_elf__glow": {
+    "width": 101,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "trader": {
+    "width": 127,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": -1
+  },
+  "trader__glow": {
+    "width": 127,
+    "height": 152,
+    "anchorX": 0.5,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 128,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "prison_front3": {
+    "width": 312,
+    "height": 118,
+    "anchorX": 0.5,
+    "anchorY": 0.05084745762711865,
+    "contentHeight": 106,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "prison_front3__glow": {
+    "width": 312,
+    "height": 118,
+    "anchorX": 0.5,
+    "anchorY": 0.05084745762711865,
+    "contentHeight": 106,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "prison_front": {
+    "width": 312,
+    "height": 117,
+    "anchorX": 0.5,
+    "anchorY": 0.05128205128205128,
+    "contentHeight": 105,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "prison_front__glow": {
+    "width": 312,
+    "height": 117,
+    "anchorX": 0.5,
+    "anchorY": 0.05128205128205128,
+    "contentHeight": 105,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "prison_front1": {
+    "width": 312,
+    "height": 114,
+    "anchorX": 0.5,
+    "anchorY": 0.05263157894736842,
+    "contentHeight": 102,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "prison_front1__glow": {
+    "width": 312,
+    "height": 114,
+    "anchorX": 0.5,
+    "anchorY": 0.05263157894736842,
+    "contentHeight": 102,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "prison_back3": {
+    "width": 300,
+    "height": 97,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 97,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "coin": {
+    "width": 118,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "coin__glow": {
+    "width": 118,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "arrow": {
+    "width": 280,
+    "height": 96,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "wheel": {
+    "width": 93,
+    "height": 96,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "chest": {
+    "width": 137,
+    "height": 108,
+    "anchorX": 0.5,
+    "anchorY": 0.05555555555555555,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "chest__glow": {
+    "width": 137,
+    "height": 108,
+    "anchorX": 0.5,
+    "anchorY": 0.05555555555555555,
+    "contentHeight": 96,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "flag": {
+    "width": 110,
+    "height": 108,
+    "anchorX": 0.5,
+    "anchorY": 0.05555555555555555,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "flag__glow": {
+    "width": 110,
+    "height": 108,
+    "anchorX": 0.5,
+    "anchorY": 0.05555555555555555,
+    "contentHeight": 96,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "net": {
+    "width": 65,
+    "height": 96,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "hammer": {
+    "width": 117,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "hammer__glow": {
+    "width": 117,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "bow": {
+    "width": 104,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "bow__glow": {
+    "width": 104,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "club": {
+    "width": 170,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "club__glow": {
+    "width": 170,
+    "height": 130,
+    "anchorX": 0.5,
+    "anchorY": 0.13076923076923078,
+    "contentHeight": 96,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "pocket": {
+    "width": 94,
+    "height": 96,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 96,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "prison_back1": {
+    "width": 300,
+    "height": 94,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 94,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "wagon": {
+    "width": 300,
+    "height": 93,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 93,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "prison_back": {
+    "width": 300,
+    "height": 92,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 92,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "rope": {
+    "width": 300,
+    "height": 59,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 59,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "rider_bat": {
+    "width": 297,
+    "height": 220,
+    "anchorX": 0.5634006734006733,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "rider_bat__glow": {
+    "width": 297,
+    "height": 220,
+    "anchorX": 0.5634006734006733,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "rider_boar": {
+    "width": 243,
+    "height": 220,
+    "anchorX": 0.5530864197530865,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "rider_boar__glow": {
+    "width": 243,
+    "height": 220,
+    "anchorX": 0.5530864197530865,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "rider_lizard": {
+    "width": 293,
+    "height": 220,
+    "anchorX": 0.5723549488054607,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "rider_lizard__glow": {
+    "width": 293,
+    "height": 220,
+    "anchorX": 0.5723549488054607,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "rider_wolf": {
+    "width": 277,
+    "height": 220,
+    "anchorX": 0.5539350180505416,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "rider_wolf__glow": {
+    "width": 277,
+    "height": 220,
+    "anchorX": 0.5539350180505416,
+    "anchorY": 0.06363636363636363,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "ui_bar": {
+    "width": 330,
+    "height": 38,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 38,
+    "source": "game/art/runtime/ui_bar.png",
+    "facing": 1
+  },
+  "ui_bar_fill": {
+    "width": 496,
+    "height": 38,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 38,
+    "source": "game/art/runtime/ui_bar_fill.png",
+    "facing": 1
+  },
+  "ui_joystick_base": {
+    "width": 256,
+    "height": 88,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 88,
+    "source": "game/art/runtime/ui_joystick_base.png",
+    "facing": 1
+  },
+  "ui_joystick_knob": {
+    "width": 160,
+    "height": 160,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 160,
+    "source": "game/art/runtime/ui_joystick_knob.png",
+    "facing": 1
+  },
+  "ui_pause_control": {
+    "width": 160,
+    "height": 159,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 159,
+    "source": "game/art/runtime/ui_pause_control.png",
+    "facing": 1
+  },
+  "brute_2": {
+    "width": 458,
+    "height": 376,
+    "anchorX": 0.5438864628820961,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/brute_2.png",
+    "facing": 1
+  },
+  "brute_2__glow": {
+    "width": 458,
+    "height": 376,
+    "anchorX": 0.5438864628820961,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "brute_3": {
+    "width": 457,
+    "height": 376,
+    "anchorX": 0.5438730853391686,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/brute_3.png",
+    "facing": 1
+  },
+  "brute_3__glow": {
+    "width": 457,
+    "height": 376,
+    "anchorX": 0.5438730853391686,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hunter_2": {
+    "width": 368,
+    "height": 376,
+    "anchorX": 0.44065217391304345,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/hunter_2.png",
+    "facing": 1
+  },
+  "hunter_2__glow": {
+    "width": 368,
+    "height": 376,
+    "anchorX": 0.44065217391304345,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hunter_3": {
+    "width": 368,
+    "height": 376,
+    "anchorX": 0.44065217391304345,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/hunter_3.png",
+    "facing": 1
+  },
+  "hunter_3__glow": {
+    "width": 368,
+    "height": 376,
+    "anchorX": 0.44065217391304345,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "net_trap2": {
+    "width": 292,
+    "height": 208,
+    "anchorX": 0.5,
+    "anchorY": 0.038461538461538464,
+    "contentHeight": 192,
+    "source": "game/art/runtime/net_trap2.png",
+    "facing": 1
+  },
+  "net_trap2__glow": {
+    "width": 292,
+    "height": 208,
+    "anchorX": 0.5,
+    "anchorY": 0.038461538461538464,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "rock_trap2": {
+    "width": 282,
+    "height": 208,
+    "anchorX": 0.5,
+    "anchorY": 0.038461538461538464,
+    "contentHeight": 192,
+    "source": "game/art/runtime/rock_trap2.png",
+    "facing": 1
+  },
+  "rock_trap2__glow": {
+    "width": 282,
+    "height": 208,
+    "anchorX": 0.5,
+    "anchorY": 0.038461538461538464,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "tower2": {
+    "width": 184,
+    "height": 208,
+    "anchorX": 0.5,
+    "anchorY": 0.038461538461538464,
+    "contentHeight": 192,
+    "source": "game/art/runtime/tower2.png",
+    "facing": 1
+  },
+  "tower2__glow": {
+    "width": 184,
+    "height": 208,
+    "anchorX": 0.5,
+    "anchorY": 0.038461538461538464,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "ui_button_v5": {
+    "width": 423,
+    "height": 96,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 96,
+    "source": "game/art/runtime/ui_button_v5.png",
+    "facing": 1
+  },
+  "ui_panel_v5": {
+    "width": 620,
+    "height": 203,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 203,
+    "source": "game/art/runtime/ui_panel_v5.png",
+    "facing": 1
+  },
+  "ui_tag_v5": {
+    "width": 480,
+    "height": 89,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 89,
+    "source": "game/art/runtime/ui_tag_v5.png",
+    "facing": 1
+  },
+  "worker_2": {
+    "width": 291,
+    "height": 376,
+    "anchorX": 0.5403780068728522,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/worker_2.png",
+    "facing": 1
+  },
+  "worker_2__glow": {
+    "width": 291,
+    "height": 376,
+    "anchorX": 0.5403780068728522,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "worker_3": {
+    "width": 292,
+    "height": 376,
+    "anchorX": 0.5404109589041096,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/worker_3.png",
+    "facing": 1
+  },
+  "worker_3__glow": {
+    "width": 292,
+    "height": 376,
+    "anchorX": 0.5404109589041096,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "battlefield_wreck": {
+    "width": 300,
+    "height": 115,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 115,
+    "source": "game/art/runtime/world-v6.png",
+    "facing": 1
+  },
+  "build_site_sign": {
+    "width": 87,
+    "height": 124,
+    "anchorX": 0.5,
+    "anchorY": 0.04838709677419355,
+    "contentHeight": 112,
+    "source": "game/art/runtime/world-v6.png",
+    "facing": 1
+  },
+  "build_site_sign__glow": {
+    "width": 87,
+    "height": 124,
+    "anchorX": 0.5,
+    "anchorY": 0.04838709677419355,
+    "contentHeight": 112,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hall_ruin": {
+    "width": 300,
+    "height": 108,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 108,
+    "source": "game/art/runtime/world-v6.png",
+    "facing": 1
+  },
+  "heart_icon": {
+    "width": 48,
+    "height": 43,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 43,
+    "source": "game/art/runtime/world-v6.png",
+    "facing": 1
+  },
+  "tree_pine": {
+    "width": 286,
+    "height": 560,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 560,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "tree_willow": {
+    "width": 480,
+    "height": 435,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 435,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "tree_oak": {
+    "width": 480,
+    "height": 434,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 434,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "empty_tool_hunter": {
+    "width": 329,
+    "height": 342,
+    "anchorX": 0.5,
+    "anchorY": 0.03216374269005848,
+    "contentHeight": 320,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "empty_tool_hunter__glow": {
+    "width": 329,
+    "height": 342,
+    "anchorX": 0.5,
+    "anchorY": 0.03216374269005848,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "tribal_banner": {
+    "width": 213,
+    "height": 342,
+    "anchorX": 0.5,
+    "anchorY": 0.03216374269005848,
+    "contentHeight": 320,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "tribal_banner__glow": {
+    "width": 213,
+    "height": 342,
+    "anchorX": 0.5,
+    "anchorY": 0.03216374269005848,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "ui_action_ring": {
+    "width": 320,
+    "height": 318,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 318,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "cycle_dial": {
+    "width": 320,
+    "height": 317,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 317,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "icon_rotate": {
+    "width": 320,
+    "height": 313,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 313,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "icon_play": {
+    "width": 320,
+    "height": 308,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 308,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "icon_whip": {
+    "width": 320,
+    "height": 307,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 307,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "mushroom_farm": {
+    "width": 409,
+    "height": 322,
+    "anchorX": 0.5,
+    "anchorY": 0.034161490683229816,
+    "contentHeight": 300,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "mushroom_farm__glow": {
+    "width": 409,
+    "height": 322,
+    "anchorX": 0.5,
+    "anchorY": 0.034161490683229816,
+    "contentHeight": 300,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "woodcut_camp": {
+    "width": 404,
+    "height": 322,
+    "anchorX": 0.5,
+    "anchorY": 0.034161490683229816,
+    "contentHeight": 300,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "woodcut_camp__glow": {
+    "width": 404,
+    "height": 322,
+    "anchorX": 0.5,
+    "anchorY": 0.034161490683229816,
+    "contentHeight": 300,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "gold_mine": {
+    "width": 442,
+    "height": 320,
+    "anchorX": 0.5,
+    "anchorY": 0.034375,
+    "contentHeight": 298,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "gold_mine__glow": {
+    "width": 442,
+    "height": 320,
+    "anchorX": 0.5,
+    "anchorY": 0.034375,
+    "contentHeight": 298,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "empty_tool_brute": {
+    "width": 342,
+    "height": 304,
+    "anchorX": 0.5,
+    "anchorY": 0.03618421052631579,
+    "contentHeight": 282,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "empty_tool_brute__glow": {
+    "width": 342,
+    "height": 304,
+    "anchorX": 0.5,
+    "anchorY": 0.03618421052631579,
+    "contentHeight": 282,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "icon_run": {
+    "width": 320,
+    "height": 276,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 276,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "empty_tool_worker": {
+    "width": 342,
+    "height": 292,
+    "anchorX": 0.5,
+    "anchorY": 0.03767123287671233,
+    "contentHeight": 270,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "empty_tool_worker__glow": {
+    "width": 342,
+    "height": 292,
+    "anchorX": 0.5,
+    "anchorY": 0.03767123287671233,
+    "contentHeight": 270,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "purse": {
+    "width": 320,
+    "height": 229,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 229,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "stream_crossing": {
+    "width": 420,
+    "height": 206,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 206,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "forest_shrub": {
+    "width": 213,
+    "height": 150,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 150,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "dwarf_wounded": {
+    "width": 225,
+    "height": 134,
+    "anchorX": 0.5,
+    "anchorY": 0.08955223880597014,
+    "contentHeight": 110,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "dwarf_wounded__glow": {
+    "width": 225,
+    "height": 134,
+    "anchorX": 0.5,
+    "anchorY": 0.08955223880597014,
+    "contentHeight": 110,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "human_wounded": {
+    "width": 215,
+    "height": 134,
+    "anchorX": 0.5,
+    "anchorY": 0.08955223880597014,
+    "contentHeight": 110,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "human_wounded__glow": {
+    "width": 215,
+    "height": 134,
+    "anchorX": 0.5,
+    "anchorY": 0.08955223880597014,
+    "contentHeight": 110,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "dwarf_dead": {
+    "width": 230,
+    "height": 123,
+    "anchorX": 0.5,
+    "anchorY": 0.08130081300813008,
+    "contentHeight": 103,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "dwarf_dead__glow": {
+    "width": 230,
+    "height": 123,
+    "anchorX": 0.5,
+    "anchorY": 0.08130081300813008,
+    "contentHeight": 103,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "price_board": {
+    "width": 96,
+    "height": 100,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 100,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "elf_wounded": {
+    "width": 230,
+    "height": 118,
+    "anchorX": 0.5,
+    "anchorY": 0.0847457627118644,
+    "contentHeight": 98,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "elf_wounded__glow": {
+    "width": 230,
+    "height": 118,
+    "anchorX": 0.5,
+    "anchorY": 0.0847457627118644,
+    "contentHeight": 98,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "human_dead": {
+    "width": 230,
+    "height": 113,
+    "anchorX": 0.5,
+    "anchorY": 0.08849557522123894,
+    "contentHeight": 93,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "human_dead__glow": {
+    "width": 230,
+    "height": 113,
+    "anchorX": 0.5,
+    "anchorY": 0.08849557522123894,
+    "contentHeight": 93,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "elf_dead": {
+    "width": 226,
+    "height": 75,
+    "anchorX": 0.5,
+    "anchorY": 0.10666666666666667,
+    "contentHeight": 59,
+    "source": "game/art/runtime/actors-ink.png",
+    "facing": 1
+  },
+  "elf_dead__glow": {
+    "width": 226,
+    "height": 75,
+    "anchorX": 0.5,
+    "anchorY": 0.10666666666666667,
+    "contentHeight": 59,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "purse_rim": {
+    "width": 320,
+    "height": 92,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 92,
+    "source": "game/art/runtime/world-v7.png",
+    "facing": 1
+  },
+  "torch_unlit": {
+    "width": 47,
+    "height": 86,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 86,
+    "source": "game/art/runtime/actors.png",
+    "facing": 1
+  },
+  "elf_melee": {
+    "width": 240,
+    "height": 228,
+    "anchorX": 0.5981067518248174,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 192,
+    "source": "game/art/runtime/elf-melee-v8.png",
+    "facing": -1
+  },
+  "elf_melee__glow": {
+    "width": 240,
+    "height": 228,
+    "anchorX": 0.5981067518248174,
+    "anchorY": 0.07894736842105263,
+    "contentHeight": 192,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "cave": {
+    "width": 620,
+    "height": 200,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 200,
+    "source": "cocos/art/source/cave.png",
+    "facing": 1
+  },
+  "cave_floor": {
+    "width": 1024,
+    "height": 79,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 79,
+    "source": "cocos/art/source/cave_floor.png",
+    "facing": 1
+  },
+  "open_chest": {
+    "width": 620,
+    "height": 487,
+    "anchorX": 0.5,
+    "anchorY": 0.06639566395663957,
+    "contentHeight": 422,
+    "source": "cocos/art/source/open_chest.png",
+    "facing": 1
+  },
+  "open_chest__glow": {
+    "width": 940,
+    "height": 738,
+    "anchorX": 0.5,
+    "anchorY": 0.06639566395663957,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "chest_front": {
+    "width": 620,
+    "height": 160,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 160,
+    "source": "cocos/art/source/open_chest.png",
+    "facing": 1
+  },
+  "rabbit": {
+    "width": 625,
+    "height": 622,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 622,
+    "source": "cocos/art/source/rabbit.png",
+    "facing": 1
+  },
+  "lure": {
+    "width": 363,
+    "height": 620,
+    "anchorX": 0.5,
+    "anchorY": 0.045454545454545456,
+    "contentHeight": 564,
+    "source": "cocos/art/source/lure.png",
+    "facing": 1
+  },
+  "lure__glow": {
+    "width": 412,
+    "height": 704,
+    "anchorX": 0.5,
+    "anchorY": 0.045454545454545456,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "deer": {
+    "width": 472,
+    "height": 620,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 620,
+    "source": "cocos/art/source/deer.png",
+    "facing": 1
+  },
+  "shield": {
+    "width": 387,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/shield.png",
+    "facing": -1
+  },
+  "shield__glow": {
+    "width": 387,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "mage": {
+    "width": 341,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/mage.png",
+    "facing": -1
+  },
+  "mage__glow": {
+    "width": 341,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "catapult": {
+    "width": 620,
+    "height": 367,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 337,
+    "source": "cocos/art/source/catapult.png",
+    "facing": 1
+  },
+  "catapult__glow": {
+    "width": 1076,
+    "height": 637,
+    "anchorX": 0.5,
+    "anchorY": 0.04081632653061224,
+    "contentHeight": 585,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "ram": {
+    "width": 620,
+    "height": 486,
+    "anchorX": 0.5,
+    "anchorY": 0.0480225988700565,
+    "contentHeight": 439,
+    "source": "cocos/art/source/ram.png",
+    "facing": 1
+  },
+  "ram__glow": {
+    "width": 903,
+    "height": 708,
+    "anchorX": 0.5,
+    "anchorY": 0.0480225988700565,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "firecatapult": {
+    "width": 620,
+    "height": 365,
+    "anchorX": 0.5,
+    "anchorY": 0.04100946372239748,
+    "contentHeight": 335,
+    "source": "cocos/art/source/firecatapult.png",
+    "facing": 1
+  },
+  "firecatapult__glow": {
+    "width": 1076,
+    "height": 634,
+    "anchorX": 0.5,
+    "anchorY": 0.04100946372239748,
+    "contentHeight": 582,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "ship": {
+    "width": 620,
+    "height": 240,
+    "anchorX": 0.5,
+    "anchorY": 0.022332506203473945,
+    "contentHeight": 229,
+    "source": "cocos/art/source/ship.png",
+    "facing": 1
+  },
+  "ship__glow": {
+    "width": 1042,
+    "height": 403,
+    "anchorX": 0.5,
+    "anchorY": 0.022332506203473945,
+    "contentHeight": 385,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "forge": {
+    "width": 620,
+    "height": 586,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 537,
+    "source": "cocos/art/source/forge.png",
+    "facing": 1
+  },
+  "forge__glow": {
+    "width": 738,
+    "height": 698,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "armor_item": {
+    "width": 309,
+    "height": 350,
+    "anchorX": 0.5,
+    "anchorY": 0.1457142857142857,
+    "contentHeight": 258,
+    "source": "cocos/art/source/forge.png",
+    "facing": 1
+  },
+  "armor_item__glow": {
+    "width": 309,
+    "height": 350,
+    "anchorX": 0.5,
+    "anchorY": 0.1457142857142857,
+    "contentHeight": 258,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hunter_4": {
+    "width": 365,
+    "height": 376,
+    "anchorX": 0.44073972602739725,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/hunter_4.png",
+    "facing": 1
+  },
+  "hunter_4__glow": {
+    "width": 365,
+    "height": 376,
+    "anchorX": 0.44073972602739725,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "gear_pile": {
+    "width": 620,
+    "height": 222,
+    "anchorX": 0.5,
+    "anchorY": 0.09873417721518987,
+    "contentHeight": 178,
+    "source": "cocos/art/source/gear_pile.png",
+    "facing": 1
+  },
+  "gear_pile__glow": {
+    "width": 1102,
+    "height": 395,
+    "anchorX": 0.5,
+    "anchorY": 0.09873417721518987,
+    "contentHeight": 317,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "territory_marker": {
+    "width": 353,
+    "height": 620,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 568,
+    "source": "cocos/art/source/territory_marker.png",
+    "facing": 1
+  },
+  "territory_marker__glow": {
+    "width": 397,
+    "height": 698,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "trader_pull": {
+    "width": 297,
+    "height": 376,
+    "anchorX": 0.4350841750841751,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/trader_pull.png",
+    "facing": -1
+  },
+  "trader_pull__glow": {
+    "width": 297,
+    "height": 376,
+    "anchorX": 0.4350841750841751,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elite_heavy": {
+    "width": 454,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/elite_heavy.png",
+    "facing": -1
+  },
+  "elite_heavy__glow": {
+    "width": 454,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elite_longbow": {
+    "width": 248,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/elite_longbow.png",
+    "facing": -1
+  },
+  "elite_longbow__glow": {
+    "width": 248,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elite_bulwark": {
+    "width": 373,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/elite_bulwark.png",
+    "facing": -1
+  },
+  "elite_bulwark__glow": {
+    "width": 373,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elite_engineer": {
+    "width": 384,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/elite_engineer.png",
+    "facing": -1
+  },
+  "elite_engineer__glow": {
+    "width": 384,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elite_pyromancer": {
+    "width": 330,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/elite_pyromancer.png",
+    "facing": -1
+  },
+  "elite_pyromancer__glow": {
+    "width": 330,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elite_charger": {
+    "width": 532,
+    "height": 361,
+    "anchorX": 0.5,
+    "anchorY": 0.07202216066481995,
+    "contentHeight": 309,
+    "source": "cocos/art/source/elite_charger.png",
+    "facing": -1
+  },
+  "elite_charger__glow": {
+    "width": 532,
+    "height": 361,
+    "anchorX": 0.5,
+    "anchorY": 0.07202216066481995,
+    "contentHeight": 309,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "elite_jumper": {
+    "width": 340,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "cocos/art/source/elite_jumper.png",
+    "facing": -1
+  },
+  "elite_jumper__glow": {
+    "width": 340,
+    "height": 376,
+    "anchorX": 0.5,
+    "anchorY": 0.07446808510638298,
+    "contentHeight": 320,
+    "source": "technical alpha dilation",
+    "facing": -1
+  },
+  "hall4": {
+    "width": 620,
+    "height": 458,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 420,
+    "source": "cocos/art/source/hall4.png",
+    "facing": 1
+  },
+  "hall4__glow": {
+    "width": 944,
+    "height": 698,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "hall5": {
+    "width": 620,
+    "height": 386,
+    "anchorX": 0.5,
+    "anchorY": 0.04017857142857143,
+    "contentHeight": 355,
+    "source": "cocos/art/source/hall5.png",
+    "facing": 1
+  },
+  "hall5__glow": {
+    "width": 1078,
+    "height": 672,
+    "anchorX": 0.5,
+    "anchorY": 0.04017857142857143,
+    "contentHeight": 618,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "wall4": {
+    "width": 620,
+    "height": 364,
+    "anchorX": 0.5,
+    "anchorY": 0.04113924050632911,
+    "contentHeight": 334,
+    "source": "cocos/art/source/wall4.png",
+    "facing": 1
+  },
+  "wall4__glow": {
+    "width": 1076,
+    "height": 632,
+    "anchorX": 0.5,
+    "anchorY": 0.04113924050632911,
+    "contentHeight": 580,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "wall5": {
+    "width": 620,
+    "height": 404,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 370,
+    "source": "cocos/art/source/wall5.png",
+    "facing": 1
+  },
+  "wall5__glow": {
+    "width": 1072,
+    "height": 698,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "tower4": {
+    "width": 544,
+    "height": 620,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 568,
+    "source": "cocos/art/source/tower4.png",
+    "facing": 1
+  },
+  "tower4__glow": {
+    "width": 612,
+    "height": 698,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "tower5": {
+    "width": 546,
+    "height": 620,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 568,
+    "source": "cocos/art/source/tower5.png",
+    "facing": 1
+  },
+  "tower5__glow": {
+    "width": 615,
+    "height": 698,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "tower3": {
+    "width": 527,
+    "height": 620,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 568,
+    "source": "cocos/art/source/tower3.png",
+    "facing": 1
+  },
+  "tower3__glow": {
+    "width": 593,
+    "height": 698,
+    "anchorX": 0.5,
+    "anchorY": 0.04154727793696275,
+    "contentHeight": 640,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "stone_plinth": {
+    "width": 620,
+    "height": 131,
+    "anchorX": 0.5,
+    "anchorY": 0.049773755656108594,
+    "contentHeight": 118,
+    "source": "cocos/art/source/stone_plinth.png",
+    "facing": 1
+  },
+  "stone_plinth__glow": {
+    "width": 1046,
+    "height": 221,
+    "anchorX": 0.5,
+    "anchorY": 0.049773755656108594,
+    "contentHeight": 199,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "metal_workframe": {
+    "width": 620,
+    "height": 276,
+    "anchorX": 0.5,
+    "anchorY": 0.04219409282700422,
+    "contentHeight": 253,
+    "source": "cocos/art/source/metal_workframe.png",
+    "facing": 1
+  },
+  "metal_workframe__glow": {
+    "width": 1064,
+    "height": 474,
+    "anchorX": 0.5,
+    "anchorY": 0.04219409282700422,
+    "contentHeight": 434,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "metal_roof": {
+    "width": 620,
+    "height": 151,
+    "anchorX": 0.5,
+    "anchorY": 0.05078125,
+    "contentHeight": 136,
+    "source": "cocos/art/source/metal_roof.png",
+    "facing": 1
+  },
+  "metal_roof__glow": {
+    "width": 1050,
+    "height": 256,
+    "anchorX": 0.5,
+    "anchorY": 0.05078125,
+    "contentHeight": 230,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "timber_frame": {
+    "width": 620,
+    "height": 288,
+    "anchorX": 0.5,
+    "anchorY": 0.04242424242424243,
+    "contentHeight": 264,
+    "source": "cocos/art/source/timber_frame.png",
+    "facing": 1
+  },
+  "timber_frame__glow": {
+    "width": 1066,
+    "height": 495,
+    "anchorX": 0.5,
+    "anchorY": 0.04242424242424243,
+    "contentHeight": 453,
+    "source": "technical alpha dilation",
+    "facing": 1
+  },
+  "cage_divider": {
+    "width": 300,
+    "height": 17,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 17,
+    "source": "technical cage-floor crop",
+    "facing": 1
+  },
+  "land_entry": {
+    "width": 230,
+    "height": 67,
+    "anchorX": 0.5,
+    "anchorY": 0.0,
+    "contentHeight": 67,
+    "source": "technical alpha join from original land bitmap",
+    "facing": 1
+  },
+  "stone_projectile": {
+    "width": 75,
+    "height": 48,
+    "contentHeight": 48,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "facing": 1,
+    "source": "technical stone crop from original rock trap"
+  },
+  "hanging_menu": {
+    "width": 413,
+    "height": 620,
+    "contentHeight": 620,
+    "anchorX": 0.5,
+    "anchorY": 0,
+    "source": "cocos/art/ui/hanging-menu.png",
+    "facing": 1
+  },
+  "prison_cart": {
+    "width": 512,
+    "height": 249,
+    "contentHeight": 249,
+    "anchorX": 0.6129230769230769,
+    "anchorY": 0,
+    "source": "cocos/art/source/prison_cart.png",
+    "facing": -1
+  },
+  "war_drum": {
+    "width": 318,
+    "height": 264,
+    "contentHeight": 248,
+    "anchorX": 0.5,
+    "anchorY": 0.030303030303030304,
+    "facing": 1,
+    "source": "cocos/art/source/war_drum.png"
+  },
+  "war_drum__glow": {
+    "width": 318,
+    "height": 264,
+    "contentHeight": 248,
+    "anchorX": 0.5,
+    "anchorY": 0.030303030303030304,
+    "facing": 1,
+    "source": "cocos/art/source/war_drum.png"
+  },
+  "title_wordmark": {
+    "width": 456,
+    "height": 256,
+    "contentHeight": 256,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "facing": 1,
+    "source": "cocos/non-export/20261104-store/source/title.png"
+  }
+}

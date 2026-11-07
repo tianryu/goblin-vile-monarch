@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-30",
+  "tool": "built-in image_gen",
+  "status": "Design candidates, user review pending; not production assets and not runtime screenshots",
+  "copyRule": "No U+00B7 separator in visible text",
+  "originalVillageGeneration": {
+    "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-e363fb80-85e7-4aea-b96d-0a5a3b3e3cd5.png",
+    "prompt": "Use case: ui-mockup. Create ONE landscape 2:1 gameplay DESIGN screenshot for a mobile H5 game titled Goblin Monarch. Reference image is ONLY the approved restrained low-resolution forest pixel aesthetic, landscape proportions, small characters, minimal UI. This is an original revised goblin game, not a copy of another game. Keep same poetic low-pixel quality, but even more disciplined pixel grid: approximately 512x256 native game-world resolution enlarged with nearest-neighbor to 1536x768, flat palette clusters, 3-4 shades per material, tiny 16-22-native-pixel foot soldiers. No high detail textures, no painterly AI look, no illustrated giant characters, no blur or depth of field, no glossy UI.\nSCENE A: sunny late-afternoon tribal village, single continuous SIDE-VIEW horizontal ground at y=65% with marsh reflection below, distant blue-teal forest layers and muted ruined watchtower. Open sky top quarter. Small original goblin settlement: left edge simple road barrier; x18% coin stall red cloth and coinbox; x36% modest wooden chief hut black-red ragged flag; x56% simple reinforcement stall bow+hammer; x77% low mount pen with lizard and wolf; a small iron cage at far right behind the road. Buildings no taller than 21% image, hut no more than 23% wide. Small goblins at roadside. Make one near x50% have conspicuously BULGING side pockets, remaining a normal slim green goblin with hammer. Rider hero x62%: tiny green goblin with small golden crown and red cape on squat brown boar, rider+mount only 11% screen height. Tiny loose gold coins near bulging-pocket goblin; comedy through silhouette. No giant skulls or ornate fantasy architecture.\nALL WALKERS and interactive objects on ONE horizontal ground plane, no isometric layout, no stairs/alternate lanes.\nUI: top-left small pixel coin icon '38' and goblin icon '24'; top-center exact Chinese '第6日' with a thin sun progress strip; top-right plain pause icon. Only one small target caption above current nearest NPC exact '私藏金币'. Bottom-left ONE translucent circular thumb JOYSTICK with central thumb and a subtle HORIZONTAL track, only left/right movement; NO two arrow buttons, no cross arrows, no up/down arrows. Bottom-right main translucent round action button with simple whip icon exact Chinese '抽鞭子', immediately to its left smaller running button exact '奔跑'. Put controls over marsh below the path, never overlapping characters. Touch controls simple, readable, diameter approx 12-14% image height, safe margins. No extra world labels, no dialog balloons, no skillbar, no global ad button, no promotional logo, no phone frame. Clear readable Chinese UI; preserve reference world scale and unobstructed panorama. This is design art only, not a real captured game frame."
+  },
+  "originalVillageCorrection": {
+    "source": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-3e78544d-48c2-4581-99bc-0a1e15f13ce3.png",
+    "prompt": "Precise localized correction of the attached gameplay DESIGN image. Keep the entire forest composition, low pixel style, native pixel density, buildings, hero, goblins, colors and all readable UI text identical. Make ONLY two corrections: (1) the prisoner in the FAR RIGHT IRON CAGE is currently green: replace him with a tiny HUMAN enemy captive, peach skin, steel helmet, cream and blue tunic, clearly standing behind the bars. Do not imprison a green goblin in this village enemy-prisoner cage. (2) Move the THREE bottom control groups (left horizontal joystick, right run, right whip) UP by about 32 image pixels, maintaining sizes and relative layout, to leave visible safe margin below the Chinese labels and joystick. Restore the ordinary water reflection behind former locations. Keep all top HUD unchanged. No new details, no higher-resolution texture, no new labels. Output one complete 2:1 landscape design image."
+  },
+  "finalPromptSet": [
+    {
+      "file": "01-tribe-day-uglycute.png",
+      "source": "exec-0499a926-dea6-4cb6-9c7e-c9ab9e229b3f.png",
+      "reference": "01-tribe-day-reviewed.png",
+      "prompt": "Character-only revision: green goblins ugly-cute, big pointed ears, crooked protruding nose, squinting eyes, sly grin with tiny fang, hunched compact body and small belly. Strict coarse low-pixel clusters, same sprite size/costumes and scene. Center goblin keeps two visibly bulging cloth waist pockets; only king has crown. Far-right village prisoner remains HUMAN. Keep 私藏金币, 抽鞭子, 奔跑, horizontal joystick, margins and reflections. No middle-dot separators."
+    },
+    {
+      "file": "02-prison-market-uglycute.png",
+      "source": "exec-b240a45f-f98a-4ed3-9548-9516556b4d1c.png",
+      "reference": "02-prison-market.png",
+      "prompt": "Edit only THREE GREEN GOBLINS in this prison market scene: king on boar and two workers dragging net. Make them UGLY-CUTE and visibly SLY: big angular pointed ears, long crooked nose, squinty eyes, crooked cheeky grin with one tiny fang, compact hunched body, little round belly. Keep coarse low pixel art at same native pixel density as background, square pixel clusters, no thin cartoon outlines, no realistic detail. Same character size and costume. King alone has crown/red cape. Workers have two hands and two legs holding the net naturally. Preserve all other pixels: village prison contains three HUMAN soldiers and one DWARF, net captive is HUMAN, merchant is HUMAN. Do not turn them green. Preserve exact Chinese UI, 4/6 prison sign, 人类商人 target, 交易 button, 奔跑 and horizontal joystick, forest, wagon, layout and safe margins. Match changed goblins' water reflections. No middle-dot separator in any text. Output one complete same 2:1 image."
+    },
+    {
+      "file": "03-night-defense-final.png",
+      "source": "exec-c88fb748-8738-40c9-b065-c409ff0fc88f.png",
+      "reference": "03-night-defense-uglycute.png",
+      "prompt": "Edit ONLY the small dark target label above the left low fence. Replace its text with exactly 路障修复 . Four Chinese characters only, no punctuation, no dots, no spaces. Keep all other pixels exactly unchanged: pixel-art goblins, night forest, net, enemies, joystick, buttons, HUD, dimensions. Return the complete image."
+    },
+    {
+      "file": "04-thief-outpost-uglycute-pixel.png",
+      "source": "exec-e13db07e-1f21-462f-85b5-afa8d5126343.png",
+      "reference": "04-thief-outpost-uglycute.png",
+      "prompt": "Pixel-style correction of green goblin sprites only. Preserve ugly-cute long crooked nose, big pointed ears, tiny fangs, sneaky squint, hunched small body and round belly. Rebuild as coarse 18-24-native-pixel sprites, square 4-5-display-pixel clusters, head about8x8, ear4x2, nose3x2, eye1-2pixels, mouth2-3pixels. No thin smooth comic lines, no realistic textures. Preserve scene, missing wheel/axle, controls, Chinese text, identity, sprite size and reflections."
+    }
+  ],
+  "promptNote": "Original village requests retained; final character prompt set includes concise reconstruction where asynchronous requests were interrupted. Source PNG filenames identify generated artifacts.",
+  "rejectedCandidates": [
+    {
+      "file": "01-tribe-day.png",
+      "reason": "Village captive drawn as goblin; lower controls too near bottom"
+    },
+    {
+      "file": "04-thief-outpost-uglycute.png",
+      "reason": "Character faces became too fine/outlined; coarse-pixel revision made"
+    },
+    {
+      "file": "03-night-defense-uglycute.png",
+      "reason": "Target text used forbidden separator; final text correction made"
+    }
+  ]
+}

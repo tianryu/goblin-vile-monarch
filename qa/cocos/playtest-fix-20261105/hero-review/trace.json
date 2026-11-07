@@ -1,0 +1,377 @@
+{
+  "rows": [
+    {
+      "hero": "longbow",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3795,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_longbow"
+        },
+        {
+          "stage": "action",
+          "x": 3795,
+          "windup": null,
+          "attack": "bow",
+          "activeStrike": "bow",
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_longbow"
+        },
+        {
+          "stage": "hit",
+          "x": 3795,
+          "windup": null,
+          "attack": "bow",
+          "activeStrike": null,
+          "shots": [
+            "arrow",
+            "arrow",
+            "arrow"
+          ],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_longbow"
+        }
+      ]
+    },
+    {
+      "hero": "bulwark",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3642,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_bulwark"
+        },
+        {
+          "stage": "action",
+          "x": 3642,
+          "windup": null,
+          "attack": "melee",
+          "activeStrike": "melee",
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_bulwark"
+        },
+        {
+          "stage": "hit",
+          "x": 3642,
+          "windup": null,
+          "attack": "melee",
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [
+            "hit"
+          ],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_bulwark"
+        }
+      ]
+    },
+    {
+      "hero": "engineer",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3637,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [
+            44
+          ],
+          "boosting": false,
+          "frame": "elite_engineer"
+        },
+        {
+          "stage": "action",
+          "x": 3637,
+          "windup": null,
+          "attack": "melee",
+          "activeStrike": "melee",
+          "shots": [],
+          "warnings": [
+            "star"
+          ],
+          "machineHp": [
+            62
+          ],
+          "boosting": false,
+          "frame": "elite_engineer"
+        },
+        {
+          "stage": "hit",
+          "x": 3637,
+          "windup": null,
+          "attack": "melee",
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [
+            "star",
+            "hit"
+          ],
+          "machineHp": [
+            62
+          ],
+          "boosting": false,
+          "frame": "elite_engineer"
+        }
+      ]
+    },
+    {
+      "hero": "pyromancer",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3792,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_pyromancer"
+        },
+        {
+          "stage": "action",
+          "x": 3792,
+          "windup": null,
+          "attack": "cast",
+          "activeStrike": "cast",
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_pyromancer"
+        },
+        {
+          "stage": "hit",
+          "x": 3792,
+          "windup": null,
+          "attack": "cast",
+          "activeStrike": null,
+          "shots": [
+            "fireball"
+          ],
+          "warnings": [
+            "warning",
+            "warning",
+            "warning",
+            "warning"
+          ],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_pyromancer"
+        }
+      ]
+    },
+    {
+      "hero": "charger",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3810,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_charger"
+        },
+        {
+          "stage": "action",
+          "x": 3715,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": true,
+          "frame": "elite_charger"
+        },
+        {
+          "stage": "hit",
+          "x": 3643,
+          "windup": null,
+          "attack": "melee",
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [
+            "hit"
+          ],
+          "machineHp": [],
+          "boosting": true,
+          "frame": "elite_charger"
+        }
+      ]
+    },
+    {
+      "hero": "siege_boss",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3646,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_heavy"
+        },
+        {
+          "stage": "action",
+          "x": 3646,
+          "windup": "slam",
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [
+            "slamWarning"
+          ],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_heavy"
+        },
+        {
+          "stage": "hit",
+          "x": 3646,
+          "windup": null,
+          "attack": "slam",
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [
+            "hit",
+            "hit",
+            "hit",
+            "hit",
+            "slamImpact",
+            "hit"
+          ],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_heavy"
+        }
+      ]
+    },
+    {
+      "hero": "fire_boss",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3802,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_pyromancer"
+        },
+        {
+          "stage": "action",
+          "x": 3802,
+          "windup": null,
+          "attack": "cast",
+          "activeStrike": "cast",
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_pyromancer"
+        },
+        {
+          "stage": "hit",
+          "x": 3802,
+          "windup": null,
+          "attack": "cast",
+          "activeStrike": null,
+          "shots": [
+            "fireball"
+          ],
+          "warnings": [
+            "warning",
+            "warning",
+            "warning",
+            "warning"
+          ],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_pyromancer"
+        }
+      ]
+    },
+    {
+      "hero": "fleet_boss",
+      "poses": [
+        {
+          "stage": "idle",
+          "x": 3810,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": false,
+          "frame": "elite_bulwark"
+        },
+        {
+          "stage": "action",
+          "x": 3731,
+          "windup": null,
+          "attack": null,
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [],
+          "machineHp": [],
+          "boosting": true,
+          "frame": "elite_bulwark"
+        },
+        {
+          "stage": "hit",
+          "x": 3652,
+          "windup": null,
+          "attack": "melee",
+          "activeStrike": null,
+          "shots": [],
+          "warnings": [
+            "hit"
+          ],
+          "machineHp": [],
+          "boosting": true,
+          "frame": "elite_bulwark"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

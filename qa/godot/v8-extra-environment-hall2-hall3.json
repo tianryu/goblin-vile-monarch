@@ -1,0 +1,34 @@
+{
+  "scope": "Extra environment cycles in real map, isolated desktop Edge software WebGL",
+  "passes": [
+    "hall2: full wind cycle plays in real map",
+    "hall2: every object retains its single fixed ground placement",
+    "hall2: no duplicate or transparent building during a cycle",
+    "hall2: reviewed source base remains stable",
+    "hall2: no currency, ads, dialogs or world simulation side effects",
+    "hall2: approaching retains contextual glow and caption target",
+    "hall2: pause holds the exact wind pose",
+    "hall3: full wind cycle plays in real map",
+    "hall3: every object retains its single fixed ground placement",
+    "hall3: no duplicate or transparent building during a cycle",
+    "hall3: reviewed source base remains stable",
+    "hall3: no currency, ads, dialogs or world simulation side effects",
+    "hall3: approaching retains contextual glow and caption target",
+    "hall3: pause holds the exact wind pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "asset": "hall2",
+      "position": 95,
+      "frames": 19
+    },
+    {
+      "asset": "hall3",
+      "position": 95,
+      "frames": 19
+    }
+  ]
+}

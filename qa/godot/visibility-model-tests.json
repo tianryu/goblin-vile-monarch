@@ -1,0 +1,27 @@
+{
+	"failures": [],
+	"passes": [
+		"first appearance starts transparent",
+		"entry has a real intermediate opacity",
+		"entry reaches full opacity",
+		"removed hint retains a partial exit snapshot",
+		"quick reversal resumes instead of resetting",
+		"retiring snapshot follows camera drift",
+		"fully faded snapshots are reclaimed",
+		"fading prisoners remain behind cage bars",
+		"repeated transitions do not leak entries",
+		"equipment change fades old body without a duplicate",
+		"retiring equipment body follows the current foot anchor",
+		"equipment reversal resumes the visible old body",
+		"replacement starts fading in only after previous body exits",
+		"replacement reaches full opacity with one retained identity",
+		"purse represents every carried coin",
+		"coins have irregular positions and rotations",
+		"settled purse coins stay within bag interior",
+		"spending removes exactly the corresponding coins",
+		"invalid visual count cannot loop on an empty purse",
+		"only actor texture pairs carry the outline marker",
+		"unlit foreground is explicitly excluded from actor outline"
+	],
+	"scope": "Pure display transition and purse behavior, no business state or actual device claims"
+}

@@ -1,0 +1,13 @@
+{
+  "assetName": "ship",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-099e85d2-07cb-4e86-bf81-258c0be687a9.png",
+  "prompt": "Use case: style-transfer. Image 1 is the transport ship edit target. Image 2 is a sheet of actual game assets and the exact painterly rendering standard. Repaint the ship to belong with the plain wooden chest and rock trap in image 2. Preserve long LOW wooden hull, walkable level deck, two masts, blue and cream medieval cloth sails and the straight boarding ramp extending LEFT. Side elevation, no people, no scenery. SIMPLIFY thin rigging into just a handful of thick loose tan ropes. Cloth is ragged broad matte cream and dusty blue paint shapes, like the cloth on the reference tool stall. Timber has only a few muted irregular brown patches, not many parallel grain lines. No black ink contour, no vector-clean symmetry, no gradient shading, shine, tiny decorative railings or modern ship details. Broad hand-painted silhouette, little volume, all parts comfortably within canvas. Ship alone on genuinely transparent background, no water, reflection, shore, cast shadow, labels or reference props. Preserve grounded medieval fantasy character of the source game.",
+  "edge": "building",
+  "facing": 1,
+  "generator": "builtin-imagegen",
+  "reviewed": true,
+  "styleApproved": true,
+  "styleRejected": false,
+  "review": "已查看真实alpha和旧木器同底色缩图。减少索具细线，宽布块与木架统一，保留低甲板和左跳板；待引擎合成。",
+  "reviewStatus": "approved-source-pending-engine"
+}

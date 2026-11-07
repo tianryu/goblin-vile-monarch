@@ -1,0 +1,28 @@
+{
+  "scope": "Natural guard pauses in isolated desktop Edge software WebGL",
+  "passes": [
+    "human: full generated idle cycle appears during natural pauses",
+    "human: one complete solid subject during every idle observation",
+    "human: real patrol remains near its camp post",
+    "human: animation causes no coins or dialogs",
+    "human: pause freezes the current idle pose",
+    "dwarf: full generated idle cycle appears during natural pauses",
+    "dwarf: one complete solid subject during every idle observation",
+    "dwarf: real patrol remains near its camp post",
+    "dwarf: animation causes no coins or dialogs",
+    "dwarf: pause freezes the current idle pose",
+    "No runtime or shader errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "cases": [
+    {
+      "type": "human",
+      "observed_poses": 18
+    },
+    {
+      "type": "dwarf",
+      "observed_poses": 19
+    }
+  ]
+}

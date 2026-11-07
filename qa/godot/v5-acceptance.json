@@ -1,0 +1,190 @@
+{
+  "scope": "V5 local model/browser/export acceptance. Not phone, live TapTap SDK or platform approval.",
+  "checks": [
+    "model-tests accepted",
+    "finishing-model-tests accepted",
+    "interaction-model-tests accepted",
+    "ui-native-v5-tests accepted",
+    "interaction-browser-tests accepted",
+    "mobile-layout-v5-tests accepted",
+    "boot-audio-tests accepted",
+    "Release smoke accepted",
+    "All eight gear images share one atlas",
+    "Every frame fits its atlas",
+    "23 independent layout page images are present",
+    "23 design images have the intended landscape size",
+    "Every design page has a corresponding actual screenshot",
+    "First-party current copy avoids the prohibited separator",
+    "All CJK source copy has glyphs in the bundled subset",
+    "Modified font family is renamed",
+    "Runtime plus loader and splash image stay inside 24 MiB",
+    "All three actual coin-contribution campaigns win without ads",
+    "Release ZIP matches its recorded hash",
+    "Release ZIP has one root and valid members",
+    "Final high-DPI stress completes without runtime errors",
+    "Stress includes the intended sixty friendly units"
+  ],
+  "failures": [],
+  "reports": {
+    "model-tests": {
+      "passes": 43,
+      "failures": [],
+      "errors": []
+    },
+    "finishing-model-tests": {
+      "passes": 35,
+      "failures": [],
+      "errors": []
+    },
+    "interaction-model-tests": {
+      "passes": 32,
+      "failures": [],
+      "errors": []
+    },
+    "ui-native-v5-tests": {
+      "passes": 5,
+      "failures": [],
+      "errors": []
+    },
+    "interaction-browser-tests": {
+      "passes": 99,
+      "failures": [],
+      "errors": []
+    },
+    "mobile-layout-v5-tests": {
+      "passes": 21,
+      "failures": [],
+      "errors": []
+    },
+    "boot-audio-tests": {
+      "passes": 9,
+      "failures": [],
+      "errors": []
+    },
+    "release-smoke": {
+      "passes": 9
+    }
+  },
+  "scenario_assertion_count": 253,
+  "graphics_single_copy_bytes_including_boot_and_splash": 24144144,
+  "frames": 99,
+  "texture_sheets": 33,
+  "package": {
+    "scope": "Local release Web export only. No upload, platform submission, live ads or physical phone validation.",
+    "single_root_folder": "goblin-monarch",
+    "files": [
+      {
+        "name": "boot-font.ttf",
+        "bytes": 248248,
+        "gzip_bytes": 158352,
+        "sha256": "bdffad5add9660321cb9481d07d82a4510deec644a4e94270207538bd3010c34"
+      },
+      {
+        "name": "boot-sky_base.png",
+        "bytes": 450734,
+        "gzip_bytes": 450892,
+        "sha256": "3f9b78b0c52bb3ca0c8e111c36ad928966827e3dc846f4731491294314d8ebc1"
+      },
+      {
+        "name": "boot-ui_back.png",
+        "bytes": 47111,
+        "gzip_bytes": 47144,
+        "sha256": "3dd71b120c0571658ce228a0e77bb4b0df51b35f111d7034ba7824a69567b488"
+      },
+      {
+        "name": "boot-ui_bar.png",
+        "bytes": 15993,
+        "gzip_bytes": 16016,
+        "sha256": "b2541bd3adf8a1f9dce6e886e7ee9ad4a74df5f4a08ffcf41b03b6089a598ef1"
+      },
+      {
+        "name": "boot-ui_bar_fill.png",
+        "bytes": 22489,
+        "gzip_bytes": 22517,
+        "sha256": "8463342ad6ed4f013099dd5df6243040b5b9dd1fd111b4255f32197d51167906"
+      },
+      {
+        "name": "boot-ui_button.png",
+        "bytes": 43964,
+        "gzip_bytes": 43997,
+        "sha256": "ce2d6c5a2f9577977c09b52741d3c82dfaf97e4cdb9651bcbf0a8cc58b7ba48f"
+      },
+      {
+        "name": "boot-ui_logo.png",
+        "bytes": 151124,
+        "gzip_bytes": 151184,
+        "sha256": "a312f198138ba056e6f7fcf9bf2a9376174143ee2bcfb7bccb9d585484d94220"
+      },
+      {
+        "name": "index.audio.position.worklet.js",
+        "bytes": 2973,
+        "gzip_bytes": 1161,
+        "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+      },
+      {
+        "name": "index.audio.worklet.js",
+        "bytes": 7298,
+        "gzip_bytes": 2194,
+        "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+      },
+      {
+        "name": "index.html",
+        "bytes": 9669,
+        "gzip_bytes": 3499,
+        "sha256": "04e469101b4c327c74e0baa567e44b8aaac9096b3686a4e88e06622040096d4a"
+      },
+      {
+        "name": "index.js",
+        "bytes": 279815,
+        "gzip_bytes": 68471,
+        "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+      },
+      {
+        "name": "index.pck",
+        "bytes": 3923996,
+        "gzip_bytes": 3805717,
+        "sha256": "79e3bad3ca1d3c994a60be92b986dc57261136c9ba0d76af09b00bdaa0a3613d"
+      },
+      {
+        "name": "index.png",
+        "bytes": 10314,
+        "gzip_bytes": 10289,
+        "sha256": "f17608db6e1eeba9125a5e494b1079211a30f9fceca312f06a49c2f810b80b3d"
+      },
+      {
+        "name": "index.wasm",
+        "bytes": 39514754,
+        "gzip_bytes": 10054758,
+        "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+      },
+      {
+        "name": "LICENSES.txt",
+        "bytes": 9327,
+        "gzip_bytes": 3370,
+        "sha256": "7bd48368890cab17fb7d4374c0744ba8a88b9bc43422b8ae75df6554bb766e29"
+      }
+    ],
+    "raw_bytes": 44737809,
+    "gzip_sum_bytes": 14839561,
+    "zip_bytes": 14841355,
+    "zip_sha256": "dc2e3e12d01f76ccba60fe74338728277c4374dffcbc06cd1009c5d897ca22f9"
+  },
+  "stress": {
+    "duration_seconds": 300,
+    "frame_interval_ms": {
+      "p50": 36.39999999999418,
+      "p95": 60.5,
+      "p99": 66.69999999998254,
+      "max": 78.89999999999964
+    },
+    "software_dpr2_p95_target_ms": 40,
+    "software_dpr2_p95_target_met": false
+  },
+  "visual_similarity_percent": null,
+  "visual_review": "23 separately saved layout prototypes paired with real runtime scenes; manual page and pose review. No fabricated perceptual percentage.",
+  "unverified": [
+    "Physical Android and iOS performance and thumb reach",
+    "TapTap host and real rewarded SDK",
+    "Independent perceptual 90 percent score and platform release"
+  ]
+}

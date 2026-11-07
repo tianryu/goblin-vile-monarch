@@ -1,0 +1,17 @@
+{
+	"failures": [],
+	"passes": [
+		"fresh game has no welcome dialog",
+		"normal map texture pairs are loaded",
+		"building selection glow is behind opaque actors",
+		"tools use direct payment actions",
+		"payment remains in world without a dialog",
+		"pause is inline without modal",
+		"resume clears manual pause",
+		"only defeat opens result",
+		"result restart returns directly to game",
+		"paused coin feedback still completes and is reclaimed",
+		"visual feedback never advances paused business time"
+	],
+	"scope": "Native headless UI with memory save adapter"
+}

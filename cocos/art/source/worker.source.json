@@ -1,0 +1,9 @@
+{
+  "assetName": "worker",
+  "generatedPath": "C:\\Users\\田煜\\.codex\\generated_images\\01a185e2-9903-79b2-a07f-8952b848c1b3\\exec-9ff63e75-5733-4658-9f1f-036fd8489b26.png",
+  "prompt": "Precise identity-preserving edit of the attached goblin worker production sprite. Keep his exact flat matte hand-painted 2D game art, hunched ugly-cute long nose/tusks/ears and compact proportions. ONLY change his clothes to bright warm IVORY WHITE medieval work shirt and light apron, dark brown belt and trousers; make his skin a slightly brighter grass green; enlarge the wooden mallet head by 1.7x for readability. One mallet held naturally in his right hand, other hand empty. Full character SIDE VIEW facing RIGHT, standing grounded, both feet same horizontal baseline, no crown. Clean stable opaque silhouette, no 3D shading, no pixel art, no heavy detail, no outline added yet because engine pipeline will add it. GENUINE TRANSPARENT background, generous transparent margin all sides. One single character not a sprite sheet.",
+  "edge": "ally",
+  "reviewed": true,
+  "review": "白衣、大锤、完整手脚与原角色轮廓已目视检查。",
+  "generator": "builtin-imagegen"
+}

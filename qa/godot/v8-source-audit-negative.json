@@ -1,0 +1,29 @@
+{
+  "scope": "Isolated deliberate pixel corruption, original assets unchanged",
+  "results": [
+    {
+      "case": "unchanged original sequence passes",
+      "passed": true
+    },
+    {
+      "case": "original video mismatch is rejected",
+      "passed": true
+    },
+    {
+      "case": "shared transform mismatch is rejected",
+      "passed": true
+    },
+    {
+      "case": "atlas mismatch is rejected",
+      "passed": true
+    },
+    {
+      "case": "Whole-frame transparent padding preserves exact source pixels",
+      "passed": true
+    },
+    {
+      "case": "One stray visible padding pixel is rejected",
+      "passed": true
+    }
+  ]
+}
