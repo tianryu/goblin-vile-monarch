@@ -1,0 +1,22 @@
+{
+  "name": "GoblinVileMonarch",
+  "platform": "web-desktop",
+  "buildPath": "project://build",
+  "outputName": "pc-preview-20261107",
+  "startScene": "ed9c19c0-f798-4d1c-9717-015ca7d55722",
+  "scenes": [
+    {
+      "url": "db://assets/scenes/Main.scene",
+      "uuid": "ed9c19c0-f798-4d1c-9717-015ca7d55722"
+    }
+  ],
+  "debug": true,
+  "sourceMaps": true,
+  "md5Cache": false,
+  "skipCompressTexture": true,
+  "packages": {
+    "web-desktop": {
+      "useWebGPU": false
+    }
+  }
+}

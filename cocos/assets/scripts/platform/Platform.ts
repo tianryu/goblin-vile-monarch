@@ -1,7 +1,9 @@
 import { sys } from 'cc';
 import { DEBUG } from 'cc/env';
 import { State } from '../model/State';
-const STORAGE_KEY = 'goblin-monarch-cocos-v9-app1018356';
+import { Language, setLanguage } from '../i18n/Locale';
+// PC 战役与手机小游戏隔离，语言和音量偏好再与战役分离。
+const STORAGE_KEY = 'goblin-vile-monarch-pc-v1';
 type RewardResult = { completed: boolean; receipt: string };
 interface TapHost {
     getStorageSync(key: string): any; setStorageSync(key: string, value: any): void;
@@ -19,12 +21,21 @@ export class Platform {
     constructor(private readonly baseStorageKey = STORAGE_KEY) {
         this.storageKey = this.mockAds ? baseStorageKey + ':mock-ads' : baseStorageKey;
         // 声音设置独立于战役，重新开局不会重置偏好。
-        try{const raw=this.read(this.storageKey+':settings')??this.read(baseStorageKey+':settings');if(raw)this.soundEnabled=JSON.parse(raw).soundEnabled!==false;}catch(_){/* 损坏设置回到默认开启，不改玩家战役档。 */}
+        try{const raw=this.read(this.storageKey+':settings')??this.read(baseStorageKey+':settings');if(raw){const settings=JSON.parse(raw);this.soundEnabled=settings.soundEnabled!==false;this.language=settings.language==='en'?'en':'zh-CN';}}catch(_){/* 损坏设置回到默认开启，不改玩家战役档。 */}
+        setLanguage(this.language);
     }
     soundEnabled=true;
+    language: Language = 'zh-CN';
+    setLanguage(language: Language): void {
+        this.language = language === 'en' ? 'en' : 'zh-CN';
+        setLanguage(this.language); this.saveSettings();
+    }
+    private saveSettings(): void {
+        try{this.write(this.storageKey+':settings',JSON.stringify({soundEnabled:this.soundEnabled,language:this.language}));}catch(_){this.storageError=true;}
+    }
     setSoundEnabled(enabled:boolean):void{
         this.soundEnabled=enabled;
-        try{this.write(this.storageKey+':settings',JSON.stringify({soundEnabled:enabled}));}catch(_){this.storageError=true;}
+        this.saveSettings();
     }
     miniappId = '';
     loginReady = false;

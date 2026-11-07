@@ -2,10 +2,11 @@ import { Color } from 'cc';
 import { GameModel } from '../model/GameModel';
 import { Platform } from '../platform/Platform';
 import { GameView } from './GameView';
+import { getLanguage } from '../i18n/Locale';
 
 type Kind='main'|'pause';
 type Phase='opening'|'open'|'closing'|'exit-ready'|'closed';
-type Choice='continue'|'new'|'sound'|'ranking'|'cloud'|'home';
+type Choice='continue'|'new'|'sound'|'language'|'home';
 type ExitChoice='continue'|'new'|'home';
 interface Item { id:Choice;label:string;disabled?:boolean }
 export type MenuButton=(key:string,x:number,y:number,width:number,height:number,enabled:boolean,callback:()=>void)=>void;
@@ -36,10 +37,10 @@ export class HangingMenu {
     private items():Item[]{
         const resume: Item = { id: 'continue', label: '继续游戏' };
         const sound:Item={id:'sound',label:this.platform.soundEnabled?'声音：开':'声音：关'};
-        const ranking:Item={id:'ranking',label:'排行榜',disabled:true},cloud:Item={id:'cloud',label:'云存档',disabled:true};
+        const language:Item={id:'language',label:getLanguage()==='en'?'Language: English':'语言：简体中文'};
         return this.kind === 'main'
-            ? [{ ...resume, disabled: !this.hasSave || this.model.state.status === 'won' }, { id: 'new', label: '新的征程' }, ranking, cloud, sound]
-            : [resume, sound, ranking, cloud, { id: 'home', label: '主菜单' }];
+            ? [{ ...resume, disabled: !this.hasSave || this.model.state.status === 'won' }, { id: 'new', label: '新的征程' }, language, sound]
+            : [resume, language, sound, { id: 'home', label: '主菜单' }];
     }
     /** 暂停立即生效；快速反向切换保留当前位移和透明度，不跳回起点。 */
     open(kind:Kind):void{
@@ -68,7 +69,7 @@ export class HangingMenu {
     private choose(item:Item):void{
         if(this.phase!=='open'||item.disabled)return;
         if(item.id==='sound'){this.platform.setSoundEnabled(!this.platform.soundEnabled);this.onSoundChanged?.(this.platform.soundEnabled);return;}
-        if(item.id==='ranking'||item.id==='cloud')return;
+        if(item.id==='language'){this.platform.setLanguage(getLanguage()==='en'?'zh-CN':'en');return;}
         if (item.id === 'new' && this.hasSave) { this.showNewConfirmation(true); return; }
         this.close(item.id);
     }
@@ -128,10 +129,10 @@ export class HangingMenu {
             p.text('newSaveCancel', '取消', x, 378+y, 26, {layer:13,alpha:a});
             return;
         }
-        if (this.kind==='main') p.sprite('menuHeadingArt','title_wordmark',x,143+y,94,{layer:13,anchorY:.5,alpha:a});
+        if (this.kind==='main') p.sprite('menuHeadingArt',getLanguage()==='en'?'title_wordmark_en':'title_wordmark',x,143+y,94,{layer:13,anchorY:.5,alpha:a});
         else p.text('menuHeading','暂停',x,128+y,32,{layer:13,alpha:a});
         for(const [i,item]of this.items().entries()){
-            const cy = (this.kind === 'main' ? 224 : 202) + i * 71 + y;
+            const cy = (this.kind === 'main' ? 242 : 222) + i * 78 + y;
             button('menu:'+this.kind+':'+item.id,x,cy,292,64,this.phase==='open'&&!item.disabled,()=>this.choose(item));
             p.text('menuLabel:'+this.kind+':'+item.id,item.label,x,cy,26,{layer:13,width:276,alpha:a*(item.disabled?.58:1)});
         }

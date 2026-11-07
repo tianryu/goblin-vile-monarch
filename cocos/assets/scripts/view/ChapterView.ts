@@ -6,6 +6,7 @@ import type { Action } from '../model/State';
 import type { GameView } from './GameView';
 import type { MenuButton } from './HangingMenu';
 import { Visibility } from './Transitions';
+import { getLanguage, translate } from '../i18n/Locale';
 
 const BUTTON_LABELS: Record<string, string> = {
     withdraw: '宝箱', whip: '鞭子', recruit: '旗帜', upgrade: '锤子', cycleMount: '切换',
@@ -56,8 +57,7 @@ export class ChapterView {
                         y: this.view.ground + 17,
                         direction,
                     };
-                    this.view.painter.sprite('guideMove', 'ui_action_ring', 130 + 71 * direction, this.view.height - 27, 60,
-                        { layer: 12, alpha: .52, tint: GOLD });
+                    this.view.painter.text('guideMove', direction<0?'A / ←':'D / →',130,this.view.height-40,24,{layer:12,width:180,color:GOLD});
                 } else if (guide.action) {
                     const action = this.view.context?.actions.slice(0, 3).find(a => a.type === guide.action && a.targetId === target.id);
                     if (action && !action.disabled) {
@@ -124,8 +124,9 @@ export class ChapterView {
         const width = Math.min(1140, w - 36), left = (w - width) / 2, bottom = h - 15, top = bottom - 180;
         p.sprite('chapterDialogueBase', 'ui_tag_v5', w / 2, bottom, 180, { layer: 13, width, anchorY: 0 });
         if (state.id === 'opening') {
-            p.sprite('chapterTitleBase', 'ui_tag_v5', w / 2, 98, 67, { layer: 13, width: 330, anchorY: 0 });
-            p.text('chapterTitle', CHAPTER_TITLE, w / 2, 64, 28, { layer: 13 });
+            const titleWidth = getLanguage()==='en'?470:330;
+            p.sprite('chapterTitleBase', 'ui_tag_v5', w / 2, 98, 67, { layer: 13, width: titleWidth, anchorY: 0 });
+            p.text('chapterTitle', CHAPTER_TITLE, w / 2, 64, 28, { layer: 13, width:titleWidth-28 });
         }
         const key = state.id + ':' + state.page;
         p.sprite('chapterPortrait:' + key, speaker.portrait, left + 94, bottom - 19, 117, { layer: 13 });
@@ -148,11 +149,9 @@ export class ChapterView {
 
     private actionInstruction(action: Action, paid: number): string {
         if (action.cost > paid && this.view.model.state.gold === 0) return '钱袋不够，先筹些金币';
-        const button = BUTTON_LABELS[action.type] || '金币';
-        if (action.type === 'withdraw') return '按右下角宝箱按钮取金币';
-        if (action.type === 'whip') return '按右下角鞭子按钮';
-        if (action.type === 'sell') return '按金边标出的金币按钮交易';
-        return `按${button}按钮${action.cost ? '，还需' + (action.cost - paid) + '枚金币' : ''}`;
+        if (action.type === 'whip') return '按 Q 抽鞭';
+        const hint = translate('按 E 交互');
+        return hint + (action.cost ? `  ${action.cost-paid} ` + translate('金币') : '');
     }
 
     private waitInstruction(guide: ChapterGuide): string {
@@ -215,11 +214,17 @@ export class ChapterView {
     }
 
     private lines(key: string, text: string, x: number, y: number, width: number, size: number, gap: number, layer: number, left = false): void {
-        const count = Math.max(8, Math.floor(width / size));
-        const chars = Array.from(text);
-        for (let i = 0; i < chars.length; i += count) {
-            this.view.painter.text(key + ':' + i, chars.slice(i, i + count).join(''), x, y + i / count * gap, size,
-                { width, layer, align: left ? 'left' : undefined });
-        }
+        text = translate(text);
+        const count = Math.max(8, Math.floor(width / (size * (getLanguage()==='en'?.52:1))));
+        const rows: string[] = [];
+        if (getLanguage()==='en') {
+            let row='';
+            for (const word of text.split(/\s+/)) {
+                if (row && row.length+word.length+1 > count) {rows.push(row);row=word;}
+                else row+=(row?' ':'')+word;
+            }
+            if(row)rows.push(row);
+        } else for(let i=0;i<text.length;i+=count)rows.push(text.slice(i,i+count));
+        rows.forEach((row,index)=>this.view.painter.text(key+':'+index,row,x,y+index*gap,size,{width,layer,align:left?'left':undefined}));
     }
 }

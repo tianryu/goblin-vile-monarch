@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "normal menu language switch",
+    "English opening dialogue",
+    "A and D movement",
+    "E purchase and release",
+    "pause freeze",
+    "language state isolation",
+    "mount panel",
+    "Tab input",
+    "preference and campaign persistence",
+    "1280x720 and 1920x1080 layouts"
+  ],
+  "persistedDay": 1,
+  "errors": [],
+  "missing": []
+}

@@ -7,6 +7,8 @@ import { GameView } from './GameView';
 import { Platform } from '../platform/Platform';
 import { HangingMenu } from './HangingMenu';
 import type { ChapterView } from './ChapterView';
+import { translate } from '../i18n/Locale';
+import { PC_MOUNT_PRICES } from '../model/DesktopRules';
 
 const STICK_RADIUS = 62;
 const STICK_DEAD_ZONE = 8;
@@ -99,14 +101,14 @@ export class Controls {
     }
     private draw(dt: number): void {
         const p = this.view.painter, W = this.view.width, H = this.view.height, playing = this.model.state.status === 'playing';
-        this.joystickZone.active = playing && !this.menu.blocks && !this.chapter?.blocks && !this.model.pauses.size;
+        this.joystickZone.active = false;
         const mockSeconds = this.platform.mockRewardSeconds;
         if (mockSeconds !== undefined) {
             this.mockAd(mockSeconds);
             this.chapter?.afterButtons(dt);
             return;
         }
-        const cycleX = W - 315 - ACTION_SHIFT_X, cycleY = H - 72 - ACTION_SHIFT_Y;
+        const cycleX = W / 2, cycleY = H - 43;
         this.chapter?.guideControls(dt, playing && !this.model.pauses.size, cycleX, cycleY);
         if(this.menu.blocks){
             this.menu.render(this.view,(key,x,y,width,height,enabled,callback)=>{
@@ -129,43 +131,53 @@ export class Controls {
             return;
         }
         this.pauseButton();
-        this.adButtons(dt);
-        const top=H*.24, leftWidth=W/3;
-        this.joystickTransform.setContentSize(leftWidth,H-top);
-        this.joystickZone.setPosition(leftWidth/2-W/2,-top/2,0);
-        const origin=this.joystickOrigin ?? {x:130,y:H-77};
-        p.sprite('joystickBase','ui_joystick_base',origin.x,origin.y,103,{layer:12,width:220,anchorY:.5,alpha:.96});
-        p.sprite('joystickKnob','ui_joystick_knob',origin.x+this.joystickAxis*STICK_RADIUS,origin.y,60,{layer:12,anchorY:.5});
-        this.sprintButton();
-        if (this.model.awayFromHome) {
-            const x = W - 349, y = H - 218, disabled = !this.model.canReturnHome;
-            this.button('returnHome', 'hall1', x, y, 60, () => this.returnHome(), disabled, false, 12, undefined, 72, ACTION_OPACITY);
-            const seconds = Math.ceil(this.model.returnHomeSeconds);
-            p.text('returnHomeLabel', seconds ? `${seconds}秒` : '回洞', x, y+34, 15, {layer:12,alpha:disabled?.65:1});
-        }
-        if (this.model.nearbyTargets>1) this.button('cycleTarget','icon_rotate',cycleX,cycleY,55,
-            ()=>{this.held=null;this.model.cancelPledge();this.model.cycleTarget();},false,false,12,undefined,76,ACTION_OPACITY);
-        const actions = this.view.context?.actions || [];
-        const whip = actions.find(a => a.type === 'whip');
-        const other = actions.filter(a => a.type !== 'whip');
-        const slots = [other[0], whip, other[1], other[2]];
-        const positions = [[82, 82], [205, 187], [80, 187], [80, 293]];
-        for (const [i, a] of slots.entries()) {
-            if (!a) continue;
-            const [right, bottom] = positions[i];
-            const x = W - right - ACTION_SHIFT_X, y = H - bottom - ACTION_SHIFT_Y;
-            const disabled = !!a.disabled || a.type === 'ad' && !this.platform.adsReady || this.adBusy;
-            this.button(`action${i}`, a.icon, x, y, i === 0 ? 113 : 77, () => this.startAction(a), disabled, false,12,undefined,76,ACTION_OPACITY);
-            this.chapter?.actionButton(a, x, y, i === 0 ? 113 : 77, disabled);
-        }
-        this.chapter?.skipButtons((key, x, y, width, height, enabled, callback) =>
-            this.button(key, 'ui_button_v5', x, y, height, callback, !enabled, true, 12, width));
+        this.desktopButtons();
+        this.chapter?.skipButtons((key,x,y,width,height,enabled,callback)=>this.button(key,'ui_button_v5',x,y,height,callback,!enabled,true,12,width));
         this.chapter?.afterButtons(dt);
+        return;
     }
+    /** 固定键位和鼠标热区共用同一业务入口，不因交互对象变化交换 E 与 Q。 */
+    private desktopButtons(): void {
+        const {painter:p,width:W,height:H}=this.view;
+        const actions=this.view.context?.actions||[];
+        const primary=actions.find(a=>a.type!=='whip');
+        const secondary=actions.filter(a=>a.type!=='whip')[1];
+        const whip=actions.find(a=>a.type==='whip');
+        const command=(key:string,label:string,icon:string,index:number,callback:()=>void,disabled=false,action?:Action)=>{
+            const x=W/2+(index-2)*105,y=H-78;
+            this.button('pc:'+key,icon,x,y,43,callback,disabled,false,12,undefined,48,.9,48);
+            p.text('pc:key:'+key,key,x-29,y+18,15,{layer:12,color:new Color(255,221,130)});
+            p.text('pc:label:'+key,label,x,y+55,14,{layer:12,width:100,alpha:disabled?.5:1});
+            if(action)this.chapter?.actionButton(action,x,y+21,43,disabled);
+        };
+        command('E','交互',primary?.icon||'coin',0,()=>{if(primary)this.startAction(primary);},!primary||!!primary.disabled,primary);
+        command('Q','抽鞭','icon_whip',1,()=>{if(whip)this.startAction(whip);},!whip||!!whip.disabled,whip);
+        command('Tab','换目标','icon_rotate',2,()=>this.cycle(),this.model.nearbyTargets<2);
+        command('H','回洞','hall1',3,()=>this.returnHome(),!this.model.canReturnHome);
+        command('M','坐骑','boar',4,()=>{this.adPanel=this.adPanel==='mount'?undefined:'mount';this.held=null;});
+        if(secondary)command('R',secondary.type==='upgrade'?'扩建':'交互',secondary.icon,5,()=>this.startAction(secondary),!!secondary.disabled,secondary);
+        p.text('pc:movement','A / D   ← / →',100,H-47,20,{layer:12,width:190});
+        p.text('pc:sprint','Shift  '+translate('奔跑'),100,H-24,15,{layer:12,width:190});
+        const s=this.model.state.player,ratio=Math.max(0,Math.min(1,s.stamina/RULES.mount[s.mount].stamina));
+        p.sprite('pc:staminaBack','ui_bar',100,H-65,12,{width:150,layer:12,anchorY:.5,alpha:.8});
+        if(ratio>0)p.sprite('pc:staminaFill','ui_bar_fill',25+75*ratio,H-65,7,{width:150*ratio,layer:12,anchorY:.5,tint:new Color(115,225,152)});
+        if(this.adPanel==='mount'){
+            const costs=PC_MOUNT_PRICES;
+            p.sprite('pc:mountBack','ui_tag_v5',W/2,H-107,110,{layer:12,width:560,anchorY:0});
+            for(const [i,mount]of(Object.keys(costs)as Mount[]).entries()){
+                const x=W/2+(i-1.5)*130,y=H-181,owned=this.model.state.unlockedMounts.includes(mount),current=s.mount===mount;
+                this.button('pc:mount:'+mount,mount,x,y,49,()=>{if(this.model.purchaseMount(mount)){this.adPanel=undefined;this.saved(true);}},current||!owned&&this.model.state.gold<costs[mount],false,12,undefined,50,.95,50);
+                p.text('pc:mountName:'+mount,RULES.mount[mount].name,x,y+63,16,{layer:12,width:122});
+                p.text('pc:mountCost:'+mount,current?'已骑乘':owned?'骑乘':String(costs[mount]),x,y+85,15,{layer:12,width:110});
+                if(!owned)p.sprite('pc:mountCoin:'+mount,'coin',x+23,y+94,16,{layer:12});
+            }
+        }
+    }
+    private cycle(): void {this.held=null;this.model.cancelPledge();this.model.cycleTarget();}
     private resultButtons(): void {
         const { painter, width, height } = this.view;
         const lost = this.model.state.status === 'lost', center = width / 2, y = height / 2 + (lost ? 60 : 75);
-        const restartX = center + (lost ? 112 : 0);
+        const restartX = center;
         this.button('resultRestart', 'ui_button_v5', restartX, y, 50, () => {
             if (this.adBusy) return;
             this.release();
@@ -177,15 +189,6 @@ export class Controls {
             this.saved(true);
         }, this.adBusy, true, 13, 206);
         painter.text('resultRestartLabel', lost ? '整顿部落' : '重新开始', restartX, y, 24, { layer: 13, width: 206, alpha: this.adBusy ? .52 : 1 });
-        if (!lost) return;
-        const reviveX = center - 112, unavailable = !this.platform.adsReady, disabled = unavailable || this.adBusy;
-        this.button('resultRevive', 'ui_button_v5', reviveX, y, 50, () => this.watchRewarded('revive'), disabled, true, 13, 206);
-        const alpha = disabled ? .66 : 1;
-        painter.text('resultReviveLabel', '满血复活', reviveX - 8, y, 24, { layer: 13, width: 206, alpha });
-        painter.sprite('resultReviveVideo', 'icon_play', reviveX + 61, y, 20, { layer: 13, anchorY: .5, alpha });
-        const note = unavailable ? '视频暂不可用' : this.adBusy ? '等待视频' : this.reviveAdFailed ? '视频未播完，可重试' : '';
-        if (note) painter.text('resultAdNote', note, reviveX, height / 2 + 94, 16,
-            { layer: 13, width: 206, color: new Color(94, 67, 47) });
     }
     private get shiftHeld(): boolean {
         return this.keys.has(KeyCode.SHIFT_LEFT) || this.keys.has(KeyCode.SHIFT_RIGHT);
@@ -300,7 +303,7 @@ export class Controls {
         p.text('mockCompleteText', '领取奖励', x + 103, y + 43, 23, { layer: 13, alpha: seconds ? .5 : 1 });
     }
     private pauseButton(): void {
-        this.button('pause', 'ui_pause_control', this.view.width - 310, 60, 58, () => {
+        this.button('pause', 'ui_pause_control', this.view.width - 55, 45, 48, () => {
             // 暂停入口只开菜单，关闭由菜单内的「继续游戏」处理。
             if (this.menu.blocks || this.model.pauses.size) return;
             this.release();
@@ -333,7 +336,7 @@ export class Controls {
             const id = event.getID();
             if (id === this.joystickId) return;
             // 奔跑等独立按钮不能抢走正在按住的世界交互。
-            if (key.startsWith('action') && id !== null) this.actionId = id;
+            if ((key.startsWith('action') || ['pc:E','pc:Q','pc:R'].includes(key)) && id !== null) this.actionId = id;
             this.handlers.get(key)?.();
             event.propagationStopped = true;
         });
@@ -416,17 +419,19 @@ export class Controls {
         if (this.keys.has(event.keyCode)) return;
         this.keys.add(event.keyCode);
         if (this.chapter?.blocks && !this.menu.blocks) {
-            if ([KeyCode.ENTER, KeyCode.SPACE, KeyCode.KEY_E].includes(event.keyCode)) this.chapter.director.advance();
+            if ([KeyCode.ENTER, KeyCode.NUM_ENTER, KeyCode.SPACE, KeyCode.KEY_E].includes(event.keyCode)) this.chapter.director.advance();
             if (event.keyCode === KeyCode.ESCAPE) this.chapter.director.advance(true);
             return;
         }
         if (event.keyCode === KeyCode.ESCAPE) { this.release(); this.menu.togglePause(); return; }
         if(this.menu.blocks)return;
         if (event.keyCode === KeyCode.KEY_H) { this.returnHome(); return; }
+        if (event.keyCode === KeyCode.TAB) {this.cycle();return;}
+        if (event.keyCode === KeyCode.KEY_M) {this.held=null;this.adPanel=this.adPanel==='mount'?undefined:'mount';return;}
         const actions = this.model.context()?.actions || [];
-        if (event.keyCode === KeyCode.KEY_E || event.keyCode === KeyCode.SPACE) { if (actions[0]) this.startAction(actions[0]); }
+        if (event.keyCode === KeyCode.KEY_E || event.keyCode === KeyCode.SPACE) { const action=actions.find(a=>a.type!=='whip');if(action)this.startAction(action); }
         if (event.keyCode === KeyCode.KEY_Q) { const whip = actions.find(a => a.type === 'whip'); if (whip) this.startAction(whip); }
-        if (event.keyCode === KeyCode.KEY_R) { const recruit = actions.find(a => a.type === 'recruit'); if (recruit) this.startAction(recruit); }
+        if (event.keyCode === KeyCode.KEY_R) {const extra=actions.filter(a=>a.type!=='whip')[1];if(extra)this.startAction(extra);}
     }
     private keyUp(event: EventKeyboard): void {
         this.keys.delete(event.keyCode);

@@ -682,15 +682,15 @@ export class GameView {
         }
         if(this.model.notice&&s.elapsed<this.model.notice.until){p.sprite('noticeBase','ui_tag_v5',W-172,this.height-260,45,{layer:12,width:220});p.text('notice',this.model.notice.text,W-172,this.height-283,22,{width:210});}
         if (this.model.waitingForSiege) {
-            p.sprite('siegeWaitBase', 'ui_tag_v5', W / 2, this.height - 34, 44, { layer: 12, width: 238 });
-            p.text('siegeWait', '等待攻城器械跟上', W / 2, this.height - 57, 20, { width: 226 });
+            p.sprite('siegeWaitBase', 'ui_tag_v5', W / 2, this.height - 110, 44, { layer: 12, width: 270 });
+            p.text('siegeWait', '等待攻城器械跟上', W / 2, this.height - 133, 20, { width: 258 });
         }
         if (this.model.state.status !== 'playing' && !this.chapter?.blocks) {
             p.sprite('resultBase', 'ui_panel_v5', W / 2, this.height / 2 + 110, 245, { layer: 13, width: 550 });
-            p.text('resultTitle', s.status === 'won' ? '运兵船归哥布林了' : '首领倒下了', W / 2, this.height / 2 - 70, 38, { layer: 13, color: new Color(87, 52, 33) });
-            p.text('resultDetails', `第${s.day}日  击倒${s.kills}人  售出${s.sold}名俘虏`, W / 2, this.height / 2 - 12, 22, { layer: 13, color: new Color(94, 67, 47) });
+            p.text('resultTitle', s.status === 'won' ? '运兵船归哥布林了' : '首领倒下了', W / 2, this.height / 2 - 70, 38, { layer: 13, width:500, color: new Color(87, 52, 33) });
+            p.text('resultDetails', `第${s.day}日  击倒${s.kills}人  售出${s.sold}名俘虏`, W / 2, this.height / 2 - 12, 22, { layer: 13, width:500, color: new Color(94, 67, 47) });
             if (s.status === 'lost') p.text('resultLosses', '整顿部落会损失半数设施和居民，金币清空',
-                W / 2, this.height / 2 + 20, 18, {layer:13,color:new Color(94,67,47)});
+                W / 2, this.height / 2 + 20, 18, {layer:13,width:500,color:new Color(94,67,47)});
         }
     }
     private foreground(): void { this.band('foreground', 1100, this.height + 7, 83, 1.12, 11, new Color(78, 104, 95), 0, .9); }

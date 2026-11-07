@@ -1,10 +1,10 @@
 {
-  "name": "goblin-monarch",
+  "name": "goblin-vile-monarch-pc",
   "uuid": "771f3a04-af32-4af6-93be-1970db519500",
-  "version": "0.9.0",
+  "version": "0.11.0",
   "private": true,
   "creator": {
     "version": "3.8.8"
   },
-  "description": "我是哥布林：君主 TapTap小游戏工程"
+  "description": "哥布林：卑劣君主 Windows PC edition with Chinese and English"
 }

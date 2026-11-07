@@ -10,6 +10,7 @@ import { ChapterDirector } from './model/ChapterDirector';
 import { GAME_TITLE } from './model/ChapterText';
 import { ChapterView } from './view/ChapterView';
 import { Soundscape } from './view/Soundscape';
+import { translate, missingTranslations } from './i18n/Locale';
 const { ccclass } = _decorator;
 
 /** 正式场景入口，后续视图与平台服务都在这个生命周期内装配。 */
@@ -28,19 +29,28 @@ export class MonarchGame extends Component {
     private replacePending = false;
     private browserCanvas?: HTMLCanvasElement;
     private readonly preventGesture = (event: Event) => event.preventDefault();
+    private readonly beforeUnload = () => { if (this.model) this.save(); };
+    private readonly desktopKeys = (event: KeyboardEvent) => {
+        // 防止 Tab 把焦点移出游戏，方向键和空格滚动浏览器页面。
+        if (['Tab','Space','ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.code)) event.preventDefault();
+    };
     private audio?: Soundscape;
     private soundReady = false;
     async start(): Promise<void> {
         profiler.hideStats();
-        if (typeof document !== 'undefined') document.title = GAME_TITLE;
+        if (typeof document !== 'undefined') document.title = translate(GAME_TITLE);
         view.setDesignResolutionSize(1280, 600, ResolutionPolicy.FIXED_HEIGHT);
+        if (typeof window !== 'undefined') {
+            window.addEventListener('beforeunload', this.beforeUnload);
+            window.addEventListener('keydown', this.desktopKeys);
+        }
         const canvasNode = new Node('GameCanvas'); canvasNode.layer = Layers.Enum.UI_2D; this.node.addChild(canvasNode);
         canvasNode.addComponent(UITransform).setContentSize(1280, 600);
         const cameraNode = new Node('UICamera'); this.node.addChild(cameraNode); cameraNode.setPosition(0, 0, 1000);
         const camera = cameraNode.addComponent(Camera); camera.projection = Camera.ProjectionType.ORTHO; camera.orthoHeight = 300;
         camera.visibility = Layers.Enum.UI_2D; camera.clearFlags = Camera.ClearFlag.SOLID_COLOR; camera.clearColor = new Color(3, 4, 6, 255);
         const canvas = canvasNode.addComponent(Canvas); canvas.cameraComponent = camera;
-        this.platform = new Platform(DEBUG && (globalThis as any).__MONARCH_QA__ ? 'goblin-monarch-cocos-v9-qa' : undefined);
+        this.platform = new Platform(DEBUG && (globalThis as any).__MONARCH_QA__ ? 'goblin-vile-monarch-pc-qa' : undefined);
         if (!this.platform.isTapTap && typeof document !== 'undefined') {
             this.browserCanvas = game.canvas ?? undefined;
             if (this.browserCanvas) {
@@ -76,12 +86,13 @@ export class MonarchGame extends Component {
         this.menus.onSoundChanged=enabled=>{if (!enabled) this.audio?.suspend();};
         input.on(Input.EventType.TOUCH_START, this.unlockAudio, this); input.on(Input.EventType.KEY_DOWN, this.unlockAudio, this);
         game.on(Game.EVENT_HIDE, this.hide, this); game.on(Game.EVENT_SHOW, this.show, this);
+        game.on(Game.EVENT_CLOSE, this.hide, this);
         this.platform.initialize().catch(error => console.warn('[Monarch] platform initialize failed', error?.message));
         if (DEBUG) (globalThis as any).__monarch = { model: this.model, view: this.world, controls: this.controls, platform: this.platform,menus:this.menus,
             reset: () => { this.controls!.release(); this.model.restart(); this.world!.camera = this.model.state.player.x; },
             advance: (seconds: number) => { for (let i = 0; i < seconds * 30; i++) this.model.tick(1 / 30); },
-            save: () => this.save(), engine: 'Cocos Creator 3.8.8', target: 'taptap-minigame',checkpoint:'store-20261104' };
-        console.info('[Monarch] Cocos game ready, TapTap minigame target');
+            save: () => this.save(), missingTranslations, engine: 'Cocos Creator 3.8.8', target: 'windows-pc',checkpoint:'pc-20261107' };
+        console.info('[Monarch] Cocos PC game ready');
     }
     update(dt: number): void {
         if (!this.world || !this.controls) return;
@@ -119,8 +130,13 @@ export class MonarchGame extends Component {
     private show(): void { this.model.pause('background', false); this.accumulator = 0; }
     onDestroy(): void {
         this.browserCanvas?.removeEventListener('gesturestart', this.preventGesture);
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('beforeunload', this.beforeUnload);
+            window.removeEventListener('keydown', this.desktopKeys);
+        }
         this.controls?.destroy(); input.off(Input.EventType.TOUCH_START, this.unlockAudio, this); input.off(Input.EventType.KEY_DOWN, this.unlockAudio, this);
         game.off(Game.EVENT_HIDE, this.hide, this); game.off(Game.EVENT_SHOW, this.show, this);
+        game.off(Game.EVENT_CLOSE, this.hide, this);
         if (this.model) this.save();
         if (DEBUG) delete (globalThis as any).__monarch;
     }

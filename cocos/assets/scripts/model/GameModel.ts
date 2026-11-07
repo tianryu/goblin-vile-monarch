@@ -10,6 +10,7 @@ import {upgradeHorde,armoredDamage} from './HordeUpgrade';
 import { CAVE_PRISON_X, CAVE_TOWER_REGION, REMOVED_STALLS, TRADER_CART_OFFSET, TRADER_STOP, upgradeBaseLayout, replaceCaveTower } from './BaseLayout';
 import { ATTACK_LEAD, METEOR_DAMAGE_RADIUS } from './EnemyAttack';
 import type { QueuedAttackStyle } from './EnemyAttack';
+import { PC_MOUNT_PRICES } from './DesktopRules';
 
 const AD_VARIANTS = ['gold', 'hunter', 'worker', 'lizard', 'wolf', 'bat', 'stamina'];
 
@@ -472,6 +473,21 @@ export class GameModel {
         if (n.strikes >= 4) { n.stunned = 8; n.strikes = 0; }
         s.player.face = n.x < s.player.x ? -1 : 1; s.player.whip = .45;
         this.effect('hit', n.x, .45); this.events.push({ kind: 'whip', x: n.x });
+    }
+    /** PC 坐骑改为一次性金币购买；先验证再扣费，重复购买只切换，不重复结算。 */
+    purchaseMount(mount: Mount): boolean {
+        const costs = PC_MOUNT_PRICES;
+        if (!Object.prototype.hasOwnProperty.call(costs,mount) || this.pauses.size || this.state.status !== 'playing') return false;
+        this.cancelPledge();
+        if (!this.state.unlockedMounts.includes(mount)) {
+            const price=costs[mount];
+            if (this.state.gold<price) return false;
+            this.state.gold-=price;this.state.spent+=price;this.state.unlockedMounts.push(mount);
+            this.events.push({kind:'coin',x:this.state.player.x});
+        }
+        this.state.player.mount=mount;
+        this.state.player.stamina=Math.min(this.state.player.stamina,RULES.mount[mount].stamina);
+        this.dirty=true;return true;
     }
     gain(amount: number): void {
         const fit = Math.max(0, Math.min(amount, 50 - this.state.gold));

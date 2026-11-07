@@ -8,11 +8,27 @@
 
 1. 使用 Cocos Creator 3.8.8 打开 `cocos/`。
 2. 打开 `assets/scenes/Main.scene` 并预览。
-3. 当前玩法以 `docs/GAME_DESIGN.md` 为准，开发交接见 `docs/PROGRESS_HANDOFF.md`。
+3. PC 改造以 `docs/PC_DESIGN_20261107.md` 为准，原玩法见 `docs/GAME_DESIGN.md`，实际验证见 `docs/PC_DELIVERY_20261107.md`。
 
 `cocos/assets/` 包含正式运行代码与素材，`cocos/art/` 与 `art/` 保存原画和设计参考。`cocos/tools/`、`cocos/tests/` 和 `qa/` 保存处理工具、测试与相关记录。
 
 编辑器缓存、依赖目录、动画制作中间文件、录屏和历史导出包保留在本地。克隆后由编辑器重新导入资源，正式导出可按 `cocos/config/` 的配置执行。
+
+## PC 分支
+
+`codex/pc-desktop` 面向 Windows x64，使用原生 Cocos 运行时。保留第一章经营、防守和出征战役，界面改为键鼠操作，移除手机广告入口。主菜单和暂停菜单支持简体中文、英语即时切换。
+
+操作：A/D 或左右键移动，Shift 奔跑，E 交互与连续投币，Q 抽鞭，R 第二项操作，Tab 切换附近目标，H 回洞，M 选择坐骑，Esc 暂停，Enter 推进对白。底部操作图标也可用鼠标点击。
+
+Windows 开发需要 Cocos Creator 3.8.8、Visual Studio 2022 的 C++ 桌面工具与 Windows SDK：
+
+```powershell
+./scripts/build_pc.ps1 -Target windows -Compile
+```
+
+桌面预览：`./scripts/build_pc.ps1 -Target preview`。默认构建位置为 `cocos/build/pc-windows-20261107` 和 `cocos/build/pc-preview-20261107`，不提交编译输出。构建配置在 `configs/`。
+
+英文工作名称为 **Goblin: Vile Monarch**。显示词条位于 `cocos/assets/scripts/i18n/`，语言偏好与战役分离保存。原版手机存档不受 PC 版影响。完整 Steam 服务和发行尚不在本轮范围内。
 
 ## 许可与素材
 

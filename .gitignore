@@ -38,3 +38,5 @@
 /qa/**/*.zip
 /qa/**/model/
 /qa/**/model-out/
+/qa/**/python-deps/
+/cocos/native/engine/common/localCfg.cmake

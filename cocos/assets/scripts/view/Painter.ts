@@ -1,6 +1,7 @@
-import { Node, Sprite, UITransform, UIOpacity, Layers, Color, Label } from 'cc';
+import { Node, Sprite, UITransform, UIOpacity, Layers, Color, Label, sys } from 'cc';
 import { ArtBank } from './ArtBank';
 import { Visibility } from './Transitions';
+import { translate } from '../i18n/Locale';
 interface Drawn { node: Node; fade: Visibility; touched: number; alpha: number; shownAlpha: number; transform:UITransform;opacity:UIOpacity; sprite?: Sprite; label?: Label; fadeRate?: number; }
 export interface DrawOptions { alpha?: number; face?: number; angle?: number; tint?: Color; width?: number; anchorX?: number; anchorY?: number; mirrorY?: boolean; layer?: number; frameKey?: string; fadeRate?: number; scale?: number; }
 /** 复用节点并统一显隐；图片层级与文本坐标都使用同一设计分辨率。 */
@@ -22,7 +23,11 @@ export class Painter {
             value = { node, fade: new Visibility(), touched: this.epoch, alpha: 1, shownAlpha: 1,transform,opacity };
             if (text) {
                 value.label = node.addComponent(Label);
-                value.label.font = this.art.font;
+                if(sys.isNative){
+                    // Windows 原生由启动器私有注册字体，按真实字族使用，避免 UUID 文件名触发系统宋体回退。
+                    value.label.useSystemFont=true;
+                    value.label.fontFamily='Goblin Hand Cocos';
+                } else value.label.font = this.art.font;
                 // 整行栅格化，避免共享字形图集用满后新字符消失。
                 value.label.cacheMode = Label.CacheMode.BITMAP;
                 value.label.enableWrapText = false;
@@ -62,9 +67,13 @@ export class Painter {
     text(key: string, text: string, x: number, y: number, size: number, options: { color?: Color; alpha?: number; width?: number; layer?: number; align?: 'left' } = {}): Node {
         const d = this.obtain(`text:${key}`, options.layer ?? 12, true);
         const label = d.label!;
+        text = translate(text);
         if (label.string !== text) label.string = text;
         label.fontSize = size; label.lineHeight = size + 6; label.color = options.color || new Color(255, 241, 202, 255);
-        label.overflow = Label.Overflow.NONE; label.horizontalAlign = options.align === 'left' ? Label.HorizontalAlign.LEFT : Label.HorizontalAlign.CENTER; label.verticalAlign = Label.VerticalAlign.CENTER;
+        const bounded = options.width !== undefined;
+        label.overflow = bounded ? Label.Overflow.SHRINK : Label.Overflow.NONE;
+        if (bounded && (d.transform.width !== options.width || d.transform.height !== size + 10)) d.transform.setContentSize(options.width!, size + 10);
+        label.horizontalAlign = options.align === 'left' ? Label.HorizontalAlign.LEFT : Label.HorizontalAlign.CENTER; label.verticalAlign = Label.VerticalAlign.CENTER;
         // 自适应文本的内容尺寸由 Cocos 排版器决定，避免每帧覆盖后重复栅格化。
         d.transform.setAnchorPoint(options.align === 'left' ? 0 : .5, .5);
         const px = x - this.width / 2, py = this.height / 2 - y;

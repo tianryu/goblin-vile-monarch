@@ -1,0 +1,19 @@
+{
+  "platform": "windows-x64",
+  "build": "0.11.0",
+  "nativeBuildPassed": true,
+  "zipIntegrityPassed": true,
+  "debug": false,
+  "nativeWindowChecks": [
+    "startup from portable directory",
+    "mouse menu buttons",
+    "Chinese and English menus",
+    "private hand-painted font",
+    "campaign and language reload"
+  ],
+  "nativeKeyboard": "Automated key presses produced no observed response; cause unconfirmed, physical keyboard retest required.",
+  "zipBytes": 44298574,
+  "zipSha256": "5b8dc8231e81eca46828367673c054b6fc872bf5beffd5ea0c47d19c520d1914",
+  "dllCount": 24,
+  "missingDependencies": []
+}
