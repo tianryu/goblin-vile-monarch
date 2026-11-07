@@ -55,3 +55,6 @@ list(APPEND CC_COMMON_SOURCES
     ${CMAKE_CURRENT_LIST_DIR}/Classes/Game.h
     ${CMAKE_CURRENT_LIST_DIR}/Classes/Game.cpp
 )
+if(WIN32)
+    list(APPEND CC_COMMON_SOURCES ${CMAKE_CURRENT_LIST_DIR}/Classes/WindowsGamepad.cpp)
+endif()

@@ -10,7 +10,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'cocos/build/pc-windows-20261107/proj/Release'
-DEST = ROOT / 'release/windows-pc-20261107/GoblinVileMonarch'
+DEST = ROOT / 'release/windows-pc-20261107-controller/GoblinVileMonarch'
+VERSION = json.loads((ROOT / 'cocos/package.json').read_text(encoding='utf-8-sig'))['version']
 EXE = 'GoblinVileMonarch.exe'
 assert (SOURCE / EXE).is_file() and (SOURCE / 'Resources/main.js').is_file(), 'Build the Windows target first'
 vs = Path(os.environ.get('ProgramFiles', 'C:/Program Files')) / 'Microsoft Visual Studio/2022/Community/VC'
@@ -53,23 +54,27 @@ licenses.mkdir(exist_ok=True)
 for folder in [ROOT / 'cocos/assets/resources/licenses', ROOT / 'game/licenses']:
     for file in folder.glob('*.txt'):
         shutil.copy2(file, licenses / file.name)
-(DEST / 'README.txt').write_text('''哥布林：卑劣君主 Windows PC 本地试玩版 0.11.0
+(DEST / 'README.txt').write_text('''哥布林：卑劣君主 Windows PC 本地试玩版 __VERSION__
 解压整个文件夹，运行 GoblinVileMonarch.exe。请勿单独移动 EXE。
 Windows 10/11 x64，支持简体中文与英语。语言和声音开关位于主菜单及暂停菜单。
 A/D 或左右方向键移动，Shift 奔跑，E 交互和连续投币，Q 抽鞭，R 第二项操作。
-Tab 切换附近目标，H 回洞，M 坐骑，Esc 暂停，Enter 推进对白。
+Tab 切换附近目标，H 回洞，F1 操作说明，Esc 暂停，Enter 推进对白。
 底部图标支持鼠标点击。关闭窗口会保存。PC 存档与手机版隔离。
+手柄支持 Windows XInput：左摇杆或方向键移动，A 交互，B 抽鞭，X 第二操作，Y 切换，LB 奔跑，RT 回洞，Start 暂停，Back 操作说明。
+坐骑商人从第2天起每隔两天清晨到访，傍晚离开；靠近后投币兑换当期坐骑。
 
-Goblin: Vile Monarch, Windows PC local build 0.11.0
+Goblin: Vile Monarch, Windows PC local build __VERSION__
 Extract the complete folder, then launch GoblinVileMonarch.exe.
 Windows 10/11 x64. Switch Simplified Chinese and English in either menu.
 A/D or arrows: move. Hold Shift: sprint. E: interact/pay. Q: whip. R: secondary action.
-Tab: next target. H: return home. M: mounts. Esc: pause. Enter: next dialogue.
+Tab: next target. H: return home. F1: controls. Esc: pause. Enter: next dialogue.
+Windows XInput gamepad: LS/D-pad move, A interact, B whip, X secondary, Y next target, LB sprint, RT home, Start pause, Back controls.
+A mount trader visits every other morning from day 2 and leaves at dusk. Approach to trade.
 Keep the Resources folder and DLLs beside the executable. Local saves are separate from the mobile version.
 
 Third-party notices are in licenses. Images were generated with OpenAI ImageGen.
-''', encoding='utf-8')
-manifest = {'version': '0.11.0', 'platform': 'windows-x64', 'debug': False,
+'''.replace('__VERSION__',VERSION), encoding='utf-8')
+manifest = {'version': VERSION, 'platform': 'windows-x64', 'debug': False,
             'languages': ['zh-CN', 'en'], 'dlls': sorted(x for x in visited if x.endswith('.dll')),
             'systemImports': sorted(system), 'exeSha256': hashlib.sha256((DEST / EXE).read_bytes()).hexdigest()}
 (DEST / 'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')

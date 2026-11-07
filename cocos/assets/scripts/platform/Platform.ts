@@ -1,25 +1,13 @@
 import { sys } from 'cc';
-import { DEBUG } from 'cc/env';
 import { State } from '../model/State';
 import { Language, setLanguage } from '../i18n/Locale';
 // PC 战役与手机小游戏隔离，语言和音量偏好再与战役分离。
 const STORAGE_KEY = 'goblin-vile-monarch-pc-v1';
-type RewardResult = { completed: boolean; receipt: string };
-interface TapHost {
-    getStorageSync(key: string): any; setStorageSync(key: string, value: any): void;
-    getAccountInfoSync(): { miniGame: { appId: string } };
-    login(options: { timeout?: number; success: (result: { code: string }) => void; fail: (reason: any) => void }): void;
-}
-/** 平台身份和存档入口。缺少目标小游戏ID时不借用其他应用的广告配置。 */
+/** PC 本地存档和长期设置，不加载广告 SDK 或调用平台登录。 */
 export class Platform {
-    readonly tap: TapHost | undefined = (globalThis as any).tap;
-    private readonly storageKey: string;
-    readonly mockAds = DEBUG && !this.tap && typeof location !== 'undefined' &&
-        ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) &&
-        new URLSearchParams(location.search).get('mockAds') === '1';
-    private mockReward?: { readyAt: number; resolve: (reward: RewardResult) => void };
+    private readonly storageKey:string;
     constructor(private readonly baseStorageKey = STORAGE_KEY) {
-        this.storageKey = this.mockAds ? baseStorageKey + ':mock-ads' : baseStorageKey;
+        this.storageKey = baseStorageKey;
         // 声音设置独立于战役，重新开局不会重置偏好。
         try{const raw=this.read(this.storageKey+':settings')??this.read(baseStorageKey+':settings');if(raw){const settings=JSON.parse(raw);this.soundEnabled=settings.soundEnabled!==false;this.language=settings.language==='en'?'en':'zh-CN';}}catch(_){/* 损坏设置回到默认开启，不改玩家战役档。 */}
         setLanguage(this.language);
@@ -37,28 +25,14 @@ export class Platform {
         this.soundEnabled=enabled;
         this.saveSettings();
     }
-    miniappId = '';
-    loginReady = false;
-    storageError = false;
-    get isTapTap(): boolean { return !!this.tap; }
-    get adsReady(): boolean { return this.mockAds; }
-    async initialize(): Promise<void> {
-        if (!this.tap) return;
-        try { this.miniappId = this.tap.getAccountInfoSync()?.miniGame?.appId || ''; } catch (_) { /* 身份读取失败不伪造ID。 */ }
-        await new Promise<void>(resolve => {
-            this.tap!.login({ timeout: 10000, success: () => { this.loginReady = true; resolve(); }, fail: () => resolve() });
-        });
-    }
-    private read(key: string): string | null {
-        const value = this.tap ? this.tap.getStorageSync(key) : sys.localStorage.getItem(key);
-        return typeof value === 'string' ? value : null;
-    }
-    private write(key: string, value: string): void {
-        if (this.tap) this.tap.setStorageSync(key, value); else sys.localStorage.setItem(key, value);
-    }
+    storageError=false;
+    get isTapTap():boolean{return false;}
+    async initialize():Promise<void>{}
+    private read(key:string):string|null{return sys.localStorage.getItem(key);}
+    private write(key:string,value:string):void{sys.localStorage.setItem(key,value);}
     load(): State | undefined {
         const keys = [this.storageKey, this.storageKey + ':backup'];
-        if (this.mockAds) keys.push(this.baseStorageKey, this.baseStorageKey + ':backup');
+
         for (const key of keys) {
             try {
                 const raw = this.read(key); if (!raw) continue;
@@ -76,21 +50,5 @@ export class Platform {
             if (replaceCampaign) this.write(this.storageKey + ':backup', data);
             this.storageError = false; return true;
         } catch (_) { this.storageError = true; return false; }
-    }
-    get mockRewardSeconds(): number | undefined {
-        if (this.mockReward) return Math.max(0, Math.ceil((this.mockReward.readyAt - Date.now()) / 1000));
-    }
-    async rewarded(_kind: string): Promise<RewardResult> {
-        if (!this.mockAds || this.mockReward) return { completed: false, receipt: '' };
-        return new Promise(resolve => {
-            this.mockReward = { readyAt: Date.now() + 2000, resolve };
-        });
-    }
-    finishMockReward(completed: boolean): void {
-        const active = this.mockReward;
-        if (!active || completed && Date.now() < active.readyAt) return;
-        this.mockReward = undefined;
-        const receipt = completed ? 'mock:' + (globalThis.crypto?.randomUUID?.() ?? Date.now() + ':' + Math.random()) : '';
-        active.resolve({ completed, receipt });
     }
 }

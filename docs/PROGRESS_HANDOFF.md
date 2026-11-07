@@ -1,3 +1,7 @@
+# 11 月 7 日 PC 手柄与来访商人
+
+0.12.0在codex/pc-desktop接入标准手柄、菜单焦点导航、按键切换和操作说明。PC广告接口和奖励流程已清理，旧广告回执被拒绝。取消M随时购坐骑面板，第2天起每隔两天清晨由坐骑商人进场，傍晚离开，逐次轮换商品且保存成交状态；靠近投币，未完成可退款。先读docs/PC_CONTROLLER_MERCHANT_20261107.md，结果见qa/pc/controller/及controller-model.json。实体手柄仍待实测，不能把浏览器模拟输入写成原生设备已验收。旧手机版和0.11.0包保留。
+
 # 11 月 7 日 GitHub 与 PC 分支
 
 公开仓库 https://github.com/tianryu/goblin-vile-monarch 。main 保存手机基线49e1bc4，PC 改造位于 codex/pc-desktop，先读 docs/PC_DESIGN_20261107.md 和 docs/PC_DELIVERY_20261107.md。Windows 原生 Cocos x64、独立 PC 存档、键鼠栏、简中/英语菜单切换与显示翻译、英文标题、金币坐骑已接入。720p/1080p浏览器输入与语言定向检查通过，Windows 包已实际启动并检查鼠标菜单、字体和中英文。原生自动化按键未得到预期响应，原因未确认，需要实体键盘复测，不能说原生键盘已通过。未重跑完整战役或跨显卡性能测试。无平台上传发布，保留原手机包和存档。

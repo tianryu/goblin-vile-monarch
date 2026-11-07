@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "dead zone",
+    "press edge",
+    "held button quarantine",
+    "disconnect reset",
+    "visit cycle",
+    "proximity purchase gate",
+    "partial payment refund",
+    "single transaction",
+    "sold visit persistence",
+    "ad reward rejection"
+  ],
+  "offers": [
+    "lizard",
+    "wolf",
+    "bat",
+    "boar",
+    "lizard"
+  ]
+}

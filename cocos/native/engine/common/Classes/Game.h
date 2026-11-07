@@ -41,4 +41,6 @@ public:
   void onPause() override;
   void onResume() override;
   void onClose() override;
+private:
+  cc::events::BeforeTick::Listener _padTick;
 };

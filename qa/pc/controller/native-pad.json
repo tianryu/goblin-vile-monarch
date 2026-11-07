@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "source": "Compiled XInput mapper through Cocos 3.8.8 native PAL",
+  "cases": [
+    "neutral",
+    "A",
+    "B",
+    "X",
+    "Y",
+    "LB",
+    "Start",
+    "Back",
+    "RT",
+    "axes",
+    "release"
+  ],
+  "disconnect": true,
+  "physicalControllerTested": false
+}

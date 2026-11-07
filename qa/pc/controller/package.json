@@ -1,0 +1,12 @@
+{
+  "version": "0.12.0",
+  "nativeBuildPassed": true,
+  "zipIntegrityPassed": true,
+  "zipBytes": 44301270,
+  "sha256": "e63b723cc951349624b9e4f35a64d25f0a9675297ba8ec827d09d4c9ed5bdb6e",
+  "dlls": 24,
+  "physicalControllerTested": false,
+  "nativeKeyboardStatus": "Physical retest required; not covered by virtual Gamepad checks",
+  "nativeXInputBridgeCompiled": true,
+  "nativePALMappingPassed": true
+}

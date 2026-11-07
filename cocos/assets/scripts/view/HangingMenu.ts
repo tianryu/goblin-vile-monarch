@@ -6,7 +6,7 @@ import { getLanguage } from '../i18n/Locale';
 
 type Kind='main'|'pause';
 type Phase='opening'|'open'|'closing'|'exit-ready'|'closed';
-type Choice='continue'|'new'|'sound'|'language'|'home';
+type Choice='continue'|'new'|'sound'|'language'|'home'|'controls';
 type ExitChoice='continue'|'new'|'home';
 interface Item { id:Choice;label:string;disabled?:boolean }
 export type MenuButton=(key:string,x:number,y:number,width:number,height:number,enabled:boolean,callback:()=>void)=>void;
@@ -26,6 +26,11 @@ export class HangingMenu {
     private hasSave:boolean;
     private confirmNew = false;
     private credits = false;
+    private controls = false;
+    inputMode:'keyboard'|'gamepad'='keyboard';
+    onControlsRequested?:()=>void;
+    get navPage():string{return this.controls?'controls':this.confirmNew?'confirm':this.credits?'credits':this.kind;}
+    showControls():void{this.controls=true;this.panelSwap=.15;this.onControlsRequested?.();}
     private panelSwap = 0;
     onCommit?:(action:Choice)=>void;
     onSoundChanged?:(enabled:boolean)=>void;
@@ -39,20 +44,22 @@ export class HangingMenu {
         const sound:Item={id:'sound',label:this.platform.soundEnabled?'声音：开':'声音：关'};
         const language:Item={id:'language',label:getLanguage()==='en'?'Language: English':'语言：简体中文'};
         return this.kind === 'main'
-            ? [{ ...resume, disabled: !this.hasSave || this.model.state.status === 'won' }, { id: 'new', label: '新的征程' }, language, sound]
-            : [resume, language, sound, { id: 'home', label: '主菜单' }];
+            ? [{ ...resume, disabled: !this.hasSave || this.model.state.status === 'won' }, { id: 'new', label: '新的征程' }, language, sound, {id:'controls',label:'操作说明'}]
+            : [resume, language, sound, {id:'controls',label:'操作说明'}, { id: 'home', label: '主菜单' }];
     }
     /** 暂停立即生效；快速反向切换保留当前位移和透明度，不跳回起点。 */
     open(kind:Kind):void{
         const same=this.blocks&&this.kind===kind;
         this.confirmNew = false;
         this.credits = false;
+        this.controls = false;
         this.panelSwap = 0;
         this.kind=kind;this.clock=0;this.fromOffset=same?this.offset:-this.height-40;this.fromAlpha=same?this.alpha:0;
         this.offset=this.fromOffset;this.alpha=this.fromAlpha;this.phase='opening';
         this.model.cancelPledge();this.model.pause('menu',true);
     }
     togglePause():void{
+        if(this.controls){this.controls=false;this.panelSwap=.15;return;}
         if (this.confirmNew) { this.showNewConfirmation(false); return; }
         if (this.credits) { this.showCredits(false); return; }
         if(this.model.state.status!=='playing'&&this.phase==='closed')return;
@@ -68,6 +75,7 @@ export class HangingMenu {
     }
     private choose(item:Item):void{
         if(this.phase!=='open'||item.disabled)return;
+        if(item.id==='controls'){this.showControls();return;}
         if(item.id==='sound'){this.platform.setSoundEnabled(!this.platform.soundEnabled);this.onSoundChanged?.(this.platform.soundEnabled);return;}
         if(item.id==='language'){this.platform.setLanguage(getLanguage()==='en'?'zh-CN':'en');return;}
         if (item.id === 'new' && this.hasSave) { this.showNewConfirmation(true); return; }
@@ -104,6 +112,18 @@ export class HangingMenu {
         p.sprite('menuVeil','ui_panel_v5',W/2,H+100,H+200,{layer:13,width:W+200,tint:new Color(0,0,0),alpha:a*(this.kind==='pause'?.34:.15)});
         p.sprite('hangingMenu','hanging_menu',x,this.height+y,this.height,{layer:13,width:420,alpha:a,anchorX:.5,anchorY:0});
         if (this.panelSwap > 0) return;
+        if(this.controls){
+            p.text('controlsHeading','操作说明',x,130+y,28,{layer:13,alpha:a,width:310});
+            const rows=this.inputMode==='gamepad'?[
+                ['LS / D-pad','移动'],['A / B','交互 / 抽鞭'],['X / Y','第二操作 / 换目标'],
+                ['LB / RT','奔跑 / 回洞'],['Start / Back','暂停 / 操作说明'],['D-pad / A / B','菜单选择 / 确认 / 返回']
+            ]:[['A D / ← →','移动'],['E / Q','交互 / 抽鞭'],['R / Tab','第二操作 / 换目标'],
+                ['Shift / H','奔跑 / 回洞'],['Esc / F1','暂停 / 操作说明'],['↑ ↓ / Enter / Esc','菜单选择 / 确认 / 返回']];
+            rows.forEach(([keys,label],i)=>{p.text('helpKeys'+i,keys,x,190+i*47+y,20,{layer:13,alpha:a,width:326,color:new Color(255,219,130)});p.text('helpAction'+i,label,x,210+i*47+y,16,{layer:13,alpha:a,width:326});});
+            p.text('padPositionHint','手柄按键按 Xbox 位置对应',x,478+y,15,{layer:13,alpha:a,width:326});
+            button('menu:controls:back',x,522+y,255,48,this.phase==='open',()=>{this.controls=false;this.panelSwap=.15;});
+            p.text('controlsBack','返回',x,522+y,23,{layer:13,alpha:a});return;
+        }
         if (this.credits) {
             p.text('creditsHeading','制作与鸣谢',x,136+y,27,{layer:13,alpha:a});
             // AI 图片来源独立成段，随鸣谢吊牌一起过渡。
@@ -132,7 +152,7 @@ export class HangingMenu {
         if (this.kind==='main') p.sprite('menuHeadingArt',getLanguage()==='en'?'title_wordmark_en':'title_wordmark',x,143+y,94,{layer:13,anchorY:.5,alpha:a});
         else p.text('menuHeading','暂停',x,128+y,32,{layer:13,alpha:a});
         for(const [i,item]of this.items().entries()){
-            const cy = (this.kind === 'main' ? 242 : 222) + i * 78 + y;
+            const cy = 222 + i * 68 + y;
             button('menu:'+this.kind+':'+item.id,x,cy,292,64,this.phase==='open'&&!item.disabled,()=>this.choose(item));
             p.text('menuLabel:'+this.kind+':'+item.id,item.label,x,cy,26,{layer:13,width:276,alpha:a*(item.disabled?.58:1)});
         }

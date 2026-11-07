@@ -43,6 +43,7 @@ export interface Effect { id: number; kind: 'hit' | 'coin' | 'smoke' | 'fire' | 
 export interface Action { key: string; targetId: number; type: string; cost: number; icon: string; variant?: string; disabled?: boolean }
 export interface Context { id: number; kind: string; x: number; name: string; description: string; actions: Action[]; level?: number; amount?: number }
 export interface State {
+    mountTrader?: import('./MountTrader').MountVisit;
     chapter?: import('./ChapterProgress').ChapterProgress;
     version: number; revision?: number; seed: number; nextId: number; elapsed: number; time: number; day: number; status: 'playing' | 'won' | 'lost';
     gold: number; treasury: number; gearStock: number; equipmentStock: number; populationPending: Record<string, number>;

@@ -55,6 +55,8 @@ export class MonarchGame extends Component {
             this.browserCanvas = game.canvas ?? undefined;
             if (this.browserCanvas) {
                 this.browserCanvas.style.touchAction = 'none';
+                // 手柄开局没有鼠标点击，仍让画布接收随后切换过来的键盘输入。
+                this.browserCanvas.focus?.({ preventScroll: true });
                 this.browserCanvas.addEventListener('gesturestart', this.preventGesture, { passive: false });
             }
         }

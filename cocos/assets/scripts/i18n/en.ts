@@ -1,5 +1,14 @@
 /** 英文显示词表。剧情按完整句翻译，保持哥布林首领贪婪、狡黠的口吻。 */
 export const EN: Record<string, string> = {
+    '操作说明':'Controls','第二操作':'Secondary action','交互 / 抽鞭':'Interact / Whip','第二操作 / 换目标':'Secondary / Next target',
+    '奔跑 / 回洞':'Sprint / Return home','暂停 / 操作说明':'Pause / Controls','菜单选择 / 确认 / 返回':'Select / Confirm / Back',
+    '手柄按键按 Xbox 位置对应':'Buttons use Xbox positions',
+    '手柄已连接，Back 查看操作':'Controller connected. Back: controls',
+    '手柄已断开，可继续使用键鼠':'Controller disconnected. Keyboard and mouse are ready',
+    '按 A 交互':'Press A to interact','按 B 抽鞭':'Press B to whip','按 Y 切换目标':'Press Y to switch target',
+    '本次坐骑已成交':'This mount has been sold','本次带来：':'Today’s mount: ',
+    '坐骑商人来到营地，靠近他兑换坐骑':'The mount trader is here. Approach him to trade',
+
     '语言：简体中文': 'Language: Simplified Chinese', '按切换按钮，选中': 'Press Tab to select ', '留意': 'Watch ', '领取两名': 'Claim 2 ',
     '哥布林：卑劣君主': 'Goblin: Vile Monarch',
     '第1章 守住金币': 'Chapter One: Guard the Gold',

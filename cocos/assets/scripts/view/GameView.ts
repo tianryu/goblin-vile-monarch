@@ -8,6 +8,7 @@ import { ArtBank } from './ArtBank';
 import { Painter } from './Painter';
 import {drawCutout,drumPose,Motion} from './CutoutMotion';
 import{captiveHeight,prisonLayout}from'../model/PrisonLayout';
+import { mountPrice } from '../model/MountTrader';
 import type { ChapterView } from './ChapterView';
 
 const WHITE = new Color(255, 255, 255, 255);
@@ -89,7 +90,7 @@ export class GameView {
         const cart = this.model.state.drumCart;
         for (const b of this.model.state.buildings) if (this.inView(b.x) && this.model.visible(b) && !(b.kind==='flag' && cart && !cart.abandoned)) this.building(b);
         this.camps(); this.animals(); this.drumCart(interpolation); this.hero(interpolation); this.goblins(interpolation); this.enemies(interpolation); this.machines(interpolation);
-        this.coins(); this.trader(interpolation);this.projectiles(); this.procedural(); if(!this.hideHud?.())this.hud(this.model.pauses.size?0:dt); this.foreground();
+        this.coins(); this.trader(interpolation);this.mountTrader(interpolation);this.projectiles(); this.procedural(); if(!this.hideHud?.())this.hud(this.model.pauses.size?0:dt); this.foreground();
         this.healthCue(dt);
         this.drawControls?.(dt); this.chapter?.result(); this.painter.end(dt);
     }
@@ -556,6 +557,26 @@ export class GameView {
         this.actor('humanSlaveMerchant', pulling ? 'trader_pull' : 'trader', worldX, 88, turning ? 1 : cartFace, {
             layer: 7, motion: pulling || turning ? 'walk' : 'idle', glow: this.context?.id === -100 || this.isGuideTarget(-100),
         });
+    }
+    /** 复用已批准的商人与坐骑原画，坐骑跟随进出，避免拼出另一种画风。 */
+    private mountTrader(interpolation:number):void{
+        const t=this.model.state.mountTrader;if(!t||t.phase==='away')return;
+        const x=t.prevX+(t.x-t.prevX)*interpolation,face=t.phase==='leaving'?1:-1;
+        if(!this.inView(x,400))return;
+        this.actor('mountMerchant','trader',x,83,face,{layer:7,motion:t.phase==='trading'?'idle':'walk',glow:this.context?.id===-120});
+        const action=this.context?.id===-120?this.context.actions[0]:undefined;
+        if(action&&!action.disabled&&action.cost)this.costSlots(-120,this.screen(x),this.ground-170,action.cost,this.model.state.pledge?.targetId===-120?this.model.state.pledge.paid:0);
+        if(!t.sold){
+            const mx=x-face*140;
+            this.actor('mountMerchantStock',t.offer,mx,t.offer==='bat'?64:74,face,{layer:7,motion:t.phase==='trading'?'idle':'walk'});
+            if(t.phase==='trading'){
+                this.painter.sprite('mountMerchantTag','ui_tag_v5',this.screen(mx),this.ground-120,37,{layer:7,width:190});
+                this.painter.text('mountMerchantName',RULES.mount[t.offer].name,this.screen(mx),this.ground-138,18,{layer:7,width:174});
+                this.painter.sprite('mountMerchantCoin','coin',this.screen(mx)-22,this.ground-104,21,{layer:7});
+                const price=mountPrice(this.model.state);
+                this.painter.text('mountMerchantPrice',price?String(price):'骑乘',this.screen(mx)+13,this.ground-116,18,{layer:7,width:60});
+            }
+        }
     }
     private projectiles(): void {
         for (const shot of this.model.state.shots) {

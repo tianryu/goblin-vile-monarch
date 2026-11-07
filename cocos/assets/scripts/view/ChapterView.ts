@@ -15,6 +15,7 @@ const GOLD = new Color(255, 221, 130);
 
 /** 复用游戏木框与角色贴图，虚线路标和点按环只绘制在教学层。 */
 export class ChapterView {
+    inputMode:'keyboard'|'gamepad'='keyboard';
     private ink: Graphics;
     private route = new Visibility();
     private tap = new Visibility();
@@ -57,7 +58,7 @@ export class ChapterView {
                         y: this.view.ground + 17,
                         direction,
                     };
-                    this.view.painter.text('guideMove', direction<0?'A / ←':'D / →',130,this.view.height-40,24,{layer:12,width:180,color:GOLD});
+                    this.view.painter.text('guideMove', this.inputMode==='gamepad'?'LS / D-pad':direction<0?'A / ←':'D / →',130,this.view.height-40,24,{layer:12,width:180,color:GOLD});
                 } else if (guide.action) {
                     const action = this.view.context?.actions.slice(0, 3).find(a => a.type === guide.action && a.targetId === target.id);
                     if (action && !action.disabled) {
@@ -65,7 +66,7 @@ export class ChapterView {
                         instruction = this.actionInstruction(action, paid);
                         if (action.cost === 0 || this.view.model.state.gold > 0) this.tapKey = action.key;
                     } else if (!action && this.view.context?.id !== target.id && this.view.model.nearbyTargets > 1) {
-                        instruction = '按切换按钮，选中' + guide.destination;
+                        instruction = this.inputMode==='gamepad'?translate('按 Y 切换目标'):translate('按 Tab 切换目标');
                         this.markButton(cycleX, cycleY, 30);
                     } else instruction = this.waitInstruction(guide);
                 } else if (guide.observe) instruction = '留意' + guide.destination;
@@ -149,8 +150,8 @@ export class ChapterView {
 
     private actionInstruction(action: Action, paid: number): string {
         if (action.cost > paid && this.view.model.state.gold === 0) return '钱袋不够，先筹些金币';
-        if (action.type === 'whip') return '按 Q 抽鞭';
-        const hint = translate('按 E 交互');
+        if (action.type === 'whip') return this.inputMode==='gamepad'?'按 B 抽鞭':'按 Q 抽鞭';
+        const hint = translate(this.inputMode==='gamepad'?'按 A 交互':'按 E 交互');
         return hint + (action.cost ? `  ${action.cost-paid} ` + translate('金币') : '');
     }
 

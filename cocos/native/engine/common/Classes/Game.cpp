@@ -27,6 +27,7 @@
 #if CC_PLATFORM == CC_PLATFORM_WINDOWS
 #include <windows.h>
 #include <string>
+#include "WindowsGamepad.h"
 #endif
 
 #ifndef GAME_NAME
@@ -66,6 +67,9 @@ int Game::init() {
   _xxteaKey = SCRIPT_XXTEAKEY;
 
   BaseGame::init();
+#if CC_PLATFORM == CC_PLATFORM_WINDOWS
+  _padTick.bind([]() { pollWindowsGamepad(); });
+#endif
   return 0;
 }
 

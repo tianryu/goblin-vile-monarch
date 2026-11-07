@@ -10,9 +10,9 @@ import {upgradeHorde,armoredDamage} from './HordeUpgrade';
 import { CAVE_PRISON_X, CAVE_TOWER_REGION, REMOVED_STALLS, TRADER_CART_OFFSET, TRADER_STOP, upgradeBaseLayout, replaceCaveTower } from './BaseLayout';
 import { ATTACK_LEAD, METEOR_DAMAGE_RADIUS } from './EnemyAttack';
 import type { QueuedAttackStyle } from './EnemyAttack';
-import { PC_MOUNT_PRICES } from './DesktopRules';
+import { MOUNT_TRADER_ID, MOUNT_VISIT, updateMountTrader, canBuyMount, mountPrice } from './MountTrader';
 
-const AD_VARIANTS = ['gold', 'hunter', 'worker', 'lizard', 'wolf', 'bat', 'stamina'];
+
 
 /** 取最近目标不排序或创建副本，密集战斗的查询保持线性。 */
 function closest<T extends {x:number}>(items:readonly T[],x:number,valid:(item:T)=>boolean):T|undefined{
@@ -62,6 +62,7 @@ export class GameModel {
     constructor(saved?: State, seed = 731) {
         this.state = saved && saved.version === RULES.saveVersion ? saved : this.createState(seed);
         resumeChapter(this.state);
+        this.state.mountTrader ??= {phase:'away',x:MOUNT_VISIT.stopX,prevX:MOUNT_VISIT.stopX,visitDay:0,offer:'boar',sold:false};
         const oldRevision=this.state.revision||0;
         upgradeWorld(this.state);
         upgradeProgression(this.state);
@@ -130,6 +131,7 @@ export class GameModel {
         const s: State = {
             version: 9, revision:12, seed, nextId: 1, elapsed: 0, time: 18, day: 1, status: 'playing', gold: 32, treasury: 8,battleCoinProgress:0,
             chapter: newChapter(),
+            mountTrader:{phase:'away',x:MOUNT_VISIT.stopX,prevX:MOUNT_VISIT.stopX,visitDay:0,offer:'boar',sold:false},
             gearStock: 0, equipmentStock: 0, populationPending: { hunter: 0, worker: 0 },
             player: { x: 400, prevX: 400, face: 1, hp: 100, stamina: 100, mount: 'boar', fly: 0, hurt: 0, whip: 0 },
             goblins: [], enemies: [], camps: [], companies: [], machines: [], buildings: [], coins: [], animals: [], shots: [], effects: [],gearDrops:[],fortifications:[],recruitment:{start:0,limit:2,count:0,next:60},
@@ -282,6 +284,13 @@ export class GameModel {
             const available=this.state.enemies.some(e=>e.state==='captured'||e.state==='bound'&&e.atPrison&&!e.hauler);
             contexts.push({id:-100,kind:'trader',x:this.state.trader.x,name:'俘虏商人',description:'售出关押的俘虏',actions:[{key:'sell:trader',targetId:-100,type:'sell',cost:0,icon:'coin',disabled:!available}]});
         }
+        const trader=this.state.mountTrader;
+        if(trader?.phase==='trading'&&Math.abs(trader.x-p.x)<RULES.interactRange){
+            const offer=trader.offer, owned=this.state.unlockedMounts.includes(offer);
+            contexts.push({id:MOUNT_TRADER_ID,kind:'mountTrader',x:trader.x,name:'坐骑商人',description:trader.sold?'本次坐骑已成交':'本次带来：'+RULES.mount[offer].name,
+                actions:[{key:`tradeMount:${trader.visitDay}:${offer}`,targetId:MOUNT_TRADER_ID,type:'tradeMount',cost:trader.sold?0:mountPrice(this.state),icon:'coin',variant:offer,
+                disabled:trader.sold||p.mount===offer||!canBuyMount(this.state,offer)}]});
+        }
         for (const m of this.state.machines) if (m.owner === 'goblin' && Math.abs(m.x - p.x) < RULES.interactRange+20) {
             const name = { ram: '破门冲车', catapult: '缴获投石车', firecatapult: '火焰投石车' }[m.kind];
             const actions: Action[] = [];
@@ -357,23 +366,11 @@ export class GameModel {
     /** 每次只投一枚；只有筹满才提交，离开或切换操作按原账户退还未提交款。 */
     act(action: Action): 'none' | 'ad' | 'done' {
         if (this.pauses.size || this.state.status !== 'playing' || action.disabled) return 'none';
-        // HUD广告与靠近交互共用平台流程，限定合法变体，不依赖已移除的世界摊位。
-        if (action.targetId === -200) {
-            const variant = action.variant || '';
-            if (action.type === 'ad' && action.key === `hudAd:${variant}` && AD_VARIANTS.includes(variant)) return 'ad';
-            const mount = variant as Mount;
-            if (action.type === 'mount' && action.key === `hudMount:${mount}` && this.state.unlockedMounts.includes(mount)) {
-                this.state.player.mount = mount;
-                this.state.player.stamina = Math.min(this.state.player.stamina, RULES.mount[mount].stamina);
-                this.dirty = true;
-                return 'done';
-            }
-            return 'none';
-        }
+        if (action.type==='ad'||action.targetId===-200) return 'none';
         const context = this.context(), live = context?.actions.find(a => a.key === action.key);
         if (!live || live.disabled) return 'none';
         action = live;
-        if (action.type === 'ad') return 'ad';
+        if (action.type === 'ad') return 'none';
         if (!this.canCommit(action)) return 'none';
         if (action.cost > 0) {
             if (this.state.pledge?.key !== action.key) { this.cancelPledge(); this.state.pledge = { key: action.key, targetId: action.targetId, action: { ...action }, paid: 0, x: context!.x }; }
@@ -385,6 +382,7 @@ export class GameModel {
         this.commit(action); this.dirty = true; return 'done';
     }
     private canCommit(a: Action): boolean {
+        if (a.type === 'tradeMount') return canBuyMount(this.state,a.variant as Mount);
         if (a.type === 'dispatch') return this.canDispatch();
         if (a.type==='tool'){const b=this.state.buildings.find(b=>b.id===a.targetId);return !!b&&b.stock<RULES.toolCapacity[b.level];}
         if (a.type === 'craft') return this.state.gearStock >= 2;
@@ -409,6 +407,7 @@ export class GameModel {
         if (a.type === 'whip' && n) { this.whip(n); return; }
         if (a.type === 'repairMachine' && m) { m.hp = m.maxHp; return; }
         if(a.type==='sell'&&a.targetId===-100){if(s.trader.present&&s.trader.phase==='trading')this.sellCaptives();return;}
+        if(a.type==='tradeMount'){this.acceptMount(a.variant as Mount);return;}
         if (!b) return;
         switch (a.type) {
             case 'withdraw':
@@ -474,20 +473,17 @@ export class GameModel {
         s.player.face = n.x < s.player.x ? -1 : 1; s.player.whip = .45;
         this.effect('hit', n.x, .45); this.events.push({ kind: 'whip', x: n.x });
     }
-    /** PC 坐骑改为一次性金币购买；先验证再扣费，重复购买只切换，不重复结算。 */
-    purchaseMount(mount: Mount): boolean {
-        const costs = PC_MOUNT_PRICES;
-        if (!Object.prototype.hasOwnProperty.call(costs,mount) || this.pauses.size || this.state.status !== 'playing') return false;
-        this.cancelPledge();
-        if (!this.state.unlockedMounts.includes(mount)) {
-            const price=costs[mount];
-            if (this.state.gold<price) return false;
-            this.state.gold-=price;this.state.spent+=price;this.state.unlockedMounts.push(mount);
-            this.events.push({kind:'coin',x:this.state.player.x});
-        }
-        this.state.player.mount=mount;
-        this.state.player.stamina=Math.min(this.state.player.stamina,RULES.mount[mount].stamina);
-        this.dirty=true;return true;
+    /** 仅当商人当期营业且玩家靠近时购买；正式投币走 act 的逐币与退款流程。 */
+    purchaseMount(mount:Mount):boolean{
+        if(this.pauses.size||this.state.status!=='playing'||!canBuyMount(this.state,mount))return false;
+        this.cancelPledge();const price=mountPrice(this.state);
+        if(this.state.gold<price)return false;
+        this.state.gold-=price;this.state.spent+=price;this.acceptMount(mount);return true;
+    }
+    private acceptMount(mount:Mount):void{
+        if(!this.state.unlockedMounts.includes(mount))this.state.unlockedMounts.push(mount);
+        this.state.player.mount=mount;this.state.player.stamina=Math.min(this.state.player.stamina,RULES.mount[mount].stamina);
+        this.state.mountTrader!.sold=true;this.events.push({kind:'coin',x:this.state.player.x});this.dirty=true;
     }
     gain(amount: number): void {
         const fit = Math.max(0, Math.min(amount, 50 - this.state.gold));
@@ -503,31 +499,8 @@ export class GameModel {
         this.state.effects.push(effect);
         return effect;
     }
-    /** 完成回调携带收据，收据和奖励一起写入对应的存档。 */
-    get adGoldReward():number{return 9+Math.max(1,this.state.day);}
-    grantAdReward(kind: string, receipt: string): boolean {
-        const s = this.state;
-        if (!receipt || s.adReceipts.includes(receipt)) return false;
-        if (kind === 'revive') {
-            if (!this.revive(true)) return false;
-        } else if (s.status !== 'playing' || !AD_VARIANTS.includes(kind)) return false;
-        else if (kind === 'gold') this.gain(this.adGoldReward);
-        else if (kind === 'hunter' || kind === 'worker') { s.populationPending[kind] += 2; this.fillPending(); }
-        else if (kind === 'stamina') {
-            // 每份完整视频回执增加十分钟实际游戏时间，暂停或离线时不倒计时。
-            s.infiniteStaminaUntil = s.elapsed + this.infiniteStaminaSeconds + RULES.rewardStaminaSeconds;
-            s.player.stamina = RULES.mount[s.player.mount].stamina;
-            s.player.exhausted = false;
-        }
-        else {
-            const mount = kind as Mount;
-            if (!s.unlockedMounts.includes(mount)) s.unlockedMounts.push(mount);
-            else s.mountBoost[mount] = (s.mountBoost[mount] || 0) + 300;
-            s.player.mount = mount;
-            s.player.stamina = Math.min(s.player.stamina, RULES.mount[mount].stamina);
-        }
-        s.adReceipts.push(receipt); this.dirty = true; return true;
-    }
+    /** PC 不处理广告回执，旧字段仅用于兼容已存在的存档。 */
+    grantAdReward(_kind:string,_receipt:string):boolean{return false;}
     private fillPending(): void {
         for (const role of ['hunter', 'worker'] as Role[]) while (this.state.populationPending[role] > 0 && this.population < this.populationLimit) {
             this.state.populationPending[role]--; this.state.goblins.push(this.makeGoblin(role, 500));
@@ -2102,6 +2075,10 @@ export class GameModel {
     }
     private updatePrison(dt: number): void {
         this.updateTrader(dt);
+        const previousMountPhase=this.state.mountTrader!.phase;
+        updateMountTrader(this.state,dt);
+        if(previousMountPhase!=='trading'&&this.state.mountTrader!.phase==='trading')this.tell('坐骑商人来到营地，靠近他兑换坐骑');
+        if(this.state.pledge?.targetId===MOUNT_TRADER_ID&&this.state.mountTrader?.phase!=='trading')this.cancelPledge();
         const s = this.state;
         const capacity=this.prison.hp>0?RULES.prisonCapacity[this.prison.level]:0;
         let occupied=0;
