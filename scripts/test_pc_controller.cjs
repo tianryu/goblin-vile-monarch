@@ -14,13 +14,19 @@ p.sample(sample());p.sample(sample(0,{confirm:true}));assert(p.pressed.has('conf
 assert(p.sample(undefined));assert.equal(p.x,0);assert.equal(p.down.size,0);
 const m=new GameModel(),s=m.state;
 assert.equal(m.purchaseMount('lizard'),false);
-const offers=[];
-for(const day of [2,4,6,8,10]){
+const offers=[],visitDays=[];
+for(let day=1;day<=26;day++){
  s.mountTrader.phase='away';s.day=day;s.time=1;updateMountTrader(s,0);
+ if(s.mountTrader.phase==='away')continue;
+ visitDays.push(day);
  offers.push(s.mountTrader.offer);for(let i=0;i<240;i++)updateMountTrader(s,1/30);
  assert.equal(s.mountTrader.phase,'trading');
 }
+assert.deepEqual(visitDays,[2,8,14,20,26]);
 assert.deepEqual(offers,['lizard','wolf','bat','boar','lizard']);
+const legacy=new GameModel();Object.assign(legacy.state.mountTrader,{phase:'away',visitDay:4,offer:'wolf'});
+legacy.state.day=8;legacy.state.time=1;updateMountTrader(legacy.state,0);
+assert.equal(legacy.state.mountTrader.offer,'bat');
 s.mountTrader.phase='trading';s.mountTrader.offer='lizard';s.mountTrader.sold=false;s.mountTrader.visitDay=s.day;s.player.x=s.mountTrader.x;s.gold=50;
 let ctx=m.context();m.cycleTarget();ctx=m.context();
 // 无论附近还有谁，都通过实际候选找到商人，再使用 act 正式逐币入口。
@@ -35,5 +41,5 @@ assert.equal(s.player.mount,'lizard');assert.equal(s.gold,20);assert(s.mountTrad
 assert.equal(m.act(action),'none');assert.equal(s.gold,20);
 const restored=new GameModel(JSON.parse(JSON.stringify(s)));assert.equal(restored.state.mountTrader.offer,'lizard');assert(restored.state.mountTrader.sold);
 const wealth=s.gold;s.status='lost';assert(!m.grantAdReward('revive','fake'));assert(!m.grantAdReward('gold','fake'));assert.equal(s.gold,wealth);
-fs.writeFileSync(path.join(root,'qa/pc/controller-model.json'),JSON.stringify({passed:true,checks:['dead zone','press edge','held button quarantine','disconnect reset','visit cycle','proximity purchase gate','partial payment refund','single transaction','sold visit persistence','ad reward rejection'],offers},null,2));
+fs.writeFileSync(path.join(root,'qa/pc/controller-model.json'),JSON.stringify({passed:true,checks:['dead zone','press edge','held button quarantine','disconnect reset','six day visit cycle','legacy stock rotation','proximity purchase gate','partial payment refund','single transaction','sold visit persistence','ad reward rejection'],visitDays,offers},null,2));
 console.log('Controller and trader model checks passed');

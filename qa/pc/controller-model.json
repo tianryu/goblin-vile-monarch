@@ -5,12 +5,20 @@
     "press edge",
     "held button quarantine",
     "disconnect reset",
-    "visit cycle",
+    "six day visit cycle",
+    "legacy stock rotation",
     "proximity purchase gate",
     "partial payment refund",
     "single transaction",
     "sold visit persistence",
     "ad reward rejection"
+  ],
+  "visitDays": [
+    2,
+    8,
+    14,
+    20,
+    26
   ],
   "offers": [
     "lizard",

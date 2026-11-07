@@ -1,7 +1,7 @@
 {
   "name": "goblin-vile-monarch-pc",
   "uuid": "771f3a04-af32-4af6-93be-1970db519500",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "private": true,
   "creator": {
     "version": "3.8.8"

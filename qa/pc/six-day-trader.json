@@ -1,0 +1,21 @@
+{
+  "version": "0.12.1",
+  "firstVisitDay": 2,
+  "interval": 6,
+  "visitDays": [
+    2,
+    8,
+    14,
+    20,
+    26
+  ],
+  "modelChecksPassed": true,
+  "windowsBuildPassed": true,
+  "packageIntegrityPassed": true,
+  "packagedRuleVerified": [
+    "GoblinVileMonarch/Resources/assets/main/index.js"
+  ],
+  "sha256": "90edc4107f2e65ea9e00f13bdb56a9da34b8a37278cee939d7c55b8c658112b0",
+  "noMouseAutomation": true,
+  "newPhysicalInputTest": false
+}

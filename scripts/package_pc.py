@@ -10,7 +10,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'cocos/build/pc-windows-20261107/proj/Release'
-DEST = ROOT / 'release/windows-pc-20261107-controller/GoblinVileMonarch'
+DEST = ROOT / 'release/windows-pc-20261107-six-day-trader/GoblinVileMonarch'
 VERSION = json.loads((ROOT / 'cocos/package.json').read_text(encoding='utf-8-sig'))['version']
 EXE = 'GoblinVileMonarch.exe'
 assert (SOURCE / EXE).is_file() and (SOURCE / 'Resources/main.js').is_file(), 'Build the Windows target first'
@@ -61,7 +61,7 @@ A/D 或左右方向键移动，Shift 奔跑，E 交互和连续投币，Q 抽鞭
 Tab 切换附近目标，H 回洞，F1 操作说明，Esc 暂停，Enter 推进对白。
 底部图标支持鼠标点击。关闭窗口会保存。PC 存档与手机版隔离。
 手柄支持 Windows XInput：左摇杆或方向键移动，A 交互，B 抽鞭，X 第二操作，Y 切换，LB 奔跑，RT 回洞，Start 暂停，Back 操作说明。
-坐骑商人从第2天起每隔两天清晨到访，傍晚离开；靠近后投币兑换当期坐骑。
+坐骑商人从第2天起每隔6天清晨到访，傍晚离开；靠近后投币兑换当期坐骑。
 
 Goblin: Vile Monarch, Windows PC local build __VERSION__
 Extract the complete folder, then launch GoblinVileMonarch.exe.
@@ -69,7 +69,7 @@ Windows 10/11 x64. Switch Simplified Chinese and English in either menu.
 A/D or arrows: move. Hold Shift: sprint. E: interact/pay. Q: whip. R: secondary action.
 Tab: next target. H: return home. F1: controls. Esc: pause. Enter: next dialogue.
 Windows XInput gamepad: LS/D-pad move, A interact, B whip, X secondary, Y next target, LB sprint, RT home, Start pause, Back controls.
-A mount trader visits every other morning from day 2 and leaves at dusk. Approach to trade.
+A mount trader visits every six days from day 2 and leaves at dusk. Approach to trade.
 Keep the Resources folder and DLLs beside the executable. Local saves are separate from the mobile version.
 
 Third-party notices are in licenses. Images were generated with OpenAI ImageGen.

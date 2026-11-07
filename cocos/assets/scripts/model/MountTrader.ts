@@ -7,7 +7,7 @@ export interface MountVisit {
     x: number; prevX: number; visitDay: number; offer: Mount; sold: boolean;
 }
 export const MOUNT_TRADER_ID = -120;
-export const MOUNT_VISIT = { firstDay:2, interval:2, morningEnd:35, departAt:108, stopX:1870, travel:1050, speed:150 };
+export const MOUNT_VISIT = { firstDay:2, interval:6, morningEnd:35, departAt:108, stopX:1870, travel:1050, speed:150 };
 const STOCK:Mount[]=['lizard','wolf','bat','boar'];
 
 /** 固定轮换保证相邻两次不同，报价在到访时确定，不消耗战斗随机数。 */
@@ -16,7 +16,8 @@ export function updateMountTrader(s:State,dt:number): void {
     t.prevX=t.x;
     if(t.phase==='away'){
         if(s.day>=MOUNT_VISIT.firstDay&&(s.day-MOUNT_VISIT.firstDay)%MOUNT_VISIT.interval===0&&s.time<MOUNT_VISIT.morningEnd&&t.visitDay!==s.day){
-            t.offer=STOCK[Math.floor((s.day-MOUNT_VISIT.firstDay)/MOUNT_VISIT.interval)%STOCK.length];
+            // 按上次商品轮换，旧两天周期的存档也不会在下次到访时重复商品。
+            t.offer=STOCK[t.visitDay>0?(STOCK.indexOf(t.offer)+1)%STOCK.length:0];
             t.visitDay=s.day;t.sold=false;t.phase='arriving';t.x=t.prevX=MOUNT_VISIT.stopX+MOUNT_VISIT.travel;
         }
     }else if(t.phase==='arriving'){
